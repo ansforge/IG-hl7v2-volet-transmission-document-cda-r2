@@ -29,7 +29,9 @@ Ce volet est élaboré dans le cadre du SEGUR du Numérique avec la participatio
 Les workflows associés à ce repository (.github/workflows) permettent :
 
 * D'executer Sushi pour vérifier la grammaire
-* De publier les pages : https://ansforge.github.io/{nom du repo}/ig/{nom de la branche}
+* De publier les pages : https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/ig/{nom de la branche}
+
+Accès à la version ci-build : https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/ig/
 
 # Notes
 
