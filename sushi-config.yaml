@@ -48,9 +48,13 @@ pages:
         title: "Test Plan"
     issues.md:
         title: "Issues"
+    meta-dmp-mss.md:
+        title: "Table MetaDMP/MSS"
+    ack-metier-zam.md:
+        title: "Table AckMetierZAM"
+    exemples.md:
+        title: "Exemples de messages"
     error-codes.md:
-        title: "Error codes"
-    additional.md:
         title: "Error codes"
     change-log.md:
         title: "Change log"
@@ -74,10 +78,12 @@ menu:
         "Interactions entre les Acteurs": interactions-acteurs.html
         "Profils de messages": profils-messages.html
         "Règles de gestion MSSANTE": regles-gestion-mssante.html
-    Volume 3:
+    Suppléments:
+        "Table MetaDMP/MSS": meta-dmp-mss.html
+        "Table AckMetierZAM": ack-metier-zam.html
+        "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
-        "Compléments": additional.html
     Test Plan: testplan.html
     Change log: change-log.html
     Téléchargements et usage: download.html
-    Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
+ #   Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
