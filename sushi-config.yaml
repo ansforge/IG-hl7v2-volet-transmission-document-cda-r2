@@ -2,8 +2,8 @@
 
 id: ans.hl7v2.fr.transmission-cda-r2
 canonical: https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2 # the last part of canonical and id must be the same
-name: TransCDAR2 # Should be an acronym
-title: ANS IG du volet de transmission d’un document CDA-R2 en HL7v2
+name: Hl7v2_CDAr2 # Should be an acronym
+title: ANS IG du volet de transmission d'un document CDA-R2 en HL7v2
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
   url: https://esante.gouv.fr
@@ -16,11 +16,9 @@ jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
 parameters:
     shownav: 'true'
 
-
-
 pages:
     index.md:
-        title: Accueil
+        title: "Accueil"
     cas-usage.md:
         title: "Cas d'usage"
     contexte-metier.md:
@@ -57,29 +55,28 @@ pages:
         title: "Change log"
     download.md:
         title: "Téléchargements et usages"
-    generation: markdown
+        generation: markdown
 
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: 
-    "Cas d'usage": cas-usage.html
-    "Organisation du contexte métier": contexte-metier.html
-    "Acteurs et transactions": acteurs-transactions.html
-    "Définition des processus collaboratifs": def-proc-collab.html
-    "identification des flux": identification-flux.html
+        "Cas d'usage": cas-usage.html
+        "Organisation du contexte métier": contexte-metier.html
+        "Acteurs et transactions": acteurs-transactions.html
+        "Définition des processus collaboratifs": def-proc-collab.html
+        "identification des flux": identification-flux.html
     Volume 2 – Détail des Transactions:
-    "Périmètre de la transaction": perimetre-transaction.html
-    "Rôle des acteurs pour cette transaction": role.html
-    "Choix des standards": standards.html
-    "Evènements déclenchants": evenements-declenchants.html
-    "Interactions entre les Acteurs": interactions-acteurs.html
-    "Profils de messages": profils-messages.html
-    "Règles de gestion MSSANTE": regles-gestion-mssante.html
+        "Périmètre de la transaction": perimetre-transaction.html
+        "Rôle des acteurs pour cette transaction": role.html
+        "Choix des standards": standards.html
+        "Evènements déclenchants": evenements-declenchants.html
+        "Interactions entre les Acteurs": interactions-acteurs.html
+        "Profils de messages": profils-messages.html
+        "Règles de gestion MSSANTE": regles-gestion-mssante.html
     Volume 3:
-    "Error Codes": error-codes.html
-    "Compléments": additional.html
+        "Error Codes": error-codes.html
+        "Compléments": additional.html
     Test Plan: testplan.html
     Change log: change-log.html
     Téléchargements et usage: download.html
-    "Site de l'ANS ": new-tab https://esante.gouv.fr/
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
