@@ -42,8 +42,6 @@ connaissance du courriel par le Dr Adam Hoda.
 
 ### Envoi d'un compte rendu de biologie d'un laboratoire privé vers un établissement hospitalier
 
-<u>Cas d'usage :</u> 
-
 <blockquote>
     <div class="note note">
     <u>Cas d'usage :</u> un établissement hospitalier (le CH Martin) réceptionne, via MSSanté, un compte rendu de laboratoire concernant un patient pris en charge dans l'établissement, provenant d'un laboratoire d'analyses externe au CH Martin. Le laboratoire d'analyse ainsi que le CH Martin sont dotés de PFI qui gèrent l'échange de courriel entre la BAL applicative du laboratoire et la BAL applicative du DPI de l'établissement consommateur.
@@ -141,8 +139,6 @@ Le diagramme serait identique dans le cas d'une demande de remplacement
 ou de suppression du compte rendu.
 
 ### Transmission d'un document clinique d'un patient d'un établissement hospitalier vers un autre établissement hospitalier
-
-[Cas d'usage]{.underline} : 
 
 <blockquote>
     <div class="note note">
