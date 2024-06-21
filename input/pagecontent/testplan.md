@@ -1,6 +1,6 @@
 ### Outils de tests
 
-<!-- <div style="text-align: center;">{%include tests.svg%}</div> -->
+<div style="text-align: center;">{%include tests.svg%}</div>
 
 #### Espace de test
 

@@ -16,7 +16,7 @@
 <div style="width: 65%">
     <blockquote class="stu-note">
     <p>
-    <b>Cette version, au statut Trial Implementation, intègre le traitement des commentaires reçus par l’ANS pendant la phase de commentaires publics qui s’est déroulée du 27/11/2023 au 08/12/2023 ainsi que des corrections ou des améliorations apportées à la suite du projectathon organisé par l’ANS en septembre 2023. Cette version du volet intègre également le résultat de l’étude conduite en janvier 2024 par la DNS avec des industriels et leurs représentants sur les cas d’usage de la MSSanté présentés dans la section Volume 1 – Etude fonctionnelle.
+    Cette version, au statut Trial Implementation, intègre le traitement des commentaires reçus par l’ANS pendant la phase de commentaires publics qui s’est déroulée du 27/11/2023 au 08/12/2023 ainsi que des corrections ou des améliorations apportées à la suite du projectathon organisé par l’ANS en septembre 2023. Cette version du volet intègre également le résultat de l’étude conduite en janvier 2024 par la DNS avec des industriels et leurs représentants sur les cas d’usage de la MSSanté présentés dans la section Volume 1 – Etude fonctionnelle.
     </p>
     </blockquote>
 </div>
@@ -229,7 +229,12 @@ transversale des échanges représentée de façon synthétique sur la figure
 suivante et décrits de façon détaillée dans la section 2 du présent
 document :
 
-![Figure 1 : Représentation synthétique des échanges et articulation entre les deux volets du CI_SIS](images/image5.png)
+<div class="figure">
+    <img src="image5.png" alt="Figure 1" title="Figure 1 : Représentation synthétique des échanges et articulation entre les deux volets du CI_SIS" style="width:100%;">
+    <figcaption>Figure 1 : Représentation synthétique des échanges et articulation entre les deux volets du CI_SIS</figcaption>
+</div>
+<br>
+
 
 ##### Dépendances avec la documentation SEGUR
 
@@ -256,7 +261,7 @@ Les développeurs de PFI devront également respecter le [Référentiel socle
 « MSSanté #2- Clients de Messageries Sécurisées de Santé](https://mailiz.mssante.fr/documents/16106/0/ANS_MSS_Ref2_Clients_de_messageries_MSSant%C3%A9_v1.0.1_20240118-vYRF3G7r.pdf/7a81e9bc-24c4-4fe4-8fc1-882858dc22d5) »
 publié par l'ANS et le référentiel [« Service DMP intégré aux LPS- Version 2.10.0 »](https://industriels.sesam-vitale.fr/) publié par le GIE SESAM-VITALE.
 
-**L'ensemble de ces spécifications sont hors périmètre de ce présent volet du CI_SIS.**
+**L'ensemble de ces spécifications sont hors périmètre de ce présent volet du CI-SIS.**
 
 #### Ce dont ne traite pas ce volet du CI_SIS
 
@@ -284,5 +289,4 @@ spécifie des projets avec des interfaces interopérables.
 
 ### Dépendances
 
-{% include dependency-table.xhtml %}
-*/ -->
+{% include dependency-table.xhtml %} -->
