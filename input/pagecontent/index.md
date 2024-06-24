@@ -8,7 +8,7 @@
 <div style="width: 65%">
     <blockquote class="stu-note">
     <p>
-    <b>Attention !</b> Cet Implementation Guide n'est pas en version courante. La version officielle est ici : https://esante.gouv.fr/volet-de-transmission-dun-document-cda-r2-en-hl7v2
+    <b>Attention !</b> Cet Implementation Guide n'est pas en version courante. La version officielle est ici :  <a href="https://esante.gouv.fr/volet-de-transmission-dun-document-cda-r2-en-hl7v2">https://esante.gouv.fr/volet-de-transmission-dun-document-cda-r2-en-hl7v2</a>
     </p>
     </blockquote>
 </div>
@@ -285,8 +285,4 @@ spécifie des projets avec des interfaces interopérables.
 
 | Role  | Nom | Organisation | Contact |
 | --- | --- | --- | --- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
-
-### Dépendances
-
-{% include dependency-table.xhtml %} -->
+| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email | -->

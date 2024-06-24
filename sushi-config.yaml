@@ -30,6 +30,7 @@ pages:
         title: "Définition des processus collaboratifs"
     identification-flux.md:
         title: "identification des flux"
+    volume2.md:
     perimetre-transaction.md:
         title: "Périmètre de la transaction"
     role.md:
@@ -57,7 +58,7 @@ pages:
     error-codes.md:
         title: "Error codes"
     change-log.md:
-        title: "Change log"
+        title: "Historique du document"
     download.md:
         title: "Téléchargements et usages"
         generation: markdown
@@ -70,7 +71,8 @@ menu:
         "Acteurs et transactions": acteurs-transactions.html
         "Définition des processus collaboratifs": def-proc-collab.html
         "identification des flux": identification-flux.html
-    Volume 2 – Détail des Transactions:
+    Volume 2 – Détail des Transactions: 
+        "Volume 2 : Introduction": volume2.html
         "Périmètre de la transaction": perimetre-transaction.html
         "Rôle des acteurs pour cette transaction": role.html
         "Choix des standards": standards.html
@@ -84,6 +86,6 @@ menu:
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
     Test Plan: testplan.html
-    Change log: change-log.html
+    Historiqye du document: change-log.html
     Téléchargements et usage: download.html
  #   Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
