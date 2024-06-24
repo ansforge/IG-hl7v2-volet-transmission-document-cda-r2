@@ -410,21 +410,13 @@ segments du message ORU sont décrites à la section 12.2 LIEN.
 
 ###### Description fonctionnelle du message ORU
 
-  -----------------------------------------------------------------------
-  **Structure du message ORU_R01**
-  -----------------------------------------------------------------------
-  ![](./images/media/image22.png){width="6.548947944006999in"
-  height="4.861360454943132in"}
+<div class="figure">
+    <img src="fig17.png" alt="Figure 17" title="Figure 17 : Structure fonctionnelle du message ORU_R01" style="width:100%;">
+    <figcaption>Figure 17 : Structure fonctionnelle du message ORU_R01</figcaption>
+</div>
+<br>
 
-  ![](./images/media/image23.png){width="6.129861111111111in"
-  height="0.8381944444444445in"}**Légende**
-
-  -----------------------------------------------------------------------
-
-Figure 17 : Structure fonctionnelle du message ORU_R01
-
-Les groupes en rouge sur le schéma représentent les éléments spécifiques
-à ce volet :
+Les groupes en rouge sur le schéma représentent les éléments spécifiques à ce volet :
 
 -   Un premier groupe de segments OBSERVATION contenant le document
     médical au format CDA-R2 codé en base64 suivi de segments PRT,
@@ -432,9 +424,6 @@ Les groupes en rouge sur le schéma représentent les éléments spécifiques
     renseigner le cas échéant les informations de l'expéditeur, le(s)
     destinataire(s) MSSanté et l'adresse mail de réponse.
 
-```{=html}
-<!-- -->
-```
 -   Un deuxième groupe OBSERVATION contenant le cas échéant le même
     document médical spécifié dans un autre format, codé en base64. Le
     contenu clinique des documents est identique, seul le format est
@@ -442,10 +431,7 @@ Les groupes en rouge sur le schéma représentent les éléments spécifiques
     SEGUR vague2 (la version PDF du compte-rendu est insérée dans une
     section dédiée du document CDA Niv3).
 
-> Les groupes de segments OBSERVATION suivants (répétables) véhiculent
-> les métadonnées spécifiques à la publication sur le DMP et/ou à
-> l'envoi par la MSSanté. Ces métadonnées sont communes aux deux formats
-> du document. Ces métadonnées sont décrites dans la section 12.2.
+Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l'envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la section 12.2.
 
 ##### Message MDM en HL7v2.6
 
@@ -453,103 +439,374 @@ Les groupes en rouge sur le schéma représentent les éléments spécifiques
 
 Le profil du message MDM est le suivant :
 
-+------------+---------------------------------+-------+------+-------+
-| Segment    | Meaning                         | Usage | C    | § HL7 |
-|            |                                 |       | ard. |       |
-+============+=================================+=======+======+=======+
-| MSH        | Message Header                  | R     | \[1. | 2     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| EVN        | Event type                      | R     | \[1. | 2     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| PID        | Patient Identification          | R     | \[1. | 3     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| PV1        | Patient Visit                   | R     | \[1. | 3     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-|            | \-\-- COMMON_ORDER begin        | R     | \[1. |       |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| ORC        | Common Order = demande de       | R     | \[1. | 4     |
-|            | traitement sur le document      |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| \[{        | \-\-- TIMING begin              | O     | \    |       |
-|            |                                 |       | [0.. |       |
-|            |                                 |       | \*\] |       |
-+------------+---------------------------------+-------+------+-------+
-| TQ1        | Timing/Quantity                 | R     | \[1. | 4     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| \[{TQ2}\]  | Timing/Quantity RelationShip    | O     | \    | 4     |
-|            |                                 |       | [0.. |       |
-|            |                                 |       | \*\] |       |
-+------------+---------------------------------+-------+------+-------+
-| }\]        | \-\-- TIMING end                |       |      |       |
-+------------+---------------------------------+-------+------+-------+
-| OBR        | Observation Request segment     | R     | \[1. | 4     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| \[{NTE}\]  | Notes and comments              | O     | \    | 2     |
-|            |                                 |       | [0.. |       |
-|            |                                 |       | \*\] |       |
-+------------+---------------------------------+-------+------+-------+
-|            | \-\-- COMMON_ORDER end          |       |      |       |
-+------------+---------------------------------+-------+------+-------+
-| TXA        | Transcription document header   | R     | \[1. | 9     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| {          | OBXNTE : Document ou expression | R     | \    |       |
-|            | des métadonnées de document     |       | [1.. |       |
-|            | relatives au masquage du        |       | \*\] |       |
-|            | document aux PS et de           |       |      |       |
-|            | visibilité au patient.          |       |      |       |
-+------------+---------------------------------+-------+------+-------+
-| OBX        | Observation/Result.             | R     | \[1. | 9     |
-|            |                                 |       | .1\] |       |
-+------------+---------------------------------+-------+------+-------+
-| \[{PRT}\]  | Participation : Expéditeur,     | R/C   | \[1. | 7     |
-|            | destinataire(s) MSSanté,        |       | \*\] | (     |
-| (Note 1)   | adresse mail sur laquelle le    |       |      | v2.9) |
-|            | destinataire peut répondre.     |       |      |       |
-|            | Segment PRT pré-adopté de la    |       |      |       |
-|            | version 2.9                     |       |      |       |
-+------------+---------------------------------+-------+------+-------+
-| \[{NTE}\]  | Notes and comments              | O     | \    | 2     |
-|            |                                 |       | [0.. |       |
-|            |                                 |       | \*\] |       |
-+------------+---------------------------------+-------+------+-------+
-| }          | \-\--OBXNTE end                 |       |      |       |
-+------------+---------------------------------+-------+------+-------+
+<table>
+<thead>
+<tr>
+<td width="104">
+<p>Segment</p>
+</td>
+<td width="274">
+<p>Meaning</p>
+</td>
+<td width="64">
+<p>Usage</p>
+</td>
+<td width="59">
+<p>Card.</p>
+</td>
+<td width="66">
+<p>&sect; HL7</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="104">
+<p>MSH</p>
+</td>
+<td width="274">
+<p>Message Header</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>EVN</p>
+</td>
+<td width="274">
+<p>Event type</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>PID</p>
+</td>
+<td width="274">
+<p>Patient Identification</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>PV1</p>
+</td>
+<td width="274">
+<p>Patient Visit</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="274">
+<p>--- COMMON_ORDER begin</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;ORC</p>
+</td>
+<td width="274">
+<p>Common Order = demande de traitement sur le document</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;[{</p>
+</td>
+<td width="274">
+<p>--- TIMING begin</p>
+</td>
+<td width="64">
+<p>O</p>
+</td>
+<td width="59">
+<p>[0..*]</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp; TQ1</p>
+</td>
+<td width="274">
+<p>Timing/Quantity</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp; [{TQ2}]</p>
+</td>
+<td width="274">
+<p>Timing/Quantity RelationShip</p>
+</td>
+<td width="64">
+<p>O</p>
+</td>
+<td width="59">
+<p>[0..*]</p>
+</td>
+<td width="66">
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;}]</p>
+</td>
+<td width="274">
+<p>--- TIMING end</p>
+</td>
+<td width="64">
+<p>&nbsp;</p>
+</td>
+<td width="59">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;OBR</p>
+</td>
+<td width="274">
+<p>Observation Request segment</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;[{NTE}]</p>
+</td>
+<td width="274">
+<p>Notes and comments</p>
+</td>
+<td width="64">
+<p>O</p>
+</td>
+<td width="59">
+<p>[0..*]</p>
+</td>
+<td width="66">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;</p>
+</td>
+<td width="274">
+<p>--- COMMON_ORDER end</p>
+</td>
+<td width="64">
+<p>&nbsp;</p>
+</td>
+<td width="59">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>TXA</p>
+</td>
+<td width="274">
+<p>Transcription document header</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>9</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>{</p>
+</td>
+<td width="274">
+<p>OBXNTE : Document ou expression des m&eacute;tadonn&eacute;es de document relatives au masquage du document aux PS et de visibilit&eacute; au patient.</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..*]</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;OBX</p>
+</td>
+<td width="274">
+<p>Observation/Result.</p>
+</td>
+<td width="64">
+<p>R</p>
+</td>
+<td width="59">
+<p>[1..1]</p>
+</td>
+<td width="66">
+<p>9</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;[{PRT}]</p>
+<p>(Note 1)</p>
+</td>
+<td width="274">
+<p>Participation : Exp&eacute;diteur, destinataire(s) MSSant&eacute;, adresse mail sur laquelle le destinataire peut r&eacute;pondre. Segment PRT pr&eacute;-adopt&eacute; de la version 2.9</p>
+</td>
+<td width="64">
+<p>R/C</p>
+</td>
+<td width="59">
+<p>[1.*]</p>
+</td>
+<td width="66">
+<p>7 (v2.9)</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>&nbsp;[{NTE}]</p>
+</td>
+<td width="274">
+<p>Notes and comments</p>
+</td>
+<td width="64">
+<p>O</p>
+</td>
+<td width="59">
+<p>[0..*]</p>
+</td>
+<td width="66">
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>}</p>
+</td>
+<td width="274">
+<p>---OBXNTE end</p>
+</td>
+<td width="64">
+<p>&nbsp;</p>
+</td>
+<td width="59">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-Note (1) : le segment PRT est utilisé conjointement avec l'OBX qui porte
+**Note (1)** : _le segment PRT est utilisé conjointement avec l'OBX qui porte
 la demande de traitement sur le document. Dans ce cas il est requis et
 conditionnel (sa valeur dépend de la demande exprimée : envoi de la
 demande de traitement sur le DMP et/ou envoi vers un ou des
-destinataire(s) via MSSanté).
+destinataire(s) via MSSanté)._
 
 Le message MDM ne peut transmettre qu'un seul document médical au format
 CDAr2.
 
 Les contraintes apportées par ce volet sur les données du message MDM
-sont décrites à la section 12.2.
+sont décrites à la section 12.2 [LIEN].
 
 ###### Description fonctionnelle du message MDM
 
-  -----------------------------------------------------------------------
-  **Structure du message MDM_T02**
-  -----------------------------------------------------------------------
-  ![](./images/media/image24.png){width="6.671649168853893in"
-  height="3.4768482064741906in"}
+<div class="figure">
+    <img src="fig18.png" alt="Figure 18" title="Figure 18 : Structure fonctionnelle du message MDM" style="width:100%;">
+    <figcaption>Figure 18 : Structure fonctionnelle du message MDM</figcaption>
+</div>
+<br>
 
-  **Légende**
-
-  ![](./images/media/image25.png){width="4.69375in"
-  height="0.9944444444444445in"}
-  -----------------------------------------------------------------------
-
-Figure 18 : Structure fonctionnelle du message MDM
 
 Les groupes de segments en rouge sur le schéma représentent les éléments
 spécifiques à ce volet :
@@ -563,12 +820,7 @@ spécifiques à ce volet :
 -   Les groupes OBXNTE suivants (répétables) véhiculent les métadonnées
     spécifiques à la publication sur le DMP et à l'envoi par la MSSanté.
 
-> Dans le message MDM, le document est accompagné de quelques
-> métadonnées à renseigner au niveau du segment TXA. Il s'agit à minima
-> du type de document (TXA-2), de la présentation du contenu du document
-> (TXA-3), de l'identifiant unique du document (TXA-12), de
-> l'identifiant unique du document remplacé (TXA-13) lorsque l'évènement
-> est à T10 et du statut indiquant la complétude du document (TXA-17).
+Dans le message MDM, le document est accompagné de quelques métadonnées à renseigner au niveau du segment TXA. Il s'agit à minima du type de document (TXA-2), de la présentation du contenu du document (TXA-3), de l'identifiant unique du document (TXA-12), de l'identifiant unique du document remplacé (TXA-13) lorsque l'évènement est à T10 et du statut indiquant la complétude du document (TXA-17).
 
 #### Contraintes appliquées aux messages MDM et ORU dans le contexte de ce volet
 
@@ -582,74 +834,234 @@ tableaux indiquent les valeurs fixes à insérer dans le champ du message.
 Les éléments de contrôle du message HL7 sont portés par le segment
 d'entête MSH. Le tableau ci-dessous liste les champs à renseigner pour
 le segment MSH :
-
-+-----------+-------------------------+----------+--------------------+
-| Champ     | Contenu                 | Type     | Caractère          |
-|           |                         | donnée   | opt                |
-|           |                         |          | ionnel/obligatoire |
-+===========+=========================+==========+====================+
-| MSH-1     | \| séparateur de champ  | ST       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-2     | \^\~\\& : séparateur de | ST       | R                  |
-|           | composant, répétition,  |          |                    |
-|           | caractère               |          |                    |
-|           | d'échappement,          |          |                    |
-|           | séparateur de           |          |                    |
-|           | sous-composants         |          |                    |
-+-----------+-------------------------+----------+--------------------+
-| MSH-3     | Application émettrice   | HD       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-4     | Organisation émettrice  | HD       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-5     | Application réceptrice  | HD       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-6     | Organisation réceptrice | HD       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-7     | Date/time du message    | TS       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-9     | Type du message\        | MSG      | R                  |
-|           | ORU\^R01\^ORU_R01\      |          |                    |
-|           | MDM\^T02\^MDM_T02\      |          |                    |
-|           | MDM\^T10\^MDM_T10\      |          |                    |
-|           | MDM\^T04\^MDM_T04       |          |                    |
-+-----------+-------------------------+----------+--------------------+
-| MSH-10    | Identifiant du message  | ST       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-11    | Processing Id\          | PT       | R                  |
-|           | P : en production\      |          |                    |
-|           | T : message de test\    |          |                    |
-|           | D : environnement de    |          |                    |
-|           | debug                   |          |                    |
-+-----------+-------------------------+----------+--------------------+
-| MSH-12    | Version du standard\    | VID      | R                  |
-|           | 2.5 pour ORU\           |          |                    |
-|           | 2.6 pour MDM            |          |                    |
-+-----------+-------------------------+----------+--------------------+
-| MSH-17    | FRA                     | ID       | R                  |
-+-----------+-------------------------+----------+--------------------+
-| MSH-18    | Jeux de caractères,     | ID       | R                  |
-|           | valeurs possibles :     |          |                    |
-|           |                         |          |                    |
-|           | UNICODE UTF-8 ou        |          |                    |
-|           | 8859/15                 |          |                    |
-+-----------+-------------------------+----------+--------------------+
-| MSH-21    | Identifiant du profil   | EI       | R                  |
-|           | de message              |          |                    |
-|           |                         |          |                    |
-|           | MSH-21.1 : Entity       |          |                    |
-|           | Identifier (2.1)        |          |                    |
-|           |                         |          |                    |
-|           | MSH-21.2 : Namespace Id |          |                    |
-|           |                         |          |                    |
-|           | CISIS_CDA_HL7_V2        |          |                    |
-+-----------+-------------------------+----------+--------------------+
+<table>
+<tbody>
+<tr>
+<td width="94">
+<p>Champ</p>
+</td>
+<td width="196">
+<p>Contenu</p>
+</td>
+<td width="87">
+<p>Type donn&eacute;e</p>
+</td>
+<td width="161">
+<p>Caract&egrave;re optionnel/obligatoire</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-1</p>
+</td>
+<td width="196">
+<p>| s&eacute;parateur de champ</p>
+</td>
+<td width="87">
+<p>ST</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-2</p>
+</td>
+<td width="196">
+<p>^~\&amp;&nbsp;: s&eacute;parateur de composant, r&eacute;p&eacute;tition, caract&egrave;re d&rsquo;&eacute;chappement, s&eacute;parateur de sous-composants</p>
+</td>
+<td width="87">
+<p>ST</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-3</p>
+</td>
+<td width="196">
+<p>Application &eacute;mettrice</p>
+</td>
+<td width="87">
+<p>HD</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-4</p>
+</td>
+<td width="196">
+<p>Organisation &eacute;mettrice</p>
+</td>
+<td width="87">
+<p>HD</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-5</p>
+</td>
+<td width="196">
+<p>Application r&eacute;ceptrice</p>
+</td>
+<td width="87">
+<p>HD</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-6</p>
+</td>
+<td width="196">
+<p>Organisation r&eacute;ceptrice</p>
+</td>
+<td width="87">
+<p>HD</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-7</p>
+</td>
+<td width="196">
+<p>Date/time du message</p>
+</td>
+<td width="87">
+<p>TS</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-9</p>
+</td>
+<td width="196">
+<p>Type du message<br /> ORU^R01^ORU_R01<br /> MDM^T02^MDM_T02<br /> MDM^T10^MDM_T10<br /> MDM^T04^MDM_T04</p>
+</td>
+<td width="87">
+<p>MSG</p>
+</td>
+<td width="161">
+<p>R</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-10</p>
+</td>
+<td width="196">
+<p>Identifiant du message</p>
+</td>
+<td width="87">
+<p>ST</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-11</p>
+</td>
+<td width="196">
+<p>Processing Id<br /> P&nbsp;: en production<br /> T&nbsp;: message de test<br /> D&nbsp;: environnement de debug</p>
+</td>
+<td width="87">
+<p>PT</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-12</p>
+</td>
+<td width="196">
+<p>Version du standard<br /> 2.5 pour ORU<br /> 2.6 pour MDM</p>
+</td>
+<td width="87">
+<p>VID</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-17</p>
+</td>
+<td width="196">
+<p>FRA</p>
+</td>
+<td width="87">
+<p>ID</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-18</p>
+</td>
+<td width="196">
+<p>Jeux de caract&egrave;res, valeurs possibles&nbsp;:</p>
+<p>UNICODE UTF-8 ou 8859/15 <br /> </p>
+</td>
+<td width="87">
+<p>ID</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>MSH-21</p>
+</td>
+<td width="196">
+<p>Identifiant du profil de message</p>
+<p>MSH-21.1&nbsp;: Entity Identifier (2.1)</p>
+<p>MSH-21.2&nbsp;: Namespace Id</p>
+<p>CISIS_CDA_HL7_V2</p>
+</td>
+<td width="87">
+<p>EI</p>
+</td>
+<td width="161">
+<p>R</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ###### Exemples
 
 Entête MSH d'un message MDM ou ORU émis par le CREATEUR :
 
-MSH\|\^\~\\&\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2
+`MSH\|\^\~\\&\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
+CISIS_CDA_HL7_V2`
 
 ##### Les données concernant le patient et la venue du patient
 
@@ -659,56 +1071,158 @@ PID. Le segment PV1, requis, représente la venue courante du patient.
 
 Ces deux segments doivent être renseignés conformément à la
 spécification « PAM -- National extension France » version 2.11 publiée
-en 2024^\[18\]^. Si l'INS est véhiculé, le segment PID doit suivre les
+en 2024^\[18\]^ [LIEN]. Si l'INS est véhiculé, le segment PID doit suivre les
 contraintes décrites dans l'annexe CI-SIS « Prise en charge de
 l'identifiant National de Santé (INS) dans les standards
-d'interopérabilité et les volets du CI-SIS » ^\[10\]^.
+d'interopérabilité et les volets du CI-SIS » ^\[10\]^ [LIEN].
 
 Pour le segment PID, ce volet ajoute une contrainte particulière sur le
 PID-18 par rapport à PAM.FR. Il doit être renseigné si connu afin de
 pouvoir calculer des indicateurs, dans le contexte de l'alimentation du
 DMP.
+<table width="699">
+<tbody>
+<tr>
+<td width="113">
+<p>Champ</p>
+</td>
+<td width="265">
+<p>Contenu</p>
+</td>
+<td width="76">
+<p>Type donn&eacute;e</p>
+</td>
+<td width="246">
+<p>Caract&egrave;re optionnel/obligatoire</p>
+</td>
+</tr>
+<tr>
+<td width="113">
+<p>PID-3</p>
+</td>
+<td width="265">
+<p>Identifiants du patient</p>
+</td>
+<td width="76">
+<p>CX</p>
+</td>
+<td width="246">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="113">
+<p>PID-5</p>
+</td>
+<td width="265">
+<p>Nom du patient</p>
+</td>
+<td width="76">
+<p>XPN</p>
+</td>
+<td width="246">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="113">
+<p>PID-18 (<em>Note 1</em>)</p>
+</td>
+<td width="265">
+<p>N&deg; de dossier administratif</p>
+</td>
+<td width="76">
+<p>CX</p>
+</td>
+<td width="246">
+<p>RE</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-  ------------------------------------------------------------------------
-  Champ       Contenu                    Type     Caractère
-                                         donnée   optionnel/obligatoire
-  ----------- -------------------------- -------- ------------------------
-  PID-3       Identifiants du patient    CX       R
-
-  PID-5       Nom du patient             XPN      R
-
-  PID-18      N° de dossier              CX       RE
-  (*Note 1*)  administratif                       
-  ------------------------------------------------------------------------
-
-Le PID-3 doit être identique aux identifiants de patient portés par le
-document CDA (recordTarget/patientRole/id).
+Le PID-3 doit être identique aux identifiants de patient portés par le document CDA (recordTarget/patientRole/id).
 
 Pour le segment PV1, ce volet ajoute les contraintes suivantes :
 
-  ----------------------------------------------------------------------------
-  Champ          Contenu                    Type       Caractère
-                                            donnée     optionnel/obligatoire
-  -------------- -------------------------- ---------- -----------------------
-  PV1-2          Classe du patient          IS         R
+<table width="699">
+<tbody>
+<tr>
+<td width="113">
+<p>Champ</p>
+</td>
+<td width="265">
+<p>Contenu</p>
+</td>
+<td width="104">
+<p>Type donn&eacute;e</p>
+</td>
+<td width="217">
+<p>Caract&egrave;re optionnel/obligatoire</p>
+</td>
+</tr>
+<tr>
+<td width="113">
+<p>PV1-2</p>
+</td>
+<td width="265">
+<p>Classe du patient&nbsp;</p>
+</td>
+<td width="104">
+<p>IS</p>
+</td>
+<td width="217">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="113">
+<p>PV1-19 <em>(Note 1</em>) et (<em>Note 2</em>)</p>
+</td>
+<td width="265">
+<p>Identifiant de la venue</p>
+</td>
+<td width="104">
+<p>CX</p>
+</td>
+<td width="217">
+<p>&nbsp;C (Note 2)</p>
+</td>
+</tr>
+<tr>
+<td width="113">
+<p>PV1-44 (<em>Note 1</em>)</p>
+</td>
+<td width="265">
+<p>Date d&rsquo;entr&eacute;e du patient</p>
+</td>
+<td width="104">
+<p>TS</p>
+</td>
+<td width="217">
+<p>RE</p>
+</td>
+</tr>
+<tr>
+<td width="113">
+<p>PV1-45(<em>Note 1</em>)</p>
+</td>
+<td width="265">
+<p>Date de sortie du patient</p>
+</td>
+<td width="104">
+<p>TS</p>
+</td>
+<td width="217">
+<p>RE</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-  PV1-19 *(Note  Identifiant de la venue    CX         C (Note 2)
-  1*) et (*Note                                        
-  2*)                                                  
+*Note 1* : _A noter que ces champs sont à renseigner, s'ils sont connus, par l'acteur CREATEUR afin de pouvoir calculer des indicateurs._
 
-  PV1-44 (*Note  Date d'entrée du patient   TS         RE
-  1*)                                                  
-
-  PV1-45(*Note   Date de sortie du patient  TS         RE
-  1*)                                                  
-  ----------------------------------------------------------------------------
-
-*Note 1* : A noter que ces champs sont à renseigner, s'ils sont connus,
-par l'acteur CREATEUR afin de pouvoir calculer des indicateurs.
-
-*Note 2* : Le champ PV1-19 est requis lorsque le PV1-2 prend la valeur
-E, I, O ou R. Si PV1-2 prend la valeur N alors PV1-19 est requis si
-connu.
+*Note 2* : _Le champ PV1-19 est requis lorsque le PV1-2 prend la valeur E, I, O ou R. Si PV1-2 prend la valeur N alors PV1-19 est requis si connu._
 
 ##### Les métadonnées du document \[Uniquement pour le message MDM\]
 
@@ -716,72 +1230,127 @@ Le message MDM requiert l'utilisation du segment TXA qui porte les
 métadonnées associées au document contenu dans le message. Les
 contraintes apportées par ce volet sur le segment TXA sont les
 suivantes :
+<table width="699">
+<tbody>
+<tr>
+<td width="94">
+<p>Champ</p>
+</td>
+<td width="350">
+<p>Contenu</p>
+</td>
+<td width="76">
+<p>Type donn&eacute;e</p>
+</td>
+<td width="180">
+<p>Caract&egrave;re optionnel/obligatoire</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>TXA-1</p>
+</td>
+<td width="350">
+<p>Set-ID TXA. Valeur = 1</p>
+</td>
+<td width="76">
+<p>SI</p>
+</td>
+<td width="180">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>TXA-2</p>
+</td>
+<td width="350">
+<p>Type de document dont les valeurs sont &agrave; prendre dans</p>
+<p>le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Sant&eacute; (NOS).</p>
+<p>Par ex&nbsp;: 11502-2</p>
+</td>
+<td width="76">
+<p>IS</p>
+</td>
+<td width="180">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>TXA-3</p>
+</td>
+<td width="350">
+<p>Document Content Presentation</p>
+<p>TEXT</p>
+</td>
+<td width="76">
+<p>ID</p>
+</td>
+<td width="180">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>TXA-12 <em>(Note 1)</em></p>
+</td>
+<td width="350">
+<p>Unique document number</p>
+<p>Si ClinicalDocument/id@extension est renseign&eacute; :</p>
+<p>&nbsp;ex&nbsp;: 58132^^1.2.250.2345.3245.13^ISO</p>
+<p>Si ClinicalDocument/id@extension n&rsquo;est pas renseign&eacute; :</p>
+<p>&nbsp;ex&nbsp;: 1.2.250.2345.3245.13.58132</p>
+</td>
+<td width="76">
+<p>EI</p>
+</td>
+<td width="180">
+<p>R</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>TXA-13 <em>(Note 1)</em></p>
+</td>
+<td width="350">
+<p>Parent document number</p>
+<p>Si ClinicalDocument/id@extension est renseign&eacute; :</p>
+<p>&nbsp;ex&nbsp;: 58131^^1.2.250.2345.3245.13^ISO</p>
+<p>Si ClinicalDocument/id@extension n&rsquo;est pas renseign&eacute; :</p>
+<p>&nbsp;ex&nbsp;: 1.2.250.2345.3245.13.58131</p>
+</td>
+<td width="76">
+<p>EI</p>
+</td>
+<td width="180">
+<p>C Requis dans le cas d&rsquo;une demande de remplacement</p>
+</td>
+</tr>
+<tr>
+<td width="94">
+<p>TXA-17</p>
+</td>
+<td width="350">
+<p>Document completion status dont la valeur est &agrave; prendre dans la table HL7 0271</p>
+<p>AU</p>
+</td>
+<td width="76">
+<p>ID</p>
+</td>
+<td width="180">
+<p>R</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-+--------+-----------------------------------+------+-----------------+
-| Champ  | Contenu                           | Type | Caractère       |
-|        |                                   | do   | option          |
-|        |                                   | nnée | nel/obligatoire |
-+========+===================================+======+=================+
-| TXA-1  | Set-ID TXA. Valeur = 1            | SI   | R               |
-+--------+-----------------------------------+------+-----------------+
-| TXA-2  | Type de document dont les valeurs | IS   | R               |
-|        | sont à prendre dans               |      |                 |
-|        |                                   |      |                 |
-|        | le                                |      |                 |
-|        | [JDV_J07-XdsType                  |      |                 |
-|        | Code-CISIS](https://mos.esante.go |      |                 |
-|        | uv.fr/NOS/JDV_J07-XdsTypeCode-CIS |      |                 |
-|        | IS/JDV_J07-XdsTypeCode-CISIS.pdf) |      |                 |
-|        | de la Nomenclature des Objets de  |      |                 |
-|        | Santé (NOS).                      |      |                 |
-|        |                                   |      |                 |
-|        | Par ex : 11502-2                  |      |                 |
-+--------+-----------------------------------+------+-----------------+
-| TXA-3  | Document Content Presentation     | ID   | R               |
-|        |                                   |      |                 |
-|        | TEXT                              |      |                 |
-+--------+-----------------------------------+------+-----------------+
-| TXA-12 | Unique document number            | EI   | R               |
-| *(Note |                                   |      |                 |
-| 1)*    | Si ClinicalDocument/id@extension  |      |                 |
-|        | est renseigné :                   |      |                 |
-|        |                                   |      |                 |
-|        | > ex :                            |      |                 |
-|        | > 5                               |      |                 |
-|        | 8132\^\^1.2.250.2345.3245.13\^ISO |      |                 |
-|        |                                   |      |                 |
-|        | Si ClinicalDocument/id@extension  |      |                 |
-|        | n'est pas renseigné :             |      |                 |
-|        |                                   |      |                 |
-|        | > ex : 1.2.250.2345.3245.13.58132 |      |                 |
-+--------+-----------------------------------+------+-----------------+
-| TXA-13 | Parent document number            | EI   | C Requis dans   |
-| *(Note |                                   |      | le cas d'une    |
-| 1)*    | Si ClinicalDocument/id@extension  |      | demande de      |
-|        | est renseigné :                   |      | remplacement    |
-|        |                                   |      |                 |
-|        | > ex :                            |      |                 |
-|        | > 5                               |      |                 |
-|        | 8131\^\^1.2.250.2345.3245.13\^ISO |      |                 |
-|        |                                   |      |                 |
-|        | Si ClinicalDocument/id@extension  |      |                 |
-|        | n'est pas renseigné :             |      |                 |
-|        |                                   |      |                 |
-|        | > ex : 1.2.250.2345.3245.13.58131 |      |                 |
-+--------+-----------------------------------+------+-----------------+
-| TXA-17 | Document completion status dont   | ID   | R               |
-|        | la valeur est à prendre dans la   |      |                 |
-|        | table HL7 0271                    |      |                 |
-|        |                                   |      |                 |
-|        | AU                                |      |                 |
-+--------+-----------------------------------+------+-----------------+
-
-*(Note 1)* : conformément au volet de *Structuration minimale des
+*(Note 1)* : _conformément au volet de *Structuration minimale des
 documents de santé*, l'identifiant du document au sein du document CDA
 s'exprime soit par un OID complet identifiant complètement l'instance du
 document (sans extension), soit par une racine d'OID commune à toutes
 les instances de documents de l'émetteur associée à une extension propre
-à l'instance du document.
+à l'instance du document._
 
 La règle de peuplement des sous champs des champs TXA-12 et TXA-13 est
 la suivante :
@@ -806,36 +1375,59 @@ la suivante :
 
     -   TXA-12.4 \< = Non renseigné
 
-***[Point d'attention]{.underline}*** : La version actuelle du DMP ne
-supporte pas le format OID\^Extension.
+***[Point d'attention]{.underline}*** : 
+
+<blockquote class="stu-note">
+    <p>
+    <b>Point d'attention</b> La version actuelle du DMP ne supporte pas le format OID\^Extension.
+    </p>
+</blockquote>
 
 ##### Le segment ORC
-
-+---------------------+------------------+-----------------------------+
-| **Composition du    |                  |                             |
-| segment ORC :       |                  |                             |
-| Usage = Required /  |                  |                             |
-| Cardinalité =       |                  |                             |
-| \[1..1\]**          |                  |                             |
-+=====================+==================+=============================+
-| **Elément           | *                | **Valeur :**                |
-| requis :**          | *Description :** |                             |
-+---------------------+------------------+-----------------------------+
-| **Segment ORC**     | **Common Order** |                             |
-+---------------------+------------------+-----------------------------+
-| ORC-1               | Order control    | NW (New order/service dans  |
-|                     |                  | le cas d'une demande        |
-|                     |                  | d'intégration de            |
-|                     |                  | document(s)                 |
-|                     |                  |                             |
-|                     |                  | RO (Replace order) dans le  |
-|                     |                  | cas d'une demande de        |
-|                     |                  | remplacement                |
-|                     |                  |                             |
-|                     |                  | CA (Canceled) dans le cas   |
-|                     |                  | d'une demande de            |
-|                     |                  | suppression                 |
-+---------------------+------------------+-----------------------------+
+<table width="652">
+<tbody>
+<tr>
+<td colspan="3" width="652">
+<p><strong>Composition du segment ORC&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
+</td>
+<td width="177">
+<p><strong>Description&nbsp;: </strong></p>
+</td>
+<td width="274">
+<p><strong>Valeur&nbsp;: </strong></p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p><strong>Segment ORC</strong></p>
+</td>
+<td width="177">
+<p><strong>Common Order</strong></p>
+</td>
+<td width="274">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p>ORC-1</p>
+</td>
+<td width="177">
+<p>Order control</p>
+</td>
+<td width="274">
+<p>NW (New order/service dans le cas d&rsquo;une demande d&rsquo;int&eacute;gration de document(s)</p>
+<p>RO (Replace order) dans le cas d&rsquo;une demande de remplacement</p>
+<p>CA (Canceled) dans le cas d&rsquo;une demande de suppression</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 La valeur du champ ORC-1 doit être cohérente avec la valeur du champ
 OBX-11 et dans le cas du message MDM avec l'évènement déclenchant (T02,
@@ -843,50 +1435,79 @@ T04 ou T10). En cas d'incohérence entre ces champs, le message HL7 sera
 rejeté par la PFI.
 
 ##### Le segment OBR
-
-+---------------------+------------------+-----------------------------+
-| **Composition du    |                  |                             |
-| segment OBR :       |                  |                             |
-| Usage = Required /  |                  |                             |
-| Cardinalité =       |                  |                             |
-| \[1..1\]**          |                  |                             |
-+=====================+==================+=============================+
-| **Elément           | *                | **Valeur :**                |
-| requis :**          | *Description :** |                             |
-+---------------------+------------------+-----------------------------+
-| **Segment OBR**     | **Observation    |                             |
-|                     | Request**        |                             |
-+---------------------+------------------+-----------------------------+
-| OBR-4               | Universal        |                             |
-|                     | Service          |                             |
-|                     | Identifier       |                             |
-+---------------------+------------------+-----------------------------+
-| \>OBR-4.1           | Code du document | Utiliser le                 |
-|                     |                  | [JDV_J0                     |
-|                     |                  | 7-XdsTypeCode-CISIS](https: |
-|                     |                  | //mos.esante.gouv.fr/NOS/JD |
-|                     |                  | V_J07-XdsTypeCode-CISIS/JDV |
-|                     |                  | _J07-XdsTypeCode-CISIS.pdf) |
-|                     |                  | de la Nomenclature des      |
-|                     |                  | Objets de Santé (NOS).      |
-|                     |                  |                             |
-|                     |                  | A noter qu'en cas d'envoi   |
-|                     |                  | au DMP, le Gestionnaire     |
-|                     |                  | doit contrôler que le type  |
-|                     |                  | de document appartient au   |
-|                     |                  | jeu de valeur défini par le |
-|                     |                  | DMP                         |
-|                     |                  | ([JDV_J66-TypeCode-DMP](h   |
-|                     |                  | ttps://mos.esante.gouv.fr/N |
-|                     |                  | OS/JDV_J66-TypeCode-DMP/)). |
-+---------------------+------------------+-----------------------------+
-| \>OBR-4.2           | Libellé du       |                             |
-|                     | document         |                             |
-+---------------------+------------------+-----------------------------+
-| \>OBR-4.3           | Système de       | LN ou TRE_A05 en fonction   |
-|                     | codage dont est  | de l'appartenance du code à |
-|                     | issu le code     | l'un des systèmes de codage |
-+---------------------+------------------+-----------------------------+
+<table width="652">
+<tbody>
+<tr>
+<td colspan="3" width="652">
+<p><strong>Composition du segment OBR&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
+</td>
+<td width="177">
+<p><strong>Description&nbsp;: </strong></p>
+</td>
+<td width="274">
+<p><strong>Valeur&nbsp;: </strong></p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p><strong>Segment OBR</strong></p>
+</td>
+<td width="177">
+<p><strong>Observation Request</strong></p>
+</td>
+<td width="274">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p>OBR-4</p>
+</td>
+<td width="177">
+<p>Universal Service Identifier</p>
+</td>
+<td width="274">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p>&gt;OBR-4.1</p>
+</td>
+<td width="177">
+<p>Code du document</p>
+</td>
+<td rowspan="2" width="274">
+<p>Utiliser le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Sant&eacute; (NOS).</p>
+<p>A noter qu&rsquo;en cas d&rsquo;envoi au DMP, le Gestionnaire doit contr&ocirc;ler que le type de document appartient au jeu de valeur d&eacute;fini par le DMP (<a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a>).</p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p>&gt;OBR-4.2</p>
+</td>
+<td width="177">
+<p>Libell&eacute; du document</p>
+</td>
+</tr>
+<tr>
+<td width="201">
+<p>&gt;OBR-4.3</p>
+</td>
+<td width="177">
+<p>Syst&egrave;me de codage dont est issu le code</p>
+</td>
+<td width="274">
+<p>LN ou TRE_A05 en fonction de l&rsquo;appartenance du code &agrave; l&rsquo;un des syst&egrave;mes de codage</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ##### Les données concernant la demande de traitement sur le(s) document(s)
 
@@ -934,331 +1555,1647 @@ l'expéditeur du message prend la responsabilité de la cohérence des
 données entre le message et le(s) document(s) et le récepteur n'a pas
 l'obligation de gérer le contenu de ces champs ou segments.
 
-+---------------------+------------------+-----------------------------+
-| **Composition du    |                  |                             |
-| groupe              |                  |                             |
-| O                   |                  |                             |
-| BSERVATION/OBXNTE : |                  |                             |
-| Usage = Required /  |                  |                             |
-| Cardinalité =       |                  |                             |
-| \[1..1\]**          |                  |                             |
-+=====================+==================+=============================+
-| **Elément           | *                | **Valeur :**                |
-| requis :**          | *Description :** |                             |
-+---------------------+------------------+-----------------------------+
-| **Segment OBX       | **Obse           | Contient un document au     |
-| (Requis)**          | rvation/Result** | format CDA-R2               |
-+---------------------+------------------+-----------------------------+
-| OBX-1               | Set Id - Obx     | Numéro de séquence du       |
-|                     |                  | segment                     |
-+---------------------+------------------+-----------------------------+
-| OBX-2               | Value Type       | ED (Encapsuled Data)        |
-+---------------------+------------------+-----------------------------+
-| OBX-3 = OBR-4       | Observation      |                             |
-|                     | Identifier       |                             |
-+---------------------+------------------+-----------------------------+
-| \> OBX-3.1 :        | Code du Document | Utiliser le                 |
-|                     |                  | [JDV_J0                     |
-|                     |                  | 7-XdsTypeCode-CISIS](https: |
-|                     |                  | //mos.esante.gouv.fr/NOS/JD |
-|                     |                  | V_J07-XdsTypeCode-CISIS/JDV |
-|                     |                  | _J07-XdsTypeCode-CISIS.pdf) |
-|                     |                  | de la Nomenclature des      |
-|                     |                  | Objets de Santé (NOS).      |
-|                     |                  |                             |
-|                     |                  | A noter qu'en cas d'envoi   |
-|                     |                  | au DMP, le Gestionnaire     |
-|                     |                  | doit contrôler que le type  |
-|                     |                  | de document appartient au   |
-|                     |                  | jeu de valeur défini par le |
-|                     |                  | DMP                         |
-|                     |                  | ([JDV_J66-TypeCode-DMP](h   |
-|                     |                  | ttps://mos.esante.gouv.fr/N |
-|                     |                  | OS/JDV_J66-TypeCode-DMP/)). |
-+---------------------+------------------+-----------------------------+
-| \> OBX-3.2 :        | Libellé du       |                             |
-|                     | Document         |                             |
-+---------------------+------------------+-----------------------------+
-| \>OBX-3.3           | Système de       | LN ou TRE_A05 en fonction   |
-|                     | codage dont est  | de l'appartenance du code à |
-|                     | issu le code     | l'un de ces systèmes de     |
-|                     |                  | codage.                     |
-+---------------------+------------------+-----------------------------+
-| OBX-5               | Observation      |                             |
-|                     | Value            |                             |
-+---------------------+------------------+-----------------------------+
-| \> OBX-5.1          | Source           |                             |
-|                     | Application      |                             |
-+---------------------+------------------+-----------------------------+
-| \> OBX-5.2          | Type             | Pour le message ORU : TEXT  |
-|                     |                  | (Machine readable text      |
-|                     |                  | document)                   |
-|                     |                  |                             |
-|                     |                  | Pour le message MDM : text  |
-|                     |                  | (Text data)                 |
-+---------------------+------------------+-----------------------------+
-| \> OBX-5.3          | Data Subtype     | XML                         |
-+---------------------+------------------+-----------------------------+
-| \> OBX-5.4          | Encoding         | Base64                      |
-+---------------------+------------------+-----------------------------+
-| \> OBX-5.5          | Data             | Intégrer le document CDA-R2 |
-+---------------------+------------------+-----------------------------+
-| OBX-11              | Observation      | Statut du document pris     |
-|                     | Result Status    | dans la table HL7 0085      |
-|                     |                  | (Observation Result Status  |
-|                     |                  | Codes Interpretation) :     |
-|                     |                  |                             |
-|                     |                  | -   F : Document validé     |
-|                     |                  |                             |
-|                     |                  | -   D : Document à          |
-|                     |                  |     supprimer               |
-|                     |                  |                             |
-|                     |                  | -   C : Remplacement du     |
-|                     |                  |     Document                |
-+---------------------+------------------+-----------------------------+
-| **Segment PRT       | Participation    | **Ce segment est requis, en |
-| (Conditionnel)**    | Information\     | particulier dans le cas     |
-|                     | Expéditeur       | d'une publication du        |
-|                     |                  | document sur le DMP,** pour |
-|                     |                  | permettre à la PFI de       |
-|                     |                  | générer le VIHF ainsi que   |
-|                     |                  | l'auteur du lot de          |
-|                     |                  | soumission.[^2]             |
-|                     |                  |                             |
-|                     |                  | Ce segment contient les     |
-|                     |                  | informations de             |
-|                     |                  | l'expéditeur à l'origine de |
-|                     |                  | la demande de traitement    |
-|                     |                  | sur le document et de la    |
-|                     |                  | structure à laquelle il est |
-|                     |                  | rattaché.                   |
-+---------------------+------------------+-----------------------------+
-| PRT-2               | Action Code      | UC (Unchanged)              |
-+---------------------+------------------+-----------------------------+
-| PRT-4               | Participation    | SB\^Send by\^participation  |
-+---------------------+------------------+-----------------------------+
-| PRT-5               | Participation    | Ce champ est requis si      |
-| (conditionnel)      | Person           | l'expéditeur est un         |
-|                     |                  | professionnel de santé      |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.1          | Person           | Identifiant du              |
-|                     | Identifier       | professionnel de santé qui  |
-|                     |                  | fait la demande de          |
-|                     |                  | traitement sur le(s)        |
-|                     |                  | document(s)                 |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.2          | Family Name      | Nom d'exercice du PS        |
-|                     |                  | expéditeur                  |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.3          | Given Name       | Prénom d'exercice du PS     |
-|                     |                  | expéditeur                  |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.9          | Assigning        | Autorité d'affectation de   |
-|                     | Authority        | l'identifiant du PS (OID de |
-|                     |                  | gestion de personnes) :     |
-|                     |                  | 1.2.250.1.71.4.2.1          |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.13         | Identifier Type  | Type d'identifiant du       |
-|                     | Code             | professionnel de santé      |
-|                     |                  | (valeur issue de la [Table  |
-|                     |                  | 0203 --                     |
-|                     |                  | Interop'Santé](http://www   |
-|                     |                  | .interopsante.org/offres/do |
-|                     |                  | c_inline_src/412/IHE_France |
-|                     |                  | _Constraints_on_HL7_data_ty |
-|                     |                  | pes_for_ITI_v.1.7.3.pdf)) : |
-|                     |                  | RPPS                        |
-+---------------------+------------------+-----------------------------+
-| PRT-8               | Participation    | Décrit l'organisation       |
-|                     | Organization     | rattachée au professionnel  |
-|                     |                  | de santé ou au système à    |
-|                     |                  | l\'origine de la demande de |
-|                     |                  | traitement sur le(s)        |
-|                     |                  | document(s)                 |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.1          | OrganizationName | Nom de l'organisation       |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.6          | Assigning        | Autorité d'affectation de   |
-|                     | Authority        | l'identifiant de            |
-|                     |                  | l'organisation dont dépend  |
-|                     |                  | le PS ou le système à       |
-|                     |                  | l'origine de la demande de  |
-|                     |                  | traitement sur le(s)        |
-|                     |                  | document(s).                |
-|                     |                  |                             |
-|                     |                  | 1.2.250.1.71.4.2.2 (OID de  |
-|                     |                  | gestion des structures pour |
-|                     |                  | un PS dans un établissement |
-|                     |                  | de santé).                  |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.7          | Identifier Type  | Type d'identifiant de       |
-|                     | Code             | l'organisation (valeur      |
-|                     |                  | issue de la [Table 0203 --  |
-|                     |                  | Interop'Santé](http://www   |
-|                     |                  | .interopsante.org/offres/do |
-|                     |                  | c_inline_src/412/IHE_France |
-|                     |                  | _Constraints_on_HL7_data_ty |
-|                     |                  | pes_for_ITI_v.1.7.3.pdf)) : |
-|                     |                  | FINEJ (FINESS d'entité      |
-|                     |                  | juridique) ou FINEG (FINESS |
-|                     |                  | d'entité géographique).     |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.10         | Organization     | Identifiant de              |
-|                     | number           | l'organisation à l'origine  |
-|                     |                  | de la demande de traitement |
-|                     |                  | sur le(s) document(s)       |
-+---------------------+------------------+-----------------------------+
-| PRT-10              | Participation    | Ce champ est requis si      |
-| (conditionnel)      | Device           | l'auteur est un dispositif. |
-+---------------------+------------------+-----------------------------+
-| \> PRT-10.1         | Entity           | Identifiant du dispositif   |
-|                     | Identifier       | expéditeur du document      |
-+---------------------+------------------+-----------------------------+
-| **Segment PRT       | Participation    | Ce segment est répétable et |
-| (conditionnel)**    | Information      | **requis si le document est |
-|                     | destinataire(s)  | échangé via MSSanté**.      |
-|                     |                  |                             |
-|                     |                  | Il contient l'adresse       |
-|                     |                  | MSSanté d'un destinataire.  |
-|                     |                  |                             |
-|                     |                  | Ce segment est répétable.   |
-+---------------------+------------------+-----------------------------+
-| PRT-2               | Action Code      | UC (Unchanged)              |
-+---------------------+------------------+-----------------------------+
-| PRT-4               | Participation    | RCT\^Result Copies          |
-|                     |                  | To\^participation           |
-+---------------------+------------------+-----------------------------+
-| PRT-5               | Participation    | Ce champ est requis si le   |
-| (conditionnel)      | Person           | destinataire est un         |
-|                     |                  | professionnel de santé ou   |
-|                     |                  | un patient.                 |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.1          | Person           | Identifiant du              |
-|                     | Identifier       | professionnel de santé      |
-|                     |                  | destinataire/patient        |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.2          | Family Name      | Nom d'exercice du PS        |
-|                     |                  | destinataire/nom patient    |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.3          | Given Name       | Prénom d'exercice du PS     |
-|                     |                  | destinataire/prénom patient |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.9          | Assigning        | Autorité d'affectation de   |
-|                     | Authority        | l'identifiant du PS (OID de |
-|                     |                  | gestion de personnes) :     |
-|                     |                  | 1.2.250.1.71.4.2.1 ou du    |
-|                     |                  | patient 1.2.250.1.213.1.4.8 |
-|                     |                  | (INS-NIR) ou                |
-|                     |                  | 1.2.250.1.213.1.4.9         |
-|                     |                  | (INS-NIA).                  |
-+---------------------+------------------+-----------------------------+
-| \> PRT-5.13         | Identifier Type  | Type d'identifiant (valeur  |
-|                     | Code             | issue de la [Table 0203 --  |
-|                     |                  | Interop'Santé](http://www   |
-|                     |                  | .interopsante.org/offres/do |
-|                     |                  | c_inline_src/412/IHE_France |
-|                     |                  | _Constraints_on_HL7_data_ty |
-|                     |                  | pes_for_ITI_v.1.7.3.pdf)) : |
-|                     |                  | RPPS ou INS                 |
-+---------------------+------------------+-----------------------------+
-| PRT-8               | Participation    | Ce champ est requis si le   |
-| (conditionnel)      | Organization     | destinataire est une        |
-|                     |                  | organisation                |
-|                     |                  | (établissement, service,    |
-|                     |                  | UF...).                     |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.1          | OrganizationName | Nom de l'organisation       |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.6          | Assigning        | Autorité d'affectation de   |
-|                     | Authority        | l'identifiant de            |
-|                     |                  | l'organisation destinataire |
-|                     |                  | du document.                |
-|                     |                  |                             |
-|                     |                  | 1.2.250.1.71.4.2.2 (OID de  |
-|                     |                  | gestion des structures pour |
-|                     |                  | préciser une entité         |
-|                     |                  | juridique ou une entité     |
-|                     |                  | géographique), N° FINESS ou |
-|                     |                  | N° FINEG pour identifier    |
-|                     |                  | une organisation            |
-|                     |                  | intra-établissement         |
-|                     |                  | (service, UF, pôle...).     |
-|                     |                  |                             |
-|                     |                  | Cf Contraintes sur les      |
-|                     |                  | types de données HL7 v2.5   |
-|                     |                  | applicables aux profils     |
-|                     |                  | d'intégration du cadre      |
-|                     |                  | technique IT Infrastructure |
-|                     |                  | dans le périmètre d'IHE     |
-|                     |                  | France.^\[12\]^             |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.7          | Identifier Type  | Type d'identifiant (valeur  |
-|                     | Code             | issue de la [Table 0203 --  |
-|                     |                  | Interop'Santé](http://www   |
-|                     |                  | .interopsante.org/offres/do |
-|                     |                  | c_inline_src/412/IHE_France |
-|                     |                  | _Constraints_on_HL7_data_ty |
-|                     |                  | pes_for_ITI_v.1.7.3.pdf)) : |
-|                     |                  | FINEJ (FINESS d'entité      |
-|                     |                  | juridique) ou FINEG (FINESS |
-|                     |                  | d'entité géographique) ou   |
-|                     |                  | UF (UF), SVR (service)\...  |
-+---------------------+------------------+-----------------------------+
-| \> PRT-8.10         | Organization     | Identifiant de              |
-|                     | number           | l'organisation destinataire |
-|                     |                  | du document                 |
-+---------------------+------------------+-----------------------------+
-| PRT-10              | Participation    | Ce champ est requis si le   |
-| (conditionnel)      | Device           | destinataire est une        |
-|                     |                  | application.                |
-+---------------------+------------------+-----------------------------+
-| \> PRT-10.1         | Entity           | Identifiant de              |
-|                     | Identifier       | l'application destinataire  |
-|                     |                  | du document                 |
-+---------------------+------------------+-----------------------------+
-| PRT-15              | Participant      |                             |
-|                     | T                |                             |
-|                     | elecommunication |                             |
-|                     | Address          |                             |
-+---------------------+------------------+-----------------------------+
-| \> PRT-15.3         | T                | X.400 (X.400 email address) |
-|                     | elecommunication |                             |
-|                     | Equipment Type   |                             |
-+---------------------+------------------+-----------------------------+
-| \> PRT-15.4         | Communication    | Intégrer l'adresse mail     |
-|                     | Address          | MSSanté                     |
-+---------------------+------------------+-----------------------------+
-|                     |                  |                             |
-+---------------------+------------------+-----------------------------+
-| **Segment PRT       | Participation    | Ce segment optionnel permet |
-| (segment            | Information\     | d'indiquer l'adresse mail   |
-| optionnel)**        | Adresse de       | sur laquelle le             |
-|                     | réponse          | destinataire peut répondre. |
-+---------------------+------------------+-----------------------------+
-| PRT-2               | Action Code      | UC (Unchanged)              |
-+---------------------+------------------+-----------------------------+
-| PRT-4               | Participation    | REPLY\^Reply                |
-|                     |                  | To\^participation           |
-+---------------------+------------------+-----------------------------+
-| PRT-15              | Participant      |                             |
-|                     | T                |                             |
-|                     | elecommunication |                             |
-|                     | Address          |                             |
-+---------------------+------------------+-----------------------------+
-| \> PRT-15.3         | T                | X.400 (X.400 email address) |
-|                     | elecommunication |                             |
-|                     | Equipment Type   |                             |
-+---------------------+------------------+-----------------------------+
-| \> PRT-15.4         | Communication    | Intégrer l'adresse mail de  |
-|                     | Address          | réponse                     |
-+---------------------+------------------+-----------------------------+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
+  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
+  Usage&nbsp;= <span class="SpellE">Required</span> / Cardinalité&nbsp;= [<span class="GramE">1..</span>1]<o:p></o:p></span></b></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#E5E5E5;mso-shading:windowtext;mso-pattern:gray-10 auto;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Elément requis&nbsp;:<o:p></o:p></span></b></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
+  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Description&nbsp;: <o:p></o:p></span></b></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
+  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Valeur&nbsp;: <o:p></o:p></span></b></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Segment OBX (Requis)<o:p></o:p></span></b></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Observation/<span class="SpellE">Result</span><o:p></o:p></span></b></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Contient un document au format CDA-R2<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">OBX-1<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Set Id - <span class="SpellE">Obx</span><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">Numéro
+  de séquence du segment<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:4">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">OBX-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Value Type<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">ED </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Encapsuled</span> Data)<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:5">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">OBX-3&nbsp;= OBR-4<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Observation Identifier <o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></b></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:6">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; OBX-3.1&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Code du Document<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" rowspan="2" valign="top" style="width:205.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">Utiliser le </span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt">JDV_J07-XdsTypeCode-CISIS</span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539">
+  d</span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">e la Nomenclature des Objets de Santé
+  (NOS). <o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">A noter qu’en cas d’envoi au DMP, le Gestionnaire doit contrôler que
+  le type de document appartient au jeu de valeur défini par le DMP (</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial">JDV_J66-TypeCode-DMP</span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">).</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="mso-bidi-font-size:10.0pt;
+  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><sup><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></sup></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:7">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; OBX-3.2&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Libellé du Document<o:p></o:p></span></span></span></span></span></p>
+  <span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;text-indent:35.4pt;line-height:
+  normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:
+  _Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:8">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt;OBX-3.3<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Système de codage dont est issu le code<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">LN ou TRE_A05 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">en fonction de l’appartenance du code à l’un
+  de ces systèmes de codage.</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:9">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">OBX-5&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Observation Value<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:10">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; OBX-5.1<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Source Application<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:11">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; OBX-5.2<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Type<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Pour le message ORU : </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">TEXT </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(Machine <span class="SpellE">readable</span> text document)<o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Pour le message MDM&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">text </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(Text data)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:12">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; OBX-5.3<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Data <span class="SpellE">Subtype</span><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">XML</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:13">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; OBX-5.4<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
+  color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">Encoding</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">Base64</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:14">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; OBX-5.5<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Data<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">Intégrer le document CDA-R2 <o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:15">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">OBX-11<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Observation <span class="SpellE">Result</span>
+  Status<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">Statut du document pris dans la table HL7 0085 (Observation <span class="SpellE">Result</span> Status Codes <span class="SpellE">Interpretation</span>)&nbsp;:
+  <o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:normal;mso-list:l11 level1 lfo7"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><!--[endif]--><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:#0070C0">F&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">: Document validé<o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoListParagraphCxSpMiddle" style="margin-bottom:0cm;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:normal;mso-list:l11 level1 lfo7"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><!--[endif]--><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:#0070C0">D&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">: Document à supprimer<o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;mso-add-space:
+  auto;text-indent:-18.0pt;line-height:normal;mso-list:l11 level1 lfo7"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+  mso-bidi-font-family:Symbol;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><!--[endif]--><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:#0070C0">C&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">: Remplacement du Document<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:16">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Segment PRT (Conditionnel)</span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">P<span style="mso-bidi-font-weight:bold">articipation Information<br>
+  Expéditeur<o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Ce segment est requis, en particulier
+  dans le cas d’une publication du document sur le DMP, </span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">pour permettre à la PFI de générer le VIHF ainsi
+  que l’auteur du lot de soumission.</span></span></span></span></span><a style="mso-footnote-id:ftn2" href="#_ftn2" name="_ftnref2" title=""><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="MsoFootnoteReference"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold"><span style="mso-special-character:footnote"><!--[if !supportFootnotes]--><span class="MsoFootnoteReference"><span style="font-size:9.0pt;line-height:107%;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin;color:black;mso-themecolor:text1;mso-ansi-language:FR;mso-fareast-language:
+  EN-US;mso-bidi-language:AR-SA;mso-bidi-font-weight:bold">[2]</span></span><!--[endif]--></span></span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1"><o:p></o:p></span></b></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce segment contient les informations de l’expéditeur
+  à l’origine de la demande de traitement sur le document et de la structure à
+  laquelle il est rattaché.</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:17">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
+  mso-bidi-font-weight:bold">Action Code</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">UC </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Unchanged</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:18">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-4&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Participation <o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
+  color:#0070C0;mso-bidi-font-weight:bold">SB^Send</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold"> <span class="SpellE">by^participation</span> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:19">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-5 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
+  <span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
+  Person</span></span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce champ est requis si l’expéditeur est un
+  professionnel de santé<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:20">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.1<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Person
+  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Identifiant du professionnel de santé qui fait
+  la demande de traitement sur le(s) document(s)<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:21">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.2 <span style="background:yellow;
+  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Family Name<span style="background:yellow;
+  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Nom d’exercice du PS expéditeur<span style="background:yellow;mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:22">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.3<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
+  color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">Given</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"> Name<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Prénom d’exercice du PS expéditeur<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:23">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.9<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  <span class="SpellE">Authority</span><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant du
+  PS (OID de gestion de personnes)&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">1.2.250.1.71.4.2.1</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:24">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.13<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Identifier Type Code<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Type d’identifiant du professionnel de santé
+  (valeur issue de la</span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">
+  </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
+  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">)&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">RPPS</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold"> <o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:25">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-8<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
+  <span class="SpellE">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Décrit l’organisation rattachée au
+  professionnel de santé ou au système à l'origine de la demande de traitement
+  sur le(s) document(s)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:26">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.1</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">OrganizationName</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Nom de l’organisation <o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:27">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.6<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  <span class="SpellE">Authority</span><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant de
+  l’organisation dont dépend le PS ou le système </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">à
+  l’origine de la <span style="color:black;mso-themecolor:text1">demande de traitement
+  sur le(s) document(s).<o:p></o:p></span></span></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">1.2.250.1.71.4.2.2 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">(OID de gestion des structures pour un PS
+  dans un établissement de santé).<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:28">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.7<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Identifier
+  Type Code<o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Type d’identifiant de l’organisation (valeur
+  issue de </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;mso-bidi-font-weight:bold">la </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
+  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">)&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">FINEJ </span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">(FINESS
+  d’entité juridique) <span style="color:black;mso-themecolor:text1">ou </span><span style="color:#0070C0">FINEG </span>(FINESS d’entité géographique).<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:29">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.10<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  <span class="SpellE">number</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="Default"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;font-family:
+  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+  minor-latin;color:black;mso-themecolor:text1;mso-fareast-language:EN-US;
+  mso-bidi-font-weight:bold">Identifiant de l’organisation à l’origine de la
+  demande de traitement sur le(s) document(s)</span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:30">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-10 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
+  <span class="SpellE">Device</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce champ est requis si l’auteur est un
+  dispositif.<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:31">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-10.1<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Entity</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Identifiant du dispositif expéditeur du
+  document<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:32">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Segment PRT (conditionnel)<o:p></o:p></span></b></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">P<span style="mso-bidi-font-weight:bold">articipation Information
+  destinataire(s)</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><b><span style="mso-bidi-font-size:10.0pt;color:black;
+  mso-themecolor:text1"><o:p></o:p></span></b></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce segment est répétable et </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">requis si le document est échangé via
+  MSSanté</span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">.<o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Il contient l’adresse MSSanté d’un
+  destinataire. <o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce segment est répétable.<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:33">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
+  mso-bidi-font-weight:bold">Action Code</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">UC </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Unchanged</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:34">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-4&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Participation </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:#0070C0;mso-ansi-language:EN-US;mso-bidi-font-weight:bold">RCT^Result</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;
+  mso-ansi-language:EN-US;mso-bidi-font-weight:bold"> Copies <span class="SpellE">To^participation</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;
+  mso-themecolor:text1;mso-ansi-language:EN-US"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:35">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-5 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
+  Person</span></span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce champ est requis si le destinataire est
+  un professionnel de santé ou un patient.<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:36">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.1<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Person
+  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Identifiant du professionnel de santé
+  destinataire/patient<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:37">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.2 <span style="background:yellow;
+  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Family Name<span style="background:yellow;
+  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Nom d’exercice du PS destinataire/nom
+  patient<span style="background:yellow;mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:38">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.3<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
+  color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">Given</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"> Name<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Prénom d’exercice du PS destinataire/prénom
+  patient<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:39">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.9<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  <span class="SpellE">Authority</span><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant du
+  PS (OID de gestion de personnes)&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">1.2.250.1.71.4.2.1
+  </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial">ou du patient <span style="color:#0070C0">1.2.250.1.213.1.4.8 </span>(INS-NIR)
+  ou <span style="color:#0070C0">1.2.250.1.213.1.4.9 </span>(INS-NIA).<span style="color:black;mso-themecolor:text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:40">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-5.13<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Identifier Type Code<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Type d’identifiant (valeur issue de la </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
+  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">)&nbsp;:
+  <span style="color:#0070C0">RPPS ou INS</span><span style="color:black;
+  mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:41">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-8 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
+  <span class="SpellE">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce champ est requis si le destinataire est
+  une organisation (établissement, service, UF…).<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:42">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.1</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">OrganizationName</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Nom de l’organisation <o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:43">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.6<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  <span class="SpellE">Authority</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant de
+  l’organisation destinataire du document.<o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">1.2.250.1.71.4.2.2 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">(OID de gestion des structures pour préciser
+  une entité juridique ou une entité géographique), N° FINESS ou N° FINEG pour
+  identifier une organisation intra-établissement (service, UF, pôle…). <o:p></o:p></span></span></span></span></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Cf </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">Contraintes sur les types de données HL7 v2.5</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;color:black;mso-themecolor:text1"> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">applicables aux profils d’intégration du cadre technique</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;color:black;mso-themecolor:text1"> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">IT Infrastructure dans le périmètre d’IHE France.<sup>[12]</sup></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
+  mso-themecolor:text1">&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:44">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.7<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Identifier
+  Type Code<o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Type d’identifiant (valeur issue de la </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
+  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">)&nbsp;:
+  <span style="color:#0070C0">FINEJ </span>(FINESS d’entité juridique) <span style="color:black;mso-themecolor:text1">ou </span><span style="color:#0070C0">FINEG
+  </span>(FINESS d’entité géographique) ou <span style="color:#0070C0">UF </span>(UF),
+  <span style="color:#0070C0">SVR </span>(service)...<span style="color:black;
+  mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:45">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-8.10<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  <span class="SpellE">number</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Identifiant de l’organisation destinataire
+  du document<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:46">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-10 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
+  <span class="SpellE">Device</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce champ est requis si le destinataire est
+  une application.<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:47">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-10.1<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Entity</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
+  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Identifiant de l’application destinataire du
+  document<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:48">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-15&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
+  mso-bidi-font-weight:bold">Participant <span class="SpellE">Telecommunication</span>
+  <span class="SpellE">Address</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:49">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-15.3<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Telecommunication</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  Equipment Type<o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">X.400 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial">(X</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt">.400 <span class="GramE">email</span> <span class="SpellE">address</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:50">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-15.4<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Communication
+  <span class="SpellE">Address</span><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">Intégrer l’adresse <span class="GramE">mail</span> MSSanté<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:51">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:52">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1">Segment PRT (segment optionnel)</span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">P<span style="mso-bidi-font-weight:bold">articipation Information<br>
+  </span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Adresse de réponse<o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Ce segment optionnel permet d’indiquer
+  l’adresse <span class="GramE">mail</span> sur laquelle le destinataire peut
+  répondre. </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:53">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
+  mso-bidi-font-weight:bold">Action Code</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold">UC </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
+  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Unchanged</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:54">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-4&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">Participation </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
+  color:#0070C0;mso-bidi-font-weight:bold">REPLY^Reply</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
+  bold"> <span class="SpellE">To^participation</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:55">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">PRT-15&nbsp;<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
+  mso-bidi-font-weight:bold">Participant <span class="SpellE">Telecommunication</span>
+  <span class="SpellE">Address</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:56">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-15.3<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
+  mso-themecolor:text1">Telecommunication</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
+  Equipment Type<o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">X.400 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial">(X</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt">.400 <span class="GramE">email</span> <span class="SpellE">address</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1"><o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:57;mso-yfti-lastrow:yes">
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1;mso-bidi-font-weight:bold">&gt; PRT-15.4<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Communication
+  <span class="SpellE">Address</span><o:p></o:p></span></span></span></span></span></span></p>
+  </td>
+  
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
+  text1">Intégrer l’adresse <span class="GramE">mail</span> de réponse<o:p></o:p></span></span></span></span></span></p>
+  </td>
+  
+ </tr>
+</tbody>
+</table>
 
-[Exemple pour un Compte-Rendu d'imagerie médicale :]{.underline}
+**Exemple pour un Compte-Rendu d'imagerie médicale :**
 
 Compte-rendu d'imagerie médicale à transmettre à 4 destinataires (le
 patient, le médecin HODA Adam, le service radiologie de l'hôpital A, une
 application). Une adresse mail de réponse est indiquée.
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^Text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYX
 
@@ -1284,7 +3221,9 @@ To\^participation\|\|\|\|\|\|12\|\|\|\|\|\^\^X.400\^appliExemple@hopitalB.mssant
 PRT\|\|UC\|\|REPLY\^Reply
 to\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
 
-**[Expéditeur MSSanté]{.underline} :** Le segment PRT est également
+```
+
+**Expéditeur MSSanté :** Le segment PRT est également
 utilisé pour renseigner les informations sur l'expéditeur du courriel en
 fixant le champ PRT-4 « Participation » à SB « Send by ».
 
