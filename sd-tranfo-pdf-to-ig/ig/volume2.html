@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Evènements déclenchants - ANS IG du volet de transmission d'un document CDA-R2 en HL7v2 v2.1.0</title>
+    <title>Volume 2 - ANS IG du volet de transmission d'un document CDA-R2 en HL7v2 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -183,15 +183,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Evènements déclenchants</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Volume 2</b></li>
 
           <span style="float:right;">
 
-            <a href="standards.html">&lt;prev</a> | 
+            <a href="identification-flux.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="interactions-acteurs.html">next&gt;</a>
+          | <a href="perimetre-transaction.html">next&gt;</a>
 
           </span>
 
@@ -214,7 +214,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">ANS IG du volet de transmission d'un document CDA-R2 en HL7v2 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Evènements déclenchants</h2>
+  <h2>Volume 2</h2>
   
 
 
@@ -232,92 +232,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>Les cas d’usages liés à une demande de transmission initiale/remplacement/suppression de document(s) clinique(s) d’un patient sont gérés différemment entre l’ORU et le MDM :</p>
+<p>Cette section décrit les détails techniques nécessaires pour la mise en œuvre del a transaction</p>
 
-<table width="652">
-<tbody>
-<tr>
-<td width="218">
-<p><strong>Flux m&eacute;tier</strong></p>
-</td>
-<td width="217">
-<p><strong>Message de type ORU</strong></p>
-</td>
-<td width="217">
-<p><strong>Message de type MDM</strong></p>
-</td>
-</tr>
-<tr>
-<td width="218">
-<p>TransmissionDocuments&nbsp;: Demande de transmission initiale de document(s)</p>
-</td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;-&gt; OBX-11 = F (Final results; Can only be changed with a corrected result.) [HL7 Tables 0085]</p>
-</td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T02&nbsp;&laquo;&nbsp;Original document notification&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>-&gt; MDM^T02^MDM_T02</p>
-<p><strong><u>&nbsp;</u></strong></p>
-<p>-&gt; OBX-11 = F (Final results; Can only be changed with a corrected result.) [HL7 Tables 0085]</p>
-</td>
-</tr>
-<tr>
-<td width="218">
-<p>TransmissionDocuments&nbsp;: Demande de suppression de document(s)</p>
-</td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>-&gt; OBX-11 = D (Deletes the OBX record) [HL7 Tables 0085]</p>
-</td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T04&nbsp;&laquo;&nbsp;Document status change notification and content&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>-&gt; MDM^T04^MDM_T02</p>
-<p><strong><u>&nbsp;</u></strong></p>
-<p>-&gt; OBX-11 = D (Deletes the OBX record) [HL7 Tables 0085]</p>
-</td>
-</tr>
-<tr>
-<td width="218">
-<p>TransmissionDocuments&nbsp;: Demande de remplacement de document(s)</p>
-</td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>-&gt; OBX-11 = C (Record coming over is a correction and thus replaces a final result) [HL7 Tables 0085]</p>
-</td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T10&nbsp;&laquo;&nbsp;Document replacement notification and content&nbsp;&raquo;</p>
-<p><strong><u>&nbsp;</u></strong></p>
-<p>-&gt; MDM^T10^MDM_T02<br /> </p>
-<p>-&gt; OBX-11 = C (Record coming over is a correction and thus replaces a final result) [HL7 Tables 0085]</p>
-</td>
-</tr>
-<tr>
-<td width="218">
-<p>R&eacute;ponseTransmissionDocuments&nbsp;</p>
-</td>
-<td width="217">
-<p>Acquittement technique du message HL7 ORU</p>
-</td>
-<td width="217">
-<p>Acquittement technique du message HL7 MDM</p>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Flux 1 : Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU)
+- ou Flux 2 : Demande de transmission/remplacement/suppression d'un document CDA (Flux HL7-MDM), et des flux d'accusés métier identifiés dans le [tableau des Acteurs/Transactions](acteurs-transactions.html#diagramme-des-acteurstransactions).
+</code></pre></div></div>
 
 
 
@@ -341,7 +260,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="standards.html">&lt;prev</a>
+                <a href="identification-flux.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -349,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="interactions-acteurs.html">next&gt;</a>
+                <a href="perimetre-transaction.html">next&gt;</a>
 
               </td>
             </tr>

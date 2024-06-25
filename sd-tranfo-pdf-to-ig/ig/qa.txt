@@ -1,16 +1,34 @@
 Hl7v2_CDAr2 : Validation Results
 =========================================
 
-err = 1, warn = 3, info = 0
+err = 1, warn = 4, info = 0
 IG Publisher Version: 1.6.11
-Generated Fri Jun 21 14:23:58 UTC 2024. FHIR version 4.0.1 for ans.hl7v2.fr.transmission-cda-r2#2.1.0 (canonical = https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2)
- Build Errors : 1 / 3 / 0
+Generated Tue Jun 25 09:53:38 UTC 2024. FHIR version 4.0.1 for ans.hl7v2.fr.transmission-cda-r2#2.1.0 (canonical = https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2)
+ Build Errors : 10 / 4 / 0
  /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2 : 1 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/index.html#/html/body/div/div/div/div/div/div/blockquote/p/b/div/img at Line 296, column 6: The image source 'ci-sis-logo.png' cannot be resolved
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 2282, column 73: The link '#_ftn2' for "[2]" cannot be resolved (valid targets: 76 targets)
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 3576, column 58: The link '#_Toc163119996' for "annexe 1" cannot be resolved (valid targets: 76 targets)
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 4280, column 43: The link '#Annexe2' for "annexe 2" cannot be resolved (valid targets: 76 targets)
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 4280, column 78: The link '#Annexe3' for "annexe 3" cannot be resolved (valid targets: 76 targets)
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/img at Line 4312, column 5: The image source './images/media/image26.png' cannot be resolved
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 4417, column 4: The link 'ht      | Code d'acquittement du message autorisé :          |
+| tps://hl7-defin |                                                    |
+| ition.caristix. | -   AA (Original mode: Application Accept -        |
+| com/v2/HL7v2.8/ |     Enhanced mode: Application acknowledgment:     |
+| Fields/MSA.1) - |     Accept' for "MSA.1" cannot be resolved
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 4438, column 4: The link 'ht      | Rappel l'identifiant du message acquitté           |
+| tps://hl7-defin | correspondant au champ MSH.10 du message initial.  |
+| ition.caristix. |                                                    |
+| com/v2/HL7v2.8/ |                                                    |
+| Fields/MSA.2' for "MSA.2" cannot be resolved
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/img at Line 4563, column 5: The image source './images/media/image27.png' cannot be resolved
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 4576, column 59: The link '#Annexe4' for "annexe 4" cannot be resolved (valid targets: 76 targets)
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 4932, column 40: The link '#Annexe5' for "annexe 5" cannot be resolved (valid targets: 76 targets)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2.json ==
 ERROR: ImplementationGuide/ans.hl7v2.fr.transmission-cda-r2: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)

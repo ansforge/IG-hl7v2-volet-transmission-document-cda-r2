@@ -1,11 +1,29 @@
 Hl7v2_CDAr2
 =========================================
 
-Generic: line 0, col 0, Error - The image source 'ci-sis-logo.png' cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#_ftn2' for "[2]" cannot be resolved (valid targets: 76 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#_Toc163119996' for "annexe 1" cannot be resolved (valid targets: 76 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#Annexe2' for "annexe 2" cannot be resolved (valid targets: 76 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#Annexe3' for "annexe 3" cannot be resolved (valid targets: 76 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The image source './images/media/image26.png' cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'ht      | Code d'acquittement du message autorisé :          |
+| tps://hl7-defin |                                                    |
+| ition.caristix. | -   AA (Original mode: Application Accept -        |
+| com/v2/HL7v2.8/ |     Enhanced mode: Application acknowledgment:     |
+| Fields/MSA.1) - |     Accept' for "MSA.1" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'ht      | Rappel l'identifiant du message acquitté           |
+| tps://hl7-defin | correspondant au champ MSH.10 du message initial.  |
+| ition.caristix. |                                                    |
+| com/v2/HL7v2.8/ |                                                    |
+| Fields/MSA.2' for "MSA.2" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The image source './images/media/image27.png' cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#Annexe4' for "annexe 4" cannot be resolved (valid targets: 76 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#Annexe5' for "annexe 5" cannot be resolved (valid targets: 76 targets) (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
-/home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2.json: line 1, col 16130, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
+/home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2.json: line 1, col 16321, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
 
-err = 1, warn = 3, info = 0
+err = 1, warn = 4, info = 0
 IG Publisher Version: 1.6.11

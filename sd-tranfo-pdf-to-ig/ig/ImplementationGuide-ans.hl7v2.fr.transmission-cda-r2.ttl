@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Hl7v2_CDAr2"] ; # 
   fhir:title [ fhir:v "ANS IG du volet de transmission d'un document CDA-R2 en HL7v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-21T14:21:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-25T09:51:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -593,6 +593,14 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "volume2.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "volume2.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Volume 2" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "perimetre-transaction.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "perimetre-transaction.html"^^xsd:anyURI ] ;
@@ -700,7 +708,7 @@
            fhir:value [ fhir:v "change-log.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "change-log.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Change log" ] ;
+         fhir:title [ fhir:v "Historique du document" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
