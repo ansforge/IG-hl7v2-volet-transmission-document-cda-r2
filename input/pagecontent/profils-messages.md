@@ -857,7 +857,7 @@ le segment MSH :
 <p>MSH-1</p>
 </td>
 <td width="196">
-<p>| s&eacute;parateur de champ</p>
+<p><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">|</span> s&eacute;parateur de champ</p>
 </td>
 <td width="87">
 <p>ST</p>
@@ -871,7 +871,7 @@ le segment MSH :
 <p>MSH-2</p>
 </td>
 <td width="196">
-<p>^~\&amp;&nbsp;: s&eacute;parateur de composant, r&eacute;p&eacute;tition, caract&egrave;re d&rsquo;&eacute;chappement, s&eacute;parateur de sous-composants</p>
+<p><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">^~\&amp;</span>: s&eacute;parateur de composant, r&eacute;p&eacute;tition, caract&egrave;re d&rsquo;&eacute;chappement, s&eacute;parateur de sous-composants</p>
 </td>
 <td width="87">
 <p>ST</p>
@@ -955,7 +955,11 @@ le segment MSH :
 <p>MSH-9</p>
 </td>
 <td width="196">
-<p>Type du message<br /> ORU^R01^ORU_R01<br /> MDM^T02^MDM_T02<br /> MDM^T10^MDM_T10<br /> MDM^T04^MDM_T04</p>
+<p>Type de message <br><span style="mso-bidi-font-size:10.0pt;
+  color:#4472C4;mso-themecolor:accent5">ORU^R01^ORU_R01<br>
+  MDM^T02^MDM_T02<br>
+  MDM^T10^MDM_T10<br>
+  MDM^T04^MDM_T04</span></p>
 </td>
 <td width="87">
 <p>MSG</p>
@@ -984,7 +988,13 @@ le segment MSH :
 <p>MSH-11</p>
 </td>
 <td width="196">
-<p>Processing Id<br /> P&nbsp;: en production<br /> T&nbsp;: message de test<br /> D&nbsp;: environnement de debug</p>
+<p>Processing Id<br /> <span style="color:#4472C4;
+  mso-themecolor:accent5">
+  P&nbsp;</span><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="mso-bidi-font-size:10.0pt">: en production<span style="color:#4472C4;
+  mso-themecolor:accent5"><br>
+  T&nbsp;</span>: message de test<span style="color:#4472C4;mso-themecolor:
+  accent5"><br>
+  D&nbsp;</span>: environnement de <span class="SpellE">debug</span><span style="color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></p>
 </td>
 <td width="87">
 <p>PT</p>
@@ -998,7 +1008,10 @@ le segment MSH :
 <p>MSH-12</p>
 </td>
 <td width="196">
-<p>Version du standard<br /> 2.5 pour ORU<br /> 2.6 pour MDM</p>
+<p><span style="mso-bidi-font-size:10.0pt;
+  color:#4472C4;mso-themecolor:accent5">2.5 </span><span style="mso-bidi-font-size:10.0pt">pour ORU<span style="color:#4472C4;
+  mso-themecolor:accent5"><br>
+  2.6 </span>pour MDM<span style="color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></span></p>
 </td>
 <td width="87">
 <p>VID</p>
@@ -1012,7 +1025,7 @@ le segment MSH :
 <p>MSH-17</p>
 </td>
 <td width="196">
-<p>FRA</p>
+<p><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">FRA</span></p>
 </td>
 <td width="87">
 <p>ID</p>
@@ -1026,8 +1039,10 @@ le segment MSH :
 <p>MSH-18</p>
 </td>
 <td width="196">
-<p>Jeux de caract&egrave;res, valeurs possibles&nbsp;:</p>
-<p>UNICODE UTF-8 ou 8859/15 <br /> </p>
+<p>Jeux de caractères, valeurs possibles : <span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">UNICODE
+  UTF-8 ou 8859/15 <br style="mso-special-character:line-break">
+  <!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+  <!--[endif]--></span></p>
 </td>
 <td width="87">
 <p>ID</p>
@@ -1042,9 +1057,10 @@ le segment MSH :
 </td>
 <td width="196">
 <p>Identifiant du profil de message</p>
-<p>MSH-21.1&nbsp;: Entity Identifier (2.1)</p>
+<p>MSH-21.1&nbsp;: Entity Identifier (<span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">2.1</span>)</p>
 <p>MSH-21.2&nbsp;: Namespace Id</p>
-<p>CISIS_CDA_HL7_V2</p>
+<p><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#4472C4;
+  mso-themecolor:accent5;mso-ansi-language:EN-US;mso-bidi-font-weight:bold">CISIS_CDA_HL7_V2</span></p>
 </td>
 <td width="87">
 <p>EI</p>
@@ -1070,11 +1086,11 @@ informations concernant le patient sont décrites par le segment requis
 PID. Le segment PV1, requis, représente la venue courante du patient.
 
 Ces deux segments doivent être renseignés conformément à la
-spécification « PAM -- National extension France » version 2.11 publiée
-en 2024^\[18\]^ [LIEN]. Si l'INS est véhiculé, le segment PID doit suivre les
-contraintes décrites dans l'annexe CI-SIS « Prise en charge de
+spécification « [PAM -- National extension France » version 2.11](https://github.com/Interop-Sante/ihe.iti.pam.fr/blob/main/Publication/Publication-IHE_FRANCE_PAM_National_Extension_v2.11.pdf) publiée
+en 2024. Si l'INS est véhiculé, le segment PID doit suivre les
+contraintes décrites dans l'annexe CI-SIS « [Prise en charge de
 l'identifiant National de Santé (INS) dans les standards
-d'interopérabilité et les volets du CI-SIS » ^\[10\]^ [LIEN].
+d'interopérabilité et les volets du CI-SIS](https://esante.gouv.fr/sites/default/files/media_entity/documents/ans_cisis-tec_annexe-ins_1.5.pdf) ».
 
 Pour le segment PID, ce volet ajoute une contrainte particulière sur le
 PID-18 par rapport à PAM.FR. Il doit être renseigné si connu afin de
@@ -1224,7 +1240,7 @@ Pour le segment PV1, ce volet ajoute les contraintes suivantes :
 
 *Note 2* : _Le champ PV1-19 est requis lorsque le PV1-2 prend la valeur E, I, O ou R. Si PV1-2 prend la valeur N alors PV1-19 est requis si connu._
 
-##### Les métadonnées du document \[Uniquement pour le message MDM\]
+##### Les métadonnées du document [Uniquement pour le message MDM]
 
 Le message MDM requiert l'utilisation du segment TXA qui porte les
 métadonnées associées au document contenu dans le message. Les
@@ -1251,7 +1267,8 @@ suivantes :
 <p>TXA-1</p>
 </td>
 <td width="350">
-<p>Set-ID TXA. Valeur = 1</p>
+<p>Set-ID TXA. Valeur = <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#2E74B5;
+  mso-themecolor:accent1;mso-themeshade:191">1</span></p>
 </td>
 <td width="76">
 <p>SI</p>
@@ -1282,7 +1299,8 @@ suivantes :
 </td>
 <td width="350">
 <p>Document Content Presentation</p>
-<p>TEXT</p>
+<p><span style="mso-bidi-font-size:10.0pt;
+  color:#0070C0">TEXT</span></p>
 </td>
 <td width="76">
 <p>ID</p>
@@ -1333,7 +1351,8 @@ suivantes :
 </td>
 <td width="350">
 <p>Document completion status dont la valeur est &agrave; prendre dans la table HL7 0271</p>
-<p>AU</p>
+<p><span style="mso-bidi-font-size:10.0pt;
+  color:#0070C0">AU</span></p>
 </td>
 <td width="76">
 <p>ID</p>
@@ -1421,9 +1440,12 @@ la suivante :
 <p>Order control</p>
 </td>
 <td width="274">
-<p>NW (New order/service dans le cas d&rsquo;une demande d&rsquo;int&eacute;gration de document(s)</p>
-<p>RO (Replace order) dans le cas d&rsquo;une demande de remplacement</p>
-<p>CA (Canceled) dans le cas d&rsquo;une demande de suppression</p>
+<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
+  mso-bidi-font-weight:bold">NW</span> (New order/service dans le cas d&rsquo;une demande d&rsquo;int&eacute;gration de document(s)</p>
+<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
+  mso-bidi-font-weight:bold">RO </span> (Replace order) dans le cas d&rsquo;une demande de remplacement</p>
+<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
+  mso-bidi-font-weight:bold">CA </span> (Canceled) dans le cas d&rsquo;une demande de suppression</p>
 </td>
 </tr>
 </tbody>
@@ -1503,7 +1525,8 @@ rejeté par la PFI.
 <p>Syst&egrave;me de codage dont est issu le code</p>
 </td>
 <td width="274">
-<p>LN ou TRE_A05 en fonction de l&rsquo;appartenance du code &agrave; l&rsquo;un des syst&egrave;mes de codage</p>
+<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
+  mso-bidi-font-weight:bold">LN ou TRE_A05 </span> en fonction de l&rsquo;appartenance du code &agrave; l&rsquo;un des syst&egrave;mes de codage</p>
 </td>
 </tr>
 </tbody>
@@ -3299,8 +3322,7 @@ Les métadonnées doivent apparaître dans le message HL7 dans l'ordre
 indiqué ci-dessous.
 
 Pour l'ensemble des OBX listés dans cette section, le champ OBX-3 prend
-ses valeurs dans la table « MétaDMP/MSS » disponible en [annexe
-1](#_Toc163119996).
+ses valeurs dans la table « MétaDMP/MSS » disponible [sur cette page](meta-dmp-mss.html).
 
 Le champ OBX-11 étant requis par le standard HL7v2, la valeur de ce
 champ est arbitrairement fixée à « F ».
@@ -3312,120 +3334,175 @@ documents pouvant être contenus dans le message ORU.
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux professionnels de santé.
+<table width="652">
+<tbody>
+<tr>
+<td colspan="3" width="652">
+<p><strong>Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
+</td>
+<td width="170">
+<p><strong>Description&nbsp;: </strong></p>
+</td>
+<td width="302">
+<p><strong>Valeur&nbsp;: </strong></p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p><strong>Segment OBX</strong></p>
+</td>
+<td width="170">
+<p><strong>Observation/Result</strong></p>
+</td>
+<td width="302">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>OBX-1</p>
+</td>
+<td width="170">
+<p>Set Id - Obx</p>
+</td>
+<td width="302">
+<p>Num&eacute;ro de s&eacute;quence du segment</p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>OBX-2</p>
+</td>
+<td width="170">
+<p>Value Type</p>
+</td>
+<td width="302">
+<p>Pour le message ORU : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
+  mso-bidi-font-weight:bold">CE </span> (Coded Entry)</p>
+<p>Pour le message MDM : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
+  mso-bidi-font-weight:bold">CWE </span> (Coded with Exceptions)</p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>OBX-3</p>
+</td>
+<td width="170">
+<p>Observation Identifier</p>
+</td>
+<td width="302">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>&gt; OBX-3.1&nbsp;:&nbsp;</p>
+</td>
+<td width="170">
+<p>Code&nbsp;:</p>
+</td>
+<td width="302">
+<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">MASQUE_PS</span></p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>&gt; OBX-3.2&nbsp;:&nbsp;</p>
+</td>
+<td width="170">
+<p>Libell&eacute;&nbsp;:</p>
+</td>
+<td width="302">
+<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Masqué
+  aux professionnels de Santé<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>&gt; OBX-3.3&nbsp;:</p>
+</td>
+<td width="170">
+<p>Name of Coding system</p>
+</td>
+<td width="302">
+<p><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>OBX-5</p>
+</td>
+<td width="170">
+<p>Observation Value</p>
+</td>
+<td width="302">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>&gt; OBX-5.1</p>
+</td>
+<td width="170">
+<p>Code&nbsp;</p>
+</td>
+<td width="302">
+<p>Table HL7 : 0136&nbsp;:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
+  mso-bidi-font-family:Arial;color:#0070C0">Y&nbsp;</span>(Yes)&nbsp;&agrave;MASQUE_PS actif</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
+  mso-bidi-font-family:Arial;color:#0070C0">N&nbsp;</span>(No)&nbsp;&agrave; MASQUE_PS non Actif</p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>&gt; OBX-5.3</p>
+</td>
+<td width="170">
+<p>Name Of Coding System</p>
+</td>
+<td width="302">
+<p>expandedYes-NoIndicator</p>
+</td>
+</tr>
+<tr>
+<td width="179">
+<p>OBX-11</p>
+</td>
+<td width="170">
+<p>Observation Result Status</p>
+</td>
+<td width="302">
+<p>Valeur fix&eacute;e &agrave; &laquo;&nbsp;<span style="mso-bidi-font-size:10.0pt;
+  mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span>&raquo;&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-+------------------+-----------------+--------------------------------+
-| **Composition du |                 |                                |
-| groupe           |                 |                                |
-| OBSE             |                 |                                |
-| RVATION/OBXNTE : |                 |                                |
-| Usage = Required |                 |                                |
-| / Cardinalité =  |                 |                                |
-| \[1..1\]**       |                 |                                |
-+==================+=================+================================+
-| **Elément        | **              | **Valeur :**                   |
-| requis :**       | Description :** |                                |
-+------------------+-----------------+--------------------------------+
-| **Segment OBX**  | **Obser         |                                |
-|                  | vation/Result** |                                |
-+------------------+-----------------+--------------------------------+
-| OBX-1            | Set Id - Obx    | Numéro de séquence du segment  |
-+------------------+-----------------+--------------------------------+
-| OBX-2            | Value Type      | Pour le message ORU : CE       |
-|                  |                 | (Coded Entry)                  |
-|                  |                 |                                |
-|                  |                 | Pour le message MDM : CWE      |
-|                  |                 | (Coded with Exceptions)        |
-+------------------+-----------------+--------------------------------+
-| OBX-3            | Observation     |                                |
-|                  | Identifier      |                                |
-+------------------+-----------------+--------------------------------+
-| \> OBX-3.1 :     | Code :          | MASQUE_PS                      |
-+------------------+-----------------+--------------------------------+
-| \> OBX-3.2 :     | Libellé :       | Masqué aux professionnels de   |
-|                  |                 | Santé                          |
-+------------------+-----------------+--------------------------------+
-| \> OBX-3.3 :     | Name of Coding  | MetaDMPMSS                     |
-|                  | system          |                                |
-+------------------+-----------------+--------------------------------+
-| OBX-5            | Observation     |                                |
-|                  | Value           |                                |
-+------------------+-----------------+--------------------------------+
-| \> OBX-5.1       | Code            | Table HL7 : 0136 :             |
-|                  |                 |                                |
-|                  |                 | -   Y (Yes) àMASQUE_PS actif   |
-|                  |                 |                                |
-|                  |                 | -   N (No) à MASQUE_PS non     |
-|                  |                 |     Actif                      |
-+------------------+-----------------+--------------------------------+
-| \> OBX-5.3       | Name Of Coding  | expandedYes-NoIndicator        |
-|                  | System          |                                |
-+------------------+-----------------+--------------------------------+
-| OBX-11           | Observation     | Valeur fixée à « F »           |
-|                  | Result Status   |                                |
-+------------------+-----------------+--------------------------------+
 
-[**Point d'attention :**]{.underline} un document clinique masqué aux PS
-ne doit pas être envoyé aux PS par MSSanté.
+<blockquote class="stu-note">
+    <p>
+    <b>Point d'attention</b> un document clinique masqué aux PS ne doit pas être envoyé aux PS par MSSanté.
+    </p>
+</blockquote>
 
 ###### Document Non visible par le patient 
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
-masqué au patient[.]{.underline}
+masqué au patient.
 
-+------------------+-----------------+--------------------------------+
-| **Composition du |                 |                                |
-| groupe           |                 |                                |
-| OBSE             |                 |                                |
-| RVATION/OBXNTE : |                 |                                |
-| Usage = Required |                 |                                |
-| / Cardinalité =  |                 |                                |
-| \[1..1\]**       |                 |                                |
-+==================+=================+================================+
-| **Elément        | **              | **Valeur :**                   |
-| requis :**       | Description :** |                                |
-+------------------+-----------------+--------------------------------+
-| **Segment OBX**  | **Obser         |                                |
-|                  | vation/Result** |                                |
-+------------------+-----------------+--------------------------------+
-| OBX-1            | Set Id - Obx    | Numéro de séquence du segment  |
-+------------------+-----------------+--------------------------------+
-| OBX-2            | Value Type      | Pour le message ORU : CE       |
-|                  |                 | (Coded Entry)                  |
-|                  |                 |                                |
-|                  |                 | Pour le message MDM : CWE      |
-|                  |                 | (Coded with Exceptions)        |
-+------------------+-----------------+--------------------------------+
-| OBX-3            | Observation     |                                |
-|                  | Identifier      |                                |
-+------------------+-----------------+--------------------------------+
-| \> OBX-3.1 :     | Code :          | INVISIBLE_PATIENT              |
-+------------------+-----------------+--------------------------------+
-| \> OBX-3.2 :     | Libellé :       | Document Non Visible par le    |
-|                  |                 | patient                        |
-+------------------+-----------------+--------------------------------+
-| \> OBX-3.3 :     | Name of Coding  | MetaDMPMSS                     |
-|                  | system          |                                |
-+------------------+-----------------+--------------------------------+
-| OBX-5            | Observation     |                                |
-|                  | Value           |                                |
-+------------------+-----------------+--------------------------------+
-| \> OBX-5.1       | Code :          | Table HL7 : 0136 :             |
-|                  |                 |                                |
-|                  |                 | -   Y (YES) à                  |
-|                  |                 |     INVISIBLE_PATIENT actif    |
-|                  |                 |                                |
-|                  |                 | -   N (No) à INVISIBLE_PATIENT |
-|                  |                 |     non actif                  |
-+------------------+-----------------+--------------------------------+
-| \> OBX-5.3       | Name Of Coding  | expandedYes-NoIndicator        |
-|                  | System          |                                |
-+------------------+-----------------+--------------------------------+
-| OBX-11           | Observation     | Valeur fixée à « F »           |
-|                  | Result Status   |                                |
-+------------------+-----------------+--------------------------------+
-
-[**Point d'attention :**]{.underline} un document clinique masqué au
+<blockquote class="stu-note">
+    <p>
+    <b>Point d'attention</b> un document clinique masqué au
 patient ne doit pas être envoyé au patient par MSSanté.
+    </p>
+</blockquote>
 
 ###### Document Non visible par les représentants légaux du patient  
 
