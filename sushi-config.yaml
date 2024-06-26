@@ -60,7 +60,7 @@ pages:
     change-log.md:
         title: "Historique des versions"
     download.md:
-        title: "Téléchargements et usages"
+        title: "Téléchargements"
         generation: markdown
 
 menu:
@@ -87,5 +87,5 @@ menu:
         "Error Codes": error-codes.html
     Test Plan: testplan.html
     Historique des versions: change-log.html
-    Téléchargements et usage: download.html
+    Téléchargements: download.html
  #   Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
