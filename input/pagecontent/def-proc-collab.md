@@ -140,8 +140,6 @@ consommateur (DMP et/ou application métier destinatrice).
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 **Note 1** : _les systèmes référencés SEGUR vague 2 ne sont pas concernés
 car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
