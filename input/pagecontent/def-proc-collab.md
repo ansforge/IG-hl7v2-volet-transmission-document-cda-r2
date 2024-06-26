@@ -153,7 +153,7 @@ car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 ### Processus collaboratif « Demande de suppression de document(s) »
 
 <div class="figure">
-    <img src="image15.png" alt="Figure 10" title="Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:100%;">
+    <img src="image15.png" alt="Figure 11" title="Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:100%;">
     <figcaption>Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté</figcaption>
 </div>    
 <br>
