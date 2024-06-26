@@ -237,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><em>HL7 v2.5 Chapitre 7</em>, message ORU (Unsolicited transmission of an
 observation message), <em>HL7 v2.6 Chapitre 9,</em> message MDM (Medical
-Document Management) ^(1)^</p>
+Document Management) (1)</p>
   </li>
   <li>
     <p>Le présent document spécifie également une nouvelle structure de
@@ -246,10 +246,10 @@ et utilisé pour implémenter les accusés métier (accusé de réception
 DMP, accusé de réception MSSanté et accusé de lecture MSSanté),</p>
   </li>
   <li>
-    <p>Extension française du profil IHE PAM : PAM.fr, version 2.11^(1)^,</p>
+    <p>Extension française du profil IHE PAM : PAM.fr, version 2.11 (1),</p>
   </li>
   <li>
-    <p>Les types de données utilisés ^(2)^ doivent se conformer aux
+    <p>Les types de données utilisés (2) doivent se conformer aux
 spécifications « INTEROP’SANTE : ITI - Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France - Release 1.8 – Final Text – 31 janvier 2024 »</p>
   </li>
   <li>
@@ -279,23 +279,22 @@ Médecin ne doit pas être envoyé sur le mail MSSanté du médecin).</p>
   </li>
 </ul>
 
-<p>Note ^(1)^ : <em>Les messages décrits au niveau de cette transaction
-implémentent la version 2.5 (message ORU) ou la version 2.6 (message
-MDM) du standard HL7 mais pré adoptent le segment PRT de la version 2.9,
-permettant de spécifier l’expéditeur et le(s) destinataire(s) d’un
-courriel.<br />
-Le message ORU permet de transmettre, si nécessaire, deux formats de
-document (CDAr2 Niv1 et CDAr2 Niv3). Le message MDM permet de
-transmettre un seul document.</em></p>
+<blockquote class="stu-note">
+    <p>
+    <b>(1) :</b> Les messages décrits au niveau de cette transaction implémentent la version 2.5 (message ORU) ou la version 2.6 (message MDM) du standard HL7 mais pré adoptent le segment PRT de la version 2.9, permettant de spécifier l'expéditeur et le(s) destinataire(s) d'un courriel.
+    Le message ORU permet de transmettre, si nécessaire, deux formats de
+    document (CDAr2 Niv1 et CDAr2 Niv3). Le message MDM permet de transmettre un seul document.
+    </p>
+</blockquote>
 
-<p>Note ^(2)^ : <em>Pour l'ensemble des champs de type CE en HL7v2.5 et CWE en
-HL7v2.6, la contrainte imposée en version 2.7 sur le type de donnée
-CE/CWE est pré adoptée. En conséquence, ces spécifications imposent de
-préciser le système de codage (CE/CWE.3) lorsque le code (CE/CWE.1) est
-renseigné.<br />
-Les bonnes pratiques consistent à renseigner systématiquement les 3
-composantes : le code, le libellé du code et le libellé de la
-nomenclature.</em></p>
+<blockquote class="stu-note">
+    <p>
+    <b>(2) :</b> Pour l\'ensemble des champs de type CE en HL7v2.5 et CWE en HL7v2.6, la contrainte imposée en version 2.7 sur le type de donnée CE/CWE est pré adoptée. En conséquence, ces spécifications imposent de préciser le système de codage (CE/CWE.3) lorsque le code (CE/CWE.1) est renseigné.
+    Les bonnes pratiques consistent à renseigner systématiquement les 3
+    composantes : le code, le libellé du code et le libellé de la
+    nomenclature.
+    </p>
+</blockquote>
 
 
 
@@ -337,7 +336,7 @@ nomenclature.</em></p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 14:44+0000">2024-06-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 14:49+0000">2024-06-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
