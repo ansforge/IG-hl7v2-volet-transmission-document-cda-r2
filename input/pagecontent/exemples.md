@@ -9,19 +9,20 @@
 Ci-dessous quelques exemples non exhaustifs des possibilités d'échange
 et de partage
 
-[**Exemple 0 :**]{.underline} Transmission initiale d'un CR de biologie
+**Exemple 0 :** Transmission initiale d'un CR de biologie
 validé en CDA-R2 (niveau 1 et niveau 3) pour partage et échange sans les
 restrictions.
 
-[OBX-11=F :]{.underline} La validation du document pour permettre sa
+_OBX-11=F :_ La validation du document pour permettre sa
 publication est portée par l'OBX-11 (Observation Resultat Status)
 
-[Extrait Message, Segments OBX :]{.underline} Transmission du CR de
+_Extrait Message, Segments OBX :_ Transmission du CR de
 biologie avec balises spécifiées pour le DMP et MSSANTE. Une adresse
 mail de réponse est indiquée ainsi qu'un corps de mail pour le
 professionnel de santé. Le Créateur de document(s) demande à recevoir
 les accusés métier de réception DMP/MSSanté et de lecture MSSanté.
 
+```
 OBX\|1\|ED\|11502-2\^CR d\'examens
 biologiques\^LN\|\|\^TEXT\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm
 9ybWF0IENEQQ\|\|\|\|\|\|F\|
@@ -86,21 +87,23 @@ PS\^MetaDMPMSS\|\|\^TEXT\^\^Base64\^Q2hlciBjb25mcsOocmUsI
 
 HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
 
-[**Exemple 1 :**]{.underline} Transmission initiale d'un document CR
+```
+**Exemple 1 :** Transmission initiale d'un document CR
 d'imagerie médicale validé en CDA-R2 (niveau 1) pour partage et échange
 avec restriction Masquage PS, le message est partagé et échangé MSSanté
 Patient avec les restrictions mais non échangé en MSSanté Professionnel.
 Le professionnel de santé (Janet Blanc) à l'origine du message vers le
 patient ne souhaite pas recevoir de réponse du patient.
 
-[OBX-11=F :]{.underline} La validation du document pour permettre sa
+_OBX-11=F :_ La validation du document pour permettre sa
 publication est portée par l'OBX-11 (Observation Resultat Status)
 
-[Extrait Message Segment OBX :]{.underline} Transmission du CR
+_Extrait Message Segment OBX :_ Transmission du CR
 d'imagerie médicale avec balises pour le masquage. Les informations de
 l'expéditeur sont présentes. Un texte est ajouté à l'attention du
 patient.
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie médicale\^LN
 \|\|\^TEXT\^XML\^Base64\^ RG9jdW1lbnQgbWVkY2lhbCBhdSBm
 
@@ -152,7 +155,9 @@ patient\^MetaDMPMSS \|\|\^TEXT\^\^Base64\^Qm9uam91ciBN
 
 LkR1cG9udCwgY2ktam9pbnQgdm90cmUgQ1IgZOKAmWltYWdlcmllLg==\|\|\|\|\|F\|
 
-**[Exemple 2 :]{.underline}** Transmission d'une demande de suppression
+```
+
+**Exemple 2 :** Transmission d'une demande de suppression
 du document CR d'imagerie médicale déjà publié et échangé en CDA-R2
 (niveau 1) sans les restrictions. Le document est dépublié sur le DMP et
 la PFI doit générer un message en direction des destinataires MSSanté
@@ -163,12 +168,13 @@ insérant une extra-metadata « action » dont la valeur est « D »
 supprimer. Côté consommateur, l'id du document à supprimer est extrait
 du CDA à partir de l'élément clinicalDocument@id.
 
-[OBX-11=D :]{.underline} Suppression du document, elle sera portée par
+_OBX-11=D :_ Suppression du document, elle sera portée par
 l'OBX-11 (Observation Resultat Status)
 
-[Extrait Message Segment OBX :]{.underline} Transmission du CR
+_Extrait Message Segment OBX :_ Transmission du CR
 d'imagerie médicale avec balises pour le DMP/ MSSanté :
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie médicale\^LN\|\|\^TEXT\^XML\^Base64\^
 RG9jdW1lbnQgbWVkY2lhbCBhdSBmb3Jt
 
@@ -222,7 +228,9 @@ OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
 
 HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
 
-[**Exemple 3 :**]{.underline} Remplacement d'un document déjà partagé
+```
+
+**Exemple 3 :** Remplacement d'un document déjà partagé
 DMP et échangé par une nouvelle version validée en CDA-R2 pour nouveau
 partage et échange sans restriction, le message est partagé sur le DMP
 pour « Replace ». Le code RPLC dans
@@ -239,13 +247,14 @@ document précédente. Côté consommateur, l'id du document à remplacer est
 extrait de la relation
 clinicalDocument/relatedDocument/parentDocument/id.
 
-[OBX-11=C :]{.underline} Remplacement du document, elle sera portée par
+_OBX-11=C :_ Remplacement du document, elle sera portée par
 l'OBX-11 (Observation Resultat Status)
 
-[Extrait Message Segment OBX :]{.underline} Remplacement du CR
+_Extrait Message Segment OBX :_ Remplacement du CR
 d'imagerie médicale (nouvelle version du document) avec balises pour le
 DMP et MSSanté.
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^TEXT\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 
@@ -299,7 +308,10 @@ OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
 
 HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
 
-[**Exemple 4 :**]{.underline} Transmission d'un document CR d'imagerie
+
+```
+
+**Exemple 4 :** Transmission d'un document CR d'imagerie
 médicale validé en CDA-R2 pour partage et envoi par MSSanté en le
 rendant visible au patient grâce à la valorisation et l'interprétation
 d'une balise OBX MODIF_CONF_CODE, une balise OBX INVISIBLE_PATIENT à N
@@ -315,13 +327,14 @@ document précédente. Côté consommateur, l'id du document à remplacer est
 extrait de la relation
 clinicalDocument/relatedDocument/parentDocument/id.
 
-[OBX-11= C :]{.underline} Remplacement du document, elle sera portée par
+_OBX-11= C :_ Remplacement du document, elle sera portée par
 l'OBX-11 (Observation Resultat Status)
 
-[Extrait Message Segment OBX :]{.underline} Modification des métadonnées
+_Extrait Message Segment OBX :_ Modification des métadonnées
 du CR d'imagerie médicale (nouvelle version du document) avec balises
 spécifiées pour le DMP et MSSANTE.
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^TEXT\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 
@@ -376,6 +389,8 @@ réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
 OBX\|11\|CE\|ACK_LECTURE_MSS\^Accusé de
 lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
 
+```
+
 #### Message MDM (Medical Document Management)
 
 -   Un exemple complet de message MDM\^T02\^MDM_T02 est disponible sur
@@ -386,19 +401,20 @@ lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
 Ci-dessous quelques exemples non exhaustifs des possibilités d'échange
 et de partage
 
-[**Exemple 0 :**]{.underline} Transmission initiale d'un document CR
+**Exemple 0 :** Transmission initiale d'un document CR
 d'imagerie médicale validé en CDA-R2 pour partage et échange sans les
 restrictions.
 
-OBX-11=F : La validation du document pour permettre sa publication est
+_OBX-11=F :_ La validation du document pour permettre sa publication est
 portée par l'OBX-11 (Observation Result Status)
 
-[Code : T02]{.underline} : Envoi d'un document initial
+_Code : T02 :_ Envoi d'un document initial
 
-[Extrait Message Segment OBX :]{.underline} Transmission du CR
+_Extrait Message Segment OBX :_ Transmission du CR
 d'imagerie médicale avec balises pour le DMP et MSSANTE. Un corps de
 mail pour le professionnel de santé est spécifié.
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 
@@ -461,21 +477,24 @@ OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
 
 HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
 
-[**Exemple 1 :**]{.underline} Transmission initiale d'un document CR
+```
+
+**Exemple 1 :** Transmission initiale d'un document CR
 d'imagerie Médicale validé en CDA-R2 pour partage et échange avec
 restriction Masquage Médecin, le message est partagé et échangé MSSanté
 Patient avec les restrictions mais non échangé en MSSanté Professionnel.
 
-OBX-11=F : La validation du document pour permettre sa publication est
+_OBX-11=F :_ La validation du document pour permettre sa publication est
 portée par l'OBX-11 (Observation Result Status)
 
-[Code : T02]{.underline} : Envoi d'un document initial
+_Code : T02:_ Envoi d'un document initial
 
-[Extrait Message Segment OBX :]{.underline} Transmission du CR
+_Extrait Message Segment OBX :_ Transmission du CR
 d'imagerie médicale avec balises pour le masquage. Les informations de
 l'expéditeur sont présentes. Un texte est ajouté à l'attention du
 patient.
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 
@@ -525,21 +544,25 @@ patient\^MetaDMPMSS \|\|\^text\^\^Base64\^Qm9uam91ciBN
 
 LkR1cG9udCwgY2ktam9pbnQgdm90cmUgQ1IgZOKAmWltYWdlcmllLg==\|\|\|\|\|F\|
 
-**[Exemple 2 :]{.underline}** Transmission d'une demande de suppression
+
+```
+
+**Exemple 2 :** Transmission d'une demande de suppression
 du document CR déjà publié et échangé en CDA-R2 sans les restrictions.
 Le document est dépublié sur le DMP et la PFI doit générer un message en
 direction des destinataires MSSanté désignés indiquant dans le corps du
 courriel que le document doit être supprimé.
 
-OBX-11=D : Suppression du document, elle sera portée par l'OBX-11
+_OBX-11=D :_ Suppression du document, elle sera portée par l'OBX-11
 (Observation Resultat Status)
 
-[Code : T04]{.underline} : Notification de changement du statut du
+_Code : T04 :_ Notification de changement du statut du
 document, accompagnée du document en question.
 
-[Extrait Message Segment OBX :]{.underline} Suppression du CR d'imagerie
+_Extrait Message Segment OBX :_ Suppression du CR d'imagerie
 avec balises pour le DMP et MSSanté
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 
@@ -591,7 +614,10 @@ OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
 
 HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
 
-[**Exemple 3 :**]{.underline} Remplacement d'un document CR d'imagerie
+
+```
+
+**Exemple 3 :** Remplacement d'un document CR d'imagerie
 médicale déjà partagé DMP et échangé par une nouvelle version validée en
 CDA-R2 pour nouveau partage et échange sans restriction, le message est
 partagé DMP pour « Replace ». Le code RPLC dans
@@ -608,15 +634,16 @@ document précédente. Côté consommateur, l'id du document à remplacer est
 extrait de la relation
 clinicalDocument/relatedDocument/parentDocument/id.
 
-OBX-11=C : Remplacement du document, elle sera portée par l'OBX-11
+_OBX-11=C :_ Remplacement du document, elle sera portée par l'OBX-11
 (Observation Resultat Status)
 
-[Code : T10]{.underline} : Remplacement, par une version ultérieure,
+_Code : T10 :_ Remplacement, par une version ultérieure,
 d'un document communiqué auparavant
 
-[Extrait Message Segment OBX :]{.underline} Remplacement du CR
+_Extrait Message Segment OBX :_ Remplacement du CR
 d'imagerie Médicale avec balises pour le DMP et MSSANTE
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 
@@ -670,7 +697,10 @@ OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
 
 HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
 
-[**Exemple 4 :**]{.underline} Transmission d'un document CR d'imagerie
+
+```
+
+**Exemple 4 :** Transmission d'un document CR d'imagerie
 médicale validé en CDA-R2 pour partage et échange en le rendant visible
 au patient grâce à la valorisation et l'interprétation d'une balise OBX
 MODIF_CONF_CODE, une balise OBX INVISIBLE_PATIENT à N permettant de
@@ -686,16 +716,17 @@ document précédente. Côté consommateur, l'id du document à remplacer est
 extrait de la relation
 clinicalDocument/relatedDocument/parentDocument/id.
 
-OBX-11=C : Remplacement du document, elle sera portée par l'OBX-11
+_OBX-11=C :_ Remplacement du document, elle sera portée par l'OBX-11
 (Observation Resultat Status)
 
-[Code : T10]{.underline} : Remplacement, par une version ultérieure,
+_Code : T10 :_ Remplacement, par une version ultérieure,
 d'un document communiqué auparavant
 
-[Extrait Message Segment OBX :]{.underline} Transmission du CR
+_Extrait Message Segment OBX :_ Transmission du CR
 d'imagerie médicale avec balises spécifiées pour le DMP et MSSANTE. Une
 adresse mail de réponse est précisée.
 
+```
 OBX\|1\|ED\|18748-4\^CR d'imagerie
 médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 
@@ -754,3 +785,4 @@ lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
 
 OBX\|13\|XTN\|REPLY_TO\^Adresse mail de réponse\|\|\^\^X.400\^
 adam.homme@mailiz.mssante.fr\|\|\|\|\|\|F\|
+```
