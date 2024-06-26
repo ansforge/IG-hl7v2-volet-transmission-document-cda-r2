@@ -1,4 +1,4 @@
-#### Exemple Message ORU (Unsolicited Transmission of an observation message)
+### Exemple Message ORU (Unsolicited Transmission of an observation message)
 
 
 -   Un exemple complet de message ORU\^R01\^ORU_R01 est disponible sur
@@ -391,7 +391,7 @@ lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
 
 ```
 
-#### Message MDM (Medical Document Management)
+### Message MDM (Medical Document Management)
 
 -   Un exemple complet de message MDM\^T02\^MDM_T02 est disponible sur
     le GitHub ANS :

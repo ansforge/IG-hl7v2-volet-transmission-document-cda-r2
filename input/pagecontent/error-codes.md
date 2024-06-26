@@ -1,4 +1,4 @@
-#### Table « SMTPERRORCODE »
+### Table « SMTPERRORCODE »
 
 La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message ZAM^Z02^ZAM_Z01 contient le code d’erreur remonté lors de la distribution du ou des document(s) par MSSanté dans le serveur de messagerie du destinataire MSSanté : 
 
@@ -1126,7 +1126,7 @@ La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message ZAM^Z02^ZAM
 </tbody>
 </table>
 
-#### Codes erreurs de l’accusé métier de lecture/traitement de la demande
+### Codes erreurs de l’accusé métier de lecture/traitement de la demande
 
 Les tables HL70357 (dont le nom symbolique est messageErrorCondition) et HL70533 (dont le nom symbolique est applicationErrorCode) sont décrites dans le volet « Transmission au LPS d’un document CDA provenant d’un courriel MSsanté » du CI_SIS. 
 La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur technique du message HL7 MDM (erreur de syntaxe). La nature de l’erreur est renseignée dans le champ ERR-3 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE (PFI). 
