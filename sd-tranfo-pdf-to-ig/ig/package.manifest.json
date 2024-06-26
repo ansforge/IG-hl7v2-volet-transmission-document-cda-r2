@@ -1,7 +1,7 @@
 {
   "version" : "2.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240625153915",
+  "date" : "20240626091409",
   "name" : "ans.hl7v2.fr.transmission-cda-r2",
   "jurisdiction" : "urn:iso:std:iso:3166#FR"
 }
