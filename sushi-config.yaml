@@ -59,6 +59,8 @@ pages:
         title: "Error codes"
     change-log.md:
         title: "Historique des versions"
+    glossaire.md:
+        title: "Glossaire"
     download.md:
         title: "Téléchargements"
         generation: markdown
@@ -85,6 +87,7 @@ menu:
         "Table AckMetierZAM": ack-metier-zam.html
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
+        "Glossaire": glossaire.html
     Test Plan: testplan.html
     Historique des versions: change-log.html
     Téléchargements: download.html
