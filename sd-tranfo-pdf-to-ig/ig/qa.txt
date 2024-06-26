@@ -3,7 +3,7 @@ Hl7v2_CDAr2 : Validation Results
 
 err = 1, warn = 5, info = 1
 IG Publisher Version: 1.6.11
-Generated Wed Jun 26 15:33:29 UTC 2024. FHIR version 4.0.1 for ans.hl7v2.fr.transmission-cda-r2#2.1.0 (canonical = https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2)
+Generated Wed Jun 26 15:37:35 UTC 2024. FHIR version 4.0.1 for ans.hl7v2.fr.transmission-cda-r2#2.1.0 (canonical = https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2)
  Build Errors : 1 / 5 / 1
  /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2 : 1 / 0 / 1
 </table>

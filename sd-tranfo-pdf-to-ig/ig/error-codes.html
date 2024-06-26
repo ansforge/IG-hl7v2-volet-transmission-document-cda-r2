@@ -229,10 +229,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#table--smtperrorcode-" id="markdown-toc-table--smtperrorcode-">Table « SMTPERRORCODE »</a></li>
+  <li><a href="#codes-erreurs-de-laccusé-métier-de-lecturetraitement-de-la-demande" id="markdown-toc-codes-erreurs-de-laccusé-métier-de-lecturetraitement-de-la-demande">Codes erreurs de l’accusé métier de lecture/traitement de la demande</a></li>
+</ul>
+
 </div>
-<h4 id="table--smtperrorcode-">Table « SMTPERRORCODE »</h4>
+<h3 id="table--smtperrorcode-">Table « SMTPERRORCODE »</h3>
 
 <p>La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message ZAM^Z02^ZAM_Z01 contient le code d’erreur remonté lors de la distribution du ou des document(s) par MSSanté dans le serveur de messagerie du destinataire MSSanté :</p>
 
@@ -1360,7 +1364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tbody>
 </table>
 
-<h4 id="codes-erreurs-de-laccusé-métier-de-lecturetraitement-de-la-demande">Codes erreurs de l’accusé métier de lecture/traitement de la demande</h4>
+<h3 id="codes-erreurs-de-laccusé-métier-de-lecturetraitement-de-la-demande">Codes erreurs de l’accusé métier de lecture/traitement de la demande</h3>
 
 <p>Les tables HL70357 (dont le nom symbolique est messageErrorCondition) et HL70533 (dont le nom symbolique est applicationErrorCode) sont décrites dans le volet « Transmission au LPS d’un document CDA provenant d’un courriel MSsanté » du CI_SIS. 
 La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur technique du message HL7 MDM (erreur de syntaxe). La nature de l’erreur est renseignée dans le champ ERR-3 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE (PFI).</p>
@@ -1627,7 +1631,7 @@ La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DP
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 15:33+0000">2024-06-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 15:37+0000">2024-06-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
