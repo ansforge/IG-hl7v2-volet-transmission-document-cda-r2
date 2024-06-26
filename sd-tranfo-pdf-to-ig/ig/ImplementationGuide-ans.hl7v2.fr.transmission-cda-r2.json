@@ -10,7 +10,7 @@
   "name" : "Hl7v2_CDAr2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2024-06-26T15:39:07+00:00",
+  "date" : "2024-06-26T15:45:00+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -821,6 +821,15 @@
         }],
         "nameUrl" : "change-log.html",
         "title" : "Historique des versions",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "glossaire.html"
+        }],
+        "nameUrl" : "glossaire.html",
+        "title" : "Glossaire",
         "generation" : "markdown"
       },
       {

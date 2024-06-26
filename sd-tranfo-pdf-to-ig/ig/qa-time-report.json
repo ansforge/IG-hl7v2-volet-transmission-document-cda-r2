@@ -1,69 +1,54 @@
 {
-  "date" : "Wed, 26 Jun, 2024 15:39:07 +0000",
+  "date" : "Wed, 26 Jun, 2024 15:45:00 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2.json",
-      "size" : 4518,
+      "size" : 4645,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 23,
-          "length" : 36
+          "start" : 22,
+          "length" : 34
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 23,
+          "start" : 22,
           "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 23,
-          "length" : 63
+          "start" : 22,
+          "length" : 53
         },
         {
           "activity" : "validate",
-          "start" : 23,
-          "length" : 3394
+          "start" : 22,
+          "length" : 3323
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 26,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 26,
+          "start" : 25,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 26,
-          "length" : 120
+          "start" : 25,
+          "length" : 115
         },
         {
           "activity" : "generate2",
-          "start" : 29,
-          "length" : 125
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 31,
-          "length" : 1
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 36,
-          "length" : 1
+          "start" : 27,
+          "length" : 115
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 37,
+          "start" : 35,
           "length" : 3
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 39,
+          "start" : 37,
           "length" : 3
         }
       ]
