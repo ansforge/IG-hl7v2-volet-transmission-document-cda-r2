@@ -229,10 +229,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#liste-des-acteurs-et-systèmes-concernés" id="markdown-toc-liste-des-acteurs-et-systèmes-concernés">Liste des Acteurs et systèmes concernés</a></li>
+  <li><a href="#diagramme-des-acteurstransactions" id="markdown-toc-diagramme-des-acteurstransactions">Diagramme des Acteurs/Transactions</a></li>
+  <li><a href="#regroupement-requis-des-acteurs" id="markdown-toc-regroupement-requis-des-acteurs">Regroupement requis des Acteurs</a></li>
+</ul>
+
 </div>
-<h4 id="liste-des-acteurs-et-systèmes-concernés">Liste des Acteurs et systèmes concernés</h4>
+<h3 id="liste-des-acteurs-et-systèmes-concernés">Liste des Acteurs et systèmes concernés</h3>
 
 <p>Le présent volet met en œuvre les Acteurs IHE suivants, représentant le
 rôle joué par un ou plusieurs composants du système d’information :</p>
@@ -267,12 +272,12 @@ rôle joué par un ou plusieurs composants du système d’information :</p>
 </tbody>
 </table>
 
-<p>Note ^(1) ^: <em>l’acteur CREATEUR, relayé par le GESTIONNAIRE peut décider
+<p><strong>Note (1):</strong> l’acteur CREATEUR, relayé par le GESTIONNAIRE peut décider
 d’envoyer un courriel en direction d’une BAL personnelle (par exemple,
 le médecin traitant du patient), d’une BAL organisationnelle (par
 exemple, un cabinet médical en ville, le service de cardiologie de
 l’établissement destinataire) ou d’une BAL applicative (par exemple, la
-BAL applicative du DPI d’un établissement hospitalier destinataire).</em></p>
+BAL applicative du DPI d’un établissement hospitalier destinataire)._</p>
 
 <p>Le tableau suivant liste, pour chacun des acteurs, les systèmes du SIH concernés :</p>
 
@@ -308,7 +313,7 @@ BAL applicative du DPI d’un établissement hospitalier destinataire).</em></p>
 </tbody>
 </table>
 
-<h4 id="diagramme-des-acteurstransactions">Diagramme des Acteurs/Transactions</h4>
+<h3 id="diagramme-des-acteurstransactions">Diagramme des Acteurs/Transactions</h3>
 
 <div class="figure">
     <img src="image12.png" alt="Figure 7" title="Figure 7 : Diagramme des Acteurs/Transactions." style="width:100%;" />
@@ -445,12 +450,12 @@ transactions optionnelles (O-Optional).</p>
 </table>
 <p>Figure 8 : Tableau des Acteurs/Transactions</p>
 
-<p><em>[Note 1]</em> : <em>l’acteur CREATEUR choisit d’implémenter l’une
+<p><strong>[Note 1]</strong> : <em>l’acteur CREATEUR choisit d’implémenter l’une
 ou l’autre des transactions : le Flux 1 (Flux HL7-ORU) ou le flux 2
 (Flux HL7-MDM) en émission. L’acteur GESTIONNAIRE DOIT implémenter les
 deux transactions Flux HL7-ORU et Flux HL7-MDM en réception.</em></p>
 
-<p><em>[Note 2]</em> : _dans le contexte du SEGUR vague 2, couloirs DPI
+<p><strong>[Note 2]</strong> : _dans le contexte du SEGUR vague 2, couloirs DPI
 et PFI, l’accusé métier de réception DMP ainsi que l’accusé métier de
 réception MSSanté sont requis.</p>
 
@@ -468,7 +473,7 @@ Notification – DSN – RFC 3461 à 3464 et 6522 qui permet de savoir si
 un courriel a été remis avec succès dans la BAL du destinataire). Il est
 relayé au CREATEUR au travers du flux 4._</p>
 
-<p><em>[Note 3]</em> : _l’accusé métier de lecture MSSanté n’est requis
+<p><strong>[Note 3]</strong> : _l’accusé métier de lecture MSSanté n’est requis
 ni dans ce volet du CI_SIS ni dans le contexte du SEGUR vague2.</p>
 
 <p>Le flux d’accusé métier de lecture MSSanté est généré par le
@@ -491,7 +496,7 @@ rend compte de la réalisation de la demande de traitement sur le
 document contenu dans le courriel par le logiciel métier associé à la
 BAL destinatrice du courriel._</p>
 
-<p><em>[Note 4]</em> : <em>Le Flux HL7-MDM permet de transmettre undocument unique.
+<p><strong>[Note 4]</strong> : <em>Le Flux HL7-MDM permet de transmettre undocument unique.
 Le Flux HL7-ORU peut, le cas échéant, transporter deux documents, un
 CDAr2 Niv1 et un CDAr2 Niv3, dans la même transaction. Dans ce cas, il
 s’agit de deux instances de documents dont le contenu clinique est
@@ -504,12 +509,12 @@ identifiant propre.</em></p>
 
 <blockquote class="stu-note">
     <p>
-    <b>Point d'attention</b> dans le contexte de la vague 2 du SEGUR, le compte-rendu de biologie, le volet de synthèse médicale ainsi que la prescription de produits de santé sont spécifiés sous la forme d'un CDAr2 Niv3 intégrant le document remis au patient sous forme papier (format PDF) dans une section dédiée. Pour ces cas d'usage, un seul document sera donc produit.
+    <b>Point d'attention :</b> dans le contexte de la vague 2 du SEGUR, le compte-rendu de biologie, le volet de synthèse médicale ainsi que la prescription de produits de santé sont spécifiés sous la forme d'un CDAr2 Niv3 intégrant le document remis au patient sous forme papier (format PDF) dans une section dédiée. Pour ces cas d'usage, un seul document sera donc produit.
     Néanmoins cette version du présent volet conserve la possibilité de transmettre les 2 formats de documents (CDAr2 Niv1 et CDAr2 Niv3) dans la transaction HL7-ORU permettant ainsi de ne pas limiter l'implémentation du volet seulement aux SGL référencés SEGUR.
     </p>
 </blockquote>
 
-<h4 id="regroupement-requis-des-acteurs">Regroupement requis des Acteurs</h4>
+<h3 id="regroupement-requis-des-acteurs">Regroupement requis des Acteurs</h3>
 
 <p>Cette section décrit les exigences en termes de regroupement d’acteurs pour chacun des acteurs identifiés précédemment.</p>
 
@@ -625,7 +630,7 @@ inclue dans le courriel émis vers le destinataire,</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 10:01+0000">2024-06-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 14:39+0000">2024-06-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
