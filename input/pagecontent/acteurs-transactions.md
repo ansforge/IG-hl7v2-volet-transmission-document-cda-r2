@@ -1,4 +1,4 @@
-#### Liste des Acteurs et systèmes concernés
+### Liste des Acteurs et systèmes concernés
 
 Le présent volet met en œuvre les Acteurs IHE suivants, représentant le
 rôle joué par un ou plusieurs composants du système d'information :
@@ -33,7 +33,7 @@ rôle joué par un ou plusieurs composants du système d'information :
 </tbody>
 </table>
 
-Note ^(1) ^: _l'acteur CREATEUR, relayé par le GESTIONNAIRE peut décider
+**Note (1):** l'acteur CREATEUR, relayé par le GESTIONNAIRE peut décider
 d'envoyer un courriel en direction d'une BAL personnelle (par exemple,
 le médecin traitant du patient), d'une BAL organisationnelle (par
 exemple, un cabinet médical en ville, le service de cardiologie de
@@ -74,7 +74,7 @@ Le tableau suivant liste, pour chacun des acteurs, les systèmes du SIH concern�
 </tbody>
 </table>
 
-#### Diagramme des Acteurs/Transactions
+### Diagramme des Acteurs/Transactions
 
 <div class="figure">
     <img src="image12.png" alt="Figure 7" title="Figure 7 : Diagramme des Acteurs/Transactions." style="width:100%;">
@@ -206,12 +206,12 @@ transactions optionnelles (O-Optional).
 </table>
 Figure 8 : Tableau des Acteurs/Transactions
 
-*[Note 1]* : _l'acteur CREATEUR choisit d'implémenter l'une
+**[Note 1]** : _l'acteur CREATEUR choisit d'implémenter l'une
 ou l'autre des transactions : le Flux 1 (Flux HL7-ORU) ou le flux 2
 (Flux HL7-MDM) en émission. L'acteur GESTIONNAIRE DOIT implémenter les
 deux transactions Flux HL7-ORU et Flux HL7-MDM en réception._
 
-*[Note 2]* : _dans le contexte du SEGUR vague 2, couloirs DPI
+**[Note 2]** : _dans le contexte du SEGUR vague 2, couloirs DPI
 et PFI, l'accusé métier de réception DMP ainsi que l'accusé métier de
 réception MSSanté sont requis.
 
@@ -229,7 +229,7 @@ Notification -- DSN -- RFC 3461 à 3464 et 6522 qui permet de savoir si
 un courriel a été remis avec succès dans la BAL du destinataire). Il est
 relayé au CREATEUR au travers du flux 4._
 
-*[Note 3]* : _l'accusé métier de lecture MSSanté n'est requis
+**[Note 3]** : _l'accusé métier de lecture MSSanté n'est requis
 ni dans ce volet du CI_SIS ni dans le contexte du SEGUR vague2.
 
 Le flux d'accusé métier de lecture MSSanté est généré par le
@@ -252,7 +252,7 @@ rend compte de la réalisation de la demande de traitement sur le
 document contenu dans le courriel par le logiciel métier associé à la
 BAL destinatrice du courriel._
 
-*[Note 4]* : _Le Flux HL7-MDM permet de transmettre undocument unique.
+**[Note 4]** : _Le Flux HL7-MDM permet de transmettre undocument unique.
 Le Flux HL7-ORU peut, le cas échéant, transporter deux documents, un
 CDAr2 Niv1 et un CDAr2 Niv3, dans la même transaction. Dans ce cas, il
 s'agit de deux instances de documents dont le contenu clinique est
@@ -265,12 +265,12 @@ identifiant propre._
 
 <blockquote class="stu-note">
     <p>
-    <b>Point d'attention</b> dans le contexte de la vague 2 du SEGUR, le compte-rendu de biologie, le volet de synthèse médicale ainsi que la prescription de produits de santé sont spécifiés sous la forme d'un CDAr2 Niv3 intégrant le document remis au patient sous forme papier (format PDF) dans une section dédiée. Pour ces cas d'usage, un seul document sera donc produit.
+    <b>Point d'attention :</b> dans le contexte de la vague 2 du SEGUR, le compte-rendu de biologie, le volet de synthèse médicale ainsi que la prescription de produits de santé sont spécifiés sous la forme d'un CDAr2 Niv3 intégrant le document remis au patient sous forme papier (format PDF) dans une section dédiée. Pour ces cas d'usage, un seul document sera donc produit.
     Néanmoins cette version du présent volet conserve la possibilité de transmettre les 2 formats de documents (CDAr2 Niv1 et CDAr2 Niv3) dans la transaction HL7-ORU permettant ainsi de ne pas limiter l'implémentation du volet seulement aux SGL référencés SEGUR.
     </p>
 </blockquote>
 
-#### Regroupement requis des Acteurs
+### Regroupement requis des Acteurs
 
 Cette section décrit les exigences en termes de regroupement d'acteurs pour chacun des acteurs identifiés précédemment.
 
