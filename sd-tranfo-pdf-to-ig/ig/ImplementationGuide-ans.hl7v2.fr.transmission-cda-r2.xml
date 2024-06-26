@@ -8,9 +8,9 @@
   <url value="https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/ImplementationGuide/ans.hl7v2.fr.transmission-cda-r2"/>
   <version value="2.1.0"/>
   <name value="Hl7v2_CDAr2"/>
-  <title value="ANS IG du volet de transmission d'un document CDA-R2 en HL7v2"/>
+  <title value="Volet de transmission d'un document CDA-R2 en HL7v2"/>
   <status value="draft"/>
-  <date value="2024-06-26T09:42:07+00:00"/>
+  <date value="2024-06-26T09:49:42+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
