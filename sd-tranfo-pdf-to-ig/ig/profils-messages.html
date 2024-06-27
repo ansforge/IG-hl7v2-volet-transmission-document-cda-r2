@@ -236,6 +236,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#description-des-messages-oru-et-mdm" id="markdown-toc-description-des-messages-oru-et-mdm">Description des messages ORU et MDM</a></li>
   <li><a href="#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet" id="markdown-toc-contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">Contraintes appliquées aux messages MDM et ORU dans le contexte de ce volet</a></li>
+  <li><a href="#description-des-messages-hl7-daccusés-métier" id="markdown-toc-description-des-messages-hl7-daccusés-métier">Description des messages HL7 d’accusés métier</a></li>
 </ul>
 
 </div>
@@ -2305,7 +2306,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
   mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><a name="l4272">​</a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><a name="l4276">​</a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
   Arial;color:black;mso-themecolor:text1">Ce segment est requis, en particulier
   dans le cas d’une publication du document sur le DMP, </span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
   text1;mso-bidi-font-weight:bold">pour permettre à la PFI de générer le VIHF ainsi
@@ -4891,18 +4892,17 @@ applicative.</p>
 
 <blockquote class="stu-note">
     <p>
-    <b>Les adresses mails MSSanté sont valorisées dans les segments PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur «&nbsp;RCT&nbsp;(Results Copies To)&nbsp;». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
-    &lt;/p&gt;
-&lt;/blockquote&gt;
+    <b>Point d’attention :</b> Les adresses mails MSSanté sont valorisées dans les segments PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur «&nbsp;RCT&nbsp;(Results Copies To)&nbsp;». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
+    </p>
+</blockquote>
 
-##### Echange MSSanté Patient 
+<h5 id="echange-mssanté-patient">Echange MSSanté Patient</h5>
 
-Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
-être échangé vers le mail MSSanté du Patient.
+<p>Cet OBX permet d’informer l’acteur GESTIONNAIRE que le document doit
+être échangé vers le mail MSSanté du Patient.</p>
 
-Si l'utilisateur ne souhaite pas que le patient puisse répondre à son
-message, un segment NTE avec la valeur «&nbsp;FIN&nbsp;» doit être ajouté.
-
+<p>Si l’utilisateur ne souhaite pas que le patient puisse répondre à son
+message, un segment NTE avec la valeur «&nbsp;FIN&nbsp;» doit être ajouté.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -5242,16 +5242,16 @@ message, un segment NTE avec la valeur «&nbsp;FIN&nbsp;» doit être ajouté.
 
 <blockquote class="stu-note">
     <p>
-    <b>Point D’attention :</b> L'adresse mail MSSanté du patient est valorisée dans un segment PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur «&nbsp;RCT&nbsp;(Results Copies To)&nbsp;». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
+    <b>Point d'attention :</b> L'adresse mail MSSanté du patient est valorisée dans un segment PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur «&nbsp;RCT&nbsp;(Results Copies To)&nbsp;». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
     </p>
 </blockquote>
 
-##### Transmission de l'accusé de réception DMP/MSSanté
+<h5 id="transmission-de-laccusé-de-réception-dmpmssanté">Transmission de l’accusé de réception DMP/MSSanté</h5>
 
-Cet OBX permet d'informer le GESTIONNAIRE que l'utilisateur souhaite
+<p>Cet OBX permet d’informer le GESTIONNAIRE que l’utilisateur souhaite
 recevoir un accusé de réception provenant du DMP et un accusé de
 réception provenant du serveur de messagerie de chaque destinataire
-MSSanté.
+MSSanté.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -5565,16 +5565,17 @@ MSSanté.
   mso-themecolor:text1">»&nbsp;<p xmlns="http://error/undefined-namespace"></p></span></p>
   </td>
  </tr>
-</tbody></table>
+</tbody>
+</table>
 
-##### Transmission de l'accusé de lecture
+<h5 id="transmission-de-laccusé-de-lecture">Transmission de l’accusé de lecture</h5>
 
-Cet OBX permet d'informer le GESTIONNAIRE que l'utilisateur souhaite
+<p>Cet OBX permet d’informer le GESTIONNAIRE que l’utilisateur souhaite
 recevoir un accusé de lecture pour chaque destinataire MSSanté. En
-fonction de l'organisation choisie, cet accusé de lecture atteste soit
+fonction de l’organisation choisie, cet accusé de lecture atteste soit
 de la lecture du courrier électronique présent dans la BAL pour chacun
 des destinataires MSSanté, soit du résultat du traitement automatique du
-courrier électronique par le GESTIONNAIRE destinataire.
+courrier électronique par le GESTIONNAIRE destinataire.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -5889,11 +5890,11 @@ courrier électronique par le GESTIONNAIRE destinataire.
  </tr>
 </tbody></table>
 
-##### Corps du mail à destination d'un professionnel de santé
+<h5 id="corps-du-mail-à-destination-dun-professionnel-de-santé">Corps du mail à destination d’un professionnel de santé</h5>
 
-Cet OBX permet à l'acteur CREATEUR de documents d'ajouter un texte à
+<p>Cet OBX permet à l’acteur CREATEUR de documents d’ajouter un texte à
 intégrer dans le corps du mail à destination des professionnels de santé
-via MSSanté. Cette métadonnée est optionnelle :
+via MSSanté. Cette métadonnée est optionnelle :</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -6147,11 +6148,11 @@ via MSSanté. Cette métadonnée est optionnelle :
     </p>
 </blockquote>
 
-##### Corps du mail à destination du patient
+<h5 id="corps-du-mail-à-destination-du-patient">Corps du mail à destination du patient</h5>
 
-Cet OBX permet au CREATEUR de documents d'ajouter un texte à intégrer
+<p>Cet OBX permet au CREATEUR de documents d’ajouter un texte à intégrer
 dans le corps du mail à destination du patient via MSSanté. Cette
-métadonnée est optionnelle :
+métadonnée est optionnelle :</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -6405,16 +6406,16 @@ métadonnée est optionnelle :
     </p>
 </blockquote>
 
-Quelques exemples sont disponibles [ici](exemples.html).
+<p>Quelques exemples sont disponibles <a href="exemples.html">ici</a>.</p>
 
-#### Le message d'acquittement du message HL7v2&nbsp;
+<h4 id="le-message-dacquittement-du-message-hl7v2">Le message d’acquittement du message HL7v2&nbsp;</h4>
 
-Après réception du message ORU/MDM, le Gestionnaire va acquitter ce
-message HL7.
+<p>Après réception du message ORU/MDM, le Gestionnaire va acquitter ce
+message HL7.</p>
 
-##### Profil du message ACK
+<h5 id="profil-du-message-ack">Profil du message ACK</h5>
 
-Le profil du message ACK est le suivant&nbsp;:
+<p>Le profil du message ACK est le suivant&nbsp;:</p>
 
 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoNormalTable">
  <thead>
@@ -6648,315 +6649,24 @@ Le profil du message ACK est le suivant&nbsp;:
  </tr>
 </tbody></table>
 
-##### Structure fonctionnelle du message ACK
+<h5 id="structure-fonctionnelle-du-message-ack">Structure fonctionnelle du message ACK</h5>
 
-La structure du message ACK est représentée ci-dessous&nbsp;:
+<p>La structure du message ACK est représentée ci-dessous&nbsp;:</p>
 
 <div class="figure">
     <img src="image26.png" alt="Figure 19" style="width:100%;" title="Figure 19 : Structure fonctionnelle du message ACK"/>
     <figcaption>Figure 19&nbsp;: Structure fonctionnelle du message ACK</figcaption>
 </div>
-<br/>
+<p><br/></p>
 
-Ces segments doivent être conformes au standard HL7v2.5 pour le message
-ORU et HL7v2.6 pour MDM.
+<p>Ces segments doivent être conformes au standard HL7v2.5 pour le message
+ORU et HL7v2.6 pour MDM.</p>
 
-##### Description des contraintes à appliquer sur l'acquittement
+<h5 id="description-des-contraintes-à-appliquer-sur-lacquittement">Description des contraintes à appliquer sur l’acquittement</h5>
 
-###### Segment MSH
+<h6 id="segment-msh">Segment MSH</h6>
 
-Le segment MSH reprend une partie des informations du message initial&nbsp;:
-
-<table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
- <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
-  <td colspan="2" width="324" valign="top" style="width:242.65pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;text-align:center;
-  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Message
-  initial<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
-  </td>
-  
-  <td colspan="2" width="328" valign="top" style="width:246.15pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:background1;
-  mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;text-align:center;
-  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Message
-  d’acquittement<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:1">
-  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:
-  217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;text-align:center;
-  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Champ<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
-  </td>
-  
-  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;text-align:center;
-  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Description</span></b></span><span style="mso-bookmark:_Hlk120874764"></span><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt"><p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
-  </td>
-  
-  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;text-align:center;
-  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Champ</span></b></span><span style="mso-bookmark:_Hlk120874764"></span><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt"><p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
-  </td>
-  
-  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;text-align:center;
-  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Description<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:2">
-  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.3" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.3</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Application</span></span><span style="mso-bookmark:
-  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
-  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
-  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Application source du message à acquitter <p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.5" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.5</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Application</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Arial;
-  color:black;mso-fareast-language:FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Application destinatrice de l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:3">
-  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.4" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.4</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Facility</span></span><span style="mso-bookmark:
-  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
-  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
-  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Etablissement source du message à acquitter<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.6" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.6</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Facility</span></span><span style="mso-bookmark:
-  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
-  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
-  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Etablissement destinataire de
-  l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:4">
-  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.5" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.5</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Application</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Arial;
-  color:black;mso-fareast-language:FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Application destinatrice du message à
-  acquitter<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.3" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.3</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Application</span></span><span style="mso-bookmark:
-  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
-  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
-  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Application source de l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:5">
-  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.6" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.6</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Facility</span></span><span style="mso-bookmark:
-  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
-  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
-  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Etablissement destinataire du message à
-  acquitter<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.4" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.4</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Facility</span></span><span style="mso-bookmark:
-  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
-  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
-  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Etablissement source de l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes">
-  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.11" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.11</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;position:relative;top:.5pt;mso-text-raise:-.5pt;
-  mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span><span style="color:black">- <span class="SpellE">Processing</span> Id</span></span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Arial;
-  color:black;mso-fareast-language:FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Identifiant de traitement <p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.11" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
-  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.11</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
-  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Processing</span> Id</span></span><span style="mso-bookmark:
-  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
-  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
-  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
-  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
-  color:black;mso-themecolor:text1">Identifiant de traitement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
-  </td>
-  
- </tr>
-</tbody></table>
-
-Le segment MSH doit être conforme au standard HL7v2.5 ou HL7v2.6 selon
-le type du message (ORU ou MDM) :
+<p>Le segment MSH reprend une partie des informations du message initial&nbsp;:</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -7246,7 +6956,298 @@ le type du message (ORU ou MDM) :
  </tr>
 </tbody></table>
 
-###### Segment MSA
+<p>Le segment MSH doit être conforme au standard HL7v2.5 ou HL7v2.6 selon
+le type du message (ORU ou MDM) :</p>
+
+<table border="1" cellpadding="0" cellspacing="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td colspan="2" width="324" valign="top" style="width:242.65pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
+  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;text-align:center;
+  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Message
+  initial<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
+  </td>
+  
+  <td colspan="2" width="328" valign="top" style="width:246.15pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:background1;
+  mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;text-align:center;
+  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Message
+  d’acquittement<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:
+  217;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;text-align:center;
+  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Champ<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
+  </td>
+  
+  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
+  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;text-align:center;
+  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Description</span></b></span><span style="mso-bookmark:_Hlk120874764"></span><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt"><p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
+  </td>
+  
+  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
+  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;text-align:center;
+  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Champ</span></b></span><span style="mso-bookmark:_Hlk120874764"></span><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt"><p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
+  </td>
+  
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
+  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;text-align:center;
+  line-height:normal" align="center" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><b><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1">Description<p xmlns="http://error/undefined-namespace"></p></span></b></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.3" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.3</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Application</span></span><span style="mso-bookmark:
+  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
+  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Application source du message à acquitter <p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.5" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.5</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Application</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Arial;
+  color:black;mso-fareast-language:FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Application destinatrice de l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.4" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.4</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Facility</span></span><span style="mso-bookmark:
+  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
+  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Etablissement source du message à acquitter<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.6" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.6</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Facility</span></span><span style="mso-bookmark:
+  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
+  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Etablissement destinataire de
+  l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:4">
+  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.5" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.5</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Application</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Arial;
+  color:black;mso-fareast-language:FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Application destinatrice du message à
+  acquitter<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.3" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.3</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Application</span></span><span style="mso-bookmark:
+  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
+  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Application source de l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:5">
+  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.6" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.6</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Receiving</span> Facility</span></span><span style="mso-bookmark:
+  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
+  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Etablissement destinataire du message à
+  acquitter<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.4" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.4</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Sending</span> Facility</span></span><span style="mso-bookmark:
+  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
+  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Etablissement source de l’acquittement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+ </tr>
+ <tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes">
+  <td width="161" valign="top" style="width:121.05pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.11" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.11</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;position:relative;top:.5pt;mso-text-raise:-.5pt;
+  mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span><span style="color:black">- <span class="SpellE">Processing</span> Id</span></span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:Arial;
+  color:black;mso-fareast-language:FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="162" valign="top" style="width:121.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Identifiant de traitement <p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="149" valign="top" style="width:111.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"></span><a href="https://hl7-definition.caristix.com/v2/HL7v2.8/Fields/MSH.11" target="_blank"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:windowtext;position:relative;top:.5pt;
+  mso-text-raise:-.5pt;mso-fareast-language:FR">MSH.11</span></span><span style="mso-bookmark:_Hlk120874764"></span></a><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-bidi-font-family:Arial;color:black;position:relative;top:.5pt;mso-text-raise:
+  -.5pt;mso-fareast-language:FR"><span style="mso-spacerun:yes">&nbsp;</span>- <span class="SpellE">Processing</span> Id</span></span><span style="mso-bookmark:
+  _Hlk120874764"><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-bidi-font-family:Arial;color:black;mso-fareast-language:
+  FR">​</span></span><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;color:black;mso-themecolor:text1"><p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><span style="mso-bookmark:_Hlk120874764"><span style="mso-bidi-font-size:10.0pt;
+  color:black;mso-themecolor:text1">Identifiant de traitement<p xmlns="http://error/undefined-namespace"></p></span></span></p>
+  </td>
+  
+ </tr>
+</tbody></table>
+
+<h6 id="segment-msa">Segment MSA</h6>
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
  <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
@@ -7355,14 +7356,14 @@ le type du message (ORU ou MDM) :
  </tr>
 </tbody></table>
 
-###### Segment ERR
+<h6 id="segment-err">Segment ERR</h6>
 
-Ce segment est utilisé au niveau des messages d'acquittement dans le cas
+<p>Ce segment est utilisé au niveau des messages d’acquittement dans le cas
 où le champ MSA-1 prend la valeur AE (Application error) ou AR
-(Application reject).
+(Application reject).</p>
 
-Le tableau ci-dessous liste les champs à renseigner pour le segment
-ERR&nbsp;:
+<p>Le tableau ci-dessous liste les champs à renseigner pour le segment
+ERR&nbsp;:</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="699" style="width:524.25pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -7479,59 +7480,56 @@ ERR&nbsp;:
   </td>
  </tr>
 </tbody></table>
-  
-###### Exemple
 
-Entête MSH d'un message MDM ou ORU émis par le CREATEUR&nbsp;:
+<h6 id="exemple">Exemple</h6>
 
-```
-MSH\|\^\~\\&amp;\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
+<p>Entête MSH d’un message MDM ou ORU émis par le CREATEUR&nbsp;:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH\|\^\~\\&amp;\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
 CISIS_CDA_HL7_V2
 
-```
-Un acquittement positif retourné par le GESTIONNAIRE :
+</code></pre></div></div>
+<p>Un acquittement positif retourné par le GESTIONNAIRE :</p>
 
-```
-MSH\|\^\~\\&amp;\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12346\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH\|\^\~\\&amp;\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12346\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
 CISIS_CDA_HL7_V2
 
 MSA\|AA\|12345
 
-```
-Un acquittement négatif retourné par le GESTIONNAIRE&nbsp;: version d'HL7
-inconnue
+</code></pre></div></div>
+<p>Un acquittement négatif retourné par le GESTIONNAIRE&nbsp;: version d’HL7
+inconnue</p>
 
-```
-MSH\|\^\~\\&amp;\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12347\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH\|\^\~\\&amp;\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12347\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
 CISIS_CDA_HL7_V2
 
 MSA\|AE\|12345
 
 ERR\|\|MSH\^1\^12\|203\^ Unsupported version\^messageErrorCondition\| E
-```
+</code></pre></div></div>
 
-### Description des messages HL7 d'accusés métier
+<h3 id="description-des-messages-hl7-daccusés-métier">Description des messages HL7 d’accusés métier</h3>
 
-#### Evènements déclenchants des messages d'accusés métier HL7v2
+<h4 id="evènements-déclenchants-des-messages-daccusés-métier-hl7v2">Evènements déclenchants des messages d’accusés métier HL7v2</h4>
 
-Après réception du (des) document(s), le GESTIONNAIRE le(s)
+<p>Après réception du (des) document(s), le GESTIONNAIRE le(s)
 distribue(nt) au consommateur de documents (DMP/MSSanté). Lorsque le
 GESTIONNAIRE reçoit un retour du consommateur, il en informe le CREATEUR
-au moyen d'accusés métier HL7.
+au moyen d’accusés métier HL7.</p>
 
-A noter qu'aucun accusé de réception métier n'est prévu dans la
+<p>A noter qu’aucun accusé de réception métier n’est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
-HL7v2 ORU ou MDM avec le Compte-Rendu d'Imagerie. Par contre, un message
-d'acquittement technique (voir section 12.3 [LIEN]) permettra à la DRIMbox de
-communiquer au GESTIONNAIRE qu'elle a bien pris la responsabilité des
+HL7v2 ORU ou MDM avec le Compte-Rendu d’Imagerie. Par contre, un message
+d’acquittement technique (voir section 12.3 [LIEN]) permettra à la DRIMbox de
+communiquer au GESTIONNAIRE qu’elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
-acknowledgment: Accept dans MSA-1)).
+acknowledgment: Accept dans MSA-1)).</p>
 
-Pour couvrir ce besoin de retour d'accusés métiers, un nouveau type de
-message HL7 a été créé&nbsp;: HL7v2.6 ZAM -- Accusé Métier.
+<p>Pour couvrir ce besoin de retour d’accusés métiers, un nouveau type de
+message HL7 a été créé&nbsp;: HL7v2.6 ZAM – Accusé Métier.</p>
 
-Ce type de message est utilisé par trois évènements différents&nbsp;:
+<p>Ce type de message est utilisé par trois évènements différents&nbsp;:</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="671" style="width:503.25pt;margin-left:-14.45pt;border-collapse:collapse;
  border:none;mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;
@@ -7680,35 +7678,34 @@ Ce type de message est utilisé par trois évènements différents&nbsp;:
  </tr>
 </tbody></table>
 
-#### Structure des messages accusés métier HL7
+<h4 id="structure-des-messages-accusés-métier-hl7">Structure des messages accusés métier HL7</h4>
 
-L'accusé de réception du document par le DMP, l'accusé de réception du
-courriel MSSanté et l'accusé de lecture MSSanté seront transmis en
-utilisant la structure de message HL7v2.6 ZAM_Z01&nbsp;:
-
+<p>L’accusé de réception du document par le DMP, l’accusé de réception du
+courriel MSSanté et l’accusé de lecture MSSanté seront transmis en
+utilisant la structure de message HL7v2.6 ZAM_Z01&nbsp;:</p>
 
 <div class="figure">
     <img src="image27.png" alt="Figure 20" style="width:100%;" title="Figure 20 : Structure fonctionnelle des messages accusé métier"/>
     <figcaption>Figure 20&nbsp;: Structure fonctionnelle des messages accusé métier</figcaption>
 </div>
-<br/>
+<p><br/></p>
 
-Ces segments doivent être conformes au standard HL7v2.6. Les contraintes
+<p>Ces segments doivent être conformes au standard HL7v2.6. Les contraintes
 concernant les segments en rouge sur le schéma sont décrites dans la
-section suivante.
+section suivante.</p>
 
-#### Description des contraintes à appliquer sur les accusés métiers
+<h4 id="description-des-contraintes-à-appliquer-sur-les-accusés-métiers">Description des contraintes à appliquer sur les accusés métiers</h4>
 
-Pour l'ensemble des OBX listés dans cette section, le champ OBX-3 prend
-ses valeurs dans la table «&nbsp;AckMetierZAM&nbsp;» disponible [ici](ack-metier-zam.html).
+<p>Pour l’ensemble des OBX listés dans cette section, le champ OBX-3 prend
+ses valeurs dans la table «&nbsp;AckMetierZAM&nbsp;» disponible <a href="ack-metier-zam.html">ici</a>.</p>
 
-##### Contraintes à appliquer au message ZAM\^Z01\^ZAM_Z01 - Accusé de réception DMP
+<h5 id="contraintes-à-appliquer-au-message-zamz01zam_z01---accusé-de-réception-dmp">Contraintes à appliquer au message ZAM\^Z01\^ZAM_Z01 - Accusé de réception DMP</h5>
 
-###### Segment MSH
+<h6 id="segment-msh-1">Segment MSH</h6>
 
-Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
+<p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-ZAM\^Z01\^ZAM_Z01.
+ZAM\^Z01\^ZAM_Z01.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -8280,9 +8277,9 @@ ZAM\^Z01\^ZAM_Z01.
  </tr>
 </tbody></table>
 
-###### Segment OBX portant le statut de d'accusé de réception
+<h6 id="segment-obx-portant-le-statut-de-daccusé-de-réception">Segment OBX portant le statut de d’accusé de réception</h6>
 
-Le premier segment OBX renseigne le statut de l'accusé de réception&nbsp;:
+<p>Le premier segment OBX renseigne le statut de l’accusé de réception&nbsp;:</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -8663,10 +8660,10 @@ Le premier segment OBX renseigne le statut de l'accusé de réception&nbsp;:
  </tr>
 </tbody></table>
 
-###### Segment ERR
+<h6 id="segment-err-1">Segment ERR</h6>
 
-Si une erreur intervient lors du dépôt du document sur le DMP, ce
-segment contient sa description.
+<p>Si une erreur intervient lors du dépôt du document sur le DMP, ce
+segment contient sa description.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -8808,13 +8805,13 @@ segment contient sa description.
  </tr>
 </tbody></table>
 
-##### Contraintes à appliquer au message ZAM\^Z02\^ZAM_Z01 -- Accusé de réception MSSanté
+<h5 id="contraintes-à-appliquer-au-message-zamz02zam_z01--accusé-de-réception-mssanté">Contraintes à appliquer au message ZAM\^Z02\^ZAM_Z01 – Accusé de réception MSSanté</h5>
 
-###### Segment MSH
+<h6 id="segment-msh-2">Segment MSH</h6>
 
-Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
+<p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-ZAM\^Z02\^ZAM_Z01.
+ZAM\^Z02\^ZAM_Z01.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -9384,10 +9381,10 @@ ZAM\^Z02\^ZAM_Z01.
  </tr>
 </tbody></table>
 
-###### Segment OBX portant le statut de d'accusé de réception
+<h6 id="segment-obx-portant-le-statut-de-daccusé-de-réception-1">Segment OBX portant le statut de d’accusé de réception</h6>
 
-Le premier segment OBX renseigne le statut de l'accusé de réception
-MSSanté&nbsp;:
+<p>Le premier segment OBX renseigne le statut de l’accusé de réception
+MSSanté&nbsp;:</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -9764,10 +9761,10 @@ MSSanté&nbsp;:
  </tr>
 </tbody></table>
 
-###### Segment OBX portant les informations du destinataire MSSanté
+<h6 id="segment-obx-portant-les-informations-du-destinataire-mssanté">Segment OBX portant les informations du destinataire MSSanté</h6>
 
-Le deuxième segment OBX renseigne les informations du destinataire du
-courriel MSSanté :
+<p>Le deuxième segment OBX renseigne les informations du destinataire du
+courriel MSSanté :</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -10125,11 +10122,11 @@ courriel MSSanté :
  </tr>
 </tbody></table>
 
-###### Segment ERR
+<h6 id="segment-err-2">Segment ERR</h6>
 
-Si une erreur intervient lors de la distribution du ou des document(s)
+<p>Si une erreur intervient lors de la distribution du ou des document(s)
 par MSSanté dans le serveur de messagerie du destinataire MSSanté, ce
-segment contient sa description.
+segment contient sa description.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -10266,13 +10263,13 @@ segment contient sa description.
  </tr>
 </tbody></table>
 
-##### Contraintes à appliquer au message ZAM\^Z03\^ZAM_Z01 -- Accusé de lecture MSSanté 
+<h5 id="contraintes-à-appliquer-au-message-zamz03zam_z01--accusé-de-lecture-mssanté">Contraintes à appliquer au message ZAM\^Z03\^ZAM_Z01 – Accusé de lecture MSSanté</h5>
 
-###### Segment MSH
+<h6 id="segment-msh-3">Segment MSH</h6>
 
-Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
+<p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-ZAM\^Z03\^ZAM_Z01.
+ZAM\^Z03\^ZAM_Z01.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -10842,9 +10839,9 @@ ZAM\^Z03\^ZAM_Z01.
  </tr>
 </tbody></table>
 
-###### Segment OBX portant le statut de d'accusé de lecture MSSanté
+<h6 id="segment-obx-portant-le-statut-de-daccusé-de-lecture-mssanté">Segment OBX portant le statut de d’accusé de lecture MSSanté</h6>
 
-Le premier segment OBX renseigne le statut de l'accusé de lecture&nbsp;:
+<p>Le premier segment OBX renseigne le statut de l’accusé de lecture&nbsp;:</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -11225,10 +11222,10 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture&nbsp;:
  </tr>
 </tbody></table>
 
-###### Segment OBX portant les informations du lecteur
+<h6 id="segment-obx-portant-les-informations-du-lecteur">Segment OBX portant les informations du lecteur</h6>
 
-Le deuxième segment OBX renseigne les informations du lecteur du
-courriel MSSanté :
+<p>Le deuxième segment OBX renseigne les informations du lecteur du
+courriel MSSanté :</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -11590,10 +11587,10 @@ courriel MSSanté :
  </tr>
 </tbody></table>
 
-###### Segment ERR
+<h6 id="segment-err-3">Segment ERR</h6>
 
-Si une erreur intervient lors du traitement de la demande réceptionnée
-par le destinataire, ce segment contient sa description.
+<p>Si une erreur intervient lors du traitement de la demande réceptionnée
+par le destinataire, ce segment contient sa description.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" width="680" style="width:510.05pt;border-collapse:collapse;border:none;mso-border-alt:
  solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -11737,16 +11734,15 @@ par le destinataire, ce segment contient sa description.
  </tr>
 </tbody></table>
 
-Seules les erreurs de niveau applicatif du traitement automatique sur le document au niveau du destinataire final sont remontées au travers du courriel MDN et réceptionnées par le GESTIONNAIRE (la PFI expéditrice).
-Les erreurs de type technique (erreurs de syntaxe du message HL7) sont généralement traitées localement, côté du destinataire, par une des intervenants techniques. Dans ces conditions, le segment ERR-3 prend la valeur 207 et le segment ERR-5 contient l'erreur applicative remontée au
+<p>Seules les erreurs de niveau applicatif du traitement automatique sur le document au niveau du destinataire final sont remontées au travers du courriel MDN et réceptionnées par le GESTIONNAIRE (la PFI expéditrice).
+Les erreurs de type technique (erreurs de syntaxe du message HL7) sont généralement traitées localement, côté du destinataire, par une des intervenants techniques. Dans ces conditions, le segment ERR-3 prend la valeur 207 et le segment ERR-5 contient l’erreur applicative remontée au
  travers du courriel MDN. Le message HL7 ZAM\^Z03\^ZAM_Z01 est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
-(cf structure du MDN -- Message Disposition Notification) décrit en Annexe 4 du volet «&nbsp;[Transmission au LPS d'un document CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante)&nbsp;».
+(cf structure du MDN – Message Disposition Notification) décrit en Annexe 4 du volet «&nbsp;<a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d’un document CDA provenant d’un courriel MSSanté</a>&nbsp;».</p>
 
-#### Message d'acquittement technique des accusés métiers
+<h4 id="message-dacquittement-technique-des-accusés-métiers">Message d’acquittement technique des accusés métiers</h4>
 
-Le message d'acquittement est identique à celui spécifié dans la partie 12.2.8 [LIEN], à l'exception du champ MSH-9 qui prend la valeur&nbsp;ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l'évènement du message initial.
+<p>Le message d’acquittement est identique à celui spécifié dans la partie 12.2.8 [LIEN], à l’exception du champ MSH-9 qui prend la valeur&nbsp;ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l’évènement du message initial.</p>
 
-</b></p></blockquote>
 
 
 
@@ -11788,7 +11784,7 @@ Le message d'acquittement est identique à celui spécifié dans la partie 12.2.
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 26, 2024 16:14+0000">2024-06-26</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 27, 2024 10:06+0000">2024-06-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

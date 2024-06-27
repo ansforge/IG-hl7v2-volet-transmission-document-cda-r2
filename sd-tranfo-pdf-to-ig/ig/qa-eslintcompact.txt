@@ -1,14 +1,12 @@
 Hl7v2_CDAr2
 =========================================
 
-Generic: line 0, col 0, Info - The html source does not contain the publish box; this is recommended for publishing support (NOTFOUND)
-Generic: line 0, col 0, Warning - The <script> containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild (INVALID)
-Generic: line 0, col 0, Error - The link '#_ftn2' for "[2]" cannot be resolved (valid targets: 51 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#_ftn2' for "[2]" cannot be resolved (valid targets: 97 targets) (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
-/home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2.json: line 1, col 16486, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
+/home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2.json: line 1, col 16756, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
 
-err = 1, warn = 5, info = 1
-IG Publisher Version: 1.6.11
+err = 1, warn = 4, info = 0
+IG Publisher Version: 1.6.12
