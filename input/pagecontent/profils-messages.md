@@ -4611,7 +4611,7 @@ applicative.
 
 <blockquote class="stu-note">
     <p>
-    <b>Les adresses mails MSSanté sont valorisées dans les segments PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur « RCT (Results Copies To) ». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
+    <b>Point d’attention :</b> Les adresses mails MSSanté sont valorisées dans les segments PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur « RCT (Results Copies To) ». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
     </p>
 </blockquote>
 
@@ -4962,7 +4962,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
 
 <blockquote class="stu-note">
     <p>
-    <b>Point D’attention :</b> L'adresse mail MSSanté du patient est valorisée dans un segment PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur « RCT (Results Copies To) ». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
+    <b>Point d'attention :</b> L'adresse mail MSSanté du patient est valorisée dans un segment PRT (Participation Information) du message HL7v2, dont l'élément PRT-4 (Participation) prend la valeur « RCT (Results Copies To) ». L'adresse mail MSSanté est à récupérer dans l'élément PRT-15 (Participant Telecommunication Address).
     </p>
 </blockquote>
 
@@ -5285,7 +5285,8 @@ MSSanté.
   mso-themecolor:text1">»&nbsp;<o:p></o:p></span></p>
   </td>
  </tr>
-</tbody></table>
+</tbody>
+</table>
 
 ##### Transmission de l'accusé de lecture
 
