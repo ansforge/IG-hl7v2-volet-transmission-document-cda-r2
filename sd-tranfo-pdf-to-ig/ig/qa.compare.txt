@@ -8,7 +8,7 @@ Generated $--. FHIR version $-- for ans.hl7v2.fr.transmission-cda-r2#$-- (canoni
  /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.transmission-cda-r2 : 1 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 2313, column 73: The link '#_ftn2' for "[2]" cannot be resolved (valid targets: 97 targets)
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 2313, column 73: The link '#_ftn2' for "[2]" cannot be resolved (valid targets: 96 targets)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
