@@ -1,4 +1,4 @@
-Hl7v2_CDAr2
+HL7v2_CDAr2
 =========================================
 
 Generic: line 0, col 0, Error - The link '#_ftn2' for "[2]" cannot be resolved (valid targets: 96 targets) (NOTFOUND)

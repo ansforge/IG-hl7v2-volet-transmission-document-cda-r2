@@ -4,6 +4,6 @@
     "type" : "ImplementationGuide",
     "url" : "https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/ImplementationGuide/ans.hl7v2.fr.transmission-cda-r2",
     "version" : "2.1.0",
-    "name" : "Hl7v2_CDAr2"
+    "name" : "HL7v2_CDAr2"
   }
 ]
