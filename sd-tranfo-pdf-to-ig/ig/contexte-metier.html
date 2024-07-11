@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Organisation du contexte métier - Volet de transmission d'un document CDA-R2 en HL7v2 v2.1.0</title>
+    <title>Organisation du contexte métier - Volet de transmission d'un document CDA-R2 en HL7v2 v2.1.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Volet de transmission d&#39;un document CDA-R2 en HL7v2</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - ci-build
+            <span style="display:inline-block;">2.1.1 - ci-build
 
 
 
@@ -144,12 +144,15 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 3 - Annexes
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
         <a href="meta-dmp-mss.html">Table MetaDMP/MSS</a>
+      </li>
+      <li>
+        <a href="struct-msg-mdn.html">Structure du message MDN (MSSanté)</a>
       </li>
       <li>
         <a href="ack-metier-zam.html">Table AckMetierZAM</a>
@@ -162,6 +165,9 @@
       </li>
       <li>
         <a href="glossaire.html">Glossaire</a>
+      </li>
+      <li>
+        <a href="doc-ref.html">Documents de référence</a>
       </li>
     </ul>
   </li>
@@ -216,7 +222,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Volet de transmission d'un document CDA-R2 en HL7v2 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Volet de transmission d'un document CDA-R2 en HL7v2 - Local Development build (v2.1.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Organisation du contexte métier</h2>
   
 
@@ -251,19 +257,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>Une demande de remplacement de document(s) initialement publié(s) sur le DMP et/ou initialement envoyé(s) par MSSanté,</p>
   </li>
   <li>
-    <p>Une demande de mise à jour des métadonnées de document(s)^(*)^ initialement publié(s) sur le DMP et/ou initialement envoyé(s) par MSSanté,</p>
+    <p>Une demande de mise à jour des métadonnées de document(s)(*) initialement publié(s) sur le DMP et/ou initialement envoyé(s) par MSSanté,</p>
   </li>
   <li>
     <p>Une demande de suppression de document(s) initialement publié(s) sur le DMP et/ou initialement envoyé(s) par MSSanté.</p>
   </li>
 </ul>
 
-<p>(*) : <em>dans le contexte français, conformément au volet *Partage de documents de santé* du CI_SIS, la mise à jour des métadonnées du document est limitée à la mise à jour des informations de masquage du document aux PS et de mise en visibilité du document au patient et à ses représentants légaux ainsi que le statut du document.</em></p>
+<p>(*) : _dans le contexte français, conformément au volet <strong>Partage de documents de santé</strong> du CI_SIS, la mise à jour des métadonnées du document est limitée à la mise à jour des informations de masquage du document aux PS et de mise en visibilité du document au patient et à ses représentants légaux ainsi que le statut du document.</p>
 
 <p>La PFI interagissant avec le DMP en mode d’authentification indirecte, il lui est impossible de mettre en œuvre la transaction TD3.3 (Gestion des attributs d’un document) du profil Alimentation du DMP, décrite dans le <em>Guide d’implémentation du DMP</em> (transaction équivalente à la
 transaction Update Document Set [<a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html">ITI-57</a>] du profil IHE Update Metadata), car celle-ci nécessite une authentification directe (cf la matrice des droits fonctionnels du DMP).</p>
 
-<p>Dans ce contexte, la mise à jour des métadonnées de masquage/démasquage aux PS et de visibilité du document au patient sera gérée comme un remplacement de document, ce qui implique la création d’une nouvelle version de document par le système créateur de documents. Cette nouvelle version vient remplacer la précédente au niveau du consommateur (DMP ou logiciel métier destinataire du courriel).</p>
+<p>Dans ce contexte, la mise à jour des métadonnées de masquage/démasquage aux PS et de visibilité du document au patient sera gérée comme un remplacement de document, ce qui implique la création d’une nouvelle version de document par le système créateur de documents. Cette nouvelle version vient remplacer la précédente au niveau du consommateur (DMP ou logiciel métier destinataire du courriel)._</p>
 
 <p>Le nombre de processus est ainsi réduit aux trois processus synthétisés sur la Figure 6.</p>
 
@@ -315,7 +321,7 @@ transaction Update Document Set [<a href="https://profiles.ihe.net/ITI/TF/Volume
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 4, 2024 14:46+0000">2024-07-04</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 11, 2024 15:28+0000">2024-07-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

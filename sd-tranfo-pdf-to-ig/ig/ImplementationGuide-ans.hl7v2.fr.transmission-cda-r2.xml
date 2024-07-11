@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ans.hl7v2.fr.transmission-cda-r2</b></p><a name="ans.hl7v2.fr.transmission-cda-r2"> </a><a name="hcans.hl7v2.fr.transmission-cda-r2"> </a><a name="hcans.hl7v2.fr.transmission-cda-r2-fr-FR"> </a><h2>HL7v2_CDAr2</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/ImplementationGuide/ans.hl7v2.fr.transmission-cda-r2</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/ImplementationGuide/ans.hl7v2.fr.transmission-cda-r2"/>
-  <version value="2.1.0"/>
+  <version value="2.1.1"/>
   <name value="HL7v2_CDAr2"/>
   <title value="Volet de transmission d'un document CDA-R2 en HL7v2"/>
   <status value="draft"/>
-  <date value="2024-07-04T14:46:09+00:00"/>
+  <date value="2024-07-11T15:28:12+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -594,14 +594,6 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="issues.html"/>
-        </extension>
-        <nameUrl value="issues.html"/>
-        <title value="Issues"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="meta-dmp-mss.html"/>
         </extension>
         <nameUrl value="meta-dmp-mss.html"/>
@@ -626,6 +618,14 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="struct-msg-mdn.html"/>
+        </extension>
+        <nameUrl value="struct-msg-mdn.html"/>
+        <title value="Structure du message MDN (MSSanté)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="error-codes.html"/>
         </extension>
         <nameUrl value="error-codes.html"/>
@@ -646,6 +646,14 @@
         </extension>
         <nameUrl value="glossaire.html"/>
         <title value="Glossaire"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="doc-ref.html"/>
+        </extension>
+        <nameUrl value="doc-ref.html"/>
+        <title value="Documents de référence"/>
         <generation value="markdown"/>
       </page>
       <page>
