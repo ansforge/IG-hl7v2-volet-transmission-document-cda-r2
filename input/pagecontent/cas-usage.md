@@ -4,7 +4,7 @@ Cette section décrit, à titre d'exemple et de façon non exhaustive, un ensemb
 
 <blockquote>
     <div class="note note">
-    <u>Cas d'usage :</u> un médecin d'un établissement publie sur le DMP un document clinique concernant un patient et envoi par MSSanté même document au médecin traitant du patient.
+    <u>Cas d'usage :</u> un médecin d'un établissement publie sur le DMP un document clinique concernant un patient et envoi par MSSanté ce même document au médecin traitant du patient.
     </div>
 </blockquote>
 
@@ -94,7 +94,7 @@ renvoie un accusé de réception de la demande à la PFI.
     </p>
 </blockquote>
 
-La structure du message MDN est décrite dans l'exemple accessible [ici](exemples.html).
+La structure du message MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
 
 
 <div class="figure">
@@ -208,7 +208,7 @@ Disposition Notification) à destination de la BAL de service Y contenant
 le statut de l'intégration du document. En cas d'erreur, la secrétaire
 pourra envisager une intégration manuelle (voir le paragraphe suivant).
 
-La structure du message MDN est décrite dans l'exemple accessible [ici](exemples.html).
+La structure du message MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
 
 La figure ci-dessous illustre ce cas d'usage.
 

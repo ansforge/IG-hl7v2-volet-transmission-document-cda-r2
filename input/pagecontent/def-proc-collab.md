@@ -205,7 +205,7 @@ car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 <p>Le CREATEUR transmet une demande de suppression de document(s) au GESTIONNAIRE.</p>
 <p>Le GESTIONNAIRE r&eacute;ceptionne cette demande de suppression et utilise les informations port&eacute;es par la transaction ainsi que les informations contenues dans le(s) document(s) CDA pour r&eacute;aliser la transaction de suppression du document sur le DMP et/ou l&rsquo;envoi vers le(s) destinataire(s) (Patient et/ou PS) via la MSS (i.e.&nbsp;; produire les m&eacute;tadonn&eacute;es XDS).</p>
 <p>Un message est envoy&eacute; par le GESTIONNAIRE vers le(s) destinataire(s) MSSant&eacute; indiquant dans le corps du mail que le document doit &ecirc;tre supprim&eacute;.</p>
-<p><a href=https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf>cf :  volet Volet Echange des Documents de Santé 1.8</a>.</p>
+<p><a href=https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf >cf :  volet Volet Echange des Documents de Santé 1.8</a>.</p>
 <p>En fonction de la demande, le GESTIONNAIRE transmet au CREATEUR l&rsquo;accus&eacute; de r&eacute;ception DMP, l&rsquo;accus&eacute; de r&eacute;ception MSSant&eacute; et/ou l&rsquo;accus&eacute; de lecture MSSant&eacute;.</p>
 </td>
 </tr>

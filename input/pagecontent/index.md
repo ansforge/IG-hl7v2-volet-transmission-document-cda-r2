@@ -159,14 +159,6 @@ Rappel des conventions utilisées par IHE et HL7 :
 </tr>
 <tr>
 <td width="113">
-<p>&nbsp;</p>
-</td>
-<td width="510">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="113">
 <p>[{ }]</p>
 </td>
 <td width="510">
