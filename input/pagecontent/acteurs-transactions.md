@@ -75,9 +75,9 @@ Le tableau suivant liste, pour chacun des acteurs, les systèmes du SIH concern�
 
 ### Diagramme des Acteurs/Transactions
 
-<div class="figure">
-    <img src="image12.png" alt="Figure 7" title="Figure 7 : Diagramme des Acteurs/Transactions." style="width:100%;">
-    <figcaption>Figure 7 : Diagramme des Acteurs/Transactions.</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image12.png" alt="Figure 7" title="Figure 7 : Diagramme des Acteurs/Transactions." style="width:80%;">
+    <figcaption><b>Figure 7 : Diagramme des Acteurs/Transactions<b></figcaption>
 </div>    
 <br>
 
@@ -203,7 +203,7 @@ transactions optionnelles (O-Optional).
 </tr>
 </tbody>
 </table>
-Figure 8 : Tableau des Acteurs/Transactions
+**Figure 8 : Tableau des Acteurs/Transactions**
 
 **[Note 1]** : _l'acteur CREATEUR choisit d'implémenter l'une ou l'autre des transactions : le Flux 1 (Flux HL7-ORU) ou le flux 2 (Flux HL7-MDM) en émission. L'acteur GESTIONNAIRE DOIT implémenter les deux transactions Flux HL7-ORU et Flux HL7-MDM en réception._
 

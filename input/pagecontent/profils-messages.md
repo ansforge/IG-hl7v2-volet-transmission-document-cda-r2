@@ -410,9 +410,9 @@ segments du message ORU sont décrites à la section 12.2 LIEN.
 
 ##### Description fonctionnelle du message ORU
 
-<div class="figure">
-    <img src="fig17.png" alt="Figure 17" title="Figure 17 : Structure fonctionnelle du message ORU_R01" style="width:100%;">
-    <figcaption>Figure 17 : Structure fonctionnelle du message ORU_R01</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="fig17.png" alt="Figure 17" title="Figure 17 : Structure fonctionnelle du message ORU_R01" style="width:80%;">
+    <figcaption><b>Figure 17 : Structure fonctionnelle du message ORU_R01</b></figcaption>
 </div>
 <br>
 
@@ -801,9 +801,9 @@ sont décrites à la section 12.2 [LIEN].
 
 ##### Description fonctionnelle du message MDM
 
-<div class="figure">
-    <img src="fig18.png" alt="Figure 18" title="Figure 18 : Structure fonctionnelle du message MDM" style="width:100%;">
-    <figcaption>Figure 18 : Structure fonctionnelle du message MDM</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="fig18.png" alt="Figure 18" title="Figure 18 : Structure fonctionnelle du message MDM" style="width:80%;">
+    <figcaption><b>Figure 18 : Structure fonctionnelle du message MDM</b></figcaption>
 </div>
 <br>
 
@@ -6373,9 +6373,9 @@ Le profil du message ACK est le suivant :
 
 La structure du message ACK est représentée ci-dessous :
 
-<div class="figure">
-    <img src="image26.png" alt="Figure 19" title="Figure 19 : Structure fonctionnelle du message ACK" style="width:100%;">
-    <figcaption>Figure 19 : Structure fonctionnelle du message ACK</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image26.png" alt="Figure 19" title="Figure 19 : Structure fonctionnelle du message ACK" style="width:80%;">
+    <figcaption><b>Figure 19 : Structure fonctionnelle du message ACK</b></figcaption>
 </div>
 <br>
 
@@ -7408,9 +7408,9 @@ courriel MSSanté et l'accusé de lecture MSSanté seront transmis en
 utilisant la structure de message HL7v2.6 ZAM_Z01 :
 
 
-<div class="figure">
-    <img src="image27.png" alt="Figure 20" title="Figure 20 : Structure fonctionnelle des messages accusé métier" style="width:100%;">
-    <figcaption>Figure 20 : Structure fonctionnelle des messages accusé métier</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image27.png" alt="Figure 20" title="Figure 20 : Structure fonctionnelle des messages accusé métier" style="width:80%;">
+    <figcaption><b>Figure 20 : Structure fonctionnelle des messages accusé métier</b></figcaption>
 </div>
 <br>
 

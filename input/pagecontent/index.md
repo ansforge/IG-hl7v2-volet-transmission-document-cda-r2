@@ -221,9 +221,9 @@ transversale des échanges représentée de façon synthétique sur la figure
 suivante et décrits de façon détaillée dans la section 2 du présent
 document :
 
-<div class="figure">
-    <img src="image5.png" alt="Figure 1" title="Figure 1 : Représentation synthétique des échanges et articulation entre les deux volets du CI_SIS" style="width:100%;">
-    <figcaption>Figure 1 : Représentation synthétique des échanges et articulation entre les deux volets du CI_SIS</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image5.png" alt="Figure 1" title="Figure 1 : Représentation synthétique des échanges et articulation entre les deux volets du CI_SIS" style="width:80%;">
+    <figcaption><b>Figure 1 : Représentation synthétique des échanges et articulation entre les deux volets du CI_SIS</b></figcaption>
 </div>
 <br>
 

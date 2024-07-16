@@ -1,7 +1,5 @@
 
--   *HL7 v2.5 Chapitre 7*, message ORU (Unsolicited transmission of an
-    observation message), *HL7 v2.6 Chapitre 9,* message MDM (Medical
-    Document Management) (1)
+-   _HL7 v2.5 Chapitre 7_, message ORU (Unsolicited transmission of an observation message), _HL7 v2.6 Chapitre 9_, message MDM (Medical Document Management) (1)
 
 -   Le présent document spécifie également une nouvelle structure de
     message HL7, le message ZAM spécifique à ce volet, basé sur HL7v2.6

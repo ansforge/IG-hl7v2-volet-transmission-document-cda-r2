@@ -97,9 +97,9 @@ renvoie un accusé de réception de la demande à la PFI.
 La structure du message MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
 
 
-<div class="figure">
-    <img src="image6.png" alt="Figure 2" title="Figure 2 : Envoi d'un CR de biologie médicale -- Cas nominal" style="width:100%;">
-    <figcaption>Figure 2 : Envoi d'un CR de biologie médicale -- Cas nominal</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image6.png" alt="Figure 2" title="Figure 2 : Envoi d'un CR de biologie médicale -- Cas nominal" style="width:80%;">
+    <figcaption><b>Figure 2 : Envoi d'un CR de biologie médicale -- Cas nominal</b></figcaption>
 </div>
 <br>
 La Figure 2 illustre les échanges de bout en bout relatifs à une demande
@@ -126,9 +126,9 @@ Sur la figure suivante, seule la partie basse de la figure précédente
 est représentée. Les séquences relatives à l'accusé de réception MSSanté
 sont identiques.
 
-<div class="figure">
-    <img src="image7.png" alt="Figure 3" title="Figure 3 : Envoi d'un CR de biologie médicale -- Gestion des erreurs" style="width:100%;">
-    <figcaption>Figure 3 : Envoi d'un CR de biologie médicale -- Gestion des erreurs</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image7.png" alt="Figure 3" title="Figure 3 : Envoi d'un CR de biologie médicale -- Gestion des erreurs" style="width:80%;">
+    <figcaption><b>Figure 3 : Envoi d'un CR de biologie médicale -- Gestion des erreurs</b></figcaption>
 </div>
 <br>
 La Figure 3 illustre la gestion des erreurs par l'établissement
@@ -220,12 +220,12 @@ La figure ci-dessous illustre ce cas d'usage.
 </blockquote>
 
 
-<div class="figure">
-    <img src="image8.png" alt="Figure 4" title="Figure 4 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Cas nominal" style="width:100%;">
+<div class="figure" style='text-align: center;'>
+    <img src="image8.png" alt="Figure 4" title="Figure 4 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Cas nominal" style="width:80%;">
 </div>
-<div class="figure">
-    <img src="image9.png" alt="Figure 4" title="Figure 4 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Cas nominal" style="width:100%;">
-    <figcaption>Figure 4 : Transmission d'un document clinique d'un patient d'un CH versun autre CH -Cas nominal</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image9.png" alt="Figure 4" title="Figure 4 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Cas nominal" style="width:80%;">
+    <figcaption><b>Figure 4 : Transmission d'un document clinique d'un patient d'un CH versun autre CH -Cas nominal</b></figcaption>
 </div>    
 <br>
 
@@ -245,12 +245,11 @@ La figure ci-dessous représente uniquement la partie basse de la figure
 précédente, à partir du transfert du courriel avec pièce jointe vers la
 BAL applicative de l'établissement-B.
 
-<div class="figure">
-    <img src="image10.png" alt="Figure 5" title="Figure 5 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Gestion des erreurs" style="width:100%;">
-    <figcaption>Figure 5 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Gestion des erreurs</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image10.png" alt="Figure 5" title="Figure 5 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Gestion des erreurs" style="width:80%;">
+    <figcaption><b>Figure 5 : Transmission d'un document clinique d'un patient d'un CH vers un autre CH -Gestion des erreurs</b></figcaption>
 </div>    
 <br>
-
 
 
 La Figure 5 illustre la gestion des erreurs par l'établissement

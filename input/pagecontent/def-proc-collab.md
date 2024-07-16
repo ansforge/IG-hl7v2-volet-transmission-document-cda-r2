@@ -6,9 +6,9 @@ Pour l'ensemble des processus décrits :
 
 ### Processus collaboratif « Demande de transmission initiale de document(s) »
 
-<div class="figure">
-    <img src="image13.png" alt="Figure 9" title="Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS" style="width:100%;">
-    <figcaption>Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image13.png" alt="Figure 9" title="Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS" style="width:80%;">
+    <figcaption><b>Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS</b></figcaption>
 </div>    
 <br>
 
@@ -70,9 +70,9 @@ car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 
 ### Processus collaboratif « Demande de remplacement de document(s) »
 
-<div class="figure">
-    <img src="image14.png" alt="Figure 10" title="Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:100%;">
-    <figcaption>Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image14.png" alt="Figure 10" title="Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:80%;">
+    <figcaption><b>Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté</b></figcaption>
 </div>    
 <br>
 
@@ -133,7 +133,7 @@ consommateur (DMP et/ou application métier destinatrice).
 <p>Le CREATEUR transmet une demande de remplacement de document(s) au GESTIONNAIRE. Il peut s&rsquo;agir de mettre jour le document, de masquer/d&eacute;masquer le document aux PS, de rendre visible le document au patient ou de rendre visible le document aux repr&eacute;sentants l&eacute;gaux.</p>
 <p>&nbsp;</p>
 <p>Le GESTIONNAIRE r&eacute;ceptionne cette demande de remplacement et utilise les informations port&eacute;es par la transaction ainsi que les informations contenues dans le(s) document(s) CDA pour r&eacute;aliser la transaction d&rsquo;alimentation du DMP et/ou l&rsquo;envoi vers le(s) destinataire(s) (Patient et/ou PS) via la MSS (i.e.&nbsp;; produire les m&eacute;tadonn&eacute;es XDS).</p>
-<p>Le code RPLC dans clinicalDocument/relatedDocument@typeCode dans le CDA-R2 <a href= https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf> [cf: : volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a> permet de constituer l&rsquo;association RPLC dans la soumission XDS sur le DMP pour le remplacement <a href= https://industriels.sesam-vitale.fr> [cf: SESAM-VITALE : Service DMP intégré aux LPS - Version 2.10.0]</a>.</p>
+<p>Le code RPLC dans clinicalDocument/relatedDocument@typeCode dans le CDA-R2 <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">[cf: volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a> permet de constituer l&rsquo;association RPLC dans la soumission XDS sur le DMP pour le remplacement <a href="https://industriels.sesam-vitale.fr">[cf: SESAM-VITALE : Service DMP intégré aux LPS - Version 2.10.0]</a>.</p>
 <p><sup>&nbsp;</sup></p>
 <p>En fonction de la demande, le GESTIONNAIRE transmet au CREATEUR l&rsquo;accus&eacute; de r&eacute;ception DMP, l&rsquo;accus&eacute; de r&eacute;ception MSSant&eacute; et/ou l&rsquo;accus&eacute; de lecture MSSant&eacute;.</p>
 </td>
@@ -152,9 +152,9 @@ car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 
 ### Processus collaboratif « Demande de suppression de document(s) »
 
-<div class="figure">
-    <img src="image15.png" alt="Figure 11" title="Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:100%;">
-    <figcaption>Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté</figcaption>
+<div class="figure" style='text-align: center;'>
+    <img src="image15.png" alt="Figure 11" title="Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:80%;">
+    <figcaption><b>Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté</b></figcaption>
 </div>    
 <br>
 
@@ -183,8 +183,8 @@ car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 <p><strong>Post-Conditions</strong></p>
 </td>
 <td width="499">
-<p>Le document est supprim&eacute; du DMP (availabilityStatus = Deleted) <a href= https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf> [cf: : volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a>
-<p>TD3.3 (Supprimer un document) <a href= https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf> [cf: : volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a>
+<p>Le document est supprim&eacute; du DMP (availabilityStatus = Deleted) <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">[cf: volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a>
+<p>TD3.3 (Supprimer un document) <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">[cf: volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a>
 <p>Le document est &eacute;galement supprim&eacute; au niveau de chacun des destinataire(s) de l&rsquo;envoi par MSS.</p>
 </td>
 </tr>
@@ -205,7 +205,7 @@ car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 <p>Le CREATEUR transmet une demande de suppression de document(s) au GESTIONNAIRE.</p>
 <p>Le GESTIONNAIRE r&eacute;ceptionne cette demande de suppression et utilise les informations port&eacute;es par la transaction ainsi que les informations contenues dans le(s) document(s) CDA pour r&eacute;aliser la transaction de suppression du document sur le DMP et/ou l&rsquo;envoi vers le(s) destinataire(s) (Patient et/ou PS) via la MSS (i.e.&nbsp;; produire les m&eacute;tadonn&eacute;es XDS).</p>
 <p>Un message est envoy&eacute; par le GESTIONNAIRE vers le(s) destinataire(s) MSSant&eacute; indiquant dans le corps du mail que le document doit &ecirc;tre supprim&eacute;.</p>
-<p><a href=https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf >cf :  volet Volet Echange des Documents de Santé 1.8</a>.</p>
+<p><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf">cf : volet Volet Echange des Documents de Santé 1.8</a>.</p>
 <p>En fonction de la demande, le GESTIONNAIRE transmet au CREATEUR l&rsquo;accus&eacute; de r&eacute;ception DMP, l&rsquo;accus&eacute; de r&eacute;ception MSSant&eacute; et/ou l&rsquo;accus&eacute; de lecture MSSant&eacute;.</p>
 </td>
 </tr>

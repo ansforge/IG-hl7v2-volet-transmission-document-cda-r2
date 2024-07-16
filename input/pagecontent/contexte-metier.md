@@ -23,9 +23,9 @@ Dans ce contexte, la mise à jour des métadonnées de masquage/démasquage aux 
 
 Le nombre de processus est ainsi réduit aux trois processus synthétisés sur la Figure 6.
 
-<div class="figure">
+<div class="figure" style='text-align: center;'>
     <img src="image11.png" alt="Figure 6" title="Figure 6 : Organisation du contexte métier du volet « Transmission de documents CDA en HL7v2 »" style="width:100%;">
-    <figcaption>Figure 6 : Organisation du contexte métier du volet « Transmission de documents CDA en HL7v2 »</figcaption>
+    <figcaption><b>Figure 6 : Organisation du contexte métier du volet « Transmission de documents CDA en HL7v2 »</b></figcaption>
 </div>    
 <br>
 
