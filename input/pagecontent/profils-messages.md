@@ -1364,8 +1364,8 @@ suivantes :
 </tbody>
 </table>
 
-**(Note 1)** : _conformément au volet de *Structuration minimale des
-documents de santé*, l'identifiant du document au sein du document CDA
+**(Note 1)** : _conformément au volet de [Structuration minimale des
+documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf), l'identifiant du document au sein du document CDA
 s'exprime soit par un OID complet identifiant complètement l'instance du
 document (sans extension), soit par une racine d'OID commune à toutes
 les instances de documents de l'émetteur associée à une extension propre
@@ -3297,8 +3297,8 @@ prévu au moment de la création du document ne doit pas donner lieu à la
 mise à jour de l'élément informationRecipient et donc à une nouvelle
 version du document.
 
-Concernant le point (3), le « Volet Structuration minimale des documents
-de santé » a été modifié de façon à lever la contrainte existante sur
+Concernant le point (3), le « [Volet Structuration minimale des documents
+de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) » a été modifié de façon à lever la contrainte existante sur
 l'élément « participant ». Il est prévu de modifier la prochaine version
 du « Volet CR-BIO -- Compte-rendu d'examens de biologie médicale » dans
 le même sens.
@@ -7243,7 +7243,7 @@ au moyen d'accusés métier HL7.
 A noter qu'aucun accusé de réception métier n'est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
 HL7v2 ORU ou MDM avec le Compte-Rendu d'Imagerie. Par contre, un message
-d'acquittement technique ([voir section dédiée](profils-messages.html#description-des-messages-hl7-daccusés-métier)) permettra à la DRIMbox de
+d'acquittement technique ([voir section dédiée](https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/sd-tranfo-pdf-to-ig/ig/profils-messages.html#le-message-dacquittement-du-message-hl7v2)) permettra à la DRIMbox de
 communiquer au GESTIONNAIRE qu'elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
