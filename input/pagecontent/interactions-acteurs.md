@@ -7,9 +7,6 @@ transactions représentées en bleu sur les figures suivantes.
 
 <div class="figure" style='text-align: center;'>
     <img src="image17.png" alt="Figure 13" title="Figure 13 : Diagramme de séquence -- Message ORU" style="width:80%;">
-</div>
-<div class="figure" style='text-align: center;'>
-    <img src="image18.png" alt="Figure 13">
     <figcaption><b>Figure 13 : Diagramme de séquence -- Message ORU</b></figcaption>
 </div>
 <br>
@@ -50,9 +47,6 @@ indiquée par la nature de l'événement (T02, T10 et T04).
 
 <div class="figure" style='text-align: center;'>
     <img src="image19.png" alt="Figure 14" title="Figure 14 : Diagramme de séquence -- Message MDM -- Transmission initiale d'un document" style="width:80%;">
-</div>
-<div class="figure" style='text-align: center;'>
-    <img src="image18.png" alt="Figure 14" style="width:80%;">
     <figcaption><b>Figure 14 : Diagramme de séquence -- Message MDM -- Transmission initiale d'un document</b></figcaption>
 </div>
 <br>
@@ -62,9 +56,6 @@ indiquée par la nature de l'événement (T02, T10 et T04).
 
 <div class="figure" style='text-align: center;'>
     <img src="image20.png" alt="Figure 15" title="Figure 15 : Diagramme de séquence -- Message MDM -- Remplacement d'un document" style="width:80%;">
-</div>
-<div class="figure" style='text-align: center;'>
-    <img src="image18.png" alt="Figure 15" style="width:80%;">
     <figcaption><b>Figure 15 : Diagramme de séquence -- Message MDM -- Remplacement d'un document</b></figcaption>
 </div>
 <br>
@@ -72,9 +63,6 @@ indiquée par la nature de l'événement (T02, T10 et T04).
 #### Demande de suppression d'un document
 
 
-<div class="figure" style='text-align: center;'>
-    <img src="image21.png" alt="Figure 16" title="Figure 16 : Diagramme de séquence -- Message MDM -- Suppression de document(s)" style="width:80%;">
-</div>
 <div class="figure" style='text-align: center;'>
     <img src="image18.png" alt="Figure 16" style="width:80%;">
     <figcaption><b>Figure 16 : Diagramme de séquence -- Message MDM -- Suppression de document(s)</b></figcaption>
