@@ -7,8 +7,8 @@ partage et de l'échange.
 
 Les données utiles pour publication sur le DMP et pour l'envoi par
 MSSanté de(s) document(s) sont stockées à la fois dans le segment PID du
-message HL7, dans le document CDA-R2 conforme au volet du CI_SIS
-Structuration minimale des documents de santé ^\[3\]^ et dans des
+message HL7, dans le document CDA-R2 conforme au [volet du CI_SIS
+Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) et dans des
 segments OBX du message HL7 spécifiant les métadonnées complémentaires.
 
 Le développeur doit valoriser tous les segments et champs obligatoires
@@ -406,7 +406,7 @@ document(s). Seuls les segments ORC, OBR et le groupe de segments
 OBSERVATION de l'occurrence ORDER_OBSERVATION sont à renseigner.
 
 Les contraintes apportées par ce volet sur les données des différents
-segments du message ORU sont décrites à la section 12.2 LIEN.
+segments du message ORU sont décrites à la [section dédiée](profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
 ##### Description fonctionnelle du message ORU
 
@@ -797,7 +797,7 @@ Le message MDM ne peut transmettre qu'un seul document médical au format
 CDAr2.
 
 Les contraintes apportées par ce volet sur les données du message MDM
-sont décrites à la section 12.2 [LIEN].
+sont décrites à la [section dédiée](profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
 ##### Description fonctionnelle du message MDM
 
@@ -1561,9 +1561,9 @@ respectivement OBSERVATION/OBXNTE composé :
     destinataire peut répondre.
 
 Les champs des segments PRT doivent être renseignés conformément aux
-spécifications « Contraintes sur les types de données HL7 v2.5
+spécifications [« Contraintes sur les types de données HL7 v2.5
 applicables aux profils d'intégration du cadre technique IT
-Infrastructure dans le périmètre d'IHE France » release 1.8^\[19\]^.
+Infrastructure dans le périmètre d'IHE France » release 1.8](https://old.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.8.pdf).
 
 Les tableaux suivants listent l'ensemble des **segments et des champs à
 renseigner obligatoirement**, dans l'ordre indiqué, à l'exception du
@@ -7243,7 +7243,7 @@ au moyen d'accusés métier HL7.
 A noter qu'aucun accusé de réception métier n'est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
 HL7v2 ORU ou MDM avec le Compte-Rendu d'Imagerie. Par contre, un message
-d'acquittement technique (voir section 12.3 [LIEN]) permettra à la DRIMbox de
+d'acquittement technique ([voir section dédiée](profils-messages.html#description-des-messages-hl7-daccusés-métier)) permettra à la DRIMbox de
 communiquer au GESTIONNAIRE qu'elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
@@ -11465,4 +11465,4 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
 #### Message d'acquittement technique des accusés métiers
 
-Le message d'acquittement est identique à celui spécifié dans la partie 12.2.8 [LIEN], à l'exception du champ MSH-9 qui prend la valeur ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l'évènement du message initial.
+Le message d'acquittement est identique à celui spécifié dans la [partie dédiée](profils-messages.html#le-message-dacquittement-du-message-hl7v2), à l'exception du champ MSH-9 qui prend la valeur ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l'évènement du message initial.
