@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "HL7v2_CDAr2"] ; # 
   fhir:title [ fhir:v "Volet de transmission d'un document CDA-R2 en HL7v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-17T13:25:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-17T14:35:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
