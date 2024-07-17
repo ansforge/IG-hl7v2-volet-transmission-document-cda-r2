@@ -242,6 +242,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#liste-des-acteurs-et-systèmes-concernés" id="markdown-toc-liste-des-acteurs-et-systèmes-concernés">Liste des Acteurs et systèmes concernés</a></li>
   <li><a href="#diagramme-des-acteurstransactions" id="markdown-toc-diagramme-des-acteurstransactions">Diagramme des Acteurs/Transactions</a></li>
+  <li><a href="#regroupement-requis-des-acteurs" id="markdown-toc-regroupement-requis-des-acteurs">Regroupement requis des Acteurs</a></li>
 </ul>
 
 </div>
@@ -324,26 +325,31 @@ BAL applicative du DPI d’un établissement hospitalier destinataire).</em></p>
 
 <div class="figure" style="text-align: center;">
     <img src="image12.png" alt="Figure 7" title="Figure 7 : Diagramme des Acteurs/Transactions." style="width:80%;" />
-    <figcaption><b>Figure 7 : Diagramme des Acteurs/Transactions<b>&lt;/figcaption&gt;
-&lt;/div&gt;    
-<br />
+    <figcaption><b>Figure 7 : Diagramme des Acteurs/Transactions</b></figcaption>
+</div>
+<p><br /></p>
 
-Dans le contexte du SEGUR, le flux Provide&amp;Register Document Set-b (hors
-périmètre de ce volet) est mis en œuvre par :
+<p>Dans le contexte du SEGUR, le flux Provide&amp;Register Document Set-b (hors
+périmètre de ce volet) est mis en œuvre par :</p>
 
--   La transaction TD2.2 (Alimentation d'un DMP par CPE) ou TD2.1
-    (Alimentation du DMP en authentification indirecte) pour une demande
-    d'intégration ou de remplacement d'un document dans le DMP,
+<ul>
+  <li>
+    <p>La transaction TD2.2 (Alimentation d’un DMP par CPE) ou TD2.1
+(Alimentation du DMP en authentification indirecte) pour une demande
+d’intégration ou de remplacement d’un document dans le DMP,</p>
+  </li>
+  <li>
+    <p>La transaction TD3.3c (Gestion des attributs d’un document) pour une
+demande de suppression d’un document du DMP.</p>
+  </li>
+</ul>
 
--   La transaction TD3.3c (Gestion des attributs d'un document) pour une
-    demande de suppression d'un document du DMP.
+<p>Le tableau ci-dessous représente l’ensemble des acteurs directement
+impliqués dans ce volet ainsi que les transactions entre ces acteurs.</p>
 
-Le tableau ci-dessous représente l'ensemble des acteurs directement
-impliqués dans ce volet ainsi que les transactions entre ces acteurs.
-
-Pour être en conformité avec ce volet, chaque acteur doit supporter les
+<p>Pour être en conformité avec ce volet, chaque acteur doit supporter les
 transactions obligatoires (R-Required) et peut supporter les
-transactions optionnelles (O-Optional).
+transactions optionnelles (O-Optional).</p>
 
 <table width="652">
 <tbody>
@@ -450,50 +456,50 @@ transactions optionnelles (O-Optional).
 </tr>
 </tbody>
 </table>
-**Figure 8 : Tableau des Acteurs/Transactions**
+<p><strong>Figure 8 : Tableau des Acteurs/Transactions</strong></p>
 
-**[Note 1]** : _l'acteur CREATEUR choisit d'implémenter l'une ou l'autre des transactions : le Flux 1 (Flux HL7-ORU) ou le flux 2 (Flux HL7-MDM) en émission. L'acteur GESTIONNAIRE DOIT implémenter les deux transactions Flux HL7-ORU et Flux HL7-MDM en réception._
+<p><strong>[Note 1]</strong> : <em>l’acteur CREATEUR choisit d’implémenter l’une ou l’autre des transactions : le Flux 1 (Flux HL7-ORU) ou le flux 2 (Flux HL7-MDM) en émission. L’acteur GESTIONNAIRE DOIT implémenter les deux transactions Flux HL7-ORU et Flux HL7-MDM en réception.</em></p>
 
-**[Note 2]** : _dans le contexte du SEGUR vague 2, couloirs DPI et PFI, l'accusé métier de réception DMP ainsi que l'accusé métier de réception MSSanté sont requis.
-L'accusé métier de réception DMP est généré par le GESTIONNAIRE à partir de la réponse du DMP à une requête d'alimentation, de remplacement ou de suppression de document(s). La réponse du DMP contient le statut du
+<p><strong>[Note 2]</strong> : <em>dans le contexte du SEGUR vague 2, couloirs DPI et PFI, l’accusé métier de réception DMP ainsi que l’accusé métier de réception MSSanté sont requis.
+L’accusé métier de réception DMP est généré par le GESTIONNAIRE à partir de la réponse du DMP à une requête d’alimentation, de remplacement ou de suppression de document(s). La réponse du DMP contient le statut du
 résultat de la transaction (Success ou Failure) ainsi que le code erreur en cas de problème. Ces informations sont relayées par le GESTIONNAIRE au CREATEUR au travers du flux 3.
-L'accusé métier de réception MSSanté est généré par le GESTIONNAIRE à
+L’accusé métier de réception MSSanté est généré par le GESTIONNAIRE à
 partir de la réponse du serveur de messagerie du destinataire qui
 atteste de la réception du courriel (mécanisme Delivery Status
-Notification -- DSN -- RFC 3461 à 3464 et 6522 qui permet de savoir si
+Notification – DSN – RFC 3461 à 3464 et 6522 qui permet de savoir si
 un courriel a été remis avec succès dans la BAL du destinataire). Il est
-relayé au CREATEUR au travers du flux 4._
+relayé au CREATEUR au travers du flux 4.</em></p>
 
-**[Note 3]** : _l'accusé métier de lecture MSSanté n'est requis
+<p><strong>[Note 3]</strong> : <em>l’accusé métier de lecture MSSanté n’est requis
 ni dans ce volet du CI_SIS ni dans le contexte du SEGUR vague2.
-Le flux d'accusé métier de lecture MSSanté est généré par le
-GESTIONNAIRE conformément au Message Disposition Notification -- MDN de
+Le flux d’accusé métier de lecture MSSanté est généré par le
+GESTIONNAIRE conformément au Message Disposition Notification – MDN de
 la RFC 8098. Il permet de savoir quel traitement a été effectué sur le
 courriel réceptionné (lecture du courriel par un utilisateur, courriel
 dispatché, courriel traité, courriel détruit) et de préciser les causes
-d'erreur éventuelles de traitement. Il est relayé au CREATEUR au travers
+d’erreur éventuelles de traitement. Il est relayé au CREATEUR au travers
 du flux 5.
 La gestion de cet accusé de lecture MSSanté (MDN) va dépendre de
-l'organisation choisie par l'établissement pour réceptionner les
+l’organisation choisie par l’établissement pour réceptionner les
 courriels.
-Ce flux d'accusé de lecture MSSanté (message MDN) rend compte de la
+Ce flux d’accusé de lecture MSSanté (message MDN) rend compte de la
 lecture du courriel par le destinataire lorsque ce courriel est traité
-de façon manuelle. Dans le cas d'un traitement automatique du courriel
-par la PFI de l'établissement destinataire, ce flux d'accusé de lecture
+de façon manuelle. Dans le cas d’un traitement automatique du courriel
+par la PFI de l’établissement destinataire, ce flux d’accusé de lecture
 rend compte de la réalisation de la demande de traitement sur le
 document contenu dans le courriel par le logiciel métier associé à la
-BAL destinatrice du courriel._
+BAL destinatrice du courriel.</em></p>
 
-**[Note 4]** : _Le Flux HL7-MDM permet de transmettre undocument unique.
+<p><strong>[Note 4]</strong> : <em>Le Flux HL7-MDM permet de transmettre undocument unique.
 Le Flux HL7-ORU peut, le cas échéant, transporter deux documents, un
 CDAr2 Niv1 et un CDAr2 Niv3, dans la même transaction. Dans ce cas, il
-s'agit de deux instances de documents dont le contenu clinique est
+s’agit de deux instances de documents dont le contenu clinique est
 identique. Ce besoin de transmettre dans une même transaction les deux
-formats CDAr2 Niv1 et CDAr2 Niv3 d\'un même document clinique a été
+formats CDAr2 Niv1 et CDAr2 Niv3 d'un même document clinique a été
 exprimé, en particulier par les biologistes, afin de permettre à
-l\'utilisateur du système consommateur de visualiser le document tel
-qu\'il a été remis au patient (PDF). Chaque format de document a son
-identifiant propre._
+l'utilisateur du système consommateur de visualiser le document tel
+qu'il a été remis au patient (PDF). Chaque format de document a son
+identifiant propre.</em></p>
 
 <blockquote class="stu-note">
     <p>
@@ -502,9 +508,9 @@ identifiant propre._
     </p>
 </blockquote>
 
-### Regroupement requis des Acteurs
+<h3 id="regroupement-requis-des-acteurs">Regroupement requis des Acteurs</h3>
 
-Cette section décrit les exigences en termes de regroupement d'acteurs pour chacun des acteurs identifiés précédemment.
+<p>Cette section décrit les exigences en termes de regroupement d’acteurs pour chacun des acteurs identifiés précédemment.</p>
 
 <table>
 <tbody>
@@ -554,25 +560,29 @@ Cette section décrit les exigences en termes de regroupement d'acteurs pour cha
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-L'acteur CREATEUR est groupé avec l'acteur CONTENT CREATOR définit dans
-le Technical Framework PCC d'IHE pour permettre la création du document
-CDA.
+<p>L’acteur CREATEUR est groupé avec l’acteur CONTENT CREATOR définit dans
+le Technical Framework PCC d’IHE pour permettre la création du document
+CDA.</p>
 
-L'acteur GESTIONNAIRE est groupé avec :
+<p>L’acteur GESTIONNAIRE est groupé avec :</p>
 
--   L'acteur Producteur (Document Source) du volet de *Partage de
-    document de santé*, pour permettre à la PFI d'implémenter la
-    transaction ITI-41 Provide &amp; Register Document Set dans un contexte
-    général ou les transactions TDT2.1/TD2.2 (Alimentation du DMP) ou
-    TD3.3c (Gestion des attributs d'un document) dans le contexte SEGUR
-    (pour intégration/remplacement/suppression de document(s) dans le
-    DMP en tenant compte des spécificités ajoutées par le référentiel
-    Service DMP intégré aux LPS),
-
--   L'acteur Système initiateur du volet *d'Echange de documents de
-    santé*, pour permettre à la PFI de construire l'archive IHE_XDM
-    inclue dans le courriel émis vers le destinataire,
-</b></b></figcaption></div>
+<ul>
+  <li>
+    <p>L’acteur Producteur (Document Source) du volet de <em>Partage de
+document de santé</em>, pour permettre à la PFI d’implémenter la
+transaction ITI-41 Provide &amp; Register Document Set dans un contexte
+général ou les transactions TDT2.1/TD2.2 (Alimentation du DMP) ou
+TD3.3c (Gestion des attributs d’un document) dans le contexte SEGUR
+(pour intégration/remplacement/suppression de document(s) dans le
+DMP en tenant compte des spécificités ajoutées par le référentiel
+Service DMP intégré aux LPS),</p>
+  </li>
+  <li>
+    <p>L’acteur Système initiateur du volet <em>d’Echange de documents de
+santé</em>, pour permettre à la PFI de construire l’archive IHE_XDM
+inclue dans le courriel émis vers le destinataire,</p>
+  </li>
+</ul>
 
 
 
@@ -614,7 +624,7 @@ L'acteur GESTIONNAIRE est groupé avec :
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 17, 2024 08:12+0000">2024-07-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 17, 2024 09:03+0000">2024-07-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
