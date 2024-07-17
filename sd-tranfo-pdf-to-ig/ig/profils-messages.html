@@ -255,8 +255,8 @@ partage et de l’échange.</p>
 
 <p>Les données utiles pour publication sur le DMP et pour l’envoi par
 MSSanté de(s) document(s) sont stockées à la fois dans le segment PID du
-message HL7, dans le document CDA-R2 conforme au volet du CI_SIS
-Structuration minimale des documents de santé ^[3]^ et dans des
+message HL7, dans le document CDA-R2 conforme au <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">volet du CI_SIS
+Structuration minimale des documents de santé</a> et dans des
 segments OBX du message HL7 spécifiant les métadonnées complémentaires.</p>
 
 <p>Le développeur doit valoriser tous les segments et champs obligatoires
@@ -654,7 +654,7 @@ document(s). Seuls les segments ORC, OBR et le groupe de segments
 OBSERVATION de l’occurrence ORDER_OBSERVATION sont à renseigner.</p>
 
 <p>Les contraintes apportées par ce volet sur les données des différents
-segments du message ORU sont décrites à la section 12.2 LIEN.</p>
+segments du message ORU sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h5 id="description-fonctionnelle-du-message-oru">Description fonctionnelle du message ORU</h5>
 
@@ -1050,7 +1050,7 @@ destinataire(s) via MSSanté).</em></p>
 CDAr2.</p>
 
 <p>Les contraintes apportées par ce volet sur les données du message MDM
-sont décrites à la section 12.2 [LIEN].</p>
+sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h5 id="description-fonctionnelle-du-message-mdm">Description fonctionnelle du message MDM</h5>
 
@@ -1843,9 +1843,9 @@ destinataire peut répondre.</p>
 </ul>
 
 <p>Les champs des segments PRT doivent être renseignés conformément aux
-spécifications «&nbsp;Contraintes sur les types de données HL7 v2.5
+spécifications <a href="https://old.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.8.pdf">«&nbsp;Contraintes sur les types de données HL7 v2.5
 applicables aux profils d’intégration du cadre technique IT
-Infrastructure dans le périmètre d’IHE France&nbsp;» release 1.8^[19]^.</p>
+Infrastructure dans le périmètre d’IHE France&nbsp;» release 1.8</a>.</p>
 
 <p>Les tableaux suivants listent l’ensemble des <strong>segments et des champs à
 renseigner obligatoirement</strong>, dans l’ordre indiqué, à l’exception du
@@ -2312,7 +2312,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
   mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><a name="l4288">​</a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
+  <p style="margin-bottom:0cm;line-height:normal" class="MsoNormal"><a name="l4300">​</a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
   Arial;color:black;mso-themecolor:text1">Ce segment est requis, en particulier
   dans le cas d’une publication du document sur le DMP, </span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
   text1;mso-bidi-font-weight:bold">pour permettre à la PFI de générer le VIHF ainsi
@@ -7526,7 +7526,7 @@ au moyen d’accusés métier HL7.</p>
 <p>A noter qu’aucun accusé de réception métier n’est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
 HL7v2 ORU ou MDM avec le Compte-Rendu d’Imagerie. Par contre, un message
-d’acquittement technique (voir section 12.3 [LIEN]) permettra à la DRIMbox de
+d’acquittement technique (<a href="profils-messages.html#description-des-messages-hl7-daccusés-métier">voir section dédiée</a>) permettra à la DRIMbox de
 communiquer au GESTIONNAIRE qu’elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
@@ -11747,7 +11747,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
 <h4 id="message-dacquittement-technique-des-accusés-métiers">Message d’acquittement technique des accusés métiers</h4>
 
-<p>Le message d’acquittement est identique à celui spécifié dans la partie 12.2.8 [LIEN], à l’exception du champ MSH-9 qui prend la valeur&nbsp;ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l’évènement du message initial.</p>
+<p>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l’évènement du message initial.</p>
 
 
 
@@ -11790,7 +11790,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 17, 2024 09:58+0000">2024-07-17</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.transmission-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 17, 2024 10:42+0000">2024-07-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
