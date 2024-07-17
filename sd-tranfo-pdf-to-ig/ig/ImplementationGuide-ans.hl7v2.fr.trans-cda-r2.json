@@ -1,16 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "ans.hl7v2.fr.transmission-cda-r2",
+  "id" : "ans.hl7v2.fr.trans-cda-r2",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.hl7v2.fr.transmission-cda-r2</b></p><a name=\"ans.hl7v2.fr.transmission-cda-r2\"> </a><a name=\"hcans.hl7v2.fr.transmission-cda-r2\"> </a><a name=\"ans.hl7v2.fr.transmission-cda-r2-fr-FR\"> </a><h2>HL7v2_CDAr2</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/ImplementationGuide/ans.hl7v2.fr.transmission-cda-r2</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.hl7v2.fr.trans-cda-r2</b></p><a name=\"ans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"hcans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"ans.hl7v2.fr.trans-cda-r2-fr-FR\"> </a><h2>CISIS_CDA_HL7_V2</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2</pre></div>"
   },
-  "url" : "https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/ImplementationGuide/ans.hl7v2.fr.transmission-cda-r2",
+  "url" : "https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2",
   "version" : "2.1.1",
-  "name" : "HL7v2_CDAr2",
+  "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2024-07-17T15:41:55+00:00",
+  "date" : "2024-07-17T15:52:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -26,7 +26,7 @@
       "display" : "FRANCE"
     }]
   }],
-  "packageId" : "ans.hl7v2.fr.transmission-cda-r2",
+  "packageId" : "ans.hl7v2.fr.trans-cda-r2",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -167,7 +167,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -457,7 +457,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://interop.esante.gouv.fr/ig/hl7v2/transmission-cda-r2/history.html"
+        "valueString" : "https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

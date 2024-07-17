@@ -1,5 +1,5 @@
 {
-  "package": "ans.hl7v2.fr.transmission-cda-r2",
+  "package": "ans.hl7v2.fr.trans-cda-r2",
   "version": "2.1.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
