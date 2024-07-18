@@ -33,9 +33,9 @@ body:
   - type: textarea
     id: proposed_change
     attributes:
-      label: "Votre proposition de changement"
-      description: "Proposer une solution (par exemple, une nouvelle formulation suggérée ou la description d'un moyen de résoudre le problème). Proposer une solution ou une modification est fortement recommandé. Pour une suppression vous pouvez reprendre le texte et le barrer. Pour un ajout vous pouvez reprendre le paragraphe ou la section et surligner le texte ajouté"
-      placeholder: "Proposez votre solution"
+      label: "Votre proposition de modification"
+      description: "Proposer une modification (par exemple, une nouvelle formulation suggérée ou la description d'un moyen de résoudre le problème).\nProposer une solution ou une modification est fortement recommandé.\n Pour une suppression vous pouvez reprendre le texte et le barrer. \n Pour un ajout vous pouvez reprendre le paragraphe ou la section et surligner le texte ajouté.\n Vous pouvez également proposer une Pull Request (PR) lorsque le volet est sur un repository github et placer le lien ici vers cette PR"
+      placeholder: "Proposez votre modification"
     validations:
       required: false
 
