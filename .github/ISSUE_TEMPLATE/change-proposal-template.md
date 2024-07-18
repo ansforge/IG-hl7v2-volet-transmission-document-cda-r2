@@ -1,19 +1,18 @@
 ---
-name: Public Comment issue template
-about: Change Proposal for a Public Comment review
+name: Change Proposal template
+about: Change Proposal pour un volet du CI-SIS
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Section Number** *Identify the most specific section number the issue occurs (e.g. 4.1.2)*
+**Section Number** *Identifier la section du volet concernée par la demande de changement (numéro de la section exemple 12.2.2, ou directement le lien lorsque le volet est sous forme de guide d'implémentation*
 
-**Issue** *Describe your issue. Don't write a book, but do include enough to indicate what you see as a problem.*
+**Issue** *Description de votre demande*
 
-**Proposed Change** *Propose a resolution to your issue (e.g., suggested new wording or description of a way to address the issue). The committee might simply accept your suggested text. Even if they don't, it gives a good sense of what you are looking for. Leaving this blank means you can't imagine how to resolve the issue, which makes it easier for the committee to admit they can't imagine how to resolve it either and leave it unresolved.*
+**Proposed Change** *Proposé une solution (par exemple, une nouvelle formulation suggérée ou la description d'un moyen de résoudre le problème). Proposer une solution ou une modification est fortement recommandé. Pour une suppression vous pouver reprendre le texte et le barré. Pour un ajout vous pouvez reprendre le paragraphe ou la section et surligné le texte ajouté*
 
-**Priority**:
-- High: Important issue where there is major issue to be resolved. Requires discussion and debate.
-- Medium: Significant issue or clarification. Requires discussion, but should not lead to long debate.
-- Low: Typo or other minor classification that an editor can manage. Requires no group discussion.
+**Impact**:
+- Majeur: Question importante où il y a un problème majeur à résoudre. Nécessitera une concertation
+- Mineur: Par exemple typo ou reformulation ne nécessitant pas de mise en concertation
