@@ -255,8 +255,7 @@ partage et de l’échange.</p>
 
 <p>Les données utiles pour publication sur le DMP et pour l’envoi par
 MSSanté de(s) document(s) sont stockées à la fois dans le segment PID du
-message HL7, dans le document CDA-R2 conforme au <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">volet du CI_SIS
-Structuration minimale des documents de santé</a> et dans des segments OBX du message HL7 spécifiant les métadonnées complémentaires.</p>
+message HL7, dans le document CDA-R2 conforme au <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">volet du CI_SIS Structuration minimale des documents de santé</a> et dans des segments OBX du message HL7 spécifiant les métadonnées complémentaires.</p>
 
 <p>Le développeur doit valoriser tous les segments et champs obligatoires
 des messages HL7v2 afin de répondre au standard d’interopérabilité des
@@ -3774,7 +3773,7 @@ masqué aux professionnels de santé.</p>
 
 <blockquote class="stu-note">
     <p>
-    <b>Point d'attention :</b> un document clinique masqué aux PS ne doit pas être envoyé aux PS par MSSanté.
+    <b>Point d'attention :</b> Un document stocké dans le DMP, pour lequel le patient a fait le choix de ne pas partager ce document aux PS, ne doit pas faire l’objet d’un échange entre PS au travers de la MSSanté.
     </p>
 </blockquote>
 
@@ -11789,7 +11788,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 16:17+0000">2024-07-23</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 16:52+0000">2024-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
