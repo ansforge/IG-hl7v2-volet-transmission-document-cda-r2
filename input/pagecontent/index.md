@@ -217,7 +217,7 @@ envoi d'une demande de traitement sur le(s) document(s), le lecteur
 pourra également consulter le volet « [Transmission au LPS d'un document
 CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante) » pour avoir une vision complète et
 transversale des échanges représentée de façon synthétique sur la figure
-suivante et décrits de façon détaillée dans la section 2 du présent
+suivante et décrits de façon détaillée dans la volume 2 du présent
 document :
 
 <div class="figure" style='text-align: center;'>
