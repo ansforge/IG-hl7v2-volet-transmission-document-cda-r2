@@ -64,7 +64,7 @@ indiquée par la nature de l'événement (T02, T10 et T04).
 
 
 <div class="figure" style='text-align: center;'>
-    <img src="image18.png" alt="Figure 16" style="width:80%;">
+    <img src="image21.png" alt="Figure 16" style="width:80%;">
     <figcaption><b>Figure 16 : Diagramme de séquence -- Message MDM -- Suppression de document(s)</b></figcaption>
 </div>
 <br>
