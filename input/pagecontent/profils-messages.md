@@ -7,8 +7,7 @@ partage et de l'échange.
 
 Les données utiles pour publication sur le DMP et pour l'envoi par
 MSSanté de(s) document(s) sont stockées à la fois dans le segment PID du
-message HL7, dans le document CDA-R2 conforme au [volet du CI_SIS
-Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) et dans des segments OBX du message HL7 spécifiant les métadonnées complémentaires.
+message HL7, dans le document CDA-R2 conforme au [volet du CI_SIS Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) et dans des segments OBX du message HL7 spécifiant les métadonnées complémentaires.
 
 Le développeur doit valoriser tous les segments et champs obligatoires
 des messages HL7v2 afin de répondre au standard d'interopérabilité des
@@ -3487,7 +3486,7 @@ masqué aux professionnels de santé.
 
 <blockquote class="stu-note">
     <p>
-    <b>Point d'attention :</b> un document clinique masqué aux PS ne doit pas être envoyé aux PS par MSSanté.
+    <b>Point d'attention :</b> Un document stocké dans le DMP, pour lequel le patient a fait le choix de ne pas partager ce document aux PS, ne doit pas faire l’objet d’un échange entre PS au travers de la MSSanté.
     </p>
 </blockquote>
 
