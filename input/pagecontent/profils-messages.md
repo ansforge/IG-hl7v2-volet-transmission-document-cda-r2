@@ -1396,7 +1396,7 @@ la suivante :
 
 <blockquote class="stu-note">
     <p>
-    <b>Point d'attention</b> La version actuelle du DMP ne supporte pas le format OID\^Extension.
+    <b>Point d'attention</b> La version actuelle du DMP ne supporte pas le format OID^Extension.
     </p>
 </blockquote>
 
