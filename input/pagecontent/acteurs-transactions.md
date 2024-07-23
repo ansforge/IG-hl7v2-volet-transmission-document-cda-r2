@@ -116,7 +116,7 @@ transactions optionnelles (O-Optional).
 <p>CREATEUR</p>
 </td>
 <td width="406">
-<p>Flux 1 en &eacute;mission&nbsp;:&nbsp; Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU &agrave;)</p>
+<p>Flux 1 en &eacute;mission&nbsp;:&nbsp; Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU ->)</p>
 </td>
 <td width="132">
 <p>O</p>
@@ -126,7 +126,7 @@ transactions optionnelles (O-Optional).
 </tr>
 <tr>
 <td width="406">
-<p>Flux 2 en &eacute;mission : Demande de transmission/remplacement/suppression d&rsquo;un document CDA (Flux HL7- MDM &agrave;)</p>
+<p>Flux 2 en &eacute;mission : Demande de transmission/remplacement/suppression d&rsquo;un document CDA (Flux HL7- MDM ->)</p>
 </td>
 <td width="132">
 <p>O</p>
@@ -237,7 +237,7 @@ rend compte de la réalisation de la demande de traitement sur le
 document contenu dans le courriel par le logiciel métier associé à la
 BAL destinatrice du courriel._
 
-**[Note 4]** : _Le Flux HL7-MDM permet de transmettre undocument unique.
+**[Note 4]** : _Le Flux HL7-MDM permet de transmettre un document unique.
 Le Flux HL7-ORU peut, le cas échéant, transporter deux documents, un
 CDAr2 Niv1 et un CDAr2 Niv3, dans la même transaction. Dans ce cas, il
 s'agit de deux instances de documents dont le contenu clinique est
@@ -307,21 +307,10 @@ Cette section décrit les exigences en termes de regroupement d'acteurs pour cha
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-L'acteur CREATEUR est groupé avec l'acteur CONTENT CREATOR définit dans
-le Technical Framework PCC d'IHE pour permettre la création du document
-CDA.
+L'acteur CREATEUR est groupé avec l'acteur CONTENT CREATOR définit dans le Technical Framework PCC d'IHE pour permettre la création du document CDA.
 
 L'acteur GESTIONNAIRE est groupé avec :
 
--   L'acteur Producteur (Document Source) du volet de *Partage de
-    document de santé*, pour permettre à la PFI d'implémenter la
-    transaction ITI-41 Provide & Register Document Set dans un contexte
-    général ou les transactions TDT2.1/TD2.2 (Alimentation du DMP) ou
-    TD3.3c (Gestion des attributs d'un document) dans le contexte SEGUR
-    (pour intégration/remplacement/suppression de document(s) dans le
-    DMP en tenant compte des spécificités ajoutées par le référentiel
-    Service DMP intégré aux LPS),
+-   L'acteur Producteur (Document Source) du [volet de Partage de document de santé](https://esante.gouv.fr/volet-partage-de-documents-de-sante), pour permettre à la PFI d'implémenter la transaction ITI-41 Provide & Register Document Set dans un contexte général ou les transactions TDT2.1/TD2.2 (Alimentation du DMP) ou TD3.3c (Gestion des attributs d'un document) dans le contexte SEGUR (pour intégration/remplacement/suppression de document(s) dans le DMP en tenant compte des spécificités ajoutées par le référentiel Service DMP intégré aux LPS),
 
--   L'acteur Système initiateur du volet *d'Echange de documents de
-    santé*, pour permettre à la PFI de construire l'archive IHE_XDM
-    inclue dans le courriel émis vers le destinataire,
+-   L'acteur Système initiateur du volet d'[Echange de documents de santé](https://esante.gouv.fr/volet-echange-de-documents-de-sante), pour permettre à la PFI de construire l'archive IHE_XDM inclue dans le courriel émis vers le destinataire,

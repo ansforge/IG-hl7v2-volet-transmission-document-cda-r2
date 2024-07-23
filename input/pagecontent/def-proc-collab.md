@@ -2,12 +2,12 @@ Pour l'ensemble des processus décrits :
 
 -   L'accusé de réception MSSanté correspond à la prise en compte du courriel par le serveur de messagerie du destinataire du courriel,
 
--   L'accusé de lecture MSSanté défini par la RFC 8098 (Message Disposition Notification) comprend un élément dénommé Disposition types qui rend compte à l'expéditeur du courriel du traitement advenu sur ce courriel au niveau du destinataire : lecture du courriel, transfert du courriel, traitement automatique du courriel, suppression du courriel.
+-   L'accusé de lecture MSSanté défini par la [RFC 8098](https://datatracker.ietf.org/doc/html/rfc8098) (Message Disposition Notification) comprend un élément dénommé Disposition types qui rend compte à l'expéditeur du courriel du traitement advenu sur ce courriel au niveau du destinataire : lecture du courriel, transfert du courriel, traitement automatique du courriel, suppression du courriel.
 
 ### Processus collaboratif « Demande de transmission initiale de document(s) »
 
 <div class="figure" style='text-align: center;'>
-    <img src="image13.png" alt="Figure 9" title="Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS" style="width:80%;">
+    <img src="image13.png" alt="Figure 9" title="Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS" style="width:60%;">
     <figcaption><b>Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS</b></figcaption>
 </div>    
 <br>
@@ -62,16 +62,13 @@ Pour l'ensemble des processus décrits :
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
-**(Note 1)** : _les systèmes référencés SEGUR vague 2 ne sont pas concernés
-car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
+**(Note 1)** : _les systèmes référencés SEGUR vague 2 ne sont pas concernés car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 
 ### Processus collaboratif « Demande de remplacement de document(s) »
 
 <div class="figure" style='text-align: center;'>
-    <img src="image14.png" alt="Figure 10" title="Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:80%;">
+    <img src="image14.png" alt="Figure 10" title="Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:60%;">
     <figcaption><b>Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté</b></figcaption>
 </div>    
 <br>
@@ -141,8 +138,7 @@ consommateur (DMP et/ou application métier destinatrice).
 </tbody>
 </table>
 
-**Note 1** : _les systèmes référencés SEGUR vague 2 ne sont pas concernés
-car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
+**Note 1** : _les systèmes référencés SEGUR vague 2 ne sont pas concernés car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 
 <blockquote class="stu-note">
     <p>
