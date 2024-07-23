@@ -234,9 +234,9 @@ HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\
 DMP et échangé par une nouvelle version validée en CDA-R2 pour nouveau
 partage et échange sans restriction, le message est partagé sur le DMP
 pour « Replace ». Le code RPLC dans
-clinicalDocument/relatedDocument@typeCode dans le CDA-R2 (voir [Volet Partage de documents de santé 1.15](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf)) permet
+clinicalDocument/relatedDocument@typeCode dans le CDA-R2 (voir [Volet CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf)) permet
 de constituer l'association RPLC dans la soumission XDS pour le
-remplacement^\[13\]^ [LIEN?]
+remplacement (voir [Volet Partage de documents de santé 1.15](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf))
 
 La PFI doit également générer un message en direction des destinataires
 MSSanté désignés indiquant dans le corps du courriel le remplacement. La
@@ -621,9 +621,9 @@ HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\
 médicale déjà partagé DMP et échangé par une nouvelle version validée en
 CDA-R2 pour nouveau partage et échange sans restriction, le message est
 partagé DMP pour « Replace ». Le code RPLC dans
-clinicalDocument/relatedDocument@typeCode dans le CDA-R2 (voir [Volet Partage de documents de santé 1.15](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf)) permet
+clinicalDocument/relatedDocument@typeCode dans le CDA-R2 (voir [Volet CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf)) permet
 de constituer l'association RPLC dans la soumission XDS pour le
-remplacement ^\[13\]^ [LIEN?]
+remplacement (voir [Volet Partage de documents de santé 1.15](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf))
 
 La PFI doit également générer un message en direction des destinataires
 MSSanté désignés indiquant dans le corps du courriel le remplacement. La
