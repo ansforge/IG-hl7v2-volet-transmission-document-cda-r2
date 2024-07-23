@@ -1,4 +1,4 @@
-Cette section décrit, à titre d'exemple et de façon non exhaustive, un ensemble de cas d'usage. Pour une meilleure compréhension du lecteur, ces cas d'usage couvrent les échanges entre le système créateur du document et la PFI, mais également les échanges au-delà de la PFI (et donc au-delà du périmètre de ce présent document).
+Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un ensemble de cas d'usage. Pour une meilleure compréhension du lecteur, ces cas d'usage couvrent les échanges entre le système créateur du document et la PFI, mais également les échanges au-delà de la PFI (et donc au-delà du périmètre de ce présent document).
 
 ### Envoi d'un document clinique d'un établissement vers un médecin traitant
 
@@ -26,10 +26,10 @@ qui gère les échanges avec le DMP et/ou la MSSanté. La PFI de
 l'hôpital-A réceptionne et analyse les éléments portés par la
 transaction émise à partir du logiciel métier du Dr Dupont. La PFI
 construit d'une part la requête d'alimentation du DMP conformément au
-*Guide d'implémentation du DMP* ainsi que le courriel à destination de
+_Guide d'implémentation du DMP_ ainsi que le courriel à destination de
 la BAL personnelle du Dr Adam Hoda. La PFI construit également les
-pièces jointes, c'est-à-dire l'archive IHE_XDM.zip conformément au volet
-*Echange de documents de santé* du CI_SIS et les fichiers PDF
+pièces jointes, c'est-à-dire l'archive IHE_XDM.zip conformément au [volet
+Echange de documents de santé du CI_SIS](https://esante.gouv.fr/volet-echange-de-documents-de-sante) et les fichiers PDF
 correspondants aux comptes rendus envoyés dans l'archive IHE_XDM.
 
 Si demandé initialement, le logiciel métier du Dr Dupont réceptionne en

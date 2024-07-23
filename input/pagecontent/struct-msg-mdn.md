@@ -46,7 +46,7 @@ Le message MDN est de type « multipart/report » :
 
 -   La seconde partie est conforme au type de contenu message/disposition-notification constitué de différents champs d'entête formatés selon la RFC 2822. Parmi ces champs, « `Disposition:` » et `« Final-Recipient: » ` sont obligatoires :
 
-    -   Le champ `« Disposition: »` rend compte du résultat du traitement du courriel par le destinataire^(Note\ 1)^~ :~
+    -   Le champ `« Disposition: »` rend compte du résultat du traitement du courriel par le destinataire _(Note 1)_:
 
         -   En cas de succès, le contenu du champ « `Disposition:` » prend la valeur : « `Disposition: automatic-action/MDN-sent-automatically; processed` »
 
@@ -62,11 +62,9 @@ Dans le contexte de ce volet, de façon à permettre le traitement du message MD
 
 Les pièces jointes envoyées avec le courriel d'origine (IHE_XDM.zip et le pdf) doivent être remises en pièces jointes du courriel MDN.
 
-**(Note 1)** : Détail du champ obligatoire « `Disposition:` » : ce champ
-permet de préciser :
-
--   Le mode de traitement effectué sur le courriel : traitement automatique ou manuel
-
+------------------------------------------
+ **(Note 1)** : Détail du champ obligatoire « `Disposition:` » : ce champ permet de préciser :
+ -   Le mode de traitement effectué sur le courriel : traitement automatique ou manuel
     -   action-mode = \"manual-action\" / \"automatic-action\".
 
         -   La valeur « manual-action » indique que le traitement du courriel résulte d'une action explicite réalisée par l'utilisateur.
@@ -96,7 +94,7 @@ permet de préciser :
 -   Le cas échéant, l'erreur rencontrée
 
     -   disposition-modifier = \"error\"
-
+------------------------------------------
 Exemple d'un message MDN :
 
 L'exemple suivant décrit le message MDN (accusé de lecture négatif) généré dans le contexte du cas d'usage « Transfert d'un patient d'un CH vers un autre CH -Gestion des erreurs » présenté au [paragraphe suivant](cas-usage.html#description-du-cas-en-erreur) du présent volet.

@@ -36,8 +36,8 @@ organisation de déléguer à un acteur tiers, la plateforme
 d'intermédiation (PFI), la capacité d'interagir avec le DMP et/ou avec
 la MSSanté. Dans le cas d'un envoi par MSSanté, ce volet est à
 considérer par le lecteur en association avec un autre volet du CI_SIS,
-le volet « Transmission au LPS d'un document CDA provenant d'un courriel
-MSSanté » de façon à avoir une vision de bout en bout des échanges (du
+le volet « [Transmission au LPS d'un document CDA provenant d'un courriel
+MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante) » de façon à avoir une vision de bout en bout des échanges (du
 créateur de la demande de traitement sur un document vers le
 consommateur final de cette demande).
 
@@ -47,7 +47,7 @@ et une partie technique.
 La partie fonctionnelle décrit, à titre d'exemple et de façon non
 exhaustive, un ensemble de cas d'usage. Sur la base de ces cas d'usage,
 sont ensuite définis des acteurs du système d'information (au sens
-d'IHE) et des transactions qui interviennent entre ces acteurs pour
+d'[IHE](https://wiki.ihe.net/index.php/Actors)) et des transactions qui interviennent entre ces acteurs pour
 répondre à ces cas d'usage. Les processus collaboratifs sont ensuite
 décrits et les flux entre les acteurs sont également identifiés.
 
@@ -65,10 +65,9 @@ Dans le cas d'usage où la demande provenant du CREATEUR est relayée par
 le GESTIONNAIRE de l'établissement vers une BAL personnelle ou
 organisationnelle d'un autre établissement, l'envoi de l'accusé de
 lecture MSSanté (Message Disposition Notification- MDN décrit dans la
-RFC 8098) est déclenché par le traitement du courriel déposé dans la BAL
-de l'utilisateur destinataire (lecture, suppression, traitement, etc.).
+[RFC 8098](https://datatracker.ietf.org/doc/html/rfc8098)) est déclenché par le traitement du courriel déposé dans la BAL de l'utilisateur destinataire (lecture, suppression, traitement, etc.).
 Le message MDN est alors réceptionné par la PFI de l'établissement
-expéditeur qui construit le message métier HL7 ZAM\^Z03\^ZAM_Z01 et le
+expéditeur qui construit le message métier HL7 `ZAM\^Z03\^ZAM_Z01` et le
 transmet au logiciel métier de l'utilisateur expéditeur.
 
 Une liste de cas d'usage, non exhaustive, est présentée à titre
@@ -215,8 +214,8 @@ en interne.
 
 Cette spécification n'est pas autonome. Notamment, dans le cas d'un
 envoi d'une demande de traitement sur le(s) document(s), le lecteur
-pourra également consulter le volet « Transmission au LPS d'un document
-CDA provenant d'un courriel MSSanté » pour avoir une vision complète et
+pourra également consulter le volet « [Transmission au LPS d'un document
+CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante) » pour avoir une vision complète et
 transversale des échanges représentée de façon synthétique sur la figure
 suivante et décrits de façon détaillée dans la section 2 du présent
 document :
