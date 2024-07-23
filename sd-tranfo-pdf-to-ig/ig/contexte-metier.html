@@ -264,17 +264,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<p>(*) : _dans le contexte français, conformément au volet <strong>Partage de documents de santé</strong> du CI_SIS, la mise à jour des métadonnées du document est limitée à la mise à jour des informations de masquage du document aux PS et de mise en visibilité du document au patient et à ses représentants légaux ainsi que le statut du document.</p>
-
-<p>La PFI interagissant avec le DMP en mode d’authentification indirecte, il lui est impossible de mettre en œuvre la transaction TD3.3 (Gestion des attributs d’un document) du profil Alimentation du DMP, décrite dans le <em>Guide d’implémentation du DMP</em> (transaction équivalente à la
-transaction Update Document Set [<a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html">ITI-57</a>] du profil IHE Update Metadata), car celle-ci nécessite une authentification directe (cf la matrice des droits fonctionnels du DMP).</p>
-
-<p>Dans ce contexte, la mise à jour des métadonnées de masquage/démasquage aux PS et de visibilité du document au patient sera gérée comme un remplacement de document, ce qui implique la création d’une nouvelle version de document par le système créateur de documents. Cette nouvelle version vient remplacer la précédente au niveau du consommateur (DMP ou logiciel métier destinataire du courriel)._</p>
+<p>(*) : <em>dans le contexte français, conformément au <a href="https://esante.gouv.fr/volet-partage-de-documents-de-sante">volet Partage de documents de santé du CI_SIS</a>, la mise à jour des métadonnées du document est limitée à la mise à jour des informations de masquage du document aux PS et de mise en visibilité du document au patient et à ses représentants légaux ainsi que le statut du document.
+La PFI interagissant avec le DMP en mode d’authentification indirecte, il lui est impossible de mettre en œuvre la transaction TD3.3 (Gestion des attributs d’un document) du profil Alimentation du DMP, décrite dans le Guide d’implémentation du DMP (transaction équivalente à la
+transaction Update Document Set [<a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-57.html">ITI-57</a>] du profil IHE Update Metadata), car celle-ci nécessite une authentification directe (cf la matrice des droits fonctionnels du DMP).
+Dans ce contexte, la mise à jour des métadonnées de masquage/démasquage aux PS et de visibilité du document au patient sera gérée comme un remplacement de document, ce qui implique la création d’une nouvelle version de document par le système créateur de documents. Cette nouvelle version vient remplacer la précédente au niveau du consommateur (DMP ou logiciel métier destinataire du courriel).</em></p>
 
 <p>Le nombre de processus est ainsi réduit aux trois processus synthétisés sur la Figure 6.</p>
 
 <div class="figure" style="text-align: center;">
-    <img src="image11.png" alt="Figure 6" title="Figure 6 : Organisation du contexte métier du volet « Transmission de documents CDA en HL7v2 »" style="width:100%;" />
+    <img src="image11.png" alt="Figure 6" title="Figure 6 : Organisation du contexte métier du volet « Transmission de documents CDA en HL7v2 »" style="width:60%;" />
     <figcaption><b>Figure 6 : Organisation du contexte métier du volet « Transmission de documents CDA en HL7v2 »</b></figcaption>
 </div>
 <p><br /></p>
@@ -321,7 +319,7 @@ transaction Update Document Set [<a href="https://profiles.ihe.net/ITI/TF/Volume
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 17, 2024 15:52+0000">2024-07-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 09:39+0000">2024-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

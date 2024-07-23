@@ -253,7 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2024-07-17
+            as of 2024-07-23
           
         
       </td>
@@ -321,8 +321,8 @@ organisation de déléguer à un acteur tiers, la plateforme
 d’intermédiation (PFI), la capacité d’interagir avec le DMP et/ou avec
 la MSSanté. Dans le cas d’un envoi par MSSanté, ce volet est à
 considérer par le lecteur en association avec un autre volet du CI_SIS,
-le volet « Transmission au LPS d’un document CDA provenant d’un courriel
-MSSanté » de façon à avoir une vision de bout en bout des échanges (du
+le volet « <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d’un document CDA provenant d’un courriel
+MSSanté</a> » de façon à avoir une vision de bout en bout des échanges (du
 créateur de la demande de traitement sur un document vers le
 consommateur final de cette demande).</p>
 
@@ -332,7 +332,7 @@ et une partie technique.</p>
 <p>La partie fonctionnelle décrit, à titre d’exemple et de façon non
 exhaustive, un ensemble de cas d’usage. Sur la base de ces cas d’usage,
 sont ensuite définis des acteurs du système d’information (au sens
-d’IHE) et des transactions qui interviennent entre ces acteurs pour
+d’<a href="https://wiki.ihe.net/index.php/Actors">IHE</a>) et des transactions qui interviennent entre ces acteurs pour
 répondre à ces cas d’usage. Les processus collaboratifs sont ensuite
 décrits et les flux entre les acteurs sont également identifiés.</p>
 
@@ -350,10 +350,9 @@ métier et la PFI font partie du périmètre du volet.</p>
 le GESTIONNAIRE de l’établissement vers une BAL personnelle ou
 organisationnelle d’un autre établissement, l’envoi de l’accusé de
 lecture MSSanté (Message Disposition Notification- MDN décrit dans la
-RFC 8098) est déclenché par le traitement du courriel déposé dans la BAL
-de l’utilisateur destinataire (lecture, suppression, traitement, etc.).
+<a href="https://datatracker.ietf.org/doc/html/rfc8098">RFC 8098</a>) est déclenché par le traitement du courriel déposé dans la BAL de l’utilisateur destinataire (lecture, suppression, traitement, etc.).
 Le message MDN est alors réceptionné par la PFI de l’établissement
-expéditeur qui construit le message métier HL7 ZAM\^Z03\^ZAM_Z01 et le
+expéditeur qui construit le message métier HL7 <code class="language-plaintext highlighter-rouge">ZAM\^Z03\^ZAM_Z01</code> et le
 transmet au logiciel métier de l’utilisateur expéditeur.</p>
 
 <p>Une liste de cas d’usage, non exhaustive, est présentée à titre
@@ -505,8 +504,8 @@ en interne.</p>
 
 <p>Cette spécification n’est pas autonome. Notamment, dans le cas d’un
 envoi d’une demande de traitement sur le(s) document(s), le lecteur
-pourra également consulter le volet « Transmission au LPS d’un document
-CDA provenant d’un courriel MSSanté » pour avoir une vision complète et
+pourra également consulter le volet « <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d’un document
+CDA provenant d’un courriel MSSanté</a> » pour avoir une vision complète et
 transversale des échanges représentée de façon synthétique sur la figure
 suivante et décrits de façon détaillée dans la section 2 du présent
 document :</p>
@@ -613,7 +612,7 @@ spécifie des projets avec des interfaces interopérables.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 17, 2024 15:52+0000">2024-07-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 09:39+0000">2024-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
