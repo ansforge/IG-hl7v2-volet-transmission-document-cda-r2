@@ -13,10 +13,10 @@ transactions représentées en bleu sur les figures suivantes.
 
 Les interactions de la transaction de
 transmission/remplacement/suppression de document(s) utilisent le
-message HL7 ORU\^R01\^ORU_R01 en version 2.5 ainsi que ses acquittements
-métiers HL7 ZAM\^Z01\^ZAM_Z01 (accusé métier de réception DMP),
-ZAM\^Z02\^ZAM_Z01 (accusé métier de réception MSSanté) et
-ZAM_Z03\^ZAM_Z01 (accusé métier de lecture MSSanté).
+message HL7 `ORU^R01^ORU_R01` en version 2.5 ainsi que ses acquittements
+métiers HL7 `ZAM^Z01^ZAM_Z01` (accusé métier de réception DMP),
+`ZAM^Z02^ZAM_Z01` (accusé métier de réception MSSanté) et
+`ZAM_Z03^ZAM_Z01` (accusé métier de lecture MSSanté).
 
 L'action à réaliser sur le document porté par la transaction est
 indiquée par la valeur renseignée au niveau du champ OBX-11 du segment
@@ -34,10 +34,10 @@ d'un message HL7 ORU.
 
 Les interactions de la transaction de
 transmission/remplacement/suppression de document(s) utilisent
-respectivement les messages HL7 MDM\^T02\^MDM_T02, MDM\^T10\^MDM_T10 et
-MDM\^T04\^MDM_T04 en version 2.6 ainsi que ses acquittements métiers HL7
-ZAM\^Z01\^ZAM_Z01 (accusé métier de réception DMP), ZAM\^Z02\^ZAM_Z01
-(accusé métier de réception MSSanté) et ZAM_Z03\^ZAM_Z01 (accusé métier
+respectivement les messages HL7 `MDM^T02^MDM_T02`, `MDM^T10^MDM_T10` et
+`MDM^T04^MDM_T04` en version 2.6 ainsi que ses acquittements métiers HL7
+`ZAM^Z01^ZAM_Z01` (accusé métier de réception DMP), `ZAM^Z02^ZAM_Z01`
+(accusé métier de réception MSSanté) et `ZAM_Z03^ZAM_Z01` (accusé métier
 de lecture MSSanté).
 
 L'action à réaliser sur le document porté par la transaction est

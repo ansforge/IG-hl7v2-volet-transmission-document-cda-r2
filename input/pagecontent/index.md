@@ -67,7 +67,7 @@ organisationnelle d'un autre établissement, l'envoi de l'accusé de
 lecture MSSanté (Message Disposition Notification- MDN décrit dans la
 [RFC 8098](https://datatracker.ietf.org/doc/html/rfc8098)) est déclenché par le traitement du courriel déposé dans la BAL de l'utilisateur destinataire (lecture, suppression, traitement, etc.).
 Le message MDN est alors réceptionné par la PFI de l'établissement
-expéditeur qui construit le message métier HL7 `ZAM\^Z03\^ZAM_Z01` et le
+expéditeur qui construit le message métier HL7 `ZAM^Z03^ZAM_Z01` et le
 transmet au logiciel métier de l'utilisateur expéditeur.
 
 Une liste de cas d'usage, non exhaustive, est présentée à titre

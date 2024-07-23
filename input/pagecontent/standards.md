@@ -42,7 +42,7 @@
 
 <blockquote class="stu-note">
     <p>
-    <b>(2) :</b> Pour l\'ensemble des champs de type CE en HL7v2.5 et CWE en HL7v2.6, la contrainte imposée en version 2.7 sur le type de donnée CE/CWE est pré adoptée. En conséquence, ces spécifications imposent de préciser le système de codage (CE/CWE.3) lorsque le code (CE/CWE.1) est renseigné.
+    <b>(2) :</b> Pour l'ensemble des champs de type CE en HL7v2.5 et CWE en HL7v2.6, la contrainte imposée en version 2.7 sur le type de donnée CE/CWE est pré adoptée. En conséquence, ces spécifications imposent de préciser le système de codage (CE/CWE.3) lorsque le code (CE/CWE.1) est renseigné.
     Les bonnes pratiques consistent à renseigner systématiquement les 3
     composantes : le code, le libellé du code et le libellé de la
     nomenclature.

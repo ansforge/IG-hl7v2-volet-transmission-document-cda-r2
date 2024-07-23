@@ -242,10 +242,10 @@ Le Flux HL7-ORU peut, le cas échéant, transporter deux documents, un
 CDAr2 Niv1 et un CDAr2 Niv3, dans la même transaction. Dans ce cas, il
 s'agit de deux instances de documents dont le contenu clinique est
 identique. Ce besoin de transmettre dans une même transaction les deux
-formats CDAr2 Niv1 et CDAr2 Niv3 d\'un même document clinique a été
+formats CDAr2 Niv1 et CDAr2 Niv3 d'un même document clinique a été
 exprimé, en particulier par les biologistes, afin de permettre à
-l\'utilisateur du système consommateur de visualiser le document tel
-qu\'il a été remis au patient (PDF). Chaque format de document a son
+l'utilisateur du système consommateur de visualiser le document tel
+qu'il a été remis au patient (PDF). Chaque format de document a son
 identifiant propre._
 
 <blockquote class="stu-note">

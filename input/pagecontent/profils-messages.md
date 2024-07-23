@@ -16,7 +16,7 @@ messages.
 Ci-dessous sont représentées les structures de messages HL7v2 proposées
 pour la transmission de document(s) CDA-R2 en HL7v2.
 
-#### Message ORU\^R01\^ORU_R01 en HL7v2.5
+#### Message ORU^R01^ORU_R01 en HL7v2.5
 
 ##### Profil du message ORU_R01
 
@@ -1074,8 +1074,7 @@ le segment MSH :
 
 Entête MSH d'un message MDM ou ORU émis par le CREATEUR :
 
-`MSH\|\^\~\\&\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2`
+`MSH|^~\&|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2`
 
 #### Les données concernant le patient et la venue du patient
 
@@ -1374,23 +1373,23 @@ la suivante :
 
 -   si ClinicalDocument/id@extension est renseigné :
 
-    -   TXA-12.1 \< = ClinicalDocument/id@extension
+    -   TXA-12.1 < = ClinicalDocument/id@extension
 
-    -   TXA-12.2 \< = Non renseigné
+    -   TXA-12.2 < = Non renseigné
 
-    -   TXA-12.3 \< = ClinicalDocument/id@root
+    -   TXA-12.3 < = ClinicalDocument/id@root
 
-    -   TXA-12.4 \< = ISO
+    -   TXA-12.4 < = ISO
 
 -   si ClinicalDocument/id@extension n'est pas renseigné :
 
-    -   TXA-12.1 \< = ClinicalDocument/id@root
+    -   TXA-12.1 < = ClinicalDocument/id@root
 
-    -   TXA-12.2 \< = Non renseigné
+    -   TXA-12.2 < = Non renseigné
 
-    -   TXA-12.3 \< = Non renseigné
+    -   TXA-12.3 < = Non renseigné
 
-    -   TXA-12.4 \< = Non renseigné
+    -   TXA-12.4 < = Non renseigné
 
 
 <blockquote class="stu-note">
@@ -3218,31 +3217,13 @@ patient, le médecin HODA Adam, le service radiologie de l'hôpital A, une
 application). Une adresse mail de réponse est indiquée.
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^Text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYX
-
-UgZm9ybWF0IENEQQ\|\|\|\|\|\|F\|
-
-PRT\|\|UC\|\|SB\^Send
-By\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS
-\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-[PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|Radiologie\^\^\^\^\^120456789\^UF\^\^\^3435\|\|\|\|\|\|\|\^\^X.400\^radiologie@hopitalA.mssante.fr](mailto:PRT||UC||RCT||||||||||%5e%5eX.400%5eserviceA@hopitalA.mssante.fr)
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|\|\|12\|\|\|\|\|\^\^X.400\^appliExemple@hopitalB.mssante.fr
-
-PRT\|\|UC\|\|REPLY\^Reply
-to\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^Text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYX
+UgZm9ybWF0IENEQQ||||||F|
+PRT||UC||SB^Send By^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS |||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+PRT||UC||RCT^results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||||||||||^^X.400^adam.hoda@medecin.mssante.fr PRT||UC||RCT^results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
+PRT||UC||RCT^results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
+PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@medecin.mssante.fr
 ```
 
 **Expéditeur MSSanté :** Le segment PRT est également
@@ -7204,29 +7185,23 @@ ERR :
 Entête MSH d'un message MDM ou ORU émis par le CREATEUR :
 
 ```
-MSH\|\^\~\\&\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2
-
+MSH|^~\&|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
 ```
 Un acquittement positif retourné par le GESTIONNAIRE :
 
 ```
-MSH\|\^\~\\&\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12346\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2
-
-MSA\|AA\|12345
+MSH|^~\&|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12346|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
+MSA|AA|12345
 
 ```
 Un acquittement négatif retourné par le GESTIONNAIRE : version d'HL7
 inconnue
 
 ```
-MSH\|\^\~\\&\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12347\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2
+MSH|^~\&|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12347|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
+MSA|AE|12345
+ERR||MSH^1^12|203^ Unsupported version^messageErrorCondition| E
 
-MSA\|AE\|12345
-
-ERR\|\|MSH\^1\^12\|203\^ Unsupported version\^messageErrorCondition\| E
 ```
 
 ### Description des messages HL7 d'accusés métier
@@ -7421,13 +7396,13 @@ section suivante.
 Pour l'ensemble des OBX listés dans cette section, le champ OBX-3 prend
 ses valeurs dans la table « AckMetierZAM » disponible [ici](ack-metier-zam.html).
 
-##### Contraintes à appliquer au message ZAM\^Z01\^ZAM_Z01 - Accusé de réception DMP
+##### Contraintes à appliquer au message ZAM^Z01^ZAM_Z01 - Accusé de réception DMP
 
 ###### Segment MSH
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
-ZAM\^Z01\^ZAM_Z01.
+`ZAM^Z01^ZAM_Z01`.
 
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
@@ -8527,13 +8502,13 @@ segment contient sa description.
  </tr>
 </tbody></table>
 
-##### Contraintes à appliquer au message ZAM\^Z02\^ZAM_Z01 -- Accusé de réception MSSanté
+##### Contraintes à appliquer au message ZAM^Z02^ZAM_Z01 -- Accusé de réception MSSanté
 
 ###### Segment MSH
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
-ZAM\^Z02\^ZAM_Z01.
+`ZAM^Z02^ZAM_Z01`.
 
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
@@ -9985,13 +9960,13 @@ segment contient sa description.
  </tr>
 </tbody></table>
 
-##### Contraintes à appliquer au message ZAM\^Z03\^ZAM_Z01 -- Accusé de lecture MSSanté 
+##### Contraintes à appliquer au message ZAM^Z03^ZAM_Z01 -- Accusé de lecture MSSanté 
 
 ###### Segment MSH
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
-ZAM\^Z03\^ZAM_Z01.
+`ZAM^Z03^ZAM_Z01`.
 
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
@@ -11458,9 +11433,9 @@ par le destinataire, ce segment contient sa description.
 
 Seules les erreurs de niveau applicatif du traitement automatique sur le document au niveau du destinataire final sont remontées au travers du courriel MDN et réceptionnées par le GESTIONNAIRE (la PFI expéditrice).
 Les erreurs de type technique (erreurs de syntaxe du message HL7) sont généralement traitées localement, côté du destinataire, par une des intervenants techniques. Dans ces conditions, le segment ERR-3 prend la valeur 207 et le segment ERR-5 contient l'erreur applicative remontée au
- travers du courriel MDN. Le message HL7 ZAM\^Z03\^ZAM_Z01 est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
+ travers du courriel MDN. Le message HL7 `ZAM^Z03^ZAM_Z01` est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
 (cf structure du MDN -- Message Disposition Notification) décrit en Annexe 4 du volet « [Transmission au LPS d'un document CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante) ».
 
 #### Message d'acquittement technique des accusés métiers
 
-Le message d'acquittement est identique à celui spécifié dans la [partie dédiée](profils-messages.html#le-message-dacquittement-du-message-hl7v2), à l'exception du champ MSH-9 qui prend la valeur ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l'évènement du message initial.
+Le message d'acquittement est identique à celui spécifié dans la [partie dédiée](profils-messages.html#le-message-dacquittement-du-message-hl7v2), à l'exception du champ MSH-9 qui prend la valeur `ACK^Z01^ACK` ou `ACK^Z02^ACK` ou `ACK^Z03^ACK` selon l'évènement du message initial.

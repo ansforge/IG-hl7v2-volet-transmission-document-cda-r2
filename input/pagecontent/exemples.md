@@ -1,7 +1,7 @@
 ### Exemple Message ORU (Unsolicited Transmission of an observation message)
 
 
--   Un exemple complet de message ORU\^R01\^ORU_R01 est disponible sur
+-   Un exemple complet de message `ORU^R01^ORU_R01` est disponible sur
     le GitHub ANS :
 
 -   <https://github.com/ansforge/hl7V2-exemples/tree/main/Vague%202/Trans_Doc-CDA-HL7V2/TRANSMISSION_DOCS_CDA_EN_HL7V2_V2.1/ORU>
@@ -23,70 +23,26 @@ professionnel de santé. Le Créateur de document(s) demande à recevoir
 les accusés métier de réception DMP/MSSanté et de lecture MSSanté.
 
 ```
-OBX\|1\|ED\|11502-2\^CR d\'examens
-biologiques\^LN\|\|\^TEXT\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm
-9ybWF0IENEQQ\|\|\|\|\|\|F\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|
-
-\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|12\|\|\|\|\|\^\^X.400\^appliExemple@hopitalB.mssante.fr
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-PRT\|\|UC\|\|REPLY\^Reply
-to\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-OBX\|2\|ED\|11502-2\^CR d\'examens
-biologiques\^LN\|\|\^TEXT\^XML\^Base64\^RG9jdW1lbnQgbWVkY2lhbCBhdSBmb
-3JtYXQgQ0RBIG5pdmVhdSAx\|\|\|\|\|\|F\|
-
-OBX\|3\|CE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator \|\|\|\|\|\|F\|
-
-OBX\|4\|CE\|INVISIBLE_PATIENT\^Document Non Visible par le
-patient\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du
-patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CE\|CONNEXION_SECRETE\^Connexion
-Secrete\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CE\|DESTDMP\^Destinataire
-DMP\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative)\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|CE\|ACK_LECTURE\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|13\|ED\|CORPSMAIL_PS\^Corps du mail pour un
-PS\^MetaDMPMSS\|\|\^TEXT\^\^Base64\^Q2hlciBjb25mcsOocmUsI
-
-HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
-
+OBX|1|ED|11502-2^CR d'examens biologiques^LN||^TEXT^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm 9ybWF0IENEQQ||||||F|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||
+||||||||^^X.400^adam.hoda@medecin.mssante.fr
+PRT||UC||RCT^Results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
+PRT||UC||RCT^Results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+OBX|2|ED|11502-2^CR d'examens biologiques^LN||^TEXT^XML^Base64^RG9jdW1lbnQgbWVkY2lhbCBhdSBmb 3JtYXQgQ0RBIG5pdmVhdSAx||||||F|
+OBX|3|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^ expandedYes-NoIndicator ||||||F|
+OBX|4|CE|INVISIBLE_PATIENT^Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|5|CE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|6|CE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|7|CE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|8|CE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|9|CE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|10|CE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|12|CE|ACK_LECTURE^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|13|ED|CORPSMAIL_PS^Corps du mail pour un PS^MetaDMPMSS||^TEXT^^Base64^Q2hlciBjb25mcsOocmUsI
+HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==||||||F|
 ```
 **Exemple 1 :** Transmission initiale d'un document CR
 d'imagerie médicale validé en CDA-R2 (niveau 1) pour partage et échange
@@ -104,57 +60,23 @@ l'expéditeur sont présentes. Un texte est ajouté à l'attention du
 patient.
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie médicale\^LN
-\|\|\^TEXT\^XML\^Base64\^ RG9jdW1lbnQgbWVkY2lhbCBhdSBm
-
-b3JtYXQgQ0RBIG5pdmVhdSAx\|\|\|\|\|\|F\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-OBX\|2\|CE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du
-patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CE\|CONNEXION_SECRETE\^Connexion
-Secrete\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CE\|DESTDMP\^Destinataire
-DMP\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative)\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-NTE\|1\|\|\|FIN\|
-
-OBX\|10\|CE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CE\|ACK_LECTURE_MSS\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|ED\|CORPSMAIL_PATIENT\^Corps du mail pour le
-patient\^MetaDMPMSS \|\|\^TEXT\^\^Base64\^Qm9uam91ciBN
-
-LkR1cG9udCwgY2ktam9pbnQgdm90cmUgQ1IgZOKAmWltYWdlcmllLg==\|\|\|\|\|F\|
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN ||^TEXT^XML^Base64^ RG9jdW1lbnQgbWVkY2lhbCBhdSBm
+b3JtYXQgQ0RBIG5pdmVhdSAx||||||F|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+OBX|2|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|3|CE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|4|CE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|5|CE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|6|CE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|7|CE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|8|CE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|9|CE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+NTE|1|||FIN|
+OBX|10|CE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|12|ED|CORPSMAIL_PATIENT^Corps du mail pour le patient^MetaDMPMSS ||^TEXT^^Base64^Qm9uam91ciBN
+LkR1cG9udCwgY2ktam9pbnQgdm90cmUgQ1IgZOKAmWltYWdlcmllLg==|||||F|
 ```
 
 **Exemple 2 :** Transmission d'une demande de suppression
@@ -175,59 +97,23 @@ _Extrait Message Segment OBX :_ Transmission du CR
 d'imagerie médicale avec balises pour le DMP/ MSSanté :
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie médicale\^LN\|\|\^TEXT\^XML\^Base64\^
-RG9jdW1lbnQgbWVkY2lhbCBhdSBmb3Jt
-
-YXQgQ0RBIG5pdmVhdSAx\|\|\|\|\|\|D\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-[PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|Radiologie\^\^\^\^\^120456789\^UF\^\^\^3435\|\|\|\|\|\|\|\^\^X.400\^radiologie@hopitalA.mssante.fr](mailto:PRT||UC||RCT||||||||||%5e%5eX.400%5eserviceA@hopitalA.mssante.fr)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-OBX\|2\|CE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du patient\^MetaDMPMSS \|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CE\|CONNEXION_SECRETE\^Connexion
-Secrete\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CE\|DESTDMP\^Destinataire DMP\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative)\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CE\|ACK_LECTURE\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
-\|\|\^TEXT\^\^Base64\^Q2hlciBjb25mcsOocmUsI
-
-HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^TEXT^XML^Base64^ RG9jdW1lbnQgbWVkY2lhbCBhdSBmb3Jt
+YXQgQ0RBIG5pdmVhdSAx||||||D|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
+PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@medecin.mssante.fr 
+OBX|2|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|3|CE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|4|CE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS ||N^^ expandedYes-NoIndicator||||||F|
+OBX|5|CE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|6|CE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|7|CE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|8|CE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|9|CE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|10|CE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CE|ACK_LECTURE^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|12|ED|CORPSMAIL_PS^Corps du mail pour un PS^MetaDMPMSS ||^TEXT^^Base64^Q2hlciBjb25mcsOocmUsI
+HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==||||||F|
 ```
 
 **Exemple 3 :** Remplacement d'un document déjà partagé
@@ -255,60 +141,23 @@ d'imagerie médicale (nouvelle version du document) avec balises pour le
 DMP et MSSanté.
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^TEXT\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
-
-bWF0IENEQQ\|\|\|\|\|\|C\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.f
-
-OBX\|2\|CE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du patient\^MetaDMPMSS\|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CE\|CONNEXION_SECRETE\^Connexion
-Secrete\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CE\|DESTDMP\^Destinataire
-DMP\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CE\|ACK_LECTURE_MSS\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
-\|\|\^TEXT\^\^Base64\^Q2hlciBjb25mcsOocmUsI
-
-HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
-
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^TEXT^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+bWF0IENEQQ||||||C|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+PRT||UC||RCT^results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.f
+OBX|2|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|3|CE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|4|CE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|5|CE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|6|CE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|7|CE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|8|CE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|9|CE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|10|CE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|12|ED|CORPSMAIL_PS^Corps du mail pour un PS^MetaDMPMSS ||^TEXT^^Base64^Q2hlciBjb25mcsOocmUsI
+HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==||||||F|
 ```
 
 **Exemple 4 :** Transmission d'un document CR d'imagerie
@@ -335,65 +184,28 @@ du CR d'imagerie médicale (nouvelle version du document) avec balises
 spécifiées pour le DMP et MSSANTE.
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^TEXT\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
-
-bWF0IENEQQ\|\|\|\|\|\|C\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Result Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|12\|\|\|\|\|\^\^X.400\^appliExemple@hopitalB.mssante.fr
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-PRT\|\|UC\|\|REPLY\^Reply
-to\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-OBX\|2\|CE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du
-patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CE\|CONNEXION_SECRETE\^Connexion
-Secrete\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CE\|DESTDMP\^Destinataire
-DMP\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative)\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CE\|ACK_LECTURE_MSS\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^TEXT^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+bWF0IENEQQ||||||C|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Result Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+PRT||UC||RCT^Results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
+PRT||UC||RCT^Results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+OBX|2|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|3|CE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|4|CE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|5|CE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|6|CE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|7|CE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|8|CE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|9|CE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|10|CE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
 ```
 
 ### Message MDM (Medical Document Management)
 
--   Un exemple complet de message MDM\^T02\^MDM_T02 est disponible sur
+-   Un exemple complet de message `MDM^T02^MDM_T02` est disponible sur
     le GitHub ANS :
 
 -   <https://github.com/ansforge/hl7V2-exemples/tree/main/Vague%202/Trans_Doc-CDA-HL7V2/TRANSMISSION_DOCS_CDA_EN_HL7V2_V2.1/MDM>
@@ -415,68 +227,26 @@ d'imagerie médicale avec balises pour le DMP et MSSANTE. Un corps de
 mail pour le professionnel de santé est spécifié.
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
-
-bWF0IENEQQ\|\|\|\|\|\|F\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|\|\|12\|\|\|\|\|\^\^X.400\^appliExemple@hopitalB.mssante.fr
-
-[PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|Radiologie\^\^\^\^\^120456789\^UF\^\^\^3435\|\|\|\|\|\|\|\^\^X.400\^radiologie@hopitalA.mssante.fr](mailto:PRT||UC||RCT||||||||||%5e%5eX.400%5eserviceA@hopitalA.mssante.fr)
-
-PRT\|\|UC\|\|RCT\^Results Copies Toç
-participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-PRT\|\|UC\|\|REPLY\^Reply
-to\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-OBX\|2\|CWE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CWE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS \|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CWE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du patient\^MetaDMPMSS\|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CWE\|CONNEXION_SECRETE\^Connexion Secrete\^MetaDMPMSS\|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CWE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS \|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CWE\|DESTDMP\^Destinataire DMP\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CWE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL applicative)\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CWE\|DESTMSSANTEPAT\^Destinataire Patient\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CWE\|ACK_RECEPTION\^Accusé de réception\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CWE\|ACK_LECTURE_MSS\^Accusé de lecture\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
-\|\|\^text\^\^Base64\^Q2hlciBjb25mcsOocmUsI
-
-HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+bWF0IENEQQ||||||F|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+PRT||UC||RCT^results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
+PRT||UC||RCT^Results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
+PRT||UC||RCT^Results Copies Toç participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|3|CWE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS ||N^^ expandedYes-NoIndicator||||||F|
+OBX|4|CWE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|5|CWE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|6|CWE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS ||N^^ expandedYes-NoIndicator||||||F|
+OBX|7|CWE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|8|CWE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|9|CWE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|10|CWE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|11|CWE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|12|ED|CORPSMAIL_PS^Corps du mail pour un PS^MetaDMPMSS ||^text^^Base64^Q2hlciBjb25mcsOocmUsI
+HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==||||||F|
 ```
 
 **Exemple 1 :** Transmission initiale d'un document CR
@@ -495,56 +265,22 @@ l'expéditeur sont présentes. Un texte est ajouté à l'attention du
 patient.
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
-
-bWF0IENEQQ\|\|\|\|\|\|F\|
-
-PRT\|\|UC\|\|SB\^send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-OBX\|2\|CWE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|Y\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CWE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS \|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CWE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du patient\^MetaDMPMSS\|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CWE\|CONNEXION_SECRETE\^Connexion Secrete\^MetaDMPMSS\|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CWE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS \|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CWE\|DESTDMP\^Destinataire DMP\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CWE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL applicative) \^MetaDMPMSS\|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CWE\|DESTMSSANTEPAT\^Destinataire Patient\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CWE\|ACK_RECEPTION\^Accusé de réception\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CWE\|ACK_LECTURE_MSS\^Accusé de lecture\^MetaDMPMSS\|\|Y\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|ED\|CORPSMAIL_PATIENT\^Corps du mail pour le
-patient\^MetaDMPMSS \|\|\^text\^\^Base64\^Qm9uam91ciBN
-
-LkR1cG9udCwgY2ktam9pbnQgdm90cmUgQ1IgZOKAmWltYWdlcmllLg==\|\|\|\|\|F\|
-
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+bWF0IENEQQ||||||F|
+PRT||UC||SB^send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|3|CWE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS ||N^^ expandedYes-NoIndicator||||||F|
+OBX|4|CWE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|5|CWE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|6|CWE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS ||N^^ expandedYes-NoIndicator||||||F|
+OBX|7|CWE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|8|CWE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative) ^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|9|CWE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|10|CWE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|11|CWE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
+OBX|12|ED|CORPSMAIL_PATIENT^Corps du mail pour le patient^MetaDMPMSS ||^text^^Base64^Qm9uam91ciBN
+LkR1cG9udCwgY2ktam9pbnQgdm90cmUgQ1IgZOKAmWltYWdlcmllLg==|||||F|
 ```
 
 **Exemple 2 :** Transmission d'une demande de suppression
@@ -563,58 +299,22 @@ _Extrait Message Segment OBX :_ Suppression du CR d'imagerie
 avec balises pour le DMP et MSSanté
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
-
-bWF0IENEQQ\|\|\|\|\|\|D\|
-
-PRT\|\|UC\|\|SB\^send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-PRT\|\|UC\|\|RCT\|\|\|\|\|\|\|\|\|\|\^\^X.400\^thomas.homme@mailiz.mssante.fr
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-OBX\|2\|CWE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CWE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS\|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CWE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du
-patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CWE\|CONNEXION_SECRETE\^Connexion Secrete\^MetaDMPMSS\|\|N\^\^
-expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CWE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS \|\|N\^\^ expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CWE\|DESTDMP\^Destinataire
-DMP\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CWE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative)\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CWE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CWE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CWE\|ACK_LECTURE_MSS\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
-\|\|\^text\^\^Base64\^Q2hlciBjb25mcsOocmUsI
-
-HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
-
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+bWF0IENEQQ||||||D|
+PRT||UC||SB^send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@medecin.mssante.fr 
+OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|3|CWE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|4|CWE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|5|CWE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
+OBX|6|CWE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS ||N^^ expandedYes-NoIndicator||||||F|
+OBX|7|CWE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|8|CWE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|9|CWE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|10|CWE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CWE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|12|ED|CORPSMAIL_PS^Corps du mail pour un PS^MetaDMPMSS ||^text^^Base64^Q2hlciBjb25mcsOocmUsI
+HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==||||||F|
 ```
 
 **Exemple 3 :** Remplacement d'un document CR d'imagerie
@@ -644,60 +344,23 @@ _Extrait Message Segment OBX :_ Remplacement du CR
 d'imagerie Médicale avec balises pour le DMP et MSSANTE
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
-
-bWF0IENEQQ\|\|\|\|\|\|C\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-OBX\|2\|CWE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CWE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS \|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CWE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du
-patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CWE\|CONNEXION_SECRETE\^Connexion
-Secrete\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CWE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS \|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CWE\|DESTDMP\^Destinataire
-DMP\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CWE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative)\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CWE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CWE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CWE\|ACK_LECTURE_MSS\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|12\|ED\|CORPSMAIL_PS\^Corps du mail pour un PS\^MetaDMPMSS
-\|\|\^text\^\^Base64\^Q2hlciBjb25mcsOocmUsI
-
-HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==\|\|\|\|\|\|F\|
-
-
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+bWF0IENEQQ||||||C|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@medecin.mssante.fr 
+PRT||UC||RCT^results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|3|CWE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS ||N^^expandedYes-NoIndicator||||||F|
+OBX|4|CWE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|5|CWE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|6|CWE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS ||N^^expandedYes-NoIndicator||||||F|
+OBX|7|CWE|DESTDMP^Destinataire DMP||Y^^expandedYes-NoIndicator||||||F|
+OBX|8|CWE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|9|CWE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|10|CWE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CWE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|12|ED|CORPSMAIL_PS^Corps du mail pour un PS^MetaDMPMSS ||^text^^Base64^Q2hlciBjb25mcsOocmUsI
+HZvdXMgdHJvdXZlcmV6IGNpLWpvaW50IGxlIENSIGTigJlpbWFnZXJpZSBkZSBNLkR1cG9udA==||||||F|
 ```
 
 **Exemple 4 :** Transmission d'un document CR d'imagerie
@@ -727,62 +390,24 @@ d'imagerie médicale avec balises spécifiées pour le DMP et MSSANTE. Une
 adresse mail de réponse est précisée.
 
 ```
-OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
+bWF0IENEQQ||||||C|
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||
+||||||||^^X.400^adam.hoda@medecin.mssante.fr 
+PRT||UC||RCT^Results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
+PRT||UC||RCT^Results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|3|CWE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS ||N^^expandedYes-NoIndicator||||||F|
+OBX|4|CWE|INVISIBLE_REP_LEGAUX^Non visible par les représentants Légaux du patient^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|5|CWE|CONNEXION_SECRETE^Connexion Secrete^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
+OBX|6|CWE|MODIF_CONF_CODE^Modification Confidentiality Code^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|7|CWE|DESTDMP^Destinataire DMP^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|8|CWE|DESTMSSANTEPS^Destinataire (Professionnel de Santé, organisation ou BAL applicative)^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|9|CWE|DESTMSSANTEPAT^Destinataire Patient^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|10|CWE|ACK_RECEPTION^Accusé de réception^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|11|CWE|ACK_LECTURE_MSS^Accusé de lecture^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
+OBX|13|XTN|REPLY_TO^Adresse mail de |||||F|
 
-bWF0IENEQQ\|\|\|\|\|\|C\|
-
-PRT\|\|UC\|\|SB\^Send
-by\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&1.2.250.1.71.4.2.1&ISO\^D\^\^\^RPPS\|\|
-
-\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|12\|\|\|\|\|\^\^X.400\^appliExemple@hopitalB.mssante.fr
-
-PRT\|\|UC\|\|RCT\^Results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-PRT\|\|UC\|\|REPLY\^Reply
-to\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
-OBX\|2\|CWE\|MASQUE_PS\^Masqué aux professionnels de
-Santé\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|3\|CWE\|INVISIBLE_PATIENT\^ Document Non Visible par le
-patient\^MetaDMPMSS \|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|4\|CWE\|INVISIBLE_REP_LEGAUX\^Non visible par les représentants
-Légaux du
-patient\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|5\|CWE\|CONNEXION_SECRETE\^Connexion
-Secrete\^MetaDMPMSS\|\|N\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|6\|CWE\|MODIF_CONF_CODE\^Modification Confidentiality
-Code\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|7\|CWE\|DESTDMP\^Destinataire
-DMP\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|8\|CWE\|DESTMSSANTEPS\^Destinataire (Professionnel de Santé,
-organisation ou BAL
-applicative)\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|9\|CWE\|DESTMSSANTEPAT\^Destinataire
-Patient\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|10\|CWE\|ACK_RECEPTION\^Accusé de
-réception\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|11\|CWE\|ACK_LECTURE_MSS\^Accusé de
-lecture\^MetaDMPMSS\|\|Y\^\^expandedYes-NoIndicator\|\|\|\|\|\|F\|
-
-OBX\|13\|XTN\|REPLY_TO\^Adresse mail de réponse\|\|\^\^X.400\^
-adam.homme@mailiz.mssante.fr\|\|\|\|\|\|F\|
 ```
