@@ -25,7 +25,7 @@
 
 -   Dans le cas d'une publication de(s) document(s) sur le DMP, l'INS du
     patient doit être qualifié en suivant [les spécifications de l'annexe
-    INS CI-SIS](https://esante.gouv.fr/sites/default/files/media_entity/documents/ans_cisis-tec_annexe-ins_1.5.pdf) et les règles du corpus documentaire INS (lien?).
+    INS CI-SIS](https://esante.gouv.fr/sites/default/files/media_entity/documents/ans_cisis-tec_annexe-ins_1.5.pdf) et les règles du [corpus documentaire INS](https://esante.gouv.fr/produits-services/referentiel-ins).
 
 -   Les échanges MSSanté doivent prendre en compte les restrictions
     positionnées sur le message. (Exemple : un document avec un masquage
