@@ -26,7 +26,7 @@ qui gère les échanges avec le DMP et/ou la MSSanté. La PFI de
 l'hôpital-A réceptionne et analyse les éléments portés par la
 transaction émise à partir du logiciel métier du Dr Dupont. La PFI
 construit d'une part la requête d'alimentation du DMP conformément au
-_Guide d'implémentation du DMP_ ainsi que le courriel à destination de
+[Guide d'intégration du DMP](https://industriels.sesam-vitale.fr/) ainsi que le courriel à destination de
 la BAL personnelle du Dr Adam Hoda. La PFI construit également les
 pièces jointes, c'est-à-dire l'archive IHE_XDM.zip conformément au [volet
 Echange de documents de santé du CI_SIS](https://esante.gouv.fr/volet-echange-de-documents-de-sante) et les fichiers PDF
