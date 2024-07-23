@@ -91,8 +91,10 @@ Les pièces jointes envoyées avec le courriel d'origine (IHE_XDM.zip et le pdf)
 
 -   Le cas échéant, l'erreur rencontrée
 
-    -   `disposition-modifier = "error"` 
+    -   `disposition-modifier = "error"`
+
 ------------------------------------------
+
 Exemple d'un message MDN :
 
 L'exemple suivant décrit le message MDN (accusé de lecture négatif) généré dans le contexte du cas d'usage « Transfert d'un patient d'un CH vers un autre CH -Gestion des erreurs » présenté au [paragraphe suivant](cas-usage.html#description-du-cas-en-erreur) du présent volet.
