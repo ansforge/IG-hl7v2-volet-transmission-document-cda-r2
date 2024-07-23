@@ -369,7 +369,7 @@ transactions optionnelles (O-Optional).</p>
 <p>CREATEUR</p>
 </td>
 <td width="406">
-<p>Flux 1 en &eacute;mission&nbsp;:&nbsp; Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU &agrave;)</p>
+<p>Flux 1 en &eacute;mission&nbsp;:&nbsp; Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU -&gt;)</p>
 </td>
 <td width="132">
 <p>O</p>
@@ -379,7 +379,7 @@ transactions optionnelles (O-Optional).</p>
 </tr>
 <tr>
 <td width="406">
-<p>Flux 2 en &eacute;mission : Demande de transmission/remplacement/suppression d&rsquo;un document CDA (Flux HL7- MDM &agrave;)</p>
+<p>Flux 2 en &eacute;mission : Demande de transmission/remplacement/suppression d&rsquo;un document CDA (Flux HL7- MDM -&gt;)</p>
 </td>
 <td width="132">
 <p>O</p>
@@ -490,7 +490,7 @@ rend compte de la réalisation de la demande de traitement sur le
 document contenu dans le courriel par le logiciel métier associé à la
 BAL destinatrice du courriel.</em></p>
 
-<p><strong>[Note 4]</strong> : <em>Le Flux HL7-MDM permet de transmettre undocument unique.
+<p><strong>[Note 4]</strong> : <em>Le Flux HL7-MDM permet de transmettre un document unique.
 Le Flux HL7-ORU peut, le cas échéant, transporter deux documents, un
 CDAr2 Niv1 et un CDAr2 Niv3, dans la même transaction. Dans ce cas, il
 s’agit de deux instances de documents dont le contenu clinique est
@@ -560,27 +560,16 @@ identifiant propre.</em></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-<p>L’acteur CREATEUR est groupé avec l’acteur CONTENT CREATOR définit dans
-le Technical Framework PCC d’IHE pour permettre la création du document
-CDA.</p>
+<p>L’acteur CREATEUR est groupé avec l’acteur CONTENT CREATOR définit dans le Technical Framework PCC d’IHE pour permettre la création du document CDA.</p>
 
 <p>L’acteur GESTIONNAIRE est groupé avec :</p>
 
 <ul>
   <li>
-    <p>L’acteur Producteur (Document Source) du volet de <em>Partage de
-document de santé</em>, pour permettre à la PFI d’implémenter la
-transaction ITI-41 Provide &amp; Register Document Set dans un contexte
-général ou les transactions TDT2.1/TD2.2 (Alimentation du DMP) ou
-TD3.3c (Gestion des attributs d’un document) dans le contexte SEGUR
-(pour intégration/remplacement/suppression de document(s) dans le
-DMP en tenant compte des spécificités ajoutées par le référentiel
-Service DMP intégré aux LPS),</p>
+    <p>L’acteur Producteur (Document Source) du <a href="https://esante.gouv.fr/volet-partage-de-documents-de-sante">volet de Partage de document de santé</a>, pour permettre à la PFI d’implémenter la transaction ITI-41 Provide &amp; Register Document Set dans un contexte général ou les transactions TDT2.1/TD2.2 (Alimentation du DMP) ou TD3.3c (Gestion des attributs d’un document) dans le contexte SEGUR (pour intégration/remplacement/suppression de document(s) dans le DMP en tenant compte des spécificités ajoutées par le référentiel Service DMP intégré aux LPS),</p>
   </li>
   <li>
-    <p>L’acteur Système initiateur du volet <em>d’Echange de documents de
-santé</em>, pour permettre à la PFI de construire l’archive IHE_XDM
-inclue dans le courriel émis vers le destinataire,</p>
+    <p>L’acteur Système initiateur du volet d’<a href="https://esante.gouv.fr/volet-echange-de-documents-de-sante">Echange de documents de santé</a>, pour permettre à la PFI de construire l’archive IHE_XDM inclue dans le courriel émis vers le destinataire,</p>
   </li>
 </ul>
 
@@ -624,7 +613,7 @@ inclue dans le courriel émis vers le destinataire,</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 09:39+0000">2024-07-23</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 10:20+0000">2024-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
