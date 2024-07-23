@@ -20,10 +20,10 @@ ZAM_Z03\^ZAM_Z01 (accusé métier de lecture MSSanté).
 
 L'action à réaliser sur le document porté par la transaction est
 indiquée par la valeur renseignée au niveau du champ OBX-11 du segment
-OBX portant le document (cf section 12.2.6 LIEN), qui prend la valeur F (pour
+OBX portant le document (cf [section dédiée](profils-messages.html#les-donn%C3%A9es-concernant-la-demande-de-traitement-sur-les-documents)), qui prend la valeur F (pour
 demande d'intégration du document), C (pour demande de remplacement de
 document) et D (pour demande de suppression de document), et sur la
-valeur du champ ORC-1 (cf section 12.2.4 LIEN).
+valeur du champ ORC-1 (cf [section dédiée](profils-messages.html#le-segment-orc)).
 
 Pour des questions de lisibilité, la figure 13 représente sur le même
 schéma la possibilité pour l'acteur CREATEUR d'envoyer une demande
