@@ -264,7 +264,7 @@ messages.</p>
 <p>Ci-dessous sont représentées les structures de messages HL7v2 proposées
 pour la transmission de document(s) CDA-R2 en HL7v2.</p>
 
-<h4 id="message-orur01oru_r01-en-hl7v25">Message ORU\^R01\^ORU_R01 en HL7v2.5</h4>
+<h4 id="message-orur01oru_r01-en-hl7v25">Message ORU^R01^ORU_R01 en HL7v2.5</h4>
 
 <h5 id="profil-du-message-oru_r01">Profil du message ORU_R01</h5>
 
@@ -1331,8 +1331,7 @@ le segment MSH&nbsp;:</p>
 
 <p>Entête MSH d’un message MDM ou ORU émis par le CREATEUR :</p>
 
-<p><code class="language-plaintext highlighter-rouge">MSH\|\^\~\\&amp;\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2</code></p>
+<p><code class="language-plaintext highlighter-rouge">MSH|^~\&amp;|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2</code></p>
 
 <h4 id="les-données-concernant-le-patient-et-la-venue-du-patient">Les données concernant le patient et la venue du patient</h4>
 
@@ -3499,31 +3498,13 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
 patient, le médecin HODA Adam, le service radiologie de l’hôpital A, une
 application). Une adresse mail de réponse est indiquée.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OBX\|1\|ED\|18748-4\^CR d'imagerie
-médicale\^LN\|\|\^Text\^XML\^Base64\^RG9jdW1lbnQgbcOpZGljYWwgYX
-
-UgZm9ybWF0IENEQQ\|\|\|\|\|\|F\|
-
-PRT\|\|UC\|\|SB\^Send
-By\^participation\|801234567866\^Dupont\^Jean\^\^\^\^\^\^ASIP-SANTE-
-PS&amp;1.2.250.1.71.4.2.1&amp;ISO\^D\^\^\^RPPS
-\|\|\|Organisation-X\^\^\^\^\^ASIP-SANTE-ST&amp;1.2.250.1.71.4.2.2&amp;ISO\^FINEG\^\^\^[300017985](https://finess.sante.gouv.fr/fininter/jsp/actionDetailEntiteJuridique.do?noFiness=300017985&amp;oldFiness=300780152)
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^146026322000196@patient.mssante.fr
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|101234567897\^Hoda\^Adam\^\^\^\^\^\^ASIP-SANTE-
-PS&amp;1.2.250.1.71.4.2.1&amp;ISO\^D\^\^\^RPPS\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-[PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|Radiologie\^\^\^\^\^120456789\^UF\^\^\^3435\|\|\|\|\|\|\|\^\^X.400\^radiologie@hopitalA.mssante.fr](mailto:PRT||UC||RCT||||||||||%5e%5eX.400%5eserviceA@hopitalA.mssante.fr)
-
-PRT\|\|UC\|\|RCT\^results Copies
-To\^participation\|\|\|\|\|\|12\|\|\|\|\|\^\^X.400\^appliExemple@hopitalB.mssante.fr
-
-PRT\|\|UC\|\|REPLY\^Reply
-to\^participation\|\|\|\|\|\|\|\|\|\|\|\^\^X.400\^adam.hoda@medecin.mssante.fr
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^Text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYX
+UgZm9ybWF0IENEQQ||||||F|
+PRT||UC||SB^Send By^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&amp;1.2.250.1.71.4.2.1&amp;ISO^D^^^RPPS |||Organisation-X^^^^^ASIP-SANTE-ST&amp;1.2.250.1.71.4.2.2&amp;ISO^FINEG^^^300017985                  
+PRT||UC||RCT^results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
+PRT||UC||RCT^results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&amp;1.2.250.1.71.4.2.1&amp;ISO^D^^^RPPS|||||||||||^^X.400^adam.hoda@medecin.mssante.fr PRT||UC||RCT^results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
+PRT||UC||RCT^results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
+PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@medecin.mssante.fr
 </code></pre></div></div>
 
 <p><strong>Expéditeur MSSanté&nbsp;:</strong> Le segment PRT est également
@@ -7489,27 +7470,21 @@ ERR&nbsp;:</p>
 
 <p>Entête MSH d’un message MDM ou ORU émis par le CREATEUR&nbsp;:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH\|\^\~\\&amp;\|SIL\|CHU_X\|PFI\|CHU_X\|202310030830\|\|ORU\^R01\^ORU_R01\|12345\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
 </code></pre></div></div>
 <p>Un acquittement positif retourné par le GESTIONNAIRE :</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH\|\^\~\\&amp;\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12346\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2
-
-MSA\|AA\|12345
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12346|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
+MSA|AA|12345
 
 </code></pre></div></div>
 <p>Un acquittement négatif retourné par le GESTIONNAIRE&nbsp;: version d’HL7
 inconnue</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH\|\^\~\\&amp;\|PFI\|CHU_X\|SIL\|CHU_X\|202310030831\|\|ACK\^R01\^ACK\|12347\|P\|2.5\|\|\|\|\|FRA\|8859/15\|\|\|2.1\^
-CISIS_CDA_HL7_V2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12347|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
+MSA|AE|12345
+ERR||MSH^1^12|203^ Unsupported version^messageErrorCondition| E
 
-MSA\|AE\|12345
-
-ERR\|\|MSH\^1\^12\|203\^ Unsupported version\^messageErrorCondition\| E
 </code></pre></div></div>
 
 <h3 id="description-des-messages-hl7-daccusés-métier">Description des messages HL7 d’accusés métier</h3>
@@ -7703,13 +7678,13 @@ section suivante.</p>
 <p>Pour l’ensemble des OBX listés dans cette section, le champ OBX-3 prend
 ses valeurs dans la table «&nbsp;AckMetierZAM&nbsp;» disponible <a href="ack-metier-zam.html">ici</a>.</p>
 
-<h5 id="contraintes-à-appliquer-au-message-zamz01zam_z01---accusé-de-réception-dmp">Contraintes à appliquer au message ZAM\^Z01\^ZAM_Z01 - Accusé de réception DMP</h5>
+<h5 id="contraintes-à-appliquer-au-message-zamz01zam_z01---accusé-de-réception-dmp">Contraintes à appliquer au message ZAM^Z01^ZAM_Z01 - Accusé de réception DMP</h5>
 
 <h6 id="segment-msh-1">Segment MSH</h6>
 
 <p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-ZAM\^Z01\^ZAM_Z01.</p>
+<code class="language-plaintext highlighter-rouge">ZAM^Z01^ZAM_Z01</code>.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -8809,13 +8784,13 @@ segment contient sa description.</p>
  </tr>
 </tbody></table>
 
-<h5 id="contraintes-à-appliquer-au-message-zamz02zam_z01--accusé-de-réception-mssanté">Contraintes à appliquer au message ZAM\^Z02\^ZAM_Z01 – Accusé de réception MSSanté</h5>
+<h5 id="contraintes-à-appliquer-au-message-zamz02zam_z01--accusé-de-réception-mssanté">Contraintes à appliquer au message ZAM^Z02^ZAM_Z01 – Accusé de réception MSSanté</h5>
 
 <h6 id="segment-msh-2">Segment MSH</h6>
 
 <p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-ZAM\^Z02\^ZAM_Z01.</p>
+<code class="language-plaintext highlighter-rouge">ZAM^Z02^ZAM_Z01</code>.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -10267,13 +10242,13 @@ segment contient sa description.</p>
  </tr>
 </tbody></table>
 
-<h5 id="contraintes-à-appliquer-au-message-zamz03zam_z01--accusé-de-lecture-mssanté">Contraintes à appliquer au message ZAM\^Z03\^ZAM_Z01 – Accusé de lecture MSSanté</h5>
+<h5 id="contraintes-à-appliquer-au-message-zamz03zam_z01--accusé-de-lecture-mssanté">Contraintes à appliquer au message ZAM^Z03^ZAM_Z01 – Accusé de lecture MSSanté</h5>
 
 <h6 id="segment-msh-3">Segment MSH</h6>
 
 <p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-ZAM\^Z03\^ZAM_Z01.</p>
+<code class="language-plaintext highlighter-rouge">ZAM^Z03^ZAM_Z01</code>.</p>
 
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt" class="MsoTableGrid">
@@ -11740,12 +11715,12 @@ par le destinataire, ce segment contient sa description.</p>
 
 <p>Seules les erreurs de niveau applicatif du traitement automatique sur le document au niveau du destinataire final sont remontées au travers du courriel MDN et réceptionnées par le GESTIONNAIRE (la PFI expéditrice).
 Les erreurs de type technique (erreurs de syntaxe du message HL7) sont généralement traitées localement, côté du destinataire, par une des intervenants techniques. Dans ces conditions, le segment ERR-3 prend la valeur 207 et le segment ERR-5 contient l’erreur applicative remontée au
- travers du courriel MDN. Le message HL7 ZAM\^Z03\^ZAM_Z01 est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
+ travers du courriel MDN. Le message HL7 <code class="language-plaintext highlighter-rouge">ZAM^Z03^ZAM_Z01</code> est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
 (cf structure du MDN – Message Disposition Notification) décrit en Annexe 4 du volet «&nbsp;<a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d’un document CDA provenant d’un courriel MSSanté</a>&nbsp;».</p>
 
 <h4 id="message-dacquittement-technique-des-accusés-métiers">Message d’acquittement technique des accusés métiers</h4>
 
-<p>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;ACK\^Z01\^ACK ou ACK\^Z02\^ACK ou ACK\^Z03\^ACK selon l’évènement du message initial.</p>
+<p>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
 
 
 
@@ -11788,7 +11763,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 18:06+0000">2024-07-23</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 19:48+0000">2024-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

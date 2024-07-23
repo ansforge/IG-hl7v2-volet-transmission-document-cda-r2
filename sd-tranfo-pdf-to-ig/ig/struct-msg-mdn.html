@@ -277,11 +277,9 @@ messages en boucle. Dans ce cas l’envoi du MDN nécessite une
 confirmation de l’utilisateur.</p>
 
 <p>Dans le cas d’un MDN en erreur, l’objet du message MDN doit être précisé
-de la façon suivante : [KO Intégration système ! ]
-XDM/1.0/DDM+&lt;libellé&gt; &lt;NOM&gt; &lt;prénom&gt; &lt;date de naissance&gt;.</p>
+de la façon suivante : <code class="language-plaintext highlighter-rouge">[KO Intégration système ! ] XDM/1.0/DDM+&lt;libellé&gt; &lt;NOM&gt; &lt;prénom&gt; &lt;date de naissance&gt;</code>.</p>
 
-<p>Dans le cas contraire, l’objet du message MDN est précisé par
-XDM/1.0/DDM+&lt;libellé&gt; &lt;NOM&gt; &lt;prénom&gt; &lt;date de naissance&gt;.</p>
+<p>Dans le cas contraire, l’objet du message MDN est précisé par <code class="language-plaintext highlighter-rouge">XDM/1.0/DDM+&lt;libellé&gt; &lt;NOM&gt; &lt;prénom&gt; &lt;date de naissance&gt;</code>.</p>
 
 <p>Le message MDN est de type « multipart/report » :
 <code class="language-plaintext highlighter-rouge">Content-Type:multipart/report;report-type=disposition-notification; boundary="RAA14128.773615765/example.com"</code></p>
@@ -294,7 +292,7 @@ en cas d’erreur, le code et le libellé de l’erreur retournés par le
 CONSOMMATEUR.</p>
 
     <ul>
-      <li>Par exemple : « <code class="language-plaintext highlighter-rouge">Le message ci-dessous n'a pas pu être intégré automatiquement dans le DPI pour la raison suivante : &lt;libellé de l'erreur&gt;</code> ».</li>
+      <li>Par exemple : « <code class="language-plaintext highlighter-rouge">Le message ci-dessous n’a pas pu être intégré automatiquement dans le DPI pour la raison suivante : &lt;libellé de l’erreur&gt;</code> ».</li>
     </ul>
   </li>
   <li>
@@ -310,7 +308,7 @@ CONSOMMATEUR.</p>
       </li>
     </ul>
   </li>
-  <li>En cas d’erreur, le contenu du champ « Disposition: » prend la valeur : « <code class="language-plaintext highlighter-rouge">Disposition:automatic-action/MDN-sent-automatically; processed/Error: code erreur\^libellé erreur</code> »</li>
+  <li>En cas d’erreur, le contenu du champ « Disposition: » prend la valeur : « <code class="language-plaintext highlighter-rouge">Disposition:automatic-action/MDN-sent-automatically; processed/Error: code erreur^libellé erreur</code> »</li>
   <li>Le champ « <code class="language-plaintext highlighter-rouge">Final-Recipient:</code> » qui correspond à l’adresse du destinataire pour lequel le MDN est émis. La valeur de ce champ peut être différente de l’adresse initialement fournie par l’émetteur du courriel, notamment en cas de transfert du courriel initial par le destinataire.</li>
 </ul>
 
@@ -331,7 +329,7 @@ CONSOMMATEUR.</p>
 <ul>
   <li>
     <p>Le mode de traitement effectué sur le courriel : traitement automatique ou manuel
-    -   action-mode = "manual-action" / "automatic-action".</p>
+    -   <code class="language-plaintext highlighter-rouge">action-mode = "manual-action" / "automatic-action"</code>.</p>
 
     <ul>
       <li>
@@ -347,7 +345,7 @@ CONSOMMATEUR.</p>
 
     <ul>
       <li>
-        <p>sending mode="MDN-sent-manually" / "MDN-sent-automatically".</p>
+        <p><code class="language-plaintext highlighter-rouge">sending mode="MDN-sent-manually" / "MDN-sent-automatically"</code>.</p>
 
         <ul>
           <li>
@@ -365,7 +363,7 @@ CONSOMMATEUR.</p>
 
     <ul>
       <li>
-        <p>disposition-type="displayed" / "deleted" / "dispatched" /"processed"</p>
+        <p><code class="language-plaintext highlighter-rouge">disposition--type="displayed" / "deleted" / "dispatched" /"processed"</code></p>
 
         <ul>
           <li>
@@ -389,7 +387,7 @@ CONSOMMATEUR.</p>
 
     <ul>
       <li>
-        <h2 id="disposition-modifier--error">disposition-modifier = "error"</h2>
+        <h2 id="disposition-modifier--error"><code class="language-plaintext highlighter-rouge">disposition-modifier = "error"</code></h2>
         <p>Exemple d’un message MDN :</p>
       </li>
     </ul>
@@ -473,7 +471,7 @@ Ici apparaît le fichier 20220531_CR d'imagerie médicale_CORSE_FIGATELLIX.pdf e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 18:06+0000">2024-07-23</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 23, 2024 19:48+0000">2024-07-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
