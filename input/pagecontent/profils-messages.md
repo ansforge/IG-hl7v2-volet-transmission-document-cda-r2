@@ -8,8 +8,7 @@ partage et de l'échange.
 Les données utiles pour publication sur le DMP et pour l'envoi par
 MSSanté de(s) document(s) sont stockées à la fois dans le segment PID du
 message HL7, dans le document CDA-R2 conforme au [volet du CI_SIS
-Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) et dans des
-segments OBX du message HL7 spécifiant les métadonnées complémentaires.
+Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) et dans des segments OBX du message HL7 spécifiant les métadonnées complémentaires.
 
 Le développeur doit valoriser tous les segments et champs obligatoires
 des messages HL7v2 afin de répondre au standard d'interopérabilité des
@@ -431,7 +430,7 @@ Les groupes en rouge sur le schéma représentent les éléments spécifiques à
     SEGUR vague2 (la version PDF du compte-rendu est insérée dans une
     section dédiée du document CDA Niv3).
 
-Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l'envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la section 12.2.
+Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l'envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la [section dédiée](profils-messages.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
 #### Message MDM en HL7v2.6
 
