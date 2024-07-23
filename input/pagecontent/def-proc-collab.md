@@ -179,8 +179,8 @@ consommateur (DMP et/ou application métier destinatrice).
 <p><strong>Post-Conditions</strong></p>
 </td>
 <td width="499">
-<p>Le document est supprim&eacute; du DMP (availabilityStatus = Deleted) <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">[cf: volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a>
-<p>TD3.3 (Supprimer un document) <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">[cf: volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a>
+<p>Le document est supprim&eacute; du DMP (availabilityStatus = Deleted) <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">[cf: volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a></p>
+<p>TD3.3 (Supprimer un document) <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf">[cf: volet CI-SIS : CONTENU_VOLET-STRUCTURATION-MINIMALE_V1.15]</a></P>
 <p>Le document est &eacute;galement supprim&eacute; au niveau de chacun des destinataire(s) de l&rsquo;envoi par MSS.</p>
 </td>
 </tr>
