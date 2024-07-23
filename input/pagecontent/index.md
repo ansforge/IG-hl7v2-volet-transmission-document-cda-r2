@@ -12,18 +12,15 @@
     </p>
     </blockquote>
 </div>
-
+<div class="figure">
+    <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
+</div>
 <div style="width: 65%">
     <blockquote class="stu-note">
     <p>
     Cette version, au statut Trial Implementation, intègre le traitement des commentaires reçus par l’ANS pendant la phase de commentaires publics qui s’est déroulée du 27/11/2023 au 08/12/2023 ainsi que des corrections ou des améliorations apportées à la suite du projectathon organisé par l’ANS en septembre 2023. Cette version du volet intègre également le résultat de l’étude conduite en janvier 2024 par la DNS avec des industriels et leurs représentants sur les cas d’usage de la MSSanté présentés dans la section Volume 1 – Etude fonctionnelle.
     </p>
     </blockquote>
-</div>
-
-
-<div class="figure">
-    <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
 </div>
 
 ### Avant-propos
