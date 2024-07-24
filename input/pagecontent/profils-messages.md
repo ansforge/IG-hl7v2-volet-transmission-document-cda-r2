@@ -11304,7 +11304,7 @@ par le destinataire, ce segment contient sa description.
   Wingdings;mso-bidi-font-family:Wingdings;color:black;mso-themecolor:text1;
   mso-bidi-font-weight:bold">à</span></span><span style="mso-bookmark:_Toc23346674"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
   mso-themecolor:text1;mso-bidi-font-weight:bold"> Utiliser les codes et
-  libellés de <a href=error-codes.html#codes-erreurs-de-laccus%C3%A9-m%C3%A9tier-de-lecturetraitement-de-la-demande >Codes erreurs de l’accusé métier de lecture/traitement de la demande</a>.<sup><o:p></o:p></sup></span></span></p>
+  libellés de <a href="error-codes.html#codes-erreurs-de-laccus%C3%A9-m%C3%A9tier-de-lecturetraitement-de-la-demande">Codes erreurs de l’accusé métier de lecture/traitement de la demande</a>.<sup><o:p></o:p></sup></span></span></p>
   <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal;tab-stops:
   center 115.25pt"><span style="mso-bookmark:_Toc23346674"><span class="SpellE"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:
   bold">Code^libellé</span></span></span><span style="mso-bookmark:_Toc23346674"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:
