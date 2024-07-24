@@ -3464,12 +3464,12 @@ masqué aux professionnels de santé.
 </tr>
 </tbody>
 </table>
-
+<!-- supprimer en 2.1.1 voir CDA_HL7_Q2
 <blockquote class="stu-note">
     <p>
     <b>Point d'attention :</b> Un document stocké dans le DMP, pour lequel le patient a fait le choix de ne pas partager ce document aux PS, ne doit pas faire l’objet d’un échange entre PS au travers de la MSSanté.
     </p>
-</blockquote>
+</blockquote> -->
 
 ##### Document Non visible par le patient 
 
