@@ -168,6 +168,15 @@ Rappel des conventions utilisées par IHE et HL7 :
 <p>
 <b>QUESTIONS OUVERTES :</b><br>
 <a href="https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/discussions/6">CDA_HL7_Q1 :</a> demande de fusionner les deux spécifications : « Transmission de document(s) CDA en HL7v2 » et « Transmission au LPS d’un document CDA provenant d’un courriel ». La fusion des deux spécifications est sans doute possible. Cependant, utiliser la même transaction entre les acteurs CREATEUR/GESTIONNAIRE et GESTIONNAIRE/CONSOMMATEUR nécessite d’effectuer une étude plus approfondie de façon à déterminer comment harmoniser ces transactions. La mise en place d'une transaction unique indépendamment du contexte créerait de l'ambiguïté avec notamment des informations non pertinentes véhiculées entre le GESTIONNAIRE et le CONSOMMATEUR (alimentation DMP, échange MSSanté…). Des retours des éditeurs sont attendus sur ce point. D’autre part, cette fusion des deux spécifications nécessiterait de modifier la rédaction des exigences SEGUR concernant la conformité des logiciels à ces spécifications.
+<br><br>
+<a href="https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/discussions/7">CDA_HL7_Q2 :</a> faut-il gérer la cohérence entre les métadonnées DMPMSS du document stocké dans le DMP et les métadonnées de ce même document géré dans les logiciels métier ? et si oui, comment gérer cette cohérence.<br>
+Par exemple, dans le cas où le PS a alimenté le DMP du patient avec un document clinique et que le patient a exprimé le souhait de ne pas donner accès à ce document aux PS, alors est-il permis d’échanger ce même document au travers de la MSSanté ?<br>
+Le cas d’usage qui nous a été soumis est le suivant :
+<ul>
+  <li>Le médecin de l’établissement alimente le DMP en positionnant le masquage aux PS à vrai à l’instant T (CR opératoire du patient) ;</li>
+  <li>Le médecin souhaite solliciter l’avis d’un collègue ;</li>
+  <li>La secrétaire médicale ou le médecin envoie par MSSanté ce même document à un collègue pour avis à T+1 jour.</li>
+</ul>
 </p>
 </div>
 
