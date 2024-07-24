@@ -45,8 +45,6 @@ pages:
         title: "Profils de messages"
     regles-gestion-mssante.md:
         title: "Règles de gestion MSSANTE"
-    testplan.md:
-        title: "Test Plan"
     meta-dmp-mss.md:
         title: "Table MetaDMP/MSS"
     ack-metier-zam.md:
@@ -57,12 +55,14 @@ pages:
         title: "Structure du message MDN (MSSanté)"
     error-codes.md:
         title: "Error codes"
-    change-log.md:
-        title: "Historique des versions"
     glossaire.md:
         title: "Glossaire"
     doc-ref.md:
         title: "Documents de référence"
+    testplan.md:
+        title: "Test Plan"
+    change-log.md:
+        title: "Historique des versions"
     download.md:
         title: "Téléchargements"
         generation: markdown
