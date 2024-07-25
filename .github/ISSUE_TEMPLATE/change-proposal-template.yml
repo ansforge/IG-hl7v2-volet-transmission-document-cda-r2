@@ -1,17 +1,9 @@
 name: "Change Proposal template"
-description: "Change Proposal pour un volet du CI-SIS"
+description: "[CI-SIS]Change Proposal pour le volet de transmission d’un document CDA-R2 en HL7v2 en guide d'implémentation."
 title: "[CP]: "
 labels: ["CP"]
 
 body:
-  - type: input
-    id: contact
-    attributes:
-      label: Contact
-      description: Comment vous contacter si nous avons besoin de plus d'information?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
   - type: input
     id: section_identification
     attributes:
