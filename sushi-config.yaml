@@ -60,7 +60,7 @@ pages:
     doc-ref.md:
         title: "Documents de référence"
     testplan.md:
-        title: "Test Plan"
+        title: "Test"
     change-log.md:
         title: "Historique des versions"
     download.md:
@@ -92,7 +92,7 @@ menu:
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html
         "Documents de référence": doc-ref.html
-    Test Plan: testplan.html
+    Test: testplan.html
     Historique des versions: change-log.html
     Téléchargements: download.html
  #   Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
