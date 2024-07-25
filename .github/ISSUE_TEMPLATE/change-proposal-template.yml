@@ -1,5 +1,5 @@
 name: "Change Proposal template"
-description: "[CI-SIS]Change Proposal pour le volet de transmission d’un document CDA-R2 en HL7v2 en guide d'implémentation."
+description: "[CI-SIS]Change Proposal pour le volet de transmission d’un document CDA-R2 en HL7v2."
 title: "[CP]: "
 labels: ["CP"]
 
