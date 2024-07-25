@@ -149,7 +149,7 @@ consommateur (DMP et/ou application métier destinatrice).
 ### Processus collaboratif « Demande de suppression de document(s) »
 
 <div class="figure" style='text-align: center;'>
-    <img src="image15.png" alt="Figure 11" title="Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:80%;">
+    <img src="image15.png" alt="Figure 11" title="Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:60%;">
     <figcaption><b>Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté</b></figcaption>
 </div>    
 <br>
