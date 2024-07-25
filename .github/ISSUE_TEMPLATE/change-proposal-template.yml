@@ -4,12 +4,11 @@ title: "[CP]: "
 labels: ["CP"]
 
 body:
-  - type: textarea
+  - type: markdown
     id: volet
     attributes:
       label: Volet Ci-SIS
       value: "Volet de transmission d’un document CDA-R2 en HL7v2"
-      readonly: true
   - type: input
     id: section_identification
     attributes:
