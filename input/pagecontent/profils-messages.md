@@ -7071,7 +7071,7 @@ ERR :
 Entête MSH d'un message MDM ou ORU émis par le CREATEUR :
 
 ```
-MSH|^~\&|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15
+MSH|^~\&|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
 ```
 Un acquittement positif retourné par le GESTIONNAIRE :
 
