@@ -3968,156 +3968,219 @@ documents pouvant être contenus dans le message ORU.
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux professionnels de santé.
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="170">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="302">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>Segment OBX</strong></p>
-</td>
-<td width="170">
-<p><strong>Observation/Result</strong></p>
-</td>
-<td width="302">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-1</p>
-</td>
-<td width="170">
-<p>Set Id - Obx</p>
-</td>
-<td width="302">
-<p>Num&eacute;ro de s&eacute;quence du segment</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-2</p>
-</td>
-<td width="170">
-<p>Value Type</p>
-</td>
-<td width="302">
-<p>Pour le message ORU : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span> (Coded Entry)</p>
-<p>Pour le message MDM : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span> (Coded with Exceptions)</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-3</p>
-</td>
-<td width="170">
-<p>Observation Identifier</p>
-</td>
-<td width="302">
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.1&nbsp;:&nbsp;</p>
-</td>
-<td width="170">
-<p>Code&nbsp;:</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">MASQUE_PS</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.2&nbsp;:&nbsp;</p>
-</td>
-<td width="170">
-<p>Libell&eacute;&nbsp;:</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Masqué
-  aux professionnels de Santé<o:p></o:p></span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.3&nbsp;:</p>
-</td>
-<td width="170">
-<p>Name of Coding system</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-5</p>
-</td>
-<td width="170">
-<p>Observation Value</p>
-</td>
-<td width="302">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.1</p>
-</td>
-<td width="170">
-<p>Code&nbsp;</p>
-</td>
-<td width="302">
-<p>Table HL7 : 0136&nbsp;:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y&nbsp;</span>(Yes)&nbsp;&agrave;MASQUE_PS actif</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N&nbsp;</span>(No)&nbsp;&agrave; MASQUE_PS non Actif</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.3</p>
-</td>
-<td width="170">
-<p>Name Of Coding System</p>
-</td>
-<td width="302">
-<p>expandedYes-NoIndicator</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-11</p>
-</td>
-<td width="170">
-<p>Observation Result Status</p>
-</td>
-<td width="302">
-<p>Valeur fix&eacute;e &agrave; &laquo;&nbsp;<span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span>&raquo;&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;=
+  Required / Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
+  séquence du segment</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
+  </span><span style="color:black">(Coded Entry)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
+  </span><span style="color:black">(Coded with Exceptions)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;:</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MASQUE_PS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Masqué aux professionnels de Santé</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="height:39.45pt">
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">Y&nbsp;</span><span style="color:black">(Yes)&nbsp;</span><span style="font-family:Wingdings;
+  color:black">à</span><span style="color:black">MASQUE_PS actif </span></p>
+  <p class="MsoListParagraphCxSpLast" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)&nbsp;</span><span style="font-family:Wingdings;color:black">à</span><span style="color:black">
+  MASQUE_PS non Actif</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 <!-- supprimer en 2.1.1 voir CDA_HL7_Q2
 <blockquote class="stu-note">
     <p>
@@ -4129,157 +4192,220 @@ masqué aux professionnels de santé.
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué au patient.
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="170">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="302">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>Segment OBX</strong></p>
-</td>
-<td width="170">
-<p><strong>Observation/Result</strong></p>
-</td>
-<td width="302">
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-1</p>
-</td>
-<td width="170">
-<p>Set Id - Obx</p>
-</td>
-<td width="302">
-<p>Num&eacute;ro de s&eacute;quence du segment</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-2</p>
-</td>
-<td width="170">
-<p>Value Type</p>
-</td>
-<td width="302">
-<p>Pour le message ORU : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span> (Coded Entry)</p>
-<p>Pour le message MDM : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span> (Coded with Exceptions)</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-3</p>
-</td>
-<td width="170">
-<p>Observation Identifier</p>
-</td>
-<td width="302">
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.1&nbsp;:&nbsp;</p>
-</td>
-<td width="170">
-<p>Code&nbsp;:</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">INVISIBLE_PATIENT</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.2&nbsp;:&nbsp;</p>
-</td>
-<td width="170">
-<p>Libell&eacute;&nbsp;:</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Document
-  Non Visible par le patient</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.3&nbsp;:</p>
-</td>
-<td width="170">
-<p>Name of Coding system</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-5</p>
-</td>
-<td width="170">
-<p>Observation Value</p>
-</td>
-<td width="302">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.1</p>
-</td>
-<td width="170">
-<p>Code&nbsp;:</p>
-</td>
-<td width="302">
-<p>Table HL7 : 0136&nbsp;:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y </span> (YES) &agrave; INVISIBLE_PATIENT actif</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N </span> (No) &agrave; INVISIBLE_PATIENT non actif</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.3</p>
-</td>
-<td width="170">
-<p>Name Of Coding System</p>
-</td>
-<td width="302">
-<p><span style="font-size:9.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">expandedYes-NoIndicator</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-11</p>
-</td>
-<td width="170">
-<p>Observation Result Status</p>
-</td>
-<td width="302">
-<p>Valeur fix&eacute;e &agrave; &laquo;&nbsp;<span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span>&raquo;&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
+  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
+  séquence du segment</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
+  </span><span style="color:black">(Coded Entry)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
+  </span><span style="color:black">(Coded with Exceptions)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">INVISIBLE_PATIENT</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Document Non Visible par le patient</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(YES)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_PATIENT actif</span></p>
+  <p class="MsoListParagraphCxSpLast" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_PATIENT non actif</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 <blockquote class="stu-note">
     <p>
@@ -4292,158 +4418,223 @@ masqué au patient.
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux représentants légaux du patient.
 
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="170">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="302">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>Segment OBX</strong></p>
-</td>
-<td width="170">
-<p><strong>Observation/Result</strong></p>
-</td>
-<td width="302">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-1</p>
-</td>
-<td width="170">
-<p>Set Id - Obx</p>
-</td>
-<td width="302">
-<p>Num&eacute;ro de s&eacute;quence du segment</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-2</p>
-</td>
-<td width="170">
-<p>Value Type</p>
-</td>
-<td width="302">
-<p>Pour le message ORU : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span> (Coded Entry)</p>
-<p>Pour le message MDM : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span> (Coded with Exceptions)</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-3</p>
-</td>
-<td width="170">
-<p>Observation Identifier</p>
-</td>
-<td width="302">
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.1&nbsp;:&nbsp;</p>
-</td>
-<td width="170">
-<p>Code&nbsp;:</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">INVISIBLE_REP_LEGAUX</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.2&nbsp;:&nbsp;</p>
-</td>
-<td width="170">
-<p>Libell&eacute;&nbsp;:</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Non
-  visible par les représentants Légaux du patient</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.3&nbsp;:</p>
-</td>
-<td width="170">
-<p>Name of Coding system</p>
-</td>
-<td width="302">
-<p><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-5</p>
-</td>
-<td width="170">
-<p>Observation Value</p>
-</td>
-<td width="302">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.1</p>
-</td>
-<td width="170">
-<p>Code&nbsp;:</p>
-</td>
-<td width="302">
-<p>Table HL7 : 0136&nbsp;:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y </span> (YES) &agrave; INVISIBLE_ REP_LEGAUX actif</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N </span> (No) &agrave; INVISIBLE_ REP_LEGAUX non actif</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.3</p>
-</td>
-<td width="170">
-<p>Name Of Coding System</p>
-</td>
-<td width="302">
-<p><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0">expandedYes-NoIndicator</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-11</p>
-</td>
-<td width="170">
-<p>Observation Result Status</p>
-</td>
-<td width="302">
-<p>Valeur fix&eacute;e &agrave; &laquo;&nbsp;<span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">F </span>&raquo;&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
+  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de séquence
+  du segment</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
+  </span><span style="color:black">(Coded Entry)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
+  </span><span style="color:black">(Coded with Exceptions)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">INVISIBLE_REP_LEGAUX</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Non visible par les représentants Légaux du patient</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
+  <p class="MsoListParagraphCxSpFirst" align="left" style="margin-top:0cm;
+  margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;text-align:left;
+  text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;
+  color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(YES)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_ REP_LEGAUX actif</span></p>
+  <p class="MsoListParagraphCxSpLast" align="left" style="margin-top:0cm;
+  margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;text-align:left;
+  text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;
+  color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_ REP_LEGAUX non actif</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
+  </td>
+  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
+  </td>
+  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 <blockquote class="stu-note">
     <p>
     <b>Point d'attention :</b> un document clinique masqué aux représentants légaux du patient ne doit pas être envoyé aux représentants légaux du patient par MSSanté.
@@ -4454,470 +4645,658 @@ masqué aux représentants légaux du patient.
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP « connexion secrète » ([cf SESAM-VITALE : Service DMP intégré aux LPS - Version 2.10.0 – 07/07/2023](https://industriels.sesam-vitale.fr/))
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="179">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="294">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>Segment OBX</strong></p>
-</td>
-<td width="179">
-<p><strong>Observation/Result</strong></p>
-</td>
-<td width="294">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-1</p>
-</td>
-<td width="179">
-<p>Set Id - Obx</p>
-</td>
-<td width="294">
-<p>Num&eacute;ro de s&eacute;quence du segment</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-2</p>
-</td>
-<td width="179">
-<p>Value Type</p>
-</td>
-<td width="294">
-<p>Pour le message ORU : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span> (Coded Entry)</p>
-<p>Pour le message MDM : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span> (Coded with Exceptions)</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-3</p>
-</td>
-<td width="179">
-<p>Observation Identifier</p>
-</td>
-<td width="294">
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.1&nbsp;:&nbsp;</p>
-</td>
-<td width="179">
-<p>Code&nbsp;:</p>
-</td>
-<td width="294">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">CONNEXION_SECRETE<o:p></o:p></span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.2&nbsp;:&nbsp;</p>
-</td>
-<td width="179">
-<p>Libell&eacute;&nbsp;:</p>
-</td>
-<td width="294">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Connexion Secrete<o:p></o:p></span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.3&nbsp;:</p>
-</td>
-<td width="179">
-<p>Name of Coding system</p>
-</td>
-<td width="294">
-<p><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-5</p>
-</td>
-<td width="179">
-<p>Observation Value</p>
-</td>
-<td width="294">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.1</p>
-</td>
-<td width="179">
-<p>Code&nbsp;:</p>
-</td>
-<td width="294">
-<p>Table HL7 : 0136&nbsp;:</p>
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y </span> (Yes)&nbsp;&agrave; CONNEXION_SECRETE actif</p>
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N </span> (No) &agrave; CONNEXION_SECRETE non Actif</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.3</p>
-</td>
-<td width="179">
-<p>Name Of Coding System</p>
-</td>
-<td width="294">
-<p><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">expandedYes-NoIndicator </span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-11</p>
-</td>
-<td width="179">
-<p>Observation Result Status</p>
-</td>
-<td width="294">
-<p>Valeur fix&eacute;e &agrave; &laquo;&nbsp;<span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">F </span>&raquo;&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
 
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
+  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
+  séquence du segment</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
+  </span><span style="color:black">(Coded Entry)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
+  </span><span style="color:black">(Coded with Exceptions)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:1.0pt;line-height:normal"><span style="color:#0070C0">CONNEXION_SECRETE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Connexion Secrete</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;text-indent:-18.0pt;
+  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(Yes)&nbsp;</span><span style="font-family:Wingdings;color:black">à</span><span style="color:black">
+  CONNEXION_SECRETE actif</span></p>
+  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;text-indent:-18.0pt;
+  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> CONNEXION_SECRETE non Actif</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
+  </td>
+  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 ##### Modification Confidentiality Code
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que la transaction porte
 une modification du CONFIDENTIALITY CODE indiquant une mise à jour des
 métadonnées de masquage/démasquage aux PS et/ou de visibilité du
 document au patient ou à ses représentants légaux.
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="179">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="293">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>Segment OBX</strong></p>
-</td>
-<td width="179">
-<p><strong>Observation/Result</strong></p>
-</td>
-<td width="293">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-1</p>
-</td>
-<td width="179">
-<p>Set Id - Obx</p>
-</td>
-<td width="293">
-<p>Num&eacute;ro de s&eacute;quence du segment</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-2</p>
-</td>
-<td width="179">
-<p>Value Type</p>
-</td>
-<td width="293">
-<p>Pour le message ORU : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span> (Coded Entry)</p>
-<p>Pour le message MDM : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span> (Coded with Exceptions)</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-3</p>
-</td>
-<td width="179">
-<p>Observation Identifier</p>
-</td>
-<td width="293">
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.1&nbsp;:&nbsp;</p>
-</td>
-<td width="179">
-<p>Code&nbsp;:</p>
-</td>
-<td width="293">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">MODIF_CONF_CODE </span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.2&nbsp;:&nbsp;</p>
-</td>
-<td width="179">
-<p>Libell&eacute;&nbsp;:</p>
-</td>
-<td width="293">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Modification
-  <span class="SpellE">Confidentiality</span> Code</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.3&nbsp;:</p>
-</td>
-<td width="179">
-<p>Name of Coding system</p>
-</td>
-<td width="293">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">MetaDMPMSS</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-5</p>
-</td>
-<td width="179">
-<p>Observation Value</p>
-</td>
-<td width="293">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.1</p>
-</td>
-<td width="179">
-<p>Code&nbsp;:</p>
-</td>
-<td width="293">
-<p>Table HL7 : 0136&nbsp;:</p>
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y </span> (Yes) &agrave; MODIF_CONF_CODE actif</p>
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N </span> (No) &agrave; &nbsp;MODIF_CONF_CODE non Actif</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.3</p>
-</td>
-<td width="179">
-<p>Name Of Coding System</p>
-</td>
-<td width="293">
-<p><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">expandedYes-NoIndicator </span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-11</p>
-</td>
-<td width="179">
-<p>Observation Result Status</p>
-</td>
-<td width="293">
-<p>Valeur fix&eacute;e &agrave; &laquo;&nbsp;<span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span>&raquo;&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
+  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
+  séquence du segment</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
+  </span><span style="color:black">(Coded Entry)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
+  </span><span style="color:black">(Coded with Exceptions)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MODIF_CONF_CODE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Modification Confidentiality Code</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#4472C4">MetaDMPMSS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;text-indent:-18.0pt;
+  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(Yes)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> MODIF_CONF_CODE actif</span></p>
+  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;text-indent:-18.0pt;
+  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> &nbsp;MODIF_CONF_CODE non Actif</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «</span><span style="color:#4472C4">&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 ##### Alimentation DMP
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP.
 
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="179">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="293">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p><strong>Segment OBX</strong></p>
-</td>
-<td width="179">
-<p><strong>Observation/Result</strong></p>
-</td>
-<td width="293">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-1</p>
-</td>
-<td width="179">
-<p>Set Id - Obx</p>
-</td>
-<td width="293">
-<p>Num&eacute;ro de s&eacute;quence du segment</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-2</p>
-</td>
-<td width="179">
-<p>Value Type</p>
-</td>
-<td width="293">
-<p>Pour le message ORU : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span> (Coded Entry)</p>
-<p>Pour le message MDM : <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span> (Coded with Exceptions)</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-3</p>
-</td>
-<td width="179">
-<p>Observation Identifier</p>
-</td>
-<td width="293">
-<p><strong>&nbsp;</strong></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.1&nbsp;:&nbsp;</p>
-</td>
-<td width="179">
-<p>Code&nbsp;:</p>
-</td>
-<td width="293">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">DESTDMP </span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.2&nbsp;:&nbsp;</p>
-</td>
-<td width="179">
-<p>Libell&eacute;&nbsp;:</p>
-</td>
-<td width="293">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">	
-Destinataire DMP </span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-3.3&nbsp;:</p>
-</td>
-<td width="179">
-<p>Name of Coding system</p>
-</td>
-<td width="293">
-<p>	
-<span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-5</p>
-</td>
-<td width="179">
-<p>Observation Value</p>
-</td>
-<td width="293">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.1</p>
-</td>
-<td width="179">
-<p>Code&nbsp;:</p>
-</td>
-<td width="293">
-<p>Table HL7 : 0136&nbsp;:</p>
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;color:#0070C0">Y</span> (Yes) &agrave; DESTDMP actif</p>
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-bidi-font-size:10.0pt;color:#0070C0">N</span> (No) &agrave; DESTDMP non Actif</p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>&gt; OBX-5.3</p>
-</td>
-<td width="179">
-<p>Name Of Coding System</p>
-</td>
-<td width="293">
-<p><span style="mso-bidi-font-size:10.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
-</td>
-</tr>
-<tr>
-<td width="179">
-<p>OBX-11</p>
-</td>
-<td width="179">
-<p>Observation Result Status</p>
-</td>
-<td width="293">
-<p>Valeur fix&eacute;e &agrave; &laquo;&nbsp;<span style="mso-bidi-font-size:10.0pt;color:#0070C0">F</span>&raquo;&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
+  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
+  séquence du segment</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type </span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
+  </span><span style="color:black">(Coded Entry)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
+  </span><span style="color:black">(Coded with Exceptions)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">DESTDMP</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Destinataire DMP</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
+  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;text-indent:-18.0pt;
+  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(Yes)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> DESTDMP actif</span></p>
+  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;text-indent:-18.0pt;
+  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
+  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> DESTDMP non Actif</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
+  </td>
+  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
+  </td>
+  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 ##### Echange MSSanté Professionnel de Santé/Organisation/BAL applicative
 
