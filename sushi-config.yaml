@@ -52,7 +52,7 @@ pages:
     exemples.md:
         title: "Exemples de messages"
     struct-msg-mdn.md:
-        title: "Structure du message MDN (MSSanté)"
+        title: "Structure du MDN (MSSanté)"
     error-codes.md:
         title: "Error codes"
     glossaire.md:
@@ -86,7 +86,7 @@ menu:
         "Règles de gestion MSSANTE": regles-gestion-mssante.html
     Volume 3 - Annexes:
         "Table MetaDMP/MSS": meta-dmp-mss.html
-        "Structure du message MDN (MSSanté)": struct-msg-mdn.html
+        "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
