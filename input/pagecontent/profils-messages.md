@@ -21,369 +21,557 @@ pour la transmission de document(s) CDA-R2 en HL7v2.
 ##### Profil du message ORU_R01
 
 Le profil du message ORU_R01 est le suivant :
-<table>
-<thead>
-<tr>
-<td width="104">
-<p>Segment</p>
-</td>
-<td width="274">
-<p>Meaning</p>
-</td>
-<td width="64">
-<p>Usage</p>
-</td>
-<td width="59">
-<p>Card.</p>
-</td>
-<td width="66">
-<p>&sect; HL7</p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td width="104">
-<p>MSH</p>
-</td>
-<td width="274">
-<p>Message Header</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>2</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;</p>
-</td>
-<td width="274">
-<p>--- PATIENT_RESULT begin</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;</p>
-</td>
-<td width="274">
-<p>--- PATIENT begin</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;PID</p>
-</td>
-<td width="274">
-<p>Patient Identification</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>3</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;</p>
-</td>
-<td width="274">
-<p>--- PATIENT_VISIT begin</p>
-</td>
-<td width="64">
-<p>RE</p>
-</td>
-<td width="59">
-<p>[0..1]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp; PV1</p>
-</td>
-<td width="274">
-<p>Patient Visit</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>3</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;</p>
-</td>
-<td width="274">
-<p>--- PATIENT_VISIT end</p>
-</td>
-<td width="64">
-<p>&nbsp;</p>
-</td>
-<td width="59">
-<p>&nbsp;</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;</p>
-</td>
-<td width="274">
-<p>--- PATIENT end</p>
-</td>
-<td width="64">
-<p>&nbsp;</p>
-</td>
-<td width="59">
-<p>&nbsp;</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>{</p>
-</td>
-<td width="274">
-<p>--- ORDER_OBSERVATION begin</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..*]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;ORC</p>
-</td>
-<td width="274">
-<p>Common Order : demande de traitement sur un document</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>4</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;OBR</p>
-</td>
-<td width="274">
-<p>Observation Request</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>4</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;[{NTE}]</p>
-</td>
-<td width="274">
-<p>Comments on the order</p>
-</td>
-<td width="64">
-<p>O</p>
-</td>
-<td width="59">
-<p>[0..*]</p>
-</td>
-<td width="66">
-<p>2</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>[{</p>
-</td>
-<td width="274">
-<p>--- TIMING begin</p>
-</td>
-<td width="64">
-<p>O</p>
-</td>
-<td width="59">
-<p>[0..*]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;TQ1</p>
-</td>
-<td width="274">
-<p>Timing Quantity</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>4</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>}]</p>
-</td>
-<td width="274">
-<p>--- TIMING end</p>
-</td>
-<td width="64">
-<p>&nbsp;</p>
-</td>
-<td width="59">
-<p>&nbsp;</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;{</p>
-</td>
-<td width="274">
-<p>--- OBSERVATION begin</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..*]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp; OBX</p>
-</td>
-<td width="274">
-<p>Document et expression des m&eacute;tadonn&eacute;es de document relatives au masquage du document aux PS et de visibilit&eacute; au patient.</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>7</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp; [{PRT}] (note 1)</p>
-</td>
-<td width="274">
-<p>Participation : Exp&eacute;diteur du document, destinataire(s) MSSant&eacute;, adresse mail sur laquelle le destinataire peut r&eacute;pondre. Segment PRT pr&eacute;-adopt&eacute; de la version 2.9</p>
-</td>
-<td width="64">
-<p>R/C</p>
-</td>
-<td width="59">
-<p>[1..*]</p>
-</td>
-<td width="66">
-<p>7 (v2.9)</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp; [{NTE}]</p>
-</td>
-<td width="274">
-<p>Comment of the result</p>
-</td>
-<td width="64">
-<p>O</p>
-</td>
-<td width="59">
-<p>[0..*]</p>
-</td>
-<td width="66">
-<p>2</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;}</p>
-</td>
-<td width="274">
-<p>--- OBSERVATION end</p>
-</td>
-<td width="64">
-<p>&nbsp;</p>
-</td>
-<td width="59">
-<p>&nbsp;</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+ <thead>
+  <tr>
+   <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+   background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Segment</span></p>
+   </td>
+   <td width="274" valign="top" style="width:205.5pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Meaning</span></p>
+   </td>
+   <td width="64" valign="top" style="width:48.25pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Usage</span></p>
+   </td>
+   <td width="59" valign="top" style="width:43.9pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Card.</span></p>
+   </td>
+   <td width="66" valign="top" style="width:49.6pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">§ HL7</span></p>
+   </td>
+  </tr>
+ </thead>
+ <tbody><tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">MSH</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Message Header</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- PATIENT_RESULT begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- PATIENT begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;PID</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Patient Identification</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- PATIENT_VISIT begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">RE</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp; PV1</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Patient Visit</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- PATIENT_VISIT end</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- PATIENT end</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">{</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- ORDER_OBSERVATION begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;ORC</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry">Common Order : demande de traitement sur un document</p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;OBR</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Observation Request</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;[{NTE}]</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Comments on the order</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">O</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">[{</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- TIMING begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">O</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;TQ1</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Timing Quantity</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">}]</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- TIMING end</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;{</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- OBSERVATION begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp; OBX</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry">Document et expression des métadonnées de document
+  relatives au masquage du document aux PS et de visibilité au patient.</p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">7</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;
+  [{PRT}] (note 1)</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry">Participation : Expéditeur du document, destinataire(s) MSSanté,
+  adresse mail sur laquelle le destinataire peut répondre. Segment PRT
+  pré-adopté de la version 2.9</p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R/C</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">7 (v2.9)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;
+  [{NTE}]</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Comment of the result</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">O</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;}</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- OBSERVATION end</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 **Note (1) :** _le segment PRT est utilisé uniquement avec l'OBX qui porte la
 demande de traitement sur le document. Dans ce cas il est requis et
 conditionnel (sa valeur dépend de la demande exprimée : envoi de la
@@ -437,353 +625,533 @@ Les groupes de segments OBSERVATION suivants (répétables) véhiculent les mét
 
 Le profil du message MDM est le suivant :
 
-<table>
-<thead>
-<tr>
-<td width="104">
-<p>Segment</p>
-</td>
-<td width="274">
-<p>Meaning</p>
-</td>
-<td width="64">
-<p>Usage</p>
-</td>
-<td width="59">
-<p>Card.</p>
-</td>
-<td width="66">
-<p>&sect; HL7</p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td width="104">
-<p>MSH</p>
-</td>
-<td width="274">
-<p>Message Header</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>2</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>EVN</p>
-</td>
-<td width="274">
-<p>Event type</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>2</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>PID</p>
-</td>
-<td width="274">
-<p>Patient Identification</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>3</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>PV1</p>
-</td>
-<td width="274">
-<p>Patient Visit</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>3</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;</p>
-</td>
-<td width="274">
-<p>--- COMMON_ORDER begin</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;ORC</p>
-</td>
-<td width="274">
-<p>Common Order = demande de traitement sur le document</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>4</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;[{</p>
-</td>
-<td width="274">
-<p>--- TIMING begin</p>
-</td>
-<td width="64">
-<p>O</p>
-</td>
-<td width="59">
-<p>[0..*]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp; TQ1</p>
-</td>
-<td width="274">
-<p>Timing/Quantity</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>4</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp; [{TQ2}]</p>
-</td>
-<td width="274">
-<p>Timing/Quantity RelationShip</p>
-</td>
-<td width="64">
-<p>O</p>
-</td>
-<td width="59">
-<p>[0..*]</p>
-</td>
-<td width="66">
-<p>4</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;}]</p>
-</td>
-<td width="274">
-<p>--- TIMING end</p>
-</td>
-<td width="64">
-<p>&nbsp;</p>
-</td>
-<td width="59">
-<p>&nbsp;</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;OBR</p>
-</td>
-<td width="274">
-<p>Observation Request segment</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>4</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;[{NTE}]</p>
-</td>
-<td width="274">
-<p>Notes and comments</p>
-</td>
-<td width="64">
-<p>O</p>
-</td>
-<td width="59">
-<p>[0..*]</p>
-</td>
-<td width="66">
-<p>2</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;</p>
-</td>
-<td width="274">
-<p>--- COMMON_ORDER end</p>
-</td>
-<td width="64">
-<p>&nbsp;</p>
-</td>
-<td width="59">
-<p>&nbsp;</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>TXA</p>
-</td>
-<td width="274">
-<p>Transcription document header</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>9</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>{</p>
-</td>
-<td width="274">
-<p>OBXNTE : Document ou expression des m&eacute;tadonn&eacute;es de document relatives au masquage du document aux PS et de visibilit&eacute; au patient.</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..*]</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;OBX</p>
-</td>
-<td width="274">
-<p>Observation/Result.</p>
-</td>
-<td width="64">
-<p>R</p>
-</td>
-<td width="59">
-<p>[1..1]</p>
-</td>
-<td width="66">
-<p>9</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;[{PRT}]</p>
-<p>(Note 1)</p>
-</td>
-<td width="274">
-<p>Participation : Exp&eacute;diteur, destinataire(s) MSSant&eacute;, adresse mail sur laquelle le destinataire peut r&eacute;pondre. Segment PRT pr&eacute;-adopt&eacute; de la version 2.9</p>
-</td>
-<td width="64">
-<p>R/C</p>
-</td>
-<td width="59">
-<p>[1.*]</p>
-</td>
-<td width="66">
-<p>7 (v2.9)</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>&nbsp;[{NTE}]</p>
-</td>
-<td width="274">
-<p>Notes and comments</p>
-</td>
-<td width="64">
-<p>O</p>
-</td>
-<td width="59">
-<p>[0..*]</p>
-</td>
-<td width="66">
-<p>2</p>
-</td>
-</tr>
-<tr>
-<td width="104">
-<p>}</p>
-</td>
-<td width="274">
-<p>---OBXNTE end</p>
-</td>
-<td width="64">
-<p>&nbsp;</p>
-</td>
-<td width="59">
-<p>&nbsp;</p>
-</td>
-<td width="66">
-<p>&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+ <thead>
+  <tr>
+   <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+   background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Segment</span></p>
+   </td>
+   <td width="274" valign="top" style="width:205.5pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Meaning</span></p>
+   </td>
+   <td width="64" valign="top" style="width:48.25pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Usage</span></p>
+   </td>
+   <td width="59" valign="top" style="width:43.9pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">Card.</span></p>
+   </td>
+   <td width="66" valign="top" style="width:49.6pt;border:solid windowtext 1.0pt;
+   border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
+   <p class="TableEntryHeader"><span lang="EN-US" style="color:black">§ HL7</span></p>
+   </td>
+  </tr>
+ </thead>
+ <tbody><tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">MSH</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Message Header</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">EVN</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Event type</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">PID</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Patient Identification</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">PV1</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Patient Visit</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- COMMON_ORDER begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;ORC</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry">Common Order = demande de traitement sur le document</p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;[{</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- TIMING begin</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">O</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp; TQ1</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Timing/Quantity</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;
+  [{TQ2}]</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Timing/Quantity RelationShip</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">O</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;}]</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- TIMING end</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;OBR</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Observation Request segment</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;[{NTE}]</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Notes and comments</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">O</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">--- COMMON_ORDER end</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">TXA</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Transcription document header</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">9</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">{</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry">OBXNTE : Document ou expression des métadonnées de
+  document relatives au masquage du document aux PS et de visibilité au
+  patient.</p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;OBX</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry">Observation/Result. </p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1..1]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">9</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;[{PRT}]</span></p>
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">(Note
+  1)</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry">Participation : Expéditeur, destinataire(s) MSSanté,
+  adresse mail sur laquelle le destinataire peut répondre. Segment PRT
+  pré-adopté de la version 2.9</p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">R/C</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[1.*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">7 (v2.9)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">&nbsp;[{NTE}]</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">Notes and comments</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">O</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">[0..*]</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="104" valign="top" style="width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US" style="font-family:&quot;Courier New&quot;">}</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">---OBXNTE end</span></p>
+  </td>
+  <td width="64" valign="top" style="width:48.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="59" valign="top" style="width:43.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+  <td width="66" valign="top" style="width:49.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="TableEntry"><span lang="EN-US">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 **Note (1)** : _le segment PRT est utilisé conjointement avec l'OBX qui porte
 la demande de traitement sur le document. Dans ce cas il est requis et
@@ -832,243 +1200,345 @@ tableaux indiquent les valeurs fixes à insérer dans le champ du message.
 Les éléments de contrôle du message HL7 sont portés par le segment
 d'entête MSH. Le tableau ci-dessous liste les champs à renseigner pour
 le segment MSH :
-<table>
-<tbody>
-<tr>
-<td width="94">
-<p>Champ</p>
-</td>
-<td width="196">
-<p>Contenu</p>
-</td>
-<td width="87">
-<p>Type donn&eacute;e</p>
-</td>
-<td width="161">
-<p>Caract&egrave;re optionnel/obligatoire</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-1</p>
-</td>
-<td width="196">
-<p><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">|</span> s&eacute;parateur de champ</p>
-</td>
-<td width="87">
-<p>ST</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-2</p>
-</td>
-<td width="196">
-<p><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">^~\&amp;</span>: s&eacute;parateur de composant, r&eacute;p&eacute;tition, caract&egrave;re d&rsquo;&eacute;chappement, s&eacute;parateur de sous-composants</p>
-</td>
-<td width="87">
-<p>ST</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-3</p>
-</td>
-<td width="196">
-<p>Application &eacute;mettrice</p>
-</td>
-<td width="87">
-<p>HD</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-4</p>
-</td>
-<td width="196">
-<p>Organisation &eacute;mettrice</p>
-</td>
-<td width="87">
-<p>HD</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-5</p>
-</td>
-<td width="196">
-<p>Application r&eacute;ceptrice</p>
-</td>
-<td width="87">
-<p>HD</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-6</p>
-</td>
-<td width="196">
-<p>Organisation r&eacute;ceptrice</p>
-</td>
-<td width="87">
-<p>HD</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-7</p>
-</td>
-<td width="196">
-<p>Date/time du message</p>
-</td>
-<td width="87">
-<p>TS</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-9</p>
-</td>
-<td width="196">
-<p>Type de message <br><span style="mso-bidi-font-size:10.0pt;
-  color:#4472C4;mso-themecolor:accent5">ORU^R01^ORU_R01<br>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+ <tbody><tr style="height:46.5pt">
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:46.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Champ</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:46.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Contenu</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:46.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Type donnée</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:46.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Caractère optionnel/obligatoire</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-1</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#4472C4">|</span><span style="color:black"> séparateur de champ</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ST</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-2</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#4472C4">^~\&amp;</span><span style="color:black">&nbsp;:
+  séparateur de composant, répétition, caractère d’échappement, séparateur de
+  sous-composants</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ST</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-3</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Application émettrice</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">HD</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-4</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Organisation émettrice</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">HD</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-5</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Application réceptrice</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">HD</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-6</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Organisation réceptrice</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">HD</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-7</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Date/time du message</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TS</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-9</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Type du message<br>
+  </span><span style="color:#4472C4">ORU^R01^ORU_R01<br>
   MDM^T02^MDM_T02<br>
   MDM^T10^MDM_T10<br>
   MDM^T04^MDM_T04</span></p>
-</td>
-<td width="87">
-<p>MSG</p>
-</td>
-<td width="161">
-<p>R</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-10</p>
-</td>
-<td width="196">
-<p>Identifiant du message</p>
-</td>
-<td width="87">
-<p>ST</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-11</p>
-</td>
-<td width="196">
-<p>Processing Id<br /> <span style="color:#4472C4;
-  mso-themecolor:accent5">
-  P&nbsp;</span><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="mso-bidi-font-size:10.0pt">: en production<span style="color:#4472C4;
-  mso-themecolor:accent5"><br>
-  T&nbsp;</span>: message de test<span style="color:#4472C4;mso-themecolor:
-  accent5"><br>
-  D&nbsp;</span>: environnement de <span class="SpellE">debug</span><span style="color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></p>
-</td>
-<td width="87">
-<p>PT</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-12</p>
-</td>
-<td width="196">
-<p><span style="mso-bidi-font-size:10.0pt;
-  color:#4472C4;mso-themecolor:accent5">2.5 </span><span style="mso-bidi-font-size:10.0pt">pour ORU<span style="color:#4472C4;
-  mso-themecolor:accent5"><br>
-  2.6 </span>pour MDM<span style="color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></span></p>
-</td>
-<td width="87">
-<p>VID</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-17</p>
-</td>
-<td width="196">
-<p><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">FRA</span></p>
-</td>
-<td width="87">
-<p>ID</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-18</p>
-</td>
-<td width="196">
-<p>Jeux de caractères, valeurs possibles : <span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">UNICODE
-  UTF-8 ou 8859/15 <br style="mso-special-character:line-break">
-  <!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
-  <!--[endif]--></span></p>
-</td>
-<td width="87">
-<p>ID</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MSH-21</p>
-</td>
-<td width="196">
-<p>Identifiant du profil de message</p>
-<p>MSH-21.1&nbsp;: Entity Identifier (<span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5">2.1</span>)</p>
-<p>MSH-21.2&nbsp;: Namespace Id</p>
-<p><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#4472C4;
-  mso-themecolor:accent5;mso-ansi-language:EN-US;mso-bidi-font-weight:bold">CISIS_CDA_HL7_V2</span></p>
-</td>
-<td width="87">
-<p>EI</p>
-</td>
-<td width="161">
-<p>R</p>
-</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSG</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-10</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Identifiant du message</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ST</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-11</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Processing Id<br>
+  </span><span style="color:#4472C4">P&nbsp;</span>: en production<span style="color:#4472C4"><br>
+  T&nbsp;</span>: message de test<span style="color:#4472C4"><br>
+  D&nbsp;</span>: environnement de debug</p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PT</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-12</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Version du standard<br>
+  </span><span style="color:#4472C4">2.5 </span>pour ORU<span style="color:
+  #4472C4"><br>
+  2.6 </span>pour MDM</p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">VID</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-17</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#4472C4">FRA</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ID</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-18</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Jeux de caractères, valeurs possibles&nbsp;:</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#4472C4">UNICODE UTF-8 ou 8859/15 <br>
+  <br>
+  </span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ID</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-21</span></p>
+  </td>
+  <td width="196" valign="top" style="width:147.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Identifiant du profil de message</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">MSH-21.1&nbsp;: Entity Identifier (</span><span style="color:#4472C4">2.1</span><span style="color:black">)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span lang="EN-US" style="color:black">MSH-21.2&nbsp;: Namespace Id</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span lang="EN-US" style="font-size:9.0pt;color:#4472C4">CISIS_CDA_HL7_V2</span></p>
+  </td>
+  <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">EI</span></p>
+  </td>
+  <td width="161" valign="top" style="width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 ##### Exemples
 
@@ -1093,145 +1563,212 @@ Pour le segment PID, ce volet ajoute une contrainte particulière sur le
 PID-18 par rapport à PAM.FR. Il doit être renseigné si connu afin de
 pouvoir calculer des indicateurs, dans le contexte de l'alimentation du
 DMP.
-<table width="699">
-<tbody>
-<tr>
-<td width="113">
-<p>Champ</p>
-</td>
-<td width="265">
-<p>Contenu</p>
-</td>
-<td width="76">
-<p>Type donn&eacute;e</p>
-</td>
-<td width="246">
-<p>Caract&egrave;re optionnel/obligatoire</p>
-</td>
-</tr>
-<tr>
-<td width="113">
-<p>PID-3</p>
-</td>
-<td width="265">
-<p>Identifiants du patient</p>
-</td>
-<td width="76">
-<p>CX</p>
-</td>
-<td width="246">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="113">
-<p>PID-5</p>
-</td>
-<td width="265">
-<p>Nom du patient</p>
-</td>
-<td width="76">
-<p>XPN</p>
-</td>
-<td width="246">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="113">
-<p>PID-18 (<em>Note 1</em>)</p>
-</td>
-<td width="265">
-<p>N&deg; de dossier administratif</p>
-</td>
-<td width="76">
-<p>CX</p>
-</td>
-<td width="246">
-<p>RE</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="699" style="width:524.25pt;border-collapse:collapse;border:none">
+ <tbody><tr style="height:23.5pt">
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Champ</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Contenu</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Type donnée</span></p>
+  </td>
+  <td width="246" valign="top" style="width:184.3pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Caractère optionnel/obligatoire
+  </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PID-3</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Identifiants du patient</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">CX</span></p>
+  </td>
+  <td width="246" valign="top" style="width:184.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PID-5</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Nom du
+  patient</p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">XPN</span></p>
+  </td>
+  <td width="246" valign="top" style="width:184.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PID-18 (<i>Note 1</i>)</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">N° de dossier
+  administratif</p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">CX</span></p>
+  </td>
+  <td width="246" valign="top" style="width:184.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">RE</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 Le PID-3 doit être identique aux identifiants de patient portés par le document CDA (recordTarget/patientRole/id).
 
 Pour le segment PV1, ce volet ajoute les contraintes suivantes :
 
-<table width="699">
-<tbody>
-<tr>
-<td width="113">
-<p>Champ</p>
-</td>
-<td width="265">
-<p>Contenu</p>
-</td>
-<td width="104">
-<p>Type donn&eacute;e</p>
-</td>
-<td width="217">
-<p>Caract&egrave;re optionnel/obligatoire</p>
-</td>
-</tr>
-<tr>
-<td width="113">
-<p>PV1-2</p>
-</td>
-<td width="265">
-<p>Classe du patient&nbsp;</p>
-</td>
-<td width="104">
-<p>IS</p>
-</td>
-<td width="217">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="113">
-<p>PV1-19 <em>(Note 1</em>) et (<em>Note 2</em>)</p>
-</td>
-<td width="265">
-<p>Identifiant de la venue</p>
-</td>
-<td width="104">
-<p>CX</p>
-</td>
-<td width="217">
-<p>&nbsp;C (Note 2)</p>
-</td>
-</tr>
-<tr>
-<td width="113">
-<p>PV1-44 (<em>Note 1</em>)</p>
-</td>
-<td width="265">
-<p>Date d&rsquo;entr&eacute;e du patient</p>
-</td>
-<td width="104">
-<p>TS</p>
-</td>
-<td width="217">
-<p>RE</p>
-</td>
-</tr>
-<tr>
-<td width="113">
-<p>PV1-45(<em>Note 1</em>)</p>
-</td>
-<td width="265">
-<p>Date de sortie du patient</p>
-</td>
-<td width="104">
-<p>TS</p>
-</td>
-<td width="217">
-<p>RE</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="699" style="width:524.25pt;border-collapse:collapse;border:none">
+ <tbody><tr style="height:23.5pt">
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Champ</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Contenu</span></p>
+  </td>
+  <td width="104" valign="top" style="width:78.0pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Type donnée</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.0pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Caractère optionnel/obligatoire</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PV1-2</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Classe du patient&nbsp;</span></p>
+  </td>
+  <td width="104" valign="top" style="width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">IS</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PV1-19 <i>(Note 1</i>) et (<i>Note 2</i>)</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Identifiant
+  de la venue</p>
+  </td>
+  <td width="104" valign="top" style="width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">CX</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;C (Note 2)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PV1-44 (<i>Note 1</i>)</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Date d’entrée
+  du patient</p>
+  </td>
+  <td width="104" valign="top" style="width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TS</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">RE</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="113" valign="top" style="width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">PV1-45(<i>Note 1</i>)</span></p>
+  </td>
+  <td width="265" valign="top" style="width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Date de
+  sortie du patient</p>
+  </td>
+  <td width="104" valign="top" style="width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TS</span></p>
+  </td>
+  <td width="217" valign="top" style="width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">RE</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 *Note 1* : _A noter que ces champs sont à renseigner, s'ils sont connus, par l'acteur CREATEUR afin de pouvoir calculer des indicateurs._
 
@@ -1243,123 +1780,194 @@ Le message MDM requiert l'utilisation du segment TXA qui porte les
 métadonnées associées au document contenu dans le message. Les
 contraintes apportées par ce volet sur le segment TXA sont les
 suivantes :
-<table width="699">
-<tbody>
-<tr>
-<td width="94">
-<p>Champ</p>
-</td>
-<td width="350">
-<p>Contenu</p>
-</td>
-<td width="76">
-<p>Type donn&eacute;e</p>
-</td>
-<td width="180">
-<p>Caract&egrave;re optionnel/obligatoire</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>TXA-1</p>
-</td>
-<td width="350">
-<p>Set-ID TXA. Valeur = <span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#2E74B5;
-  mso-themecolor:accent1;mso-themeshade:191">1</span></p>
-</td>
-<td width="76">
-<p>SI</p>
-</td>
-<td width="180">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>TXA-2</p>
-</td>
-<td width="350">
-<p>Type de document dont les valeurs sont &agrave; prendre dans</p>
-<p>le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Sant&eacute; (NOS).</p>
-<p>Par ex&nbsp;: 11502-2</p>
-</td>
-<td width="76">
-<p>IS</p>
-</td>
-<td width="180">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>TXA-3</p>
-</td>
-<td width="350">
-<p>Document Content Presentation</p>
-<p><span style="mso-bidi-font-size:10.0pt;
-  color:#0070C0">TEXT</span></p>
-</td>
-<td width="76">
-<p>ID</p>
-</td>
-<td width="180">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>TXA-12 <em>(Note 1)</em></p>
-</td>
-<td width="350">
-<p>Unique document number</p>
-<p>Si ClinicalDocument/id@extension est renseign&eacute; :</p>
-<p>&nbsp;ex&nbsp;: 58132^^1.2.250.2345.3245.13^ISO</p>
-<p>Si ClinicalDocument/id@extension n&rsquo;est pas renseign&eacute; :</p>
-<p>&nbsp;ex&nbsp;: 1.2.250.2345.3245.13.58132</p>
-</td>
-<td width="76">
-<p>EI</p>
-</td>
-<td width="180">
-<p>R</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>TXA-13 <em>(Note 1)</em></p>
-</td>
-<td width="350">
-<p>Parent document number</p>
-<p>Si ClinicalDocument/id@extension est renseign&eacute; :</p>
-<p>&nbsp;ex&nbsp;: 58131^^1.2.250.2345.3245.13^ISO</p>
-<p>Si ClinicalDocument/id@extension n&rsquo;est pas renseign&eacute; :</p>
-<p>&nbsp;ex&nbsp;: 1.2.250.2345.3245.13.58131</p>
-</td>
-<td width="76">
-<p>EI</p>
-</td>
-<td width="180">
-<p>C Requis dans le cas d&rsquo;une demande de remplacement</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>TXA-17</p>
-</td>
-<td width="350">
-<p>Document completion status dont la valeur est &agrave; prendre dans la table HL7 0271</p>
-<p><span style="mso-bidi-font-size:10.0pt;
-  color:#0070C0">AU</span></p>
-</td>
-<td width="76">
-<p>ID</p>
-</td>
-<td width="180">
-<p>R</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="699" style="width:524.25pt;border-collapse:collapse;border:none">
+ <tbody><tr style="height:23.5pt">
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Champ</span></p>
+  </td>
+  <td width="350" valign="top" style="width:262.25pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Contenu</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Type donnée</span></p>
+  </td>
+  <td width="180" valign="top" style="width:134.65pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt;height:23.5pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span style="color:black">Caractère optionnel/obligatoire</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TXA-1</span></p>
+  </td>
+  <td width="350" valign="top" style="width:262.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set-ID TXA. Valeur = </span><span style="color:#2E74B5">1</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">SI</span></p>
+  </td>
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TXA-2</span></p>
+  </td>
+  <td width="350" valign="top" style="width:262.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Type de
+  document dont les valeurs sont à prendre dans </p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">le </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a>
+  d<span style="color:black">e la Nomenclature des Objets de Santé (NOS). </span></p>
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal">Par ex&nbsp;: 11502-2</p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">IS</span></p>
+  </td>
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TXA-3</span></p>
+  </td>
+  <td width="350" valign="top" style="width:262.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Document
+  Content Presentation</p>
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal"><span style="color:#0070C0">TEXT</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ID</span></p>
+  </td>
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TXA-12 <i>(Note 1)</i></span></p>
+  </td>
+  <td width="350" valign="top" style="width:262.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Unique
+  document number</p>
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal">Si <span style="color:black">ClinicalDocument/id@extension
+  est renseigné :</span></p>
+  <p class="MsoNormal" align="left" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:35.4pt;text-align:left;line-height:normal">&nbsp;ex&nbsp;:
+  58132^^1.2.250.2345.3245.13^ISO</p>
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal">Si <span style="color:black">ClinicalDocument/id@extension
+  n’est pas renseigné :</span></p>
+  <p class="MsoNormal" align="left" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:35.4pt;text-align:left;line-height:normal">&nbsp;ex&nbsp;:
+  1.2.250.2345.3245.13.58132</p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">EI</span></p>
+  </td>
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TXA-13 <i>(Note 1)</i></span></p>
+  </td>
+  <td width="350" valign="top" style="width:262.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Parent
+  document number</p>
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal">Si <span style="color:black">ClinicalDocument/id@extension
+  est renseigné :</span></p>
+  <p class="MsoNormal" align="left" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:35.4pt;text-align:left;line-height:normal">&nbsp;ex&nbsp;:
+  58131^^1.2.250.2345.3245.13^ISO</p>
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal">Si <span style="color:black">ClinicalDocument/id@extension
+  n’est pas renseigné :</span></p>
+  <p class="MsoNormal" align="left" style="margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:35.4pt;text-align:left;line-height:normal">&nbsp;ex&nbsp;:
+  1.2.250.2345.3245.13.58131</p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">EI</span></p>
+  </td>
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">C Requis dans le cas d’une demande de remplacement</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="94" valign="top" style="width:70.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">TXA-17</span></p>
+  </td>
+  <td width="350" valign="top" style="width:262.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal">Document completion status dont la valeur est à prendre
+  dans la table HL7 0271</p>
+  <p class="MsoNormal" align="left" style="margin-bottom:0cm;text-align:left;
+  line-height:normal"><span style="color:#0070C0">AU</span></p>
+  </td>
+  <td width="76" valign="top" style="width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ID</span></p>
+  </td>
+  <td width="180" valign="top" style="width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">R</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 **(Note 1)** : _conformément au volet de [Structuration minimale des
 documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf), l'identifiant du document au sein du document CDA
@@ -1400,53 +2008,68 @@ la suivante :
 
 #### Le segment ORC
 
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du segment ORC&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="177">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="274">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p><strong>Segment ORC</strong></p>
-</td>
-<td width="177">
-<p><strong>Common Order</strong></p>
-</td>
-<td width="274">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p>ORC-1</p>
-</td>
-<td width="177">
-<p>Order control</p>
-</td>
-<td width="274">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">NW</span> (New order/service dans le cas d&rsquo;une demande d&rsquo;int&eacute;gration de document(s)</p>
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">RO </span> (Replace order) dans le cas d&rsquo;une demande de remplacement</p>
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CA </span> (Canceled) dans le cas d&rsquo;une demande de suppression</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du segment ORC&nbsp;: Usage&nbsp;= Required /
+  Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment ORC</span></b></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Common Order</span></b></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ORC-1</span></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Order control</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">NW</span><span style="color:black"> (New order/service
+  dans le cas d’une demande d’intégration de document(s)</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">RO </span><span style="color:black">(Replace order)
+  dans le cas d’une demande de remplacement</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">CA </span><span style="color:black">(Canceled) dans le
+  cas d’une demande de suppression</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 La valeur du champ ORC-1 doit être cohérente avec la valeur du champ
 OBX-11 et dans le cas du message MDM avec l'évènement déclenchant (T02,
@@ -1455,80 +2078,111 @@ rejeté par la PFI.
 
 #### Le segment OBR
 
-<table width="652">
-<tbody>
-<tr>
-<td colspan="3" width="652">
-<p><strong>Composition du segment OBR&nbsp;: Usage&nbsp;= Required / Cardinalit&eacute;&nbsp;= [1..1]</strong></p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p><strong>El&eacute;ment requis&nbsp;:</strong></p>
-</td>
-<td width="177">
-<p><strong>Description&nbsp;: </strong></p>
-</td>
-<td width="274">
-<p><strong>Valeur&nbsp;: </strong></p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p><strong>Segment OBR</strong></p>
-</td>
-<td width="177">
-<p><strong>Observation Request</strong></p>
-</td>
-<td width="274">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p>OBR-4</p>
-</td>
-<td width="177">
-<p>Universal Service Identifier</p>
-</td>
-<td width="274">
-<p>&nbsp;</p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p>&gt;OBR-4.1</p>
-</td>
-<td width="177">
-<p>Code du document</p>
-</td>
-<td rowspan="2" width="274">
-<p>Utiliser le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Sant&eacute; (NOS).</p>
-<p>A noter qu&rsquo;en cas d&rsquo;envoi au DMP, le Gestionnaire doit contr&ocirc;ler que le type de document appartient au jeu de valeur d&eacute;fini par le DMP (<a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a>).</p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p>&gt;OBR-4.2</p>
-</td>
-<td width="177">
-<p>Libell&eacute; du document</p>
-</td>
-</tr>
-<tr>
-<td width="201">
-<p>&gt;OBR-4.3</p>
-</td>
-<td width="177">
-<p>Syst&egrave;me de codage dont est issu le code</p>
-</td>
-<td width="274">
-<p><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">LN ou TRE_A05 </span> en fonction de l&rsquo;appartenance du code &agrave; l&rsquo;un des syst&egrave;mes de codage</p>
-</td>
-</tr>
-</tbody>
-</table>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
+  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du segment OBR&nbsp;: Usage&nbsp;= Required /
+  Cardinalité&nbsp;= [1..1]</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBR</span></b></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation Request</span></b></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBR-4</span></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Universal Service Identifier</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt;OBR-4.1</span></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code du document</span></p>
+  </td>
+  <td width="274" rowspan="2" valign="top" style="width:205.5pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Utiliser le </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a>
+  d<span style="color:black">e la Nomenclature des Objets de Santé (NOS). </span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">A noter qu’en cas d’envoi au DMP, le Gestionnaire doit
+  contrôler que le type de document appartient au jeu de valeur défini par le
+  DMP (</span><a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a><span style="color:black">).</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt;OBR-4.2</span></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé du document</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt;OBR-4.3</span></p>
+  </td>
+  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Système de codage dont est issu le code</span></p>
+  </td>
+  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">LN </span><span style="color:#4472C4">ou </span><span style="color:#0070C0">TRE_A05 </span><span style="color:black">en fonction de
+  l’appartenance du code à l’un des systèmes de codage</span></p>
+  </td>
+ </tr>
+</tbody></table>
 
 #### Les données concernant la demande de traitement sur le(s) document(s)
 
