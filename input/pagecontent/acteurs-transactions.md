@@ -229,7 +229,7 @@ du flux 5.
 La gestion de cet accusé de lecture MSSanté (MDN) va dépendre de
 l'organisation choisie par l'établissement pour réceptionner les
 courriels.
-Ce flux d'accusé de lecture MSSanté (message MDN) rend compte de la
+Ce flux d'accusé de lecture MSSanté (courriel MDN) rend compte de la
 lecture du courriel par le destinataire lorsque ce courriel est traité
 de façon manuelle. Dans le cas d'un traitement automatique du courriel
 par la PFI de l'établissement destinataire, ce flux d'accusé de lecture

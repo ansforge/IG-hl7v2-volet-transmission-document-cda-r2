@@ -94,7 +94,7 @@ renvoie un accusé de réception de la demande à la PFI.
     </p>
 </blockquote>
 
-La structure du message MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
+La structure du MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
 
 
 <div class="figure" style='text-align: center;'>
@@ -203,12 +203,12 @@ plus finement le document.
 
 Le DPI intègre le document à partir des informations qu'il reçoit et
 renvoie un accusé de réception de la demande de traitement à la PFI de
-l'établissement-B. La PFI doit pouvoir générer un message MDN (Message
+l'établissement-B. La PFI doit pouvoir générer un courriel MDN (Message
 Disposition Notification) à destination de la BAL de service Y contenant
 le statut de l'intégration du document. En cas d'erreur, la secrétaire
 pourra envisager une intégration manuelle (voir le paragraphe suivant).
 
-La structure du message MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
+La structure du MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
 
 La figure ci-dessous illustre ce cas d'usage.
 

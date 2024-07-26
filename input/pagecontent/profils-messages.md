@@ -7237,7 +7237,7 @@ Ce type de message est utilisé par trois évènements différents :
   mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
   <p class="MsoListParagraphCxSpFirst" style="margin-top:0cm;margin-right:0cm;
   margin-bottom:0cm;margin-left:18.0pt;mso-add-space:auto;line-height:normal"><span style="mso-bidi-font-size:9.0pt;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">Réception du message MDN (RFC 8098)<o:p></o:p></span></p>
+  bold">Réception du courriel MDN (RFC 8098)<o:p></o:p></span></p>
   </td>
   <td width="294" valign="top" style="width:220.6pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
