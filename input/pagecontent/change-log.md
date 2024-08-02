@@ -480,7 +480,8 @@
   segment OBXNTE</p>
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:108.0pt;text-indent:
   -18.0pt"><span style="font-family:Wingdings">§<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
-  </span></span>Cardinalité passée à 10..* (au lieu de 0..*) pour les métadonnées</p>
+  </span></span>Cardinalité passée à 10..* (au lieu de 0..*) pour les
+  métadonnées</p>
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:108.0pt;text-indent:
   -18.0pt"><span style="font-family:Wingdings">§<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;
   </span></span>Suppression de la référence au livre blanc «&nbsp;Harmonisation
@@ -506,8 +507,8 @@
   requis à renseigner obligatoirement, dans l’ordre indiqué.</p>
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt;text-indent:
   -18.0pt"><span style="font-family:&quot;Courier New&quot;">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
-  </span></span>Section 12.2.3&nbsp;: précisions sous forme d’un tableau des contraintes
-  apportées sur le segment TXA (uniquement pour message MDM)</p>
+  </span></span>Section 12.2.3&nbsp;: précisions sous forme d’un tableau des
+  contraintes apportées sur le segment TXA (uniquement pour message MDM)</p>
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt;text-indent:
   -18.0pt"><span style="font-family:&quot;Courier New&quot;">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
   </span></span>Section 12.2.4&nbsp;: description du segment ORC</p>
@@ -926,7 +927,7 @@
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt;text-indent:
   -18.0pt"><span style="font-family:&quot;Courier New&quot;">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
   </span></span>&amp; 1.1&nbsp;: remplacement du terme «&nbsp;section&nbsp;»
-  par «&nbsp;volume 1&nbsp;»</p>
+  par «&nbsp;volume 2&nbsp;»</p>
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt;text-indent:
   -18.0pt"><span style="font-family:&quot;Courier New&quot;">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
   </span></span>&amp;2.1&nbsp;: cas d’usage, remplacement des termes «&nbsp;<i>Guide
@@ -934,7 +935,7 @@
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt;text-indent:
   -18.0pt"><span style="font-family:&quot;Courier New&quot;">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;
   </span></span>&amp;2.2.1 et &amp;3.2&nbsp;: remplacement du terme
-  «&nbsp;message MDN&nbsp;» par «&nbsp;courriel MDN&nbsp;»</p>
+  «&nbsp;message MDN&nbsp;» par «&nbsp;MDN&nbsp;»</p>
   <p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </span></span>Etude technique</p>
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:53.4pt;text-indent:
@@ -952,10 +953,22 @@
   107%">un document clinique masqué aux PS ne doit pas être envoyé aux PS par
   MSSanté</span></i>&nbsp;»<br>
   le point d’attention est remplacé par une question ouverte.</p>
-  <p class="MsoListParagraphCxSpLast" align="left" style="text-align:left;
+  <p class="MsoListParagraphCxSpMiddle" align="left" style="margin-left:53.4pt;
+  text-align:left;text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>&amp;
+  12.2.8.3.4&nbsp;: exemples de messages d’acquittements de l’ORU ou du MDM</p>
+  <p class="MsoListParagraphCxSpMiddle" align="left" style="margin-left:72.0pt;
+  text-align:left;text-indent:-18.0pt"><span style="font-family:&quot;Courier New&quot;">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span>Suppression
+  dans les exemples du MSH-21.1 et MSH-21.2 car les Ack n’ont pas de
+  contraintes particulières par rapport à la spécification international d’un
+  Ack</p>
+  <p class="MsoListParagraphCxSpMiddle" align="left" style="text-align:left;
   text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>Annexe 2 et
   3&nbsp;: remplacement de la référence [9] par la référence [3] et
   remplacement de la référence [13] par [9]</p>
+  <p class="MsoListParagraphCxSpLast" align="left" style="text-align:left;
+  text-indent:-18.0pt"><span style="font-family:Wingdings">Ø<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp; </span></span>Annexe 4&nbsp;:
+  remplacement de message MDN par MDN (qui signifie d’emblée <u>Message</u>
+  Disposition Notification)</p>
   </td>
   <td style="border:none;padding:0cm 0cm 0cm 0cm" width="0%"><p class="MsoNormal">&nbsp;</p></td>
  </tr>
