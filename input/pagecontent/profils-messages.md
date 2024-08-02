@@ -1553,7 +1553,7 @@ informations concernant le patient sont décrites par le segment requis
 PID. Le segment PV1, requis, représente la venue courante du patient.
 
 Ces deux segments doivent être renseignés conformément à la
-spécification « [PAM -- National extension France » version 2.11](https://github.com/Interop-Sante/ihe.iti.pam.fr/blob/main/Publication/Publication-IHE_FRANCE_PAM_National_Extension_v2.11.pdf) publiée
+spécification « [PAM -- National extension France » version 2.11](https://old.interopsante.org/offres/doc_inline_src/412/Publication-IHE_FRANCE_PAM_National_Extension_v2.11.pdf) publiée
 en 2024. Si l'INS est véhiculé, le segment PID doit suivre les
 contraintes décrites dans l'annexe CI-SIS « [Prise en charge de
 l'identifiant National de Santé (INS) dans les standards

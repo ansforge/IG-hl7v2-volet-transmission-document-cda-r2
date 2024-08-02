@@ -6,7 +6,7 @@
     et utilisé pour implémenter les accusés métier (accusé de réception
     DMP, accusé de réception MSSanté et accusé de lecture MSSanté),
 
--   Extension française du profil IHE PAM : PAM.fr, version 2.11 (1),
+-   [Extension française du profil IHE PAM : PAM.fr, version 2.11](https://old.interopsante.org/offres/doc_inline_src/412/Publication-IHE_FRANCE_PAM_National_Extension_v2.11.pdf) (1),
 
 -   Les types de données utilisés (2) doivent se conformer aux
     spécifications « INTEROP’SANTE : ITI - Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France - Release 1.8 – Final Text – 31 janvier 2024 »
