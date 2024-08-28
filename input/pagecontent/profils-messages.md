@@ -3863,6 +3863,10 @@ l'obligation de gérer le contenu de ces champs ou segments.
  </tr>
 </tbody>
 </table>
+<p class="MsoFootnoteText"><a href="#_ftnref2" name="_ftn2" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
+<span class="cf01"><span style="font-size:8.0pt;line-height:107%">SC.DMP/CONF.12&nbsp;:
+«&nbsp;Le système DOIT transmettre à la PFI les informations d'identification nécessaires à la constitution du jeton VIHF : FINESS géographique de
+l'établissement et l'identifiant du professionnel ou du dispositif à l'origine de la demande d'alimentation du DMP&nbsp;». </span></span></p>
 
 **Exemple pour un Compte-Rendu d'imagerie médicale :**
 
