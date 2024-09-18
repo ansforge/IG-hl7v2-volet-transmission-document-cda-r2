@@ -922,6 +922,8 @@
   <p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </span></span>Avant-propos&nbsp;: suppression d’une ligne vide du tableau des
   conventions HL7, IHE</p>
+   <p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span>•	Ensemble du document : remplacement adresse courriel adam.hoda@medecin.mssante.fr par adam.hoda@test-ci-sis.mssante.fr</p>
   <p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt"><span style="font-family:Symbol">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </span></span>Etude fonctionnelle</p>
   <p class="MsoListParagraphCxSpMiddle" style="margin-left:72.0pt;text-indent:
