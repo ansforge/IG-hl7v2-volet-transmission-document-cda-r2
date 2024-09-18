@@ -8,7 +8,7 @@ Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un en
     </div>
 </blockquote>
 
-Le Dr Jean Dupont exerçant à l'hôpital-A (<jean.dupont@hopital-A.mssante.fr> ) créé un compte rendu pour son patient au cours d'une consultation externe dans l'établissement. Il souhaite publier sur le DMP ce compte rendu à partir de son application métier et souhaite en même temps l'adresser par MSSanté au médecin traitant du patient, le Dr Adam Hoda (<adam.hoda@medecin.mssante.fr>).
+Le Dr Jean Dupont exerçant à l'hôpital-A (<jean.dupont@hopital-A.mssante.fr> ) créé un compte rendu pour son patient au cours d'une consultation externe dans l'établissement. Il souhaite publier sur le DMP ce compte rendu à partir de son application métier et souhaite en même temps l'adresser par MSSanté au médecin traitant du patient, le Dr Adam Hoda (<adam.hoda@test-ci-sis.mssante.fr>).
 
 Le Dr Dupont (hôpital-A) sélectionne ce compte rendu dans son
 application métier, il précise les métadonnées de masquage du document

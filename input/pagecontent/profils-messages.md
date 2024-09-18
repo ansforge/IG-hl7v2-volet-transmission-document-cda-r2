@@ -3879,9 +3879,9 @@ OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^Text^XML^Base64^RG9jdW1lbnQgbcOp
 UgZm9ybWF0IENEQQ||||||F|
 PRT||UC||SB^Send By^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS |||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
 PRT||UC||RCT^results Copies To^participation|||||||||||^^X.400^146026322000196@patient.mssante.fr
-PRT||UC||RCT^results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||||||||||^^X.400^adam.hoda@medecin.mssante.fr PRT||UC||RCT^results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
+PRT||UC||RCT^results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr PRT||UC||RCT^results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
 PRT||UC||RCT^results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
-PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@medecin.mssante.fr
+PRT||UC||REPLY^Reply to^participation|||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr
 ```
 
 **Expéditeur MSSanté :** Le segment PRT est également
