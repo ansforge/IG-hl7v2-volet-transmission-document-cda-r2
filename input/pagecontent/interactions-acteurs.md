@@ -34,8 +34,8 @@ d'un message HL7 ORU.
 
 Les interactions de la transaction de
 transmission/remplacement/suppression de document(s) utilisent
-respectivement les messages HL7 `MDM^T02^MDM_T02`, `MDM^T10^MDM_T10` et
-`MDM^T04^MDM_T04` en version 2.6 ainsi que ses acquittements métiers HL7
+respectivement les messages HL7 `MDM^T02^MDM_T02`, `MDM^T10^MDM_T02` et
+`MDM^T04^MDM_T02` en version 2.6 ainsi que ses acquittements métiers HL7
 `ZAM^Z01^ZAM_Z01` (accusé métier de réception DMP), `ZAM^Z02^ZAM_Z01`
 (accusé métier de réception MSSanté) et `ZAM_Z03^ZAM_Z01` (accusé métier
 de lecture MSSanté).

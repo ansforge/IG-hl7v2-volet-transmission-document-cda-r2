@@ -1385,8 +1385,8 @@ le segment MSH :
   <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Type du message<br>
   </span><span style="color:#4472C4">ORU^R01^ORU_R01<br>
   MDM^T02^MDM_T02<br>
-  MDM^T10^MDM_T10<br>
-  MDM^T04^MDM_T04</span></p>
+  MDM^T10^MDM_T02<br>
+  MDM^T04^MDM_T02</span></p>
   </td>
   <td width="87" valign="top" style="width:65.45pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
