@@ -53,6 +53,8 @@ pages:
         title: "Exemples de messages"
     struct-msg-mdn.md:
         title: "Structure du MDN (MSSanté)"
+    mapping.md:
+        title: "Mapping"        
     error-codes.md:
         title: "Error codes"
     glossaire.md:
@@ -88,6 +90,7 @@ menu:
         "Table MetaDMP/MSS": meta-dmp-mss.html
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
+        "Mapping": mapping.html
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html
