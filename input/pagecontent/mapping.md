@@ -35,7 +35,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
       <td style="text-align: left">Fourni par le LPS <br> valeur de  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J61-HealthcareFacilityTypeCode-DMP.html">JDV_J61-HealthcareFacilityTypeCode-DMP</a></td>
-      <td><blockquote class="stu-note">  Valeur non présente dans le message et le CDA   </blockquote> </td>
+      <td><blockquote class="stu-note">  Donnée  non présente  dans le message et le CDA   </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Subject/NameID</td>
@@ -56,7 +56,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
  <br> <b>Pour les autres : </b>
  <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> - TRE_A00_ProducteurDocNonPS <br> -  TRE_R95_UsagerTitre <br> - TRE_R94_ProfessionSocial <br> -  TRE_R291_AutreProfession
       </td>
-      <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire (avec le problème d’un PS avec plusieurs exercice ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire (avec le problème d’un PS avec plusieurs exercice ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -66,7 +66,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
  <br> <b>Pour les pharmacines  ; </b> 
  <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de  TRE_G05_SousSectionTableauCNOP     
       </td>
-      <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire  (avec le problème d’un PS avec plusieurs savoir faire ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire  (avec le problème d’un PS avec plusieurs savoir faire ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -74,7 +74,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <br>
       Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de   TRE_R85_RolePriseCharge
       </td>
-      <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -83,12 +83,12 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
           <br>
       Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de :  TRE_R22_GenreActivite 
       </td>
-      <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef</td>
       <td style="text-align: left">Prendre la valeur la plus appropriée parmi les valeurs possibles indiquées dans le document http://docs.oasis-open.org/security/saml/v2.0/samlauthn-context-2.0-os.pdf <br>La valeur utilisée doit être cohérente avec le mode d’authentification locale de l’utilisateur dans le LPS</td>
-      <td><blockquote class="stu-note">  Valeur non présente dans le message et le CDA   </blockquote> </td>
+      <td><blockquote class="stu-note">  Donnée  non présente dans le message et le CDA   </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/@xmnls</td>
@@ -209,13 +209,13 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">authorRole</td>
       <td style="text-align: left">Cette métadonnée représente le rôle joué par l’auteur vis-à-vis du patient lors de la constitution du lot de soumission</td>
       <td>requis si connu</td>
-      <td><blockquote class="stu-note"> Non connu et donnée non présente</blockquote> </td>
+      <td><blockquote class="stu-note"> Donnée non présente dans le message</blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">authorSpecialty</td>
       <td style="text-align: left">Cette métadonnée représente la profession éventuellement associée au savoir-faire de l’auteur du lot de soumission pour un auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité de l’auteur du lot de soumission pour un auteur professionnel caractérisé par son rôle</td>
       <td>requis si connu</td>
-      <td><blockquote class="stu-note">  Non connu et donnée non présente </blockquote> </td>
+      <td><blockquote class="stu-note">  Donnée non présente dans le message </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">availabilityStatus</td>
@@ -227,7 +227,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">contentTypeCode</td>
       <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br> Valeur de <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J59-ContentTypeCode-DMP.html">JDV_J59-ContentTypeCode-DMP</a></td>
       <td>requis</td>
-      <td><blockquote class="stu-note">  Donnée non présente</blockquote> </td>
+      <td><blockquote class="stu-note">  Donnée non présente dans le message</blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">patientId</td>
@@ -282,9 +282,9 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td>requis si connu</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
         <br><blockquote class="stu-note"> 
-        Sur-contrainte par rapport au ci-sis l'authorInstitution de la fihe et du lot doivent être indentique.
+        Sur-contrainte par rapport au ci-sis l'"authorInstitution" de la fiche et du lot doivent être identiques.
         <br>Il faudrait enlever cette regle
-        <br>Non possible => CDA : author/assignedAuthor/representedOrganization.
+        <br>Cela implique qu'il ne faut pas appliquer ce mapping => CDA : author/assignedAuthor/representedOrganization.
         </blockquote>  </td>
     </tr>
     <tr>
