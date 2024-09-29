@@ -1,6 +1,6 @@
 ### Mapping VIHF
 
-style="white-space: normal;"
+
 Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 V2 et du CDA
 
 <table class="table table-bordered">
