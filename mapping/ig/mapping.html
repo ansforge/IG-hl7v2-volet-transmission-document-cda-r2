@@ -252,7 +252,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ce mapping permet d’indiquer comment constiure le VIHF à partir du message HL7 V2 et du CDA</p>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th style="text-align: left">Champs du VIHF</th>
@@ -274,137 +274,155 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">//Assertion/Issuer/@Format</td>
       <td style="text-align: left">Constante :”urn:oasis:names:tc:SAML:1.1:nameidformat:X509SubjectName”</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">Identifiant_Structure</td>
       <td style="text-align: left">Struct_IdNat de la structure de soins</td>
-      <td>PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
       <td style="text-align: left">Fourni par le LPS <br /> valeur de  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J61-HealthcareFacilityTypeCode-DMP.html">JDV_J61-HealthcareFacilityTypeCode-DMP</a></td>
-      <td><span style="color:red"> Valeur non présente dans le message et le CDA   </span></td>
+      <td><blockquote class="stu-note">  Valeur non présente dans le message et le CDA   </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Subject/NameID</td>
       <td style="text-align: left">Fourni par le LPS <br />Pour un utilisateur humain : Identifiant du professionnel <br /> Pour les traitements automatisés : Identifiant de la personne responsable du traitement</td>
-      <td>PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:subject:subject-id</td>
       <td style="text-align: left">Pour un utilisateur humain : Nom, Prénom et Service de l’utilisateur <br /> Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service</td>
-      <td>PRT-5.2  et PRT-5.3   (PRT-4 = ‘SB^Send by^participation’)  <br /> <span style="color:red">Service de l’utilisateur non présent : Ajout du champ PRT-9   </span></td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-5.2  et PRT-5.3   (PRT-4 = ‘SB^Send by^participation’) </pre> <br /> <blockquote class="stu-note"> Service de l’utilisateur non présent : Ajout du champ PRT-9   </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">1re occurrence obligatoire</td>
-      <td><br /> <span style="color:red">Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire (avec le problème d’un PS avec plusieurs exercice ) <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori pas type de donnée non disponible dans le champ PRT </span></td>
+      <td style="text-align: left">1re occurrence obligatoire
+      <br />
+        <b>Pour les professionnels :</b>
+<br />- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de : <br /> -  TRE TRE_G15-ProfessionSante <br /> - TRE_G16_ProfessionFormation (Professions en formation (carte CPF))
+ <br /> <b>Pour les autres : </b>
+ <br />- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de : <br /> - TRE_A00_ProducteurDocNonPS <br /> -  TRE_R95_UsagerTitre <br /> - TRE_R94_ProfessionSocial <br /> -  TRE_R291_AutreProfession
+      </td>
+      <td><br /> <blockquote class="stu-note"> Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire (avec le problème d’un PS avec plusieurs exercice ) <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">2e occurrence uniquement et obligatoirement pour les médecins  et pharmaciens</td>
-      <td><br /> <span style="color:red">Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire  (avec le problème d’un PS avec plusieurs savoir faire ) <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori pas type de donnée non disponible dans le champ PRT </span></td>
+      <td style="text-align: left">2e occurrence uniquement et obligatoirement pour les médecins  et pharmaciens
+     <br />   <b>Pour les médecins :</b>
+<br />- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de TRE_R01_EnsembleSavoirFaire_CISIS
+ <br /> <b>Pour les pharmacines  ; </b> 
+ <br />- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de  TRE_G05_SousSectionTableauCNOP     
+      </td>
+      <td><br /> <blockquote class="stu-note"> Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire  (avec le problème d’un PS avec plusieurs savoir faire ) <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">Rôle - 3e occurrence obligatoire pour les professionnels caractérisés par leur rôle. Non requise pour les autres professionnels.</td>
-      <td><br /> <span style="color:red">Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori pas type de donnée non disponible dans le champ PRT </span></td>
+      <td style="text-align: left">Rôle - 3e occurrence obligatoire pour les professionnels caractérisés par leur rôle. Non requise pour les autres professionnels.
+      <br />
+      Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de   TRE_R85_RolePriseCharge
+      </td>
+      <td><br /> <blockquote class="stu-note"> Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">Genre d’activité -4e occurrence facultative pour les professionnels caractérisés par leur rôle. Non renseignée pour les autres professionnels</td>
-      <td><br /> <span style="color:red">Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori pas type de donnée non disponible dans le champ PRT </span></td>
+      <td style="text-align: left">Genre d’activité -4e occurrence facultative pour les professionnels caractérisés par leur rôle. Non renseignée pour les autres professionnels
+      <br />
+          <br />
+      Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de :  TRE_R22_GenreActivite 
+      </td>
+      <td><br /> <blockquote class="stu-note"> Information non présente : <br /> - SI IDNATPS : Appel de l’annuaire <br />- Sinon : Appel de l’annuaire interne de l’etablissement  <br /> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef</td>
       <td style="text-align: left">Prendre la valeur la plus appropriée parmi les valeurs possibles indiquées dans le document http://docs.oasis-open.org/security/saml/v2.0/samlauthn-context-2.0-os.pdf <br />La valeur utilisée doit être cohérente avec le mode d’authentification locale de l’utilisateur dans le LPS</td>
-      <td><span style="color:red"> Valeur non présente dans le message et le CDA   </span></td>
+      <td><blockquote class="stu-note">  Valeur non présente dans le message et le CDA   </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/@xmnls</td>
       <td style="text-align: left">Constante :”urn:oasis:names:tc:SAML:2.0:assertion”</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/@ID</td>
       <td style="text-align: left">identifiant unique de l’assertion</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/@IssueInstant</td>
       <td style="text-align: left">Date et heure d’émission de l’assertion SAML</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/AuthnStatement/@AuthnInstant</td>
       <td style="text-align: left">Date/Heure de connexion de l’utilisateur dans le système source</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Conditions/AudienceRestriction</td>
       <td style="text-align: left">Ne pas renseigner</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Conditions/@NotBefore</td>
       <td style="text-align: left">Facultatif</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Conditions/@NotAfter</td>
       <td style="text-align: left">Facultatif</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">VIHF_Version</td>
       <td style="text-align: left">Constante : “4.0”</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">Authentification_Mode</td>
       <td style="text-align: left">Constante : “INDIRECTE”</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:resource:resource-id</td>
       <td style="text-align: left">INS du patient</td>
-      <td>PID-3</td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Ressource_URN</td>
       <td style="text-align: left">Constante : “urn:dmp”</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:subject:purposeofuse</td>
       <td style="text-align: left">code=”normal” : pour un accès normal</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:resource:patient:hl7:confidentiality-code</td>
       <td style="text-align: left">Obligatoire si la fonctionnalité est activée19 et si demande de connexion secrète au DMP.</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">LPS_ID</td>
       <td style="text-align: left">Facultatif</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">LPS_Nom</td>
       <td style="text-align: left">Nom du LPS qui génère le jeton VIHF</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">LPS_Version</td>
       <td style="text-align: left">N° de version du LPS qui génère le jeton VIHF</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">LPS_ID_HOMOLOGATION_DMP</td>
       <td style="text-align: left">N° d’homologation du LPS.</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
   </tbody>
 </table>
@@ -413,7 +431,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="lot-de-soummission">Lot de soummission</h4>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th style="text-align: left">Metadonnées</th>
@@ -427,74 +445,74 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cette métadonnée représente la structure émettrice du lot de soumission.</td>
       <td>requis si connu</td>
-      <td> </td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorPerson</td>
       <td style="text-align: left">Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.</td>
       <td>requis</td>
-      <td> </td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-5 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorRole</td>
       <td style="text-align: left">Cette métadonnée représente le rôle joué par l’auteur vis-à-vis du patient lors de la constitution du lot de soumission</td>
       <td>requis si connu</td>
-      <td><span style="color:red">Non connu et donnée non présente</span></td>
+      <td><blockquote class="stu-note"> Non connu et donnée non présente</blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">authorSpecialty</td>
       <td style="text-align: left">Cette métadonnée représente la profession éventuellement associée au savoir-faire de l’auteur du lot de soumission pour un auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité de l’auteur du lot de soumission pour un auteur professionnel caractérisé par son rôle</td>
       <td>requis si connu</td>
-      <td><span style="color:red"> Non connu et donnée non présente </span></td>
+      <td><blockquote class="stu-note">  Non connu et donnée non présente </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">availabilityStatus</td>
       <td style="text-align: left">Cette métadonnée représente la pertinence d’un lot de soumission</td>
       <td>requis si connu</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">contentTypeCode</td>
-      <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission. JDV_J59-ContentTypeCode-DMP</td>
+      <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br /> Valeur de <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J59-ContentTypeCode-DMP.html">JDV_J59-ContentTypeCode-DMP</a></td>
       <td>requis</td>
-      <td><span style="color:red"> Donnée non présente</span></td>
+      <td><blockquote class="stu-note">  Donnée non présente</blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">patientId</td>
       <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient tel que défini dans le cadre juridique.</td>
       <td>requis</td>
-      <td> </td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">sourceId</td>
       <td style="text-align: left">Cette métadonnée représente l’identifiant unique global du système émetteur du lot de soumission.</td>
       <td>requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">submissionTime</td>
       <td style="text-align: left">Cette métadonnée représente la date et heure de soumission.</td>
       <td>requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">title</td>
       <td style="text-align: left">Cette métadonnée représente le titre du lot de soumission.</td>
       <td>Optionnel</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">uniqueId</td>
       <td style="text-align: left">Identifiant unique global affecté à ce lot de soumission par son créateur.</td>
       <td>requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="fiche">Fiche</h4>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th style="text-align: left">Metadonnées</th>
@@ -508,185 +526,194 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cet attribut représente la structure de l’auteur.</td>
       <td>requis si connu</td>
-      <td>CDA : author/assignedAuthor/representedOrganization.</td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
+        <br /><blockquote class="stu-note"> 
+        Sur-contrainte par rapport au ci-sis l'authorInstitution de la fihe et du lot doivent être indentique.
+        <br />Il faudrait enlever cette regle
+        <br />Non possible =&gt; CDA : author/assignedAuthor/representedOrganization.
+        </blockquote>  </td>
     </tr>
     <tr>
       <td style="text-align: left">authorPerson</td>
       <td style="text-align: left">Cet attribut représente l’auteur (humain ou système) ayant contribué au document</td>
       <td>requis</td>
-      <td>CDA : author/assignedAuthor/</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : author/assignedAuthor</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorRole</td>
       <td style="text-align: left">Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient lors de la création du document</td>
       <td>requis si connu</td>
-      <td>CDA : authorfunctionCode@displayName</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : authorfunctionCode@displayName</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorSpecialty</td>
       <td style="text-align: left">Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle</td>
       <td>requis si connu</td>
-      <td>CDA : author/assignedAuthor/code</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : author/assignedAuthor/code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">availabilityStatus</td>
       <td style="text-align: left">Cette métadonnée représente la pertinence de la version de la fiche d’un document JDV_J52-AvailabilityStatus-CISIS</td>
       <td>requis si connu</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">classCode</td>
       <td style="text-align: left">Cet attribut représente le code de la classe du document   JDV_J57-ClassCode-DMP</td>
       <td>requis</td>
-      <td>classCode est déduit du CDA (champ code) selon la table de correspondance entre ces deux métadonnées référencée dans les Nomenclatures des Objets de Santé (NOS) : ASS_X04-CorrespondanceType-Classe.</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b>: classCode est déduit du CDA (champ code) selon la table de correspondance <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ConceptMap-ASS-X04-CorrespondanceType-Classe-CISIS.html">ASS_X04-CorrespondanceType-Classe</a></pre> </td>
     </tr>
     <tr>
       <td style="text-align: left">confidentialityCode</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left">&nbsp;</td>
       <td>requis</td>
-      <td>Premiere occurence du CDA confidentialityCode <br /> les autres occurences du message HL7 V2 OBX-5  avec OBX-3.3=”MetaDMPMSS”</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> ;  Premiere occurence du CDA confidentialityCode <br /> 
+       <b>HL7V2</b> :  les autres occurences du message HL7 V2 OBX-5  avec OBX-3.3=”MetaDMPMSS”</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">creationTime</td>
       <td style="text-align: left">Cette métadonnée représente la date et l’heure de la création du document.</td>
       <td>requis</td>
-      <td>CDA : effectiveTime@value</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : effectiveTime@value</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">entryUUID</td>
       <td style="text-align: left">Identifiant unique affecté à la version de la fiche référençant le document</td>
       <td>requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">eventCodeList</td>
       <td style="text-align: left">Cet attribut contient le code représentant : <br />un évènement documenté ou une pathologie <br />une modalité d’acquisition<br /> une région anatomique.</td>
       <td>Optionnel</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">formatCode</td>
       <td style="text-align: left">Cet attribut représente le code du format du document JDV_J60-FormatCode-DMP</td>
       <td>Requis</td>
-      <td>“application/pdf” pour les CDA N1 <br /> Utilisation de l’association https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ConceptMap-ASS-A11-CorresModeleCDA-XdsFormatCode-CISIS.html  pour les CDA N3</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : 
+      <br /> - CDA N1 =&gt;  “application/pdf”  
+      <br /> - CDA N3 =&gt;  Utilisation de l’association <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ConceptMap-ASS-A11-CorresModeleCDA-XdsFormatCode-CISIS.html">ASS-A11-CorresModeleCDA-XdsFormatCode-CISIS</a></pre>  </td>
     </tr>
     <tr>
       <td style="text-align: left">hash</td>
       <td style="text-align: left">Cette métadonnée contient le résultat du hachage du document déposé</td>
       <td>Requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">healthcareFacilityTypeCode</td>
       <td style="text-align: left">Secteur d’activité lié à la prise en charge de la personne, en lien avec le document produit J DV_J61-HealthcareFacilityTypeCode-DMP</td>
       <td>Requis</td>
-      <td>CDA : componentOf/encompassingEncounter/location/healthCareFacility/code@code</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : componentOf/encompassingEncounter/location/healthCareFacility/code@code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">languageCode</td>
       <td style="text-align: left">Cette métadonnée représente le code de la langue dans laquelle le document est rédigé.</td>
       <td>Requis</td>
-      <td>CDA ; languageCode@Code</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : languageCode@Code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">legalAuthenticator</td>
       <td style="text-align: left">Cette métadonnée représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci.</td>
       <td>Requis</td>
-      <td>CDA : legalAuthenticator/assignedEntity</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : legalAuthenticator/assignedEntity</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">logicalID</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left">&nbsp;</td>
       <td>Requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">mimeType</td>
       <td style="text-align: left">Cette métadonnée représente le type de contenu du document, défini par le standard MIME.</td>
       <td>Requis</td>
-      <td>“text/xml” pour un document CDA<br /> “application/xslt+xml” pour un document CDA auto-présentable</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : 
+      <br /> - "text/xml” pour un document CDA 
+      <br /> - “application/xslt+xml” pour un document CDA auto-présentable</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">patientId</td>
       <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.</td>
       <td>Requis</td>
-      <td>PID</td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> : PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">practiceSettingCode</td>
       <td style="text-align: left">Code du contexte de l’acte qui a engendré la création du document</td>
       <td>Requis</td>
-      <td>CDA : documentationOf/serviceEvent/performer/assignedEntity/representedOrganization/standardIndustryClassCode@code</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : documentationOf/serviceEvent/performer/assignedEntity/representedOrganization/standardIndustryClassCode@code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">referenceIdList</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left">&nbsp;</td>
       <td>Optionnel</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">repositoryUniqueId</td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left">&nbsp;</td>
       <td>Requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">serviceStartTime</td>
       <td style="text-align: left">Cette métadonnée représente la date de début de l’acte de référence.</td>
       <td>Requis</td>
-      <td>CDA : documentationOf/serviceEvent/effectiveTime/low@value</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : documentationOf/serviceEvent/effectiveTime/low@value</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">serviceStopTime</td>
       <td style="text-align: left">Cette métadonnée correspond à la date de fin de l’acte de référence, si connue.</td>
       <td>Requis si connu</td>
-      <td>CDA : documentationOf/serviceEvent/effectiveTime/high@value</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : documentationOf/serviceEvent/effectiveTime/high@value</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">size</td>
       <td style="text-align: left">Cette métadonnée correspond à la taille du document déposé.</td>
       <td>Requis</td>
-      <td> </td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td style="text-align: left">sourcePatientId</td>
       <td style="text-align: left">Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) u l’INS, s’il n’y a pas d’identifiant secondaire.</td>
       <td>Requis</td>
-      <td>PID-3</td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> : PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">sourcePatientInfo</td>
       <td style="text-align: left">Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document</td>
       <td>Optionnel</td>
-      <td>PID</td>
+      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :  PID</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">title</td>
       <td style="text-align: left">Cette métadonnée représente le titre du document.</td>
       <td>Requis</td>
-      <td>CDA : title</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : title</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">typeCode</td>
       <td style="text-align: left">Cet attribut représente le code spécifiant le type du document.</td>
       <td>Requis</td>
-      <td>CDA : code@code</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : code@code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">uniqueId</td>
       <td style="text-align: left">Identifiant unique affecté au document par son créateur</td>
       <td>Requis</td>
-      <td>CDA : id@root</td>
+      <td><pre class="highlight language-plaintext"><b>CDA</b> : id@root</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">version</td>
-      <td style="text-align: left"> </td>
-      <td>Requis</td>
-      <td> </td>
+      <td style="text-align: left">&nbsp;</td>
+      <td>R (Requis), si la transaction de mise à jour des métadonnées (Update document set ITI-57) est utilisée</td>
+      <td>&nbsp;</td>
     </tr>
   </tbody>
 </table>
-
 
 
 
@@ -728,7 +755,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Sep 28, 2024 16:33+0000">2024-09-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Sep 29, 2024 16:20+0000">2024-09-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
