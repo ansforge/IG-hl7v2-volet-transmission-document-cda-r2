@@ -52,9 +52,9 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">1re occurrence obligatoire
       <br>
         <b>Pour les professionnels :</b>
-<br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de : <br> -  TRE TRE_G15-ProfessionSante <br> - TRE_G16_ProfessionFormation (Professions en formation (carte CPF))
+<br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> -  TRE TRE_G15-ProfessionSante <br> - TRE_G16_ProfessionFormation (Professions en formation (carte CPF))
  <br> <b>Pour les autres : </b>
- <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de : <br> - TRE_A00_ProducteurDocNonPS <br> -  TRE_R95_UsagerTitre <br> - TRE_R94_ProfessionSocial <br> -  TRE_R291_AutreProfession
+ <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> - TRE_A00_ProducteurDocNonPS <br> -  TRE_R95_UsagerTitre <br> - TRE_R94_ProfessionSocial <br> -  TRE_R291_AutreProfession
       </td>
       <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire (avec le problème d’un PS avec plusieurs exercice ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
@@ -62,9 +62,9 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
       <td style="text-align: left">2e occurrence uniquement et obligatoirement pour les médecins  et pharmaciens
      <br>   <b>Pour les médecins :</b>
-<br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de TRE_R01_EnsembleSavoirFaire_CISIS
+<br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de TRE_R01_EnsembleSavoirFaire_CISIS
  <br> <b>Pour les pharmacines  ; </b> 
- <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de  TRE_G05_SousSectionTableauCNOP     
+ <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de  TRE_G05_SousSectionTableauCNOP     
       </td>
       <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire  (avec le problème d’un PS avec plusieurs savoir faire ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
@@ -72,7 +72,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
       <td style="text-align: left">Rôle - 3e occurrence obligatoire pour les professionnels caractérisés par leur rôle. Non requise pour les autres professionnels.
       <br>
-      Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de   TRE_R85_RolePriseCharge
+      Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de   TRE_R85_RolePriseCharge
       </td>
       <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
@@ -81,7 +81,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">Genre d’activité -4e occurrence facultative pour les professionnels caractérisés par leur rôle. Non renseignée pour les autres professionnels
       <br>
           <br>
-      Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DM</a> avec un codeSystem provenant de :  TRE_R22_GenreActivite 
+      Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de :  TRE_R22_GenreActivite 
       </td>
       <td><br> <blockquote class="stu-note"> Information non présente : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
     </tr>
