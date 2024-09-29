@@ -1,6 +1,6 @@
 ### Mapping VIHF
 
-
+style="white-space: normal;"
 Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 V2 et du CDA
 
 <table class="table table-bordered">
@@ -30,7 +30,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     <tr>
       <td style="text-align: left">Identifiant_Structure</td>
       <td style="text-align: left">Struct_IdNat de la structure de soins</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
@@ -40,12 +40,12 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     <tr>
       <td style="text-align: left">//Assertion/Subject/NameID</td>
       <td style="text-align: left">Fourni par le LPS <br>Pour un utilisateur humain : Identifiant du professionnel <br> Pour les traitements automatisés : Identifiant de la personne responsable du traitement</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:subject:subject-id</td>
       <td style="text-align: left">Pour un utilisateur humain : Nom, Prénom et Service de l’utilisateur <br> Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-5.2  et PRT-5.3   (PRT-4 = ‘SB^Send by^participation’) </pre> <br> <blockquote class="stu-note"> Service de l’utilisateur non présent : Ajout du champ PRT-9   </blockquote> </td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.2  et PRT-5.3   (PRT-4 = ‘SB^Send by^participation’) </pre> <br> <blockquote class="stu-note"> Service de l’utilisateur non présent : Ajout du champ PRT-9   </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -138,7 +138,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:resource:resource-id</td>
       <td style="text-align: left">INS du patient</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Ressource_URN</td>
@@ -197,13 +197,13 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cette métadonnée représente la structure émettrice du lot de soumission.</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorPerson</td>
       <td style="text-align: left">Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.</td>
       <td>requis</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-5 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorRole</td>
@@ -233,7 +233,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">patientId</td>
       <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient tel que défini dans le cadre juridique.</td>
       <td>requis</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">sourceId</td>
@@ -280,7 +280,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cet attribut représente la structure de l’auteur.</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
         <br><blockquote class="stu-note"> 
         Sur-contrainte par rapport au ci-sis l'authorInstitution de la fihe et du lot doivent être indentique.
         <br>Il faudrait enlever cette regle
@@ -291,19 +291,19 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">authorPerson</td>
       <td style="text-align: left">Cet attribut représente l’auteur (humain ou système) ayant contribué au document</td>
       <td>requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : author/assignedAuthor</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : author/assignedAuthor</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorRole</td>
       <td style="text-align: left">Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient lors de la création du document</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : authorfunctionCode@displayName</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : authorfunctionCode@displayName</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorSpecialty</td>
       <td style="text-align: left">Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : author/assignedAuthor/code</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : author/assignedAuthor/code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">availabilityStatus</td>
@@ -315,20 +315,20 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">classCode</td>
       <td style="text-align: left">Cet attribut représente le code de la classe du document   JDV_J57-ClassCode-DMP</td>
       <td>requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b>: classCode est déduit du CDA (champ code) selon la table de correspondance <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ConceptMap-ASS-X04-CorrespondanceType-Classe-CISIS.html">ASS_X04-CorrespondanceType-Classe</a></pre> </td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b>: classCode est déduit du CDA (champ code) selon la table de correspondance <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ConceptMap-ASS-X04-CorrespondanceType-Classe-CISIS.html">ASS_X04-CorrespondanceType-Classe</a></pre> </td>
     </tr>
     <tr>
       <td style="text-align: left">confidentialityCode</td>
       <td style="text-align: left">&nbsp;</td>
       <td>requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> ;  Premiere occurence du CDA confidentialityCode <br> 
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> ;  Premiere occurence du CDA confidentialityCode <br> 
        <b>HL7V2</b> :  les autres occurences du message HL7 V2 OBX-5  avec OBX-3.3=”MetaDMPMSS”</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">creationTime</td>
       <td style="text-align: left">Cette métadonnée représente la date et l’heure de la création du document.</td>
       <td>requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : effectiveTime@value</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : effectiveTime@value</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">entryUUID</td>
@@ -346,7 +346,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">formatCode</td>
       <td style="text-align: left">Cet attribut représente le code du format du document JDV_J60-FormatCode-DMP</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : 
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : 
       <br> - CDA N1 =>  “application/pdf”  
       <br> - CDA N3 =>  Utilisation de l’association <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ConceptMap-ASS-A11-CorresModeleCDA-XdsFormatCode-CISIS.html">ASS-A11-CorresModeleCDA-XdsFormatCode-CISIS</a></pre>  </td>
     </tr>
@@ -360,19 +360,19 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">healthcareFacilityTypeCode</td>
       <td style="text-align: left">Secteur d’activité lié à la prise en charge de la personne, en lien avec le document produit J DV_J61-HealthcareFacilityTypeCode-DMP</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : componentOf/encompassingEncounter/location/healthCareFacility/code@code</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : componentOf/encompassingEncounter/location/healthCareFacility/code@code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">languageCode</td>
       <td style="text-align: left">Cette métadonnée représente le code de la langue dans laquelle le document est rédigé.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : languageCode@Code</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : languageCode@Code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">legalAuthenticator</td>
       <td style="text-align: left">Cette métadonnée représente l’acteur validant le document et prenant la responsabilité du contenu médical de celui-ci.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : legalAuthenticator/assignedEntity</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : legalAuthenticator/assignedEntity</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">logicalID</td>
@@ -384,7 +384,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">mimeType</td>
       <td style="text-align: left">Cette métadonnée représente le type de contenu du document, défini par le standard MIME.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : 
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : 
       <br> - "text/xml” pour un document CDA 
       <br> - “application/xslt+xml” pour un document CDA auto-présentable</pre></td>
     </tr>
@@ -392,13 +392,13 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">patientId</td>
       <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> : PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">practiceSettingCode</td>
       <td style="text-align: left">Code du contexte de l’acte qui a engendré la création du document</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : documentationOf/serviceEvent/performer/assignedEntity/representedOrganization/standardIndustryClassCode@code</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : documentationOf/serviceEvent/performer/assignedEntity/representedOrganization/standardIndustryClassCode@code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">referenceIdList</td>
@@ -416,13 +416,13 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">serviceStartTime</td>
       <td style="text-align: left">Cette métadonnée représente la date de début de l’acte de référence.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : documentationOf/serviceEvent/effectiveTime/low@value</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : documentationOf/serviceEvent/effectiveTime/low@value</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">serviceStopTime</td>
       <td style="text-align: left">Cette métadonnée correspond à la date de fin de l’acte de référence, si connue.</td>
       <td>Requis si connu</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : documentationOf/serviceEvent/effectiveTime/high@value</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : documentationOf/serviceEvent/effectiveTime/high@value</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">size</td>
@@ -434,31 +434,31 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">sourcePatientId</td>
       <td style="text-align: left">Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) u l’INS, s’il n’y a pas d’identifiant secondaire.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> : PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">sourcePatientInfo</td>
       <td style="text-align: left">Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document</td>
       <td>Optionnel</td>
-      <td><pre class="highlight language-plaintext"><b>HL7V2</b> :  PID</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :  PID</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">title</td>
       <td style="text-align: left">Cette métadonnée représente le titre du document.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : title</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : title</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">typeCode</td>
       <td style="text-align: left">Cet attribut représente le code spécifiant le type du document.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : code@code</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : code@code</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">uniqueId</td>
       <td style="text-align: left">Identifiant unique affecté au document par son créateur</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"><b>CDA</b> : id@root</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : id@root</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">version</td>
