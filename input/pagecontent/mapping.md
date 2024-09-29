@@ -186,7 +186,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th style="text-align: left">Metadonnées</th>
+      <th style="text-align: left">Metadonnée</th>
       <th style="text-align: left">Commentaire</th>
       <th>Contrainte</th>
       <th>Provenance de la donnée</th>
@@ -269,7 +269,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th style="text-align: left">Metadonnées</th>
+      <th style="text-align: left">Metadonnée</th>
       <th style="text-align: left">Commentaire</th>
       <th>Contrainte</th>
       <th>Provenance de la donnée</th>
