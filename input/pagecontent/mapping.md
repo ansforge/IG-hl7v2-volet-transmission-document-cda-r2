@@ -452,13 +452,18 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">typeCode</td>
       <td style="text-align: left">Cet attribut représente le code spécifiant le type du document.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : code@code</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" >
+        <b>CDA</b> : code@code
+        <br><b>HL7V2</b> :    OBR-4.2 
+      </pre></td>
     </tr>
     <tr>
       <td style="text-align: left">uniqueId</td>
       <td style="text-align: left">Identifiant unique affecté au document par son créateur</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : id@root</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : id@root
+      <br><b>HL7V2</b> : TXA-12 (pour les MDM)
+      </pre></td>
     </tr>
     <tr>
       <td style="text-align: left">version</td>
