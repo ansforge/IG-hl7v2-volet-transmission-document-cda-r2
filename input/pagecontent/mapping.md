@@ -35,7 +35,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
       <td style="text-align: left">Fourni par le LPS <br> valeur de  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J61-HealthcareFacilityTypeCode-DMP.html">JDV_J61-HealthcareFacilityTypeCode-DMP</a></td>
-      <td><blockquote class="stu-note">  Donnée  non présente  dans le message et le CDA   </blockquote> </td>
+      <td><blockquote class="stu-note">  Donnée  non présente  dans le message et le CDA <br> Possibilité de le recuperer de l'annuaire ? </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Subject/NameID</td>
@@ -473,3 +473,99 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     </tr>
   </tbody>
 </table>
+
+
+
+### Proposition
+
+#### VIHF
+Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
+Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
+
+``
+    <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_09cd372d-da9e-4d8c-a225-b7304defd6fb" IssueInstant="2024-09-02T13:22:25.789Z" Version="2.0">
+        <Issuer Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">C=FR, ST=Paris (75), O=XXXXXX, OU=XXXXXXXX, CN=DMP SIGN</Issuer>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+          <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+            <Reference URI="#_09cd372d-da9e-4d8c-a225-b7304defd6fb">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                  <InclusiveNamespaces PrefixList="ds saml #default xsi" xmlns="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                </Transform>
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+              <DigestValue>uJdsyFXkRfDf+fXb8G4hrj1t3v4fsxY0Bpz1nkn+dPE=</DigestValue>
+            </Reference>
+          </SignedInfo>
+          <SignatureValue>XXXXXXX</SignatureValue>
+          <KeyInfo>
+            <X509Data>
+              <X509Certificate>WWWW</X509Certificate>
+            </X509Data>
+          </KeyInfo>
+        </Signature>
+        <Subject>
+          <!--Pour les traitements automatisés : Identifiant de la personne responsable du traitement-->
+          <NameID>XXXXX/XXXXXX</NameID>
+        </Subject>
+        <AuthnStatement AuthnInstant="2024-09-02T13:22:25.789Z">
+          <AuthnContext>
+            <!--valeur : unspecified-->
+            <AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</AuthnContextClassRef>
+          </AuthnContext>
+        </AuthnStatement>
+        <AttributeStatement>
+          <Attribute Name="VIHF_Version">
+            <AttributeValue>3.0</AttributeValue>
+          </Attribute>
+          <Attribute Name="Authentification_Mode">
+            <AttributeValue>INDIRECTE</AttributeValue>
+          </Attribute>
+          <Attribute Name="Secteur_Activite">
+             <!--Secteur d'activité paramétré dans la PFI-->
+            <AttributeValue>SA41^1.2.250.1.71.4.2.4</AttributeValue>
+          </Attribute>
+          <Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id">
+            <AttributeValue>XXXXXXX^^^&amp;1.2.250.1.213.1.4.10&amp;ISO^NH</AttributeValue>
+          </Attribute>
+          <Attribute Name="Ressource_URN">
+            <AttributeValue>urn:dmp</AttributeValue>
+          </Attribute>
+          <Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:subject-id">
+              <!--Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service.-->
+            <AttributeValue>XX,XX, XX</AttributeValue>
+          </Attribute>
+          <Attribute Name="Identifiant_Structure">
+            <AttributeValue>xxxxxxx</AttributeValue>
+          </Attribute>
+          <Attribute Name="LPS_Version">
+            <AttributeValue>1.2.0</AttributeValue>
+          </Attribute>
+          <Attribute Name="LPS_ID">
+            <AttributeValue>1.2.250.1.259.1.1.1234567890</AttributeValue>
+          </Attribute>
+          <Attribute Name="LPS_Nom">
+            <AttributeValue>EVOSIPS</AttributeValue>
+          </Attribute>
+          <Attribute Name="LPS_ID_HOMOLOGATION_DMP">
+            <AttributeValue>EVO-20200654-tmp8</AttributeValue>
+          </Attribute>
+          <Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:purposeofuse">
+            <AttributeValue>
+              <PurposeOfUse code="normal" codeSystem="1.2.250.1.213.1.1.4.248" codeSystemName="mode acces VIHF 1.0" displayName="Accès normal" xsi:type="CE" xmlns="urn:hl7-org:v3" />
+            </AttributeValue>
+          </Attribute>
+          <Attribute Name="urn:oasis:names:tc:xacml:2.0:subject:role">
+            <AttributeValue>
+              <Role code="AUTOMATE" codeSystem="1.2.250.1.213.1.1.4.6" displayName="AUTOMATE" xsi:type="CE" xmlns="urn:hl7-org:v3" />
+            </AttributeValue>
+          </Attribute>
+        </AttributeStatement>
+      </Assertion>
+    </Security>
+``
+
