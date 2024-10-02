@@ -484,7 +484,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
 Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
 
-<xmp style="display:none">
+<xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
       <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_09cd372d-da9e-4d8c-a225-b7304defd6fb" IssueInstant="2024-09-02T13:22:25.789Z" Version="2.0">
         <Issuer Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">C=FR, ST=Paris (75), O=XXXXXX, OU=XXXXXXXX, CN=DMP SIGN</Issuer>
