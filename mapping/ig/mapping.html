@@ -245,6 +245,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#mapping-vihf" id="markdown-toc-mapping-vihf">Mapping VIHF</a></li>
   <li><a href="#mapping-xds" id="markdown-toc-mapping-xds">Mapping XDS</a></li>
+  <li><a href="#proposition" id="markdown-toc-proposition">Proposition</a></li>
 </ul>
 
 </div>
@@ -284,7 +285,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
       <td style="text-align: left">Fourni par le LPS <br /> valeur de  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J61-HealthcareFacilityTypeCode-DMP.html">JDV_J61-HealthcareFacilityTypeCode-DMP</a></td>
-      <td><blockquote class="stu-note">  Donnée  non présente  dans le message et le CDA   </blockquote> </td>
+      <td><blockquote class="stu-note">  Donnée  non présente  dans le message et le CDA <br /> Possibilité de le recuperer de l'annuaire ? </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Subject/NameID</td>
@@ -720,6 +721,99 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="proposition">Proposition</h3>
+
+<h4 id="vihf">VIHF</h4>
+<p>Dans le cadre de l’authentification indirecte pour la PFI, on est dans le cadre d’un traitement automatisé.
+Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le message Hl7 V2.</p>
+
+<p><code class="language-plaintext highlighter-rouge">
+    &lt;Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"&gt;
+      &lt;Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_09cd372d-da9e-4d8c-a225-b7304defd6fb" IssueInstant="2024-09-02T13:22:25.789Z" Version="2.0"&gt;
+        &lt;Issuer Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"&gt;C=FR, ST=Paris (75), O=XXXXXX, OU=XXXXXXXX, CN=DMP SIGN&lt;/Issuer&gt;
+        &lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;
+          &lt;SignedInfo&gt;
+            &lt;CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /&gt;
+            &lt;SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /&gt;
+            &lt;Reference URI="#_09cd372d-da9e-4d8c-a225-b7304defd6fb"&gt;
+              &lt;Transforms&gt;
+                &lt;Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /&gt;
+                &lt;Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"&gt;
+                  &lt;InclusiveNamespaces PrefixList="ds saml #default xsi" xmlns="http://www.w3.org/2001/10/xml-exc-c14n#" /&gt;
+                &lt;/Transform&gt;
+              &lt;/Transforms&gt;
+              &lt;DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /&gt;
+              &lt;DigestValue&gt;uJdsyFXkRfDf+fXb8G4hrj1t3v4fsxY0Bpz1nkn+dPE=&lt;/DigestValue&gt;
+            &lt;/Reference&gt;
+          &lt;/SignedInfo&gt;
+          &lt;SignatureValue&gt;XXXXXXX&lt;/SignatureValue&gt;
+          &lt;KeyInfo&gt;
+            &lt;X509Data&gt;
+              &lt;X509Certificate&gt;WWWW&lt;/X509Certificate&gt;
+            &lt;/X509Data&gt;
+          &lt;/KeyInfo&gt;
+        &lt;/Signature&gt;
+        &lt;Subject&gt;
+          &lt;!--Pour les traitements automatisés : Identifiant de la personne responsable du traitement--&gt;
+          &lt;NameID&gt;XXXXX/XXXXXX&lt;/NameID&gt;
+        &lt;/Subject&gt;
+        &lt;AuthnStatement AuthnInstant="2024-09-02T13:22:25.789Z"&gt;
+          &lt;AuthnContext&gt;
+            &lt;!--valeur : unspecified--&gt;
+            &lt;AuthnContextClassRef&gt;urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified&lt;/AuthnContextClassRef&gt;
+          &lt;/AuthnContext&gt;
+        &lt;/AuthnStatement&gt;
+        &lt;AttributeStatement&gt;
+          &lt;Attribute Name="VIHF_Version"&gt;
+            &lt;AttributeValue&gt;3.0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="Authentification_Mode"&gt;
+            &lt;AttributeValue&gt;INDIRECTE&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="Secteur_Activite"&gt;
+             &lt;!--Secteur d'activité paramétré dans la PFI--&gt;
+            &lt;AttributeValue&gt;SA41^1.2.250.1.71.4.2.4&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id"&gt;
+            &lt;AttributeValue&gt;XXXXXXX^^^&amp;amp;1.2.250.1.213.1.4.10&amp;amp;ISO^NH&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="Ressource_URN"&gt;
+            &lt;AttributeValue&gt;urn:dmp&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:subject-id"&gt;
+              &lt;!--Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service.--&gt;
+            &lt;AttributeValue&gt;XX,XX, XX&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="Identifiant_Structure"&gt;
+            &lt;AttributeValue&gt;xxxxxxx&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="LPS_Version"&gt;
+            &lt;AttributeValue&gt;1.2.0&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="LPS_ID"&gt;
+            &lt;AttributeValue&gt;1.2.250.1.259.1.1.1234567890&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="LPS_Nom"&gt;
+            &lt;AttributeValue&gt;EVOSIPS&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="LPS_ID_HOMOLOGATION_DMP"&gt;
+            &lt;AttributeValue&gt;EVO-20200654-tmp8&lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:purposeofuse"&gt;
+            &lt;AttributeValue&gt;
+              &lt;PurposeOfUse code="normal" codeSystem="1.2.250.1.213.1.1.4.248" codeSystemName="mode acces VIHF 1.0" displayName="Accès normal" xsi:type="CE" xmlns="urn:hl7-org:v3" /&gt;
+            &lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+          &lt;Attribute Name="urn:oasis:names:tc:xacml:2.0:subject:role"&gt;
+            &lt;AttributeValue&gt;
+              &lt;Role code="AUTOMATE" codeSystem="1.2.250.1.213.1.1.4.6" displayName="AUTOMATE" xsi:type="CE" xmlns="urn:hl7-org:v3" /&gt;
+            &lt;/AttributeValue&gt;
+          &lt;/Attribute&gt;
+        &lt;/AttributeStatement&gt;
+      &lt;/Assertion&gt;
+    &lt;/Security&gt;
+</code></p>
+
 
 
 
@@ -761,7 +855,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 30, 2024 08:03+0000">2024-09-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 2, 2024 10:14+0000">2024-10-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
