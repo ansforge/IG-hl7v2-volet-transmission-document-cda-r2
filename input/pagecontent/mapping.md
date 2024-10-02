@@ -479,6 +479,8 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 ### Proposition
 
 #### VIHF
+
+##### A court terme
 Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
 Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
 
@@ -568,4 +570,17 @@ Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message
       </Assertion>
     </Security>
 ``
+##### A moyen terme
+Faire evoluer le volet pour integrer ces données manquantes
+
+
+#### Metadonnée du lot de soumission
+##### A court terme
+Pour les métadonnées manquantes du lot de soumission : 
+- authorRole : Ne pas remplir cette donnée car non obligatoire
+- authorSpecialty : Ne pas remplir cette donnée car non obligatoire
+- contentTypeCode : Cette donnée doit être déduite par la PFI (table de paramétrage, .....)
+
+##### A moyen terme
+Faire evoluer le volet pour integrer ces données manquantes
 
