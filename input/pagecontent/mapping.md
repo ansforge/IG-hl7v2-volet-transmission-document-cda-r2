@@ -483,7 +483,10 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 ##### A court terme
 Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
 Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
+
 ###### VIHF
+
+
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -536,23 +539,14 @@ Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message
  <br> <b>Pour les autres : </b>
  <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> - TRE_A00_ProducteurDocNonPS <br> -  TRE_R95_UsagerTitre <br> - TRE_R94_ProfessionSocial <br> -  TRE_R291_AutreProfession
       </td>
-      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire (avec le problème d’un PS avec plusieurs exercice ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br> <blockquote class="stu-note"> AUTOMATE </blockquote> </td>
     </tr>
-    <tr>
-      <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">2e occurrence uniquement et obligatoirement pour les médecins  et pharmaciens
-     <br>   <b>Pour les médecins :</b>
-<br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de TRE_R01_EnsembleSavoirFaire_CISIS
- <br> <b>Pour les pharmacines  ; </b> 
- <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de  TRE_G05_SousSectionTableauCNOP     
-      </td>
-      <td>AUTOMATE </td>
-    </tr>
+
   
     <tr>
       <td style="text-align: left">//Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef</td>
       <td style="text-align: left">Prendre la valeur la plus appropriée parmi les valeurs possibles indiquées dans le document http://docs.oasis-open.org/security/saml/v2.0/samlauthn-context-2.0-os.pdf <br>La valeur utilisée doit être cohérente avec le mode d’authentification locale de l’utilisateur dans le LPS</td>
-      <td>unspecified </td>
+      <td> <blockquote class="stu-note"> unspecified </blockquote> </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/@xmnls</td>
@@ -644,6 +638,7 @@ Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message
 
 
 ###### Exemple 
+
 <xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
       <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_09cd372d-da9e-4d8c-a225-b7304defd6fb" IssueInstant="2024-09-02T13:22:25.789Z" Version="2.0">
