@@ -480,11 +480,26 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 
 #### VIHF
 
-##### A court terme
+##### Strategie 1 (Automate)
 Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
 Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
 
-###### VIHF
+##### Spécification
+Enlever des spécifications "volet-transmission-document-cda-r2", les références qui indiquent que le segment PRT est utilisé pour la création du VIHF : 
+- page 32 : Ce segment est requis dans le cas d’une publication du document sur le DMP. Il permet à la PFI de générer le jeton VIHF Transmission de documents CDA en HL7v2 lors de l’alimentation du DMP ainsi que la métadonnée représentant l’auteur et la structure de l’auteur du lot de soumission
+- Page 33 : Ce segment est requis, en particulier dans le cas d’une publication du document sur le DMP, pour permettre à la PFI de générer le VIHF ainsi que l’auteur du lot de soumission
+
+##### REM DPI
+Impacts sur les REM DPI : 
+- SC.DMP/CONF.12
+"Vérifier que pour chaque transaction DMP, le système transmet les informations d'identification nécessaires à la création du jeton VIHF  à la fonction PFI. 
+
+Étapes du scénario :
+1. Se mettre en condition où un ordre d'envoi est émis depuis le système vers la PFI
+2. Montrer que les informations d’identification (FINESS géographique de l'établissement et l'identifiant du professionnel ou du dispositif à l'origine de la demande d'alimentation du DMP) sont transmises à la PFI via le flux HL7 V2"
+
+  
+###### Contenu du VIHF
 
 
 <table class="table table-bordered">
@@ -637,7 +652,7 @@ Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message
 </table>
 
 
-###### Exemple 
+###### Exemple du VIHF
 
 <xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
@@ -730,12 +745,13 @@ Faire evoluer le volet pour integrer ces données manquantes
 
 
 #### Metadonnée du lot de soumission
-##### A court terme
+##### Strategie 1 
 Pour les métadonnées manquantes du lot de soumission : 
 - authorRole : Ne pas remplir cette donnée car non obligatoire
 - authorSpecialty : Ne pas remplir cette donnée car non obligatoire
 - contentTypeCode : Cette donnée doit être déduite par la PFI (table de paramétrage, .....)
 
-##### A moyen terme
+
+##### Strategie 2 
 Faire evoluer le volet pour integrer ces données manquantes
 
