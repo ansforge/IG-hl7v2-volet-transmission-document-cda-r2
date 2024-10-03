@@ -484,12 +484,20 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
 Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
 
-##### Spécification
+###### Contenu du VIHF
+
+Pour les données manquantes du VIHF : 
+- Secteur_Activite : Paramétrage dans la PFI
+- urn:oasis:names:tc:xacml:2.0:subject:role : "AUTOMATE"
+- //Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef : unspecified
+
+- 
+##### Impacts  : Spécification
 Enlever des spécifications "volet-transmission-document-cda-r2", les références qui indiquent que le segment PRT est utilisé pour la création du VIHF : 
 - page 32 : Ce segment est requis dans le cas d’une publication du document sur le DMP. Il permet à la PFI de générer le jeton VIHF Transmission de documents CDA en HL7v2 lors de l’alimentation du DMP ainsi que la métadonnée représentant l’auteur et la structure de l’auteur du lot de soumission
 - Page 33 : Ce segment est requis, en particulier dans le cas d’une publication du document sur le DMP, pour permettre à la PFI de générer le VIHF ainsi que l’auteur du lot de soumission
 
-##### REM DPI
+##### Impacts  : REM DPI
 Impacts sur les REM DPI : 
 - SC.DMP/CONF.12
 "Vérifier que pour chaque transaction DMP, le système transmet les informations d'identification nécessaires à la création du jeton VIHF  à la fonction PFI. 
@@ -499,160 +507,31 @@ Impacts sur les REM DPI :
 2. Montrer que les informations d’identification (FINESS géographique de l'établissement et l'identifiant du professionnel ou du dispositif à l'origine de la demande d'alimentation du DMP) sont transmises à la PFI via le flux HL7 V2"
 
   
-###### Contenu du VIHF
+
+##### Strategie 2 
+Faire evoluer le volet pour integrer ces données manquantes : 
+- Secteur_Activite
+- Service de l’utilisateur
+- Roles de l'utilisateur
+- AuthnContextClassRef
 
 
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th style="text-align: left">Champs du VIHF</th>
-      <th style="text-align: left">Commentaire</th>
-      <th>Provenance de la donnée</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">//Assertion/ds:Signature</td>
-      <td style="text-align: left">Signature XML-DSIG avec le certificat de cachet de la structure de soinsMode EJ</td>
-      <td>Certificat</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/Issuer</td>
-      <td style="text-align: left">DN du certificat de cachet utilisé pour signer l’assertion de la structure de soins</td>
-      <td>Certificat</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/Issuer/@Format</td>
-      <td style="text-align: left">Constante :”urn:oasis:names:tc:SAML:1.1:nameidformat:X509SubjectName”</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Identifiant_Structure</td>
-      <td style="text-align: left">Struct_IdNat de la structure de soins</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Secteur_Activite</td>
-      <td style="text-align: left">Fourni par le LPS <br> valeur de  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J61-HealthcareFacilityTypeCode-DMP.html">JDV_J61-HealthcareFacilityTypeCode-DMP</a></td>
-      <td><blockquote class="stu-note"> Paramétrage dans la PFI </blockquote> </td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/Subject/NameID</td>
-      <td style="text-align: left">Fourni par le LPS <br>Pour un utilisateur humain : Identifiant du professionnel <br> Pour les traitements automatisés : Identifiant de la personne responsable du traitement</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:subject:subject-id</td>
-      <td style="text-align: left">Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service </td>
-    </tr>
-    <tr>
-      <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">1re occurrence obligatoire
-      <br>
-        <b>Pour les professionnels :</b>
-<br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> -  TRE TRE_G15-ProfessionSante <br> - TRE_G16_ProfessionFormation (Professions en formation (carte CPF))
- <br> <b>Pour les autres : </b>
- <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> - TRE_A00_ProducteurDocNonPS <br> -  TRE_R95_UsagerTitre <br> - TRE_R94_ProfessionSocial <br> -  TRE_R291_AutreProfession
-      </td>
-      <td><br> <blockquote class="stu-note"> AUTOMATE </blockquote> </td>
-    </tr>
 
-  
-    <tr>
-      <td style="text-align: left">//Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef</td>
-      <td style="text-align: left">Prendre la valeur la plus appropriée parmi les valeurs possibles indiquées dans le document http://docs.oasis-open.org/security/saml/v2.0/samlauthn-context-2.0-os.pdf <br>La valeur utilisée doit être cohérente avec le mode d’authentification locale de l’utilisateur dans le LPS</td>
-      <td> <blockquote class="stu-note"> unspecified </blockquote> </td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/@xmnls</td>
-      <td style="text-align: left">Constante :”urn:oasis:names:tc:SAML:2.0:assertion”</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/@ID</td>
-      <td style="text-align: left">identifiant unique de l’assertion</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/@IssueInstant</td>
-      <td style="text-align: left">Date et heure d’émission de l’assertion SAML</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/AuthnStatement/@AuthnInstant</td>
-      <td style="text-align: left">Date/Heure de connexion de l’utilisateur dans le système source</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/Conditions/AudienceRestriction</td>
-      <td style="text-align: left">Ne pas renseigner</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/Conditions/@NotBefore</td>
-      <td style="text-align: left">Facultatif</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">//Assertion/Conditions/@NotAfter</td>
-      <td style="text-align: left">Facultatif</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">VIHF_Version</td>
-      <td style="text-align: left">Constante : “4.0”</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Authentification_Mode</td>
-      <td style="text-align: left">Constante : “INDIRECTE”</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:resource:resource-id</td>
-      <td style="text-align: left">INS du patient</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PID-3</pre></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Ressource_URN</td>
-      <td style="text-align: left">Constante : “urn:dmp”</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:subject:purposeofuse</td>
-      <td style="text-align: left">code=”normal” : pour un accès normal</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:resource:patient:hl7:confidentiality-code</td>
-      <td style="text-align: left">Obligatoire si la fonctionnalité est activée19 et si demande de connexion secrète au DMP.</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">LPS_ID</td>
-      <td style="text-align: left">Facultatif</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">LPS_Nom</td>
-      <td style="text-align: left">Nom du LPS qui génère le jeton VIHF</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">LPS_Version</td>
-      <td style="text-align: left">N° de version du LPS qui génère le jeton VIHF</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">LPS_ID_HOMOLOGATION_DMP</td>
-      <td style="text-align: left">N° d’homologation du LPS.</td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
+#### Metadonnée du lot de soumission
+##### Strategie 1 
+Pour les métadonnées manquantes du lot de soumission : 
+- authorRole : Ne pas remplir cette donnée car non obligatoire
+- authorSpecialty : Ne pas remplir cette donnée car non obligatoire
+- contentTypeCode : Cette donnée doit être déduite par la PFI (table de paramétrage, .....)
+
+##### Strategie 2 
+Faire evoluer le volet pour integrer ces données manquantes
 
 
-###### Exemple du VIHF
+
+
+
+##### Exemple du VIHF avec automate
 
 <xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
@@ -740,23 +619,3 @@ Impacts sur les REM DPI :
       </Assertion>
     </Security>
   </xmp>
-##### Strategie 2 
-Faire evoluer le volet pour integrer ces données manquantes : 
-- Secteur_Activite
-- Service de l’utilisateur
-- Roles de l'utilisateur
-- AuthnContextClassRef
-
-
-
-#### Metadonnée du lot de soumission
-##### Strategie 1 
-Pour les métadonnées manquantes du lot de soumission : 
-- authorRole : Ne pas remplir cette donnée car non obligatoire
-- authorSpecialty : Ne pas remplir cette donnée car non obligatoire
-- contentTypeCode : Cette donnée doit être déduite par la PFI (table de paramétrage, .....)
-
-
-##### Strategie 2 
-Faire evoluer le volet pour integrer ces données manquantes
-
