@@ -227,7 +227,9 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">contentTypeCode</td>
       <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br> Valeur de <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J59-ContentTypeCode-DMP.html">JDV_J59-ContentTypeCode-DMP</a></td>
       <td>requis</td>
-      <td><blockquote class="stu-note">  Donnée non présente dans le message</blockquote> </td>
+      <td><blockquote class="stu-note">  Donnée non présente dans le message mais potentielement déductible</blockquote><br>
+      <b>HL7V2</b> :PV1-2 : I=> 03; O=>07; R=>19; N=>97; E=> ? </pre>
+      </td>
     </tr>
     <tr>
       <td style="text-align: left">patientId</td>
@@ -522,7 +524,7 @@ Faire evoluer le volet pour integrer ces données manquantes :
 Pour les métadonnées manquantes du lot de soumission : 
 - authorRole : Ne pas remplir cette donnée car non obligatoire
 - authorSpecialty : Ne pas remplir cette donnée car non obligatoire
-- contentTypeCode : Cette donnée doit être déduite par la PFI (table de paramétrage, .....)
+- contentTypeCode : Deduction du champ PV1-2 ou déuite par la PFI d'une table de paramétrage
 
 ##### Strategie 2 (moyen terme)
 Faire evoluer le volet pour integrer ces données manquantes
