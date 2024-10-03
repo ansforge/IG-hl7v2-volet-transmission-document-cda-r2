@@ -533,7 +533,7 @@ Faire evoluer le volet pour integrer ces données manquantes
 
 
 
-##### Exemple du VIHF avec automate
+#### Exemple du VIHF avec automate
 
 <xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
