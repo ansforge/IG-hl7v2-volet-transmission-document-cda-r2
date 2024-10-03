@@ -480,7 +480,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
 
 #### VIHF
 
-##### Strategie 1 (Automate)
+##### Strategie 1 (Automate) (court terme)
 Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
 Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
 
@@ -508,7 +508,7 @@ Impacts sur les REM DPI :
 
   
 
-##### Strategie 2 
+##### Strategie 2 (moyen terme)
 Faire evoluer le volet pour integrer ces données manquantes : 
 - Secteur_Activite
 - Service de l’utilisateur
@@ -518,13 +518,13 @@ Faire evoluer le volet pour integrer ces données manquantes :
 
 
 #### Metadonnée du lot de soumission
-##### Strategie 1 
+##### Strategie 1 (court terme)
 Pour les métadonnées manquantes du lot de soumission : 
 - authorRole : Ne pas remplir cette donnée car non obligatoire
 - authorSpecialty : Ne pas remplir cette donnée car non obligatoire
 - contentTypeCode : Cette donnée doit être déduite par la PFI (table de paramétrage, .....)
 
-##### Strategie 2 
+##### Strategie 2 (moyen terme)
 Faire evoluer le volet pour integrer ces données manquantes
 
 
