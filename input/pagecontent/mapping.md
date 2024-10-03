@@ -740,8 +740,13 @@ Impacts sur les REM DPI :
       </Assertion>
     </Security>
   </xmp>
-##### A moyen terme
-Faire evoluer le volet pour integrer ces données manquantes
+##### Strategie 2 
+Faire evoluer le volet pour integrer ces données manquantes : 
+- Secteur_Activite
+- Service de l’utilisateur
+- Roles de l'utilisateur
+- AuthnContextClassRef
+
 
 
 #### Metadonnée du lot de soumission
