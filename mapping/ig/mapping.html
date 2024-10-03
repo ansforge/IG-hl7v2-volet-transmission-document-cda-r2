@@ -725,11 +725,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="vihf">VIHF</h4>
 
-<h5 id="a-court-terme">A court terme</h5>
+<h5 id="strategie-1-automate">Strategie 1 (Automate)</h5>
 <p>Dans le cadre de l’authentification indirecte pour la PFI, on est dans le cadre d’un traitement automatisé.
 Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le message Hl7 V2.</p>
 
-<h6 id="vihf-1">VIHF</h6>
+<h5 id="spécification">Spécification</h5>
+<p>Enlever des spécifications “volet-transmission-document-cda-r2”, les références qui indiquent que le segment PRT est utilisé pour la création du VIHF :</p>
+<ul>
+  <li>page 32 : Ce segment est requis dans le cas d’une publication du document sur le DMP. Il permet à la PFI de générer le jeton VIHF Transmission de documents CDA en HL7v2 lors de l’alimentation du DMP ainsi que la métadonnée représentant l’auteur et la structure de l’auteur du lot de soumission</li>
+  <li>Page 33 : Ce segment est requis, en particulier dans le cas d’une publication du document sur le DMP, pour permettre à la PFI de générer le VIHF ainsi que l’auteur du lot de soumission</li>
+</ul>
+
+<h5 id="rem-dpi">REM DPI</h5>
+<p>Impacts sur les REM DPI :</p>
+<ul>
+  <li>SC.DMP/CONF.12
+“Vérifier que pour chaque transaction DMP, le système transmet les informations d’identification nécessaires à la création du jeton VIHF  à la fonction PFI.</li>
+</ul>
+
+<p>Étapes du scénario :</p>
+<ol>
+  <li>Se mettre en condition où un ordre d’envoi est émis depuis le système vers la PFI</li>
+  <li>Montrer que les informations d’identification (FINESS géographique de l’établissement et l’identifiant du professionnel ou du dispositif à l’origine de la demande d’alimentation du DMP) sont transmises à la PFI via le flux HL7 V2”</li>
+</ol>
+
+<h6 id="contenu-du-vihf">Contenu du VIHF</h6>
 
 <table class="table table-bordered">
   <thead>
@@ -880,7 +900,7 @@ Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le messa
   </tbody>
 </table>
 
-<h6 id="exemple">Exemple</h6>
+<h6 id="exemple-du-vihf">Exemple du VIHF</h6>
 
 <xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
@@ -972,7 +992,7 @@ Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le messa
 <p>Faire evoluer le volet pour integrer ces données manquantes</p>
 
 <h4 id="metadonnée-du-lot-de-soumission">Metadonnée du lot de soumission</h4>
-<h5 id="a-court-terme-1">A court terme</h5>
+<h5 id="strategie-1">Strategie 1</h5>
 <p>Pour les métadonnées manquantes du lot de soumission :</p>
 <ul>
   <li>authorRole : Ne pas remplir cette donnée car non obligatoire</li>
@@ -980,7 +1000,7 @@ Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le messa
   <li>contentTypeCode : Cette donnée doit être déduite par la PFI (table de paramétrage, …..)</li>
 </ul>
 
-<h5 id="a-moyen-terme-1">A moyen terme</h5>
+<h5 id="strategie-2">Strategie 2</h5>
 <p>Faire evoluer le volet pour integrer ces données manquantes</p>
 
 
@@ -1024,7 +1044,7 @@ Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le messa
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 2, 2024 17:06+0000">2024-10-02</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 3, 2024 11:35+0000">2024-10-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
