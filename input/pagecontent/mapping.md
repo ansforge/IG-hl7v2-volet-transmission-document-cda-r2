@@ -534,7 +534,7 @@ Faire evoluer le volet pour integrer ces données manquantes
 
 
 #### Exemple du VIHF avec automate
-
+```xml
 <xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
       <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_09cd372d-da9e-4d8c-a225-b7304defd6fb" IssueInstant="2024-09-02T13:22:25.789Z" Version="2.0">
@@ -621,3 +621,4 @@ Faire evoluer le volet pour integrer ces données manquantes
       </Assertion>
     </Security>
   </xmp>
+```
