@@ -783,93 +783,93 @@ Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le messa
 <p>Faire evoluer le volet pour integrer ces données manquantes</p>
 
 <h4 id="exemple-du-vihf-avec-automate">Exemple du VIHF avec automate</h4>
-
-<xmp>
-    <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-      <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_09cd372d-da9e-4d8c-a225-b7304defd6fb" IssueInstant="2024-09-02T13:22:25.789Z" Version="2.0">
-        <Issuer Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">C=FR, ST=Paris (75), O=XXXXXX, OU=XXXXXXXX, CN=DMP SIGN</Issuer>
-        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-          <SignedInfo>
-            <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
-            <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
-            <Reference URI="#_09cd372d-da9e-4d8c-a225-b7304defd6fb">
-              <Transforms>
-                <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
-                  <InclusiveNamespaces PrefixList="ds saml #default xsi" xmlns="http://www.w3.org/2001/10/xml-exc-c14n#" />
-                </Transform>
-              </Transforms>
-              <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-              <DigestValue>uJdsyFXkRfDf+fXb8G4hrj1t3v4fsxY0Bpz1nkn+dPE=</DigestValue>
-            </Reference>
-          </SignedInfo>
-          <SignatureValue>XXXXXXX</SignatureValue>
-          <KeyInfo>
-            <X509Data>
-              <X509Certificate>WWWW</X509Certificate>
-            </X509Data>
-          </KeyInfo>
-        </Signature>
-        <Subject>
-          <!--Pour les traitements automatisés : Identifiant de la personne responsable du traitement-->
-          <NameID>XXXXX/XXXXXX</NameID>
-        </Subject>
-        <AuthnStatement AuthnInstant="2024-09-02T13:22:25.789Z">
-          <AuthnContext>
-            <!--valeur : unspecified-->
-            <AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</AuthnContextClassRef>
-          </AuthnContext>
-        </AuthnStatement>
-        <AttributeStatement>
-          <Attribute Name="VIHF_Version">
-            <AttributeValue>3.0</AttributeValue>
-          </Attribute>
-          <Attribute Name="Authentification_Mode">
-            <AttributeValue>INDIRECTE</AttributeValue>
-          </Attribute>
-          <Attribute Name="Secteur_Activite">
-             <!--Secteur d'activité paramétré dans la PFI-->
-            <AttributeValue>SA41^1.2.250.1.71.4.2.4</AttributeValue>
-          </Attribute>
-          <Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id">
-            <AttributeValue>XXXXXXX^^^&amp;1.2.250.1.213.1.4.10&amp;ISO^NH</AttributeValue>
-          </Attribute>
-          <Attribute Name="Ressource_URN">
-            <AttributeValue>urn:dmp</AttributeValue>
-          </Attribute>
-          <Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:subject-id">
-              <!--Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service.-->
-            <AttributeValue>XX,XX, XX</AttributeValue>
-          </Attribute>
-          <Attribute Name="Identifiant_Structure">
-            <AttributeValue>xxxxxxx</AttributeValue>
-          </Attribute>
-          <Attribute Name="LPS_Version">
-            <AttributeValue>1.2.0</AttributeValue>
-          </Attribute>
-          <Attribute Name="LPS_ID">
-            <AttributeValue>1.2.250.1.259.1.1.1234567890</AttributeValue>
-          </Attribute>
-          <Attribute Name="LPS_Nom">
-            <AttributeValue>EVOSIPS</AttributeValue>
-          </Attribute>
-          <Attribute Name="LPS_ID_HOMOLOGATION_DMP">
-            <AttributeValue>EVO-20200654-tmp8</AttributeValue>
-          </Attribute>
-          <Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:purposeofuse">
-            <AttributeValue>
-              <PurposeOfUse code="normal" codeSystem="1.2.250.1.213.1.1.4.248" codeSystemName="mode acces VIHF 1.0" displayName="Accès normal" xsi:type="CE" xmlns="urn:hl7-org:v3" />
-            </AttributeValue>
-          </Attribute>
-          <Attribute Name="urn:oasis:names:tc:xacml:2.0:subject:role">
-            <AttributeValue>
-              <Role code="AUTOMATE" codeSystem="1.2.250.1.213.1.1.4.6" displayName="AUTOMATE" xsi:type="CE" xmlns="urn:hl7-org:v3" />
-            </AttributeValue>
-          </Attribute>
-        </AttributeStatement>
-      </Assertion>
-    </Security>
-  </xmp>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;xmp&gt;</span>
+    <span class="nt">&lt;Security</span> <span class="na">xmlns=</span><span class="s">"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;Assertion</span> <span class="na">xmlns=</span><span class="s">"urn:oasis:names:tc:SAML:2.0:assertion"</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">ID=</span><span class="s">"_09cd372d-da9e-4d8c-a225-b7304defd6fb"</span> <span class="na">IssueInstant=</span><span class="s">"2024-09-02T13:22:25.789Z"</span> <span class="na">Version=</span><span class="s">"2.0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Issuer</span> <span class="na">Format=</span><span class="s">"urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"</span><span class="nt">&gt;</span>C=FR, ST=Paris (75), O=XXXXXX, OU=XXXXXXXX, CN=DMP SIGN<span class="nt">&lt;/Issuer&gt;</span>
+        <span class="nt">&lt;Signature</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/09/xmldsig#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;SignedInfo&gt;</span>
+            <span class="nt">&lt;CanonicalizationMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/10/xml-exc-c14n#"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;SignatureMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"#_09cd372d-da9e-4d8c-a225-b7304defd6fb"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;Transforms&gt;</span>
+                <span class="nt">&lt;Transform</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2000/09/xmldsig#enveloped-signature"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;Transform</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/10/xml-exc-c14n#"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;InclusiveNamespaces</span> <span class="na">PrefixList=</span><span class="s">"ds saml #default xsi"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2001/10/xml-exc-c14n#"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;/Transform&gt;</span>
+              <span class="nt">&lt;/Transforms&gt;</span>
+              <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;DigestValue&gt;</span>uJdsyFXkRfDf+fXb8G4hrj1t3v4fsxY0Bpz1nkn+dPE=<span class="nt">&lt;/DigestValue&gt;</span>
+            <span class="nt">&lt;/Reference&gt;</span>
+          <span class="nt">&lt;/SignedInfo&gt;</span>
+          <span class="nt">&lt;SignatureValue&gt;</span>XXXXXXX<span class="nt">&lt;/SignatureValue&gt;</span>
+          <span class="nt">&lt;KeyInfo&gt;</span>
+            <span class="nt">&lt;X509Data&gt;</span>
+              <span class="nt">&lt;X509Certificate&gt;</span>WWWW<span class="nt">&lt;/X509Certificate&gt;</span>
+            <span class="nt">&lt;/X509Data&gt;</span>
+          <span class="nt">&lt;/KeyInfo&gt;</span>
+        <span class="nt">&lt;/Signature&gt;</span>
+        <span class="nt">&lt;Subject&gt;</span>
+          <span class="c">&lt;!--Pour les traitements automatisés : Identifiant de la personne responsable du traitement--&gt;</span>
+          <span class="nt">&lt;NameID&gt;</span>XXXXX/XXXXXX<span class="nt">&lt;/NameID&gt;</span>
+        <span class="nt">&lt;/Subject&gt;</span>
+        <span class="nt">&lt;AuthnStatement</span> <span class="na">AuthnInstant=</span><span class="s">"2024-09-02T13:22:25.789Z"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;AuthnContext&gt;</span>
+            <span class="c">&lt;!--valeur : unspecified--&gt;</span>
+            <span class="nt">&lt;AuthnContextClassRef&gt;</span>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified<span class="nt">&lt;/AuthnContextClassRef&gt;</span>
+          <span class="nt">&lt;/AuthnContext&gt;</span>
+        <span class="nt">&lt;/AuthnStatement&gt;</span>
+        <span class="nt">&lt;AttributeStatement&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"VIHF_Version"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>3.0<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"Authentification_Mode"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>INDIRECTE<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"Secteur_Activite"</span><span class="nt">&gt;</span>
+             <span class="c">&lt;!--Secteur d'activité paramétré dans la PFI--&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>SA41^1.2.250.1.71.4.2.4<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"urn:oasis:names:tc:xacml:2.0:resource:resource-id"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>XXXXXXX^^^<span class="ni">&amp;amp;</span>1.2.250.1.213.1.4.10<span class="ni">&amp;amp;</span>ISO^NH<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"Ressource_URN"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>urn:dmp<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"urn:oasis:names:tc:xspa:1.0:subject:subject-id"</span><span class="nt">&gt;</span>
+              <span class="c">&lt;!--Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service.--&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>XX,XX, XX<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"Identifiant_Structure"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>xxxxxxx<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"LPS_Version"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>1.2.0<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"LPS_ID"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>1.2.250.1.259.1.1.1234567890<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"LPS_Nom"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>EVOSIPS<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"LPS_ID_HOMOLOGATION_DMP"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>EVO-20200654-tmp8<span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"urn:oasis:names:tc:xspa:1.0:subject:purposeofuse"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>
+              <span class="nt">&lt;PurposeOfUse</span> <span class="na">code=</span><span class="s">"normal"</span> <span class="na">codeSystem=</span><span class="s">"1.2.250.1.213.1.1.4.248"</span> <span class="na">codeSystemName=</span><span class="s">"mode acces VIHF 1.0"</span> <span class="na">displayName=</span><span class="s">"Accès normal"</span> <span class="na">xsi:type=</span><span class="s">"CE"</span> <span class="na">xmlns=</span><span class="s">"urn:hl7-org:v3"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+          <span class="nt">&lt;Attribute</span> <span class="na">Name=</span><span class="s">"urn:oasis:names:tc:xacml:2.0:subject:role"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;AttributeValue&gt;</span>
+              <span class="nt">&lt;Role</span> <span class="na">code=</span><span class="s">"AUTOMATE"</span> <span class="na">codeSystem=</span><span class="s">"1.2.250.1.213.1.1.4.6"</span> <span class="na">displayName=</span><span class="s">"AUTOMATE"</span> <span class="na">xsi:type=</span><span class="s">"CE"</span> <span class="na">xmlns=</span><span class="s">"urn:hl7-org:v3"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/AttributeValue&gt;</span>
+          <span class="nt">&lt;/Attribute&gt;</span>
+        <span class="nt">&lt;/AttributeStatement&gt;</span>
+      <span class="nt">&lt;/Assertion&gt;</span>
+    <span class="nt">&lt;/Security&gt;</span>
+  <span class="nt">&lt;/xmp&gt;</span>
+</code></pre></div></div>
 
 
 
@@ -912,7 +912,7 @@ Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le messa
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 3, 2024 17:38+0000">2024-10-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 4, 2024 09:40+0000">2024-10-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
