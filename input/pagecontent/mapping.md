@@ -490,8 +490,9 @@ Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message
 
 Pour les données manquantes du VIHF : 
 - Secteur_Activite : Paramétrage dans la PFI
+- //Assertion/Subject/NameID : Responsable du traitement
 - urn:oasis:names:tc:xacml:2.0:subject:role : "AUTOMATE"
-- //Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef : unspecified
+- //Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef : unspecified ou récupération de l'information sur un paramétrage de la PFI en fonction de l'emeteur du flux
 
 - 
 ##### Impacts  : Spécification
