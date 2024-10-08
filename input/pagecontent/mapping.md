@@ -228,7 +228,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br> Valeur de <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J59-ContentTypeCode-DMP.html">JDV_J59-ContentTypeCode-DMP</a></td>
       <td>requis</td>
       <td><blockquote class="stu-note">  Donnée non présente dans le message mais potentielement déductible</blockquote><br>
-      <pre><b>HL7V2</b> :PV1-2 : I=> 03; O=>07; R=>19; N=>97; E=> ? </pre>
+      <pre><b>HL7V2</b> :PV1-2 : I => 03; O=>07; R=>19; N=>97; E=> 7 </pre>
       </td>
     </tr>
     <tr>
