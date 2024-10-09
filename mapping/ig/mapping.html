@@ -286,9 +286,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: left">Secteur_Activite</td>
       <td style="text-align: left">Fourni par le LPS <br /> valeur de  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J61-HealthcareFacilityTypeCode-DMP.html">JDV_J61-HealthcareFacilityTypeCode-DMP</a></td>
       <td> Provenance de la donnée : 
-          <br />- Parametrage dans  la PFI
-          <br />- Interogation du DPI
-          <br />- Interogation de l'annuaire à partir du finess <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
+          <br />- Paramétrage dans  la PFI
+          <br />- Interrogation du DPI
+          <br />- Interrogation de l'annuaire à partir du FINESS 
+<pre class="highlight language-plaintext" style="white-space: normal;">Récupération du FINESS <br /><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
    </td>
     </tr>
     <tr>
@@ -311,10 +312,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
  <br />- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br /> - TRE_A00_ProducteurDocNonPS <br /> -  TRE_R95_UsagerTitre <br /> - TRE_R94_ProfessionSocial <br /> -  TRE_R291_AutreProfession
       </td>
       <td>Provenance de la donnée : 
-         <br />- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
-         <br />- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
-        <br /> - "AUTOMATE" quand les autres cas ne sont pas possibles
-         
+         <br />- Interrogation du DPI à partir de l'identifiant du PS
+         <br />- Interogation de l'annuaire (pour les identifiants nationaux) 
+        <br /> - Valeur "AUTOMATE" quand les autres cas ne sont pas possibles
+        <br />  <pre class="highlight language-plaintext" style="white-space: normal;">Récupération de l'identifiant <br /><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
  </td>
     </tr>
     <tr>
@@ -327,8 +328,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </td>
       <td><br /> 
 Provenance de la donnée : 
-         <br />- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
-         <br />- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+         <br />- Interogation du DPI à partir de l'identifiant du PS
+         <br />- Interogation de l'annuaire (pour les identifiants nationaux) 
+  <br />  <pre class="highlight language-plaintext" style="white-space: normal;">Récupération de l'identifiant <br /><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
       
       </td>
     </tr>
@@ -339,8 +341,11 @@ Provenance de la donnée :
       Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de   TRE_R85_RolePriseCharge
       </td>
       <td><br />Provenance de la donnée : 
-         <br />- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
-         <br />- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+Provenance de la donnée : 
+         <br />- Interogation du DPI à partir de l'identifiant du PS
+         <br />- Interogation de l'annuaire (pour les identifiants nationaux) 
+  <br />  <pre class="highlight language-plaintext" style="white-space: normal;">Récupération de l'identifiant <br /><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+      
        </td>
     </tr>
     <tr>
@@ -351,8 +356,11 @@ Provenance de la donnée :
       Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de :  TRE_R22_GenreActivite 
       </td>
       <td><br />Provenance de la donnée : 
-         <br />- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
-         <br />- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+Provenance de la donnée : 
+         <br />- Interogation du DPI à partir de l'identifiant du PS
+         <br />- Interogation de l'annuaire (pour les identifiants nationaux) 
+  <br />  <pre class="highlight language-plaintext" style="white-space: normal;">Récupération de l'identifiant <br /><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+      
        </td>
     </tr>
     <tr>
@@ -555,12 +563,8 @@ Provenance de la donnée :
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cet attribut représente la structure de l’auteur.</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
-        <br /><blockquote class="stu-note"> 
-        Sur-contrainte par rapport au ci-sis l'"authorInstitution" de la fiche et du lot doivent être identiques.
-        <br />Il faudrait enlever cette regle
-        <br />Cela implique qu'il ne faut pas appliquer ce mapping =&gt; CDA : author/assignedAuthor/representedOrganization.
-        </blockquote>  </td>
+      <td><pre class="highlight language-plaintext" style="white-space: normal;"><b>CDA </b> : author/assignedAuthor/representedOrganization </pre>
+     </td>
     </tr>
     <tr>
       <td style="text-align: left">authorPerson</td>
@@ -939,7 +943,7 @@ Il ne faut donc  pas tenir compte de l’identifiant du PS passée dans le messa
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 14:40+0000">2024-10-09</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 16:56+0000">2024-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
