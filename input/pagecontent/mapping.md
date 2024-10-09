@@ -508,65 +508,11 @@ Provenance de la donnée :
 
 
 
-### Proposition
-
-#### VIHF
-
-##### Strategie 1 (Automate) (court terme)
-Dans le cadre de l'authentification indirecte pour la PFI, on est dans le cadre d'un traitement automatisé.
-Il ne faut donc  pas tenir compte de l'identifiant du PS passée dans le message Hl7 V2.
-
-###### Contenu du VIHF
-
-Pour les données manquantes du VIHF : 
-- Secteur_Activite : Paramétrage dans la PFI
-- //Assertion/Subject/NameID : Responsable du traitement
-- urn:oasis:names:tc:xacml:2.0:subject:role : "AUTOMATE"
-- //Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef : unspecified ou récupération de l'information sur un paramétrage de la PFI en fonction de l'emeteur du flux
-
-- 
-##### Impacts  : Spécification
-Enlever des spécifications "volet-transmission-document-cda-r2", les références qui indiquent que le segment PRT est utilisé pour la création du VIHF : 
-- page 32 : Ce segment est requis dans le cas d’une publication du document sur le DMP. Il permet à la PFI de générer le jeton VIHF Transmission de documents CDA en HL7v2 lors de l’alimentation du DMP ainsi que la métadonnée représentant l’auteur et la structure de l’auteur du lot de soumission
-- Page 33 : Ce segment est requis, en particulier dans le cas d’une publication du document sur le DMP, pour permettre à la PFI de générer le VIHF ainsi que l’auteur du lot de soumission
-
-##### Impacts  : REM DPI
-Impacts sur les REM DPI : 
-- SC.DMP/CONF.12
-"Vérifier que pour chaque transaction DMP, le système transmet les informations d'identification nécessaires à la création du jeton VIHF  à la fonction PFI. 
-
-Étapes du scénario :
-1. Se mettre en condition où un ordre d'envoi est émis depuis le système vers la PFI
-2. Montrer que les informations d’identification (FINESS géographique de l'établissement et l'identifiant du professionnel ou du dispositif à l'origine de la demande d'alimentation du DMP) sont transmises à la PFI via le flux HL7 V2"
-
-  
-
-##### Strategie 2 (moyen terme)
-Faire evoluer le volet pour integrer ces données manquantes : 
-- Secteur_Activite
-- Service de l’utilisateur
-- Roles de l'utilisateur
-- AuthnContextClassRef
 
 
 
-#### Metadonnée du lot de soumission
-##### Strategie 1 (court terme)
-Pour les métadonnées manquantes du lot de soumission : 
-- authorRole : Ne pas remplir cette donnée car non obligatoire
-- authorSpecialty : Ne pas remplir cette donnée car non obligatoire
-- contentTypeCode : Deduction du champ PV1-2 ou déuite par la PFI d'une table de paramétrage
-
-##### Strategie 2 (moyen terme)
-Faire evoluer le volet pour integrer ces données manquantes
-
-
-
-
-
-#### Exemple du VIHF avec automate
+### Exemple du VIHF avec automate
 ```xml
-<xmp>
     <Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
       <Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="_09cd372d-da9e-4d8c-a225-b7304defd6fb" IssueInstant="2024-09-02T13:22:25.789Z" Version="2.0">
         <Issuer Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">C=FR, ST=Paris (75), O=XXXXXX, OU=XXXXXXXX, CN=DMP SIGN</Issuer>
@@ -651,5 +597,4 @@ Faire evoluer le volet pour integrer ces données manquantes
         </AttributeStatement>
       </Assertion>
     </Security>
-  </xmp>
 ```
