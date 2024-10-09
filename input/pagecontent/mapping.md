@@ -229,13 +229,13 @@ Provenance de la donnée :
       <td style="text-align: left">authorRole</td>
       <td style="text-align: left">Cette métadonnée représente le rôle joué par l’auteur vis-à-vis du patient lors de la constitution du lot de soumission</td>
       <td>requis si connu</td>
-      <td><blockquote class="stu-note"> Donnée non présente dans le message</blockquote> </td>
+      <td></td>
     </tr>
     <tr>
       <td style="text-align: left">authorSpecialty</td>
       <td style="text-align: left">Cette métadonnée représente la profession éventuellement associée au savoir-faire de l’auteur du lot de soumission pour un auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité de l’auteur du lot de soumission pour un auteur professionnel caractérisé par son rôle</td>
       <td>requis si connu</td>
-      <td><blockquote class="stu-note">  Donnée non présente dans le message </blockquote> </td>
+      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">availabilityStatus</td>
@@ -247,8 +247,14 @@ Provenance de la donnée :
       <td style="text-align: left">contentTypeCode</td>
       <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br> Valeur de <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J59-ContentTypeCode-DMP.html">JDV_J59-ContentTypeCode-DMP</a></td>
       <td>requis</td>
-      <td><blockquote class="stu-note">  Donnée non présente dans le message mais potentielement déductible</blockquote><br>
-      <pre><b>HL7V2</b> :PV1-2 : I => 03; O=>07; R=>19; N=>97; E=> 7 </pre>
+      <td><br>
+      <pre><b>HL7V2</b> : Mapping sur le PV1-2 : 
+        <br> I => 03; 
+        <br> O => 07; 
+        <br> R => 19; 
+        <br> N => 97; 
+        <br> E => 7 
+      </pre>
       </td>
     </tr>
     <tr>
