@@ -35,7 +35,11 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
       <td style="text-align: left">Fourni par le LPS <br> valeur de  <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J61-HealthcareFacilityTypeCode-DMP.html">JDV_J61-HealthcareFacilityTypeCode-DMP</a></td>
-      <td><blockquote class="stu-note">  Donnée  non présente  dans le message et le CDA <br> Possibilité de le recuperer de l'annuaire ? </blockquote> </td>
+      <td> Provenance de la donnée : 
+          <br>- Parametrage dans  la PFI
+          <br>- Interogation du DPI
+          <br>- Interogation de l'annuaire à partir du finess <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
+   </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/Subject/NameID</td>
@@ -45,7 +49,7 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:subject:subject-id</td>
       <td style="text-align: left">Pour un utilisateur humain : Nom, Prénom et Service de l’utilisateur <br> Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.2  et PRT-5.3   (PRT-4 = ‘SB^Send by^participation’) </pre> <br> <blockquote class="stu-note"> Service de l’utilisateur non présent : Ajout du champ PRT-9   </blockquote> </td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.2  et PRT-5.3   (PRT-4 = ‘SB^Send by^participation’) </pre> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -56,7 +60,12 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
  <br> <b>Pour les autres : </b>
  <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> - TRE_A00_ProducteurDocNonPS <br> -  TRE_R95_UsagerTitre <br> - TRE_R94_ProfessionSocial <br> -  TRE_R291_AutreProfession
       </td>
-      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire (avec le problème d’un PS avec plusieurs exercice ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td>Provenance de la donnée : 
+         <br>- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+         <br>- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+        <br> - "AUTOMATE" quand les autres cas ne sont pas possibles
+         
+ </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -66,7 +75,12 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
  <br> <b>Pour les pharmacines  ; </b> 
  <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de  TRE_G05_SousSectionTableauCNOP     
       </td>
-      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire  (avec le problème d’un PS avec plusieurs savoir faire ) <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br> 
+Provenance de la donnée : 
+         <br>- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+         <br>- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+      
+      </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -74,7 +88,10 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
       <br>
       Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de   TRE_R85_RolePriseCharge
       </td>
-      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br>Provenance de la donnée : 
+         <br>- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+         <br>- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+       </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
@@ -83,12 +100,15 @@ Ce mapping permet d'indiquer comment constiure le VIHF à partir du message HL7 
           <br>
       Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de :  TRE_R22_GenreActivite 
       </td>
-      <td><br> <blockquote class="stu-note"> Donnée  non présente dans le message  : <br> - SI IDNATPS : Appel de l’annuaire <br>- Sinon : Appel de l’annuaire interne de l’etablissement  <br> A priori  type de donnée non disponible dans le champ PRT </blockquote> </td>
+      <td><br>Provenance de la donnée : 
+         <br>- Interogation du DPI ou du dpi à partit du champ <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+         <br>- Interogation de l'annuaire pour les identifiants de type IDNATPS <pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
+       </td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef</td>
       <td style="text-align: left">Prendre la valeur la plus appropriée parmi les valeurs possibles indiquées dans le document http://docs.oasis-open.org/security/saml/v2.0/samlauthn-context-2.0-os.pdf <br>La valeur utilisée doit être cohérente avec le mode d’authentification locale de l’utilisateur dans le LPS</td>
-      <td><blockquote class="stu-note">  Donnée  non présente dans le message et le CDA   </blockquote> </td>
+      <td>Paramétrage dans la PFI en fonction du flux qui alimente</td>
     </tr>
     <tr>
       <td style="text-align: left">//Assertion/@xmnls</td>
