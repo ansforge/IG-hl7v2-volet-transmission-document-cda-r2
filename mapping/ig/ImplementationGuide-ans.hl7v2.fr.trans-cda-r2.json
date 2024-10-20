@@ -10,7 +10,7 @@
   "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2024-10-20T15:23:02+00:00",
+  "date" : "2024-10-20T15:27:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -658,7 +658,7 @@
           "valueUrl" : "volume2.html"
         }],
         "nameUrl" : "volume2.html",
-        "title" : "Volume 2",
+        "title" : "Volume 2 : Détail des transactions",
         "generation" : "markdown"
       },
       {
