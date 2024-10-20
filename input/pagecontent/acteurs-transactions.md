@@ -5,12 +5,12 @@ rôle joué par un ou plusieurs composants du système d'information :
 <table>
 <tbody>
 <tr>
-<td >
+<th>
 <p><strong>Acteur</strong></p>
-</td>
-<td >
+</th>
+<th>
 <p><strong>Description</strong></p>
-</td>
+</th>
 </tr>
 <tr>
 <td >
@@ -44,12 +44,12 @@ Le tableau suivant liste, pour chacun des acteurs, les systèmes du SIH concern�
 <table>
 <tbody>
 <tr>
-<td >
+<th>
 <p><strong>Acteur</strong></p>
-</td>
-<td >
+</th>
+<th>
 <p><strong>Systèmes concernés</strong></p>
-</td>
+</th>
 </tr>
 <tr>
 <td >
@@ -101,15 +101,15 @@ transactions optionnelles (O-Optional).
 <table>
 <tbody>
 <tr>
-<td>
+<th>
 <p><strong>Acteur</strong></p>
-</td>
-<td>
+</th>
+<th>
 <p><strong>Transaction</strong></p>
-</td>
-<td>
+</th>
+<th>
 <p><strong>Caract&egrave;re requis/optionnel</strong></p>
-</td>
+</th>
 </tr>
 <tr>
 <td rowspan="5">
@@ -262,12 +262,12 @@ Cette section décrit les exigences en termes de regroupement d'acteurs pour cha
 <table>
 <tbody>
 <tr>
-<td>
+<th>
 <p><strong>Acteur de ce volet</strong></p>
-</td>
-<td>
+</th>
+<th>
 <p><strong>Group&eacute; avec un autre acteur</strong></p>
-</td>
+</th>
 <td>
 <p><strong>R&eacute;f&eacute;rence</strong></p>
 </td>
