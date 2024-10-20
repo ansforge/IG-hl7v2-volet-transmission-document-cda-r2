@@ -10,7 +10,7 @@
   "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2024-10-20T15:00:52+00:00",
+  "date" : "2024-10-20T15:02:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -646,46 +646,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "cas-usage.html"
+          "valueUrl" : "volume1.html"
         }],
-        "nameUrl" : "cas-usage.html",
-        "title" : "Cas d'usage",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "contexte-metier.html"
-        }],
-        "nameUrl" : "contexte-metier.html",
-        "title" : "Organisation du contexte métier",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "acteurs-transactions.html"
-        }],
-        "nameUrl" : "acteurs-transactions.html",
-        "title" : "Acteurs et transactions",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "def-proc-collab.html"
-        }],
-        "nameUrl" : "def-proc-collab.html",
-        "title" : "Définition des processus collaboratifs",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "identification-flux.html"
-        }],
-        "nameUrl" : "identification-flux.html",
-        "title" : "identification des flux",
+        "nameUrl" : "volume1.html",
+        "title" : "Volume 1 : Etude fonctionnelle",
         "generation" : "markdown"
       },
       {
