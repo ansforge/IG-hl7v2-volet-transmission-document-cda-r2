@@ -241,19 +241,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#implémentation-du-message-oru-et-de-ses-acquittements-métier-hl7" id="markdown-toc-implémentation-du-message-oru-et-de-ses-acquittements-métier-hl7">Implémentation du message ORU et de ses acquittements métier HL7</a></li>
-  <li><a href="#implémentation-du-message-mdm-et-de-ses-acquittements-métier-hl7" id="markdown-toc-implémentation-du-message-mdm-et-de-ses-acquittements-métier-hl7">Implémentation du message MDM et de ses acquittements métier HL7</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <p>Les échanges sont représentés de bout en bout pour permettre au lecteur
 d’avoir une vision de l’ensemble des échanges, y compris du côté du
 destinataire. Cependant, le périmètre du présent volet est limité aux
 transactions représentées en bleu sur les figures suivantes.</p>
 
-<h3 id="implémentation-du-message-oru-et-de-ses-acquittements-métier-hl7">Implémentation du message ORU et de ses acquittements métier HL7</h3>
+<h4 id="implémentation-du-message-oru-et-de-ses-acquittements-métier-hl7">Implémentation du message ORU et de ses acquittements métier HL7</h4>
 
 <div class="figure" style="text-align: center;">
     <img src="image17.png" alt="Figure 13" title="Figure 13 : Diagramme de séquence -- Message ORU" style="width:80%;" />
@@ -280,7 +276,7 @@ schéma la possibilité pour l’acteur CREATEUR d’envoyer une demande
 d’intégration, de remplacement ou de suppression de document(s) au moyen
 d’un message HL7 ORU.</p>
 
-<h3 id="implémentation-du-message-mdm-et-de-ses-acquittements-métier-hl7">Implémentation du message MDM et de ses acquittements métier HL7</h3>
+<h4 id="implémentation-du-message-mdm-et-de-ses-acquittements-métier-hl7">Implémentation du message MDM et de ses acquittements métier HL7</h4>
 
 <p>Les interactions de la transaction de
 transmission/remplacement/suppression de document(s) utilisent
@@ -293,7 +289,7 @@ de lecture MSSanté).</p>
 <p>L’action à réaliser sur le document porté par la transaction est
 indiquée par la nature de l’événement (T02, T10 et T04).</p>
 
-<h4 id="demande-de-transmission-initiale-dun-document">Demande de transmission initiale d’un document</h4>
+<h5 id="demande-de-transmission-initiale-dun-document">Demande de transmission initiale d’un document</h5>
 
 <div class="figure" style="text-align: center;">
     <img src="image19.png" alt="Figure 14" title="Figure 14 : Diagramme de séquence -- Message MDM -- Transmission initiale d'un document" style="width:80%;" />
@@ -301,7 +297,7 @@ indiquée par la nature de l’événement (T02, T10 et T04).</p>
 </div>
 <p><br /></p>
 
-<h4 id="demande-de-remplacement-dun-document">Demande de remplacement d’un document</h4>
+<h5 id="demande-de-remplacement-dun-document">Demande de remplacement d’un document</h5>
 
 <div class="figure" style="text-align: center;">
     <img src="image20.png" alt="Figure 15" title="Figure 15 : Diagramme de séquence -- Message MDM -- Remplacement d'un document" style="width:80%;" />
@@ -309,13 +305,14 @@ indiquée par la nature de l’événement (T02, T10 et T04).</p>
 </div>
 <p><br /></p>
 
-<h4 id="demande-de-suppression-dun-document">Demande de suppression d’un document</h4>
+<h5 id="demande-de-suppression-dun-document">Demande de suppression d’un document</h5>
 
 <div class="figure" style="text-align: center;">
     <img src="image21.png" alt="Figure 16" style="width:80%;" />
     <figcaption><b>Figure 16 : Diagramme de séquence -- Message MDM -- Suppression de document(s)</b></figcaption>
 </div>
 <p><br /></p>
+
 
 
 
@@ -357,7 +354,7 @@ indiquée par la nature de l’événement (T02, T10 et T04).</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 20, 2024 14:51+0000">2024-10-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 20, 2024 14:52+0000">2024-10-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
