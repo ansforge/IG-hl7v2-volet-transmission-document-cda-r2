@@ -1,4 +1,3 @@
-#### Cas d'usage
 Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un ensemble de cas d'usage. Pour une meilleure compréhension du lecteur, ces cas d'usage couvrent les échanges entre le système créateur du document et la PFI, mais également les échanges au-delà de la PFI (et donc au-delà du périmètre de ce présent document).
 
 ##### Envoi d'un document clinique d'un établissement vers un médecin traitant
