@@ -22,7 +22,7 @@ pages:
         title: "Accueil"
     volume1.md:
         title: "Volume 1 : Etude fonctionnelle"
-    volume2.md:
+    volume2.md:"Volume 1 : Détail des transactions"
     perimetre-transaction.md:
         title: "Périmètre de la transaction"
     role.md:
@@ -70,7 +70,7 @@ menu:
         "Définition des processus collaboratifs": volume1.html#définition-des-processus-collaboratifs
         "identification des flux": volume1.html#identification-des-flux
     Volume 2 – Détail des Transactions: 
-        "Volume 2 : Introduction": volume2.html#introduction
+        "Introduction": volume2.html#introduction
         "Périmètre de la transaction": volume2.html#périmetre-de-la-transaction
         "Rôle des acteurs pour cette transaction": volume2.html#rôle-des-acteurs-pour-cette-transaction
         "Choix des standards": volume2.html#choix-des-standards
