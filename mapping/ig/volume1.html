@@ -555,26 +555,26 @@ rôle joué par un ou plusieurs composants du système d’information :</p>
 <table>
 <tbody>
 <tr>
-<td width="141">
-<p><strong>Acteur&nbsp;:</strong></p>
+<td>
+<p><strong>Acteur</strong></p>
 </td>
-<td width="508">
-<p><strong>Description&nbsp;:</strong></p>
+<td>
+<p><strong>Description</strong></p>
 </td>
 </tr>
 <tr>
-<td width="141">
+<td>
 <p>CREATEUR</p>
 </td>
-<td width="508">
+<td>
 <p>Syst&egrave;me &agrave; l&rsquo;origine de la cr&eacute;ation de document(s). Il transmet au syst&egrave;me GESTIONNAIRE des demandes de transmission initiale/de remplacement/de suppression de document(s) pour publication sur le DMP et/ou envoi vers une ou plusieurs BAL MSSant&eacute;. Le CREATEUR pr&eacute;cise &eacute;galement les retours m&eacute;tiers attendus du DMP et/ou de la MSSant&eacute;.<br /> Le CREATEUR r&eacute;ceptionne, le cas &eacute;ch&eacute;ant, les retours m&eacute;tiers du DMP et/ou de la MSSant&eacute; demand&eacute;s et renvoy&eacute;s par le GESTIONNAIRE (accus&eacute; de r&eacute;ception DMP, accus&eacute; de r&eacute;ception MSSant&eacute; et accus&eacute; de lecture MSSant&eacute;).</p>
 </td>
 </tr>
 <tr>
-<td width="141">
+<td>
 <p>GESTIONNAIRE</p>
 </td>
-<td width="508">
+<td>
 <p>Le GESTIONNAIRE r&eacute;ceptionne les demandes de transmission initiale/remplacement/suppression de document(s) provenant du CREATEUR et envoie le(s) document(s) vers le DMP et/ou la MSSant&eacute; <sup>(1)</sup> en fonction des informations port&eacute;es par la transaction.</p>
 <p>Le GESTIONNAIRE r&eacute;ceptionne, g&egrave;re et redistribue vers le CREATEUR, le cas &eacute;ch&eacute;ant, les retours m&eacute;tiers provenant du DMP et/ou de la MSSant&eacute;.</p>
 </td>
@@ -594,27 +594,27 @@ BAL applicative du DPI d’un établissement hospitalier destinataire).</em></p>
 <table>
 <tbody>
 <tr>
-<td width="141">
-<p><strong>Acteur&nbsp;:</strong></p>
+<td>
+<p><strong>Acteur</strong></p>
 </td>
-<td width="508">
-<p><strong>Syst&egrave;mes concern&eacute;s&nbsp;:</strong></p>
+<td>
+<p><strong>Systèmes concernés</strong></p>
 </td>
 </tr>
 <tr>
-<td width="141">
+<td>
 <p>CREATEUR</p>
 </td>
-<td width="508">
+<td>
 <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Les syst&egrave;mes informatiques de gestion des laboratoires (SGL), de gestion de radiologie (RIS), de gestion de cardiologie (SIC), tout syst&egrave;me du SIH de production de documents pour un patient.</p>
 <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Les logiciels de dossier patient informatis&eacute; (DPI) en &eacute;tablissement et tout logiciel de sp&eacute;cialit&eacute; cr&eacute;ateur de documents cliniques.</p>
 </td>
 </tr>
 <tr>
-<td width="141">
+<td>
 <p>GESTIONNAIRE</p>
 </td>
-<td width="508">
+<td>
 <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Les Plateformes d&rsquo;Interm&eacute;diation (PFI) qui assurent la transmission de document(s) cliniques vers les services socles.</p>
 <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Les DRIMBox-Source qui publient sur le DMP le document de r&eacute;f&eacute;rence d&rsquo;objets d&rsquo;examen d&rsquo;imagerie (KOS).</p>
 <p>La DRIMBox-Source g&egrave;re l&rsquo;accus&eacute; technique de la transaction de transmission par le RIS du compte-rendu d&rsquo;imagerie en CDA. Elle transmet ensuite le document KOS correspondant au DMP. L&rsquo;accus&eacute; de r&eacute;ception du document KOS par le DMP n&rsquo;est pas &agrave; transmettre au syst&egrave;me Cr&eacute;ateur de documents.</p>
@@ -653,106 +653,106 @@ impliqués dans ce volet ainsi que les transactions entre ces acteurs.</p>
 transactions obligatoires (R-Required) et peut supporter les
 transactions optionnelles (O-Optional).</p>
 
-<table width="652">
+<table>
 <tbody>
 <tr>
-<td width="113">
+<td>
 <p><strong>Acteur</strong></p>
 </td>
-<td width="406">
+<td>
 <p><strong>Transaction</strong></p>
 </td>
-<td width="132">
+<td>
 <p><strong>Caract&egrave;re requis/optionnel</strong></p>
 </td>
 </tr>
 <tr>
-<td rowspan="5" width="113">
+<td rowspan="5">
 <p>CREATEUR</p>
 </td>
-<td width="406">
+<td>
 <p>Flux 1 en &eacute;mission&nbsp;:&nbsp; Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU -&gt;)</p>
 </td>
-<td width="132">
+<td>
 <p>O</p>
 <p>(Note 1)</p>
 <p>(Note 4)</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 2 en &eacute;mission : Demande de transmission/remplacement/suppression d&rsquo;un document CDA (Flux HL7- MDM -&gt;)</p>
 </td>
-<td width="132">
+<td>
 <p>O</p>
 <p>(Note 1)</p>
 <p>(Note 4)</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 3 en r&eacute;ception&nbsp;: Accus&eacute; m&eacute;tier de r&eacute;ception DMP</p>
 </td>
-<td width="132">
+<td>
 <p>O (Note 2)</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 4&nbsp;en r&eacute;ception : Accus&eacute; m&eacute;tier de r&eacute;ception MSSant&eacute;</p>
 </td>
-<td width="132">
+<td>
 <p>O (Note 2)</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 5&nbsp;en r&eacute;ception : Accus&eacute; m&eacute;tier de lecture MSSant&eacute;</p>
 </td>
-<td width="132">
+<td>
 <p>O (Note 3)</p>
 </td>
 </tr>
 <tr>
-<td rowspan="5" width="113">
+<td rowspan="5">
 <p>GESTIONNAIRE</p>
 </td>
-<td width="406">
+<td>
 <p>Flux 1 en r&eacute;ception : Demande de transmission/remplacement/suppression de document(s) CDA par un message HL7v2.5 ORU (Flux HL7-ORU)</p>
 </td>
-<td width="132">
+<td>
 <p>R</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 2 en r&eacute;ception : Demande de transmission/remplacement/suppression d&rsquo;un document CDA par un message HL7v2.6 MDM (Flux HL7- MDM)</p>
 </td>
-<td width="132">
+<td>
 <p>R</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 3 en &eacute;mission&nbsp;: Accus&eacute; m&eacute;tier de r&eacute;ception DMP</p>
 </td>
-<td width="132">
+<td>
 <p>O (Note 2)</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 4 en &eacute;mission&nbsp;: Accus&eacute; m&eacute;tier de r&eacute;ception MSSant&eacute;</p>
 </td>
-<td width="132">
+<td>
 <p>O (Note 2)</p>
 </td>
 </tr>
 <tr>
-<td width="406">
+<td>
 <p>Flux 5&nbsp;en &eacute;mission : Accus&eacute; m&eacute;tier de lecture MSSant&eacute;</p>
 </td>
-<td width="132">
+<td>
 <p>O (Note 3)</p>
 </td>
 </tr>
@@ -817,43 +817,43 @@ identifiant propre.</em></p>
 <table>
 <tbody>
 <tr>
-<td width="216">
+<td>
 <p><strong>Acteur de ce volet</strong></p>
 </td>
-<td width="216">
+<td>
 <p><strong>Group&eacute; avec un autre acteur</strong></p>
 </td>
-<td width="217">
+<td>
 <p><strong>R&eacute;f&eacute;rence</strong></p>
 </td>
 </tr>
 <tr>
-<td width="216">
+<td>
 <p>CREATEUR</p>
 </td>
-<td width="216">
+<td>
 <p>Content Creator <a href="https://www.ihe.net/uploadedFiles/Documents/PCC/IHE_PCC_TF_Vol1.pdf">(TF PCC : Patient Care Coordination – Appendix A : Actors definition)</a></p>
 </td>
-<td width="217">
+<td>
 <p>TF Patient Care Coordination (PCC) d&rsquo;IHE &ndash; Annexe A : d&eacute;finition des acteurs</p>
 </td>
 </tr>
 <tr>
-<td rowspan="2" width="216">
+<td rowspan="2">
 <p>GESTIONNAIRE</p>
 </td>
-<td width="216">
+<td>
 <p>Producteur (Document Source) XDS-b</p>
 </td>
-<td width="217">
+<td>
 <p><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/CISIS_SERVICE_SPECIFICATIONS_TECHNIQUES_PARTAGE_DOCUMENTS_DE_SANTE_V1.13.pdf">Volet Partage de documents de sant&eacute;</a> dans un contexte g&eacute;n&eacute;ral ou le R&eacute;f&eacute;rentiel Service DMP int&eacute;gr&eacute; aux LPS dans le contexte du SEGUR.</p>
 </td>
 </tr>
 <tr>
-<td width="216">
+<td>
 <p>Syst&egrave;me initiateur (Portable Media Creator) XDM</p>
 </td>
-<td width="217">
+<td>
 <p><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf">Volet Echange de documents de sant&eacute;</a></p>
 </td>
 </tr>
@@ -1140,7 +1140,7 @@ consommateur (DMP et/ou application métier destinatrice).</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 20, 2024 15:27+0000">2024-10-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 20, 2024 15:31+0000">2024-10-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
