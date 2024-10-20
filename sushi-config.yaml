@@ -20,16 +20,8 @@ parameters:
 pages:
     index.md:
         title: "Accueil"
-    cas-usage.md:
-        title: "Cas d'usage"
-    contexte-metier.md:
-        title: "Organisation du contexte métier"
-    acteurs-transactions.md:
-        title: "Acteurs et transactions"
-    def-proc-collab.md:
-        title: "Définition des processus collaboratifs"
-    identification-flux.md:
-        title: "identification des flux"
+    volume1.md:
+        title: "Volume 1 : Etude fonctionnelle"
     volume2.md:
     perimetre-transaction.md:
         title: "Périmètre de la transaction"
