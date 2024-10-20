@@ -4,7 +4,7 @@ Pour l'ensemble des processus décrits :
 
 -   L'accusé de lecture MSSanté défini par la [RFC 8098](https://datatracker.ietf.org/doc/html/rfc8098) (Message Disposition Notification) comprend un élément dénommé Disposition types qui rend compte à l'expéditeur du courriel du traitement advenu sur ce courriel au niveau du destinataire : lecture du courriel, transfert du courriel, traitement automatique du courriel, suppression du courriel.
 
-### Processus collaboratif « Demande de transmission initiale de document(s) »
+#### Processus collaboratif « Demande de transmission initiale de document(s) »
 
 <div class="figure" style='text-align: center;'>
     <img src="image13.png" alt="Figure 9" title="Figure 9 : Processus collaboratif « Demande de transmission initiale de document(s) » pour publication sur DMP et envoi par MSS" style="width:60%;">
@@ -65,7 +65,7 @@ Pour l'ensemble des processus décrits :
 
 **(Note 1)** : _les systèmes référencés SEGUR vague 2 ne sont pas concernés car, dans ce cas, le PDF est inclus dans une section du CDA Niv3._
 
-### Processus collaboratif « Demande de remplacement de document(s) »
+#### Processus collaboratif « Demande de remplacement de document(s) »
 
 <div class="figure" style='text-align: center;'>
     <img src="image14.png" alt="Figure 10" title="Figure 10 : Processus collaboratif « Demande de remplacement de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:60%;">
@@ -146,7 +146,7 @@ consommateur (DMP et/ou application métier destinatrice).
     </p>
 </blockquote>
 
-### Processus collaboratif « Demande de suppression de document(s) »
+#### Processus collaboratif « Demande de suppression de document(s) »
 
 <div class="figure" style='text-align: center;'>
     <img src="image15.png" alt="Figure 11" title="Figure 11 : Processus collaboratif « Demande de suppression de document(s) » pour publication sur DMP et envoi par MSSanté" style="width:60%;">
