@@ -71,13 +71,13 @@ menu:
         "identification des flux": volume-1.html#identification-flux
     Volume 2 – Détail des Transactions: 
         "Volume 2 : Introduction": volume2.html
-        "Périmètre de la transaction": perimetre-transaction.html
-        "Rôle des acteurs pour cette transaction": role.html
-        "Choix des standards": standards.html
-        "Evènements déclenchants": evenements-declenchants.html
-        "Interactions entre les Acteurs": interactions-acteurs.html
-        "Profils de messages": profils-messages.html
-        "Règles de gestion MSSANTE": regles-gestion-mssante.html
+        "Périmètre de la transaction": volume2.html#perimetre-transaction
+        "Rôle des acteurs pour cette transaction": volume2.html#role
+        "Choix des standards": volume2.html#standards
+        "Evènements déclenchants": volume2.html#evenements-declenchants
+        "Interactions entre les Acteurs": volume2.html#interactions-acteurs
+        "Profils de messages": volume2.html#profils-messages
+        "Règles de gestion MSSANTE": volume2.html#regles-gestion-mssante
     Volume 3 - Annexes:
         "Table MetaDMP/MSS": meta-dmp-mss.html
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
