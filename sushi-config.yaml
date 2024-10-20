@@ -64,20 +64,20 @@ pages:
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: 
-        "Cas d'usage": volume-1.html#cas-usage
-        "Organisation du contexte métier": volume-1.html#contexte-metier
-        "Acteurs et transactions": volume-1.html#acteurs-transactions
-        "Définition des processus collaboratifs": volume-1.html#def-proc-collab
-        "identification des flux": volume-1.html#identification-flux
+        "Cas d'usage": volume-1.html#cas-dusage
+        "Organisation du contexte métier": volume-1.html#organisation-du-contexte-métier
+        "Acteurs et transactions": volume-1.html#acteurs-et-transactions
+        "Définition des processus collaboratifs": volume-1.html#définition-des-processus-collaboratifs
+        "identification des flux": volume-1.html#identification-des-flux
     Volume 2 – Détail des Transactions: 
-        "Volume 2 : Introduction": volume2.html
-        "Périmètre de la transaction": volume2.html#perimetre-transaction
-        "Rôle des acteurs pour cette transaction": volume2.html#role
-        "Choix des standards": volume2.html#standards
-        "Evènements déclenchants": volume2.html#evenements-declenchants
-        "Interactions entre les Acteurs": volume2.html#interactions-acteurs
-        "Profils de messages": volume2.html#profils-messages
-        "Règles de gestion MSSANTE": volume2.html#regles-gestion-mssante
+        "Volume 2 : Introduction": volume2.html#introduction
+        "Périmètre de la transaction": volume2.html#périmetre-de-la-transaction
+        "Rôle des acteurs pour cette transaction": volume2.html#rôle-des-acteurs-pour-cette-transaction
+        "Choix des standards": volume2.html#choix-des-standards
+        "Evènements déclenchants": volume2.html#evènements-déclenchants
+        "Interactions entre les Acteurs": volume2.html#interactions-entre-les-acteurs
+        "Profils de messages": volume2.html#profils-de-messages
+        "Règles de gestion MSSANTE": volume2.html#règles-de-gestion-mssante
     Volume 3 - Annexes:
         "Table MetaDMP/MSS": meta-dmp-mss.html
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
