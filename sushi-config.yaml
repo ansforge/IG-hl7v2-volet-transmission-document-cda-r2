@@ -64,11 +64,11 @@ pages:
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: 
-        "Cas d'usage": cas-usage.html
-        "Organisation du contexte métier": contexte-metier.html
-        "Acteurs et transactions": acteurs-transactions.html
-        "Définition des processus collaboratifs": def-proc-collab.html
-        "identification des flux": identification-flux.html
+        "Cas d'usage": volume-1.html#cas-usage
+        "Organisation du contexte métier": volume-1.html#contexte-metier
+        "Acteurs et transactions": volume-1.html#acteurs-transactions
+        "Définition des processus collaboratifs": volume-1.html#def-proc-collab
+        "identification des flux": volume-1.html#identification-flux
     Volume 2 – Détail des Transactions: 
         "Volume 2 : Introduction": volume2.html
         "Périmètre de la transaction": perimetre-transaction.html
