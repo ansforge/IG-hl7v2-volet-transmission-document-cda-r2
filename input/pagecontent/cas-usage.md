@@ -258,3 +258,5 @@ vers le DPI d'un autre établissement.
 
 Le diagramme serait identique dans le cas d'une demande de remplacement
 ou de suppression du compte rendu.
+
+{% include contexte-metier.html %}
