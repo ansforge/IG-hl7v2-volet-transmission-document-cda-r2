@@ -1,5 +1,5 @@
 
-### Description des messages ORU et MDM
+#### Description des messages ORU et MDM
 
 La description des messages ORU et MDM est basée sur le contenu du
 document et les métadonnées complémentaires à véhiculer dans le cadre du
@@ -16,9 +16,9 @@ messages.
 Ci-dessous sont représentées les structures de messages HL7v2 proposées
 pour la transmission de document(s) CDA-R2 en HL7v2.
 
-#### Message ORU^R01^ORU_R01 en HL7v2.5
+##### Message ORU^R01^ORU_R01 en HL7v2.5
 
-##### Profil du message ORU_R01
+###### Profil du message ORU_R01
 
 Le profil du message ORU_R01 est le suivant :
 <table>
@@ -409,7 +409,7 @@ OBSERVATION de l'occurrence ORDER_OBSERVATION sont à renseigner.
 Les contraintes apportées par ce volet sur les données des différents
 segments du message ORU sont décrites à la [section dédiée](profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
-##### Description fonctionnelle du message ORU
+###### Description fonctionnelle du message ORU
 
 <div class="figure" style='text-align: center;'>
     <img src="fig17.png" alt="Figure 17" title="Figure 17 : Structure fonctionnelle du message ORU_R01" style="width:80%;">
@@ -434,9 +434,9 @@ Les groupes en rouge sur le schéma représentent les éléments spécifiques à
 
 Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l'envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la [section dédiée](profils-messages.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
-#### Message MDM en HL7v2.6
+##### Message MDM en HL7v2.6
 
-##### Profil du message MDM
+###### Profil du message MDM
 
 Le profil du message MDM est le suivant :
 
@@ -804,7 +804,7 @@ CDAr2.
 Les contraintes apportées par ce volet sur les données du message MDM
 sont décrites à la [section dédiée](profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
-##### Description fonctionnelle du message MDM
+###### Description fonctionnelle du message MDM
 
 <div class="figure" style='text-align: center;'>
     <img src="fig18.png" alt="Figure 18" title="Figure 18 : Structure fonctionnelle du message MDM" style="width:80%;">
@@ -827,14 +827,14 @@ spécifiques à ce volet :
 
 Dans le message MDM, le document est accompagné de quelques métadonnées à renseigner au niveau du segment TXA. Il s'agit à minima du type de document (TXA-2), de la présentation du contenu du document (TXA-3), de l'identifiant unique du document (TXA-12), de l'identifiant unique du document remplacé (TXA-13) lorsque l'évènement est à T10 et du statut indiquant la complétude du document (TXA-17).
 
-### Contraintes appliquées aux messages MDM et ORU dans le contexte de ce volet
+#### Contraintes appliquées aux messages MDM et ORU dans le contexte de ce volet
 
 Dans la suite de cette section, les valeurs indiquées en bleu dans les
 tableaux indiquent les valeurs fixes à insérer dans le champ du message.
 
-#### Eléments de contrôle du message ORU ou MDM
+##### Eléments de contrôle du message ORU ou MDM
 
-##### Le segment MSH -- Header du message
+###### Le segment MSH -- Header du message
 
 Les éléments de contrôle du message HL7 sont portés par le segment
 d'entête MSH. Le tableau ci-dessous liste les champs à renseigner pour
@@ -1072,13 +1072,13 @@ le segment MSH :
  </tr>
 </tbody></table>
 
-##### Exemples
+###### Exemples
 
 Entête MSH d'un message MDM ou ORU émis par le CREATEUR :
 
 `MSH|^~\&|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2`
 
-#### Les données concernant le patient et la venue du patient
+##### Les données concernant le patient et la venue du patient
 
 Le message HL7 (ORU ou MDM) est centré sur un seul patient. Les
 informations concernant le patient sont décrites par le segment requis
@@ -1255,7 +1255,7 @@ Pour le segment PV1, ce volet ajoute les contraintes suivantes :
 
 *Note 2* : _Le champ PV1-19 est requis lorsque le PV1-2 prend la valeur E, I, O ou R. Si PV1-2 prend la valeur N alors PV1-19 est requis si connu._
 
-#### Les métadonnées du document [Uniquement pour le message MDM]
+##### Les métadonnées du document [Uniquement pour le message MDM]
 
 Le message MDM requiert l'utilisation du segment TXA qui porte les
 métadonnées associées au document contenu dans le message. Les
@@ -1425,7 +1425,7 @@ la suivante :
     </p>
 </blockquote>
 
-#### Le segment ORC
+##### Le segment ORC
 
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
  <tbody><tr>
@@ -1495,7 +1495,7 @@ OBX-11 et dans le cas du message MDM avec l'évènement déclenchant (T02,
 T04 ou T10). En cas d'incohérence entre ces champs, le message HL7 sera
 rejeté par la PFI.
 
-#### Le segment OBR
+##### Le segment OBR
 
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
  <tbody><tr>
@@ -1603,7 +1603,7 @@ rejeté par la PFI.
  </tr>
 </tbody></table>
 
-#### Les données concernant la demande de traitement sur le(s) document(s)
+##### Les données concernant la demande de traitement sur le(s) document(s)
 
 Les messages ORU/MDM utilisés contiennent un premier groupe,
 respectivement OBSERVATION/OBXNTE composé :
@@ -3358,7 +3358,7 @@ l'élément « participant ». Il est prévu de modifier la prochaine version
 du « Volet CR-BIO -- Compte-rendu d'examens de biologie médicale » dans
 le même sens.
 
-#### Les métadonnées DMP/MSSanté
+##### Les métadonnées DMP/MSSanté
 
 Cette section présente les métadonnées de restriction indispensables aux
 échanges avec le DMP et/ou la MSSanté. Ces métadonnées doivent être
@@ -3386,7 +3386,7 @@ champ est arbitrairement fixée à « F ».
 L'ensemble de ces métadonnées est identique pour les 2 formats de
 documents pouvant être contenus dans le message ORU.
 
-##### Document Masqué aux professionnels de Santé 
+###### Document Masqué aux professionnels de Santé 
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux professionnels de santé.
@@ -3610,7 +3610,7 @@ masqué aux professionnels de santé.
     </p>
 </blockquote> -->
 
-##### Document Non visible par le patient 
+###### Document Non visible par le patient 
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué au patient.
@@ -3835,7 +3835,7 @@ masqué au patient.
     </p>
 </blockquote>
 
-##### Document Non visible par les représentants légaux du patient  
+###### Document Non visible par les représentants légaux du patient  
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux représentants légaux du patient.
@@ -4063,7 +4063,7 @@ masqué aux représentants légaux du patient.
     </p>
 </blockquote>
 
-##### Connexion Secrète
+###### Connexion Secrète
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP « connexion secrète » ([cf SESAM-VITALE : Service DMP intégré aux LPS - Version 2.10.0 – 07/07/2023](https://industriels.sesam-vitale.fr/))
@@ -4281,7 +4281,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
   </td>
  </tr>
 </tbody></table>
-##### Modification Confidentiality Code
+###### Modification Confidentiality Code
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que la transaction porte
 une modification du CONFIDENTIALITY CODE indiquant une mise à jour des
@@ -4501,7 +4501,7 @@ document au patient ou à ses représentants légaux.
  </tr>
 </tbody></table>
 
-##### Alimentation DMP
+###### Alimentation DMP
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP.
@@ -4720,7 +4720,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
  </tr>
 </tbody></table>
 
-##### Echange MSSanté Professionnel de Santé/Organisation/BAL applicative
+###### Echange MSSanté Professionnel de Santé/Organisation/BAL applicative
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être envoyé vers un PS, une organisation ou une Boîte aux lettres (BAL)
@@ -5049,7 +5049,7 @@ applicative.
     </p>
 </blockquote>
 
-##### Echange MSSanté Patient 
+###### Echange MSSanté Patient 
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être échangé vers le mail MSSanté du Patient.
@@ -5400,7 +5400,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
     </p>
 </blockquote>
 
-##### Transmission de l'accusé de réception DMP/MSSanté
+###### Transmission de l'accusé de réception DMP/MSSanté
 
 Cet OBX permet d'informer le GESTIONNAIRE que l'utilisateur souhaite
 recevoir un accusé de réception provenant du DMP et un accusé de
@@ -5722,7 +5722,7 @@ MSSanté.
 </tbody>
 </table>
 
-##### Transmission de l'accusé de lecture
+###### Transmission de l'accusé de lecture
 
 Cet OBX permet d'informer le GESTIONNAIRE que l'utilisateur souhaite
 recevoir un accusé de lecture pour chaque destinataire MSSanté. En
@@ -6044,7 +6044,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
  </tr>
 </tbody></table>
 
-##### Corps du mail à destination d'un professionnel de santé
+###### Corps du mail à destination d'un professionnel de santé
 
 Cet OBX permet à l'acteur CREATEUR de documents d'ajouter un texte à
 intégrer dans le corps du mail à destination des professionnels de santé
@@ -6302,7 +6302,7 @@ via MSSanté. Cette métadonnée est optionnelle :
     </p>
 </blockquote>
 
-##### Corps du mail à destination du patient
+###### Corps du mail à destination du patient
 
 Cet OBX permet au CREATEUR de documents d'ajouter un texte à intégrer
 dans le corps du mail à destination du patient via MSSanté. Cette
@@ -6562,12 +6562,12 @@ métadonnée est optionnelle :
 
 Quelques exemples sont disponibles [ici](exemples.html).
 
-#### Le message d'acquittement du message HL7v2 
+##### Le message d'acquittement du message HL7v2 
 
 Après réception du message ORU/MDM, le Gestionnaire va acquitter ce
 message HL7.
 
-##### Profil du message ACK
+###### Profil du message ACK
 
 Le profil du message ACK est le suivant :
 
@@ -6803,7 +6803,7 @@ Le profil du message ACK est le suivant :
  </tr>
 </tbody></table>
 
-##### Structure fonctionnelle du message ACK
+###### Structure fonctionnelle du message ACK
 
 La structure du message ACK est représentée ci-dessous :
 
@@ -6816,9 +6816,9 @@ La structure du message ACK est représentée ci-dessous :
 Ces segments doivent être conformes au standard HL7v2.5 pour le message
 ORU et HL7v2.6 pour MDM.
 
-##### Description des contraintes à appliquer sur l'acquittement
+###### Description des contraintes à appliquer sur l'acquittement
 
-###### Segment MSH
+######## Segment MSH
 
 Le segment MSH reprend une partie des informations du message initial :
 
@@ -7287,7 +7287,7 @@ le type du message (ORU ou MDM) :
  </tr>
 </tbody></table>
 
-###### Segment MSA
+######## Segment MSA
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
  <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
@@ -7396,7 +7396,7 @@ le type du message (ORU ou MDM) :
  </tr>
 </tbody></table>
 
-###### Segment ERR
+######## Segment ERR
 
 Ce segment est utilisé au niveau des messages d'acquittement dans le cas
 où le champ MSA-1 prend la valeur AE (Application error) ou AR
@@ -7521,7 +7521,7 @@ ERR :
  </tr>
 </tbody></table>
   
-###### Exemple
+######## Exemple
 
 Entête MSH d'un message MDM ou ORU émis par le CREATEUR :
 
@@ -7545,9 +7545,9 @@ ERR||MSH^1^12|203^ Unsupported version^messageErrorCondition| E
 
 ```
 
-### Description des messages HL7 d'accusés métier
+#### Description des messages HL7 d'accusés métier
 
-#### Evènements déclenchants des messages d'accusés métier HL7v2
+##### Evènements déclenchants des messages d'accusés métier HL7v2
 
 Après réception du (des) document(s), le GESTIONNAIRE le(s)
 distribue(nt) au consommateur de documents (DMP/MSSanté). Lorsque le
@@ -7715,7 +7715,7 @@ Ce type de message est utilisé par trois évènements différents :
  </tr>
 </tbody></table>
 
-#### Structure des messages accusés métier HL7
+##### Structure des messages accusés métier HL7
 
 L'accusé de réception du document par le DMP, l'accusé de réception du
 courriel MSSanté et l'accusé de lecture MSSanté seront transmis en
@@ -7732,14 +7732,14 @@ Ces segments doivent être conformes au standard HL7v2.6. Les contraintes
 concernant les segments en rouge sur le schéma sont décrites dans la
 section suivante.
 
-#### Description des contraintes à appliquer sur les accusés métiers
+##### Description des contraintes à appliquer sur les accusés métiers
 
 Pour l'ensemble des OBX listés dans cette section, le champ OBX-3 prend
 ses valeurs dans la table « AckMetierZAM » disponible [ici](ack-metier-zam.html).
 
-##### Contraintes à appliquer au message ZAM^Z01^ZAM_Z01 - Accusé de réception DMP
+###### Contraintes à appliquer au message ZAM^Z01^ZAM_Z01 - Accusé de réception DMP
 
-###### Segment MSH
+######## Segment MSH
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
@@ -8315,7 +8315,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
  </tr>
 </tbody></table>
 
-###### Segment OBX portant le statut de d'accusé de réception
+######## Segment OBX portant le statut de d'accusé de réception
 
 Le premier segment OBX renseigne le statut de l'accusé de réception :
 
@@ -8698,7 +8698,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
  </tr>
 </tbody></table>
 
-###### Segment ERR
+######## Segment ERR
 
 Si une erreur intervient lors du dépôt du document sur le DMP, ce
 segment contient sa description.
@@ -8843,9 +8843,9 @@ segment contient sa description.
  </tr>
 </tbody></table>
 
-##### Contraintes à appliquer au message ZAM^Z02^ZAM_Z01 -- Accusé de réception MSSanté
+###### Contraintes à appliquer au message ZAM^Z02^ZAM_Z01 -- Accusé de réception MSSanté
 
-###### Segment MSH
+######## Segment MSH
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
@@ -9419,7 +9419,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
  </tr>
 </tbody></table>
 
-###### Segment OBX portant le statut de d'accusé de réception
+######## Segment OBX portant le statut de d'accusé de réception
 
 Le premier segment OBX renseigne le statut de l'accusé de réception
 MSSanté :
@@ -9799,7 +9799,7 @@ MSSanté :
  </tr>
 </tbody></table>
 
-###### Segment OBX portant les informations du destinataire MSSanté
+######## Segment OBX portant les informations du destinataire MSSanté
 
 Le deuxième segment OBX renseigne les informations du destinataire du
 courriel MSSanté :
@@ -10160,7 +10160,7 @@ courriel MSSanté :
  </tr>
 </tbody></table>
 
-###### Segment ERR
+######## Segment ERR
 
 Si une erreur intervient lors de la distribution du ou des document(s)
 par MSSanté dans le serveur de messagerie du destinataire MSSanté, ce
@@ -10301,9 +10301,9 @@ segment contient sa description.
  </tr>
 </tbody></table>
 
-##### Contraintes à appliquer au message ZAM^Z03^ZAM_Z01 -- Accusé de lecture MSSanté 
+###### Contraintes à appliquer au message ZAM^Z03^ZAM_Z01 -- Accusé de lecture MSSanté 
 
-###### Segment MSH
+######## Segment MSH
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
@@ -10877,7 +10877,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
  </tr>
 </tbody></table>
 
-###### Segment OBX portant le statut de d'accusé de lecture MSSanté
+######## Segment OBX portant le statut de d'accusé de lecture MSSanté
 
 Le premier segment OBX renseigne le statut de l'accusé de lecture :
 
@@ -11260,7 +11260,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
  </tr>
 </tbody></table>
 
-###### Segment OBX portant les informations du lecteur
+######## Segment OBX portant les informations du lecteur
 
 Le deuxième segment OBX renseigne les informations du lecteur du
 courriel MSSanté :
@@ -11625,7 +11625,7 @@ courriel MSSanté :
  </tr>
 </tbody></table>
 
-###### Segment ERR
+######## Segment ERR
 
 Si une erreur intervient lors du traitement de la demande réceptionnée
 par le destinataire, ce segment contient sa description.
@@ -11777,6 +11777,6 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
  travers du courriel MDN. Le message HL7 `ZAM^Z03^ZAM_Z01` est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
 (cf structure du MDN -- Message Disposition Notification) décrit en Annexe 4 du volet « [Transmission au LPS d'un document CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante) ».
 
-#### Message d'acquittement technique des accusés métiers
+##### Message d'acquittement technique des accusés métiers
 
 Le message d'acquittement est identique à celui spécifié dans la [partie dédiée](profils-messages.html#le-message-dacquittement-du-message-hl7v2), à l'exception du champ MSH-9 qui prend la valeur `ACK^Z01^ACK` ou `ACK^Z02^ACK` ou `ACK^Z03^ACK` selon l'évènement du message initial.
