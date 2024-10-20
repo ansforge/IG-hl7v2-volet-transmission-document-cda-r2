@@ -22,7 +22,8 @@ pages:
         title: "Accueil"
     volume1.md:
         title: "Volume 1 : Etude fonctionnelle"
-    volume2.md:"Volume 1 : Détail des transactions"
+    volume2.md:
+        title: "Volume 2 : Détail des transactions"
     perimetre-transaction.md:
         title: "Périmètre de la transaction"
     role.md:
