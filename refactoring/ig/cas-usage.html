@@ -241,17 +241,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#envoi-dun-document-clinique-dun-établissement-vers-un-médecin-traitant" id="markdown-toc-envoi-dun-document-clinique-dun-établissement-vers-un-médecin-traitant">Envoi d’un document clinique d’un établissement vers un médecin traitant</a></li>
-  <li><a href="#envoi-dun-compte-rendu-de-biologie-dun-laboratoire-privé-vers-un-établissement-hospitalier" id="markdown-toc-envoi-dun-compte-rendu-de-biologie-dun-laboratoire-privé-vers-un-établissement-hospitalier">Envoi d’un compte rendu de biologie d’un laboratoire privé vers un établissement hospitalier</a></li>
-  <li><a href="#transmission-dun-document-clinique-dun-patient-dun-établissement-hospitalier-vers-un-autre-établissement-hospitalier" id="markdown-toc-transmission-dun-document-clinique-dun-patient-dun-établissement-hospitalier-vers-un-autre-établissement-hospitalier">Transmission d’un document clinique d’un patient d’un établissement hospitalier vers un autre établissement hospitalier</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <p>Cette section décrit, <strong>à titre d’exemple et de façon non exhaustive</strong>, un ensemble de cas d’usage. Pour une meilleure compréhension du lecteur, ces cas d’usage couvrent les échanges entre le système créateur du document et la PFI, mais également les échanges au-delà de la PFI (et donc au-delà du périmètre de ce présent document).</p>
 
-<h3 id="envoi-dun-document-clinique-dun-établissement-vers-un-médecin-traitant">Envoi d’un document clinique d’un établissement vers un médecin traitant</h3>
+<h4 id="envoi-dun-document-clinique-dun-établissement-vers-un-médecin-traitant">Envoi d’un document clinique d’un établissement vers un médecin traitant</h4>
 
 <blockquote>
     <div class="note note">
@@ -291,7 +286,7 @@ demandé un accusé métier de lecture lors de l’envoi par MSSanté,
 celui-ci est notifié, dans son logiciel métier, de la prise de
 connaissance du courriel par le Dr Adam Hoda.</p>
 
-<h3 id="envoi-dun-compte-rendu-de-biologie-dun-laboratoire-privé-vers-un-établissement-hospitalier">Envoi d’un compte rendu de biologie d’un laboratoire privé vers un établissement hospitalier</h3>
+<h4 id="envoi-dun-compte-rendu-de-biologie-dun-laboratoire-privé-vers-un-établissement-hospitalier">Envoi d’un compte rendu de biologie d’un laboratoire privé vers un établissement hospitalier</h4>
 
 <blockquote>
     <div class="note note">
@@ -308,7 +303,7 @@ connaissance du courriel par le Dr Adam Hoda.</p>
 <p>Ce cas d’usage peut être étendu à tout échange entre 2 boîtes applicatives. Ce processus est similaire à l’envoi d’un document via un
 message HL7, mais le vecteur de communication est un courriel MSSanté.</p>
 
-<h4 id="description-du-cas-nominal">Description du cas nominal</h4>
+<h5 id="description-du-cas-nominal">Description du cas nominal</h5>
 
 <p>Le médecin biologiste valide le compte rendu de biologie via son SGL
 (Système de Gestion de Laboratoire) et précise les métadonnées de
@@ -358,7 +353,7 @@ le DPI d’un établissement partenaire.</p>
 <p>Le diagramme serait identique dans le cas d’une demande de remplacement
 ou de suppression du compte rendu.</p>
 
-<h4 id="description-du-cas-en-erreur">Description du cas en erreur</h4>
+<h5 id="description-du-cas-en-erreur">Description du cas en erreur</h5>
 
 <p>Le CR de biologie n’est pas intégré dans le logiciel métier du
 destinataire pour une raison technique (par exemple, non-conformité de
@@ -387,7 +382,7 @@ du SGL vers le DPI.</p>
 <p>Le diagramme serait identique dans le cas d’une demande de remplacement
 ou de suppression du compte rendu.</p>
 
-<h3 id="transmission-dun-document-clinique-dun-patient-dun-établissement-hospitalier-vers-un-autre-établissement-hospitalier">Transmission d’un document clinique d’un patient d’un établissement hospitalier vers un autre établissement hospitalier</h3>
+<h4 id="transmission-dun-document-clinique-dun-patient-dun-établissement-hospitalier-vers-un-autre-établissement-hospitalier">Transmission d’un document clinique d’un patient d’un établissement hospitalier vers un autre établissement hospitalier</h4>
 
 <blockquote>
     <div class="note note">
@@ -397,7 +392,7 @@ ou de suppression du compte rendu.</p>
     </div>
 </blockquote>
 
-<h4 id="description-du-cas-nominal-1">Description du cas nominal</h4>
+<h5 id="description-du-cas-nominal-1">Description du cas nominal</h5>
 
 <p>Dans ce cas d’usage, le compte rendu d’hospitalisation est envoyé par
 MSSanté sur la BAL organisationnelle du service Y. La secrétaire de
@@ -482,7 +477,7 @@ de transmission du compte rendu du SGL vers le DPI.</p>
 <p>Le diagramme serait identique dans le cas d’une demande de remplacement
 ou de suppression du compte rendu.</p>
 
-<h4 id="description-du-cas-dusage-en-erreur">Description du cas d’usage en erreur</h4>
+<h5 id="description-du-cas-dusage-en-erreur">Description du cas d’usage en erreur</h5>
 
 <p>La cinématique des échanges est la même que précédemment mais le compte
 rendu d’hospitalisation n’est pas intégré dans le DPI du service Y en
@@ -504,6 +499,7 @@ vers le DPI d’un autre établissement.</p>
 
 <p>Le diagramme serait identique dans le cas d’une demande de remplacement
 ou de suppression du compte rendu.</p>
+
 
 
 
@@ -545,7 +541,7 @@ ou de suppression du compte rendu.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 21, 2024 11:53+0000">2024-10-21</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 21, 2024 11:55+0000">2024-10-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
