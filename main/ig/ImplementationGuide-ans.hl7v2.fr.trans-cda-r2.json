@@ -10,7 +10,7 @@
   "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2024-10-03T11:44:54+00:00",
+  "date" : "2024-10-21T16:05:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -646,6 +646,24 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "volume1.html"
+        }],
+        "nameUrl" : "volume1.html",
+        "title" : "Volume 1 : Etude fonctionnelle",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "volume2.html"
+        }],
+        "nameUrl" : "volume2.html",
+        "title" : "Volume 2 : Détail des transactions",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "cas-usage.html"
         }],
         "nameUrl" : "cas-usage.html",
@@ -686,15 +704,6 @@
         }],
         "nameUrl" : "identification-flux.html",
         "title" : "identification des flux",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "volume2.html"
-        }],
-        "nameUrl" : "volume2.html",
-        "title" : "Volume 2",
         "generation" : "markdown"
       },
       {
@@ -848,6 +857,15 @@
         }],
         "nameUrl" : "download.html",
         "title" : "Téléchargements",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mapping.html"
+        }],
+        "nameUrl" : "mapping.html",
+        "title" : "Mapping",
         "generation" : "markdown"
       }]
     },
