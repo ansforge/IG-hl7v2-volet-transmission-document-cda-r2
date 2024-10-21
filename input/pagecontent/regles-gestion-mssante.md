@@ -3,15 +3,15 @@ Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX val
 <table>
 <tbody>
 <tr>
-<td width="245">
-<p><strong>Balises OBX&nbsp;: </strong></p>
-</td>
-<td width="404">
-<p><strong>Echange MSSANTE&nbsp;: </strong></p>
-</td>
+<th>
+<p><strong>Balises OBX& </strong></p>
+</th>
+<th>
+<p><strong>Echange MSSANTE </strong></p>
+</th>
 </tr>
 <tr>
-<td width="245">
+<td>
 <p>MASQUE_PS&nbsp;: N</p>
 <p>INVISIBLE_PATIENT&nbsp;: N</p>
 <p>INVISIBLE_REP_LEGAUX : N</p>
@@ -22,13 +22,13 @@ Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX val
 <p>ACK_RECEPTION&nbsp;: N ou Y</p>
 <p>ACK_LECTURE_MSS&nbsp;: N ou Y</p>
 </td>
-<td width="404">
+<td>
 <p>Envoi du document sur la boite MSSant&eacute; du PS/organisation/BAL applicative du destinataire et du Patient</p>
 </td>
 </tr>
 <tr>
-<td width="245">
-<p>MASQUE_PS&nbsp;: N</p>
+<td>
+<p>MASQUE_PS&nbsp;:Y ou N<</p>
 <p>INVISIBLE_PATIENT&nbsp;: Y</p>
 <p>INVISIBLE_REP_LEGAUX : N</p>
 <p>CONNEXION_SECRETE&nbsp;: N</p>
@@ -38,12 +38,12 @@ Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX val
 <p>ACK_RECEPTION&nbsp;: N ou Y</p>
 <p>ACK_LECTURE_MSS&nbsp;: N ou Y</p>
 </td>
-<td width="404">
+<td>
 <p>Envoi du document sur la boite MSSant&eacute; du PS/organisation/BAL applicative du destinataire</p>
 </td>
 </tr>
 <tr>
-<td width="245">
+<td>
 <p>MASQUE_PS&nbsp;: Y ou N</p>
 <p>INVISIBLE_PATIENT&nbsp;: N</p>
 <p>INVISIBLE_REP_LEGAUX : N ou Y</p>
@@ -54,7 +54,7 @@ Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX val
 <p>ACK_RECEPTION&nbsp;: N ou Y</p>
 <p>ACK_LECTURE_MSS&nbsp;: N ou Y</p>
 </td>
-<td width="404">
+<td>
 <p>Envoi du document sur la boite MSSant&eacute; du patient</p>
 </td>
 </tr>
