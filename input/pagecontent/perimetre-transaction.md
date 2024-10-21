@@ -17,7 +17,7 @@ CREATEUR de document(s).
 
 Les autres données nécessaires aux transactions XDS ou à la création de
 l'archive IHE-XDM ne rentrent pas dans le périmètre de cette
-spécification, elles sont récupérées de l'en-tête CDA ([ANS – CI-SIS : ANNEXE – LIEN ENTRE L’EN-TETE CDA ET LES METADONNEES XDS 1.6](https://esante.gouv.fr/sites/default/files/media_entity/documents/CI-SIS_ANX_LIENS-CDA-METADONNEES-XDS_V1.6.pdf)).
+spécification, elles sont récupérées de l'en-tête CDA ([ANS – CI-SIS : ANNEXE – LIEN ENTRE L’EN-TETE CDA ET LES METADONNEES XDS](https://esante.gouv.fr/annexe-lien-entre-len-tete-cda-et-les-metadonnees-xds)).
 
 La spécification technique de cette transaction couvre également l'envoi
 de l'accusé du message HL7, l'envoi de l'accusé de réception du DMP et
