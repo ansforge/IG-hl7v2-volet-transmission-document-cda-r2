@@ -1,84 +1,69 @@
 Les cas d'usages liés à une demande de transmission initiale/remplacement/suppression de document(s) clinique(s) d'un patient sont gérés différemment entre l'ORU et le MDM :
 
-<table width="652">
+<table>
 <tbody>
 <tr>
-<td width="218">
+<th>
 <p><strong>Flux m&eacute;tier</strong></p>
-</td>
-<td width="217">
+</th>
+<th>
 <p><strong>Message de type ORU</strong></p>
-</td>
-<td width="217">
+</th>
+<th>
 <p><strong>Message de type MDM</strong></p>
-</td>
+</th>
 </tr>
 <tr>
-<td width="218">
+<td>
 <p>TransmissionDocuments&nbsp;: Demande de transmission initiale de document(s)</p>
 </td>
 <td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
+
 <p>&nbsp;-&gt; OBX-11 = F (Final results; Can only be changed with a corrected result.) [HL7 Tables 0085]</p>
 </td>
 <td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T02&nbsp;&laquo;&nbsp;Original document notification&nbsp;&raquo;</p>
-<p>&nbsp;</p>
+<p>MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T02&nbsp;&laquo;&nbsp;Original document notification&nbsp;&raquo;</p>
 <p>-&gt; <code>MDM^T02^MDM_T02</code></p>
-<p><strong><u>&nbsp;</u></strong></p>
 <p>-&gt; OBX-11 = F (Final results; Can only be changed with a corrected result.) [HL7 Tables 0085]</p>
 </td>
 </tr>
 <tr>
-<td width="218">
+<td >
 <p>TransmissionDocuments&nbsp;: Demande de suppression de document(s)</p>
 </td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<td >
+<p> ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
 <p>-&gt; OBX-11 = D (Deletes the OBX record) [HL7 Tables 0085]</p>
 </td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T04&nbsp;&laquo;&nbsp;Document status change notification and content&nbsp;&raquo;</p>
-<p>&nbsp;</p>
+<td>
+<p>MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T04&nbsp;&laquo;&nbsp;Document status change notification and content&nbsp;&raquo;</p>
 <p>-&gt; <code>MDM^T04^MDM_T02</code></p>
-<p><strong><u>&nbsp;</u></strong></p>
 <p>-&gt; OBX-11 = D (Deletes the OBX record) [HL7 Tables 0085]</p>
 </td>
 </tr>
 <tr>
-<td width="218">
+<td>
 <p>TransmissionDocuments&nbsp;: Demande de remplacement de document(s)</p>
 </td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<td>
+<p>ORU : L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le R01 &laquo;&nbsp;Unsolicited Observation Message&nbsp;&raquo;</p>
 <p>-&gt; OBX-11 = C (Record coming over is a correction and thus replaces a final result) [HL7 Tables 0085]</p>
 </td>
-<td width="217">
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T10&nbsp;&laquo;&nbsp;Document replacement notification and content&nbsp;&raquo;</p>
-<p><strong><u>&nbsp;</u></strong></p>
+<td>
+<p> MDM&nbsp;: L&rsquo;&eacute;v&egrave;nement utilis&eacute; sera le T10&nbsp;&laquo;&nbsp;Document replacement notification and content&nbsp;&raquo;</p>
 <p>-&gt; <code>MDM^T10^MDM_T02</code><br /> </p>
 <p>-&gt; OBX-11 = C (Record coming over is a correction and thus replaces a final result) [HL7 Tables 0085]</p>
 </td>
 </tr>
 <tr>
-<td width="218">
+<td >
 <p>R&eacute;ponseTransmissionDocuments&nbsp;</p>
 </td>
-<td width="217">
+<td >
 <p>Acquittement technique du message HL7 ORU</p>
 </td>
-<td width="217">
+<td >
 <p>Acquittement technique du message HL7 MDM</p>
 </td>
 </tr>
