@@ -20,6 +20,10 @@ parameters:
 pages:
     index.md:
         title: "Accueil"
+    volume1.md:
+        title: "Volume 1 : Etude fonctionnelle"
+    volume2.md:
+        title: "Volume 2 : Détail des transactions"        
     cas-usage.md:
         title: "Cas d'usage"
     contexte-metier.md:
@@ -30,7 +34,6 @@ pages:
         title: "Définition des processus collaboratifs"
     identification-flux.md:
         title: "identification des flux"
-    volume2.md:
     perimetre-transaction.md:
         title: "Périmètre de la transaction"
     role.md:
@@ -66,28 +69,30 @@ pages:
     download.md:
         title: "Téléchargements"
         generation: markdown
-
+    mapping.md:
+        title: "Mapping"      
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: 
-        "Cas d'usage": cas-usage.html
-        "Organisation du contexte métier": contexte-metier.html
-        "Acteurs et transactions": acteurs-transactions.html
-        "Définition des processus collaboratifs": def-proc-collab.html
-        "identification des flux": identification-flux.html
+        "Cas d'usage": volume1.html#cas-dusage
+        "Organisation du contexte métier": volume1.html#organisation-du-contexte-métier
+        "Acteurs et transactions": volume1.html#acteurs-et-transactions
+        "Définition des processus collaboratifs": volume1.html#définition-des-processus-collaboratifs
+        "identification des flux": volume1.html#identification-des-flux
     Volume 2 – Détail des Transactions: 
-        "Volume 2 : Introduction": volume2.html
-        "Périmètre de la transaction": perimetre-transaction.html
-        "Rôle des acteurs pour cette transaction": role.html
-        "Choix des standards": standards.html
-        "Evènements déclenchants": evenements-declenchants.html
-        "Interactions entre les Acteurs": interactions-acteurs.html
-        "Profils de messages": profils-messages.html
-        "Règles de gestion MSSANTE": regles-gestion-mssante.html
+        "Introduction": volume2.html#introduction
+        "Périmètre de la transaction": volume2.html#périmetre-de-la-transaction
+        "Rôle des acteurs pour cette transaction": volume2.html#rôle-des-acteurs-pour-cette-transaction
+        "Choix des standards": volume2.html#choix-des-standards
+        "Evènements déclenchants": volume2.html#evènements-déclenchants
+        "Interactions entre les Acteurs": volume2.html#interactions-entre-les-acteurs
+        "Profils de messages": volume2.html#profils-de-messages
+        "Règles de gestion MSSANTE": volume2.html#règles-de-gestion-mssante
     Volume 3 - Annexes:
         "Table MetaDMP/MSS": meta-dmp-mss.html
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
+        "Mapping": mapping.html
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html
