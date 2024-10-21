@@ -1,6 +1,6 @@
 Cette section décrit, **à titre d'exemple et de façon non exhaustive**, un ensemble de cas d'usage. Pour une meilleure compréhension du lecteur, ces cas d'usage couvrent les échanges entre le système créateur du document et la PFI, mais également les échanges au-delà de la PFI (et donc au-delà du périmètre de ce présent document).
 
-### Envoi d'un document clinique d'un établissement vers un médecin traitant
+#### Envoi d'un document clinique d'un établissement vers un médecin traitant
 
 <blockquote>
     <div class="note note">
@@ -40,7 +40,7 @@ demandé un accusé métier de lecture lors de l'envoi par MSSanté,
 celui-ci est notifié, dans son logiciel métier, de la prise de
 connaissance du courriel par le Dr Adam Hoda.
 
-### Envoi d'un compte rendu de biologie d'un laboratoire privé vers un établissement hospitalier
+#### Envoi d'un compte rendu de biologie d'un laboratoire privé vers un établissement hospitalier
 
 <blockquote>
     <div class="note note">
@@ -57,7 +57,7 @@ connaissance du courriel par le Dr Adam Hoda.
 Ce cas d'usage peut être étendu à tout échange entre 2 boîtes applicatives. Ce processus est similaire à l'envoi d'un document via un
 message HL7, mais le vecteur de communication est un courriel MSSanté.
 
-#### Description du cas nominal
+##### Description du cas nominal
 
 Le médecin biologiste valide le compte rendu de biologie via son SGL
 (Système de Gestion de Laboratoire) et précise les métadonnées de
@@ -109,7 +109,7 @@ le DPI d'un établissement partenaire.
 Le diagramme serait identique dans le cas d'une demande de remplacement
 ou de suppression du compte rendu.
 
-#### Description du cas en erreur
+##### Description du cas en erreur
 
 Le CR de biologie n'est pas intégré dans le logiciel métier du
 destinataire pour une raison technique (par exemple, non-conformité de
@@ -138,7 +138,7 @@ du SGL vers le DPI.
 Le diagramme serait identique dans le cas d'une demande de remplacement
 ou de suppression du compte rendu.
 
-### Transmission d'un document clinique d'un patient d'un établissement hospitalier vers un autre établissement hospitalier
+#### Transmission d'un document clinique d'un patient d'un établissement hospitalier vers un autre établissement hospitalier
 
 <blockquote>
     <div class="note note">
@@ -149,7 +149,7 @@ ou de suppression du compte rendu.
 </blockquote>
 
 
-#### Description du cas nominal
+##### Description du cas nominal
 
 Dans ce cas d'usage, le compte rendu d'hospitalisation est envoyé par
 MSSanté sur la BAL organisationnelle du service Y. La secrétaire de
@@ -235,7 +235,7 @@ de transmission du compte rendu du SGL vers le DPI.
 Le diagramme serait identique dans le cas d'une demande de remplacement
 ou de suppression du compte rendu.
 
-#### Description du cas d'usage en erreur
+##### Description du cas d'usage en erreur
 
 La cinématique des échanges est la même que précédemment mais le compte
 rendu d'hospitalisation n'est pas intégré dans le DPI du service Y en
