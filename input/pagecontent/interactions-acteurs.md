@@ -3,7 +3,7 @@ d'avoir une vision de l'ensemble des échanges, y compris du côté du
 destinataire. Cependant, le périmètre du présent volet est limité aux
 transactions représentées en bleu sur les figures suivantes.
 
-### Implémentation du message ORU et de ses acquittements métier HL7
+#### Implémentation du message ORU et de ses acquittements métier HL7
 
 <div class="figure" style='text-align: center;'>
     <img src="image17.png" alt="Figure 13" title="Figure 13 : Diagramme de séquence -- Message ORU" style="width:80%;">
@@ -30,7 +30,7 @@ schéma la possibilité pour l'acteur CREATEUR d'envoyer une demande
 d'intégration, de remplacement ou de suppression de document(s) au moyen
 d'un message HL7 ORU.
 
-### Implémentation du message MDM et de ses acquittements métier HL7
+#### Implémentation du message MDM et de ses acquittements métier HL7
 
 Les interactions de la transaction de
 transmission/remplacement/suppression de document(s) utilisent
@@ -43,7 +43,7 @@ de lecture MSSanté).
 L'action à réaliser sur le document porté par la transaction est
 indiquée par la nature de l'événement (T02, T10 et T04).
 
-#### Demande de transmission initiale d'un document
+##### Demande de transmission initiale d'un document
 
 <div class="figure" style='text-align: center;'>
     <img src="image19.png" alt="Figure 14" title="Figure 14 : Diagramme de séquence -- Message MDM -- Transmission initiale d'un document" style="width:80%;">
@@ -51,7 +51,7 @@ indiquée par la nature de l'événement (T02, T10 et T04).
 </div>
 <br>
 
-#### Demande de remplacement d'un document
+##### Demande de remplacement d'un document
 
 
 <div class="figure" style='text-align: center;'>
@@ -60,7 +60,7 @@ indiquée par la nature de l'événement (T02, T10 et T04).
 </div>
 <br>
 
-#### Demande de suppression d'un document
+##### Demande de suppression d'un document
 
 
 <div class="figure" style='text-align: center;'>

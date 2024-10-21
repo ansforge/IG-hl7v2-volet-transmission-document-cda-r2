@@ -1,8 +1,8 @@
-#### Les groupes de processus
+##### Les groupes de processus
 
 Réception par la plateforme d'intermédiation (PFI) d'une demande de traitement sur le(s) document(s) clinique(s) relatif(s) à un patient provenant d'un logiciel métier de l'établissement, pour publication ensuite vers le DMP et/ou envoi par MSSanté vers un ou plusieurs destinataire(s). Ce groupe de processus est divisé en quatre processus décrits dans les sections suivantes.
 
-#### Les processus
+##### Les processus
 
 Le groupe de processus est divisé en quatre processus :
 

@@ -1,4 +1,4 @@
-### Liste des Acteurs et systèmes concernés
+#### Liste des Acteurs et systèmes concernés
 
 Le présent volet met en œuvre les Acteurs IHE suivants, représentant le
 rôle joué par un ou plusieurs composants du système d'information :
@@ -73,7 +73,7 @@ Le tableau suivant liste, pour chacun des acteurs, les systèmes du SIH concern�
 </tbody>
 </table>
 
-### Diagramme des Acteurs/Transactions
+#### Diagramme des Acteurs/Transactions
 
 <div class="figure" style='text-align: center;'>
     <img src="image12.png" alt="Figure 7" title="Figure 7 : Diagramme des Acteurs/Transactions." style="width:80%;">
@@ -255,7 +255,7 @@ identifiant propre._
     </p>
 </blockquote>
 
-### Regroupement requis des Acteurs
+#### Regroupement requis des Acteurs
 
 Cette section décrit les exigences en termes de regroupement d'acteurs pour chacun des acteurs identifiés précédemment.
 
