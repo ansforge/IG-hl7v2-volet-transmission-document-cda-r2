@@ -1378,68 +1378,50 @@ la suivante :
 
 ##### Le segment ORC
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du segment ORC&nbsp;: Usage&nbsp;= Required /
-  Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment ORC</span></b></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Common Order</span></b></p>
-  </td>
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">ORC-1</span></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Order control</span></p>
-  </td>
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">NW</span><span style="color:black"> (New order/service
-  dans le cas d’une demande d’intégration de document(s)</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">RO </span><span style="color:black">(Replace order)
-  dans le cas d’une demande de remplacement</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">CA </span><span style="color:black">(Canceled) dans le
-  cas d’une demande de suppression</span></p>
-  </td>
- </tr>
-</tbody></table>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du segment ORC : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment ORC</strong></p>
+      </td>
+      <td>
+        <p><strong>Common Order</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>ORC-1</p>
+      </td>
+      <td>
+        <p>Order control</p>
+      </td>
+      <td>
+        <p>NW (New order/service dans le cas d'une demande d'intégration de document(s)</p>
+        <p>RO (Replace order) dans le cas d'une demande de remplacement</p>
+        <p>CA (Canceled) dans le cas d'une demande de suppression</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 La valeur du champ ORC-1 doit être cohérente avec la valeur du champ
 OBX-11 et dans le cas du message MDM avec l'évènement déclenchant (T02,
@@ -1448,111 +1430,80 @@ rejeté par la PFI.
 
 ##### Le segment OBR
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du segment OBR&nbsp;: Usage&nbsp;= Required /
-  Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#E5E5E5;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBR</span></b></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation Request</span></b></p>
-  </td>
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBR-4</span></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Universal Service Identifier</span></p>
-  </td>
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt;OBR-4.1</span></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code du document</span></p>
-  </td>
-  <td width="274" rowspan="2" valign="top" style="width:205.5pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Utiliser le </span><a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a>
-  d<span style="color:black">e la Nomenclature des Objets de Santé (NOS). </span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">A noter qu’en cas d’envoi au DMP, le Gestionnaire doit
-  contrôler que le type de document appartient au jeu de valeur défini par le
-  DMP (</span><a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a><span style="color:black">).</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt;OBR-4.2</span></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé du document</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt;OBR-4.3</span></p>
-  </td>
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Système de codage dont est issu le code</span></p>
-  </td>
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">LN </span><span style="color:#4472C4">ou </span><span style="color:#0070C0">TRE_A05 </span><span style="color:black">en fonction de
-  l’appartenance du code à l’un des systèmes de codage</span></p>
-  </td>
- </tr>
-</tbody></table>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du segment OBR : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBR</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation Request</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBR-4</p>
+      </td>
+      <td>
+        <p>Universal Service Identifier</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt;OBR-4.1</p>
+      </td>
+      <td>
+        <p>Code du document</p>
+      </td>
+      <td rowspan="2">
+        <p>Utiliser le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Santé (NOS).</p>
+        <p>A noter qu'en cas d'envoi au DMP, le Gestionnaire doit contrôler que le type de document appartient au jeu de valeur défini par le DMP (<a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a>).</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt;OBR-4.2</p>
+      </td>
+      <td>
+        <p>Libellé du document</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt;OBR-4.3</p>
+      </td>
+      <td>
+        <p>Système de codage dont est issu le code</p>
+      </td>
+      <td>
+        <p>LN ou TRE_A05 en fonction de l'appartenance du code à l'un des systèmes de codage</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ##### Les données concernant la demande de traitement sur le(s) document(s)
 
@@ -1600,1638 +1551,655 @@ l'expéditeur du message prend la responsabilité de la cohérence des
 données entre le message et le(s) document(s) et le récepteur n'a pas
 l'obligation de gérer le contenu de ces champs ou segments.
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
- <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
-  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
-  Usage&nbsp;= <span class="SpellE">Required</span> / Cardinalité&nbsp;= [<span class="GramE">1..</span>1]<o:p></o:p></span></b></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:1">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  background:#E5E5E5;mso-shading:windowtext;mso-pattern:gray-10 auto;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Elément requis&nbsp;:<o:p></o:p></span></b></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
-  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Description&nbsp;: <o:p></o:p></span></b></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
-  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Valeur&nbsp;: <o:p></o:p></span></b></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:2">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Segment OBX (Requis)<o:p></o:p></span></b></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Observation/<span class="SpellE">Result</span><o:p></o:p></span></b></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Contient un document au format CDA-R2<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:3">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">OBX-1<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Set Id - <span class="SpellE">Obx</span><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">Numéro
-  de séquence du segment<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:4">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">OBX-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Value Type<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">ED </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Encapsuled</span> Data)<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:5">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">OBX-3&nbsp;= OBR-4<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Observation Identifier <o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></b></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:6">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; OBX-3.1&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Code du Document<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" rowspan="2" valign="top" style="width:205.5pt;border-top:none;
-  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">Utiliser le </span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt">JDV_J07-XdsTypeCode-CISIS</span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539">
-  d</span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">e la Nomenclature des Objets de Santé
-  (NOS). <o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">A noter qu’en cas d’envoi au DMP, le Gestionnaire doit contrôler que
-  le type de document appartient au jeu de valeur défini par le DMP (</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial">JDV_J66-TypeCode-DMP</span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">).</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><sup><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></sup></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:7">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; OBX-3.2&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Libellé du Document<o:p></o:p></span></span></span></span></span></p>
-  <span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;text-indent:35.4pt;line-height:
-  normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:
-  _Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:8">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt;OBX-3.3<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Système de codage dont est issu le code<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">LN ou TRE_A05 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">en fonction de l’appartenance du code à l’un
-  de ces systèmes de codage.</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:9">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">OBX-5&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Observation Value<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:10">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; OBX-5.1<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Source Application<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:11">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; OBX-5.2<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Type<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Pour le message ORU : </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">TEXT </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(Machine <span class="SpellE">readable</span> text document)<o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Pour le message MDM&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">text </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(Text data)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:12">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; OBX-5.3<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Data <span class="SpellE">Subtype</span><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">XML</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:13">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; OBX-5.4<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
-  color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">Encoding</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">Base64</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:14">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; OBX-5.5<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Data<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">Intégrer le document CDA-R2 <o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:15">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">OBX-11<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Observation <span class="SpellE">Result</span>
-  Status<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">Statut du document pris dans la table HL7 0085 (Observation <span class="SpellE">Result</span> Status Codes <span class="SpellE">Interpretation</span>)&nbsp;:
-  <o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l11 level1 lfo7"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
-  mso-bidi-font-family:Symbol;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0">F&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">: Document validé<o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoListParagraphCxSpMiddle" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l11 level1 lfo7"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
-  mso-bidi-font-family:Symbol;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0">D&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">: Document à supprimer<o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l11 level1 lfo7"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><!--[if !supportLists]--><span style="font-size:9.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
-  mso-bidi-font-family:Symbol;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0">C&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">: Remplacement du Document<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:16">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Segment PRT (Conditionnel)</span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">P<span style="mso-bidi-font-weight:bold">articipation Information<br>
-  Expéditeur<o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Ce segment est requis, en particulier
-  dans le cas d’une publication du document sur le DMP, </span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">pour permettre à la PFI de générer le VIHF ainsi
-  que l’auteur du lot de soumission.</span></span></span></span></span><a style="mso-footnote-id:ftn2" href="#_ftn2" name="_ftnref2" title=""><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="MsoFootnoteReference"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold"><span style="mso-special-character:footnote"><!--[if !supportFootnotes]--><span class="MsoFootnoteReference"><span style="font-size:9.0pt;line-height:107%;
-  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;color:black;mso-themecolor:text1;mso-ansi-language:FR;mso-fareast-language:
-  EN-US;mso-bidi-language:AR-SA;mso-bidi-font-weight:bold">[2]</span></span><!--[endif]--></span></span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><o:p></o:p></span></b></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce segment contient les informations de l’expéditeur
-  à l’origine de la demande de traitement sur le document et de la structure à
-  laquelle il est rattaché.</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:17">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
-  mso-bidi-font-weight:bold">Action Code</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">UC </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Unchanged</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:18">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-4&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Participation <o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
-  color:#0070C0;mso-bidi-font-weight:bold">SB^Send</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold"> <span class="SpellE">by^participation</span> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:19">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-5 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
-  <span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
-  Person</span></span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce champ est requis si l’expéditeur est un
-  professionnel<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:20">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.1<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Person
-  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Identifiant du professionnel qui fait
-  la demande de traitement sur le(s) document(s)<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:21">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.2 <span style="background:yellow;
-  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Family Name<span style="background:yellow;
-  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Nom d’exercice du professionnel expéditeur<span style="background:yellow;mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:22">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.3<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
-  color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">Given</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"> Name<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Prénom d’exercice du professionnel expéditeur<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:23">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.9<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  <span class="SpellE">Authority</span><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant du
-  PS (OID de gestion de personnes)&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">1.2.250.1.71.4.2.1</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:24">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.13<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Identifier Type Code<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Type d’identifiant du professionnel
-  (valeur issue de la</span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">
-  </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
-  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold"> <o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:25">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-8<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
-  <span class="SpellE">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Décrit l’organisation rattachée au
-  professionnel ou au système à l'origine de la demande de traitement
-  sur le(s) document(s)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:26">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.1</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">OrganizationName</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Nom de l’organisation <o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:27">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.6<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  <span class="SpellE">Authority</span><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant de
-  l’organisation dont dépend le PS ou le système </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">à
-  l’origine de la <span style="color:black;mso-themecolor:text1">demande de traitement
-  sur le(s) document(s).<o:p></o:p></span></span></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">1.2.250.1.71.4.2.2 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">(OID de gestion des structures pour un PS
-  dans un établissement de santé).<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:28">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.7<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Identifier
-  Type Code<o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Type d’identifiant de l’organisation (valeur
-  issue de </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;mso-bidi-font-weight:bold">la </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
-  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">)&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">FINEJ </span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">(FINESS
-  d’entité juridique) <span style="color:black;mso-themecolor:text1">ou </span><span style="color:#0070C0">FINEG </span>(FINESS d’entité géographique).<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:29">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.10<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  <span class="SpellE">number</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="Default"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;font-family:
-  &quot;Arial&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
-  minor-latin;color:black;mso-themecolor:text1;mso-fareast-language:EN-US;
-  mso-bidi-font-weight:bold">Identifiant de l’organisation à l’origine de la
-  demande de traitement sur le(s) document(s)</span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:30">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-10 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
-  <span class="SpellE">Device</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce champ est requis si l’auteur est un
-  dispositif.<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:31">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-10.1<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Entity</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Identifiant du dispositif expéditeur du
-  document<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:32">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Segment PRT (conditionnel)<o:p></o:p></span></b></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">P<span style="mso-bidi-font-weight:bold">articipation Information
-  destinataire(s)</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><b><span style="mso-bidi-font-size:10.0pt;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></b></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce segment est répétable et </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">requis si le document est échangé via
-  MSSanté</span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">.<o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Il contient l’adresse MSSanté d’un
-  destinataire. <o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce segment est répétable.<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:33">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
-  mso-bidi-font-weight:bold">Action Code</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">UC </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Unchanged</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:34">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-4&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Participation </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0;mso-ansi-language:EN-US;mso-bidi-font-weight:bold">RCT^Result</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-ansi-language:EN-US;mso-bidi-font-weight:bold"> Copies <span class="SpellE">To^participation</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span lang="EN-US" style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-ansi-language:EN-US"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:35">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-5 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
-  Person</span></span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce champ est requis si le destinataire est
-  un professionnel de santé ou un patient.<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:36">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.1<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Person
-  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Identifiant du professionnel de santé
-  destinataire/patient<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:37">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.2 <span style="background:yellow;
-  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Family Name<span style="background:yellow;
-  mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Nom d’exercice du PS destinataire/nom
-  patient<span style="background:yellow;mso-highlight:yellow"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:38">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.3<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
-  color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">Given</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"> Name<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Prénom d’exercice du PS destinataire/prénom
-  patient<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:39">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.9<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  <span class="SpellE">Authority</span><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant du
-  PS (OID de gestion de personnes)&nbsp;: </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">1.2.250.1.71.4.2.1
-  </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial">ou du patient <span style="color:#0070C0">1.2.250.1.213.1.4.8 </span>(INS-NIR)
-  ou <span style="color:#0070C0">1.2.250.1.213.1.4.9 </span>(INS-NIA).<span style="color:black;mso-themecolor:text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:40">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-5.13<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Identifier Type Code<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Type d’identifiant (valeur issue de la </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
-  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">)&nbsp;:
-  <span style="color:#0070C0">RPPS ou INS</span><span style="color:black;
-  mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:41">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-8 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
-  <span class="SpellE">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce champ est requis si le destinataire est
-  une organisation (établissement, service, UF…).<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:42">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.1</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">OrganizationName</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Nom de l’organisation <o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:43">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.6<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Assigning</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  <span class="SpellE">Authority</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Autorité d’affectation de l’identifiant de
-  l’organisation destinataire du document.<o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">1.2.250.1.71.4.2.2 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">(OID de gestion des structures pour préciser
-  une entité juridique ou une entité géographique), N° FINESS ou N° FINEG pour
-  identifier une organisation intra-établissement (service, UF, pôle…). <o:p></o:p></span></span></span></span></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Cf </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">Contraintes sur les types de données HL7 v2.5</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;color:black;mso-themecolor:text1"> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">applicables aux profils d’intégration du cadre technique</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;color:black;mso-themecolor:text1"> </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:8.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">IT Infrastructure dans le périmètre d’IHE France.<sup>[12]</sup></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">&nbsp;</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:44">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.7<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Identifier
-  Type Code<o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Type d’identifiant (valeur issue de la </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span><a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:windowtext;
-  mso-bidi-font-weight:bold">Table 0203 – <span class="SpellE">Interop’Santé</span></span></span></span></span></span></a><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">)&nbsp;:
-  <span style="color:#0070C0">FINEJ </span>(FINESS d’entité juridique) <span style="color:black;mso-themecolor:text1">ou </span><span style="color:#0070C0">FINEG
-  </span>(FINESS d’entité géographique) ou <span style="color:#0070C0">UF </span>(UF),
-  <span style="color:#0070C0">SVR </span>(service)...<span style="color:black;
-  mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:45">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-8.10<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Organization</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  <span class="SpellE">number</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Identifiant de l’organisation destinataire
-  du document<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:46">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-10 (conditionnel)<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Participation
-  <span class="SpellE">Device</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce champ est requis si le destinataire est
-  une application.<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:47">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-10.1<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Entity</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  Identifier</span></span></span></span></span></span><span style="mso-bookmark:
-  _Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Identifiant de l’application destinataire du
-  document<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:48">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-15&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
-  mso-bidi-font-weight:bold">Participant <span class="SpellE">Telecommunication</span>
-  <span class="SpellE">Address</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:49">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-15.3<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Telecommunication</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  Equipment Type<o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">X.400 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial">(X</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt">.400 <span class="GramE">email</span> <span class="SpellE">address</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:50">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-15.4<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Communication
-  <span class="SpellE">Address</span><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">Intégrer l’adresse <span class="GramE">mail</span> MSSanté<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:51">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:52">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1">Segment PRT (segment optionnel)</span></b></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">P<span style="mso-bidi-font-weight:bold">articipation Information<br>
-  </span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Adresse de réponse<o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Ce segment optionnel permet d’indiquer
-  l’adresse <span class="GramE">mail</span> sur laquelle le destinataire peut
-  répondre. </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:53">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-2&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
-  mso-bidi-font-weight:bold">Action Code</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold">UC </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold">(<span class="SpellE">Unchanged</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:54">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-4&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">Participation </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;
-  color:#0070C0;mso-bidi-font-weight:bold">REPLY^Reply</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0;mso-bidi-font-weight:
-  bold"> <span class="SpellE">To^participation</span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:55">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">PRT-15&nbsp;<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1;
-  mso-bidi-font-weight:bold">Participant <span class="SpellE">Telecommunication</span>
-  <span class="SpellE">Address</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1"><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"></span></span></span></span>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p>&nbsp;</o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:56">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-15.3<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="SpellE"><span class="cx-body"><span style="font-size:9.0pt;color:black;
-  mso-themecolor:text1">Telecommunication</span></span></span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">
-  Equipment Type<o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:#0070C0">X.400 </span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial">(X</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt">.400 <span class="GramE">email</span> <span class="SpellE">address</span>)</span></span></span></span></span><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1"><o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
- <tr style="mso-yfti-irow:57;mso-yfti-lastrow:yes">
-  <td width="201" valign="top" style="width:150.8pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1;mso-bidi-font-weight:bold">&gt; PRT-15.4<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
-  <td width="177" valign="top" style="width:132.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span class="cx-body"><span style="font-size:9.0pt;color:black;mso-themecolor:text1">Communication
-  <span class="SpellE">Address</span><o:p></o:p></span></span></span></span></span></span></p>
-  </td>
-  
-  <td width="274" valign="top" style="width:205.5pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bookmark:_Toc518305025"><span style="mso-bookmark:_Toc494980146"><span style="mso-bookmark:_Toc486516985"><span style="mso-bookmark:_Toc486516539"><span style="font-size:9.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:
-  text1">Intégrer l’adresse <span class="GramE">mail</span> de réponse<o:p></o:p></span></span></span></span></span></p>
-  </td>
-  
- </tr>
-</tbody>
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX (Requis)</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p>Contient un document au format CDA-R2 </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2 </p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>ED (Encapsuled Data)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3 = OBR-4</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code du Document</p>
+      </td>
+      <td rowspan="2">
+        <p>Utiliser le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Santé (NOS).</p>
+        <p>A noter qu'en cas d'envoi au DMP, le Gestionnaire doit contrôler que le type de document appartient au jeu de valeur défini par le DMP (<a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a>).</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé du Document</p>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt;OBX-3.3</p>
+      </td>
+      <td>
+        <p>Système de codage dont est issu le code</p>
+      </td>
+      <td>
+        <p>LN ou TRE_A05 en fonction de l'appartenance du code à l'un de ces systèmes de codage.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5 </p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Source Application</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.2</p>
+      </td>
+      <td>
+        <p>Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : TEXT (Machine readable text document)</p>
+        <p>Pour le message MDM : text (Text data)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Data Subtype</p>
+      </td>
+      <td>
+        <p>XML</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.4</p>
+      </td>
+      <td>
+        <p>Encoding</p>
+      </td>
+      <td>
+        <p>Base64</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.5</p>
+      </td>
+      <td>
+        <p>Data</p>
+      </td>
+      <td>
+        <p>Intégrer le document CDA-R2</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Statut du document pris dans la table HL7 0085 (Observation Result Status Codes Interpretation) :</p>
+        <p>·       F : Document validé</p>
+        <p>·       D : Document à supprimer</p>
+        <p>·       C : Remplacement du Document</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment PRT (Conditionnel)</strong></p>
+      </td>
+      <td>
+        <p>Participation Information Expéditeur</p>
+      </td>
+      <td>
+        <p><strong>Ce segment est requis, en particulier dans le cas d'une publication du document sur le DMP,</strong> pour permettre à la PFI de générer le VIHF ainsi que l'auteur du lot de soumission.<a href="#_ftn2">[2]</a></p>
+        <p>Ce segment contient les informations de l'expéditeur à l'origine de la demande de traitement sur le document et de la structure à laquelle il est rattaché.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-2 </p>
+      </td>
+      <td>
+        <p>Action Code</p>
+      </td>
+      <td>
+        <p>UC (Unchanged)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-4 </p>
+      </td>
+      <td>
+        <p>Participation</p>
+      </td>
+      <td>
+        <p>SB^Send by^participation</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-5 (conditionnel)</p>
+        <p> </p>
+      </td>
+      <td>
+        <p>Participation Person</p>
+      </td>
+      <td>
+        <p>Ce champ est requis si l'expéditeur est un professionnel</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.1</p>
+      </td>
+      <td>
+        <p>Person Identifier</p>
+      </td>
+      <td>
+        <p>Identifiant du professionnel qui fait la demande de traitement sur le(s) document(s)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.2</p>
+      </td>
+      <td>
+        <p>Family Name</p>
+      </td>
+      <td>
+        <p>Nom d'exercice du professionnel expéditeur</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.3</p>
+      </td>
+      <td>
+        <p>Given Name</p>
+      </td>
+      <td>
+        <p>Prénom d'exercice du professionnel expéditeur</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.9</p>
+      </td>
+      <td>
+        <p>Assigning Authority</p>
+      </td>
+      <td>
+        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : 1.2.250.1.71.4.2.1</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.13</p>
+      </td>
+      <td>
+        <p>Identifier Type Code</p>
+      </td>
+      <td>
+        <p>Type d'identifiant du professionnel (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-8</p>
+      </td>
+      <td>
+        <p>Participation Organization</p>
+      </td>
+      <td>
+        <p>Décrit l'organisation rattachée au professionnel ou au système à l'origine de la demande de traitement sur le(s) document(s)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.1</p>
+      </td>
+      <td>
+        <p>OrganizationName</p>
+      </td>
+      <td>
+        <p>Nom de l'organisation</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.6</p>
+      </td>
+      <td>
+        <p>Assigning Authority</p>
+      </td>
+      <td>
+        <p>Autorité d'affectation de l'identifiant de l'organisation dont dépend le PS ou le système à l'origine de la demande de traitement sur le(s) document(s).</p>
+        <p>1.2.250.1.71.4.2.2 (OID de gestion des structures pour un PS dans un établissement de santé).</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.7</p>
+      </td>
+      <td>
+        <p>Identifier Type Code</p>
+      </td>
+      <td>
+        <p>Type d'identifiant de l'organisation (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>) : FINEJ (FINESS d'entité juridique) ou FINEG (FINESS d'entité géographique).</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.10</p>
+      </td>
+      <td>
+        <p>Organization number</p>
+      </td>
+      <td>
+        <p>Identifiant de l'organisation à l'origine de la demande de traitement sur le(s) document(s)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-10 (conditionnel)</p>
+      </td>
+      <td>
+        <p>Participation Device</p>
+      </td>
+      <td>
+        <p>Ce champ est requis si l'auteur est un dispositif.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-10.1</p>
+      </td>
+      <td>
+        <p>Entity Identifier</p>
+      </td>
+      <td>
+        <p>Identifiant du dispositif expéditeur du document</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment PRT (conditionnel)</strong></p>
+      </td>
+      <td>
+        <p>Participation Information destinataire(s)</p>
+      </td>
+      <td>
+        <p>Ce segment est répétable et <strong>requis si le document est échangé via MSSanté</strong>.</p>
+        <p>Il contient l'adresse MSSanté d'un destinataire.</p>
+        <p>Ce segment est répétable.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-2 </p>
+      </td>
+      <td>
+        <p>Action Code</p>
+      </td>
+      <td>
+        <p>UC (Unchanged)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-4 </p>
+      </td>
+      <td>
+        <p>Participation</p>
+      </td>
+      <td>
+        <p>RCT^Result Copies To^participation</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-5 (conditionnel)</p>
+      </td>
+      <td>
+        <p>Participation Person</p>
+      </td>
+      <td>
+        <p>Ce champ est requis si le destinataire est un professionnel de santé ou un patient.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.1</p>
+      </td>
+      <td>
+        <p>Person Identifier</p>
+      </td>
+      <td>
+        <p>Identifiant du professionnel de santé destinataire/patient</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.2</p>
+      </td>
+      <td>
+        <p>Family Name</p>
+      </td>
+      <td>
+        <p>Nom d'exercice du PS destinataire/nom patient</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.3</p>
+      </td>
+      <td>
+        <p>Given Name</p>
+      </td>
+      <td>
+        <p>Prénom d'exercice du PS destinataire/prénom patient</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.9</p>
+      </td>
+      <td>
+        <p>Assigning Authority</p>
+      </td>
+      <td>
+        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : 1.2.250.1.71.4.2.1 ou du patient 1.2.250.1.213.1.4.8 (INS-NIR) ou 1.2.250.1.213.1.4.9 (INS-NIA).</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-5.13</p>
+      </td>
+      <td>
+        <p>Identifier Type Code</p>
+      </td>
+      <td>
+        <p>Type d'identifiant (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>) : RPPS ou INS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-8 (conditionnel)</p>
+      </td>
+      <td>
+        <p>Participation Organization</p>
+      </td>
+      <td>
+        <p>Ce champ est requis si le destinataire est une organisation (établissement, service, UF…).</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.1</p>
+      </td>
+      <td>
+        <p>OrganizationName</p>
+      </td>
+      <td>
+        <p>Nom de l'organisation</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.6</p>
+      </td>
+      <td>
+        <p>Assigning Authority</p>
+      </td>
+      <td>
+        <p>Autorité d'affectation de l'identifiant de l'organisation destinataire du document.</p>
+        <p>1.2.250.1.71.4.2.2 (OID de gestion des structures pour préciser une entité juridique ou une entité géographique), N° FINESS ou N° FINEG pour identifier une organisation intra-établissement (service, UF, pôle…).</p>
+        <p>Cf Contraintes sur les types de données HL7 v2.5 applicables aux profils d'intégration du cadre technique IT Infrastructure dans le périmètre d'IHE France.[12] </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.7</p>
+      </td>
+      <td>
+        <p>Identifier Type Code</p>
+      </td>
+      <td>
+        <p>Type d'identifiant (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>) : FINEJ (FINESS d'entité juridique) ou FINEG (FINESS d'entité géographique) ou UF (UF), SVR (service)...</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-8.10</p>
+      </td>
+      <td>
+        <p>Organization number</p>
+      </td>
+      <td>
+        <p>Identifiant de l'organisation destinataire du document</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-10 (conditionnel)</p>
+      </td>
+      <td>
+        <p>Participation Device</p>
+      </td>
+      <td>
+        <p>Ce champ est requis si le destinataire est une application.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-10.1</p>
+      </td>
+      <td>
+        <p>Entity Identifier</p>
+      </td>
+      <td>
+        <p>Identifiant de l'application destinataire du document</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-15 </p>
+      </td>
+      <td>
+        <p>Participant Telecommunication Address</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-15.3</p>
+      </td>
+      <td>
+        <p>Telecommunication Equipment Type</p>
+      </td>
+      <td>
+        <p>X.400 (X.400 email address)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-15.4</p>
+      </td>
+      <td>
+        <p>Communication Address</p>
+      </td>
+      <td>
+        <p>Intégrer l'adresse mail MSSanté</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p> </p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment PRT (segment optionnel)</strong></p>
+      </td>
+      <td>
+        <p>Participation Information Adresse de réponse</p>
+      </td>
+      <td>
+        <p>Ce segment optionnel permet d'indiquer l'adresse mail sur laquelle le destinataire peut répondre.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-2 </p>
+      </td>
+      <td>
+        <p>Action Code</p>
+      </td>
+      <td>
+        <p>UC (Unchanged)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-4 </p>
+      </td>
+      <td>
+        <p>Participation</p>
+      </td>
+      <td>
+        <p>REPLY^Reply To^participation</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>PRT-15 </p>
+      </td>
+      <td>
+        <p>Participant Telecommunication Address</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-15.3</p>
+      </td>
+      <td>
+        <p>Telecommunication Equipment Type</p>
+      </td>
+      <td>
+        <p>X.400 (X.400 email address)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; PRT-15.4</p>
+      </td>
+      <td>
+        <p>Communication Address</p>
+      </td>
+      <td>
+        <p>Intégrer l'adresse mail de réponse</p>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
+
 <p class="MsoFootnoteText"><a href="#_ftnref2" name="_ftn2" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
 <span class="cf01"><span style="font-size:8.0pt;line-height:107%">SC.DMP/CONF.12&nbsp;:
 «&nbsp;Le système DOIT transmettre à la PFI les informations d'identification nécessaires à la constitution du jeton VIHF : FINESS géographique de
@@ -3341,219 +2309,152 @@ documents pouvant être contenus dans le message ORU.
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux professionnels de santé.
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;=
-  Required / Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
-  séquence du segment</p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
-  </span><span style="color:black">(Coded Entry)</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
-  </span><span style="color:black">(Coded with Exceptions)</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;:</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MASQUE_PS</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Masqué aux professionnels de Santé</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr style="height:39.45pt">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-top:0cm;margin-right:0cm;
-  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">Y&nbsp;</span><span style="color:black">(Yes)&nbsp;</span><span style="font-family:Wingdings;
-  color:black">à</span><span style="color:black">MASQUE_PS actif </span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-top:0cm;margin-right:0cm;
-  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)&nbsp;</span><span style="font-family:Wingdings;color:black">à</span><span style="color:black">
-  MASQUE_PS non Actif</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
-  </td>
- </tr>
-</tbody></table>
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>MASQUE_PS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Masqué aux professionnels de Santé</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code </p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>·       Y (Yes) àMASQUE_PS actif</p>
+        <p>·       N (No) à MASQUE_PS non Actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <!-- supprimer en 2.1.1 voir CDA_HL7_Q2
 <blockquote class="stu-note">
     <p>
@@ -3566,219 +2467,151 @@ masqué aux professionnels de santé.
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué au patient.
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
-  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
-  séquence du segment</p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
-  </span><span style="color:black">(Coded Entry)</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
-  </span><span style="color:black">(Coded with Exceptions)</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">INVISIBLE_PATIENT</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Document Non Visible par le patient</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-top:0cm;margin-right:0cm;
-  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(YES)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_PATIENT actif</span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-top:0cm;margin-right:0cm;
-  margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_PATIENT non actif</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
-  </td>
- </tr>
-</tbody></table>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>INVISIBLE_PATIENT</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Document Non Visible par le patient</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>·       Y (YES) à INVISIBLE_PATIENT actif</p>
+        <p>·       N (No) à INVISIBLE_PATIENT non actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 <blockquote class="stu-note">
     <p>
@@ -3791,223 +2624,151 @@ masqué au patient.
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux représentants légaux du patient.
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
-  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de séquence
-  du segment</p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
-  </span><span style="color:black">(Coded Entry)</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
-  </span><span style="color:black">(Coded with Exceptions)</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">INVISIBLE_REP_LEGAUX</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Non visible par les représentants Légaux du patient</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
-  <p class="MsoListParagraphCxSpFirst" align="left" style="margin-top:0cm;
-  margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;text-align:left;
-  text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;
-  color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(YES)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_ REP_LEGAUX actif</span></p>
-  <p class="MsoListParagraphCxSpLast" align="left" style="margin-top:0cm;
-  margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;text-align:left;
-  text-indent:-18.0pt;line-height:normal"><span style="font-family:Symbol;
-  color:black">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> INVISIBLE_ REP_LEGAUX non actif</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
-  </td>
-  <td width="170" valign="top" style="width:127.65pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
-  </td>
-  <td width="302" valign="top" style="width:8.0cm;border-top:none;border-left:none;
-  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
-  </td>
- </tr>
-</tbody></table>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>INVISIBLE_REP_LEGAUX</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Non visible par les représentants Légaux du patient</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>·       Y (YES) à INVISIBLE_ REP_LEGAUX actif</p>
+        <p>·       N (No) à INVISIBLE_ REP_LEGAUX non actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <blockquote class="stu-note">
     <p>
     <b>Point d'attention :</b> un document clinique masqué aux représentants légaux du patient ne doit pas être envoyé aux représentants légaux du patient par MSSanté.
@@ -4019,657 +2780,455 @@ masqué aux représentants légaux du patient.
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP « connexion secrète » ([cf SESAM-VITALE : Service DMP intégré aux LPS - Version 2.10.0 – 07/07/2023](https://industriels.sesam-vitale.fr/))
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
-  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
-  séquence du segment</p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
-  </span><span style="color:black">(Coded Entry)</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
-  </span><span style="color:black">(Coded with Exceptions)</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:1.0pt;line-height:normal"><span style="color:#0070C0">CONNEXION_SECRETE</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Connexion Secrete</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;text-indent:-18.0pt;
-  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(Yes)&nbsp;</span><span style="font-family:Wingdings;color:black">à</span><span style="color:black">
-  CONNEXION_SECRETE actif</span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;text-indent:-18.0pt;
-  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> CONNEXION_SECRETE non Actif</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.4pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.25pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
-  </td>
-  <td width="294" valign="top" style="width:220.15pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
-  </td>
- </tr>
-</tbody></table>
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>CONNEXION_SECRETE</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Connexion Secrete</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>-        Y (Yes) à CONNEXION_SECRETE actif</p>
+        <p>-        N (No) à CONNEXION_SECRETE non Actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 ###### Modification Confidentiality Code
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que la transaction porte
 une modification du CONFIDENTIALITY CODE indiquant une mise à jour des
 métadonnées de masquage/démasquage aux PS et/ou de visibilité du
 document au patient ou à ses représentants légaux.
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
-  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
-  séquence du segment</p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
-  </span><span style="color:black">(Coded Entry)</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
-  </span><span style="color:black">(Coded with Exceptions)</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MODIF_CONF_CODE</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Modification Confidentiality Code</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#4472C4">MetaDMPMSS</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;text-indent:-18.0pt;
-  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(Yes)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> MODIF_CONF_CODE actif</span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;text-indent:-18.0pt;
-  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> &nbsp;MODIF_CONF_CODE non Actif</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «</span><span style="color:#4472C4">&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
-  </td>
- </tr>
-</tbody></table>
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>MODIF_CONF_CODE</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Modification Confidentiality Code</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>-        Y (Yes) à MODIF_CONF_CODE actif</p>
+        <p>-        N (No) à  MODIF_CONF_CODE non Actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ###### Alimentation DMP
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP.
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none">
- <tbody><tr>
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Composition du groupe OBSERVATION/OBXNTE&nbsp;:
-  Usage&nbsp;= Required / Cardinalité&nbsp;= [1..1]</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Elément requis&nbsp;:</span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Description&nbsp;: </span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Valeur&nbsp;: </span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Segment OBX</span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">Observation/Result</span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-1</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Set Id - Obx</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal">Numéro de
-  séquence du segment</p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-2</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Value Type </span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message ORU : </span><span style="color:#0070C0">CE
-  </span><span style="color:black">(Coded Entry)</span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Pour le message MDM : </span><span style="color:#0070C0">CWE
-  </span><span style="color:black">(Coded with Exceptions)</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-3</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Identifier </span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b><span style="color:black">&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.1&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">DESTDMP</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.2&nbsp;:&nbsp; </span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Libellé&nbsp;:</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">Destinataire DMP</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-3.3&nbsp;:</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name of Coding system</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:#0070C0">MetaDMPMSS</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-5</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Value</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&nbsp;</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.1</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Code&nbsp;: </span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Table HL7 : 0136&nbsp;:</span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;text-indent:-18.0pt;
-  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">Y </span><span style="color:black">(Yes)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> DESTDMP actif</span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;text-indent:-18.0pt;
-  line-height:normal"><span style="color:black">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span><span style="color:#0070C0">N </span><span style="color:black">(No)
-  </span><span style="font-family:Wingdings;color:black">à</span><span style="color:black"> DESTDMP non Actif</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">&gt; OBX-5.3</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Name Of Coding System</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:9.0pt;color:#0070C0">expandedYes-NoIndicator</span></p>
-  </td>
- </tr>
- <tr>
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">OBX-11</span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Observation Result Status</span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="color:black">Valeur fixée à «&nbsp;</span><span style="color:#0070C0">F&nbsp;</span><span style="color:black">»&nbsp;</span></p>
-  </td>
- </tr>
-</tbody></table>
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>DESTDMP</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Destinataire DMP</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>-        Y (Yes) à DESTDMP actif</p>
+        <p>-        N (No) à DESTDMP non Actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ###### Echange MSSanté Professionnel de Santé/Organisation/BAL applicative
 
@@ -4677,322 +3236,152 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être envoyé vers un PS, une organisation ou une Boîte aux lettres (BAL)
 applicative.
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
- <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Composition du
-  groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= <span class="SpellE">Required</span>
-  / Cardinalité&nbsp;= [<span class="GramE">1..</span>1]<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:1">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:
-  217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Elément
-  requis&nbsp;:<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Description&nbsp;:
-  <o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Valeur&nbsp;: <o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:2">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Segment OBX<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Observation/<span class="SpellE">Result</span><o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:3">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-1<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Set Id - <span class="SpellE">Obx</span><o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:
-  bold">Numéro de séquence du segment<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:4">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-2<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Value Type <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Pour le message ORU : </span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">(<span class="SpellE">Coded</span> Entry)<o:p></o:p></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Pour le message MDM : </span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">(<span class="SpellE">Coded</span> <span class="SpellE">with</span>
-  Exceptions)</span><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:5">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-3<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Identifier <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:6">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.1&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Code&nbsp;: <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">DESTMSSANTEPS</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#4472C4;
-  mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:7">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.2&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Libellé&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Destinataire
-  (Professionnel de Santé, organisation ou BAL applicative)</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#4472C4;
-  mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:8">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.3&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Name of Coding system<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span class="SpellE"><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></span><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:9">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-5<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Value<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:10">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">&gt; OBX-5.1<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Code&nbsp;: <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Table HL7 : 0136&nbsp;:<o:p></o:p></span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l20 level1 lfo10"><!--[if !supportLists]--><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y </span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">(Yes) </span><span style="mso-bidi-font-size:10.0pt;font-family:Wingdings;mso-fareast-font-family:
-  Wingdings;mso-bidi-font-family:Wingdings;color:black;mso-themecolor:text1">à</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"> DESTMSSANTEPS actif<o:p></o:p></span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l20 level1 lfo10"><!--[if !supportLists]--><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N </span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">(No) </span><span style="mso-bidi-font-size:10.0pt;font-family:Wingdings;mso-fareast-font-family:
-  Wingdings;mso-bidi-font-family:Wingdings;color:black;mso-themecolor:text1">à</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"> DESTMSSANTEPS non Actif<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:11">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-5.3</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Name Of Coding System</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span class="SpellE"><span class="GramE"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0">expandedYes</span></span><span style="font-size:9.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">-NoIndicator</span></span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:12;mso-yfti-lastrow:yes">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-11</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation <span class="SpellE">Result</span> Status</span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"><o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Valeur fixée à «</span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:#4472C4;mso-themecolor:accent5">&nbsp;</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">»&nbsp;<o:p></o:p></span></p>
-  </td>
- </tr>
-</tbody></table>
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>DESTMSSANTEPS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Destinataire (Professionnel de Santé, organisation ou BAL applicative)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>-        Y (Yes) à DESTMSSANTEPS actif</p>
+        <p>-        N (No) à DESTMSSANTEPS non Actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 <blockquote class="stu-note">
     <p>
@@ -5009,341 +3398,161 @@ Si l'utilisateur ne souhaite pas que le patient puisse répondre à son
 message, un segment NTE avec la valeur « FIN » doit être ajouté.
 
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
- <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Composition du
-  groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= <span class="SpellE">Required</span>
-  / Cardinalité&nbsp;= [<span class="GramE">1..</span>1]<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:1">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:
-  217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Elément
-  requis&nbsp;:<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Description&nbsp;:
-  <o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Valeur&nbsp;: <o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:2">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Segment OBX<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Observation/<span class="SpellE">Result</span><o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:3">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-1<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Set Id - <span class="SpellE">Obx</span><o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:
-  bold">Numéro de séquence du segment<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:4">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-2<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Value Type <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Pour le message ORU : </span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">(<span class="SpellE">Coded</span> Entry)<o:p></o:p></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Pour le message MDM : </span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">(<span class="SpellE">Coded</span> <span class="SpellE">with</span>
-  Exceptions)</span><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:5">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-3<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Identifier <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:6">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.1&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Code&nbsp;: <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">DESTMSSANTEPAT</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#4472C4;
-  mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:7">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.2&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Libellé&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Destinataire
-  Patient</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:
-  Arial;color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:8">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.3&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Name of Coding system<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span class="SpellE"><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></span><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:9">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-5<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Value<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:10">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-5.1<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Code&nbsp;: <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Table HL7 : 0136&nbsp;:<o:p></o:p></span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l4 level1 lfo11"><!--[if !supportLists]--><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y </span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">(Yes)&nbsp;:
-  DESTMSSANTEPAT actif</span><span style="mso-bidi-font-size:10.0pt;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l4 level1 lfo11"><!--[if !supportLists]--><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N </span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">(No)&nbsp;:
-  DESTMSSANTEPAT non Actif<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:11">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-5.3<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Name Of Coding System<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span class="SpellE"><span class="GramE"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0">expandedYes</span></span><span style="font-size:9.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">-NoIndicator</span></span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:12">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-11<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation <span class="SpellE">Result</span> Status<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Valeur fixée à «&nbsp;</span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">»&nbsp;<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:13;mso-yfti-lastrow:yes">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Segment NTE</span></b><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold"> (conditionnel) <o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Notes And <span class="SpellE">Comments</span><o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Ce segment doit être renseigné avec la valeur «&nbsp;</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial">FIN&nbsp;<span style="color:black;mso-themecolor:text1">» si l’utilisateur ne souhaite pas
-  que le patient puisse répondre au courriel. <o:p></o:p></span></span></p>
-  </td>
- </tr>
-</tbody></table>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>DESTMSSANTEPAT</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Destinataire Patient</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>-        Y (Yes) : DESTMSSANTEPAT actif</p>
+        <p>-        N (No) : DESTMSSANTEPAT non Actif</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment NTE</strong> (conditionnel)</p>
+      </td>
+      <td>
+        <p><strong>Notes And Comments</strong></p>
+      </td>
+      <td>
+        <p>Ce segment doit être renseigné avec la valeur « FIN » si l'utilisateur ne souhaite pas que le patient puisse répondre au courriel.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <blockquote class="stu-note">
     <p>
@@ -5358,320 +3567,152 @@ recevoir un accusé de réception provenant du DMP et un accusé de
 réception provenant du serveur de messagerie de chaque destinataire
 MSSanté.
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
- <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Composition du
-  groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= <span class="SpellE">Optional</span>
-  / Cardinalité&nbsp;= [<span class="GramE">1..</span>1]<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:1">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  background:#D9D9D9;mso-background-themecolor:background1;mso-background-themeshade:
-  217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Elément
-  requis&nbsp;:<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Description&nbsp;:
-  <o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#D9D9D9;mso-background-themecolor:
-  background1;mso-background-themeshade:217;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Valeur&nbsp;: <o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:2">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Segment OBX<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Observation/<span class="SpellE">Result</span><o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:3">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-1<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Set Id - <span class="SpellE">Obx</span><o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:
-  bold">Numéro de séquence du segment<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:4">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-2<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Value Type <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Pour le message ORU : </span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CE </span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">(<span class="SpellE">Coded</span> Entry)<o:p></o:p></span></p>
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Pour le message MDM : </span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">CWE </span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">(<span class="SpellE">Coded</span> <span class="SpellE">with</span>
-  Exceptions)</span><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:5">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-3<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Identifier <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:6">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.1&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Code&nbsp;: <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">ACK_RECEPTION</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#4472C4;
-  mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:7">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.2&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Libellé&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Accusé
-  de réception</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:
-  Arial;color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:8">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.3&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Name of Coding system<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span class="SpellE"><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></span><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:9">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-5<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Value<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:10">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-5.1<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Code&nbsp;: <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Table HL7 : 0136&nbsp;:<o:p></o:p></span></p>
-  <p class="MsoListParagraphCxSpFirst" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l20 level1 lfo10"><!--[if !supportLists]--><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">Y </span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">(Yes) </span><span style="mso-bidi-font-size:10.0pt;font-family:Wingdings;mso-fareast-font-family:
-  Wingdings;mso-bidi-font-family:Wingdings;color:black;mso-themecolor:text1">à</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"> <span class="SpellE">ack</span> de réception DMP/MSSanté
-  souhaité<o:p></o:p></span></p>
-  <p class="MsoListParagraphCxSpLast" style="margin-bottom:0cm;mso-add-space:
-  auto;text-indent:-18.0pt;line-height:normal;mso-list:l20 level1 lfo10"><!--[if !supportLists]--><span style="mso-bidi-font-size:10.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
-  Arial;color:black;mso-themecolor:text1"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </span></span></span><!--[endif]--><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">N </span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">(No) </span><span style="mso-bidi-font-size:10.0pt;font-family:Wingdings;mso-fareast-font-family:
-  Wingdings;mso-bidi-font-family:Wingdings;color:black;mso-themecolor:text1">à</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"> accusé de réception DMP/MSSanté non souhaité<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:11">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-5.3<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Name Of Coding System<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span class="SpellE"><span class="GramE"><span style="font-size:9.0pt;mso-bidi-font-family:
-  Arial;color:#0070C0">expandedYes</span></span><span style="font-size:9.0pt;
-  mso-bidi-font-family:Arial;color:#0070C0">-NoIndicator</span></span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:12;mso-yfti-lastrow:yes">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-11<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation <span class="SpellE">Result</span> Status<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Valeur fixée à «&nbsp;</span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">»&nbsp;<o:p></o:p></span></p>
-  </td>
- </tr>
-</tbody>
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [1..1]</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Elément requis :</strong></p>
+      </td>
+      <td>
+        <p><strong>Description :</strong></p>
+      </td>
+      <td>
+        <p><strong>Valeur :</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>Pour le message ORU : CE (Coded Entry)</p>
+        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>ACK_RECEPTION</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Accusé de réception</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.1</p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>Table HL7 : 0136 :</p>
+        <p>-        Y (Yes) à ack de réception DMP/MSSanté souhaité</p>
+        <p>-        N (No) à accusé de réception DMP/MSSanté non souhaité</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-5.3</p>
+      </td>
+      <td>
+        <p>Name Of Coding System</p>
+      </td>
+      <td>
+        <p>expandedYes-NoIndicator</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
+
 
 ###### Transmission de l'accusé de lecture
 
