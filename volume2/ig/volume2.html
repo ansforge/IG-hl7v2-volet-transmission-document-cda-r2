@@ -10333,64 +10333,64 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 <p>Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX valorisés. Le tableau présente une liste exhaustive des combinaisons possibles des OBX pour l’échange MSSANTE. Les cas non représentés génèrent un message d’erreur.</p>
 
 <table>
-<tbody>
-<tr>
-<th>
-<p><strong>Balises OBX&amp; </strong></p>
-</th>
-<th>
-<p><strong>Echange MSSANTE </strong></p>
-</th>
-</tr>
-<tr>
-<td>
-<p>MASQUE_PS&nbsp;: N</p>
-<p>INVISIBLE_PATIENT&nbsp;: N</p>
-<p>INVISIBLE_REP_LEGAUX : N</p>
-<p>CONNEXION_SECRETE&nbsp;: N</p>
-<p>MODIF_CONF_CODE&nbsp;: N ou Y</p>
-<p>DESTDMP&nbsp;: N ou Y</p>
-<p>DESTMSSANTEPS&nbsp;: Y<br/> DESTMSSANTEPAT&nbsp;: Y</p>
-<p>ACK_RECEPTION&nbsp;: N ou Y</p>
-<p>ACK_LECTURE_MSS&nbsp;: N ou Y</p>
-</td>
-<td>
-<p>Envoi du document sur la boite MSSanté du PS/organisation/BAL applicative du destinataire et du Patient</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>MASQUE_PS&nbsp;:Y ou N&lt;</p>
-<p>INVISIBLE_PATIENT&nbsp;: Y</p>
-<p>INVISIBLE_REP_LEGAUX : N</p>
-<p>CONNEXION_SECRETE&nbsp;: N</p>
-<p>MODIF_CONF_CODE&nbsp;: N ou Y</p>
-<p>DESTDMP&nbsp;: N ou Y</p>
-<p>DESTMSSANTEPS&nbsp;: Y<br/> DESTMSSANTEPAT&nbsp;: N</p>
-<p>ACK_RECEPTION&nbsp;: N ou Y</p>
-<p>ACK_LECTURE_MSS&nbsp;: N ou Y</p>
-</td>
-<td>
-<p>Envoi du document sur la boite MSSanté du PS/organisation/BAL applicative du destinataire</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>MASQUE_PS&nbsp;: Y ou N</p>
-<p>INVISIBLE_PATIENT&nbsp;: N</p>
-<p>INVISIBLE_REP_LEGAUX : N ou Y</p>
-<p>CONNEXION_SECRETE&nbsp;: N</p>
-<p>MODIF_CONF_CODE&nbsp;: N ou Y</p>
-<p>DESTDMP&nbsp;: N</p>
-<p>DESTMSSANTEPS&nbsp;: N<br/> DESTMSSANTEPAT&nbsp;: Y</p>
-<p>ACK_RECEPTION&nbsp;: N ou Y</p>
-<p>ACK_LECTURE_MSS&nbsp;: N ou Y</p>
-</td>
-<td>
-<p>Envoi du document sur la boite MSSanté du patient</p>
-</td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <th>
+        <p>Balises OBX</p>
+      </th>
+      <th>
+        <p>Echange MSSANTE</p>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>MASQUE_PS : N</p>
+        <p>INVISIBLE_PATIENT : N</p>
+        <p>INVISIBLE_REP_LEGAUX : N</p>
+        <p>CONNEXION_SECRETE : N</p>
+        <p>MODIF_CONF_CODE : N ou Y</p>
+        <p>DESTDMP : N ou Y</p>
+        <p>DESTMSSANTEPS : Y DESTMSSANTEPAT : Y</p>
+        <p>ACK_RECEPTION : N ou Y</p>
+        <p>ACK_LECTURE_MSS : N ou Y</p>
+      </td>
+      <td>
+        <p>Envoi du document sur la boite MSSanté du PS/organisation/BAL applicative du destinataire et du Patient</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>MASQUE_PS :Y ou N&lt;</p>
+        <p>INVISIBLE_PATIENT : Y</p>
+        <p>INVISIBLE_REP_LEGAUX : N</p>
+        <p>CONNEXION_SECRETE : N</p>
+        <p>MODIF_CONF_CODE : N ou Y</p>
+        <p>DESTDMP : N ou Y</p>
+        <p>DESTMSSANTEPS : Y DESTMSSANTEPAT : N</p>
+        <p>ACK_RECEPTION : N ou Y</p>
+        <p>ACK_LECTURE_MSS : N ou Y</p>
+      </td>
+      <td>
+        <p>Envoi du document sur la boite MSSanté du PS/organisation/BAL applicative du destinataire</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>MASQUE_PS : Y ou N</p>
+        <p>INVISIBLE_PATIENT : N</p>
+        <p>INVISIBLE_REP_LEGAUX : N ou Y</p>
+        <p>CONNEXION_SECRETE : N</p>
+        <p>MODIF_CONF_CODE : N ou Y</p>
+        <p>DESTDMP : N</p>
+        <p>DESTMSSANTEPS : N DESTMSSANTEPAT : Y</p>
+        <p>ACK_RECEPTION : N ou Y</p>
+        <p>ACK_LECTURE_MSS : N ou Y</p>
+      </td>
+      <td>
+        <p>Envoi du document sur la boite MSSanté du patient</p>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 <p><strong>Lien entre l’EN-TETE CDA et les métadonnées XDS</strong></p>
@@ -10442,7 +10442,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 25, 2024 15:42+0000">2024-10-25</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 25, 2024 15:45+0000">2024-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
