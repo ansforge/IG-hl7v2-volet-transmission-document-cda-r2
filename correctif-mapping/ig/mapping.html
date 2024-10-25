@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Mapping - Volet de transmission d'un document CDA-R2 en HL7v2 v2.1.1</title>
+    <title>Mapping VIHF et XDS - Volet de transmission d'un document CDA-R2 en HL7v2 v2.1.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -158,7 +158,7 @@
         <a href="ack-metier-zam.html">Table AckMetierZAM</a>
       </li>
       <li>
-        <a href="mapping.html">Mapping</a>
+        <a href="mapping.html">Mapping VIHF et XDS</a>
       </li>
       <li>
         <a href="exemples.html">Exemples de messages</a>
@@ -195,7 +195,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mapping</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mapping VIHF et XDS</b></li>
 
           <span style="float:right;">
 
@@ -226,7 +226,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Volet de transmission d'un document CDA-R2 en HL7v2 - Local Development build (v2.1.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Mapping</h2>
+  <h2>Mapping VIHF et XDS</h2>
   
 
 
@@ -243,13 +243,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#mapping-vihf" id="markdown-toc-mapping-vihf">Mapping VIHF</a></li>
+  <li><a href="#mapping-vihf-pour-le-dmp" id="markdown-toc-mapping-vihf-pour-le-dmp">Mapping VIHF pour le DMP</a></li>
   <li><a href="#mapping-xds" id="markdown-toc-mapping-xds">Mapping XDS</a></li>
   <li><a href="#exemple-du-vihf-avec-automate" id="markdown-toc-exemple-du-vihf-avec-automate">Exemple du VIHF avec automate</a></li>
 </ul>
 
 </div>
-<h3 id="mapping-vihf">Mapping VIHF</h3>
+<h3 id="mapping-vihf-pour-le-dmp">Mapping VIHF pour le DMP</h3>
 
 <p>Ce mapping permet d’indiquer comment construire le VIHF à partir du message HL7 V2 et du CDA</p>
 
@@ -280,7 +280,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">Identifiant_Structure</td>
       <td style="text-align: left">Struct_IdNat de la structure de soins</td>
-      <td><pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> : PRT-8.10 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
@@ -289,7 +289,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <br />- Paramétrage dans  la PFI
           <br />- Interrogation du DPI
           <br />- Interrogation de l'annuaire à partir du FINESS 
-<pre class="highlight language-plaintext" style="white-space: normal;">Récupération du FINESS <br /><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
+<pre class="highlight language-plaintext" style="white-space: normal;">Récupération du FINESS <br /><b>HL7V2</b> : PRT-8.10 (PRT-4 = ‘SB^Send by^participation’)</pre>
    </td>
     </tr>
     <tr>
@@ -474,7 +474,7 @@ Provenance de la donnée :
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cette métadonnée représente la structure émettrice du lot de soumission.</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext" style="white-space: normal;"><b>HL7V2</b> :PRT-8.10 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorPerson</td>
@@ -881,7 +881,7 @@ Provenance de la donnée :
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 25, 2024 15:15+0000">2024-10-25</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 25, 2024 15:20+0000">2024-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
