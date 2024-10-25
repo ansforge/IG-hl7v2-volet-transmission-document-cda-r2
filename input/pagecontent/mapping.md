@@ -1,4 +1,4 @@
-### Mapping VIHF
+### Mapping VIHF pour le DMP
 
 
 Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7 V2 et du CDA
@@ -30,7 +30,7 @@ Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7
     <tr>
       <td style="text-align: left">Identifiant_Structure</td>
       <td style="text-align: left">Struct_IdNat de la structure de soins</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PRT-8.10 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Secteur_Activite</td>
@@ -39,7 +39,7 @@ Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7
           <br>- Paramétrage dans  la PFI
           <br>- Interrogation du DPI
           <br>- Interrogation de l'annuaire à partir du FINESS 
-<pre class="highlight language-plaintext"  style="white-space: normal;" >Récupération du FINESS <br><b>HL7V2</b> : PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre>
+<pre class="highlight language-plaintext"  style="white-space: normal;" >Récupération du FINESS <br><b>HL7V2</b> : PRT-8.10 (PRT-4 = ‘SB^Send by^participation’)</pre>
    </td>
     </tr>
     <tr>
@@ -225,7 +225,7 @@ Provenance de la donnée :
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cette métadonnée représente la structure émettrice du lot de soumission.</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-8.7 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-8.10 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorPerson</td>
