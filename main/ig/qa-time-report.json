@@ -1,55 +1,65 @@
 {
-  "date" : "Fri, 25 Oct, 2024 15:22:31 +0000",
+  "date" : "Fri, 25 Oct, 2024 15:31:38 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.trans-cda-r2.json",
-      "size" : 5082,
+      "size" : 5094,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 26,
+          "start" : 25,
           "length" : 31
         },
         {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 1
+        },
+        {
           "activity" : "checkR4R4B",
-          "start" : 26,
-          "length" : 5
+          "start" : 25,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 26,
-          "length" : 81
+          "start" : 25,
+          "length" : 84
         },
         {
           "activity" : "validate",
-          "start" : 26,
-          "length" : 1311
+          "start" : 25,
+          "length" : 1663
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 27,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 28,
-          "length" : 103
+          "start" : 27,
+          "length" : 95
         },
         {
           "activity" : "generate2",
           "start" : 30,
-          "length" : 118
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 38,
-          "length" : 1
+          "length" : 100
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 38,
-          "length" : 3
+          "start" : 39,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 41,
-          "length" : 3
+          "start" : 42,
+          "length" : 2
         }
       ]
     }

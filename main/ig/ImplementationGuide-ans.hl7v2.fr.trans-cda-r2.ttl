@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CISIS_CDA_HL7_V2"] ; # 
   fhir:title [ fhir:v "Volet de transmission d'un document CDA-R2 en HL7v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-25T15:22:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-25T15:31:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -561,14 +561,6 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "volume2.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "volume2.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Volume 2 : Détail des transactions" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "cas-usage.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "cas-usage.html"^^xsd:anyURI ] ;
@@ -605,6 +597,14 @@
          ] ) ;
          fhir:name [ fhir:v "identification-flux.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "identification des flux" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "volume2.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "volume2.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Volume 2 : Détail des transactions" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -748,7 +748,7 @@
            fhir:value [ fhir:v "mapping.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "mapping.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Mapping" ] ;
+         fhir:title [ fhir:v "Mapping VIHF et XDS" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
