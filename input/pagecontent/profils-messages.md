@@ -3735,7 +3735,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Elément requis :</p>
       </th>
       <th>
-        <p>hDescription :h</p>
+        <p>Description :</p>
       </th>
       <th>
         <p>Valeur :</p>
@@ -3874,250 +3874,125 @@ Cet OBX permet à l'acteur CREATEUR de documents d'ajouter un texte à
 intégrer dans le corps du mail à destination des professionnels de santé
 via MSSanté. Cette métadonnée est optionnelle :
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="652" style="width:488.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
- <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
-  <td width="652" colspan="3" valign="top" style="width:488.8pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
-  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Composition du
-  groupe OBSERVATION/OBXNTE&nbsp;: Usage&nbsp;= <span class="SpellE">Optional</span>
-  / Cardinalité&nbsp;= [<span class="GramE">0..</span>1]<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:1">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  background:#E5E5E5;mso-shading:windowtext;mso-pattern:gray-10 auto;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Elément
-  requis&nbsp;:<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
-  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Description&nbsp;:
-  <o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;background:#E5E5E5;mso-shading:windowtext;
-  mso-pattern:gray-10 auto;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Valeur&nbsp;: <o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:2">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Segment OBX<o:p></o:p></span></b></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1">Observation/<span class="SpellE">Result</span><o:p></o:p></span></b></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold"><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:3">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-1<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Set Id - <span class="SpellE">Obx</span><o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;mso-bidi-font-weight:
-  bold">Numéro de séquence du segment<span style="color:#4472C4;mso-themecolor:
-  accent5"><o:p></o:p></span></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:4">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-2<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Value Type<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0;
-  mso-bidi-font-weight:bold">ED </span><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1;mso-bidi-font-weight:
-  bold">(<span class="SpellE">Encapsulated</span> Data)</span><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"><o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:5">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-3<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Identifier <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><b style="mso-bidi-font-weight:normal"><span style="mso-bidi-font-size:10.0pt;
-  mso-bidi-font-family:Arial;color:black;mso-themecolor:text1"><o:p>&nbsp;</o:p></span></b></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:6">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.1&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Code&nbsp;: <o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:1.0pt;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">CORPSMAIL_PS</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#4472C4;
-  mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:7">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.2&nbsp;:<span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Libellé&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:#0070C0">Corps
-  du mail pour un PS </span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:
-  Arial;color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:8">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">&gt; OBX-3.3&nbsp;:<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Name of Coding system<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span class="SpellE"><span style="mso-bidi-font-size:10.0pt;color:#0070C0">MetaDMPMSS</span></span><span style="mso-bidi-font-size:10.0pt;color:#4472C4;mso-themecolor:accent5"><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:9">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-5<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation Value<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Indiquer le texte à intégrer dans le corps du mail<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:10;mso-yfti-lastrow:yes">
-  <td width="179" valign="top" style="width:134.35pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">OBX-11<o:p></o:p></span></p>
-  </td>
-  <td width="179" valign="top" style="width:134.35pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1;mso-bidi-font-weight:bold">Observation <span class="SpellE">Result</span> Status<o:p></o:p></span></p>
-  </td>
-  <td width="293" valign="top" style="width:220.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">Valeur fixée à «&nbsp;</span><span style="mso-bidi-font-size:
-  10.0pt;mso-bidi-font-family:Arial;color:#0070C0">F&nbsp;</span><span style="mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;color:black;
-  mso-themecolor:text1">»&nbsp;<o:p></o:p></span></p>
-  </td>
- </tr>
-</tbody></table>
+<table>
+  <tbody>
+    <tr>
+      <th colspan="3">
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [0..1]</p>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <p>Elément requis :</p>
+      </th>
+      <th>
+        <p>Description :</p>
+      </th>
+      <th>
+        <p>Valeur :</p>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>Segment OBX</strong></p>
+      </td>
+      <td>
+        <p><strong>Observation/Result</strong></p>
+      </td>
+      <td>
+        <p> </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-1</p>
+      </td>
+      <td>
+        <p>Set Id - Obx</p>
+      </td>
+      <td>
+        <p>Numéro de séquence du segment</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-2</p>
+      </td>
+      <td>
+        <p>Value Type</p>
+      </td>
+      <td>
+        <p>ED (Encapsulated Data)</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-3</p>
+      </td>
+      <td>
+        <p>Observation Identifier</p>
+      </td>
+      <td>
+        <p><strong> </strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.1 : </p>
+      </td>
+      <td>
+        <p>Code :</p>
+      </td>
+      <td>
+        <p>CORPSMAIL_PS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.2 : </p>
+      </td>
+      <td>
+        <p>Libellé :</p>
+      </td>
+      <td>
+        <p>Corps du mail pour un PS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; OBX-3.3 :</p>
+      </td>
+      <td>
+        <p>Name of Coding system</p>
+      </td>
+      <td>
+        <p>MetaDMPMSS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-5</p>
+      </td>
+      <td>
+        <p>Observation Value</p>
+      </td>
+      <td>
+        <p>Indiquer le texte à intégrer dans le corps du mail</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>OBX-11</p>
+      </td>
+      <td>
+        <p>Observation Result Status</p>
+      </td>
+      <td>
+        <p>Valeur fixée à « F » </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <blockquote class="stu-note">
     <p>
