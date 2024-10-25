@@ -21,9 +21,7 @@ pages:
     index.md:
         title: "Accueil"
     volume1.md:
-        title: "Volume 1 : Etude fonctionnelle"
-    volume2.md:
-        title: "Volume 2 : Détail des transactions"        
+        title: "Volume 1 : Etude fonctionnelle"     
     cas-usage.md:
         title: "Cas d'usage"
     contexte-metier.md:
@@ -34,6 +32,8 @@ pages:
         title: "Définition des processus collaboratifs"
     identification-flux.md:
         title: "identification des flux"
+    volume2.md:
+        title: "Volume 2 : Détail des transactions"   
     perimetre-transaction.md:
         title: "Périmètre de la transaction"
     role.md:
@@ -70,7 +70,7 @@ pages:
         title: "Téléchargements"
         generation: markdown
     mapping.md:
-        title: "Mapping"      
+        title: "Mapping VIHF et XDS"      
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: 
@@ -92,7 +92,7 @@ menu:
         "Table MetaDMP/MSS": meta-dmp-mss.html
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
-        "Mapping": mapping.html
+        "Mapping VIHF et XDS": mapping.html
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html
