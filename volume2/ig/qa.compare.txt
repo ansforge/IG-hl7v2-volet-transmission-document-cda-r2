@@ -9,7 +9,7 @@ Generated $--. FHIR version $-- for ans.hl7v2.fr.trans-cda-r2#$-- (canonical = h
 </table>
 == n/a ==
 ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/profils-messages.html#/html/body/div/div/div/div/div/p/a at Line 2479, column 29: The link '#_ftnref2' for "[2]" cannot be resolved (valid targets: 75 targets)
-ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/volume2.html#/html/body/div/div/div/div/div/p/a at Line 2768, column 29: The link '#_ftnref2' for "[2]" cannot be resolved (valid targets: 100 targets)
+ERROR: /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/output/volume2.html#/html/body/div/div/div/div/div/p/a at Line 2767, column 29: The link '#_ftnref2' for "[2]" cannot be resolved (valid targets: 100 targets)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
