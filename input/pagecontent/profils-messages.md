@@ -435,7 +435,7 @@ Les groupes de segments OBSERVATION suivants (répétables) véhiculent les mét
 
 Le profil du message MDM est le suivant :
 
-<table>
+<table class="table-hl7v2">
   <tr>
     <th>
       <p>Segment</p>
@@ -828,7 +828,7 @@ tableaux indiquent les valeurs fixes à insérer dans le champ du message.
 Les éléments de contrôle du message HL7 sont portés par le segment
 d'entête MSH. Le tableau ci-dessous liste les champs à renseigner pour
 le segment MSH :
-<table>
+<table class="table-hl7v2"> 
   <tbody>
     <tr>
       <td>
@@ -1073,21 +1073,21 @@ Pour le segment PID, ce volet ajoute une contrainte particulière sur le
 PID-18 par rapport à PAM.FR. Il doit être renseigné si connu afin de
 pouvoir calculer des indicateurs, dans le contexte de l'alimentation du
 DMP.
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <tdh
         <p>Caractère optionnel/obligatoire</p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
@@ -1139,21 +1139,21 @@ Le PID-3 doit être identique aux identifiants de patient portés par le documen
 Pour le segment PV1, ce volet ajoute les contraintes suivantes :
 
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
@@ -1378,23 +1378,23 @@ la suivante :
 
 ##### Le segment ORC
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment ORC : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -1430,23 +1430,23 @@ rejeté par la PFI.
 
 ##### Le segment OBR
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment OBR : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -1555,20 +1555,20 @@ l'obligation de gérer le contenu de ces champs ou segments.
 <table>
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -2310,23 +2310,23 @@ documents pouvant être contenus dans le message ORU.
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux professionnels de santé.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -2470,20 +2470,20 @@ masqué au patient.
 <table>
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -2624,23 +2624,23 @@ masqué au patient.
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué aux représentants légaux du patient.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -2781,23 +2781,23 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP « connexion secrète » ([cf SESAM-VITALE : Service DMP intégré aux LPS - Version 2.10.0 – 07/07/2023](https://industriels.sesam-vitale.fr/))
 
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -2934,7 +2934,7 @@ une modification du CONFIDENTIALITY CODE indiquant une mise à jour des
 métadonnées de masquage/démasquage aux PS et/ou de visibilité du
 document au patient ou à ses représentants légaux.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
       <td colspan="3">
@@ -2942,15 +2942,15 @@ document au patient ou à ses représentants légaux.
       </td>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -3085,23 +3085,23 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 être utilisé pour une transaction DMP.
 
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -3237,23 +3237,23 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 applicative.
 
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -3398,23 +3398,23 @@ Si l'utilisateur ne souhaite pas que le patient puisse répondre à son
 message, un segment NTE avec la valeur « FIN » doit être ajouté.
 
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </tdh
     </tr>
     <tr>
       <td>
