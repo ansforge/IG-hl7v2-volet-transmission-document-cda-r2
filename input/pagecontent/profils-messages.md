@@ -21,7 +21,7 @@ pour la transmission de document(s) CDA-R2 en HL7v2.
 ###### Profil du message ORU_R01
 
 Le profil du message ORU_R01 est le suivant :
-<table>
+<table class="table-hl7v2">
   <tr>
     <th>
       <p>Segment</p>
