@@ -1085,7 +1085,7 @@ DMP.
       <th>
         <p>Type donnée</p>
       </th>
-      <tdh
+      <th>
         <p>Caractère optionnel/obligatoire</p>
       </th>
     </tr>
@@ -3414,7 +3414,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
       </th>
       <th>
         <p><strong>Valeur</strong></p>
-      </tdh
+      </th>
     </tr>
     <tr>
       <td>
