@@ -138,7 +138,7 @@
       <li>
         <a href="volume2.html#profils-de-messages">Profils de messages</a>
       </li>
-      <li><a name="l246">​</a>
+      <li>
         <a href="volume2.html#règles-de-gestion-mssante">Règles de gestion MSSANTE</a>
       </li>
     </ul>
@@ -250,6 +250,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#evènements-déclenchants" id="markdown-toc-evènements-déclenchants">Evènements déclenchants</a></li>
   <li><a href="#interactions-entre-les-acteurs" id="markdown-toc-interactions-entre-les-acteurs">Interactions entre les Acteurs</a></li>
   <li><a href="#profils-de-messages" id="markdown-toc-profils-de-messages">Profils de messages</a></li>
+  <li><a href="#règles-de-gestion-mssante" id="markdown-toc-règles-de-gestion-mssante">Règles de gestion MSSANTE</a></li>
 </ul>
 
 </div>
@@ -1627,9 +1628,9 @@ DMP.</p>
       <th>
         <p>Type donnée</p>
       </th>
-      &lt;tdh
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-      &lt;/th&gt;
+      </th>
     </tr>
     <tr>
       <td>
@@ -2763,7 +2764,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
   </tbody>
 </table>
 
-<p class="MsoFootnoteText"><a name="l5119">​</a><a name="_ftn2" href="#_ftnref2" title="null"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
+<p class="MsoFootnoteText"><a name="l5126">​</a><a name="_ftn2" href="#_ftnref2" title="null"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
 <span class="cf01"><span style="font-size:8.0pt;line-height:107%">SC.DMP/CONF.12&nbsp;:
 «&nbsp;Le système DOIT transmettre à la PFI les informations d'identification nécessaires à la constitution du jeton VIHF : FINESS géographique de
 l'établissement et l'identifiant du professionnel ou du dispositif à l'origine de la demande d'alimentation du DMP&nbsp;». </span></span></p>
@@ -3975,8 +3976,8 @@ message, un segment NTE avec la valeur «&nbsp;FIN&nbsp;» doit être ajouté.</
       </th>
       <th>
         <p><strong>Valeur</strong></p>
-      &lt;/tdh
-    &lt;/tr&gt;
+      </th>
+    </tr>
     <tr>
       <td>
         <p><strong>Segment OBX</strong></p>
@@ -4112,8 +4113,8 @@ message, un segment NTE avec la valeur «&nbsp;FIN&nbsp;» doit être ajouté.</
         <p>Ce segment doit être renseigné avec la valeur « FIN » si l'utilisateur ne souhaite pas que le patient puisse répondre au courriel.</p>
       </td>
     </tr>
-  &lt;/tbody&gt;
-&lt;/table&gt;
+  </tbody>
+</table>
 
 <blockquote class="stu-note">
     <p>
@@ -4121,12 +4122,12 @@ message, un segment NTE avec la valeur «&nbsp;FIN&nbsp;» doit être ajouté.</
     </p>
 </blockquote>
 
-###### Transmission de l'accusé de réception DMP/MSSanté
+<h6 id="transmission-de-laccusé-de-réception-dmpmssanté">Transmission de l’accusé de réception DMP/MSSanté</h6>
 
-Cet OBX permet d'informer le GESTIONNAIRE que l'utilisateur souhaite
+<p>Cet OBX permet d’informer le GESTIONNAIRE que l’utilisateur souhaite
 recevoir un accusé de réception provenant du DMP et un accusé de
 réception provenant du serveur de messagerie de chaque destinataire
-MSSanté.
+MSSanté.</p>
 
 <table>
   <tbody>
@@ -4273,16 +4274,14 @@ MSSanté.
   </tbody>
 </table>
 
+<h6 id="transmission-de-laccusé-de-lecture">Transmission de l’accusé de lecture</h6>
 
-
-###### Transmission de l'accusé de lecture
-
-Cet OBX permet d'informer le GESTIONNAIRE que l'utilisateur souhaite
+<p>Cet OBX permet d’informer le GESTIONNAIRE que l’utilisateur souhaite
 recevoir un accusé de lecture pour chaque destinataire MSSanté. En
-fonction de l'organisation choisie, cet accusé de lecture atteste soit
+fonction de l’organisation choisie, cet accusé de lecture atteste soit
 de la lecture du courrier électronique présent dans la BAL pour chacun
 des destinataires MSSanté, soit du résultat du traitement automatique du
-courrier électronique par le GESTIONNAIRE destinataire.
+courrier électronique par le GESTIONNAIRE destinataire.</p>
 
 <table>
   <tbody>
@@ -4429,11 +4428,11 @@ courrier électronique par le GESTIONNAIRE destinataire.
   </tbody>
 </table>
 
-###### Corps du mail à destination d'un professionnel de santé
+<h6 id="corps-du-mail-à-destination-dun-professionnel-de-santé">Corps du mail à destination d’un professionnel de santé</h6>
 
-Cet OBX permet à l'acteur CREATEUR de documents d'ajouter un texte à
+<p>Cet OBX permet à l’acteur CREATEUR de documents d’ajouter un texte à
 intégrer dans le corps du mail à destination des professionnels de santé
-via MSSanté. Cette métadonnée est optionnelle :
+via MSSanté. Cette métadonnée est optionnelle :</p>
 
 <table>
   <tbody>
@@ -4562,11 +4561,11 @@ via MSSanté. Cette métadonnée est optionnelle :
     </p>
 </blockquote>
 
-###### Corps du mail à destination du patient
+<h6 id="corps-du-mail-à-destination-du-patient">Corps du mail à destination du patient</h6>
 
-Cet OBX permet au CREATEUR de documents d'ajouter un texte à intégrer
+<p>Cet OBX permet au CREATEUR de documents d’ajouter un texte à intégrer
 dans le corps du mail à destination du patient via MSSanté. Cette
-métadonnée est optionnelle :
+métadonnée est optionnelle :</p>
 
 <table>
   <tbody>
@@ -4688,25 +4687,22 @@ métadonnée est optionnelle :
   </tbody>
 </table>
 
-
-
-
 <blockquote class="stu-note">
     <p>
     <b>Point d'attention :</b> Si ce segment OBX est renseigné,le GESTIONNAIRE doit récupérer le corps du mail proposé par le CREATEUR pour l'envoi par MSSanté au patient. A défaut, dans le cadre d'une suppression ou d'un remplacement de document, le GESTIONNAIRE renseigne un corps de mail par défaut.
     </p>
 </blockquote>
 
-Quelques exemples sont disponibles [ici](exemples.html).
+<p>Quelques exemples sont disponibles <a href="exemples.html">ici</a>.</p>
 
-##### Le message d'acquittement du message HL7v2&nbsp;
+<h5 id="le-message-dacquittement-du-message-hl7v2">Le message d’acquittement du message HL7v2&nbsp;</h5>
 
-Après réception du message ORU/MDM, le Gestionnaire va acquitter ce
-message HL7.
+<p>Après réception du message ORU/MDM, le Gestionnaire va acquitter ce
+message HL7.</p>
 
-###### Profil du message ACK
+<h6 id="profil-du-message-ack">Profil du message ACK</h6>
 
-Le profil du message ACK est le suivant&nbsp;:
+<p>Le profil du message ACK est le suivant&nbsp;:</p>
 
 <table>
   <tr>
@@ -4815,24 +4811,24 @@ Le profil du message ACK est le suivant&nbsp;:
   </tbody>
 </table>
 
-###### Structure fonctionnelle du message ACK
+<h6 id="structure-fonctionnelle-du-message-ack">Structure fonctionnelle du message ACK</h6>
 
-La structure du message ACK est représentée ci-dessous&nbsp;:
+<p>La structure du message ACK est représentée ci-dessous&nbsp;:</p>
 
 <div style="text-align: center;" class="figure">
     <img src="image26.png" alt="Figure 19" style="width:80%;" title="Figure 19 : Structure fonctionnelle du message ACK"/>
     <figcaption><b>Figure 19&nbsp;: Structure fonctionnelle du message ACK</b></figcaption>
 </div>
-<br/>
+<p><br/></p>
 
-Ces segments doivent être conformes au standard HL7v2.5 pour le message
-ORU et HL7v2.6 pour MDM.
+<p>Ces segments doivent être conformes au standard HL7v2.5 pour le message
+ORU et HL7v2.6 pour MDM.</p>
 
-###### Description des contraintes à appliquer sur l'acquittement
+<h6 id="description-des-contraintes-à-appliquer-sur-lacquittement">Description des contraintes à appliquer sur l’acquittement</h6>
 
-####### Segment MSH
+<p>####### Segment MSH</p>
 
-Le segment MSH reprend une partie des informations du message initial&nbsp;:
+<p>Le segment MSH reprend une partie des informations du message initial&nbsp;:</p>
 
 <table>
   <tbody>
@@ -4931,8 +4927,8 @@ Le segment MSH reprend une partie des informations du message initial&nbsp;:
   </tbody>
 </table>
 
-Le segment MSH doit être conforme au standard HL7v2.5 ou HL7v2.6 selon
-le type du message (ORU ou MDM) :
+<p>Le segment MSH doit être conforme au standard HL7v2.5 ou HL7v2.6 selon
+le type du message (ORU ou MDM) :</p>
 
 <table>
   <tbody>
@@ -5141,9 +5137,7 @@ le type du message (ORU ou MDM) :
   </tbody>
 </table>
 
-
-
-####### Segment MSA
+<p>####### Segment MSA</p>
 
 <table>
   <tbody>
@@ -5177,15 +5171,14 @@ le type du message (ORU ou MDM) :
   </tbody>
 </table>
 
+<p>####### Segment ERR</p>
 
-####### Segment ERR
-
-Ce segment est utilisé au niveau des messages d'acquittement dans le cas
+<p>Ce segment est utilisé au niveau des messages d’acquittement dans le cas
 où le champ MSA-1 prend la valeur AE (Application error) ou AR
-(Application reject).
+(Application reject).</p>
 
-Le tableau ci-dessous liste les champs à renseigner pour le segment
-ERR&nbsp;:
+<p>Le tableau ci-dessous liste les champs à renseigner pour le segment
+ERR&nbsp;:</p>
 
 <table>
   <tbody>
@@ -5248,52 +5241,49 @@ ERR&nbsp;:
   </tbody>
 </table>
 
-####### Exemple
+<p>####### Exemple</p>
 
-Entête MSH d'un message MDM ou ORU émis par le CREATEUR&nbsp;:
+<p>Entête MSH d’un message MDM ou ORU émis par le CREATEUR&nbsp;:</p>
 
-```
-MSH|^~\&amp;|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
-```
-Un acquittement positif retourné par le GESTIONNAIRE :
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|SIL|CHU_X|PFI|CHU_X|202310030830||ORU^R01^ORU_R01|12345|P|2.5|||||FRA|8859/15|||2.1^ CISIS_CDA_HL7_V2
+</code></pre></div></div>
+<p>Un acquittement positif retourné par le GESTIONNAIRE :</p>
 
-```
-MSH|^~\&amp;|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12346|P|2.5|||||FRA|8859/15
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12346|P|2.5|||||FRA|8859/15
 MSA|AA|12345
 
-```
-Un acquittement négatif retourné par le GESTIONNAIRE&nbsp;: version d'HL7
-inconnue
+</code></pre></div></div>
+<p>Un acquittement négatif retourné par le GESTIONNAIRE&nbsp;: version d’HL7
+inconnue</p>
 
-```
-MSH|^~\&amp;|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12347|P|2.5|||||FRA|8859/15
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PFI|CHU_X|SIL|CHU_X|202310030831||ACK^R01^ACK|12347|P|2.5|||||FRA|8859/15
 MSA|AE|12345
 ERR||MSH^1^12|203^ Unsupported version^messageErrorCondition| E
 
-```
+</code></pre></div></div>
 
-#### Description des messages HL7 d'accusés métier
+<h4 id="description-des-messages-hl7-daccusés-métier">Description des messages HL7 d’accusés métier</h4>
 
-##### Evènements déclenchants des messages d'accusés métier HL7v2
+<h5 id="evènements-déclenchants-des-messages-daccusés-métier-hl7v2">Evènements déclenchants des messages d’accusés métier HL7v2</h5>
 
-Après réception du (des) document(s), le GESTIONNAIRE le(s)
+<p>Après réception du (des) document(s), le GESTIONNAIRE le(s)
 distribue(nt) au consommateur de documents (DMP/MSSanté). Lorsque le
 GESTIONNAIRE reçoit un retour du consommateur, il en informe le CREATEUR
-au moyen d'accusés métier HL7.
+au moyen d’accusés métier HL7.</p>
 
-A noter qu'aucun accusé de réception métier n'est prévu dans la
+<p>A noter qu’aucun accusé de réception métier n’est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
-HL7v2 ORU ou MDM avec le Compte-Rendu d'Imagerie. Par contre, un message
-d'acquittement technique ([voir section dédiée](https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/sd-tranfo-pdf-to-ig/ig/profils-messages.html#le-message-dacquittement-du-message-hl7v2)) permettra à la DRIMbox de
-communiquer au GESTIONNAIRE qu'elle a bien pris la responsabilité des
+HL7v2 ORU ou MDM avec le Compte-Rendu d’Imagerie. Par contre, un message
+d’acquittement technique (<a href="https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/sd-tranfo-pdf-to-ig/ig/profils-messages.html#le-message-dacquittement-du-message-hl7v2">voir section dédiée</a>) permettra à la DRIMbox de
+communiquer au GESTIONNAIRE qu’elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
-acknowledgment: Accept dans MSA-1)).
+acknowledgment: Accept dans MSA-1)).</p>
 
-Pour couvrir ce besoin de retour d'accusés métiers, un nouveau type de
-message HL7 a été créé&nbsp;: HL7v2.6 ZAM -- Accusé Métier.
+<p>Pour couvrir ce besoin de retour d’accusés métiers, un nouveau type de
+message HL7 a été créé&nbsp;: HL7v2.6 ZAM – Accusé Métier.</p>
 
-Ce type de message est utilisé par trois évènements différents&nbsp;:
+<p>Ce type de message est utilisé par trois évènements différents&nbsp;:</p>
 
 <table>
   <tbody>
@@ -5350,36 +5340,34 @@ Ce type de message est utilisé par trois évènements différents&nbsp;:
   </tbody>
 </table>
 
+<h5 id="structure-des-messages-accusés-métier-hl7">Structure des messages accusés métier HL7</h5>
 
-##### Structure des messages accusés métier HL7
-
-L'accusé de réception du document par le DMP, l'accusé de réception du
-courriel MSSanté et l'accusé de lecture MSSanté seront transmis en
-utilisant la structure de message HL7v2.6 ZAM_Z01&nbsp;:
-
+<p>L’accusé de réception du document par le DMP, l’accusé de réception du
+courriel MSSanté et l’accusé de lecture MSSanté seront transmis en
+utilisant la structure de message HL7v2.6 ZAM_Z01&nbsp;:</p>
 
 <div style="text-align: center;" class="figure">
     <img src="image27.png" alt="Figure 20" style="width:80%;" title="Figure 20 : Structure fonctionnelle des messages accusé métier"/>
     <figcaption><b>Figure 20&nbsp;: Structure fonctionnelle des messages accusé métier</b></figcaption>
 </div>
-<br/>
+<p><br/></p>
 
-Ces segments doivent être conformes au standard HL7v2.6. Les contraintes
+<p>Ces segments doivent être conformes au standard HL7v2.6. Les contraintes
 concernant les segments en rouge sur le schéma sont décrites dans la
-section suivante.
+section suivante.</p>
 
-##### Description des contraintes à appliquer sur les accusés métiers
+<h5 id="description-des-contraintes-à-appliquer-sur-les-accusés-métiers">Description des contraintes à appliquer sur les accusés métiers</h5>
 
-Pour l'ensemble des OBX listés dans cette section, le champ OBX-3 prend
-ses valeurs dans la table «&nbsp;AckMetierZAM&nbsp;» disponible [ici](ack-metier-zam.html).
+<p>Pour l’ensemble des OBX listés dans cette section, le champ OBX-3 prend
+ses valeurs dans la table «&nbsp;AckMetierZAM&nbsp;» disponible <a href="ack-metier-zam.html">ici</a>.</p>
 
-###### Contraintes à appliquer au message ZAM^Z01^ZAM_Z01 - Accusé de réception DMP
+<h6 id="contraintes-à-appliquer-au-message-zamz01zam_z01---accusé-de-réception-dmp">Contraintes à appliquer au message ZAM^Z01^ZAM_Z01 - Accusé de réception DMP</h6>
 
-####### Segment MSH
+<p>####### Segment MSH</p>
 
-Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
+<p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-`ZAM^Z01^ZAM_Z01`.
+<code class="language-plaintext highlighter-rouge">ZAM^Z01^ZAM_Z01</code>.</p>
 
 <table>
   <tbody>
@@ -5616,10 +5604,9 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
   </tbody>
 </table>
 
-######## Segment OBX portant le statut de d'accusé de réception
+<p>######## Segment OBX portant le statut de d’accusé de réception</p>
 
-Le premier segment OBX renseigne le statut de l'accusé de réception&nbsp;:
-
+<p>Le premier segment OBX renseigne le statut de l’accusé de réception&nbsp;:</p>
 
 <table>
   <tbody>
@@ -5766,9 +5753,9 @@ Le premier segment OBX renseigne le statut de l'accusé de réception&nbsp;:
   </tbody>
 </table>
 
-######## Segment ERR
+<p>######## Segment ERR</p>
 
-Si une erreur intervient lors du dépôt du document sur le DMP, ce segment contient sa description.
+<p>Si une erreur intervient lors du dépôt du document sur le DMP, ce segment contient sa description.</p>
 
 <table>
   <tbody>
@@ -5826,13 +5813,13 @@ Si une erreur intervient lors du dépôt du document sur le DMP, ce segment cont
   </tbody>
 </table>
 
-###### Contraintes à appliquer au message ZAM^Z02^ZAM_Z01 -- Accusé de réception MSSanté
+<h6 id="contraintes-à-appliquer-au-message-zamz02zam_z01--accusé-de-réception-mssanté">Contraintes à appliquer au message ZAM^Z02^ZAM_Z01 – Accusé de réception MSSanté</h6>
 
-####### Segment MSH
+<p>####### Segment MSH</p>
 
-Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
+<p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-`ZAM^Z02^ZAM_Z01`.
+<code class="language-plaintext highlighter-rouge">ZAM^Z02^ZAM_Z01</code>.</p>
 
 <table>
   <tbody>
@@ -6069,10 +6056,10 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
   </tbody>
 </table>
 
-######## Segment OBX portant le statut de d'accusé de réception
+<p>######## Segment OBX portant le statut de d’accusé de réception</p>
 
-Le premier segment OBX renseigne le statut de l'accusé de réception
-MSSanté&nbsp;:
+<p>Le premier segment OBX renseigne le statut de l’accusé de réception
+MSSanté&nbsp;:</p>
 
 <table>
   <tbody>
@@ -6219,10 +6206,10 @@ MSSanté&nbsp;:
   </tbody>
 </table>
 
-######## Segment OBX portant les informations du destinataire MSSanté
+<p>######## Segment OBX portant les informations du destinataire MSSanté</p>
 
-Le deuxième segment OBX renseigne les informations du destinataire du
-courriel MSSanté :
+<p>Le deuxième segment OBX renseigne les informations du destinataire du
+courriel MSSanté :</p>
 
 <table>
   <tbody>
@@ -6367,11 +6354,11 @@ courriel MSSanté :
   </tbody>
 </table>
 
-######## Segment ERR
+<p>######## Segment ERR</p>
 
-Si une erreur intervient lors de la distribution du ou des document(s)
+<p>Si une erreur intervient lors de la distribution du ou des document(s)
 par MSSanté dans le serveur de messagerie du destinataire MSSanté, ce
-segment contient sa description.
+segment contient sa description.</p>
 
 <table>
   <tbody>
@@ -6428,14 +6415,13 @@ segment contient sa description.
   </tbody>
 </table>
 
+<h6 id="contraintes-à-appliquer-au-message-zamz03zam_z01--accusé-de-lecture-mssanté">Contraintes à appliquer au message ZAM^Z03^ZAM_Z01 – Accusé de lecture MSSanté</h6>
 
-###### Contraintes à appliquer au message ZAM^Z03^ZAM_Z01 -- Accusé de lecture MSSanté 
+<p>######## Segment MSH</p>
 
-######## Segment MSH
-
-Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
+<p>Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
-`ZAM^Z03^ZAM_Z01`.
+<code class="language-plaintext highlighter-rouge">ZAM^Z03^ZAM_Z01</code>.</p>
 
 <table>
   <tbody>
@@ -6672,9 +6658,9 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
   </tbody>
 </table>
 
-######## Segment OBX portant le statut de d'accusé de lecture MSSanté
+<p>######## Segment OBX portant le statut de d’accusé de lecture MSSanté</p>
 
-Le premier segment OBX renseigne le statut de l'accusé de lecture&nbsp;:
+<p>Le premier segment OBX renseigne le statut de l’accusé de lecture&nbsp;:</p>
 
 <table>
   <tbody>
@@ -6821,10 +6807,10 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture&nbsp;:
   </tbody>
 </table>
 
-######## Segment OBX portant les informations du lecteur
+<p>######## Segment OBX portant les informations du lecteur</p>
 
-Le deuxième segment OBX renseigne les informations du lecteur du
-courriel MSSanté :
+<p>Le deuxième segment OBX renseigne les informations du lecteur du
+courriel MSSanté :</p>
 
 <table>
   <tbody>
@@ -6969,10 +6955,10 @@ courriel MSSanté :
   </tbody>
 </table>
 
-######## Segment ERR
+<p>######## Segment ERR</p>
 
-Si une erreur intervient lors du traitement de la demande réceptionnée
-par le destinataire, ce segment contient sa description.
+<p>Si une erreur intervient lors du traitement de la demande réceptionnée
+par le destinataire, ce segment contient sa description.</p>
 
 <table>
   <tbody>
@@ -7030,37 +7016,17 @@ par le destinataire, ce segment contient sa description.
   </tbody>
 </table>
 
-Seules les erreurs de niveau applicatif du traitement automatique sur le document au niveau du destinataire final sont remontées au travers du courriel MDN et réceptionnées par le GESTIONNAIRE (la PFI expéditrice).
-Les erreurs de type technique (erreurs de syntaxe du message HL7) sont généralement traitées localement, côté du destinataire, par une des intervenants techniques. Dans ces conditions, le segment ERR-3 prend la valeur 207 et le segment ERR-5 contient l'erreur applicative remontée au
- travers du courriel MDN. Le message HL7 `ZAM^Z03^ZAM_Z01` est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
-(cf structure du MDN -- Message Disposition Notification) décrit en Annexe 4 du volet «&nbsp;[Transmission au LPS d'un document CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante)&nbsp;».
+<p>Seules les erreurs de niveau applicatif du traitement automatique sur le document au niveau du destinataire final sont remontées au travers du courriel MDN et réceptionnées par le GESTIONNAIRE (la PFI expéditrice).
+Les erreurs de type technique (erreurs de syntaxe du message HL7) sont généralement traitées localement, côté du destinataire, par une des intervenants techniques. Dans ces conditions, le segment ERR-3 prend la valeur 207 et le segment ERR-5 contient l’erreur applicative remontée au
+ travers du courriel MDN. Le message HL7 <code class="language-plaintext highlighter-rouge">ZAM^Z03^ZAM_Z01</code> est généré ple GESTIONNAIRE à partir des informations contenues dans le courriel MDN
+(cf structure du MDN – Message Disposition Notification) décrit en Annexe 4 du volet «&nbsp;<a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d’un document CDA provenant d’un courriel MSSanté</a>&nbsp;».</p>
 
-##### Message d'acquittement technique des accusés métiers
+<h5 id="message-dacquittement-technique-des-accusés-métiers">Message d’acquittement technique des accusés métiers</h5>
 
-Le message d'acquittement est identique à celui spécifié dans la [partie dédiée](profils-messages.html#le-message-dacquittement-du-message-hl7v2), à l'exception du champ MSH-9 qui prend la valeur&nbsp;`ACK^Z01^ACK` ou `ACK^Z02^ACK` ou `ACK^Z03^ACK` selon l'évènement du message initial.
+<p>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Règles de gestion MSSANTE
-Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX valorisés. Le tableau présente une liste exhaustive des combinaisons possibles des OBX pour l'échange MSSANTE. Les cas non représentés génèrent un message d'erreur.
+<h3 id="règles-de-gestion-mssante">Règles de gestion MSSANTE</h3>
+<p>Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX valorisés. Le tableau présente une liste exhaustive des combinaisons possibles des OBX pour l’échange MSSANTE. Les cas non représentés génèrent un message d’erreur.</p>
 
 <table>
   <tbody>
@@ -7123,15 +7089,14 @@ Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX val
   </tbody>
 </table>
 
-**Lien entre l'EN-TETE CDA et les métadonnées XDS**
+<p><strong>Lien entre l’EN-TETE CDA et les métadonnées XDS</strong></p>
 
-Une annexe disponible sur le CI-SIS indique la correspondance entre les données d'en-tête d'un document CDA définies dans le volet structuration minimale des documents de Santé et les métadonnées XDS définies dans le [volet partage de documents de Santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf).
+<p>Une annexe disponible sur le CI-SIS indique la correspondance entre les données d’en-tête d’un document CDA définies dans le volet structuration minimale des documents de Santé et les métadonnées XDS définies dans le <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf">volet partage de documents de Santé</a>.</p>
 
--   **[Annexe -- Lien Entre l'en-tête CDA et les métadonnées XDS](https://esante.gouv.fr/sites/default/files/media_entity/documents/CI-SIS_ANX_LIENS-CDA-METADONNEES-XDS_V1.6.pdf)**
+<ul>
+  <li><strong><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/CI-SIS_ANX_LIENS-CDA-METADONNEES-XDS_V1.6.pdf">Annexe – Lien Entre l’en-tête CDA et les métadonnées XDS</a></strong></li>
+</ul>
 
-
-
-</th></tr></tbody></table>
 
 
 
@@ -7173,7 +7138,7 @@ Une annexe disponible sur le CI-SIS indique la correspondance entre les données
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 29, 2024 13:53+0000">2024-10-29</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 15:08+0000">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
