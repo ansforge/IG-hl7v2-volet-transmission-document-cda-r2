@@ -831,20 +831,18 @@ le segment MSH :
 <table class="table-hl7v2"> 
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-        <p> </p>
-        <p> </p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
@@ -949,7 +947,12 @@ le segment MSH :
         <p>MSH-9</p>
       </td>
       <td>
-        <p>Type du message ORU^R01^ORU_R01 MDM^T02^MDM_T02 MDM^T10^MDM_T02 MDM^T04^MDM_T02</p>
+        <p>Type du message 
+<br><span class"hl7-color">ORU^R01^ORU_R01 </span>
+<br><span class"hl7-color">MDM^T02^MDM_T02 </span>
+<br><span class"hl7-color">MDM^T10^MDM_T02 </span>
+ <br><span class"hl7-color"> MDM^T04^MDM_T02</span>
+</p> 
       </td>
       <td>
         <p>MSG</p>
@@ -978,7 +981,10 @@ le segment MSH :
         <p>MSH-11</p>
       </td>
       <td>
-        <p>Processing Id P : en production T : message de test D : environnement de debug</p>
+        <p>Processing Id 
+<br><span class"hl7-color"> P </span> : en production 
+<br><span class"hl7-color"> T </span> : message de test 
+ <br><span class"hl7-color"> D </span>: environnement de debug</p>
       </td>
       <td>
         <p>PT</p>
@@ -992,7 +998,9 @@ le segment MSH :
         <p>MSH-12</p>
       </td>
       <td>
-        <p>Version du standard 2.5 pour ORU 2.6 pour MDM</p>
+        <p>Version du standard 
+<br><span class"hl7-color"> 2.5</span> pour ORU 
+  <br><span class"hl7-color"> 2.6</span> pour MDM</p>
       </td>
       <td>
         <p>VID</p>
@@ -1006,7 +1014,7 @@ le segment MSH :
         <p>MSH-17</p>
       </td>
       <td>
-        <p>FRA</p>
+        <p><span class"hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1021,7 +1029,7 @@ le segment MSH :
       </td>
       <td>
         <p>Jeux de caractères, valeurs possibles :</p>
-        <p>UNICODE UTF-8 ou 8859/15</p>
+        <p><span class"hl7-color">UNICODE UTF-8 ou 8859/15</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1036,9 +1044,9 @@ le segment MSH :
       </td>
       <td>
         <p>Identifiant du profil de message</p>
-        <p>MSH-21.1 : Entity Identifier (2.1)</p>
+        <p>MSH-21.1 : Entity Identifier (<span class"hl7-color">2.1</span>)</p>
         <p>MSH-21.2 : Namespace Id</p>
-        <p>CISIS_CDA_HL7_V2</p>
+        <p><span class"hl7-color">CISIS_CDA_HL7_V2</span> </p>
       </td>
       <td>
         <p>EI</p>
@@ -1224,7 +1232,9 @@ Le message MDM requiert l'utilisation du segment TXA qui porte les
 métadonnées associées au document contenu dans le message. Les
 contraintes apportées par ce volet sur le segment TXA sont les
 suivantes :
-<table>
+
+
+<table class="table-hl7v2">
   <tbody>
     <tr>
       <th>
@@ -1245,7 +1255,7 @@ suivantes :
         <p>TXA-1</p>
       </td>
       <td>
-        <p>Set-ID TXA. Valeur = 1</p>
+        <p>Set-ID TXA. Valeur = <span class"hl7-color">1</span></p>
       </td>
       <td>
         <p>SI</p>
@@ -1276,7 +1286,7 @@ suivantes :
       </td>
       <td>
         <p>Document Content Presentation</p>
-        <p>TEXT</p>
+        <p><span class"hl7-color">TEXT</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1327,7 +1337,7 @@ suivantes :
       </td>
       <td>
         <p>Document completion status dont la valeur est à prendre dans la table HL7 0271</p>
-        <p>AU</p>
+        <p><span class"hl7-color">AU</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1415,9 +1425,9 @@ la suivante :
         <p>Order control</p>
       </td>
       <td>
-        <p>NW (New order/service dans le cas d'une demande d'intégration de document(s)</p>
-        <p>RO (Replace order) dans le cas d'une demande de remplacement</p>
-        <p>CA (Canceled) dans le cas d'une demande de suppression</p>
+        <p><span class"hl7-color">NW</span> (New order/service dans le cas d'une demande d'intégration de document(s)</p>
+        <p><span class"hl7-color">RO</span> (Replace order) dans le cas d'une demande de remplacement</p>
+        <p><span class"hl7-color">CA</span> (Canceled) dans le cas d'une demande de suppression</p>
       </td>
     </tr>
   </tbody>
@@ -1478,8 +1488,8 @@ rejeté par la PFI.
         <p>Code du document</p>
       </td>
       <td rowspan="2">
-        <p>Utiliser le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Santé (NOS).</p>
-        <p>A noter qu'en cas d'envoi au DMP, le Gestionnaire doit contrôler que le type de document appartient au jeu de valeur défini par le DMP (<a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a>).</p>
+        <p>Utiliser le <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J07-XdsTypeCode-CISIS.html">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Santé (NOS).</p>
+        <p>A noter qu'en cas d'envoi au DMP, le Gestionnaire doit contrôler que le type de document appartient au jeu de valeur défini par le DMP (<a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J66-TypeCode-DMP.html">JDV_J66-TypeCode-DMP</a>).</p>
       </td>
     </tr>
     <tr>
@@ -1498,7 +1508,7 @@ rejeté par la PFI.
         <p>Système de codage dont est issu le code</p>
       </td>
       <td>
-        <p>LN ou TRE_A05 en fonction de l'appartenance du code à l'un des systèmes de codage</p>
+        <p> <span class"hl7-color">LN</span> ou <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html">TRE_A05</a> en fonction de l'appartenance du code à l'un des systèmes de codage</p>
       </td>
     </tr>
   </tbody>
@@ -1552,7 +1562,7 @@ données entre le message et le(s) document(s) et le récepteur n'a pas
 l'obligation de gérer le contenu de ces champs ou segments.
 
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
       <th colspan="3">
@@ -1600,7 +1610,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Value Type</p>
       </td>
       <td>
-        <p>ED (Encapsuled Data)</p>
+        <p> <span class"hl7-color">ED</span> (Encapsuled Data)</p>
       </td>
     </tr>
     <tr>
