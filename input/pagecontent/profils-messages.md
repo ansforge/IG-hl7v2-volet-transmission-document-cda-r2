@@ -947,12 +947,12 @@ le segment MSH :
         <p>MSH-9</p>
       </td>
       <td>
-        <p>Type du message 
+        Type du message 
 <br><span class"hl7-color">ORU^R01^ORU_R01 </span>
 <br><span class"hl7-color">MDM^T02^MDM_T02 </span>
 <br><span class"hl7-color">MDM^T10^MDM_T02 </span>
  <br><span class"hl7-color"> MDM^T04^MDM_T02</span>
-</p> 
+
       </td>
       <td>
         <p>MSG</p>
