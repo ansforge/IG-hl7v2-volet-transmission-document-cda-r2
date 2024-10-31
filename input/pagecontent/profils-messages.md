@@ -948,10 +948,10 @@ le segment MSH :
       </td>
       <td>
         Type du message 
-<br><span class"hl7-color">ORU^R01^ORU_R01 </span>
-<br><span class"hl7-color">MDM^T02^MDM_T02 </span>
-<br><span class"hl7-color">MDM^T10^MDM_T02 </span>
- <br><span class"hl7-color"> MDM^T04^MDM_T02</span>
+<br><span class="hl7-color">ORU^R01^ORU_R01 </span>
+<br><span class="hl7-color">MDM^T02^MDM_T02 </span>
+<br><span class="hl7-color">MDM^T10^MDM_T02 </span>
+ <br><span class="hl7-color"> MDM^T04^MDM_T02</span>
 
       </td>
       <td>
@@ -982,9 +982,9 @@ le segment MSH :
       </td>
       <td>
         <p>Processing Id 
-<br><span class"hl7-color"> P </span> : en production 
-<br><span class"hl7-color"> T </span> : message de test 
- <br><span class"hl7-color"> D </span>: environnement de debug</p>
+<br><span class="hl7-color"> P </span> : en production 
+<br><span class="hl7-color"> T </span> : message de test 
+ <br><span class="hl7-color"> D </span>: environnement de debug</p>
       </td>
       <td>
         <p>PT</p>
@@ -999,8 +999,8 @@ le segment MSH :
       </td>
       <td>
         <p>Version du standard 
-<br><span class"hl7-color"> 2.5</span> pour ORU 
-  <br><span class"hl7-color"> 2.6</span> pour MDM</p>
+<br><span class="hl7-color"> 2.5</span> pour ORU 
+  <br><span class="hl7-color"> 2.6</span> pour MDM</p>
       </td>
       <td>
         <p>VID</p>
@@ -1014,7 +1014,7 @@ le segment MSH :
         <p>MSH-17</p>
       </td>
       <td>
-        <p><span class"hl7-color">FRA</span></p>
+        <p><span class="hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1029,7 +1029,7 @@ le segment MSH :
       </td>
       <td>
         <p>Jeux de caractères, valeurs possibles :</p>
-        <p><span class"hl7-color">UNICODE UTF-8 ou 8859/15</span></p>
+        <p><span class="hl7-color">UNICODE UTF-8 ou 8859/15</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1044,9 +1044,9 @@ le segment MSH :
       </td>
       <td>
         <p>Identifiant du profil de message</p>
-        <p>MSH-21.1 : Entity Identifier (<span class"hl7-color">2.1</span>)</p>
+        <p>MSH-21.1 : Entity Identifier (<span class="hl7-color">2.1</span>)</p>
         <p>MSH-21.2 : Namespace Id</p>
-        <p><span class"hl7-color">CISIS_CDA_HL7_V2</span> </p>
+        <p><span class="hl7-color">CISIS_CDA_HL7_V2</span> </p>
       </td>
       <td>
         <p>EI</p>
@@ -1255,7 +1255,7 @@ suivantes :
         <p>TXA-1</p>
       </td>
       <td>
-        <p>Set-ID TXA. Valeur = <span class"hl7-color">1</span></p>
+        <p>Set-ID TXA. Valeur = <span class="hl7-color">1</span></p>
       </td>
       <td>
         <p>SI</p>
@@ -1337,7 +1337,7 @@ suivantes :
       </td>
       <td>
         <p>Document completion status dont la valeur est à prendre dans la table HL7 0271</p>
-        <p><span class"hl7-color">AU</span></p>
+        <p><span class="hl7-color">AU</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1425,9 +1425,9 @@ la suivante :
         <p>Order control</p>
       </td>
       <td>
-        <p><span class"hl7-color">NW</span> (New order/service dans le cas d'une demande d'intégration de document(s)</p>
-        <p><span class"hl7-color">RO</span> (Replace order) dans le cas d'une demande de remplacement</p>
-        <p><span class"hl7-color">CA</span> (Canceled) dans le cas d'une demande de suppression</p>
+        <p><span class="hl7-color">NW</span> (New order/service dans le cas d'une demande d'intégration de document(s)</p>
+        <p><span class="hl7-color">RO</span> (Replace order) dans le cas d'une demande de remplacement</p>
+        <p><span class="hl7-color">CA</span> (Canceled) dans le cas d'une demande de suppression</p>
       </td>
     </tr>
   </tbody>
@@ -1610,7 +1610,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Value Type</p>
       </td>
       <td>
-        <p> <span class"hl7-color">ED</span> (Encapsuled Data)</p>
+        <p> <span class="hl7-color">ED</span> (Encapsuled Data)</p>
       </td>
     </tr>
     <tr>
