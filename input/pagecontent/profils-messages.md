@@ -7,7 +7,7 @@ partage et de l'échange.
 
 Les données utiles pour publication sur le DMP et pour l'envoi par
 MSSanté de(s) document(s) sont stockées à la fois dans le segment PID du
-message HL7, dans le document CDA-R2 conforme au [volet du CI_SIS Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) et dans des segments OBX du message HL7 spécifiant les métadonnées complémentaires.
+message HL7, dans le document CDA-R2 conforme au [volet du CI_SIS Structuration minimale des documents de santé](https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante) et dans des segments OBX du message HL7 spécifiant les métadonnées complémentaires.
 
 Le développeur doit valoriser tous les segments et champs obligatoires
 des messages HL7v2 afin de répondre au standard d'interopérabilité des
@@ -541,7 +541,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> ORC</p>
+        <p> &nbsp; ORC</p>
       </td>
       <td>
         <p>Common Order = demande de traitement sur le document</p>
@@ -558,7 +558,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> [{</p>
+        <p>&nbsp;[{</p>
       </td>
       <td>
         <p>--- TIMING begin</p>
@@ -575,7 +575,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p>  TQ1</p>
+        <p>&nbsp;&nbsp;TQ1</p>
       </td>
       <td>
         <p>Timing/Quantity</p>
@@ -592,7 +592,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p>  [{TQ2}]</p>
+        <p>&nbsp;&nbsp;[{TQ2}]</p>
       </td>
       <td>
         <p>Timing/Quantity RelationShip</p>
@@ -609,7 +609,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> }]</p>
+        <p>&nbsp;&nbsp;}]</p>
       </td>
       <td>
         <p>--- TIMING end</p>
@@ -626,7 +626,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> OBR</p>
+        <p>&nbsp;&nbsp;OBR</p>
       </td>
       <td>
         <p>Observation Request segment</p>
@@ -643,7 +643,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> [{NTE}]</p>
+        <p>&nbsp;[{NTE}]</p>
       </td>
       <td>
         <p>Notes and comments</p>
@@ -711,7 +711,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> OBX</p>
+        <p>&nbsp;OBX</p>
       </td>
       <td>
         <p>Observation/Result.</p>
@@ -728,7 +728,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> [{PRT}]</p>
+        <p>&nbsp;[{PRT}]</p>
         <p>(Note 1)</p>
       </td>
       <td>
@@ -746,7 +746,7 @@ Le profil du message MDM est le suivant :
     </tr>
     <tr>
       <td>
-        <p> [{NTE}]</p>
+        <p>&nbsp;[{NTE}]</p>
       </td>
       <td>
         <p>Notes and comments</p>
@@ -849,7 +849,7 @@ le segment MSH :
         <p>MSH-1</p>
       </td>
       <td>
-        <p>| séparateur de champ</p>
+        <p><span class="hl7-color">|</span> séparateur de champ</p>
       </td>
       <td>
         <p>ST</p>
@@ -863,7 +863,7 @@ le segment MSH :
         <p>MSH-2</p>
       </td>
       <td>
-        <p>^~\& : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
+        <p><span class="hl7-color">^~\&</span> : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
       </td>
       <td>
         <p>ST</p>
@@ -948,7 +948,7 @@ le segment MSH :
       </td>
       <td>
         Type du message 
-<br><span class="hl7-color">ORU^R01^ORU_R01 </span>
+<br> <span class="hl7-color"> ORU^R01^ORU_R01 </span>
 <br><span class="hl7-color">MDM^T02^MDM_T02 </span>
 <br><span class="hl7-color">MDM^T10^MDM_T02 </span>
  <br><span class="hl7-color"> MDM^T04^MDM_T02</span>
@@ -1286,7 +1286,7 @@ suivantes :
       </td>
       <td>
         <p>Document Content Presentation</p>
-        <p><span class"hl7-color">TEXT</span></p>
+        <p><span class="hl7-color">TEXT</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -1350,7 +1350,7 @@ suivantes :
 </table>
 
 **(Note 1)** : _conformément au volet de [Structuration minimale des
-documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf), l'identifiant du document au sein du document CDA
+documents de santé](https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante), l'identifiant du document au sein du document CDA
 s'exprime soit par un OID complet identifiant complètement l'instance du
 document (sans extension), soit par une racine d'OID commune à toutes
 les instances de documents de l'émetteur associée à une extension propre
@@ -1508,7 +1508,7 @@ rejeté par la PFI.
         <p>Système de codage dont est issu le code</p>
       </td>
       <td>
-        <p> <span class"hl7-color">LN</span> ou <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html">TRE_A05</a> en fonction de l'appartenance du code à l'un des systèmes de codage</p>
+        <p> <span class="hl7-color">LN</span> ou <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html">TRE_A05</a> en fonction de l'appartenance du code à l'un des systèmes de codage</p>
       </td>
     </tr>
   </tbody>
@@ -1653,7 +1653,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Système de codage dont est issu le code</p>
       </td>
       <td>
-        <p>LN ou TRE_A05 en fonction de l'appartenance du code à l'un de ces systèmes de codage.</p>
+        <p>   <span class="hl7-color">LN</span> ou <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html">TRE_A05</a> en fonction de l'appartenance du code à l'un des systèmes de codage.</p>
       </td>
     </tr>
     <tr>
@@ -1686,8 +1686,8 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : TEXT (Machine readable text document)</p>
-        <p>Pour le message MDM : text (Text data)</p>
+        <p>Pour le message ORU : <span class="hl7-color">TEXT</span> (Machine readable text document)</p>
+        <p>Pour le message MDM : <span class="hl7-color">text</span> (Text data)</p>
       </td>
     </tr>
     <tr>
@@ -1698,7 +1698,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Data Subtype</p>
       </td>
       <td>
-        <p>XML</p>
+        <p><span class="hl7-color">XML</span></p>
       </td>
     </tr>
     <tr>
@@ -1709,7 +1709,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Encoding</p>
       </td>
       <td>
-        <p>Base64</p>
+        <p><span class="hl7-color">Base64</span></p>
       </td>
     </tr>
     <tr>
@@ -1732,9 +1732,9 @@ l'obligation de gérer le contenu de ces champs ou segments.
       </td>
       <td>
         <p>Statut du document pris dans la table HL7 0085 (Observation Result Status Codes Interpretation) :</p>
-        <p>·       F : Document validé</p>
-        <p>·       D : Document à supprimer</p>
-        <p>·       C : Remplacement du Document</p>
+        <p>·       <span class="hl7-color">F</span> : Document validé</p>
+        <p>·       <span class="hl7-color">D</span> : Document à supprimer</p>
+        <p>·       <span class="hl7-color">C</span> : Remplacement du Document</p>
       </td>
     </tr>
     <tr>
@@ -1757,7 +1757,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Action Code</p>
       </td>
       <td>
-        <p>UC (Unchanged)</p>
+        <p><span class="hl7-color">UC</span> (Unchanged)</p>
       </td>
     </tr>
     <tr>
@@ -1768,7 +1768,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Participation</p>
       </td>
       <td>
-        <p>SB^Send by^participation</p>
+        <p><span class="hl7-color">SB^Send by^participation</span></p>
       </td>
     </tr>
     <tr>
@@ -1824,7 +1824,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Assigning Authority</p>
       </td>
       <td>
-        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : 1.2.250.1.71.4.2.1</p>
+        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : <span class="hl7-color">1.2.250.1.71.4.2.1</span></p>
       </td>
     </tr>
     <tr>
@@ -1869,7 +1869,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
       </td>
       <td>
         <p>Autorité d'affectation de l'identifiant de l'organisation dont dépend le PS ou le système à l'origine de la demande de traitement sur le(s) document(s).</p>
-        <p>1.2.250.1.71.4.2.2 (OID de gestion des structures pour un PS dans un établissement de santé).</p>
+        <p><span class="hl7-color">1.2.250.1.71.4.2.2</span> (OID de gestion des structures pour un PS dans un établissement de santé).</p>
       </td>
     </tr>
     <tr>
@@ -1880,7 +1880,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Identifier Type Code</p>
       </td>
       <td>
-        <p>Type d'identifiant de l'organisation (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>) : FINEJ (FINESS d'entité juridique) ou FINEG (FINESS d'entité géographique).</p>
+        <p>Type d'identifiant de l'organisation (valeur issue de la <a href="https://github.com/Interop-Sante/ihe.iti.pam.fr/blob/main/Publication/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.7.3.pdf">Table 0203 - Interop'Santé</a>) : <span class="hl7-color">FINEJ</span> (FINESS d'entité juridique) ou <span class="hl7-color">FINEG</span> (FINESS d'entité géographique).</p>
       </td>
     </tr>
     <tr>
@@ -1937,7 +1937,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Action Code</p>
       </td>
       <td>
-        <p>UC (Unchanged)</p>
+        <p><span class="hl7-color">UC</span>(Unchanged)</p>
       </td>
     </tr>
     <tr>
@@ -1948,7 +1948,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Participation</p>
       </td>
       <td>
-        <p>RCT^Result Copies To^participation</p>
+        <p><span class="hl7-color">RCT^Result Copies To^participation</span></p>
       </td>
     </tr>
     <tr>
@@ -2003,7 +2003,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Assigning Authority</p>
       </td>
       <td>
-        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : 1.2.250.1.71.4.2.1 ou du patient 1.2.250.1.213.1.4.8 (INS-NIR) ou 1.2.250.1.213.1.4.9 (INS-NIA).</p>
+        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : <span class="hl7-color">1.2.250.1.71.4.2.1</span> ou du patient <span class="hl7-color">1.2.250.1.213.1.4.8</span> (INS-NIR) ou <span class="hl7-color">1.2.250.1.213.1.4.9</span> (INS-NIA).</p>
       </td>
     </tr>
     <tr>
@@ -2014,7 +2014,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Identifier Type Code</p>
       </td>
       <td>
-        <p>Type d'identifiant (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>) : RPPS ou INS</p>
+        <p>Type d'identifiant (valeur issue de la <a href="https://github.com/Interop-Sante/ihe.iti.pam.fr/blob/main/Publication/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.7.3.pdf">Table 0203 - Interop'Santé</a>) : <span class="hl7-color">RPPS</span> ou <span class="hl7-color">INS</span></p>
       </td>
     </tr>
     <tr>
@@ -2048,7 +2048,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
       </td>
       <td>
         <p>Autorité d'affectation de l'identifiant de l'organisation destinataire du document.</p>
-        <p>1.2.250.1.71.4.2.2 (OID de gestion des structures pour préciser une entité juridique ou une entité géographique), N° FINESS ou N° FINEG pour identifier une organisation intra-établissement (service, UF, pôle…).</p>
+        <p><span class="hl7-color">1.2.250.1.71.4.2.2</span> (OID de gestion des structures pour préciser une entité juridique ou une entité géographique), N° FINESS ou N° FINEG pour identifier une organisation intra-établissement (service, UF, pôle…).</p>
         <p>Cf Contraintes sur les types de données HL7 v2.5 applicables aux profils d'intégration du cadre technique IT Infrastructure dans le périmètre d'IHE France.[12] </p>
       </td>
     </tr>
@@ -2060,7 +2060,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Identifier Type Code</p>
       </td>
       <td>
-        <p>Type d'identifiant (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>) : FINEJ (FINESS d'entité juridique) ou FINEG (FINESS d'entité géographique) ou UF (UF), SVR (service)...</p>
+        <p>Type d'identifiant (valeur issue de la <a href="https://github.com/Interop-Sante/ihe.iti.pam.fr/blob/main/Publication/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.7.3.pdf">Table 0203 - Interop'Santé</a>) : <span class="hl7-color">FINEJ</span> (FINESS d'entité juridique) ou <span class="hl7-color">FINEG</span> (FINESS d'entité géographique) ou <span class="hl7-color">UF</span> (UF), <span class="hl7-color">SVR</span> (service)...</p>
       </td>
     </tr>
     <tr>
@@ -2159,7 +2159,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Action Code</p>
       </td>
       <td>
-        <p>UC (Unchanged)</p>
+        <p><span class="hl7-color">UC</span> (Unchanged)</p>
       </td>
     </tr>
     <tr>
@@ -2170,7 +2170,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Participation</p>
       </td>
       <td>
-        <p>REPLY^Reply To^participation</p>
+        <p><span class="hl7-color">REPLY^Reply To^participation</span></p>
       </td>
     </tr>
     <tr>
@@ -2192,7 +2192,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Telecommunication Equipment Type</p>
       </td>
       <td>
-        <p>X.400 (X.400 email address)</p>
+        <p><span class="hl7-color">X.400</span> (X.400 email address)</p>
       </td>
     </tr>
     <tr>
@@ -2282,7 +2282,7 @@ mise à jour de l'élément informationRecipient et donc à une nouvelle
 version du document.
 
 Concernant le point (3), le « [Volet Structuration minimale des documents
-de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) » a été modifié de façon à lever la contrainte existante sur
+de santé](https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante) » a été modifié de façon à lever la contrainte existante sur
 l'élément « participant ». Il est prévu de modifier la prochaine version
 du « Volet CR-BIO -- Compte-rendu d'examens de biologie médicale » dans
 le même sens.
@@ -2367,9 +2367,9 @@ masqué aux professionnels de santé.
       <td>
         <p>Value Type</p>
       </td>
-      <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+      <td><span class="hl7-color">
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -2391,7 +2391,7 @@ masqué aux professionnels de santé.
         <p>Code :</p>
       </td>
       <td>
-        <p>MASQUE_PS</p>
+        <p><span class="hl7-color">MASQUE_PS</span></p>
       </td>
     </tr>
     <tr>
@@ -2402,7 +2402,7 @@ masqué aux professionnels de santé.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Masqué aux professionnels de Santé</p>
+        <p><span class="hl7-color">Masqué aux professionnels de Santé</span></p>
       </td>
     </tr>
     <tr>
@@ -2413,7 +2413,7 @@ masqué aux professionnels de santé.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color"><span class="hl7-color">MetaDMPMSS</span></span></p>
       </td>
     </tr>
     <tr>
@@ -2436,8 +2436,8 @@ masqué aux professionnels de santé.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>·       Y (Yes) àMASQUE_PS actif</p>
-        <p>·       N (No) à MASQUE_PS non Actif</p>
+        <p>·      <span class="hl7-color"> Y</span> (Yes) ->MASQUE_PS actif</p>
+        <p>·       <span class="hl7-color">N</span> (No) -> MASQUE_PS non Actif</p>
       </td>
     </tr>
     <tr>
@@ -2448,7 +2448,7 @@ masqué aux professionnels de santé.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -2459,7 +2459,7 @@ masqué aux professionnels de santé.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -2477,7 +2477,7 @@ masqué aux professionnels de santé.
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
 masqué au patient.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
       <th colspan="3">
@@ -2525,8 +2525,8 @@ masqué au patient.
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -2548,7 +2548,7 @@ masqué au patient.
         <p>Code :</p>
       </td>
       <td>
-        <p>INVISIBLE_PATIENT</p>
+        <p><span class="hl7-color">INVISIBLE_PATIENT</span></p>
       </td>
     </tr>
     <tr>
@@ -2559,7 +2559,7 @@ masqué au patient.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Document Non Visible par le patient</p>
+        <p><span class="hl7-color">Document Non Visible par le patient</span></p>
       </td>
     </tr>
     <tr>
@@ -2570,7 +2570,7 @@ masqué au patient.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p> <span class="hl7-color"> MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -2593,8 +2593,8 @@ masqué au patient.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>·       Y (YES) à INVISIBLE_PATIENT actif</p>
-        <p>·       N (No) à INVISIBLE_PATIENT non actif</p>
+        <p>·       <span class="hl7-color">Y</span> (YES) -> INVISIBLE_PATIENT actif</p>
+        <p>·       <span class="hl7-color">N</span> (No) -> INVISIBLE_PATIENT non actif</p>
       </td>
     </tr>
     <tr>
@@ -2605,7 +2605,7 @@ masqué au patient.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span></p>
       </td>
     </tr>
     <tr>
@@ -2616,7 +2616,7 @@ masqué au patient.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -2682,8 +2682,8 @@ masqué aux représentants légaux du patient.
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -2705,7 +2705,7 @@ masqué aux représentants légaux du patient.
         <p>Code :</p>
       </td>
       <td>
-        <p>INVISIBLE_REP_LEGAUX</p>
+        <p><span class="hl7-color">INVISIBLE_REP_LEGAUX</span></p>
       </td>
     </tr>
     <tr>
@@ -2716,7 +2716,7 @@ masqué aux représentants légaux du patient.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Non visible par les représentants Légaux du patient</p>
+        <p><span class="hl7-color">Non visible par les représentants Légaux du patient</span></p>
       </td>
     </tr>
     <tr>
@@ -2727,7 +2727,7 @@ masqué aux représentants légaux du patient.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -2750,8 +2750,8 @@ masqué aux représentants légaux du patient.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>·       Y (YES) à INVISIBLE_ REP_LEGAUX actif</p>
-        <p>·       N (No) à INVISIBLE_ REP_LEGAUX non actif</p>
+        <p>·       <span class="hl7-color">Y</span> (YES) -> INVISIBLE_ REP_LEGAUX actif</p>
+        <p>·       <span class="hl7-color">N</span> (No) -> INVISIBLE_ REP_LEGAUX non actif</p>
       </td>
     </tr>
     <tr>
@@ -2762,7 +2762,7 @@ masqué aux représentants légaux du patient.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span></p>
       </td>
     </tr>
     <tr>
@@ -2773,7 +2773,7 @@ masqué aux représentants légaux du patient.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -2839,8 +2839,8 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -2862,7 +2862,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Code :</p>
       </td>
       <td>
-        <p>CONNEXION_SECRETE</p>
+        <p><span class="hl7-color">CONNEXION_SECRETE</span></p>
       </td>
     </tr>
     <tr>
@@ -2873,7 +2873,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Connexion Secrete</p>
+        <p><span class="hl7-color">Connexion Secrete</span></p>
       </td>
     </tr>
     <tr>
@@ -2884,7 +2884,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -2907,8 +2907,8 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à CONNEXION_SECRETE actif</p>
-        <p>-        N (No) à CONNEXION_SECRETE non Actif</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) -> CONNEXION_SECRETE actif</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> CONNEXION_SECRETE non Actif</p>
       </td>
     </tr>
     <tr>
@@ -2919,7 +2919,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span></p>
       </td>
     </tr>
     <tr>
@@ -2930,7 +2930,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -2992,8 +2992,8 @@ document au patient ou à ses représentants légaux.
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -3015,7 +3015,7 @@ document au patient ou à ses représentants légaux.
         <p>Code :</p>
       </td>
       <td>
-        <p>MODIF_CONF_CODE</p>
+        <p><span class="hl7-color">MODIF_CONF_CODE</span></p>
       </td>
     </tr>
     <tr>
@@ -3026,7 +3026,7 @@ document au patient ou à ses représentants légaux.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Modification Confidentiality Code</p>
+        <p><span class="hl7-color">Modification Confidentiality Code</span></p>
       </td>
     </tr>
     <tr>
@@ -3037,7 +3037,7 @@ document au patient ou à ses représentants légaux.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3060,8 +3060,8 @@ document au patient ou à ses représentants légaux.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à MODIF_CONF_CODE actif</p>
-        <p>-        N (No) à  MODIF_CONF_CODE non Actif</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) -> MODIF_CONF_CODE actif</p>
+        <p>-        <span class="hl7-color">N</span> (No) ->  MODIF_CONF_CODE non Actif</p>
       </td>
     </tr>
     <tr>
@@ -3072,7 +3072,7 @@ document au patient ou à ses représentants légaux.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span</p>
       </td>
     </tr>
     <tr>
@@ -3083,7 +3083,7 @@ document au patient ou à ses représentants légaux.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -3143,8 +3143,8 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -3166,7 +3166,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Code :</p>
       </td>
       <td>
-        <p>DESTDMP</p>
+        <p><span class="hl7-color">DESTDMP</span></p>
       </td>
     </tr>
     <tr>
@@ -3177,7 +3177,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Destinataire DMP</p>
+        <p><span class="hl7-color">Destinataire DMP</span></p>
       </td>
     </tr>
     <tr>
@@ -3188,7 +3188,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3211,8 +3211,8 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à DESTDMP actif</p>
-        <p>-        N (No) à DESTDMP non Actif</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) ->DESTDMP actif</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> DESTDMP non Actif</p>
       </td>
     </tr>
     <tr>
@@ -3223,7 +3223,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -3234,7 +3234,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -3295,8 +3295,8 @@ applicative.
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -3318,7 +3318,7 @@ applicative.
         <p>Code :</p>
       </td>
       <td>
-        <p>DESTMSSANTEPS</p>
+        <p><span class="hl7-color">DESTMSSANTEPS</span></p>
       </td>
     </tr>
     <tr>
@@ -3329,7 +3329,7 @@ applicative.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Destinataire (Professionnel de Santé, organisation ou BAL applicative)</p>
+        <p><span class="hl7-color">Destinataire (Professionnel de Santé, organisation ou BAL applicative)</span></p>
       </td>
     </tr>
     <tr>
@@ -3340,7 +3340,7 @@ applicative.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3363,8 +3363,8 @@ applicative.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à DESTMSSANTEPS actif</p>
-        <p>-        N (No) à DESTMSSANTEPS non Actif</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) ->DESTMSSANTEPS actif</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> DESTMSSANTEPS non Actif</p>
       </td>
     </tr>
     <tr>
@@ -3375,7 +3375,7 @@ applicative.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -3386,7 +3386,7 @@ applicative.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -3456,8 +3456,8 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -3479,7 +3479,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p>Code :</p>
       </td>
       <td>
-        <p>DESTMSSANTEPAT</p>
+        <p><span class="hl7-color">DESTMSSANTEPAT</span></p>
       </td>
     </tr>
     <tr>
@@ -3490,7 +3490,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Destinataire Patient</p>
+        <p><span class="hl7-color">Destinataire Patient</span></p>
       </td>
     </tr>
     <tr>
@@ -3501,7 +3501,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3524,8 +3524,8 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) : DESTMSSANTEPAT actif</p>
-        <p>-        N (No) : DESTMSSANTEPAT non Actif</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) -> DESTMSSANTEPAT actif</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> DESTMSSANTEPAT non Actif</p>
       </td>
     </tr>
     <tr>
@@ -3536,7 +3536,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -3547,7 +3547,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
     <tr>
@@ -3577,7 +3577,7 @@ recevoir un accusé de réception provenant du DMP et un accusé de
 réception provenant du serveur de messagerie de chaque destinataire
 MSSanté.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
       <td colspan="3">
@@ -3625,8 +3625,8 @@ MSSanté.
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -3648,7 +3648,7 @@ MSSanté.
         <p>Code :</p>
       </td>
       <td>
-        <p>ACK_RECEPTION</p>
+        <p><span class="hl7-color">ACK_RECEPTION</span></p>
       </td>
     </tr>
     <tr>
@@ -3659,7 +3659,7 @@ MSSanté.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Accusé de réception</p>
+        <p><span class="hl7-color">Accusé de réception</span></p>
       </td>
     </tr>
     <tr>
@@ -3670,7 +3670,7 @@ MSSanté.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3693,8 +3693,8 @@ MSSanté.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à ack de réception DMP/MSSanté souhaité</p>
-        <p>-        N (No) à accusé de réception DMP/MSSanté non souhaité</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) ->ack de réception DMP/MSSanté souhaité</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> accusé de réception DMP/MSSanté non souhaité</p>
       </td>
     </tr>
     <tr>
@@ -3705,7 +3705,7 @@ MSSanté.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -3716,7 +3716,7 @@ MSSanté.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -3733,7 +3733,7 @@ de la lecture du courrier électronique présent dans la BAL pour chacun
 des destinataires MSSanté, soit du résultat du traitement automatique du
 courrier électronique par le GESTIONNAIRE destinataire.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
       <th colspan="3">
@@ -3781,8 +3781,8 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Value Type</p>
       </td>
       <td>
-        <p>Pour le message ORU : CE (Coded Entry)</p>
-        <p>Pour le message MDM : CWE (Coded with Exceptions)</p>
+        <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
+        <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -3804,7 +3804,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Code :</p>
       </td>
       <td>
-        <p>ACK_LECTURE_MSS</p>
+        <p> <span class="hl7-color"> ACK_LECTURE_MSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3815,7 +3815,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Accusé de lecture</p>
+        <p><span class="hl7-color"> Accusé de lecture</span></p>
       </td>
     </tr>
     <tr>
@@ -3826,7 +3826,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3849,8 +3849,8 @@ courrier électronique par le GESTIONNAIRE destinataire.
       </td>
       <td>
         <p>Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à accusé de lecture MSSanté souhaité</p>
-        <p>-        N (No) à accusé de lecture MSSanté non souhaité</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) ->accusé de lecture MSSanté souhaité</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> accusé de lecture MSSanté non souhaité</p>
       </td>
     </tr>
     <tr>
@@ -3861,7 +3861,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -3872,7 +3872,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -3884,7 +3884,7 @@ Cet OBX permet à l'acteur CREATEUR de documents d'ajouter un texte à
 intégrer dans le corps du mail à destination des professionnels de santé
 via MSSanté. Cette métadonnée est optionnelle :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
       <th colspan="3">
@@ -3932,7 +3932,7 @@ via MSSanté. Cette métadonnée est optionnelle :
         <p>Value Type</p>
       </td>
       <td>
-        <p>ED (Encapsulated Data)</p>
+        <p><span class="hl7-color">ED</span> (Encapsulated Data)</p>
       </td>
     </tr>
     <tr>
@@ -3954,7 +3954,7 @@ via MSSanté. Cette métadonnée est optionnelle :
         <p>Code :</p>
       </td>
       <td>
-        <p>CORPSMAIL_PS</p>
+        <p><span class="hl7-color">CORPSMAIL_PS</span></p>
       </td>
     </tr>
     <tr>
@@ -3965,7 +3965,7 @@ via MSSanté. Cette métadonnée est optionnelle :
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Corps du mail pour un PS</p>
+        <p><span class="hl7-color">Corps du mail pour un PS</span></p>
       </td>
     </tr>
     <tr>
@@ -3976,7 +3976,7 @@ via MSSanté. Cette métadonnée est optionnelle :
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -3998,7 +3998,7 @@ via MSSanté. Cette métadonnée est optionnelle :
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -4017,23 +4017,23 @@ Cet OBX permet au CREATEUR de documents d'ajouter un texte à intégrer
 dans le corps du mail à destination du patient via MSSanté. Cette
 métadonnée est optionnelle :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [0..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -4065,7 +4065,7 @@ métadonnée est optionnelle :
         <p>Value Type</p>
       </td>
       <td>
-        <p>ED (Encapsulated Data)</p>
+        <p><span class="hl7-color">ED</span> (Encapsulated Data)</p>
       </td>
     </tr>
     <tr>
@@ -4087,7 +4087,7 @@ métadonnée est optionnelle :
         <p>Code :</p>
       </td>
       <td>
-        <p>CORPSMAIL_PATIENT</p>
+        <p><span class="hl7-color">CORPSMAIL_PATIENT</span></p>
       </td>
     </tr>
     <tr>
@@ -4098,7 +4098,7 @@ métadonnée est optionnelle :
         <p>Libellé :</p>
       </td>
       <td>
-        <p>Corps du mail pour le patient</p>
+        <p><span class="hl7-color">Corps du mail pour le patient</span></p>
       </td>
     </tr>
     <tr>
@@ -4109,7 +4109,7 @@ métadonnée est optionnelle :
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>MetaDMPMSS</p>
+        <p><span class="hl7-color">MetaDMPMSS</span></p>
       </td>
     </tr>
     <tr>
@@ -4131,7 +4131,7 @@ métadonnée est optionnelle :
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
@@ -4157,23 +4157,23 @@ message HL7.
 
 Le profil du message ACK est le suivant :
 
-<table>
+<table class="table-hl7v2">
   <tr>
-    <td>
+    <th>
       <p>Segment</p>
-    </td>
-    <td>
+    </th>
+    <th>
       <p>Meaning</p>
-    </td>
-    <td>
+    </th>
+    <th>
       <p>Usage</p>
-    </td>
-    <td>
+    </th>
+    <th>
       <p>Card.</p>
-    </td>
-    <td>
+    </th>
+    <th>
       <p>HL7 §</p>
-    </td>
+    </th>
   </tr>
   <tbody>
     <tr>
@@ -4283,29 +4283,29 @@ ORU et HL7v2.6 pour MDM.
 
 Le segment MSH reprend une partie des informations du message initial :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="2">
+      <th colspan="2">
         <p><strong>Message initial</strong></p>
-      </td>
-      <td colspan="2">
+      </th>
+      <th colspan="2">
         <p><strong>Message d'acquittement</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
+      <th>
         <p><strong>Champ</strong></p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p><strong>Description</strong></p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p><strong>Champ</strong></p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p><strong>Description</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
@@ -4383,30 +4383,28 @@ Le segment MSH reprend une partie des informations du message initial :
 Le segment MSH doit être conforme au standard HL7v2.5 ou HL7v2.6 selon
 le type du message (ORU ou MDM) :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-        <p> </p>
-        <p> </p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
         <p>MSH-1</p>
       </td>
       <td>
-        <p>| séparateur de champ</p>
+        <p><span class="hl7-color">|</span> séparateur de champ</p>
       </td>
       <td>
         <p>ST</p>
@@ -4420,7 +4418,7 @@ le type du message (ORU ou MDM) :
         <p>MSH-2</p>
       </td>
       <td>
-        <p>^~\& : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
+        <p><span class="hl7-color">^~\&</span> : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
       </td>
       <td>
         <p>ST</p>
@@ -4504,9 +4502,13 @@ le type du message (ORU ou MDM) :
         <p>MSH-9</p>
       </td>
       <td>
-        <p>Type du message, selon l'évènement du message initial : ACK^R01^ACK</p>
-        <p>ACK^T02^ACK  ACK^T04^ACK  ACK^T10^ACK.</p>
-        <p> </p>
+        <p>Type du message, selon l'évènement du message initial : 
+          <br><span class="hl7-color">ACK^R01^ACK</span>
+          <br><span class="hl7-color">ACK^T02^ACK</span>
+          <br><span class="hl7-color">ACK^T04^ACK</span>  
+          <br><span class="hl7-color">ACK^T10^ACK</span>
+        </p>
+        
       </td>
       <td>
         <p>MSG</p>
@@ -4535,7 +4537,11 @@ le type du message (ORU ou MDM) :
         <p>MSH-11</p>
       </td>
       <td>
-        <p>Processing Id P : en production T : message de test D : environnement de debug</p>
+        <p>Processing Id 
+        <br><span class="hl7-color">P</span> : en production 
+        <br><span class="hl7-color">T</span> : message de test 
+        <br><span class="hl7-color">D</span> : environnement de debug
+        </p>
       </td>
       <td>
         <p>PT</p>
@@ -4549,7 +4555,10 @@ le type du message (ORU ou MDM) :
         <p>MSH-12</p>
       </td>
       <td>
-        <p>Version du standard 2.5 pour ORU 2.6 pour MDM</p>
+        <p>Version du standard 
+        <br><span class="hl7-color">2.5</span> pour ORU 
+        <br><span class="hl7-color">2.6</span> pour MDM
+        </p>
       </td>
       <td>
         <p>VID</p>
@@ -4578,7 +4587,7 @@ le type du message (ORU ou MDM) :
       </td>
       <td>
         <p>Jeux de caractères, valeurs possibles :</p>
-        <p>UNICODE UTF-8 ou 8859/15</p>
+        <p><span class="hl7-color">UNICODE UTF-8</span> ou <span class="hl7-color">8859/15</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -4594,15 +4603,15 @@ le type du message (ORU ou MDM) :
 
 ####### Segment MSA
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p><strong>Champ requis</strong></p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p><strong>Contenu</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
@@ -4610,9 +4619,9 @@ le type du message (ORU ou MDM) :
       </td>
       <td>
         <p>Code d'acquittement du message autorisé :</p>
-        <p>·       AA (Original mode: Application Accept - Enhanced mode: Application acknowledgment: Accept) : le message a été compris et intégré par l'application destinatrice qui prend la responsabilité du message et libère ainsi l'application productrice de toute obligation de le renvoyer.</p>
-        <p>·       AE (Original mode: Application Error - Enhanced mode: Application acknowledgment: Error) : le message contient des erreurs de syntaxe.   </p>
-        <p>·       AR (Original mode: Application Reject - Enhanced mode: Application acknowledgment: Reject)  : le message est rejeté pour une raison circonstancielle. Il peut être réémis plus tard. </p>
+        <p>·       <span class="hl7-color">AA</span>(Original mode: Application Accept - Enhanced mode: Application acknowledgment: Accept) : le message a été compris et intégré par l'application destinatrice qui prend la responsabilité du message et libère ainsi l'application productrice de toute obligation de le renvoyer.</p>
+        <p>·       <span class="hl7-color">AE</span> (Original mode: Application Error - Enhanced mode: Application acknowledgment: Error) : le message contient des erreurs de syntaxe.   </p>
+        <p>·       <span class="hl7-color">AR</span> (Original mode: Application Reject - Enhanced mode: Application acknowledgment: Reject)  : le message est rejeté pour une raison circonstancielle. Il peut être réémis plus tard. </p>
       </td>
     </tr>
     <tr>
@@ -4636,21 +4645,21 @@ où le champ MSA-1 prend la valeur AE (Application error) ou AR
 Le tableau ci-dessous liste les champs à renseigner pour le segment
 ERR :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
@@ -4747,15 +4756,15 @@ Ce type de message est utilisé par trois évènements différents :
 <table>
   <tbody>
     <tr>
-      <td>
+      <th>
         <p><strong>Flux métier</strong></p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p><strong>Evènement déclenchant au niveau du GESTIONNAIRE</strong></p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p><strong>Message métier HL7</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
@@ -4767,7 +4776,7 @@ Ce type de message est utilisé par trois évènements différents :
       <td>
         <p>-        ZAM : L'évènement utilisé sera le Z01</p>
         <p>« Accusé de réception DMP »</p>
-        <p>à ZAM^Z01^ZAM_Z01</p>
+        <p>-> ZAM^Z01^ZAM_Z01</p>
       </td>
     </tr>
     <tr>
@@ -4780,7 +4789,7 @@ Ce type de message est utilisé par trois évènements différents :
       <td>
         <p>-        ZAM : L'évènement utilisé sera le Z02</p>
         <p>« Accusé de réception MSSanté »</p>
-        <p>à ZAM^Z02^ZAM_Z01</p>
+        <p>-> ZAM^Z02^ZAM_Z01</p>
       </td>
     </tr>
     <tr>
@@ -4793,7 +4802,7 @@ Ce type de message est utilisé par trois évènements différents :
       <td>
         <p>-        ZAM : L'évènement utilisé sera le Z03</p>
         <p>« Accusé de lecture MSSanté »</p>
-        <p>à ZAM^Z03^ZAM_Z01</p>
+        <p>-> ZAM^Z03^ZAM_Z01</p>
       </td>
     </tr>
   </tbody>
@@ -4824,36 +4833,34 @@ ses valeurs dans la table « AckMetierZAM » disponible [ici](ack-metier-zam.h
 
 ###### Contraintes à appliquer au message ZAM^Z01^ZAM_Z01 - Accusé de réception DMP
 
-####### Segment MSH
+<b>Segment MSH</b>
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
 `ZAM^Z01^ZAM_Z01`.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-        <p> </p>
-        <p> </p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
         <p>MSH-1</p>
       </td>
       <td>
-        <p>| séparateur de champ</p>
+        <p><span class="hl7-color">|</span> séparateur de champ</p>
       </td>
       <td>
         <p>ST</p>
@@ -4867,7 +4874,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-2</p>
       </td>
       <td>
-        <p>^~\& : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
+        <p><span class="hl7-color">^~\&</span> : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
       </td>
       <td>
         <p>ST</p>
@@ -4951,14 +4958,13 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-9</p>
       </td>
       <td>
-        <p>Type du message : ZAM^Z01^ZAM_Z01</p>
+        <p>Type du message : <span class="hl7-color">ZAM^Z01^ZAM_Z01</span></p>
       </td>
       <td>
         <p>MSG</p>
       </td>
       <td>
         <p>R</p>
-        <p> </p>
       </td>
     </tr>
     <tr>
@@ -4980,7 +4986,11 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-11</p>
       </td>
       <td>
-        <p>Processing Id P : en production T : message de test D : environnement de debug</p>
+        <p>Processing Id 
+          <br><span class="hl7-color">P</span> : en production 
+          <br><span class="hl7-color">T</span> : message de test 
+          <br><span class="hl7-color">D</span> : environnement de debug
+      </p>
       </td>
       <td>
         <p>PT</p>
@@ -4994,7 +5004,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-12.1</p>
       </td>
       <td>
-        <p>Version du standard 2.6</p>
+        <p>Version du standard <span class="hl7-color">2.6</span></p>
       </td>
       <td>
         <p>VID</p>
@@ -5008,7 +5018,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-17</p>
       </td>
       <td>
-        <p>FRA</p>
+        <p><span class="hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -5023,7 +5033,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Jeux de caractères, valeurs possibles :</p>
-        <p>UNICODE UTF-8 ou 8859/15</p>
+        <p><span class="hl7-color">UNICODE UTF-8</span> ou <span class="hl7-color">8859/15</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -5038,7 +5048,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Version du présent volet du CI_SIS :</p>
-        <p>2.1 </p>
+        <p><span class="hl7-color">2.1</span> </p>
       </td>
       <td>
         <p>ST</p>
@@ -5053,7 +5063,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Identifiant du profil de message :</p>
-        <p>CISIS_CDA_HL7_V2</p>
+        <p><span class="hl7-color">CISIS_CDA_HL7_V2</span></p>
       </td>
       <td>
         <p>IS</p>
@@ -5065,28 +5075,28 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
   </tbody>
 </table>
 
-######## Segment OBX portant le statut de d'accusé de réception
+<b>Segment OBX portant le statut de d'accusé de réception</b>
 
 Le premier segment OBX renseigne le statut de l'accusé de réception :
 
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -5097,7 +5107,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
       </td>
       <td>
         <p>Numéro de séquence du segment</p>
-        <p>1</p>
+        <p><span class="hl7-color">1</span></p>
       </td>
     </tr>
     <tr>
@@ -5108,7 +5118,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
         <p>Value Type</p>
       </td>
       <td>
-        <p>CWE (Coded with Exceptions)</p>
+        <p><span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
     </tr>
     <tr>
@@ -5130,7 +5140,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
         <p>Identifier</p>
       </td>
       <td>
-        <p>ACK_RECEPTION_DMP</p>
+        <p><span class="hl7-color">ACK_RECEPTION_DMP</span></p>
       </td>
     </tr>
     <tr>
@@ -5141,7 +5151,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
         <p>Text</p>
       </td>
       <td>
-        <p>Accusé de réception DMP</p>
+        <p><span class="hl7-color">Accusé de réception DMP</span></p>
       </td>
     </tr>
     <tr>
@@ -5152,7 +5162,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>AckMetierZAM</p>
+        <p><span class="hl7-color">AckMetierZAM</span></p>
       </td>
     </tr>
     <tr>
@@ -5186,8 +5196,8 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
       </td>
       <td>
         <p>Statut de l'accusé de réception - Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à Succès</p>
-        <p>-        N (No) à Erreur</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) ->Succès</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> Erreur</p>
       </td>
     </tr>
     <tr>
@@ -5198,7 +5208,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -5209,33 +5219,33 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
 </table>
 
-######## Segment ERR
+<b>Segment ERR</b>
 
 Si une erreur intervient lors du dépôt du document sur le DMP, ce segment contient sa description.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -5245,7 +5255,7 @@ Si une erreur intervient lors du dépôt du document sur le DMP, ce segment cont
         <p>Hl7 Error Code</p>
       </td>
       <td>
-        <p>207^Application error^messageErrorCondition</p>
+        <p><span class="hl7-color">207^Application error^messageErrorCondition</span></p>
       </td>
     </tr>
     <tr>
@@ -5256,7 +5266,7 @@ Si une erreur intervient lors du dépôt du document sur le DMP, ce segment cont
         <p>Severity</p>
       </td>
       <td>
-        <p>Error, Fatal Error, Information, Warning</p>
+        <p><span class="hl7-color">Error, Fatal Error, Information, Warning</span></p>
       </td>
     </tr>
     <tr>
@@ -5269,7 +5279,7 @@ Si une erreur intervient lors du dépôt du document sur le DMP, ce segment cont
       <td>
         <p>Code erreur de DMP       </p>
         <p>à Utiliser les codes et libellés de codes de l'annexe A7-1 « Liste des codes d'erreurs » de la spécification « <a href="https://industriels.sesam-vitale.fr">Service DMP intégré aux LPS » v.2.10.0</a></p>
-        <p>Code^libellé du code^DMP_ERROR_CODE</p>
+        <p>Code^libellé du code^<span class="hl7-color">DMP_ERROR_CODE</span></p>
       </td>
     </tr>
   </tbody>
@@ -5277,36 +5287,34 @@ Si une erreur intervient lors du dépôt du document sur le DMP, ce segment cont
 
 ###### Contraintes à appliquer au message ZAM^Z02^ZAM_Z01 -- Accusé de réception MSSanté
 
-####### Segment MSH
+<b>Segment MSH</b>
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
 `ZAM^Z02^ZAM_Z01`.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-        <p> </p>
-        <p> </p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
         <p>MSH-1</p>
       </td>
       <td>
-        <p>| séparateur de champ</p>
+        <p><span class="hl7-color">|</span> séparateur de champ</p>
       </td>
       <td>
         <p>ST</p>
@@ -5320,7 +5328,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-2</p>
       </td>
       <td>
-        <p>^~\& : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
+        <p><span class="hl7-color">^~\&</span> : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
       </td>
       <td>
         <p>ST</p>
@@ -5404,7 +5412,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-9</p>
       </td>
       <td>
-        <p>Type du message : ZAM^Z02^ZAM_Z01</p>
+        <p>Type du message : <span class="hl7-color">ZAM^Z02^ZAM_Z01</span></p>
       </td>
       <td>
         <p>MSG</p>
@@ -5433,7 +5441,11 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-11</p>
       </td>
       <td>
-        <p>Processing Id P : en production T : message de test D : environnement de debug</p>
+        <p>Processing Id 
+          <br><span class="hl7-color">P</span> : en production 
+          <br><span class="hl7-color">T</span> : message de test 
+          <br><span class="hl7-color">D</span> : environnement de debug
+      </p>
       </td>
       <td>
         <p>PT</p>
@@ -5447,7 +5459,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-12.1</p>
       </td>
       <td>
-        <p>Version du standard 2.6</p>
+        <p>Version du standard <span class="hl7-color">2.6</span></p>
       </td>
       <td>
         <p>VID</p>
@@ -5461,7 +5473,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-17</p>
       </td>
       <td>
-        <p>FRA</p>
+        <p><span class="hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -5476,7 +5488,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Jeux de caractères, valeurs possibles :</p>
-        <p>UNICODE UTF-8 ou 8859/15</p>
+        <p><span class="hl7-color">UNICODE UTF-8</span> ou <span class="hl7-color">8859/15</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -5491,7 +5503,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Version du présent volet du CI_SIS :</p>
-        <p>2.1 </p>
+        <p><span class="hl7-color">2.1</span> </p>
       </td>
       <td>
         <p>ST</p>
@@ -5506,7 +5518,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Identifiant du profil de message :</p>
-        <p>CISIS_CDA_HL7_V2</p>
+        <p><span class="hl7-color">CISIS_CDA_HL7_V2<span class="hl7-color"></p>
       </td>
       <td>
         <p>IS</p>
@@ -5518,28 +5530,28 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
   </tbody>
 </table>
 
-######## Segment OBX portant le statut de d'accusé de réception
+<b> Segment OBX portant le statut de d'accusé de réception</b>
 
 Le premier segment OBX renseigne le statut de l'accusé de réception
 MSSanté :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -5550,7 +5562,7 @@ MSSanté :
       </td>
       <td>
         <p>Numéro de séquence du segment</p>
-        <p>1</p>
+        <p><span class="hl7-color">1</span></p>
       </td>
     </tr>
     <tr>
@@ -5561,7 +5573,7 @@ MSSanté :
         <p>Value Type</p>
       </td>
       <td>
-        <p>CWE</p>
+        <p><span class="hl7-color">CWE</span></p>
       </td>
     </tr>
     <tr>
@@ -5583,7 +5595,7 @@ MSSanté :
         <p>Identifier</p>
       </td>
       <td>
-        <p>ACK_RECEPTION_MSS</p>
+        <p><span class="hl7-color">ACK_RECEPTION_MSS</span></p>
       </td>
     </tr>
     <tr>
@@ -5594,7 +5606,7 @@ MSSanté :
         <p>Text</p>
       </td>
       <td>
-        <p>Accusé de réception MSSanté</p>
+        <p><span class="hl7-color">Accusé de réception MSSanté</span></p>
       </td>
     </tr>
     <tr>
@@ -5605,7 +5617,7 @@ MSSanté :
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>AckMetierZAM</p>
+        <p><span class="hl7-color">AckMetierZAM</span></p>
       </td>
     </tr>
     <tr>
@@ -5639,8 +5651,8 @@ MSSanté :
       </td>
       <td>
         <p>Statut de l'accusé de réception - Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à Succès</p>
-        <p>-        N (No) à Erreur</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) ->Succès</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> Erreur</p>
       </td>
     </tr>
     <tr>
@@ -5651,7 +5663,7 @@ MSSanté :
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -5662,34 +5674,34 @@ MSSanté :
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
 </table>
 
-######## Segment OBX portant les informations du destinataire MSSanté
+<b> Segment OBX portant les informations du destinataire MSSanté</b>
 
 Le deuxième segment OBX renseigne les informations du destinataire du
 courriel MSSanté :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -5700,7 +5712,7 @@ courriel MSSanté :
       </td>
       <td>
         <p>Numéro de séquence du segment</p>
-        <p>2</p>
+        <p> <span class="hl7-color">2</span></p>
       </td>
     </tr>
     <tr>
@@ -5711,7 +5723,7 @@ courriel MSSanté :
         <p>Value Type</p>
       </td>
       <td>
-        <p>XTN</p>
+        <p><span class="hl7-color">XTN</span></p>
       </td>
     </tr>
     <tr>
@@ -5733,7 +5745,7 @@ courriel MSSanté :
         <p>Identifier</p>
       </td>
       <td>
-        <p>DESTINATAIRE_MSS</p>
+        <p><span class="hl7-color">DESTINATAIRE_MSS</span></p>
       </td>
     </tr>
     <tr>
@@ -5744,7 +5756,7 @@ courriel MSSanté :
         <p>Text</p>
       </td>
       <td>
-        <p>Destinataire MSSanté</p>
+        <p><span class="hl7-color">Destinataire MSSanté</span></p>
       </td>
     </tr>
     <tr>
@@ -5755,7 +5767,7 @@ courriel MSSanté :
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>AckMétierZAM</p>
+        <p><span class="hl7-color">AckMétierZAM</span></p>
       </td>
     </tr>
     <tr>
@@ -5788,7 +5800,7 @@ courriel MSSanté :
         <p>Telecommunication Equipment Type</p>
       </td>
       <td>
-        <p>X.400 (X.400 email address)</p>
+        <p><span class="hl7-color">X.400</span> (X.400 email address)</p>
       </td>
     </tr>
     <tr>
@@ -5810,35 +5822,35 @@ courriel MSSanté :
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
 </table>
 
-######## Segment ERR
+<b> Segment ERR</b>
 
 Si une erreur intervient lors de la distribution du ou des document(s)
 par MSSanté dans le serveur de messagerie du destinataire MSSanté, ce
 segment contient sa description.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -5848,7 +5860,7 @@ segment contient sa description.
         <p>Hl7 Error Code</p>
       </td>
       <td>
-        <p>207^Application error^messageErrorCondition</p>
+        <p><span class="hl7-color">207^Application error^messageErrorCondition</span></p>
       </td>
     </tr>
     <tr>
@@ -5859,7 +5871,7 @@ segment contient sa description.
         <p>Severity</p>
       </td>
       <td>
-        <p>Error, Fatal Error, Information, Warning</p>
+        <p><span class="hl7-color">Error, Fatal Error, Information, Warning</span></p>
       </td>
     </tr>
     <tr>
@@ -5871,7 +5883,7 @@ segment contient sa description.
       </td>
       <td>
         <p>Code erreur de MSSanté. Cf <a href="error-codes.html#table--smtperrorcode-">Table « SMTPERRORCODE »</a></p>
-        <p>Code SMTP^libellé du code^SMTPERRORCODE</p>
+        <p>Code SMTP^libellé du code^<span class="hl7-color">SMTPERRORCODE</span></p>
       </td>
     </tr>
   </tbody>
@@ -5880,36 +5892,34 @@ segment contient sa description.
 
 ###### Contraintes à appliquer au message ZAM^Z03^ZAM_Z01 -- Accusé de lecture MSSanté 
 
-######## Segment MSH
+<b> Segment MSH</b>
 
 Le segment MSH doit être conforme au standard HL7v2.6. Dans le cadre de
 ces spécifications, le champ MSH-9 « Message Type » prend la valeur
 `ZAM^Z03^ZAM_Z01`.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td>
+      <th>
         <p>Champ</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Contenu</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Type donnée</p>
-      </td>
-      <td>
+      </th>
+      <th>
         <p>Caractère optionnel/obligatoire</p>
-        <p> </p>
-        <p> </p>
-      </td>
+      </th>
     </tr>
     <tr>
       <td>
         <p>MSH-1</p>
       </td>
       <td>
-        <p>| séparateur de champ</p>
+        <p><span class="hl7-color">|</span> séparateur de champ</p>
       </td>
       <td>
         <p>ST</p>
@@ -6007,7 +6017,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-9</p>
       </td>
       <td>
-        <p>Type du message : ZAM^Z03^ZAM_Z01</p>
+        <p>Type du message : <span class="hl7-color">ZAM^Z03^ZAM_Z01</span></p>
       </td>
       <td>
         <p>MSG</p>
@@ -6036,7 +6046,11 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-11</p>
       </td>
       <td>
-        <p>Processing Id P : en production T : message de test D : environnement de debug</p>
+        <p>Processing Id 
+          <br><span class="hl7-color">P</span> : en production 
+          <br><span class="hl7-color">T</span> : message de test 
+          <br><span class="hl7-color">D</span> : environnement de debug
+        </p>
       </td>
       <td>
         <p>PT</p>
@@ -6050,7 +6064,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-12.1</p>
       </td>
       <td>
-        <p>Version du standard 2.6</p>
+        <p>Version du standard <span class="hl7-color">2.6</span></p>
       </td>
       <td>
         <p>VID</p>
@@ -6079,7 +6093,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Jeux de caractères, valeurs possibles :</p>
-        <p>UNICODE UTF-8 ou 8859/15</p>
+        <p><span class="hl7-color">UNICODE UTF-8</span> ou <span class="hl7-color">8859/15</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -6094,7 +6108,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Version du présent volet du CI_SIS :</p>
-        <p>2.1 </p>
+        <p><span class="hl7-color">2.1</span> </p>
       </td>
       <td>
         <p>ST</p>
@@ -6109,7 +6123,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Identifiant du profil de message :</p>
-        <p>CISIS_CDA_HL7_V2</p>
+        <p><span class="hl7-color">CISIS_CDA_HL7_V2</span></p>
       </td>
       <td>
         <p>IS</p>
@@ -6121,27 +6135,27 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
   </tbody>
 </table>
 
-######## Segment OBX portant le statut de d'accusé de lecture MSSanté
+<b> Segment OBX portant le statut de d'accusé de lecture MSSanté</b>
 
 Le premier segment OBX renseigne le statut de l'accusé de lecture :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -6152,7 +6166,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
       </td>
       <td>
         <p>Numéro de séquence du segment</p>
-        <p>1</p>
+        <p><span class="hl7-color">1</span></p>
       </td>
     </tr>
     <tr>
@@ -6163,7 +6177,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
         <p>Value Type</p>
       </td>
       <td>
-        <p>CWE</p>
+        <p><span class="hl7-color">CWE</span></p>
       </td>
     </tr>
     <tr>
@@ -6185,7 +6199,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
         <p>Identifier</p>
       </td>
       <td>
-        <p>ACK_LECTURE_MSS</p>
+        <p><span class="hl7-color">ACK_LECTURE_MSS</span></p>
       </td>
     </tr>
     <tr>
@@ -6196,7 +6210,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
         <p>Text</p>
       </td>
       <td>
-        <p>Accusé de lecture</p>
+        <p><span class="hl7-color">Accusé de lecture</span></p>
       </td>
     </tr>
     <tr>
@@ -6207,7 +6221,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>AckMetierZAM</p>
+        <p><span class="hl7-color">AckMetierZAM</span></p>
       </td>
     </tr>
     <tr>
@@ -6241,8 +6255,8 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
       </td>
       <td>
         <p>Statut de l'accusé de lecture - Table HL7 : 0136 :</p>
-        <p>-        Y (Yes) à Succès</p>
-        <p>-        N (No) à Erreur</p>
+        <p>-        <span class="hl7-color">Y</span> (Yes) ->Succès</p>
+        <p>-        <span class="hl7-color">N</span> (No) -> Erreur</p>
       </td>
     </tr>
     <tr>
@@ -6253,7 +6267,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p>expandedYes-NoIndicator</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -6264,34 +6278,34 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
 </table>
 
-######## Segment OBX portant les informations du lecteur
+<b>Segment OBX portant les informations du lecteur</b>
 
 Le deuxième segment OBX renseigne les informations du lecteur du
 courriel MSSanté :
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -6302,7 +6316,7 @@ courriel MSSanté :
       </td>
       <td>
         <p>Numéro de séquence du segment</p>
-        <p>2</p>
+        <p><span class="hl7-color">2</span></p>
       </td>
     </tr>
     <tr>
@@ -6313,7 +6327,7 @@ courriel MSSanté :
         <p>Value Type</p>
       </td>
       <td>
-        <p>XTN</p>
+        <p><span class="hl7-color">XTN</span></p>
       </td>
     </tr>
     <tr>
@@ -6335,7 +6349,7 @@ courriel MSSanté :
         <p>Identifier</p>
       </td>
       <td>
-        <p>LECTEUR_MSS</p>
+        <p><span class="hl7-color">LECTEUR_MSS</span></p>
       </td>
     </tr>
     <tr>
@@ -6346,7 +6360,7 @@ courriel MSSanté :
         <p>Text</p>
       </td>
       <td>
-        <p>Lecteur du courriel MSSanté</p>
+        <p><span class="hl7-color">Lecteur du courriel MSSanté</span></p>
       </td>
     </tr>
     <tr>
@@ -6357,7 +6371,7 @@ courriel MSSanté :
         <p>Name of Coding system</p>
       </td>
       <td>
-        <p>AckMetierZAM</p>
+        <p><span class="hl7-color">AckMetierZAM</span></p>
       </td>
     </tr>
     <tr>
@@ -6390,7 +6404,7 @@ courriel MSSanté :
         <p>Telecommunication Equipment Type</p>
       </td>
       <td>
-        <p>X.400 (X.400 email address)</p>
+        <p><span class="hl7-color">X.400</span> (X.400 email address)</p>
       </td>
     </tr>
     <tr>
@@ -6412,34 +6426,34 @@ courriel MSSanté :
         <p>Observation Result Status</p>
       </td>
       <td>
-        <p>Valeur fixée à « F » </p>
+        <p>Valeur fixée à « <span class="hl7-color">F</span> » </p>
       </td>
     </tr>
   </tbody>
 </table>
 
-######## Segment ERR
+<b>Segment ERR</b
 
 Si une erreur intervient lors du traitement de la demande réceptionnée
 par le destinataire, ce segment contient sa description.
 
-<table>
+<table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Champ requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Champ requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -6449,7 +6463,7 @@ par le destinataire, ce segment contient sa description.
         <p>Hl7 Error Code</p>
       </td>
       <td>
-        <p>207^Application error^messageErrorCondition</p>
+        <p><span class="hl7-color">207^Application error^messageErrorCondition</span></p>
       </td>
     </tr>
     <tr>
@@ -6460,7 +6474,7 @@ par le destinataire, ce segment contient sa description.
         <p>Severity</p>
       </td>
       <td>
-        <p>Error, Fatal Error, Information, Warning</p>
+        <p><span class="hl7-color">Error</span>, <span class="hl7-color">Fatal Error</span>, <span class="hl7-color">Information</span>, <span class="hl7-color">Warning</span></p>
       </td>
     </tr>
     <tr>
@@ -6473,7 +6487,7 @@ par le destinataire, ce segment contient sa description.
       <td>
         <p>Sélection d'un code erreur dans la table HL70533 (nom symbolique : applicationErrorCode)          </p>
         <p>à Utiliser les codes et libellés de <a href="error-codes.html#codes-erreurs-de-laccus%C3%A9-m%C3%A9tier-de-lecturetraitement-de-la-demande">Codes erreurs de l'accusé métier de lecture/traitement de la demande</a>.</p>
-        <p>Code^libellé du code^ applicationErrorCondition</p>
+        <p>Code^libellé du code^<span class="hl7-color">applicationErrorCondition</span></p>
       </td>
     </tr>
   </tbody>
