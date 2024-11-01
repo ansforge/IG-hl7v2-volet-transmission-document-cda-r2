@@ -151,7 +151,7 @@ Provenance de la donnée :
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:resource:resource-id</td>
       <td style="text-align: left">Matricule INS du patient</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : Exploitation du PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Ressource_URN</td>
