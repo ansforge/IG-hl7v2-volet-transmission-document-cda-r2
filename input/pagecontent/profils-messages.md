@@ -2367,7 +2367,7 @@ masqué aux professionnels de santé.
       <td>
         <p>Value Type</p>
       </td>
-      <td><span class="hl7-color">
+      <td>
         <p>Pour le message ORU : <span class="hl7-color">CE</span> (Coded Entry)</p>
         <p>Pour le message MDM : <span class="hl7-color">CWE</span> (Coded with Exceptions)</p>
       </td>
