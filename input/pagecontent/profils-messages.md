@@ -6430,7 +6430,7 @@ courriel MSSanté :
   </tbody>
 </table>
 
-<b>Segment ERR</b
+<b>Segment ERR</b>
 
 Si une erreur intervient lors du traitement de la demande réceptionnée
 par le destinataire, ce segment contient sa description.
