@@ -2316,8 +2316,7 @@ documents pouvant être contenus dans le message ORU.
 
 ###### Document Masqué aux professionnels de Santé 
 
-Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est
-masqué aux professionnels de santé.
+Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est masqué aux professionnels de santé.
 
 <table class="table-hl7v2">
   <tbody>
@@ -2447,7 +2446,7 @@ masqué aux professionnels de santé.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -2604,7 +2603,7 @@ masqué au patient.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span></p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -2761,7 +2760,7 @@ masqué aux représentants légaux du patient.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span></p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -2918,7 +2917,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span></p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -3071,7 +3070,7 @@ document au patient ou à ses représentants légaux.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color"><span class="hl7-color">expandedYes-NoIndicator</span</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
       </td>
     </tr>
     <tr>
@@ -3222,7 +3221,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -3374,7 +3373,7 @@ applicative.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -3535,7 +3534,7 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -3704,7 +3703,7 @@ MSSanté.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -3860,7 +3859,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -5207,7 +5206,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -5662,7 +5661,7 @@ MSSanté :
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -6266,7 +6265,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
