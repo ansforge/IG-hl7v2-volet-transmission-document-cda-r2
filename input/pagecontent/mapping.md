@@ -356,10 +356,10 @@ Provenance de la donnée :
     </tr>
     <tr>
       <td style="text-align: left">formatCode</td>
-      <td style="text-align: left">Cet attribut représente le code du format du document JDV_J60-FormatCode-DMP</td>
+      <td style="text-align: left">Cet attribut représente le code du format du document <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J60-FormatCode-DMP.html">JDV_J60-FormatCode-DMP</a></td>
       <td>Requis</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : 
-      <br> - CDA N1 =>  “application/pdf”  
+      <br> - CDA N1 =>  “urn:ihe:iti:xds-sd:pdf:2008”  
       <br> - CDA N3 =>  Utilisation de l’association <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ConceptMap-ASS-A11-CorresModeleCDA-XdsFormatCode-CISIS.html">ASS-A11-CorresModeleCDA-XdsFormatCode-CISIS</a></pre>  </td>
     </tr>
     <tr>
@@ -416,12 +416,6 @@ Provenance de la donnée :
       <td style="text-align: left">referenceIdList</td>
       <td style="text-align: left">&nbsp;</td>
       <td>Optionnel</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">repositoryUniqueId</td>
-      <td style="text-align: left">&nbsp;</td>
-      <td>Requis</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
