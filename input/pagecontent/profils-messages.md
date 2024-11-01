@@ -1625,7 +1625,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1 </p>
       </td>
       <td>
         <p>Code du Document</p>
@@ -1637,7 +1637,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2 </p>
       </td>
       <td>
         <p>Libellé du Document</p>
@@ -1646,7 +1646,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
     </tr>
     <tr>
       <td>
-        <p>&gt;OBX-3.3</p>
+        <p>&gt; OBX-3.3</p>
       </td>
       <td>
         <p>Système de codage dont est issu le code</p>
@@ -2383,10 +2383,10 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est masqué aux 
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">MASQUE_PS</span></p>
@@ -2394,10 +2394,10 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est masqué aux 
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Masqué aux professionnels de Santé</span></p>
@@ -2405,7 +2405,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est masqué aux 
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.3 :</p>
+        <p>&gt; OBX-3.3 </p>
       </td>
       <td>
         <p>Name of Coding system</p>
@@ -2540,10 +2540,10 @@ masqué au patient.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">INVISIBLE_PATIENT</span></p>
@@ -2551,10 +2551,10 @@ masqué au patient.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Document Non Visible par le patient</span></p>
@@ -2562,7 +2562,7 @@ masqué au patient.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.3 :</p>
+        <p>&gt; OBX-3.3 </p>
       </td>
       <td>
         <p>Name of Coding system</p>
@@ -2697,10 +2697,10 @@ masqué aux représentants légaux du patient.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">INVISIBLE_REP_LEGAUX</span></p>
@@ -2708,10 +2708,10 @@ masqué aux représentants légaux du patient.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Non visible par les représentants Légaux du patient</span></p>
@@ -2719,7 +2719,7 @@ masqué aux représentants légaux du patient.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.3 :</p>
+        <p>&gt; OBX-3.3 </p>
       </td>
       <td>
         <p>Name of Coding system</p>
@@ -2854,10 +2854,10 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1 </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">CONNEXION_SECRETE</span></p>
@@ -2865,10 +2865,10 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Connexion Secrete</span></p>
@@ -3007,10 +3007,10 @@ document au patient ou à ses représentants légaux.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">MODIF_CONF_CODE</span></p>
@@ -3018,10 +3018,10 @@ document au patient ou à ses représentants légaux.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Modification Confidentiality Code</span></p>
@@ -3070,7 +3070,7 @@ document au patient ou à ses représentants légaux.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span>/p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span></p>
       </td>
     </tr>
     <tr>
@@ -3158,10 +3158,10 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">DESTDMP</span></p>
@@ -3169,10 +3169,10 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2 </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Destinataire DMP</span></p>
@@ -3310,10 +3310,10 @@ applicative.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">DESTMSSANTEPS</span></p>
@@ -3321,10 +3321,10 @@ applicative.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Destinataire (Professionnel de Santé, organisation ou BAL applicative)</span></p>
@@ -3471,10 +3471,10 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1 </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">DESTMSSANTEPAT</span></p>
@@ -3482,10 +3482,10 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Destinataire Patient</span></p>
@@ -3640,10 +3640,10 @@ MSSanté.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">ACK_RECEPTION</span></p>
@@ -3651,10 +3651,10 @@ MSSanté.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Accusé de réception</span></p>
@@ -3796,10 +3796,10 @@ courrier électronique par le GESTIONNAIRE destinataire.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p> <span class="hl7-color"> ACK_LECTURE_MSS</span></p>
@@ -3807,10 +3807,10 @@ courrier électronique par le GESTIONNAIRE destinataire.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color"> Accusé de lecture</span></p>
@@ -3818,7 +3818,7 @@ courrier électronique par le GESTIONNAIRE destinataire.
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.3 :</p>
+        <p>&gt; OBX-3.3 </p>
       </td>
       <td>
         <p>Name of Coding system</p>
@@ -3946,10 +3946,10 @@ via MSSanté. Cette métadonnée est optionnelle :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">CORPSMAIL_PS</span></p>
@@ -3957,10 +3957,10 @@ via MSSanté. Cette métadonnée est optionnelle :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2 </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Corps du mail pour un PS</span></p>
@@ -3968,7 +3968,7 @@ via MSSanté. Cette métadonnée est optionnelle :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.3 :</p>
+        <p>&gt; OBX-3.3 </p>
       </td>
       <td>
         <p>Name of Coding system</p>
@@ -4079,10 +4079,10 @@ métadonnée est optionnelle :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
-        <p>Code :</p>
+        <p>Code </p>
       </td>
       <td>
         <p><span class="hl7-color">CORPSMAIL_PATIENT</span></p>
@@ -4090,10 +4090,10 @@ métadonnée est optionnelle :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
-        <p>Libellé :</p>
+        <p>Libellé </p>
       </td>
       <td>
         <p><span class="hl7-color">Corps du mail pour le patient</span></p>
@@ -4101,7 +4101,7 @@ métadonnée est optionnelle :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.3 :</p>
+        <p>&gt; OBX-3.3 </p>
       </td>
       <td>
         <p>Name of Coding system</p>
@@ -5132,7 +5132,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
         <p>Identifier</p>
@@ -5143,7 +5143,7 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
         <p>Text</p>
@@ -5587,7 +5587,7 @@ MSSanté :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
         <p>Identifier</p>
@@ -5598,7 +5598,7 @@ MSSanté :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
         <p>Text</p>
@@ -5737,7 +5737,7 @@ courriel MSSanté :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
         <p>Identifier</p>
@@ -5748,7 +5748,7 @@ courriel MSSanté :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
         <p>Text</p>
@@ -6191,7 +6191,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
         <p>Identifier</p>
@@ -6202,7 +6202,7 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
         <p>Text</p>
@@ -6341,7 +6341,7 @@ courriel MSSanté :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.1 : </p>
+        <p>&gt; OBX-3.1  </p>
       </td>
       <td>
         <p>Identifier</p>
@@ -6352,7 +6352,7 @@ courriel MSSanté :
     </tr>
     <tr>
       <td>
-        <p>&gt; OBX-3.2 : </p>
+        <p>&gt; OBX-3.2  </p>
       </td>
       <td>
         <p>Text</p>
