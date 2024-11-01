@@ -2945,9 +2945,9 @@ document au patient ou à ses représentants légaux.
 <table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
       <th>
@@ -3070,7 +3070,7 @@ document au patient ou à ses représentants légaux.
         <p>Name Of Coding System</p>
       </td>
       <td>
-        <p><span class="hl7-color">expandedYes-NoIndicator</span</p>
+        <p><span class="hl7-color">expandedYes-NoIndicator</span>/p>
       </td>
     </tr>
     <tr>
