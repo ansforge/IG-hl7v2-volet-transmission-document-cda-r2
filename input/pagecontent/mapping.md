@@ -247,7 +247,7 @@ Provenance de la donnée :
     </tr>
     <tr>
       <td style="text-align: left">patientId</td>
-      <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient tel que défini dans le cadre juridique.</td>
+      <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS(NIR) du patient tel que défini dans le cadre juridique.</td>
       <td>requis</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : Exploitation du PID-3</pre></td>
     </tr>
@@ -404,7 +404,7 @@ Provenance de la donnée :
       <td style="text-align: left">patientId</td>
       <td style="text-align: left">identifiant du patient, en l’occurrence, le matricule INS (NIR) du patient tel que défini dans le cadre juridique</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : recordTarget/patientRole/id</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">practiceSettingCode</td>
@@ -444,15 +444,15 @@ Provenance de la donnée :
     </tr>
     <tr>
       <td style="text-align: left">sourcePatientId</td>
-      <td style="text-align: left">Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) u l’INS, s’il n’y a pas d’identifiant secondaire.</td>
+      <td style="text-align: left">Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire.</td>
       <td>Requis</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : recordTarget/patientRole/id</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">sourcePatientInfo</td>
       <td style="text-align: left">Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document</td>
       <td>Optionnel</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :  PID</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> :  recordTarget/patientRole/patient</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">title</td>
@@ -466,7 +466,6 @@ Provenance de la donnée :
       <td>Requis</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" >
         <b>CDA</b> : code@code
-        <br><b>HL7V2</b> :    OBR-4.2 
       </pre></td>
     </tr>
     <tr>
@@ -474,7 +473,6 @@ Provenance de la donnée :
       <td style="text-align: left">Identifiant unique affecté au document par son créateur</td>
       <td>Requis</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>CDA</b> : id@root
-      <br><b>HL7V2</b> : TXA-12 (pour les MDM)
       </pre></td>
     </tr>
     <tr>
