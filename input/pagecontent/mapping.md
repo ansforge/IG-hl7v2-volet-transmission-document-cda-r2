@@ -150,7 +150,7 @@ Provenance de la donnée :
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:resource:resource-id</td>
-      <td style="text-align: left">Matricule INS du patient</td>
+      <td style="text-align: left">Matricule INS-NIR du patient</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : Exploitation du PID-3</pre></td>
     </tr>
     <tr>
@@ -230,12 +230,7 @@ Provenance de la donnée :
       <td>requis si connu</td>
       <td> </td>
     </tr>
-    <tr>
-      <td style="text-align: left">availabilityStatus</td>
-      <td style="text-align: left">Cette métadonnée représente la pertinence d’un lot de soumission</td>
-      <td>requis si connu</td>
-      <td>&nbsp;</td>
-    </tr>
+
     <tr>
       <td style="text-align: left">contentTypeCode</td>
       <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br> Valeur de <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J59-ContentTypeCode-DMP.html">JDV_J59-ContentTypeCode-DMP</a></td>
@@ -407,7 +402,7 @@ Provenance de la donnée :
     </tr>
     <tr>
       <td style="text-align: left">patientId</td>
-      <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.</td>
+      <td style="text-align: left">identifiant du patient, en l’occurrence, le matricule INS (NIR) du patient tel que défini dans le cadre juridique</td>
       <td>Requis</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : PID-3</pre></td>
     </tr>
