@@ -3578,20 +3578,20 @@ MSSanté.
 <table class="table-hl7v2">
   <tbody>
     <tr>
-      <td colspan="3">
+      <th colspan="3">
         <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [1..1]</strong></p>
-      </td>
+      </th>
     </tr>
     <tr>
-      <td>
-        <p><strong>Elément requis :</strong></p>
-      </td>
-      <td>
-        <p><strong>Description :</strong></p>
-      </td>
-      <td>
-        <p><strong>Valeur :</strong></p>
-      </td>
+      <th>
+        <p><strong>Elément requis</strong></p>
+      </th>
+      <th>
+        <p><strong>Description</strong></p>
+      </th>
+      <th>
+        <p><strong>Valeur</strong></p>
+      </th>
     </tr>
     <tr>
       <td>
@@ -3740,13 +3740,13 @@ courrier électronique par le GESTIONNAIRE destinataire.
     </tr>
     <tr>
       <th>
-        <p>Elément requis :</p>
+        <p>Elément requis </p>
       </th>
       <th>
-        <p>Description :</p>
+        <p>Description </p>
       </th>
       <th>
-        <p>Valeur :</p>
+        <p>Valeur </p>
       </th>
     </tr>
     <tr>
@@ -3891,13 +3891,13 @@ via MSSanté. Cette métadonnée est optionnelle :
     </tr>
     <tr>
       <th>
-        <p>Elément requis :</p>
+        <p>Elément requis </p>
       </th>
       <th>
-        <p>Description :</p>
+        <p>Description </p>
       </th>
       <th>
-        <p>Valeur :</p>
+        <p>Valeur </p>
       </th>
     </tr>
     <tr>
@@ -4277,7 +4277,7 @@ ORU et HL7v2.6 pour MDM.
 
 ###### Description des contraintes à appliquer sur l'acquittement
 
-####### Segment MSH
+<b>Segment MSH</b>
 
 Le segment MSH reprend une partie des informations du message initial :
 
@@ -4599,7 +4599,7 @@ le type du message (ORU ou MDM) :
 
 
 
-####### Segment MSA
+<b>Segment MSA</b>
 
 <table class="table-hl7v2">
   <tbody>
@@ -4634,7 +4634,7 @@ le type du message (ORU ou MDM) :
 </table>
 
 
-####### Segment ERR
+<b> Segment ERR</b>
 
 Ce segment est utilisé au niveau des messages d'acquittement dans le cas
 où le champ MSA-1 prend la valeur AE (Application error) ou AR
@@ -4704,7 +4704,7 @@ ERR :
   </tbody>
 </table>
 
-####### Exemple
+<b>Exemple</b>
 
 Entête MSH d'un message MDM ou ORU émis par le CREATEUR :
 
@@ -5516,7 +5516,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
       </td>
       <td>
         <p>Identifiant du profil de message :</p>
-        <p><span class="hl7-color">CISIS_CDA_HL7_V2<span class="hl7-color"></p>
+        <p><span class="hl7-color">CISIS_CDA_HL7_V2</span></p>
       </td>
       <td>
         <p>IS</p>
