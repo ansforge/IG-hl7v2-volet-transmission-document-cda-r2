@@ -17,7 +17,7 @@
 
 -   Dans le cadre de cette spécification, les documents médicaux
     véhiculés correspondent à des documents au format CDA-R2 conformes
-    au volet du CI-SIS « [Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) ».
+    au volet du CI-SIS « [Structuration minimale des documents de santé](https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante) ».
 
 -   Les documents transmis par le message HL7 doivent être validés par
     le professionnel de santé dans l'application métier qui les a
@@ -25,7 +25,7 @@
 
 -   Dans le cas d'une publication de(s) document(s) sur le DMP, l'INS du
     patient doit être qualifié en suivant [les spécifications de l'annexe
-    INS CI-SIS](https://esante.gouv.fr/sites/default/files/media_entity/documents/ans_cisis-tec_annexe-ins_1.5.pdf) et les règles du [corpus documentaire INS](https://esante.gouv.fr/produits-services/referentiel-ins).
+    INS CI-SIS](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis) et les règles du [corpus documentaire INS](https://esante.gouv.fr/produits-services/referentiel-ins).
 
 
 <blockquote class="stu-note">
