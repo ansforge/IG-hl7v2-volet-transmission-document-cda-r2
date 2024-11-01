@@ -952,7 +952,6 @@ le segment MSH :
 <br><span class="hl7-color">MDM^T02^MDM_T02 </span>
 <br><span class="hl7-color">MDM^T10^MDM_T02 </span>
  <br><span class="hl7-color"> MDM^T04^MDM_T02</span>
-
       </td>
       <td>
         <p>MSG</p>
