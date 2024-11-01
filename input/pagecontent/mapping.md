@@ -1,7 +1,8 @@
+Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7 V2 et du CDA.
+
+
 ### Mapping VIHF pour le DMP
 
-
-Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7 V2 et du CDA
 
 <table class="table table-bordered">
   <thead>
