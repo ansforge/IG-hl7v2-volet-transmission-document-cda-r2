@@ -4,7 +4,7 @@ Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7
 ### Mapping VIHF pour le DMP
 
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th style="text-align: left">Champs du VIHF</th>
@@ -197,7 +197,7 @@ Provenance de la donnée :
 
 #### Lot de soummission 
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th style="text-align: left">Metadonnée</th>
@@ -283,7 +283,7 @@ Provenance de la donnée :
 
 #### Fiche
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th style="text-align: left">Metadonnée</th>
