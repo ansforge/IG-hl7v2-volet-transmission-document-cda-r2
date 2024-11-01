@@ -14,7 +14,7 @@ Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7
   <tbody>
     <tr>
       <td style="text-align: left">//Assertion/ds:Signature</td>
-      <td style="text-align: left">Signature XML-DSIG avec le certificat de cachet de la structure de soinsMode EJ</td>
+      <td style="text-align: left">Signature XML-DSIG avec le certificat de cachet de la structure de soins</td>
       <td>Certificat</td>
     </tr>
     <tr>
@@ -49,14 +49,14 @@ Ce mapping permet d'indiquer comment construire le VIHF à partir du message HL7
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xspa:1.0:subject:subject-id</td>
-      <td style="text-align: left">Pour un utilisateur humain : Nom, Prénom et Service de l’utilisateur <br> Pour les traitements automatisés : Nom du logiciel, Nom du modèle et Service</td>
+      <td style="text-align: left">Pour un utilisateur humain : Nom, Prénom  de l’utilisateur <br> Pour les traitements automatisés : Nom du logiciel, Nom du modèle </td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-5.2  et PRT-5.3   (PRT-4 = ‘SB^Send by^participation’) </pre> </td>
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
       <td style="text-align: left">1re occurrence obligatoire
       <br>
-        <b>Pour les professionnels :</b>
+        <b>Pour les professionnels de santé :</b>
 <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> -  TRE TRE_G15-ProfessionSante <br> - TRE_G16_ProfessionFormation (Professions en formation (carte CPF))
  <br> <b>Pour les autres : </b>
  <br>- Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de : <br> - TRE_A00_ProducteurDocNonPS <br> -  TRE_R95_UsagerTitre <br> - TRE_R94_ProfessionSocial <br> -  TRE_R291_AutreProfession
@@ -86,33 +86,18 @@ Provenance de la donnée :
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">Rôle - 3e occurrence obligatoire pour les professionnels caractérisés par leur rôle. Non requise pour les autres professionnels.
+      <td style="text-align: left">Rôle - 2e occurrence obligatoire pour les professionnels caractérisés par leur rôle. Non requise pour les autres professionnels.
       <br>
       Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de   TRE_R85_RolePriseCharge
       </td>
       <td><br>Provenance de la donnée : 
 Provenance de la donnée : 
          <br>- Interogation du DPI à partir de l'identifiant du PS
-         <br>- Interogation de l'annuaire (pour les identifiants nationaux) 
   <br>  <pre class="highlight language-plaintext"  style="white-space: normal;" >Récupération de l'identifiant <br><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
       
        </td>
     </tr>
-    <tr>
-      <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:subject:role</td>
-      <td style="text-align: left">Genre d’activité -4e occurrence facultative pour les professionnels caractérisés par leur rôle. Non renseignée pour les autres professionnels
-      <br>
-          <br>
-      Prendre la valeur de code la plus appropriée parmi les codes du jeu de valeurs <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J65-SubjectRole-DMP.html">JDV_J65_SubjectRole_DMP</a> avec un codeSystem provenant de :  TRE_R22_GenreActivite 
-      </td>
-      <td><br>Provenance de la donnée : 
-Provenance de la donnée : 
-         <br>- Interogation du DPI à partir de l'identifiant du PS
-         <br>- Interogation de l'annuaire (pour les identifiants nationaux) 
-  <br>  <pre class="highlight language-plaintext"  style="white-space: normal;" >Récupération de l'identifiant <br><b>HL7V2</b> :PRT-5.1  (PRT-4 = ‘SB^Send by^participation’)</pre>
-      
-       </td>
-    </tr>
+
     <tr>
       <td style="text-align: left">//Assertion/AuthnStatement/AuthnContext/AuthnContextClassRef</td>
       <td style="text-align: left">Prendre la valeur la plus appropriée parmi les valeurs possibles indiquées dans le document http://docs.oasis-open.org/security/saml/v2.0/samlauthn-context-2.0-os.pdf <br>La valeur utilisée doit être cohérente avec le mode d’authentification locale de l’utilisateur dans le LPS</td>
@@ -165,7 +150,7 @@ Provenance de la donnée :
     </tr>
     <tr>
       <td style="text-align: left">urn:oasis:names:tc:xacml:2.0:resource:resource-id</td>
-      <td style="text-align: left">INS du patient</td>
+      <td style="text-align: left">Matricule INS du patient</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PID-3</pre></td>
     </tr>
     <tr>
