@@ -5917,7 +5917,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-1</p>
       </td>
       <td>
-        <p><span class="hl7-color">|</span> séparateur de champ</p>
+        <p> <span class="hl7-color">|</span> séparateur de champ</p>
       </td>
       <td>
         <p>ST</p>
@@ -5931,7 +5931,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-2</p>
       </td>
       <td>
-        <p>^~\& : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
+        <p> <span class="hl7-color">^~\&</span> : séparateur de composant, répétition, caractère d'échappement, séparateur de sous-composants</p>
       </td>
       <td>
         <p>ST</p>
