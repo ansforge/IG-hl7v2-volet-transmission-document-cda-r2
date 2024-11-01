@@ -210,7 +210,7 @@ Provenance de la donnée :
       <td style="text-align: left">authorInstitution</td>
       <td style="text-align: left">Cette métadonnée représente la structure émettrice du lot de soumission.</td>
       <td>requis si connu</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PRT-8.10 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : Exploitation du PRT-8 (PRT-4 = ‘SB^Send by^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">authorPerson</td>
@@ -241,12 +241,12 @@ Provenance de la donnée :
       <td style="text-align: left">Cette métadonnée contient le code correspondant au type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.<br> Valeur de <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J59-ContentTypeCode-DMP.html">JDV_J59-ContentTypeCode-DMP</a></td>
       <td>requis</td>
       <td><br>
-      <pre><b>HL7V2</b> : Mapping sur le PV1-2 : 
+      <pre><b>HL7V2</b> :Proposition de  mapping sur le PV1-2 : 
         <br> I => 03; 
         <br> O => 07; 
         <br> R => 19; 
         <br> N => 97; 
-        <br> E => 7 
+        <br> E => 07 
       </pre>
       </td>
     </tr>
@@ -254,7 +254,7 @@ Provenance de la donnée :
       <td style="text-align: left">patientId</td>
       <td style="text-align: left">Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient tel que défini dans le cadre juridique.</td>
       <td>requis</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> :PID-3</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" ><b>HL7V2</b> : Exploitation du PID-3</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">sourceId</td>
