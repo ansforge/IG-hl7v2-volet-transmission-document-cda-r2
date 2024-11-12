@@ -1,6 +1,6 @@
 ### Table « SMTPERRORCODE »
 
-La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message ZAM^Z02^ZAM_Z01 contient le code d’erreur remonté lors de la distribution du ou des document(s) par MSSanté dans le serveur de messagerie du destinataire MSSanté : 
+La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message `ZAM^Z02^ZAM_Z01` contient le code d’erreur remonté lors de la distribution du ou des document(s) par MSSanté dans le serveur de messagerie du destinataire MSSanté : 
 
 <table>
   <tbody>
@@ -350,8 +350,11 @@ La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message ZAM^Z02^ZAM
 
 ### Codes erreurs de l’accusé métier de lecture/traitement de la demande
 
-Les tables HL70357 (dont le nom symbolique est messageErrorCondition) et HL70533 (dont le nom symbolique est applicationErrorCode) sont décrites dans le volet « Transmission au LPS d’un document CDA provenant d’un courriel MSsanté » du CI_SIS. 
-La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur technique du message HL7 MDM (erreur de syntaxe). La nature de l’erreur est renseignée dans le champ ERR-3 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE (PFI). 
+Les tables **HL70357** (dont le nom symbolique est messageErrorCondition) et **HL70533** (dont le nom symbolique est applicationErrorCode) sont décrites dans le volet « [Transmission au LPS d’un document CDA provenant d’un courriel MSsanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante) » du CI_SIS.
+
+La table HL7 **messageErrorCondition** est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur technique du message HL7 MDM (erreur de syntaxe).
+La nature de l’erreur est renseignée dans le champ ERR-3 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE (PFI).
+
 
 <table>
   <tbody>
@@ -500,7 +503,9 @@ La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DP
     </tr>
   </tbody>
 </table>
-La table user-defined applicationErrorCondition est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur d’intégration/de remplacement ou de suppression du document CDA au niveau du CONSOMMATEUR. La nature de l’erreur applicative est renseignée dans le champ ERR-5 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE de l’établissement. Cette table est fournie à titre indicatif et pourra être enrichie si besoin, en fonction des retours d’implémentation.
+La table **user-defined applicationErrorCondition** est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur d’intégration/de remplacement ou de suppression du document CDA au niveau du CONSOMMATEUR.
+La nature de l’erreur applicative est renseignée dans le champ ERR-5 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE de l’établissement.
+Cette table est fournie à titre indicatif et pourra être enrichie si besoin, en fonction des retours d’implémentation.
 
 <table>
   <tbody>
