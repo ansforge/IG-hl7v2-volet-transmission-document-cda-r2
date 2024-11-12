@@ -250,7 +250,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="table--smtperrorcode-">Table « SMTPERRORCODE »</h3>
 
-<p>La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message ZAM^Z02^ZAM_Z01 contient le code d’erreur remonté lors de la distribution du ou des document(s) par MSSanté dans le serveur de messagerie du destinataire MSSanté :</p>
+<p>La table « SMTPERRORCODE » utilisé dans le champ ERR-5 du message <code class="language-plaintext highlighter-rouge">ZAM^Z02^ZAM_Z01</code> contient le code d’erreur remonté lors de la distribution du ou des document(s) par MSSanté dans le serveur de messagerie du destinataire MSSanté :</p>
 
 <table>
   <tbody>
@@ -600,8 +600,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="codes-erreurs-de-laccusé-métier-de-lecturetraitement-de-la-demande">Codes erreurs de l’accusé métier de lecture/traitement de la demande</h3>
 
-<p>Les tables HL70357 (dont le nom symbolique est messageErrorCondition) et HL70533 (dont le nom symbolique est applicationErrorCode) sont décrites dans le volet « Transmission au LPS d’un document CDA provenant d’un courriel MSsanté » du CI_SIS. 
-La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur technique du message HL7 MDM (erreur de syntaxe). La nature de l’erreur est renseignée dans le champ ERR-3 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE (PFI).</p>
+<p>Les tables <strong>HL70357</strong> (dont le nom symbolique est messageErrorCondition) et <strong>HL70533</strong> (dont le nom symbolique est applicationErrorCode) sont décrites dans le volet « <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d’un document CDA provenant d’un courriel MSsanté</a> » du CI_SIS.</p>
+
+<p>La table HL7 <strong>messageErrorCondition</strong> est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur technique du message HL7 MDM (erreur de syntaxe).
+La nature de l’erreur est renseignée dans le champ ERR-3 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE (PFI).</p>
 
 <table>
   <tbody>
@@ -750,7 +752,9 @@ La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DP
     </tr>
   </tbody>
 </table>
-<p>La table user-defined applicationErrorCondition est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur d’intégration/de remplacement ou de suppression du document CDA au niveau du CONSOMMATEUR. La nature de l’erreur applicative est renseignée dans le champ ERR-5 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE de l’établissement. Cette table est fournie à titre indicatif et pourra être enrichie si besoin, en fonction des retours d’implémentation.</p>
+<p>La table <strong>user-defined applicationErrorCondition</strong> est utilisée par l’acteur CONSOMMATEUR (DPI/RIS…) en cas d’erreur d’intégration/de remplacement ou de suppression du document CDA au niveau du CONSOMMATEUR.
+La nature de l’erreur applicative est renseignée dans le champ ERR-5 de la structure du message ACK renvoyé par le CONSOMMATEUR au niveau du GESTIONNAIRE de l’établissement.
+Cette table est fournie à titre indicatif et pourra être enrichie si besoin, en fonction des retours d’implémentation.</p>
 
 <table>
   <tbody>
@@ -864,7 +868,7 @@ La table HL7 messageErrorCondition est utilisée par l’acteur CONSOMMATEUR (DP
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 24, 2024 09:52+0000">2024-10-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 12, 2024 17:10+0000">2024-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
