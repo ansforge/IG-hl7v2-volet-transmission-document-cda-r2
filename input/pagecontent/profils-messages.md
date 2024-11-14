@@ -3238,6 +3238,13 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
   </tbody>
 </table>
 
+<blockquote class="stu-note">
+    <p>
+    <b>Point d’attention : </b>Un document ayant un niveau renforcé de confidentialité (restreint ou très restreint) ne devrait pas être mis en partage. 
+    </p>
+</blockquote>
+
+
 ###### Echange MSSanté Professionnel de Santé/Organisation/BAL applicative
 
 Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
