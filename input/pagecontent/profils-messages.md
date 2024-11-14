@@ -3556,7 +3556,17 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
         <p><strong>Notes And Comments</strong></p>
       </td>
       <td>
-        <p>Ce segment doit être renseigné avec la valeur « FIN » si l'utilisateur ne souhaite pas que le patient puisse répondre au courriel.</p>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <p>NTE-4</p>
+      </td>
+      <td>
+        <p>Comment Type</p>
+      </td>
+      <td>
+        <p>la valeur « <span class="hl7-color">FIN</span> » doit être utilisée si l'utilisateur ne souhaite pas que le patient puisse répondre au courriel.</p>
       </td>
     </tr>
   </tbody>
