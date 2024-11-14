@@ -203,7 +203,7 @@ de lecture du courriel MSSanté.
 
 Dans le cadre de cette spécification, les documents médicaux véhiculés
 correspondent à des documents au format CDA-R2 conformes au volet du
-CI-SIS « [Structuration minimale des documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_contenu_volet-structuration-minimale_v1.15.pdf) ». Ces
+CI-SIS « [Structuration minimale des documents de santé](https://esante.gouv.fr/volet-structuration-minimale-de-documents-de-sante) ». Ces
 documents doivent être validés par le professionnel de santé dans
 l'application métier qui les a générés via un statut de validation géré
 en interne.
@@ -242,13 +242,13 @@ Cette spécification n'est pas autonome. Les développeurs doivent
 également connaître et maîtriser d'autres volets du CI_SIS publiés par
 l'ANS :
 
--   [Le volet Partage de documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf),
+-   [Le volet Partage de documents de santé](https://esante.gouv.fr/volet-partage-de-documents-de-sante),
 
--   [Le volet Echange de documents de santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf),
+-   [Le volet Echange de documents de santé](https://esante.gouv.fr/volet-echange-de-documents-de-sante),
 
 Les développeurs de PFI devront également respecter le [Référentiel socle
-« MSSanté #2- Clients de Messageries Sécurisées de Santé](https://mailiz.mssante.fr/documents/16106/0/ANS_MSS_Ref2_Clients_de_messageries_MSSant%C3%A9_v1.0.1_20240118-vYRF3G7r.pdf/7a81e9bc-24c4-4fe4-8fc1-882858dc22d5) »
-publié par l'ANS et le référentiel [« Service DMP intégré aux LPS- Version 2.10.0 »](https://industriels.sesam-vitale.fr/) publié par le GIE SESAM-VITALE.
+« MSSanté #2- Clients de Messageries Sécurisées de Santé](https://esante.gouv.fr/espace_documentation/mssante-clients-de-messageries-securisees-de-sante/referentiel-socle-mssante-2) »
+publié par l'ANS et le référentiel [« Service DMP intégré aux LPS- Version 2.9 et supérieure »](https://industriels.sesam-vitale.fr/) publié par le GIE SESAM-VITALE.
 
 **L'ensemble de ces spécifications sont hors périmètre de ce présent volet du CI-SIS.**
 
