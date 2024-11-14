@@ -3240,7 +3240,7 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
 
 <blockquote class="stu-note">
     <p>
-    <b>Point d’attention : Un document ayant un niveau renforcé de confidentialité (restreint ou très restreint) ne devrait pas être mis en partage. 
+    <b>Point d’attention : </b>Un document ayant un niveau renforcé de confidentialité (restreint ou très restreint) ne devrait pas être mis en partage. 
     </p>
 </blockquote>
 
