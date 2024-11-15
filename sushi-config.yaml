@@ -22,32 +22,8 @@ pages:
         title: "Accueil"
     volume1.md:
         title: "Volume 1 : Etude fonctionnelle"     
-    cas-usage.md:
-        title: "Cas d'usage"
-    contexte-metier.md:
-        title: "Organisation du contexte métier"
-    acteurs-transactions.md:
-        title: "Acteurs et transactions"
-    def-proc-collab.md:
-        title: "Définition des processus collaboratifs"
-    identification-flux.md:
-        title: "identification des flux"
     volume2.md:
         title: "Volume 2 : Détail des transactions"   
-    perimetre-transaction.md:
-        title: "Périmètre de la transaction"
-    role.md:
-        title: "Rôle des acteurs pour cette transaction"
-    standards.md:
-        title: "Choix des standards"
-    evenements-declenchants.md:
-        title: "Evènements déclenchants"
-    interactions-acteurs.md:
-        title: "Interactions entre les Acteurs"
-    profils-messages.md:
-        title: "Profils de messages"
-    regles-gestion-mssante.md:
-        title: "Règles de gestion MSSANTE"
     meta-dmp-mss.md:
         title: "Table MetaDMP/MSS"
     ack-metier-zam.md:
@@ -93,6 +69,7 @@ menu:
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
         "Mapping VIHF et XDS": mapping.html
+        "Mapping API LPS (MSSanté)": mapping.html#mapping-api-lps
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html

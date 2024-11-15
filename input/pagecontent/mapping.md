@@ -574,3 +574,6 @@ Pour anonymiser  cet exemple , certaines valeurs ont été remplacés par des X.
       </Assertion>
     </Security>
 ```
+
+### Mapping API LPS (MSSanté)
+{% include mapping-api-lps.md %}
