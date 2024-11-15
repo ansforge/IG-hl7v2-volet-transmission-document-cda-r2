@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -160,6 +160,9 @@
       <li>
         <a href="mapping.html">Mapping VIHF et XDS</a>
       </li>
+      <li><a name="l287">​</a>
+        <a href="mapping.html#mapping-api-lps">Mapping API LPS (MSSanté)</a>
+      </li>
       <li>
         <a href="exemples.html">Exemples de messages</a>
       </li>
@@ -199,11 +202,11 @@
 
           <span style="float:right;">
 
-            <a href="identification-flux.html">&lt;prev</a> | 
+            <a href="volume1.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="perimetre-transaction.html">next&gt;</a>
+          | <a href="meta-dmp-mss.html">next&gt;</a>
 
           </span>
 
@@ -260,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Flux 1&nbsp;: Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU)</li>
   <li>Flux 2&nbsp;: Demande de transmission/remplacement/suppression d’un document CDA (Flux HL7-MDM)</li>
-  <li>Des flux d’accusés métier identifiés dans le <a href="acteurs-transactions.html#diagramme-des-acteurstransactions">tableau des Acteurs/Transactions</a>.</li>
+  <li><a name="l479">​</a>Des flux d’accusés métier identifiés dans le <a href="acteurs-transactions.html#diagramme-des-acteurstransactions">tableau des Acteurs/Transactions</a>.</li>
 </ul>
 
 <h3 id="périmetre-de-la-transaction">Périmetre de la transaction</h3>
@@ -482,7 +485,7 @@ métiers HL7 <code class="language-plaintext highlighter-rouge">ZAM^Z01^ZAM_Z01<
 <code class="language-plaintext highlighter-rouge">ZAM^Z02^ZAM_Z01</code> (accusé métier de réception MSSanté) et
 <code class="language-plaintext highlighter-rouge">ZAM_Z03^ZAM_Z01</code> (accusé métier de lecture MSSanté).</p>
 
-<p>L’action à réaliser sur le document porté par la transaction est
+<p><a name="l854">​</a>L’action à réaliser sur le document porté par la transaction est
 indiquée par la valeur renseignée au niveau du champ OBX-11 du segment
 OBX portant le document (cf <a href="profils-messages.html#les-donn%C3%A9es-concernant-la-demande-de-traitement-sur-les-documents">section dédiée</a>), qui prend la valeur F (pour
 demande d’intégration du document), C (pour demande de remplacement de
@@ -935,7 +938,7 @@ document(s)&nbsp;: transmission initiale/remplacement/suppression de
 document(s). Seuls les segments ORC, OBR et le groupe de segments
 OBSERVATION de l’occurrence ORDER_OBSERVATION sont à renseigner.</p>
 
-<p>Les contraintes apportées par ce volet sur les données des différents
+<p><a name="l1680">​</a>Les contraintes apportées par ce volet sur les données des différents
 segments du message ORU sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h6 id="description-fonctionnelle-du-message-oru">Description fonctionnelle du message ORU</h6>
@@ -966,7 +969,7 @@ section dédiée du document CDA Niv3).</p>
   </li>
 </ul>
 
-<p>Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l’envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la <a href="profils-messages.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
+<p><a name="l1719">​</a>Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l’envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la <a href="profils-messages.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h5 id="message-mdm-en-hl7v26">Message MDM en HL7v2.6</h5>
 
@@ -1329,7 +1332,7 @@ destinataire(s) via MSSanté).</em></p>
 <p>Le message MDM ne peut transmettre qu’un seul document médical au format
 CDAr2.</p>
 
-<p>Les contraintes apportées par ce volet sur les données du message MDM
+<p><a name="l2413">​</a>Les contraintes apportées par ce volet sur les données du message MDM
 sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h6 id="description-fonctionnelle-du-message-mdm">Description fonctionnelle du message MDM</h6>
@@ -2772,7 +2775,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
   </tbody>
 </table>
 
-<p class="MsoFootnoteText"><a name="l5256">​</a><a name="_ftn2" href="#_ftnref2" title="null"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
+<p class="MsoFootnoteText"><a name="l5262">​</a><a name="_ftn2" href="#_ftnref2" title="null"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
 <span class="cf01"><span style="font-size:8.0pt;line-height:107%">SC.DMP/CONF.12&nbsp;:
 «&nbsp;Le système DOIT transmettre à la PFI les informations d'identification nécessaires à la constitution du jeton VIHF : FINESS géographique de
 l'établissement et l'identifiant du professionnel ou du dispositif à l'origine de la demande d'alimentation du DMP&nbsp;». </span></span></p>
@@ -7060,7 +7063,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
 <h5 id="message-dacquittement-technique-des-accusés-métiers">Message d’acquittement technique des accusés métiers</h5>
 
-<p>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
+<p><a name="l13690">​</a>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
 
 <h3 id="règles-de-gestion-mssante">Règles de gestion MSSANTE</h3>
 <p>Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX valorisés. Le tableau présente une liste exhaustive des combinaisons possibles des OBX pour l’échange MSSANTE. Les cas non représentés génèrent un message d’erreur.</p>
@@ -7157,7 +7160,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
             <tr>
               <td style="text-align:left">&nbsp;
 
-                <a href="identification-flux.html">&lt;prev</a>
+                <a href="volume1.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -7165,7 +7168,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="perimetre-transaction.html">next&gt;</a>
+                <a href="meta-dmp-mss.html">next&gt;</a>
 
               </td>
             </tr>
@@ -7175,7 +7178,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 15, 2024 16:24+0000">2024-11-15</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 15, 2024 18:23+0000">2024-11-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
