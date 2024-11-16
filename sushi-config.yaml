@@ -28,6 +28,10 @@ pages:
         title: "Table MetaDMP/MSS"
     ack-metier-zam.md:
         title: "Table AckMetierZAM"
+    mapping.md:
+        title: "Mapping VIHF et XDS"
+    mapping-api-lps-mssanté.md:
+        title: "Mapping API LPS (MSSanté)"
     exemples.md:
         title: "Exemples de messages"
     struct-msg-mdn.md:
@@ -44,9 +48,8 @@ pages:
         title: "Historique des versions"
     download.md:
         title: "Téléchargements"
-        generation: markdown
-    mapping.md:
-        title: "Mapping VIHF et XDS"      
+    generation: markdown
+    
 menu:
     Accueil: index.html
     Volume 1 - Etude fonctionnelle: 
@@ -69,7 +72,7 @@ menu:
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
         "Mapping VIHF et XDS": mapping.html
-        "Mapping API LPS (MSSanté)": mapping.html#mapping-api-lps
+        "Mapping API LPS (MSSanté)": mapping.html#mapping-api-lps-mssanté
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html

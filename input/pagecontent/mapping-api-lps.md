@@ -19,7 +19,7 @@
     </tr>
     <tr>
       <td style="text-align: left">REPLY TO</td>
-      <td style="text-align: left">OOptionnel, permet de préciser le courriel pour répondre au message</td>
+      <td style="text-align: left">Optionnel, permet de préciser le courriel pour répondre au message</td>
       <td><pre class="highlight language-plaintext"  style="white-space: normal;" >Segment optionnel qui permet d'indiquer l'adresse mail sur laquelle le destinataire peut répondre. <br><b>HL7V2</b> : PRT-15.4 (PRT-4 = ‘REPLY^Reply To^participation’)</pre></td>
     </tr>
    </tbody>
