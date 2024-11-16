@@ -48,7 +48,7 @@ pages:
         title: "Historique des versions"
     download.md:
         title: "Téléchargements"
-    generation: markdown
+        generation: markdown
     
 menu:
     Accueil: index.html
