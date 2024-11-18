@@ -10,7 +10,7 @@
   <name value="CISIS_CDA_HL7_V2"/>
   <title value="Volet de transmission d'un document CDA-R2 en HL7v2"/>
   <status value="draft"/>
-  <date value="2024-11-15T18:23:25+00:00"/>
+  <date value="2024-11-18T08:56:17+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -514,6 +514,22 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="mapping.html"/>
+        </extension>
+        <nameUrl value="mapping.html"/>
+        <title value="Mapping VIHF et XDS"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="mapping-api-lps.html"/>
+        </extension>
+        <nameUrl value="mapping-api-lps.html"/>
+        <title value="Mapping API LPS (MSSanté)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="exemples.html"/>
         </extension>
         <nameUrl value="exemples.html"/>
@@ -574,14 +590,6 @@
         </extension>
         <nameUrl value="download.html"/>
         <title value="Téléchargements"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="mapping.html"/>
-        </extension>
-        <nameUrl value="mapping.html"/>
-        <title value="Mapping VIHF et XDS"/>
         <generation value="markdown"/>
       </page>
     </page>

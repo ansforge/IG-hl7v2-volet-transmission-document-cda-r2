@@ -10,7 +10,7 @@
   "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2024-11-15T18:23:25+00:00",
+  "date" : "2024-11-18T08:56:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -682,6 +682,24 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mapping.html"
+        }],
+        "nameUrl" : "mapping.html",
+        "title" : "Mapping VIHF et XDS",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mapping-api-lps.html"
+        }],
+        "nameUrl" : "mapping-api-lps.html",
+        "title" : "Mapping API LPS (MSSanté)",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "exemples.html"
         }],
         "nameUrl" : "exemples.html",
@@ -749,15 +767,6 @@
         }],
         "nameUrl" : "download.html",
         "title" : "Téléchargements",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "mapping.html"
-        }],
-        "nameUrl" : "mapping.html",
-        "title" : "Mapping VIHF et XDS",
         "generation" : "markdown"
       }]
     },
