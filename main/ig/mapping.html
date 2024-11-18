@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"26"}
-    h3,h4,h5,h6{--heading-prefix:"26"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -161,6 +161,9 @@
         <a href="mapping.html">Mapping VIHF et XDS</a>
       </li>
       <li>
+        <a href="mapping.html#mapping-api-lps-mssanté">Mapping API LPS (MSSanté)</a>
+      </li>
+      <li>
         <a href="exemples.html">Exemples de messages</a>
       </li>
       <li>
@@ -199,11 +202,11 @@
 
           <span style="float:right;">
 
-            <a href="download.html">&lt;prev</a> | 
+            <a href="ack-metier-zam.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="artifacts.html">next&gt;</a>
+          | <a href="mapping-api-lps.html">next&gt;</a>
 
           </span>
 
@@ -246,6 +249,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#mapping-vihf-pour-le-dmp" id="markdown-toc-mapping-vihf-pour-le-dmp">Mapping VIHF pour le DMP</a></li>
   <li><a href="#mapping-xds" id="markdown-toc-mapping-xds">Mapping XDS</a></li>
   <li><a href="#exemple-dun--vihf-avec-automate" id="markdown-toc-exemple-dun--vihf-avec-automate">Exemple d’un  VIHF avec automate</a></li>
+  <li><a href="#mapping-api-lps-mssanté" id="markdown-toc-mapping-api-lps-mssanté">Mapping API LPS (MSSanté)</a></li>
 </ul>
 
 </div>
@@ -815,6 +819,33 @@ Provenance de la donnée :
     <span class="nt">&lt;/Security&gt;</span>
 </code></pre></div></div>
 
+<h3 id="mapping-api-lps-mssanté">Mapping API LPS (MSSanté)</h3>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th style="text-align: left">Champs API LPS (MSS)</th>
+      <th style="text-align: left">Commentaire</th>
+      <th>Provenance de la donnée</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <td style="text-align: left">FROM</td>
+      <td style="text-align: left">Obligatoire, permet de préciser le courriel de la BAL Applicative</td>
+      <td>courriel de la BAL Applicative qui transmet le message</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SENDER</td>
+      <td style="text-align: left">Optionnel, permet de préciser le courriel de l'émetteur initial du message</td>
+      <td>Non transmis</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">REPLY TO</td>
+      <td style="text-align: left">Optionnel, permet de préciser le courriel pour répondre au message</td>
+      <td><pre class="highlight language-plaintext" style="white-space: normal;">Segment optionnel qui permet d'indiquer l'adresse mail sur laquelle le destinataire peut répondre. <br /><b>HL7V2</b> : PRT-15.4 (PRT-4 = ‘REPLY^Reply To^participation’)</pre></td>
+    </tr>
+   </tbody>
+</table>
 
 
 
@@ -838,7 +869,7 @@ Provenance de la donnée :
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="download.html">&lt;prev</a>
+                <a href="ack-metier-zam.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -846,7 +877,7 @@ Provenance de la donnée :
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="artifacts.html">next&gt;</a>
+                <a href="mapping-api-lps.html">next&gt;</a>
 
               </td>
             </tr>
@@ -856,7 +887,7 @@ Provenance de la donnée :
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 14, 2024 18:05+0000">2024-11-14</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 13:36+0000">2024-11-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
