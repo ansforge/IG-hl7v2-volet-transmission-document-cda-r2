@@ -30,7 +30,7 @@ pages:
         title: "Table AckMetierZAM"
     mapping.md:
         title: "Mapping VIHF et XDS"
-    mapping-api-lps-mssanté.md:
+    mapping-api-lps.md:
         title: "Mapping API LPS (MSSanté)"
     exemples.md:
         title: "Exemples de messages"
