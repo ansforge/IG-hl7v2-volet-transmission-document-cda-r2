@@ -1,8 +1,8 @@
-### Historique du document au format guide d'impémentation
+### Historique du volet au format guide d'implémentation (après novembre 2024)
 
 #### version 2.1.1
 
-**Version mineure sans impact sur le développement (changement de format, corrections de typo, précisions ou informations nouvelles pour lever des ambiguïtés)**
+**Version mineure sans impact sur le développement (changement de format, corrections de typo, précisions ou ajout d'informations)**
 
 * Modification du format du volet : passage du format PDF au format guide d'implémentation 
 * Avant-propos : suppression d’une ligne vide du tableau des conventions HL7, IHE
@@ -24,7 +24,7 @@
 
 
 
-### Historique du document des anciennes version au format pdf
+### Historique du volet des anciennes versions au format PDF (avant novembre 2024)
 
 <table>
   <tbody>
