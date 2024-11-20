@@ -4,27 +4,35 @@
 
 **Version mineure sans impact sur le développement (changement de format, corrections de typo, précisions ou ajout d'informations)**
 
-* Modification du format du volet : passage du format PDF au format guide d'implémentation 
-* Avant-propos : suppression d’une ligne vide du tableau des conventions HL7, IHE
-* Ensemble du document : remplacement adresse courriel adam.hoda@medecin.mssante.fr par adam.hoda@test-ci-sis.mssante.fr
+* Modification du format du volet : passage du format PDF au format guide d'implémentation ([3](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/pull/3))
+* Avant-propos : suppression d’une ligne vide du tableau des conventions HL7, IHE ([3](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/pull/3))
+* Ensemble du document :
+  * remplacement adresse courriel adam.hoda@medecin.mssante.fr par adam.hoda@test-ci-sis.mssante.fr ([10](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/10))
+  * remplacement de message MDN par MDN (qui signifie d’emblée Message Disposition Notification) ([3](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/pull/3))
 * Volume 1 Etude fonctionnelle
-  * & 1.1 : remplacement du terme « section » par « volume 2 »
-  * &2.1 : cas d’usage, remplacement des termes « Guide d’implémentation du DMP » par « Guide d’intégration du DMP »
-  * &2.2.1 et &3.2 : remplacement du terme « message MDN » par « MDN »
+  * remplacement du terme « section » par « volume 2 » ([3](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/pull/3))
+  * cas d’usage, remplacement des termes « Guide d’implémentation du DMP » par « Guide d’intégration du DMP » ([3](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/pull/3))
 * Volume 2 Etude technique
-  * &9 : Choix des standards : suppression de la phrase « Les échanges MSSanté doivent prendre en compte les restrictions positionnées sur le message. (Exemple : un document avec un masquage Médecin ne doit pas être envoyé sur le mail MSSanté du médecin). » qui n’a pas de rapport avec le choix des standards.
-  * &12.2.7.1 : suppression du point d’attention sur la cohérence des métadonnées DMP et MSSanté (vide juridique). « un document clinique masqué aux PS ne doit pas être envoyé aux PS par MSSanté ». Le point d’attention est remplacé par une question ouverte.
-  * Profils des messages précision sur l'utilisation du code FIN dans NTE-4 dans l'OBX dans le contexte de l'"Echange MSSanté Patient"  ([issue 21](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/21))
-  * & 12.2.8.3.4 : exemples de messages d’acquittements de l’ORU ou du MDM : Suppression dans les exemples du MSH-21.1 et MSH-21.2 car les Ack n’ont pas de contraintes particulières par rapport à la spécification international d’un Ack
+  * [Choix des standards](volume2.html#choix-des-standards) : suppression de la phrase « Les échanges MSSanté doivent prendre en compte les restrictions positionnées sur le message. (Exemple : un document avec un masquage Médecin ne doit pas être envoyé sur le mail MSSanté du médecin). » qui n’a pas de rapport avec le choix des standards. ([4](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/4))
+  * [Profils des messages](volume2.html#echange-mssanté-patient): précision sur l'utilisation du code FIN dans NTE-4 dans l'OBX dans le contexte de l'"Echange MSSanté Patient"  ([21](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/21))
+  * [Profils des messages](volume2.html#document-masqué-aux-professionnels-de-santé): suppression de la phrase et du point d'attention "un document clinique masqué aux PS ne doit pas être envoyé aux PS par MSSanté." car les envois DMP et MSS correspondent à des cas d'usages différents qui justifient d'avoir leurs propres règles sans que les impératifs de l'un ne s'impose à l'autre. ([5](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/5))
+  * [Profils des messages](volume2.html#alimentation-dmp): Ajout du Point d’attention : Un document ayant un niveau renforcé de confidentialité (restreint ou très restreint) ne devrait pas être mis en partage.. ([15](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/15))
+  * correction typos pour le type message en MSH-9.3 ([13](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/13)):
+    * dans [Implémentation du message MDM et de ses acquittements métier HL7](volume2.html#implémentation-du-message-mdm-et-de-ses-acquittements-métier-hl7)
+    * dans les diagrammes "[Demande de remplacement d’un document](volume2.html#demande-de-remplacement-dun-document)" et "[Demande de suppression d’un document](volume2.html#demande-de-suppression-dun-document)"
+    * dans les [profils des messages](volume2.html#le-segment-msh--header-du-message) 
+  * correction exemples de messages d’acquittements de l’ORU ou du MDM : Suppression dans les exemples du MSH-21.1 et MSH-21.2 car les Ack n’ont pas de contraintes particulières par rapport à la spécification international d’un Ack ([3](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/pull/3))
 * Volume 3 Annexes
-* Annexe 2 et 3 : remplacement de la référence [9] par la référence [3] et remplacement de la référence [13] par [9]
-* Annexe 4 : remplacement de message MDN par MDN (qui signifie d’emblée Message Disposition Notification)
-* Ajout mapping VIHF et Metadata XDS ([issue 8](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/8))
+  * [Ajout mapping VIHF et Metadata XDS](mapping.html) ([8](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/8))
+  * [Ajout mapping API LPS (MSS)](mapping.html#mapping-api-lps-mssanté) ([28](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/28))
 
 
 
 
-### Historique du volet des anciennes versions au format PDF (avant novembre 2024)
+### Rappel historique du volet des anciennes versions au format PDF (avant novembre 2024)
+
+Ici nous rappelons l'historique des précédentes versions.
+Cet historique est également disponible dans la dernière version du volet au format pdf : [ANNEXE 9 du doument CI_SIS-SERVICES_VOLET_TRANS_DOCS_CDA_EN_HL7V2_V2.1_Post_PAT_CONCERTATION_FINAL_0.pdf](https://esante.gouv.fr/sites/default/files/media_entity/documents/CI_SIS-SERVICES_VOLET_TRANS_DOCS_CDA_EN_HL7V2_V2.1_Post_PAT_CONCERTATION_FINAL_0.pdf)
 
 <table>
   <tbody>
