@@ -30,8 +30,8 @@ pages:
         title: "Table AckMetierZAM"
     mapping.md:
         title: "Mapping VIHF et XDS"
-    mapping-api-lps.md:
-        title: "Mapping API LPS (MSSanté)"
+    mapping-mss.md:
+        title: "Mapping message MSS"
     exemples.md:
         title: "Exemples de messages"
     struct-msg-mdn.md:
@@ -72,7 +72,7 @@ menu:
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
         "Mapping VIHF et XDS": mapping.html
-        "Mapping API LPS (MSSanté)": mapping.html#mapping-api-lps-mssanté
+        "Mapping message MSS": mapping.html#mapping-message-mss
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html
