@@ -72,7 +72,7 @@ menu:
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
         "Mapping VIHF et XDS": mapping.html
-        "Mapping message MSS": mapping.html#mapping-message-mss
+        "Mapping message MSS": mapping.html
         "Exemples de messages": exemples.html
         "Error Codes": error-codes.html
         "Glossaire": glossaire.html
