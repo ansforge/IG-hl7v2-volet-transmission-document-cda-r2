@@ -575,5 +575,5 @@ Pour anonymiser  cet exemple , certaines valeurs ont été remplacés par des X.
     </Security>
 ```
 
-### Mapping API LPS (MSSanté)
+### Mapping message MSS
 {% include mapping-mss.md %}
