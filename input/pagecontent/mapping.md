@@ -195,7 +195,7 @@ Provenance de la donnée :
 
 ### Mapping XDS
 
-#### Lot de soummission 
+#### Lot de soumission 
 
 <table class="table table-bordered table-striped">
   <thead>
