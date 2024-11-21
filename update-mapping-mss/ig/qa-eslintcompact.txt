@@ -1,7 +1,6 @@
 CISIS_CDA_HL7_V2
 =========================================
 
-Generic: line 0, col 0, Error - The link 'mapping.html#mapping-api-lps-mssanté' for "Ajout mapping API LPS (MSS)" cannot be resolved (valid targets: [mapping-xds, publish-box, segment-post-footer, mapping-vihf-et-xds, exemple-d’un-vihf-avec-automate, top, stripe, segment-footer, segment-content, mapping-message-mss, ans-nav, mapping-vihf-pour-le-dmp, markdown-toc-mapping-message-mss, segment-header, markdown-toc-mapping-xds, bottom, hl7-logo, exemple-dun--vihf-avec-automate, lot-de-soummission, markdown-toc-mapping-vihf-pour-le-dmp, family-nav, ig-status, markdown-toc, fiche, segment-navbar, segment-breadcrumb, markdown-toc-exemple-dun--vihf-avec-automate]) (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'cas-usage.html#description-du-cas-en-erreur' for "paragraphe suivant" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'acteurs-transactions.html#diagramme-des-acteurstransactions' for "tableau des Acteurs/Transactions" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'profils-messages.html#les-donn%C3%A9es-concernant-la-demande-de-traitement-sur-les-documents' for "section dédiée" cannot be resolved (NOTFOUND)
