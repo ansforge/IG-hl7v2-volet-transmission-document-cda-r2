@@ -25,7 +25,7 @@
     <tr>
       <td style="text-align: left">TO</td>
       <td style="text-align: left">Requis, permet de préciser l'adresse MSSanté d'un destinataire</td>
-      <td><pre class="highlight language-plaintext"  style="white-space: normal;" >Segment est répétable et requis si le document est échangé via MSSanté. Il contient l'adresse MSSanté d'un destinataire. <br><b>HL7V2</b> : PRT-15.4 (PRT-4 = ‘RCT^Result Copies To^participation’)</pre></td>
+      <td><pre class="highlight language-plaintext"  style="white-space: normal;" >Segment répétable et requis si le document est échangé via MSSanté. Il contient l'adresse MSSanté d'un destinataire. <br><b>HL7V2</b> : PRT-15.4 (PRT-4 = ‘RCT^Result Copies To^participation’)</pre></td>
     </tr>
     <tr>
       <td style="text-align: left">Body</td>
