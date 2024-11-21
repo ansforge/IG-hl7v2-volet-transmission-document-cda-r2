@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CISIS_CDA_HL7_V2"] ; # 
   fhir:title [ fhir:v "Volet de transmission d'un document CDA-R2 en HL7v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-11-21T09:42:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-21T13:15:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -593,10 +593,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "mapping-api-lps.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "mapping-mss.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "mapping-api-lps.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Mapping API LPS (MSSanté)" ] ;
+         fhir:name [ fhir:v "mapping-mss.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Mapping message MSS" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

@@ -161,7 +161,7 @@
         <a href="mapping.html">Mapping VIHF et XDS</a>
       </li>
       <li>
-        <a href="mapping.html#mapping-api-lps-mssanté">Mapping API LPS (MSSanté)</a>
+        <a href="mapping.html">Mapping message MSS</a>
       </li>
       <li>
         <a href="exemples.html">Exemples de messages</a>
@@ -206,7 +206,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="mapping-api-lps.html">next&gt;</a>
+          | <a href="mapping-mss.html">next&gt;</a>
 
           </span>
 
@@ -823,7 +823,7 @@ Provenance de la donnée :
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th style="text-align: left">Champs API LPS (MSS)</th>
+      <th style="text-align: left">Champs message MSS</th>
       <th style="text-align: left">Commentaire</th>
       <th>Provenance de la donnée</th>
     </tr>
@@ -843,6 +843,16 @@ Provenance de la donnée :
       <td style="text-align: left">REPLY TO</td>
       <td style="text-align: left">Optionnel, permet de préciser le courriel pour répondre au message</td>
       <td><pre class="highlight language-plaintext" style="white-space: normal;">Segment optionnel qui permet d'indiquer l'adresse mail sur laquelle le destinataire peut répondre. <br /><b>HL7V2</b> : PRT-15.4 (PRT-4 = ‘REPLY^Reply To^participation’)</pre></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TO</td>
+      <td style="text-align: left">Requis, permet de préciser l'adresse MSSanté d'un destinataire</td>
+      <td><pre class="highlight language-plaintext" style="white-space: normal;">Segment est répétable et requis si le document est échangé via MSSanté. Il contient l'adresse MSSanté d'un destinataire. <br /><b>HL7V2</b> : PRT-15.4 (PRT-4 = ‘RCT^Result Copies To^participation’)</pre></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Body</td>
+      <td style="text-align: left">Texte à intégrer dans le corps du mail à destination des professionnels de santé et/ou du patient via MSSanté. Cette métadonnée est optionnelle</td>
+      <td><pre class="highlight language-plaintext" style="white-space: normal;">Segment pour indiquer le texte à intégrer dans le corps du mail. <br /><b>HL7V2</b> : OBX-5</pre></td>
     </tr>
    </tbody>
 </table>
@@ -877,7 +887,7 @@ Provenance de la donnée :
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="mapping-api-lps.html">next&gt;</a>
+                <a href="mapping-mss.html">next&gt;</a>
 
               </td>
             </tr>
@@ -887,7 +897,7 @@ Provenance de la donnée :
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 21, 2024 09:42+0000">2024-11-21</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 21, 2024 13:15+0000">2024-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
