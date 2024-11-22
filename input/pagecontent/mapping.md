@@ -195,7 +195,7 @@ Provenance de la donnée :
 
 ### Mapping XDS
 
-#### Lot de soummission 
+#### Lot de soumission 
 
 <table class="table table-bordered table-striped">
   <thead>
@@ -575,5 +575,5 @@ Pour anonymiser  cet exemple , certaines valeurs ont été remplacés par des X.
     </Security>
 ```
 
-### Mapping API LPS (MSSanté)
-{% include mapping-api-lps.md %}
+### Mapping message MSS
+{% include mapping-mss.md %}
