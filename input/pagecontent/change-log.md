@@ -1,6 +1,4 @@
-### Historique du volet au format guide d'implémentation
-
-#### version 2.1.1
+### version 2.1.1
 
 **Version mineure sans impact sur le développement (changement de format, corrections de typo, précisions ou ajout d'informations)**
 
@@ -29,7 +27,7 @@
 
 
 
-### Rappel historique du volet des anciennes versions au format PDF (avant novembre 2024)
+### Rappel de l'historique des anciennes versions au format PDF (avant novembre 2024)
 
 Ici nous rappelons l'historique des précédentes versions.
 Cet historique est également disponible dans la dernière version du volet au format pdf : [ANNEXE 9 du doument CI_SIS-SERVICES_VOLET_TRANS_DOCS_CDA_EN_HL7V2_V2.1_Post_PAT_CONCERTATION_FINAL_0.pdf](https://esante.gouv.fr/sites/default/files/media_entity/documents/CI_SIS-SERVICES_VOLET_TRANS_DOCS_CDA_EN_HL7V2_V2.1_Post_PAT_CONCERTATION_FINAL_0.pdf)
