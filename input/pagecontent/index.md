@@ -1,9 +1,18 @@
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Brief description of this Implementation Guide</b><br>
-[Add a brief description of this IG in English]
+This document is part of the Service layer of the Interoperability Framework for Health Information Systems (CI-SIS).
+<br>
+This section outlines the possibility for an organization's business software to delegate to a third-party entity, the Intermediation Platform (PFI), the ability to interact with the DMP (French Shared Medical Record System) and/or MSSanté (French Secure Health Messaging). In the case of transmission via MSSanté, this section should be considered in conjunction with another section of the CI-SIS, namely the "Transmission au LPS d'un document CDA provenant d'un courriel
+MSSanté" section, to provide a comprehensive view of exchanges (from the creator of a processing request for a document to the final consumer of this request).
+<br>
+Both sections include both functional and technical components.
+<br>
+The functional part describes, as an example and in a non-exhaustive manner, a set of use cases. Based on these use cases, system actors (as defined by IHE) and transactions occurring between these actors to address these use cases are then defined. Collaborative processes are subsequently described, and the flows between the actors are also identified.
+<br>
+The technical part describes the standards selected for implementing the flows identified in the functional study and details the rules for implementing these standards.
 </p>
 
-<!--  A décommenter lors de la publication -->
+<!--  A décommenter lors de la publication 
 
 <div style="width: 65%">
     <blockquote class="stu-note">
@@ -12,6 +21,7 @@
     </p>
     </blockquote>
 </div>
+-->
 <div class="figure">
     <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
 </div>
