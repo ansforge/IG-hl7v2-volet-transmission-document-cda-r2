@@ -575,5 +575,16 @@ Cette table est fournie à titre indicatif et pourra être enrichie si besoin, e
         <p>L'INS du patient est présent dans le document CDA contenu dans le message HL7 mais les traits ou le matricule ne correspondent pas exactement à ceux stockés dans le système consommateur. Dans ce cas, la demande de traitement sur le document (intégration/remplacement/suppression) ne peut pas être réalisée de façon automatique par le système consommateur.</p>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p>905</p>
+      </td>
+      <td>
+        <p>L’INS transmis n’est pas complet</p>
+      </td>
+      <td>
+        <p>L'INS du patient est présent dans le document CDA contenu dans le message HL7 mais l'ensemble des traits complémentaires ne sont pas présents. Dans ce cas, la demande de traitement sur le document (intégration/remplacement/suppression) ne peut pas être réalisée de façon automatique par le système consommateur.</p>
+      </td>
+    </tr>    
   </tbody>
 </table>
