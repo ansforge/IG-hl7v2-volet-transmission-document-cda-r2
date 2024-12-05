@@ -23,6 +23,7 @@
 * Volume 3 Annexes
   * [Ajout mapping VIHF et Metadata XDS](mapping.html) ([8](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/8))
   * [Ajout mapping message MSS](mapping.html#mapping-message-mss) ([28](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/28))
+  * [Ajout du code erreur 905](error-codes.html#codes-erreurs-de-laccusé-métier-de-lecturetraitement-de-la-demande) ([33](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/33))
 
 
 
