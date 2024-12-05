@@ -9,6 +9,6 @@
     "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
     "changes" : "change-log.html#version-211",
     "ci-build" : "https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/main/ig/",
-    "category" : "HL7v2",
+    "category" : "Messaging",
     "introduction" : "Ce document est une spécification d'une transaction de demande de transmission/remplacement/suppression de document(s) clinique(s) en intra-organisation entre un système créateur de documents et une PFI (plateforme d'intermédiation), dans l'objectif de partager et/ou d'échanger ces documents avec les acteurs externes à l'établissement pour : \n Publication de document(s) clinique(s) du patient au DMP (Dossier Médical Partagé),\n Envoi de document(s) clinique(s) du patient à différents destinataires externes à l'établissement au moyen de la MSSanté (Messagerie Sécurisée de Santé)"
   }
