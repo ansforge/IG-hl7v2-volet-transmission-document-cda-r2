@@ -1631,8 +1631,8 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Code du Document</p>
       </td>
       <td rowspan="2">
-        <p>Utiliser le <a href="https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/JDV_J07-XdsTypeCode-CISIS.pdf">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Santé (NOS).</p>
-        <p>A noter qu'en cas d'envoi au DMP, le Gestionnaire doit contrôler que le type de document appartient au jeu de valeur défini par le DMP (<a href="https://mos.esante.gouv.fr/NOS/JDV_J66-TypeCode-DMP/">JDV_J66-TypeCode-DMP</a>).</p>
+        <p>Utiliser le <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J07-XdsTypeCode-CISIS.html">JDV_J07-XdsTypeCode-CISIS</a> de la Nomenclature des Objets de Santé (NOS).</p>
+        <p>A noter qu'en cas d'envoi au DMP, le Gestionnaire doit contrôler que le type de document appartient au jeu de valeur défini par le DMP (<a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/ValueSet-JDV-J66-TypeCode-DMP.html">JDV_J66-TypeCode-DMP</a>).</p>
       </td>
     </tr>
     <tr>
