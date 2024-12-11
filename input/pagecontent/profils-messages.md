@@ -1507,7 +1507,7 @@ rejeté par la PFI.
         <p>Système de codage dont est issu le code</p>
       </td>
       <td>
-        <p> <span class="hl7-color">LN</span> ou <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html">TRE_A05</a> en fonction de l'appartenance du code à l'un des systèmes de codage</p>
+        <p> <span class="hl7-color">LN</span> ou <span class="hl7-color">TRE_A05</span><a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html"> (lien vers la TRE)</a> en fonction de l'appartenance du code à l'un des systèmes de codage</p>
       </td>
     </tr>
   </tbody>
