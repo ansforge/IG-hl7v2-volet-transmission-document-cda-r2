@@ -6,8 +6,8 @@
   "status" : "active",
   "package-id" : "ans.hl7v2.fr.trans-cda-r2",
   "ig-ver" : "2.1.1",
-  "date" : "Thu, 05 Dec, 2024 14:04:14 +0000",
-  "dateISO8601" : "2024-12-05T14:04:14+00:00",
+  "date" : "Fri, 13 Dec, 2024 17:21:27 +0000",
+  "dateISO8601" : "2024-12-13T17:21:27+00:00",
   "errs" : 1,
   "warnings" : 4,
   "hints" : 0,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1180150784
+  "maxMemory" : 1323582448
 }
