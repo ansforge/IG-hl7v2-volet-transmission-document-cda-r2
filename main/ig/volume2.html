@@ -263,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Flux 1&nbsp;: Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU)</li>
   <li>Flux 2&nbsp;: Demande de transmission/remplacement/suppression d’un document CDA (Flux HL7-MDM)</li>
-  <li><a name="l479">​</a>Des flux d’accusés métier identifiés dans le <a href="acteurs-transactions.html#diagramme-des-acteurstransactions">tableau des Acteurs/Transactions</a>.</li>
+  <li>Des flux d’accusés métier identifiés dans le <a href="volume1.html#diagramme-des-acteurstransactions">tableau des Acteurs/Transactions</a>.</li>
 </ul>
 
 <h3 id="périmetre-de-la-transaction">Périmetre de la transaction</h3>
@@ -485,12 +485,12 @@ métiers HL7 <code class="language-plaintext highlighter-rouge">ZAM^Z01^ZAM_Z01<
 <code class="language-plaintext highlighter-rouge">ZAM^Z02^ZAM_Z01</code> (accusé métier de réception MSSanté) et
 <code class="language-plaintext highlighter-rouge">ZAM_Z03^ZAM_Z01</code> (accusé métier de lecture MSSanté).</p>
 
-<p><a name="l857">​</a>L’action à réaliser sur le document porté par la transaction est
+<p>L’action à réaliser sur le document porté par la transaction est
 indiquée par la valeur renseignée au niveau du champ OBX-11 du segment
-OBX portant le document (cf <a href="profils-messages.html#les-donn%C3%A9es-concernant-la-demande-de-traitement-sur-les-documents">section dédiée</a>), qui prend la valeur F (pour
+OBX portant le document (cf <a href="volume2.html#les-donn%C3%A9es-concernant-la-demande-de-traitement-sur-les-documents">section dédiée</a>), qui prend la valeur F (pour
 demande d’intégration du document), C (pour demande de remplacement de
 document) et D (pour demande de suppression de document), et sur la
-valeur du champ ORC-1 (cf <a href="profils-messages.html#le-segment-orc">section dédiée</a>).</p>
+valeur du champ ORC-1 (cf <a href="volume2.html#le-segment-orc">section dédiée</a>).</p>
 
 <p>Pour des questions de lisibilité, la figure 13 représente sur le même
 schéma la possibilité pour l’acteur CREATEUR d’envoyer une demande
@@ -559,6 +559,7 @@ pour la transmission de document(s) CDA-R2 en HL7v2.</p>
 
 <p>Le profil du message ORU_R01 est le suivant&nbsp;:</p>
 <table class="table-hl7v2">
+  <tbody>
   <tr>
     <th>
       <p>Segment</p>
@@ -576,7 +577,6 @@ pour la transmission de document(s) CDA-R2 en HL7v2.</p>
       <p>&sect; HL7</p>
     </th>
   </tr>
-  <tbody>
     <tr>
       <td>
         <p>MSH</p>
@@ -938,8 +938,8 @@ document(s)&nbsp;: transmission initiale/remplacement/suppression de
 document(s). Seuls les segments ORC, OBR et le groupe de segments
 OBSERVATION de l’occurrence ORDER_OBSERVATION sont à renseigner.</p>
 
-<p><a name="l1683">​</a>Les contraintes apportées par ce volet sur les données des différents
-segments du message ORU sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
+<p>Les contraintes apportées par ce volet sur les données des différents
+segments du message ORU sont décrites à la <a href="volume2.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h6 id="description-fonctionnelle-du-message-oru">Description fonctionnelle du message ORU</h6>
 
@@ -969,7 +969,7 @@ section dédiée du document CDA Niv3).</p>
   </li>
 </ul>
 
-<p><a name="l1722">​</a>Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l’envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la <a href="profils-messages.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
+<p>Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l’envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la <a href="volume2.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h5 id="message-mdm-en-hl7v26">Message MDM en HL7v2.6</h5>
 
@@ -978,6 +978,7 @@ section dédiée du document CDA Niv3).</p>
 <p>Le profil du message MDM est le suivant&nbsp;:</p>
 
 <table class="table-hl7v2">
+<tbody>
   <tr>
     <th>
       <p>Segment</p>
@@ -995,7 +996,6 @@ section dédiée du document CDA Niv3).</p>
       <p>&sect; HL7</p>
     </th>
   </tr>
-  <tbody>
     <tr>
       <td>
         <p>MSH</p>
@@ -1332,8 +1332,8 @@ destinataire(s) via MSSanté).</em></p>
 <p>Le message MDM ne peut transmettre qu’un seul document médical au format
 CDAr2.</p>
 
-<p><a name="l2416">​</a>Les contraintes apportées par ce volet sur les données du message MDM
-sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
+<p>Les contraintes apportées par ce volet sur les données du message MDM
+sont décrites à la <a href="volume2.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h6 id="description-fonctionnelle-du-message-mdm">Description fonctionnelle du message MDM</h6>
 
@@ -1616,9 +1616,9 @@ informations concernant le patient sont décrites par le segment requis
 PID. Le segment PV1, requis, représente la venue courante du patient.</p>
 
 <p>Ces deux segments doivent être renseignés conformément à la
-spécification «&nbsp;<a href="https://old.interopsante.org/offres/doc_inline_src/412/Publication-IHE_FRANCE_PAM_National_Extension_v2.11.pdf">PAM – National extension France&nbsp;» version 2.11</a> publiée
+spécification «&nbsp;<a href="https://www.interopsante.org/publications">PAM – National extension France&nbsp;» version 2.11</a> publiée
 en 2024. Si l’INS est véhiculé, le segment PID doit suivre les
-contraintes décrites dans l’annexe CI-SIS «&nbsp;<a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ans_cisis-tec_annexe-ins_1.5.pdf">Prise en charge de
+contraintes décrites dans l’annexe CI-SIS «&nbsp;<a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">Prise en charge de
 l’identifiant National de Santé (INS)&nbsp;dans les standards
 d’interopérabilité et les volets du CI-SIS</a>&nbsp;».</p>
 
@@ -1953,18 +1953,18 @@ la suivante&nbsp;:</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ORC : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment ORC : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2005,18 +2005,18 @@ rejeté par la PFI.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBR : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBR : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2110,7 +2110,7 @@ destinataire peut répondre.</p>
 </ul>
 
 <p>Les champs des segments PRT doivent être renseignés conformément aux
-spécifications <a href="https://old.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.8.pdf">«&nbsp;Contraintes sur les types de données HL7 v2.5
+spécifications <a href="https://www.interopsante.org/publications">«&nbsp;Contraintes sur les types de données HL7 v2.5
 applicables aux profils d’intégration du cadre technique IT
 Infrastructure dans le périmètre d’IHE France&nbsp;» release 1.8</a>.</p>
 
@@ -2132,18 +2132,18 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2219,7 +2219,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
         <p>Système de codage dont est issu le code</p>
       </td>
       <td>
-        <p>   <span class="hl7-color">LN</span> ou <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html">TRE_A05</a> en fonction de l'appartenance du code à l'un des systèmes de codage.</p>
+        <p>   <span class="hl7-color">LN</span> ou <span class="hl7-color">TRE_A05</span><a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html"> (lien vers la TRE)</a> en fonction de l'appartenance du code à l'un des systèmes de codage.</p>
       </td>
     </tr>
     <tr>
@@ -2615,7 +2615,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
       <td>
         <p>Autorité d'affectation de l'identifiant de l'organisation destinataire du document.</p>
         <p><span class="hl7-color">1.2.250.1.71.4.2.2</span> (OID de gestion des structures pour préciser une entité juridique ou une entité géographique), N° FINESS ou N° FINEG pour identifier une organisation intra-établissement (service, UF, pôle…).</p>
-        <p>Cf Contraintes sur les types de données HL7 v2.5 applicables aux profils d'intégration du cadre technique IT Infrastructure dans le périmètre d'IHE France.[12] </p>
+        <p><a href="https://www.interopsante.org/publications">Cf Contraintes sur les types de données HL7 v2.5 applicables aux profils d'intégration du cadre technique IT Infrastructure dans le périmètre d'IHE France</a>.</p>
       </td>
     </tr>
     <tr>
@@ -2681,7 +2681,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
         <p>Telecommunication Equipment Type</p>
       </td>
       <td>
-        <p>X.400 (X.400 email address)</p>
+        <p><span class="hl7-color">X.400</span> (X.400 email address)</p>
       </td>
     </tr>
     <tr>
@@ -2693,17 +2693,6 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
       </td>
       <td>
         <p>Intégrer l'adresse mail MSSanté</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p> </p>
-      </td>
-      <td>
-        <p> </p>
-      </td>
-      <td>
-        <p> </p>
       </td>
     </tr>
     <tr>
@@ -2775,7 +2764,7 @@ l’obligation de gérer le contenu de ces champs ou segments.</p>
   </tbody>
 </table>
 
-<p class="MsoFootnoteText"><a name="l5267">​</a><a name="_ftn2" href="#_ftnref2" title="null"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
+<p class="MsoFootnoteText"><a name="l5240">​</a><a name="_ftn2" href="#_ftnref2" title="null"><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Arial&quot;,sans-serif">[2]</span></span></span></a>
 <span class="cf01"><span style="font-size:8.0pt;line-height:107%">SC.DMP/CONF.12&nbsp;:
 «&nbsp;Le système DOIT transmettre à la PFI les informations d'identification nécessaires à la constitution du jeton VIHF : FINESS géographique de
 l'établissement et l'identifiant du professionnel ou du dispositif à l'origine de la demande d'alimentation du DMP&nbsp;». </span></span></p>
@@ -2831,8 +2820,7 @@ concernant l’élément informationRecipient&nbsp;:</p>
 <ul>
   <li>
     <p>(1) informationRecipient contient les destinataires d’une copie du
-document désignés [au moment de la création du
-document]{.underline},</p>
+document désignés <ins>au moment de la création du document</ins>,</p>
   </li>
   <li>
     <p>(2) informationRecipient ne permet pas de spécifier les
@@ -2893,18 +2881,18 @@ documents pouvant être contenus dans le message ORU.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3050,18 +3038,18 @@ masqué au patient.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3206,18 +3194,18 @@ masqué aux représentants légaux du patient.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3362,18 +3350,18 @@ masqué aux représentants légaux du patient.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3514,18 +3502,18 @@ document au patient ou à ses représentants légaux.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3664,18 +3652,18 @@ document au patient ou à ses représentants légaux.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3821,18 +3809,18 @@ applicative.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3980,18 +3968,18 @@ message, un segment NTE avec la valeur «&nbsp;FIN&nbsp;» doit être ajouté.</
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -4159,18 +4147,18 @@ MSSanté.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -4597,18 +4585,18 @@ métadonnée est optionnelle :</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [0..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [0..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -4731,6 +4719,7 @@ message HL7.</p>
 <p>Le profil du message ACK est le suivant&nbsp;:</p>
 
 <table class="table-hl7v2">
+  <tbody>
   <tr>
     <th>
       <p>Segment</p>
@@ -4748,7 +4737,6 @@ message HL7.</p>
       <p>HL7 &sect;</p>
     </th>
   </tr>
-  <tbody>
     <tr>
       <td>
         <p>MSH</p>
@@ -4860,24 +4848,24 @@ ORU et HL7v2.6 pour MDM.</p>
   <tbody>
     <tr>
       <th colspan="2">
-        <p><strong>Message initial</strong></p>
+        <p>Message initial</p>
       </th>
       <th colspan="2">
-        <p><strong>Message d'acquittement</strong></p>
+        <p>Message d'acquittement</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ</strong></p>
+        <p>Champ</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Champ</strong></p>
+        <p>Champ</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
     </tr>
     <tr>
@@ -5080,8 +5068,7 @@ le type du message (ORU ou MDM) :</p>
           <br/><span class="hl7-color">ACK^T02^ACK</span>
           <br/><span class="hl7-color">ACK^T04^ACK</span>  
           <br/><span class="hl7-color">ACK^T10^ACK</span>
-        </p>
-        
+        </p>  
       </td>
       <td>
         <p>MSG</p>
@@ -5145,7 +5132,7 @@ le type du message (ORU ou MDM) :</p>
         <p>MSH-17</p>
       </td>
       <td>
-        <p>FRA</p>
+        <p><span class="hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -5178,10 +5165,10 @@ le type du message (ORU ou MDM) :</p>
   <tbody>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Contenu</strong></p>
+        <p>Contenu</p>
       </th>
     </tr>
     <tr>
@@ -5309,7 +5296,7 @@ au moyen d’accusés métier HL7.</p>
 <p>A noter qu’aucun accusé de réception métier n’est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
 HL7v2 ORU ou MDM avec le Compte-Rendu d’Imagerie. Par contre, un message
-d’acquittement technique (<a href="https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/sd-tranfo-pdf-to-ig/ig/profils-messages.html#le-message-dacquittement-du-message-hl7v2">voir section dédiée</a>) permettra à la DRIMbox de
+d’acquittement technique (<a href="volume2.html#le-message-dacquittement-du-message-hl7v2">voir section dédiée</a>) permettra à la DRIMbox de
 communiquer au GESTIONNAIRE qu’elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
@@ -5324,13 +5311,13 @@ message HL7 a été créé&nbsp;: HL7v2.6 ZAM – Accusé Métier.</p>
   <tbody>
     <tr>
       <th>
-        <p><strong>Flux métier</strong></p>
+        <p>Flux métier</p>
       </th>
       <th>
-        <p><strong>Evènement déclenchant au niveau du GESTIONNAIRE</strong></p>
+        <p>Evènement déclenchant au niveau du GESTIONNAIRE</p>
       </th>
       <th>
-        <p><strong>Message métier HL7</strong></p>
+        <p>Message métier HL7</p>
       </th>
     </tr>
     <tr>
@@ -5648,18 +5635,18 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -5797,18 +5784,18 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
+        <p>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -5843,7 +5830,7 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
       <td>
         <p>Code erreur de DMP       </p>
         <p>à Utiliser les codes et libellés de codes de l'annexe A7-1 « Liste des codes d'erreurs » de la spécification « <a href="https://industriels.sesam-vitale.fr">Service DMP intégré aux LPS » v.2.10.0</a></p>
-        <p>Code^libellé du code^<span class="hl7-color">DMP_ERROR_CODE</span></p>
+        <p>Code^libellé du code<span class="hl7-color">^DMP_ERROR_CODE</span></p>
       </td>
     </tr>
   </tbody>
@@ -6103,18 +6090,18 @@ MSSanté&nbsp;:</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -6253,18 +6240,18 @@ courriel MSSanté :</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -6402,18 +6389,18 @@ segment contient sa description.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
+        <p>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -6447,7 +6434,7 @@ segment contient sa description.</p>
       </td>
       <td>
         <p>Code erreur de MSSanté. Cf <a href="error-codes.html#table--smtperrorcode-">Table « SMTPERRORCODE »</a></p>
-        <p>Code SMTP^libellé du code^<span class="hl7-color">SMTPERRORCODE</span></p>
+        <p>Code SMTP^libellé du code<span class="hl7-color">^SMTPERRORCODE</span></p>
       </td>
     </tr>
   </tbody>
@@ -6641,7 +6628,7 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
         <p>MSH-17</p>
       </td>
       <td>
-        <p>FRA</p>
+        <p><span class="hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
@@ -6706,18 +6693,18 @@ ces spécifications, le champ MSH-9 «&nbsp;Message Type&nbsp;» prend la valeur
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -6856,18 +6843,18 @@ courriel MSSanté :</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -7004,18 +6991,18 @@ par le destinataire, ce segment contient sa description.</p>
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
+        <p>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -7063,7 +7050,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
 <h5 id="message-dacquittement-technique-des-accusés-métiers">Message d’acquittement technique des accusés métiers</h5>
 
-<p><a name="l13695">​</a>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
+<p>Le message d’acquittement est identique à celui spécifié dans la <a href="volume2.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
 
 <h3 id="règles-de-gestion-mssante">Règles de gestion MSSANTE</h3>
 <p>Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX valorisés. Le tableau présente une liste exhaustive des combinaisons possibles des OBX pour l’échange MSSANTE. Les cas non représentés génèrent un message d’erreur.</p>
@@ -7131,10 +7118,10 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
 <p><strong>Lien entre l’EN-TETE CDA et les métadonnées XDS</strong></p>
 
-<p>Une annexe disponible sur le CI-SIS indique la correspondance entre les données d’en-tête d’un document CDA définies dans le volet structuration minimale des documents de Santé et les métadonnées XDS définies dans le <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-partage-documents-sante_v1.15.pdf">volet partage de documents de Santé</a>.</p>
+<p>Une annexe disponible sur le CI-SIS indique la correspondance entre les données d’en-tête d’un document CDA définies dans le volet structuration minimale des documents de Santé et les métadonnées XDS définies dans le <a href="https://esante.gouv.fr/volet-partage-de-documents-de-sante">volet partage de documents de Santé</a>:</p>
 
 <ul>
-  <li><strong><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/CI-SIS_ANX_LIENS-CDA-METADONNEES-XDS_V1.6.pdf">Annexe – Lien Entre l’en-tête CDA et les métadonnées XDS</a></strong></li>
+  <li><strong><a href="https://esante.gouv.fr/annexe-lien-entre-len-tete-cda-et-les-metadonnees-xds">Annexe – Lien Entre l’en-tête CDA et les métadonnées XDS</a></strong></li>
 </ul>
 
 
@@ -7178,7 +7165,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 11, 2024 14:47+0000">2024-12-11</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 13, 2024 16:11+0000">2024-12-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
