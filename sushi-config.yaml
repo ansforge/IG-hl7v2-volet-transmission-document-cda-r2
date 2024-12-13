@@ -23,7 +23,9 @@ pages:
     volume1.md:
         title: "Volume 1 : Etude fonctionnelle"     
     volume2.md:
-        title: "Volume 2 : Détail des transactions"   
+        title: "Volume 2 : Détail des transactions"
+    lien-entete-cda-meta-xds.md:
+        title: "Lien entre l'en-tête CDA et les métadonnées XDS"           
     meta-dmp-mss.md:
         title: "Table MetaDMP/MSS"
     ack-metier-zam.md:
@@ -68,6 +70,7 @@ menu:
         "Profils de messages": volume2.html#profils-de-messages
         "Règles de gestion MSSANTE": volume2.html#règles-de-gestion-mssante
     Volume 3 - Annexes:
+        "Lien entre l'en-tête CDA et les métadonnées XDS": lien-entete-cda-meta-xds.html
         "Table MetaDMP/MSS": meta-dmp-mss.html
         "Structure du MDN (MSSanté)": struct-msg-mdn.html
         "Table AckMetierZAM": ack-metier-zam.html
