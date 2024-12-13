@@ -22,6 +22,7 @@ pour la transmission de document(s) CDA-R2 en HL7v2.
 
 Le profil du message ORU_R01 est le suivant :
 <table class="table-hl7v2">
+  <tbody>
   <tr>
     <th>
       <p>Segment</p>
@@ -39,7 +40,6 @@ Le profil du message ORU_R01 est le suivant :
       <p>§ HL7</p>
     </th>
   </tr>
-  <tbody>
     <tr>
       <td>
         <p>MSH</p>
@@ -4585,7 +4585,7 @@ le type du message (ORU ou MDM) :
         <p>MSH-17</p>
       </td>
       <td>
-        <p>FRA</p>
+        <p><span class="hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
