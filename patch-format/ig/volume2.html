@@ -263,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Flux 1&nbsp;: Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU)</li>
   <li>Flux 2&nbsp;: Demande de transmission/remplacement/suppression d’un document CDA (Flux HL7-MDM)</li>
-  <li><a name="l479">​</a>Des flux d’accusés métier identifiés dans le <a href="acteurs-transactions.html#diagramme-des-acteurstransactions">tableau des Acteurs/Transactions</a>.</li>
+  <li>Des flux d’accusés métier identifiés dans le <a href="volume1.html#diagramme-des-acteurstransactions">tableau des Acteurs/Transactions</a>.</li>
 </ul>
 
 <h3 id="périmetre-de-la-transaction">Périmetre de la transaction</h3>
@@ -485,12 +485,12 @@ métiers HL7 <code class="language-plaintext highlighter-rouge">ZAM^Z01^ZAM_Z01<
 <code class="language-plaintext highlighter-rouge">ZAM^Z02^ZAM_Z01</code> (accusé métier de réception MSSanté) et
 <code class="language-plaintext highlighter-rouge">ZAM_Z03^ZAM_Z01</code> (accusé métier de lecture MSSanté).</p>
 
-<p><a name="l857">​</a>L’action à réaliser sur le document porté par la transaction est
+<p>L’action à réaliser sur le document porté par la transaction est
 indiquée par la valeur renseignée au niveau du champ OBX-11 du segment
-OBX portant le document (cf <a href="profils-messages.html#les-donn%C3%A9es-concernant-la-demande-de-traitement-sur-les-documents">section dédiée</a>), qui prend la valeur F (pour
+OBX portant le document (cf <a href="volume2.html#les-donn%C3%A9es-concernant-la-demande-de-traitement-sur-les-documents">section dédiée</a>), qui prend la valeur F (pour
 demande d’intégration du document), C (pour demande de remplacement de
 document) et D (pour demande de suppression de document), et sur la
-valeur du champ ORC-1 (cf <a href="profils-messages.html#le-segment-orc">section dédiée</a>).</p>
+valeur du champ ORC-1 (cf <a href="volume2.html#le-segment-orc">section dédiée</a>).</p>
 
 <p>Pour des questions de lisibilité, la figure 13 représente sur le même
 schéma la possibilité pour l’acteur CREATEUR d’envoyer une demande
@@ -938,8 +938,8 @@ document(s)&nbsp;: transmission initiale/remplacement/suppression de
 document(s). Seuls les segments ORC, OBR et le groupe de segments
 OBSERVATION de l’occurrence ORDER_OBSERVATION sont à renseigner.</p>
 
-<p><a name="l1683">​</a>Les contraintes apportées par ce volet sur les données des différents
-segments du message ORU sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
+<p>Les contraintes apportées par ce volet sur les données des différents
+segments du message ORU sont décrites à la <a href="volume2.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h6 id="description-fonctionnelle-du-message-oru">Description fonctionnelle du message ORU</h6>
 
@@ -969,7 +969,7 @@ section dédiée du document CDA Niv3).</p>
   </li>
 </ul>
 
-<p><a name="l1722">​</a>Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l’envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la <a href="profils-messages.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
+<p>Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l’envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la <a href="volume2.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h5 id="message-mdm-en-hl7v26">Message MDM en HL7v2.6</h5>
 
@@ -1332,8 +1332,8 @@ destinataire(s) via MSSanté).</em></p>
 <p>Le message MDM ne peut transmettre qu’un seul document médical au format
 CDAr2.</p>
 
-<p><a name="l2416">​</a>Les contraintes apportées par ce volet sur les données du message MDM
-sont décrites à la <a href="profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
+<p>Les contraintes apportées par ce volet sur les données du message MDM
+sont décrites à la <a href="volume2.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet">section dédiée</a>.</p>
 
 <h6 id="description-fonctionnelle-du-message-mdm">Description fonctionnelle du message MDM</h6>
 
@@ -5309,7 +5309,7 @@ au moyen d’accusés métier HL7.</p>
 <p>A noter qu’aucun accusé de réception métier n’est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
 HL7v2 ORU ou MDM avec le Compte-Rendu d’Imagerie. Par contre, un message
-d’acquittement technique (<a href="https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/sd-tranfo-pdf-to-ig/ig/profils-messages.html#le-message-dacquittement-du-message-hl7v2">voir section dédiée</a>) permettra à la DRIMbox de
+d’acquittement technique (<a href="volume2.html#le-message-dacquittement-du-message-hl7v2">voir section dédiée</a>) permettra à la DRIMbox de
 communiquer au GESTIONNAIRE qu’elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
@@ -7063,7 +7063,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
 <h5 id="message-dacquittement-technique-des-accusés-métiers">Message d’acquittement technique des accusés métiers</h5>
 
-<p><a name="l13695">​</a>Le message d’acquittement est identique à celui spécifié dans la <a href="profils-messages.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
+<p>Le message d’acquittement est identique à celui spécifié dans la <a href="volume2.html#le-message-dacquittement-du-message-hl7v2">partie dédiée</a>, à l’exception du champ MSH-9 qui prend la valeur&nbsp;<code class="language-plaintext highlighter-rouge">ACK^Z01^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z02^ACK</code> ou <code class="language-plaintext highlighter-rouge">ACK^Z03^ACK</code> selon l’évènement du message initial.</p>
 
 <h3 id="règles-de-gestion-mssante">Règles de gestion MSSANTE</h3>
 <p>Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX valorisés. Le tableau présente une liste exhaustive des combinaisons possibles des OBX pour l’échange MSSANTE. Les cas non représentés génèrent un message d’erreur.</p>
@@ -7178,7 +7178,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 12, 2024 17:46+0000">2024-12-12</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 13, 2024 14:26+0000">2024-12-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
