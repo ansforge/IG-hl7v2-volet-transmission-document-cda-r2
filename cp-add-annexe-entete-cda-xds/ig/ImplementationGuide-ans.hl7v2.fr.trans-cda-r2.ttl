@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CISIS_CDA_HL7_V2"] ; # 
   fhir:title [ fhir:v "Volet de transmission d'un document CDA-R2 en HL7v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-13T16:39:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-13T17:16:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -565,6 +565,14 @@
          ] ) ;
          fhir:name [ fhir:v "volume2.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Volume 2 : Détail des transactions" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "lien-entete-cda-meta-xds.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "lien-entete-cda-meta-xds.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Lien entre l'en-tête CDA et les métadonnées XDS" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
