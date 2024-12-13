@@ -1652,7 +1652,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Système de codage dont est issu le code</p>
       </td>
       <td>
-        <p>   <span class="hl7-color">LN</span> ou <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html">TRE_A05</a> en fonction de l'appartenance du code à l'un des systèmes de codage.</p>
+        <p>   <span class="hl7-color">LN</span> ou <span class="hl7-color">TRE_A05</span><a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-A05-TypeDocComplementaire.html"> (lien vers la TRE)</a> en fonction de l'appartenance du code à l'un des systèmes de codage.</p>
       </td>
     </tr>
     <tr>
@@ -2048,7 +2048,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
       <td>
         <p>Autorité d'affectation de l'identifiant de l'organisation destinataire du document.</p>
         <p><span class="hl7-color">1.2.250.1.71.4.2.2</span> (OID de gestion des structures pour préciser une entité juridique ou une entité géographique), N° FINESS ou N° FINEG pour identifier une organisation intra-établissement (service, UF, pôle…).</p>
-        <p>Cf Contraintes sur les types de données HL7 v2.5 applicables aux profils d'intégration du cadre technique IT Infrastructure dans le périmètre d'IHE France.[12] </p>
+        <p><a href="https://www.interopsante.org/publications">Cf Contraintes sur les types de données HL7 v2.5 applicables aux profils d'intégration du cadre technique IT Infrastructure dans le périmètre d'IHE France</a>.</p>
       </td>
     </tr>
     <tr>
@@ -2114,7 +2114,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Telecommunication Equipment Type</p>
       </td>
       <td>
-        <p>X.400 (X.400 email address)</p>
+        <p><span class="hl7-color">X.400</span> (X.400 email address)</p>
       </td>
     </tr>
     <tr>
@@ -2126,17 +2126,6 @@ l'obligation de gérer le contenu de ces champs ou segments.
       </td>
       <td>
         <p>Intégrer l'adresse mail MSSanté</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p> </p>
-      </td>
-      <td>
-        <p> </p>
-      </td>
-      <td>
-        <p> </p>
       </td>
     </tr>
     <tr>
@@ -5292,7 +5281,7 @@ Si une erreur intervient lors du dépôt du document sur le DMP, ce segment cont
       <td>
         <p>Code erreur de DMP       </p>
         <p>à Utiliser les codes et libellés de codes de l'annexe A7-1 « Liste des codes d'erreurs » de la spécification « <a href="https://industriels.sesam-vitale.fr">Service DMP intégré aux LPS » v.2.10.0</a></p>
-        <p>Code^libellé du code^<span class="hl7-color">DMP_ERROR_CODE</span></p>
+        <p>Code^libellé du code<span class="hl7-color">^DMP_ERROR_CODE</span></p>
       </td>
     </tr>
   </tbody>
@@ -5896,7 +5885,7 @@ segment contient sa description.
       </td>
       <td>
         <p>Code erreur de MSSanté. Cf <a href="error-codes.html#table--smtperrorcode-">Table « SMTPERRORCODE »</a></p>
-        <p>Code SMTP^libellé du code^<span class="hl7-color">SMTPERRORCODE</span></p>
+        <p>Code SMTP^libellé du code<span class="hl7-color">^SMTPERRORCODE</span></p>
       </td>
     </tr>
   </tbody>
@@ -6091,7 +6080,7 @@ ces spécifications, le champ MSH-9 « Message Type » prend la valeur
         <p>MSH-17</p>
       </td>
       <td>
-        <p>FRA</p>
+        <p><span class="hl7-color">FRA</span></p>
       </td>
       <td>
         <p>ID</p>
