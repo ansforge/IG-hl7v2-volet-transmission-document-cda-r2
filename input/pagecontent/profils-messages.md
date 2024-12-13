@@ -436,6 +436,7 @@ Les groupes de segments OBSERVATION suivants (répétables) véhiculent les mét
 Le profil du message MDM est le suivant :
 
 <table class="table-hl7v2">
+<tbody>
   <tr>
     <th>
       <p>Segment</p>
@@ -453,7 +454,6 @@ Le profil du message MDM est le suivant :
       <p>§ HL7</p>
     </th>
   </tr>
-  <tbody>
     <tr>
       <td>
         <p>MSH</p>
@@ -1391,18 +1391,18 @@ la suivante :
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ORC : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment ORC : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -1443,18 +1443,18 @@ rejeté par la PFI.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBR : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBR : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -1565,18 +1565,18 @@ l'obligation de gérer le contenu de ces champs ou segments.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2321,18 +2321,18 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document est masqué aux 
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2478,18 +2478,18 @@ masqué au patient.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2635,18 +2635,18 @@ masqué aux représentants légaux du patient.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2792,18 +2792,18 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -2945,18 +2945,18 @@ document au patient ou à ses représentants légaux.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3096,18 +3096,18 @@ Cet OBX permet d'informer l'acteur GESTIONNAIRE que le document doit
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3255,18 +3255,18 @@ applicative.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3416,18 +3416,18 @@ message, un segment NTE avec la valeur « FIN » doit être ajouté.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -3595,18 +3595,18 @@ MSSanté.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [1..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -4035,18 +4035,18 @@ métadonnée est optionnelle :
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [0..1]</strong></p>
+        <p>Composition du groupe OBSERVATION/OBXNTE : Usage = Optional / Cardinalité = [0..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Elément requis</strong></p>
+        <p>Elément requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -4172,6 +4172,7 @@ message HL7.
 Le profil du message ACK est le suivant :
 
 <table class="table-hl7v2">
+  <tbody>
   <tr>
     <th>
       <p>Segment</p>
@@ -4189,7 +4190,6 @@ Le profil du message ACK est le suivant :
       <p>HL7 §</p>
     </th>
   </tr>
-  <tbody>
     <tr>
       <td>
         <p>MSH</p>
@@ -4301,24 +4301,24 @@ Le segment MSH reprend une partie des informations du message initial :
   <tbody>
     <tr>
       <th colspan="2">
-        <p><strong>Message initial</strong></p>
+        <p>Message initial</p>
       </th>
       <th colspan="2">
-        <p><strong>Message d'acquittement</strong></p>
+        <p>Message d'acquittement</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ</strong></p>
+        <p>Champ</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Champ</strong></p>
+        <p>Champ</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
     </tr>
     <tr>
@@ -4521,8 +4521,7 @@ le type du message (ORU ou MDM) :
           <br><span class="hl7-color">ACK^T02^ACK</span>
           <br><span class="hl7-color">ACK^T04^ACK</span>  
           <br><span class="hl7-color">ACK^T10^ACK</span>
-        </p>
-        
+        </p>  
       </td>
       <td>
         <p>MSG</p>
@@ -4621,10 +4620,10 @@ le type du message (ORU ou MDM) :
   <tbody>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Contenu</strong></p>
+        <p>Contenu</p>
       </th>
     </tr>
     <tr>
@@ -4771,13 +4770,13 @@ Ce type de message est utilisé par trois évènements différents :
   <tbody>
     <tr>
       <th>
-        <p><strong>Flux métier</strong></p>
+        <p>Flux métier</p>
       </th>
       <th>
-        <p><strong>Evènement déclenchant au niveau du GESTIONNAIRE</strong></p>
+        <p>Evènement déclenchant au niveau du GESTIONNAIRE</p>
       </th>
       <th>
-        <p><strong>Message métier HL7</strong></p>
+        <p>Message métier HL7</p>
       </th>
     </tr>
     <tr>
@@ -5098,18 +5097,18 @@ Le premier segment OBX renseigne le statut de l'accusé de réception :
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -5247,18 +5246,18 @@ Si une erreur intervient lors du dépôt du document sur le DMP, ce segment cont
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
+        <p>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -5553,18 +5552,18 @@ MSSanté :
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -5703,18 +5702,18 @@ courriel MSSanté :
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -5852,18 +5851,18 @@ segment contient sa description.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
+        <p>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -6157,18 +6156,18 @@ Le premier segment OBX renseigne le statut de l'accusé de lecture :
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -6307,18 +6306,18 @@ courriel MSSanté :
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</strong></p>
+        <p>Composition du segment OBX : Usage = Required / Cardinalité = [1..1]</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
@@ -6455,18 +6454,18 @@ par le destinataire, ce segment contient sa description.
   <tbody>
     <tr>
       <th colspan="3">
-        <p><strong>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</strong></p>
+        <p>Composition du segment ERR : Usage = Conditional / Cardinalité = [0..1] (Requis si le champ 5 du premier OBX prend la valeur N)</p>
       </th>
     </tr>
     <tr>
       <th>
-        <p><strong>Champ requis</strong></p>
+        <p>Champ requis</p>
       </th>
       <th>
-        <p><strong>Description</strong></p>
+        <p>Description</p>
       </th>
       <th>
-        <p><strong>Valeur</strong></p>
+        <p>Valeur</p>
       </th>
     </tr>
     <tr>
