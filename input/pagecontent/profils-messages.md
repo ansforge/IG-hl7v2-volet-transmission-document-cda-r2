@@ -2264,8 +2264,7 @@ Pour information, la norme CDA r2 précise les points suivants,
 concernant l'élément informationRecipient :
 
 -   (1) informationRecipient contient les destinataires d'une copie du
-    document désignés [au moment de la création du
-    document]{.underline},
+    document désignés <ins>au moment de la création du document</ins>,
 
 -   (2) informationRecipient ne permet pas de spécifier les
     destinataires auxquels le document est transmis ultérieurement à sa
