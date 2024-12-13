@@ -1070,11 +1070,11 @@ informations concernant le patient sont décrites par le segment requis
 PID. Le segment PV1, requis, représente la venue courante du patient.
 
 Ces deux segments doivent être renseignés conformément à la
-spécification « [PAM -- National extension France » version 2.11](https://old.interopsante.org/offres/doc_inline_src/412/Publication-IHE_FRANCE_PAM_National_Extension_v2.11.pdf) publiée
+spécification « [PAM -- National extension France » version 2.11](https://www.interopsante.org/publications) publiée
 en 2024. Si l'INS est véhiculé, le segment PID doit suivre les
 contraintes décrites dans l'annexe CI-SIS « [Prise en charge de
 l'identifiant National de Santé (INS) dans les standards
-d'interopérabilité et les volets du CI-SIS](https://esante.gouv.fr/sites/default/files/media_entity/documents/ans_cisis-tec_annexe-ins_1.5.pdf) ».
+d'interopérabilité et les volets du CI-SIS](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis) ».
 
 Pour le segment PID, ce volet ajoute une contrainte particulière sur le
 PID-18 par rapport à PAM.FR. Il doit être renseigné si connu afin de
@@ -1544,7 +1544,7 @@ respectivement OBSERVATION/OBXNTE composé :
 Les champs des segments PRT doivent être renseignés conformément aux
 spécifications [« Contraintes sur les types de données HL7 v2.5
 applicables aux profils d'intégration du cadre technique IT
-Infrastructure dans le périmètre d'IHE France » release 1.8](https://old.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.8.pdf).
+Infrastructure dans le périmètre d'IHE France » release 1.8](https://www.interopsante.org/publications).
 
 Les tableaux suivants listent l'ensemble des **segments et des champs à
 renseigner obligatoirement**, dans l'ordre indiqué, à l'exception du
