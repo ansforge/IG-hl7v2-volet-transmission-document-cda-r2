@@ -18,8 +18,9 @@
   * correction typos/cohérence pour le type message en MSH-9.3 ([13](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/13)):
     * dans [Implémentation du message MDM et de ses acquittements métier HL7](volume2.html#implémentation-du-message-mdm-et-de-ses-acquittements-métier-hl7)
     * dans les diagrammes "[Demande de remplacement d’un document](volume2.html#demande-de-remplacement-dun-document)" et "[Demande de suppression d’un document](volume2.html#demande-de-suppression-dun-document)"
-    * dans les [profils des messages](volume2.html#le-segment-msh--header-du-message) 
+    * dans les [profils des messages](volume2.html#le-segment-msh--header-du-message)
   * [correction exemples de messages d’acquittements de l’ORU ou du MDM](volume2.html#description-des-contraintes-à-appliquer-sur-lacquittement) : Suppression dans les exemples du MSH-21.1 et MSH-21.2 car les Ack n’ont pas de contraintes particulières par rapport à la spécification international d’un Ack ([3](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/pull/3))
+  * Déplacement du paragraphe "Lien entre l’EN-TETE CDA et les métadonnées XDS" (page 52 dans la version précédente du volet) dans Volume 3 Annexes ([37](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/37))
 * Volume 3 Annexes
   * [Ajout mapping VIHF et Metadata XDS](mapping.html) ([8](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/8))
   * [Ajout mapping message MSS](mapping.html#mapping-message-mss) ([28](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/28))
