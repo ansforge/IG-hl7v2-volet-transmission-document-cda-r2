@@ -402,7 +402,7 @@ document(s). Seuls les segments ORC, OBR et le groupe de segments
 OBSERVATION de l'occurrence ORDER_OBSERVATION sont à renseigner.
 
 Les contraintes apportées par ce volet sur les données des différents
-segments du message ORU sont décrites à la [section dédiée](profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
+segments du message ORU sont décrites à la [section dédiée](volume2.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
 ###### Description fonctionnelle du message ORU
 
@@ -427,7 +427,7 @@ Les groupes en rouge sur le schéma représentent les éléments spécifiques à
     SEGUR vague2 (la version PDF du compte-rendu est insérée dans une
     section dédiée du document CDA Niv3).
 
-Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l'envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la [section dédiée](profils-messages.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
+Les groupes de segments OBSERVATION suivants (répétables) véhiculent les métadonnées spécifiques à la publication sur le DMP et/ou à l'envoi par la MSSanté. Ces métadonnées sont communes aux deux formats du document. Ces métadonnées sont décrites dans la [section dédiée](volume2.html#contraintes-appliqu%C3%A9es-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
 ##### Message MDM en HL7v2.6
 
@@ -791,7 +791,7 @@ Le message MDM ne peut transmettre qu'un seul document médical au format
 CDAr2.
 
 Les contraintes apportées par ce volet sur les données du message MDM
-sont décrites à la [section dédiée](profils-messages.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
+sont décrites à la [section dédiée](volume2.html#contraintes-appliquées-aux-messages-mdm-et-oru-dans-le-contexte-de-ce-volet).
 
 ###### Description fonctionnelle du message MDM
 
@@ -4757,7 +4757,7 @@ au moyen d'accusés métier HL7.
 A noter qu'aucun accusé de réception métier n'est prévu dans la
 spécification lors de la réception par la DRIMbox Source du message
 HL7v2 ORU ou MDM avec le Compte-Rendu d'Imagerie. Par contre, un message
-d'acquittement technique ([voir section dédiée](https://ansforge.github.io/IG-hl7v2-volet-transmission-document-cda-r2/sd-tranfo-pdf-to-ig/ig/profils-messages.html#le-message-dacquittement-du-message-hl7v2)) permettra à la DRIMbox de
+d'acquittement technique ([voir section dédiée](volume2.html#le-message-dacquittement-du-message-hl7v2)) permettra à la DRIMbox de
 communiquer au GESTIONNAIRE qu'elle a bien pris la responsabilité des
 traitements associés au compte-rendu qui lui a été transmis
 (AA (Original mode: Application Accept - Enhanced mode: Application
@@ -6515,7 +6515,7 @@ Les erreurs de type technique (erreurs de syntaxe du message HL7) sont général
 
 ##### Message d'acquittement technique des accusés métiers
 
-Le message d'acquittement est identique à celui spécifié dans la [partie dédiée](profils-messages.html#le-message-dacquittement-du-message-hl7v2), à l'exception du champ MSH-9 qui prend la valeur `ACK^Z01^ACK` ou `ACK^Z02^ACK` ou `ACK^Z03^ACK` selon l'évènement du message initial.
+Le message d'acquittement est identique à celui spécifié dans la [partie dédiée](volume2.html#le-message-dacquittement-du-message-hl7v2), à l'exception du champ MSH-9 qui prend la valeur `ACK^Z01^ACK` ou `ACK^Z02^ACK` ou `ACK^Z03^ACK` selon l'évènement du message initial.
 
 
 

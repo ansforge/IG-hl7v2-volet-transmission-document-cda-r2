@@ -3,7 +3,7 @@ Cette section décrit les détails techniques nécessaires pour la mise en œuvr
 
 * Flux 1 : Demande de transmission/remplacement/suppression de document(s) CDA (Flux HL7-ORU)
 * Flux 2 : Demande de transmission/remplacement/suppression d'un document CDA (Flux HL7-MDM)
-* Des flux d'accusés métier identifiés dans le [tableau des Acteurs/Transactions](acteurs-transactions.html#diagramme-des-acteurstransactions).
+* Des flux d'accusés métier identifiés dans le [tableau des Acteurs/Transactions](volume1.html#diagramme-des-acteurstransactions).
 
 
 ### Périmetre de la transaction
