@@ -3,14 +3,14 @@
   "id" : "ans.hl7v2.fr.trans-cda-r2",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.hl7v2.fr.trans-cda-r2</b></p><a name=\"ans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"hcans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"ans.hl7v2.fr.trans-cda-r2-fr-FR\"> </a><h2>CISIS_CDA_HL7_LPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.hl7v2.fr.trans-cda-r2</b></p><a name=\"ans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"hcans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"ans.hl7v2.fr.trans-cda-r2-fr-FR\"> </a><h2>CISIS_CDA_HL7_V2</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2",
   "version" : "2.1.1",
-  "name" : "CISIS_CDA_HL7_LPS",
+  "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "active",
-  "date" : "2025-01-06T12:17:47+00:00",
+  "date" : "2025-01-06T12:21:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
