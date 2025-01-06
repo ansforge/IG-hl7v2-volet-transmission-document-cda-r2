@@ -2,7 +2,7 @@
 
 id: ans.hl7v2.fr.trans-cda-r2
 canonical: https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2 # the last part of canonical and id must be the same
-name: CISIS_CDA_HL7_V2 # Should be an acronym
+name: CISIS_CDA_HL7_LPS # Should be an acronym
 title: Volet de transmission d'un document CDA-R2 en HL7v2
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
