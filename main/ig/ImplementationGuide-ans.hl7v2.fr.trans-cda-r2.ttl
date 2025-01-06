@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "ans.hl7v2.fr.trans-cda-r2"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.hl7v2.fr.trans-cda-r2</b></p><a name=\"ans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"hcans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"ans.hl7v2.fr.trans-cda-r2-fr-FR\"> </a><h2>CISIS_CDA_HL7_V2</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.hl7v2.fr.trans-cda-r2</b></p><a name=\"ans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"hcans.hl7v2.fr.trans-cda-r2\"> </a><a name=\"ans.hl7v2.fr.trans-cda-r2-fr-FR\"> </a><h2>CISIS_CDA_HL7_LPS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.1.1"] ; # 
-  fhir:name [ fhir:v "CISIS_CDA_HL7_V2"] ; # 
+  fhir:name [ fhir:v "CISIS_CDA_HL7_LPS"] ; # 
   fhir:title [ fhir:v "Volet de transmission d'un document CDA-R2 en HL7v2"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-01-06T10:26:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T12:17:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
