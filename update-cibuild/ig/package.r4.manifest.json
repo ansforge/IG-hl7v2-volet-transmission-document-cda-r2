@@ -1,6 +1,6 @@
 {
-  "version" : "2.1.1",
-  "date" : "20250108095331",
+  "version" : "2.1.2",
+  "date" : "20250108102156",
   "notForPublication" : true,
   "name" : "ans.hl7v2.fr.trans-cda-r2.r4"
 }

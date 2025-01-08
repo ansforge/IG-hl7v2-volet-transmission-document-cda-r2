@@ -3,7 +3,7 @@ CISIS_CDA_HL7_V2 : Validation Results
 
 err = 1, warn = 4, info = 0
 IG Publisher Version: 1.8.6
-Generated Wed Jan 08 09:54:15 UTC 2025. FHIR version 4.0.1 for ans.hl7v2.fr.trans-cda-r2#2.1.1 (canonical = https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2)
+Generated Wed Jan 08 10:22:36 UTC 2025. FHIR version 4.0.1 for ans.hl7v2.fr.trans-cda-r2#2.1.2 (canonical = https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2)
  Build Errors : 1 / 4 / 0
  /home/runner/work/IG-hl7v2-volet-transmission-document-cda-r2/IG-hl7v2-volet-transmission-document-cda-r2/igSource/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.trans-cda-r2 : 1 / 0 / 1
 </table>
