@@ -6,16 +6,15 @@ This section outlines the possibility for an organization's business software to
 MSSanté" section, to provide a comprehensive view of exchanges (from the creator of a processing request for a document to the final consumer of this request).
 </p>
 
-<!--  A décommenter lors de la publication 
-
+<!--  A commenter lors de la publication -->
 <div style="width: 65%">
-    <blockquote class="stu-note">
-    <p>
-    <b>Attention !</b> Cet Implementation Guide n'est pas en version courante. La version officielle est ici :  <a href="https://esante.gouv.fr/volet-de-transmission-dun-document-cda-r2-en-hl7v2">https://esante.gouv.fr/volet-de-transmission-dun-document-cda-r2-en-hl7v2</a>
-    </p>
-    </blockquote>
+<blockquote class="stu-note">
+<p>
+[WIP] Version ci-build du Guide d'Implémentation de ce volet
+</p>
+</blockquote>
 </div>
--->
+
 <div class="figure">
     <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
 </div>
