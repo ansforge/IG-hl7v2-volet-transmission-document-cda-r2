@@ -12,7 +12,7 @@ body:
     id: section_identification
     attributes:
       label: "Identification de la section à changer"
-      description: "Identifier la section du volet concernée par la demande de changement (numéro de la section exemple 12.2.2, ou directement le lien lorsque le volet est sous forme de guide d'implémentation)"
+      description: "Identifier la section du volet concernée par la demande de changement (numéro de la section exemple 12.2.2, ou directement le lien)"
       placeholder: "Entrez le numéro ou le lien de la section"
     validations:
       required: true
