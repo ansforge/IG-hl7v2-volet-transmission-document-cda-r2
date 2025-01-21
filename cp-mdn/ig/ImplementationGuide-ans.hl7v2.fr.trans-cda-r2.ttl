@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CISIS_CDA_HL7_V2"] ; # 
   fhir:title [ fhir:v "Volet de transmission d'un document CDA-R2 en HL7v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-08T15:48:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-21T16:23:00+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -613,14 +613,6 @@
          ] ) ;
          fhir:name [ fhir:v "exemples.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Exemples de messages" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "struct-msg-mdn.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "struct-msg-mdn.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Structure du MDN (MSSanté)" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
