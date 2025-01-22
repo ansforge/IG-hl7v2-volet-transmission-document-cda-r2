@@ -148,6 +148,7 @@ La structure du courriel est précisée décrit en annexe du volet <a href="http
     <figcaption><b>Figure 3 bis: Réception d’un CR de biologie médicale - Gestion des erreurs vers une BAL dédiée</b></figcaption>
 </div>    
 <br>
+<b>Ce cas d'usage est hors périmètre de ce volet.</b>
     </p>
 </blockquote>
 
@@ -282,5 +283,6 @@ La structure du courriel est précisée décrit en annexe du volet <a href="http
     <figcaption><b>Figure 5 bis: Transmission d’un document clinique d’un patient d’un CH vers un autre CH - Gestion des erreurs vers une BAL dédiée</b></figcaption>
 </div>    
 <br>
+<b>Ce cas d'usage est hors périmètre de ce volet.</b>
     </p>
 </blockquote>
