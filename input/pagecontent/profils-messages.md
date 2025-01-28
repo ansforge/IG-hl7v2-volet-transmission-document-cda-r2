@@ -1834,7 +1834,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Identifier Type Code</p>
       </td>
       <td>
-        <p>Type d'identifiant du professionnel (valeur issue de la <a href="http://www.interopsante.org/offres/doc_inline_src/412/IHE_France_Constraints_on_HL7_data_types_for_ITI_v.1.7.3.pdf">Table 0203 - Interop'Santé</a>)</p>
+        <p>Type d'identifiant du professionnel (valeur issue de la <a href="https://www.interopsante.org/publications">Table 0203 - Interop'Santé</a> présent dan le document "Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France")</p>
       </td>
     </tr>
     <tr>
@@ -2013,7 +2013,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Identifier Type Code</p>
       </td>
       <td>
-        <p>Type d'identifiant (valeur issue de la <a href="https://github.com/Interop-Sante/ihe.iti.pam.fr/blob/main/Publication/IHE_France_Constraints_on_HL7_data_types_for_ITI_V1.7.3.pdf">Table 0203 - Interop'Santé</a>) : <span class="hl7-color">RPPS</span> ou <span class="hl7-color">INS</span></p>
+        <p>Type d'identifiant du professionnel (valeur issue de la <a href="https://www.interopsante.org/publications">Table 0203 - Interop'Santé</a> présent dan le document "Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France") : <span class="hl7-color">RPPS</span> ou <span class="hl7-color">INS</span> ou <span class="hl7-color">IDNPS</span></p>
       </td>
     </tr>
     <tr>
