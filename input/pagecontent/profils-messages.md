@@ -1879,7 +1879,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Identifier Type Code</p>
       </td>
       <td>
-        <p>Type d'identifiant de l'organisation (valeur issue de la <a href="https://www.interopsante.org/publications">Table 0203 - Interop'Santé</a> présent dan le document "Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France") : <span class="hl7-color">FINEJ</span> (FINESS d'entité juridique) ou <span class="hl7-color">FINEG</span> (FINESS d'entité géographique).</p>
+        <p>Type d'identifiant de l'organisation (valeur issue de la <a href="https://www.interopsante.org/publications">Table 0203 - Interop'Santé</a> présent dan le document "Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France") : <span class="hl7-color">FINEJ</span> (FINESS d'entité juridique) ou <span class="hl7-color">FINEG</span> (FINESS d'entité géographique) ou <span class="hl7-color">IDNST</span>.</p>
       </td>
     </tr>
     <tr>
@@ -2059,7 +2059,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Identifier Type Code</p>
       </td>
       <td>
-        <p>Type d'identifiant (valeur issue de la <a href="https://www.interopsante.org/publications">Table 0203 - Interop'Santé</a> présent dan le document "Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France") : <span class="hl7-color">FINEJ</span> (FINESS d'entité juridique) ou <span class="hl7-color">FINEG</span> (FINESS d'entité géographique) ou <span class="hl7-color">UF</span> (UF), <span class="hl7-color">SVR</span> (service)...</p>
+        <p>Type d'identifiant (valeur issue de la <a href="https://www.interopsante.org/publications">Table 0203 - Interop'Santé</a> présent dan le document "Contraintes sur les types de données HL7 v2.5 applicables aux profils d’intégration du cadre technique IT Infrastructure dans le périmètre d’IHE France") : <span class="hl7-color">FINEJ</span> (FINESS d'entité juridique) ou <span class="hl7-color">FINEG</span> (FINESS d'entité géographique) ou <span class="hl7-color">IDNST</span> ou <span class="hl7-color">UF</span> (UF), <span class="hl7-color">SVR</span> (service).</p>
       </td>
     </tr>
     <tr>
