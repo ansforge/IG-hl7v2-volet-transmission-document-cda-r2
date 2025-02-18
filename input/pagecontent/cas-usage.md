@@ -94,7 +94,7 @@ renvoie un accusé de réception de la demande à la PFI.
     </p>
 </blockquote>
 
-La structure du MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
+La structure du MDN est décrite dans l'exemple décrit en Annexe du volet « [Transmission au LPS d'un document CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante).
 
 
 <div class="figure" style='text-align: center;'>
@@ -137,6 +137,20 @@ du SGL vers le DPI.
 
 Le diagramme serait identique dans le cas d'une demande de remplacement
 ou de suppression du compte rendu.
+
+<blockquote class="stu-note">
+    <p>
+Dans le cas où un MDN (Message Disposition Notification) n'a pas été explicitement demandé par le destinataire (via l'entête `Disposition-Notification-To` dans le message d'origine), et que pour pouvoir gérer toutes les erreurs on souhaite utiliser une BAL dédiée, un courriel 'standard' peut être utlisé.
+La structure du courriel est précisée décrit en annexe du volet <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d'un document CDA provenant d'un courriel MSSanté</a>.
+
+<div class="figure" style='text-align: center;'>
+    {%include bal-erreur.svg%}
+    <figcaption><b>Figure 3 bis: Réception d’un CR de biologie médicale - Gestion des erreurs vers une BAL dédiée</b></figcaption>
+</div>    
+<br>
+<b>Ce cas d'usage est hors périmètre de ce volet.</b>
+    </p>
+</blockquote>
 
 #### Transmission d'un document clinique d'un patient d'un établissement hospitalier vers un autre établissement hospitalier
 
@@ -208,7 +222,7 @@ Disposition Notification) à destination de la BAL de service Y contenant
 le statut de l'intégration du document. En cas d'erreur, la secrétaire
 pourra envisager une intégration manuelle (voir le paragraphe suivant).
 
-La structure du MDN est décrite dans l'exemple accessible [ici](struct-msg-mdn.html).
+La structure du MDN est décrite dans l'exemple accessible en annexe du volet « [Transmission au LPS d'un document CDA provenant d'un courriel MSSanté](https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante).
 
 La figure ci-dessous illustre ce cas d'usage.
 
@@ -258,3 +272,17 @@ vers le DPI d'un autre établissement.
 
 Le diagramme serait identique dans le cas d'une demande de remplacement
 ou de suppression du compte rendu.
+
+<blockquote class="stu-note">
+    <p>
+Dans le cas où un MDN (Message Disposition Notification) n'a pas été explicitement demandé par le destinataire (via l'entête `Disposition-Notification-To` dans le message d'origine), et que pour pouvoir gérer toutes les erreurs on souhaite utiliser une BAL dédiée, un courriel 'standard' peut être utlisé.
+La structure du courriel est précisée décrit en annexe du volet <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d'un document CDA provenant d'un courriel MSSanté</a>.
+
+<div class="figure" style='text-align: center;'>
+    {%include bal-erreur.svg%}
+    <figcaption><b>Figure 5 bis: Transmission d’un document clinique d’un patient d’un CH vers un autre CH - Gestion des erreurs vers une BAL dédiée</b></figcaption>
+</div>    
+<br>
+<b>Ce cas d'usage est hors périmètre de ce volet.</b>
+    </p>
+</blockquote>
