@@ -2,10 +2,9 @@
     "package-id" : "ans.hl7v2.fr.trans-cda-r2",
     "version" : "2.1.2",
     "path" : "https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/2.1.2",
-    "mode" : "working",
-    "status" : "draft",
+    "mode" : "milestone",
+    "status" : "trial-use",
     "sequence" : "Publications",
-    "desc" : "Version corrective du volet transmission d'un document CDA-R2 en HL7v2 au format guide d'implémentation (IG). Les précédentes versions du volet étant publiées au format pdf.",
-    "changes" : "change-log.html#version-nnn",
-    "title" : "[CI-SIS]Volet de transmission d'un document CDA-R2 en HL7v2"
+    "desc" : "Nouvelle version mineure du volet transmission d'un document CDA-R2 en HL7v2.",
+    "changes" : "change-log.html#version-212"
      }
