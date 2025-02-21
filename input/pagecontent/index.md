@@ -6,7 +6,7 @@ This section outlines the possibility for an organization's business software to
 MSSanté" section, to provide a comprehensive view of exchanges (from the creator of a processing request for a document to the final consumer of this request).
 </p>
 
-<!--  A commenter lors de la publication -->
+<!--  A commenter lors de la publication 
 <div style="width: 65%">
 <blockquote class="stu-note">
 <p>
@@ -14,6 +14,7 @@ MSSanté" section, to provide a comprehensive view of exchanges (from the creato
 </p>
 </blockquote>
 </div>
+-->
 
 <div class="figure">
     <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
