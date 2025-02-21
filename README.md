@@ -22,7 +22,7 @@ Ce volet est élaboré dans le cadre du SEGUR du Numérique avec la participatio
 
 ## Contexte technique du projet
 
-**[TEST pour transformer la version pdf du volet de transmission d’un document CDA-R2 en HL7v2 en guide d'implémentation.]**
+**[Transforamtion de la version pdf du volet de transmission d’un document CDA-R2 en HL7v2 en guide d'implémentation.]**
 
 # CI/CD
 
