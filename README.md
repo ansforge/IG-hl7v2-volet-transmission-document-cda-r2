@@ -3,9 +3,9 @@
 
 [![Workflow Init](https://github.com/ansforge/IG-fhir-partage-de-documents-de-sante/actions/workflows/fhir-workflows.yml/badge.svg)](https://github.com/ansforge/IG-fhir-partage-de-documents-de-sante/actions/workflows/fhir-workflows.yml)
 
-Ce repository est un test pour transformer la version pdf du volet de transmission d’un document CDA-R2 en HL7v2 en guide d'implémentation.
+Ce repository concerne la transformation de la version pdf du volet de "Transmission d’un document CDA-R2 en HL7v2" en guide d'implémentation puis les nouvelles versions de ce volet à partir de la version 2.1.1
 
-**Il ne se substitue pas au volet officiel du CI-SIS publié ici : https://esante.gouv.fr/volet-de-transmission-dun-document-cda-r2-en-hl7v2**
+**Le volet du CI-SIS est publié ici : https://esante.gouv.fr/volet-de-transmission-dun-document-cda-r2-en-hl7v2**
 
 
 # Contexte
