@@ -61,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Volet de transmission d&#39;un document CDA-R2 en HL7v2</span>
             <br/>
-            <span style="display:inline-block;">2.1.2 - ci-build
+            <span style="display:inline-block;">2.1.2 - trial-implementation
 
 
 
@@ -251,11 +251,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#version-212" id="markdown-toc-version-212">version 2.1.2</a></li>
   <li><a href="#version-211" id="markdown-toc-version-211">version 2.1.1</a></li>
   <li><a href="#rappel-de-lhistorique-des-anciennes-versions-au-format-pdf-avant-novembre-2024" id="markdown-toc-rappel-de-lhistorique-des-anciennes-versions-au-format-pdf-avant-novembre-2024">Rappel de l’historique des anciennes versions au format PDF (avant novembre 2024)</a></li>
 </ul>
 
 </div>
+<h3 id="version-212">version 2.1.2</h3>
+
+<p><strong>Version mineure sans impact sur le développement (corrections de typo, précisions ou ajout d’informations)</strong></p>
+
+<ul>
+  <li>Ajout de la possibilité d’utiliser un courriel standard à la place du MDN pour la gestion des erreurs (<a href="https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/41">41</a>)
+    <ul>
+      <li>ajout d’une note pour décrire le <a href="volume1.html#cas-dusage">cas d’usage</a></li>
+      <li>ajout du lien vers l’annexe du volet Transmission au LPS de documents CDA provenant d’un courriel MSSanté</li>
+      <li>suppression de l’annexe décrivant le MDN pour renvoyer vers l’annexe du volet Transmission au LPS de documents CDA provenant d’un courriel MSSanté</li>
+    </ul>
+  </li>
+  <li>Correction PRT-8.7 : Ajout du code IDNST suite à l’évolution du volet InteropSanté <a href="volume2.html#profils-de-messages">profils des messages</a> (<a href="https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/47">47</a>)</li>
+  <li>Correction PRT-5.13 : Ajout du code IDNPS suite à l’évolution du volet InteropSanté <a href="volume2.html#profils-de-messages">profils des messages</a> (<a href="https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/43">43</a>)</li>
+  <li>Ajout du code 906 ‘autres type d’erreur’ dans l’annexe <a href="error-codes.html">Error codes</a> (<a href="https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/45">45</a>)</li>
+</ul>
+
 <h3 id="version-211">version 2.1.1</h3>
 
 <p><strong>Version mineure sans impact sur le développement (changement de format, corrections de typo, précisions ou ajout d’informations)</strong></p>
@@ -742,7 +760,7 @@ Cet historique est également disponible dans la dernière version du volet au f
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 20, 2025 17:56+0000">2025-02-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.hl7v2.fr.trans-cda-r2#2.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 21, 2025 14:50+0000">2025-02-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
