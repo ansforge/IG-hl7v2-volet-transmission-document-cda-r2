@@ -1,3 +1,15 @@
+### version 2.1.2
+
+**Version mineure sans impact sur le développement (corrections de typo, précisions ou ajout d'informations)**
+
+* Ajout de la possibilité d'utiliser un courriel standard à la place du MDN pour la gestion des erreurs ([41](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/41))
+  * ajout d'une note pour décrire le [cas d'usage](volume1.html#cas-dusage)
+  * ajout du lien vers l'annexe du volet Transmission au LPS de documents CDA provenant d'un courriel MSSanté
+  * suppression de l'annexe décrivant le MDN pour renvoyer vers l'annexe du volet Transmission au LPS de documents CDA provenant d'un courriel MSSanté
+* Correction PRT-8.7 : Ajout du code IDNST suite à l'évolution du volet InteropSanté [profils des messages](volume2.html#profils-de-messages) ([47](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/47))
+* Correction PRT-5.13 : Ajout du code IDNPS suite à l'évolution du volet InteropSanté [profils des messages](volume2.html#profils-de-messages) ([43](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/43))
+* Ajout du code 906 'autres type d'erreur' dans l'annexe [Error codes](error-codes.html) ([45](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/45))
+
 ### version 2.1.1
 
 **Version mineure sans impact sur le développement (changement de format, corrections de typo, précisions ou ajout d'informations)**
