@@ -141,7 +141,7 @@ ou de suppression du compte rendu.
 <blockquote class="stu-note">
     <p>
 Dans le cas où un MDN (Message Disposition Notification) n'a pas été explicitement demandé par le destinataire (via l'entête `Disposition-Notification-To` dans le message d'origine), et que, pour pouvoir gérer toutes les erreurs, on souhaite utiliser une BAL dédiée, un courriel 'standard' peut être utlisé.
-La structure du courriel est décrit en annexe du volet <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d'un document CDA provenant d'un courriel MSSanté</a>.
+La structure du courriel est précisée en annexe du volet <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d'un document CDA provenant d'un courriel MSSanté</a>.
 
 <div class="figure" style='text-align: center;'>
     {%include bal-erreur.svg%}
@@ -276,7 +276,7 @@ ou de suppression du compte rendu.
 <blockquote class="stu-note">
     <p>
 Dans le cas où un MDN (Message Disposition Notification) n'a pas été explicitement demandé par le destinataire (via l'entête `Disposition-Notification-To` dans le message d'origine), et que, pour pouvoir gérer toutes les erreurs, on souhaite utiliser une BAL dédiée, un courriel 'standard' peut être utlisé.
-La structure du courriel est décrit en annexe du volet <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d'un document CDA provenant d'un courriel MSSanté</a>.
+La structure du courriel est préciséé en annexe du volet <a href="https://esante.gouv.fr/transmission-au-lps-de-documents-cda-provenant-dun-courriel-mssante">Transmission au LPS d'un document CDA provenant d'un courriel MSSanté</a>.
 
 <div class="figure" style='text-align: center;'>
     {%include bal-erreur.svg%}
