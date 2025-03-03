@@ -1823,7 +1823,40 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Assigning Authority</p>
       </td>
       <td>
+        <p>Autorité d'affectation de l'identifiant du PS</p>
+      </td>
+    </tr>    
+    <tr>
+      <td>
+        <p>&gt; &gt; PRT-5.9.1 (optionnel)</p>
+      </td>
+      <td>
+        <p>Namespace Id</p>
+      </td>
+      <td>
+        <p>Nom de l'assigning authority</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; &gt; PRT-5.9.2</p>
+      </td>
+      <td>
+        <p>Universal Id</p>
+      </td>
+      <td>
         <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : <span class="hl7-color">1.2.250.1.71.4.2.1</span></p>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <p>&gt; &gt; PRT-5.9.3</p>
+      </td>
+      <td>
+        <p>Universal Id Type</p>
+      </td>
+      <td>
+        <p><span class="hl7-color">ISO</span></p>
       </td>
     </tr>
     <tr>
@@ -2002,7 +2035,40 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Assigning Authority</p>
       </td>
       <td>
-        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : <span class="hl7-color">1.2.250.1.71.4.2.1</span> ou du patient <span class="hl7-color">1.2.250.1.213.1.4.8</span> (INS-NIR) ou <span class="hl7-color">1.2.250.1.213.1.4.9</span> (INS-NIA).</p>
+        <p>Autorité d'affectation de l'identifiant du PS</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; &gt; PRT-5.9.1 (optionnel)</p>
+      </td>
+      <td>
+        <p>Namespace Id</p>
+      </td>
+      <td>
+        <p>Nom de l'assigning authority</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>&gt; &gt; PRT-5.9.2</p>
+      </td>
+      <td>
+        <p>Universal Id</p>
+      </td>
+      <td>
+        <p>Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : <span class="hl7-color">1.2.250.1.71.4.2.1</span> ou du patient <span class="hl7-color">1.2.250.1.213.1.4.8</span> (INS-NIR) ou <span class="hl7-color">1.2.250.1.213.1.4.9</span> (INS-NIA)</span></p>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <p>&gt; &gt; PRT-5.9.3</p>
+      </td>
+      <td>
+        <p>Universal Id Type</p>
+      </td>
+      <td>
+        <p><span class="hl7-color">ISO</span></p>
       </td>
     </tr>
     <tr>
