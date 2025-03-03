@@ -1834,7 +1834,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Namespace Id</p>
       </td>
       <td>
-        <p>Nom de l'assigning authority</span></p>
+        <p>Nom de l'assigning authority</p>
       </td>
     </tr>
     <tr>
@@ -2046,7 +2046,7 @@ l'obligation de gérer le contenu de ces champs ou segments.
         <p>Namespace Id</p>
       </td>
       <td>
-        <p>Nom de l'assigning authority</span></p>
+        <p>Nom de l'assigning authority</p>
       </td>
     </tr>
     <tr>
