@@ -8,7 +8,7 @@
   * suppression de l'annexe décrivant le MDN pour renvoyer vers l'annexe du volet Transmission au LPS de documents CDA provenant d'un courriel MSSanté
 * Correction PRT-8.7 : Ajout du code IDNST suite à l'évolution du volet InteropSanté [profils des messages](volume2.html#profils-de-messages) ([47](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/47))
 * Correction PRT-5.13 : Ajout du code IDNPS suite à l'évolution du volet InteropSanté [profils des messages](volume2.html#profils-de-messages) ([43](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/43))
-* Précisions apportées pour PRT-5.9 : [profils des messages](volume2.html#les-données-concernant-la-demande-de-traitement-sur-les-documents) ([50](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/50))
+* Précisions apportées pour PRT-5.9 [profils des messages](volume2.html#les-données-concernant-la-demande-de-traitement-sur-les-documents) ([50](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/50))
 * Ajout du code 906 'autres type d'erreur' dans l'annexe [Error codes](error-codes.html) ([45](https://github.com/ansforge/IG-hl7v2-volet-transmission-document-cda-r2/issues/45))
 
 ### version 2.1.1
