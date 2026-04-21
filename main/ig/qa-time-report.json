@@ -1,67 +1,372 @@
 {
-  "date" : "Thu, 03 Apr, 2025 14:39:12 +0000",
+  "date" : "Tue, 21 Apr, 2026 17:01:17 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
-  "files" : [
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.trans-cda-r2.json",
+    "size" : 3449,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 24,
+      "length" : 17
+    },
     {
-      "name" : "/fsh-generated/resources/ImplementationGuide-ans.hl7v2.fr.trans-cda-r2.json",
-      "size" : 3449,
-      "processes" : [
-        {
-          "activity" : "load",
-          "start" : 23,
-          "length" : 46
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 24,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 24,
-          "length" : 216
-        },
-        {
-          "activity" : "validate",
-          "start" : 24,
-          "length" : 4522
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 31,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 31,
-          "length" : 75
-        },
-        {
-          "activity" : "generate2",
-          "start" : 35,
-          "length" : 89
-        },
-        {
-          "activity" : "generate2",
-          "start" : 35,
-          "length" : 1
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 41,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 41,
-          "length" : 2
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 44,
-          "length" : 3
-        }
-      ]
-    }
-  ]
+      "activity" : "checkR4R4B",
+      "start" : 25,
+      "length" : 21
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 25,
+      "length" : 66
+    },
+    {
+      "activity" : "validate",
+      "start" : 25,
+      "length" : 4348
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 29,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 29,
+      "length" : 68
+    },
+    {
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 63
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 38,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 40,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 4003
+  },
+  {
+    "name" : "/input/data/features.yml",
+    "size" : 197
+  },
+  {
+    "name" : "/input/pagecontent/mapping.md",
+    "size" : 29889,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/def-proc-collab.md",
+    "size" : 13075,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/mapping-mss.md",
+    "size" : 2660
+  },
+  {
+    "name" : "/input/pagecontent/glossaire.md",
+    "size" : 2442
+  },
+  {
+    "name" : "/input/pagecontent/error-codes.md",
+    "size" : 15150,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/perimetre-transaction.md",
+    "size" : 1509
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 13165,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/download.md",
+    "size" : 393
+  },
+  {
+    "name" : "/input/pagecontent/doc-ref.md",
+    "size" : 2006,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/exemples.md",
+    "size" : 28671,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/acteurs-transactions.md",
+    "size" : 13081,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/interactions-acteurs.md",
+    "size" : 3442
+  },
+  {
+    "name" : "/input/pagecontent/autres_ressources.md",
+    "size" : 94
+  },
+  {
+    "name" : "/input/pagecontent/meta-dmp-mss.md",
+    "size" : 2871,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/ack-metier-zam.md",
+    "size" : 1380
+  },
+  {
+    "name" : "/input/pagecontent/role.md",
+    "size" : 1685
+  },
+  {
+    "name" : "/input/pagecontent/identification-flux.md",
+    "size" : 246
+  },
+  {
+    "name" : "/input/pagecontent/volume1.md",
+    "size" : 325
+  },
+  {
+    "name" : "/input/pagecontent/profils-messages.md",
+    "size" : 147808,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/cas-usage.md",
+    "size" : 17240,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/regles-gestion-mssante.md",
+    "size" : 1937
+  },
+  {
+    "name" : "/input/pagecontent/testplan.md",
+    "size" : 3698,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/volume2.md",
+    "size" : 914
+  },
+  {
+    "name" : "/input/pagecontent/change-log.md",
+    "size" : 28771,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/contexte-metier.md",
+    "size" : 2930
+  },
+  {
+    "name" : "/input/pagecontent/evenements-declenchants.md",
+    "size" : 2477,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/standards.md",
+    "size" : 3037
+  },
+  {
+    "name" : "/input/pagecontent/securite.md",
+    "size" : 900
+  },
+  {
+    "name" : "/input/pagecontent/lien-entete-cda-meta-xds.md",
+    "size" : 473
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 31
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/fig17.png",
+    "size" : 168458
+  },
+  {
+    "name" : "/input/images/image16.png",
+    "size" : 410778
+  },
+  {
+    "name" : "/input/images/image6.png",
+    "size" : 115713,
+    "processes" : [{
+      "activity" : "scan",
+      "start" : 25,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/image26.png",
+    "size" : 41509,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/image14.png",
+    "size" : 45114
+  },
+  {
+    "name" : "/input/images/image13.png",
+    "size" : 63456
+  },
+  {
+    "name" : "/input/images/image7.png",
+    "size" : 106444
+  },
+  {
+    "name" : "/input/images/image27.png",
+    "size" : 46129
+  },
+  {
+    "name" : "/input/images/image11.png",
+    "size" : 18448
+  },
+  {
+    "name" : "/input/images/image10.png",
+    "size" : 149102
+  },
+  {
+    "name" : "/input/images/image17.png",
+    "size" : 115978,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/image19.png",
+    "size" : 117784
+  },
+  {
+    "name" : "/input/images/ci-sis-logo.png",
+    "size" : 61365
+  },
+  {
+    "name" : "/input/images/image12.png",
+    "size" : 96446
+  },
+  {
+    "name" : "/input/images/image20.png",
+    "size" : 48417
+  },
+  {
+    "name" : "/input/images/image21.png",
+    "size" : 49169
+  },
+  {
+    "name" : "/input/images/image15.png",
+    "size" : 58775
+  },
+  {
+    "name" : "/input/images/image9.png",
+    "size" : 115256,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 32,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/fig18.png",
+    "size" : 133688
+  },
+  {
+    "name" : "/input/images/image8.png",
+    "size" : 77266
+  },
+  {
+    "name" : "/input/images/image5.png",
+    "size" : 103759,
+    "processes" : [{
+      "activity" : "scan",
+      "start" : 25,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 600
+  }]
 }
