@@ -1988,9 +1988,9 @@ Le message d’acquittement est identique à celui spécifié dans la [partie d�
 
 Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX valorisés. Le tableau présente une liste exhaustive des combinaisons possibles des OBX pour l’échange MSSANTE. Les cas non représentés génèrent un message d’erreur.
 
-* Balises OBX: MASQUE_PS : NINVISIBLE_PATIENT : NINVISIBLE_REP_LEGAUX : NCONNEXION_SECRETE : NMODIF_CONF_CODE : N ou YDESTDMP : N ou YDESTMSSANTEPS : Y DESTMSSANTEPAT : YACK_RECEPTION : N ou YACK_LECTURE_MSS : N ou Y
+* Balises OBX: MASQUE_PS : NINVISIBLE_PATIENT : NINVISIBLE_REP_LEGAUX : NCONNEXION_SECRETE : N ou YMODIF_CONF_CODE : N ou YDESTDMP : N ou YDESTMSSANTEPS : Y DESTMSSANTEPAT : YACK_RECEPTION : N ou YACK_LECTURE_MSS : N ou Y
   * Echange MSSANTE: Envoi du document sur la boite MSSanté du PS/organisation/BAL applicative du destinataire et du Patient
-* Balises OBX: MASQUE_PS :Y ou N<INVISIBLE_PATIENT : YINVISIBLE_REP_LEGAUX : NCONNEXION_SECRETE : NMODIF_CONF_CODE : N ou YDESTDMP : N ou YDESTMSSANTEPS : Y DESTMSSANTEPAT : NACK_RECEPTION : N ou YACK_LECTURE_MSS : N ou Y
+* Balises OBX: MASQUE_PS :Y ou N<INVISIBLE_PATIENT : YINVISIBLE_REP_LEGAUX : NCONNEXION_SECRETE : N ou YMODIF_CONF_CODE : N ou YDESTDMP : N ou YDESTMSSANTEPS : Y DESTMSSANTEPAT : NACK_RECEPTION : N ou YACK_LECTURE_MSS : N ou Y
   * Echange MSSANTE: Envoi du document sur la boite MSSanté du PS/organisation/BAL applicative du destinataire
 * Balises OBX: MASQUE_PS : Y ou NINVISIBLE_PATIENT : NINVISIBLE_REP_LEGAUX : N ou YCONNEXION_SECRETE : NMODIF_CONF_CODE : N ou YDESTDMP : NDESTMSSANTEPS : N DESTMSSANTEPAT : YACK_RECEPTION : N ou YACK_LECTURE_MSS : N ou Y
   * Echange MSSANTE: Envoi du document sur la boite MSSanté du patient

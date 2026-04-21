@@ -117,7 +117,7 @@ Les lecteurs cibles sont principalement des chefs de projets ainsi que toute per
   "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2026-04-21T16:23:36+00:00",
+  "date" : "2026-04-21T16:32:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
