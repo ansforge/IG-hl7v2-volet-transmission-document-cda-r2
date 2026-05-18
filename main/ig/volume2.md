@@ -683,13 +683,13 @@ De façon à éviter les incohérences entre les données spécifiées dans le(s
   * ?: Prénom d'exercice du PS destinataire/prénom patient
 * Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]: > PRT-5.9
   * ?: Assigning Authority
-  * ?: Autorité d'affectation de l'identifiant du PS
+  * ?: Autorité d'affectation de l'identifiant du PS ou du patient
 * Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]: > > PRT-5.9.1 (optionnel)
   * ?: Namespace Id
   * ?: Nom de l'assigning authority
 * Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]: > > PRT-5.9.2
   * ?: Universal Id
-  * ?: Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : 1.2.250.1.71.4.2.1 ou du patient 1.2.250.1.213.1.4.8 (INS-NIR) ou 1.2.250.1.213.1.4.9 (INS-NIA)</span>
+  * ?: Autorité d'affectation de l'identifiant du PS (OID de gestion de personnes) : 1.2.250.1.71.4.2.1 ou du patient 1.2.250.1.213.1.4.8 (INS-NIR) ou 1.2.250.1.213.1.4.9 (INS-NIA)
 * Composition du groupe OBSERVATION/OBXNTE : Usage = Required / Cardinalité = [1..1]: > > PRT-5.9.3
   * ?: Universal Id Type
   * ?: ISO
