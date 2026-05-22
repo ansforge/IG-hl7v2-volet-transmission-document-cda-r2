@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/hl7v2/trans-cda-r2/ImplementationGuide/ans.hl7v2.fr.trans-cda-r2 | *Version*:2.1.3 |
-| Draft as of 2026-05-21 | *Computable Name*:CISIS_CDA_HL7_V2 |
+| Draft as of 2026-05-22 | *Computable Name*:CISIS_CDA_HL7_V2 |
 
  **Brief description of this Implementation Guide**
  This document is part of the Service layer of the Interoperability Framework for Health Information Systems (CI-SIS). 
@@ -117,7 +117,7 @@ Les lecteurs cibles sont principalement des chefs de projets ainsi que toute per
   "name" : "CISIS_CDA_HL7_V2",
   "title" : "Volet de transmission d'un document CDA-R2 en HL7v2",
   "status" : "draft",
-  "date" : "2026-05-21T15:39:10+00:00",
+  "date" : "2026-05-22T14:19:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
