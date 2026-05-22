@@ -24,7 +24,7 @@ les accusés métier de réception DMP/MSSanté et de lecture MSSanté.
 
 ```
 OBX|1|ED|11502-2^CR d'examens biologiques^LN||^TEXT^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm 9ybWF0IENEQQ||||||F|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||
 ||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr
 PRT||UC||RCT^Results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
@@ -62,7 +62,7 @@ patient.
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN ||^TEXT^XML^Base64^ RG9jdW1lbnQgbWVkY2lhbCBhdSBm
 b3JtYXQgQ0RBIG5pdmVhdSAx||||||F|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Results Copies To^participation|27707279035121518989^PAT-TROIS^DOMINIQUE^^^^^^1.2.250.1.213.1.4.10^L^^^INS||||||||||^^X.400^27707279035121518989@patient.mssante.fr
 OBX|2|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||Y^^expandedYes-NoIndicator||||||F|
 OBX|3|CE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
@@ -99,7 +99,7 @@ d'imagerie médicale avec balises pour le DMP/ MSSanté :
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^TEXT^XML^Base64^ RG9jdW1lbnQgbWVkY2lhbCBhdSBmb3Jt
 YXQgQ0RBIG5pdmVhdSAx||||||D|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
 PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr 
 OBX|2|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
@@ -143,7 +143,7 @@ DMP et MSSanté.
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^TEXT^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 bWF0IENEQQ||||||C|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr
 PRT||UC||RCT^results Copies To^participation|27707279035121518989^PAT-TROIS^DOMINIQUE^^^^^^1.2.250.1.213.1.4.10^L^^^INS||||||||||^^X.400^27707279035121518989@patient.mssante.fr
 OBX|2|CE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
@@ -186,7 +186,7 @@ spécifiées pour le DMP et MSSANTE.
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^TEXT^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 bWF0IENEQQ||||||C|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Result Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr
 PRT||UC||RCT^Results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
 PRT||UC||RCT^Results Copies To^participation|27707279035121518989^PAT-TROIS^DOMINIQUE^^^^^^1.2.250.1.213.1.4.10^L^^^INS||||||||||^^X.400^27707279035121518989@patient.mssante.fr
@@ -229,7 +229,7 @@ mail pour le professionnel de santé est spécifié.
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 bWF0IENEQQ||||||F|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr
 PRT||UC||RCT^results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
 PRT||UC||RCT^Results Copies To^participation||||Radiologie^^^^^120456789^UF^^^3435|||||||^^X.400^radiologie@hopitalA.mssante.fr
@@ -267,7 +267,7 @@ patient.
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 bWF0IENEQQ||||||F|
-PRT||UC||SB^send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Results Copies To^participation|27707279035121518989^PAT-TROIS^DOMINIQUE^^^^^^1.2.250.1.213.1.4.10^L^^^INS||||||||||^^X.400^27707279035121518989@patient.mssante.fr
 OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||Y^^ expandedYes-NoIndicator||||||F|
 OBX|3|CWE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS ||N^^ expandedYes-NoIndicator||||||F|
@@ -301,7 +301,7 @@ avec balises pour le DMP et MSSanté
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 bWF0IENEQQ||||||D|
-PRT||UC||SB^send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr 
 OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
 OBX|3|CWE|INVISIBLE_PATIENT^ Document Non Visible par le patient^MetaDMPMSS||N^^ expandedYes-NoIndicator||||||F|
@@ -346,7 +346,7 @@ d'imagerie Médicale avec balises pour le DMP et MSSANTE
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 bWF0IENEQQ||||||C|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr 
 PRT||UC||RCT^results Copies To^participation|27707279035121518989^PAT-TROIS^DOMINIQUE^^^^^^1.2.250.1.213.1.4.10^L^^^INS||||||||||^^X.400^27707279035121518989@patient.mssante.fr
 OBX|2|CWE|MASQUE_PS^Masqué aux professionnels de Santé^MetaDMPMSS||N^^expandedYes-NoIndicator||||||F|
@@ -392,7 +392,7 @@ adresse mail de réponse est précisée.
 ```
 OBX|1|ED|18748-4^CR d’imagerie médicale^LN||^text^XML^Base64^RG9jdW1lbnQgbcOpZGljYWwgYXUgZm9y
 bWF0IENEQQ||||||C|
-PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^FINEG^^^300017985                  
+PRT||UC||SB^Send by^participation|801234567866^Dupont^Jean^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS|||Organisation-X^^^^^ASIP-SANTE-ST&1.2.250.1.71.4.2.2&ISO^IDNST^^^3300017985                  
 PRT||UC||RCT^Results Copies To^participation|101234567897^Hoda^Adam^^^^^^ASIP-SANTE- PS&1.2.250.1.71.4.2.1&ISO^D^^^RPPS||
 ||||||||^^X.400^adam.hoda@test-ci-sis.mssante.fr 
 PRT||UC||RCT^Results Copies To^participation||||||12|||||^^X.400^appliExemple@hopitalB.mssante.fr
