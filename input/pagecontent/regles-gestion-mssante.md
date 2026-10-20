@@ -30,7 +30,7 @@ Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX val
       <td>
         <p>MASQUE_PS : N</p>
         <p>INVISIBLE_PATIENT : Y</p>
-        <p>INVISIBLE_REP_LEGAUX : N</p>
+        <p>INVISIBLE_REP_LEGAUX : N ou Y</p>
         <p>CONNEXION_SECRETE : N ou Y</p>
         <p>MODIF_CONF_CODE : N ou Y</p>
         <p>DESTDMP : N ou Y</p>
@@ -49,7 +49,7 @@ Ci-dessous la matrice de gestion pour les échanges MSSanté suivant les OBX val
         <p>INVISIBLE_REP_LEGAUX : N ou Y</p>
         <p>CONNEXION_SECRETE : N</p>
         <p>MODIF_CONF_CODE : N ou Y</p>
-        <p>DESTDMP : N</p>
+        <p>DESTDMP : N ou Y</p>
         <p>DESTMSSANTEPS : N DESTMSSANTEPAT : Y</p>
         <p>ACK_RECEPTION : N ou Y</p>
         <p>ACK_LECTURE_MSS : N ou Y</p>
